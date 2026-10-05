@@ -1,0 +1,369 @@
+
+ Soft sensor for omnidirectional posture perception in humanoid dexterous hands | Microsystems & Nanoengineering
+ Skip to main content
+ Thank you for visiting nature.com. You are using a browser version with limited support for CSS. To obtain
+ the best experience, we recommend you use a more up to date browser (or turn off compatibility mode in
+ Internet Explorer). In the meantime, to ensure continued support, we are displaying the site without styles
+ and JavaScript.
+ Advertisement
+ View all journals
+ Saved research
+ Search
+ Log in
+ Content
+ Explore content
+ About the journal
+ Publish with us
+ Sign up for alerts
+ RSS feed
+ nature
+microsystems & nanoengineering
+articles
+ article
+ Soft sensor for omnidirectional posture perception in humanoid dexterous hands
+ Download PDF
+ Download PDF
+ Article
+ Open access
+ Published: 12 February 2026
+ Soft sensor for omnidirectional posture perception in humanoid dexterous hands
+ Liang Zhong1, 
+Xiaoqing Tian2, 
+Jiyong Wang3, 
+Xian Song1, 
+Jianfeng Li4 & 
+…
+Yuxin Peng 
+ ORCID: orcid.org/0000-0002-8121-48141 
+Show authors
+ Microsystems & Nanoengineering
+ volume 12, Article number: 60 (2026) Cite this article
+ Save article
+ View saved research
+ 5932 Accesses
+ 3 Citations
+ 48 Altmetric
+ Metrics details
+ Abstract
+This study presents the development of a novel omnidirectional soft bending sensor tailored for humanoid dexterous hands to facilitate posture perception in delicate manipulation tasks. Drawing inspiration from the human hand’s intricate design and proprioceptive capabilities, this study aims to enhance the dexterity of robotic hands, particularly in multi-degree-of-freedom (DoF) motion and posture perception. To this end, we designed a humanoid dexterous hand featuring 18 active DoFs, with five rigid-flexible structured fingers for improved joint mobility. Each finger is equipped with our innovative omnidirectional bending sensor, utilizing segmented polymethylmethacrylate (PMMA) optical fibers, a trichromatic LED, and a chromatic detector to detect the pitch and yaw angles of the metacarpophalangeal joints. The sensor demonstrated excellent measurement performance, stability, and repeatability in challenging tasks such as using scissors, operating a computer mouse, and playing the piano. This technology addresses the challenges associated with multi-DoF motion and omnidirectional posture perception in robotic hands, thereby enhancing their capabilities in delicate manipulation tasks and paving the way for further advancements in humanoid dexterous hand development.
+ Similar content being viewed by others
+ Stretchable glove for accurate and robust hand pose reconstruction based on comprehensive motion data
+ Article
+ Open access
+ 11 July 2024
+ A robust and omnidirectional-sensitive electronic antenna for tactile-induced perception
+ Article
+ Open access
+ 01 April 2025
+ Design and evaluation of a tendon-and-linkage hybrid-driven humanoid dexterous hand
+ Article
+ Open access
+ 04 August 2026
+ Explore related subjects
+ Discover the latest articles and news in related subjects.
+ Electrical and electronic engineering
+ Other nanotechnology
+ Soft Robotic Systems and Actuation Technologies
+ Introduction
+The human hand stands as a remarkable achievement of human evolution, distinguished by its intricate and elaborate morphological characteristics. These features are evident in its precise skeletal structure, diverse joint configurations, and the closely coordinated control system of nerves and muscles1,2. Consequently, the human hand possesses numerous degrees of freedom and a high level of flexibility, enabling it to perform delicate manipulative tasks such as medical surgery3, industrial assembly4, and complex services5. Furthermore, proprioceptors that sense the posture of the hand, including muscle spindles6, Golgi tendon organs7, and Pacinian corpuscles8, are embedded within the tendons and muscles of the human hand. Under the coordinated control of these sensors and nerves, human fingers can move with exceptional precision.
+To achieve human-like dexterous manipulation in robotic end-effectors, numerous anthropomorphic robotic hands have been developed. The “Inspire Dexterous Hand”, for instance, features six micro linear actuators, where two of them control the thumb’s two joint degrees of freedom9. The remaining four micro linear actuators drive the other four fingers. Although these fingers utilize a linkage mechanism for coordination, their movement is limited to basic grasping actions like fist clenching and hand opening. On the other hand, the IH2 Azzurra dexterous hand features five DoFs, with each finger being actuated through tendons10. The Shadow dexterous hand possesses 20 DC motors, each independently controlling a finger joint’s degree of freedom, enabling a wide range of intricate in-hand manipulations11. In contrast, the Hanns hand integrates a motor in the palm and achieves an underactuated system through tendon routing12. Dexterous hands utilizing this tendon-driven method can mimic human hand motions like grasping and pinching. However, despite being able to perform certain simple tasks, most of these dexterous hands lack the ability to execute palmar flexion and extension movements akin to human fingers, which hinders them from handling more delicate tasks (such as playing the piano, tying shoelaces, writing, etc.). Although there have been some studies involving adduction and abduction actuators13,14,15,16, dexterous hands with five fingers possessing both adduction and abduction capabilities are relatively uncommon.
+At present, most humanoid dexterous hands also lack proprioceptive capabilities similar to those of the human hand. Therefore, integrating adduction-abduction movements with multi-degree-of-freedom posture perception in humanoid dexterous hands remains a significant challenge. The proprioception in dexterous hands plays a vital role in the autonomous control of delicate movements. Soft actuators have displayed potential in a range of dexterous hands due to their natural motion. Humanoid dexterous hands using these actuators require soft sensors that can be incorporated into robotic fingers to enable sophisticated functionalities. Soft sensors, with their excellent compliance, stretchability, and shape adaptability, can be organically integrated with humanoid dexterous hands17,18,19,20,21. Consequently, numerous researchers employ embedded soft sensors to monitor the posture of multi-fingered dexterous hands by directly installing them inside the fingers to capture bending information. Zhao et al. introduced a curvature sensor embedded within a soft robotic hand, which computes the overall bending of the finger by analyzing changes in light intensity during bending22. Huang et al. integrated a flexible optical fiber-based sensor in the robotic hand to detect the bending curvature of the fingers, thereby achieving closed-loop control23. Despite their excellent stretchability, these optical-based bend sensors are unable to determine the direction of finger bending. Moreover, Homberg et al. installed resistive bending sensors on the inner surface of the robotic hand’s flexible fingers, using changes in resistance to identify the curvature of the fingers24. Zhong et al. integrated a flexible optical waveguide-based bending sensor within the flexible exoskeleton dexterous hand for precise detection of finger bending postures25. Wang et al. proposed a liquid-metal-based stretchable e-skin, which is applicable for sensing vibrations and postural changes of robots26. Farrow et al. inserted a liquid-metal strain sensor into the actuator of the flexible fingers, calibrating finger bending curvature based on the rate of change in the resistance of the liquid metal27. However, while these resistive-based sensors demonstrate good performance in detecting single-degree-of-freedom bending of fingers, a coupling problem arises in posture perception during complex multi-degree-of-freedom motions in humanoid dexterous hands. In summary, most current research is confined to measuring a single degree of freedom in dexterous hand finger joints, especially in terms of coordinated movements involving finger flexion and adduction/abduction, where current sensors are unable to effectively decouple these two types of motion.
+To address the aforementioned challenges, we propose a humanoid dexterous hand capable of providing multi-degree-of-freedom posture perception. This system shows significant potential for various delicate manipulation tasks (Fig. 1a). The metacarpophalangeal joints of each finger possess two degrees of freedom, enabling the fingers to independently perform adduction, abduction, and flexion movements as well as complex coordinated motions. The humanoid dexterous hand consists of five rigid-flexible structured fingers, ensuring a wide range of joint mobility and flexibility. Each finger incorporates an omnidirectional flexible bending sensor to detect the posture angle of the finger, including the pitch angle for finger flexion and the yaw angle for adduction-abduction (Fig. 1b). Based on the tendon-driven principle of the human hand, nine servo motors are installed on the arm of the humanoid dexterous hand to achieve finger flexion, adduction, and abduction through tendon pulling. To assess the performance of the sensors, a series of tests were conducted, including evaluations of reliability, stability, and measurement accuracy. Subsequently, experiments were carried out on challenging actions such as using scissors, operating a computer mouse, and playing the piano.
+Fig. 1Full size image
+Systematic overview of the humanoid dexterous hand with multi-degree-of-freedom posture perception. a The humanoid dexterous hand in various delicate operational scenarios. b The omnidirectional soft bending sensor in the humanoid dexterous hand
+Result and discussion
+Design of the humanoid dexterous hand
+The design concept of the humanoid dexterous hand is shown in Fig. 2. Apart from the thumb, which possesses two DoFs, each of the other four fingers is endowed with four DoFs. This configuration enables every finger to independently perform flexion, abduction, and adduction movements, thereby facilitating the execution of intricate and delicate maneuvers. The palm of the humanoid dexterous hand is fabricated utilizing 3D printing technology, with each finger designed from a combination of rigid and soft materials. Additionally, an omnidirectional soft bending sensor is integrated into each finger to detect its posture. This rigid-soft design ensures finger flexibility and compliance, with two of the four DoFs in each finger (excluding the thumb) allocated to the MCP joint for adduction-abduction and flexion-extension. The rigid-soft integrated manufacturing process of a single finger for the humanoid dexterous hand is shown in Supplementary Figure 1. Firstly, a set of precision finger configuration molds was designed to embed distal phalanx (DP) and proximal phalanx (PP) finger segments inside the mold, with the upper mold and lower mold precisely fixed by positioning grooves [Supplementary Figure 1a, b]. Then, the steel rods for PMMA optical fiber shaping were installed on the assembled mold, followed by injecting liquid silicone to achieve the rigid-soft integrated manufacturing of the finger [Supplementary Figure 1e, d]. Finally, having extracted the steel rods and demolded the part, we completed the finger structure by inserting the segmented PMMA optical fibers and the two LED power supply wires into the holes [Supplementary Figure 1e]. In addition, the power supply wires were designed to be longer than the finger length. This configuration allows the wires to slide within the holes when the fingers bend, thereby preventing wire breakage due to stress concentration.
+Fig. 2Full size image
+Design concept and working principle. a–c The comprehensive architecture and working principle of the humanoid dexterous hand. d The composition and internal structure of the omnidirectional soft bending sensor. e Internal light path and spectrum distribution in the curved and non-curved states
+The detailed structure of a finger is illustrated in Fig. 2c. The fingertip, distal phalanx (DP), and proximal phalanx (PP) are fabricated by 3D printing. An omnidirectional soft bending sensor is incorporated into the distal phalanx (DP) and proximal phalanx (PP) via one-shot molding technology. A trichromatic LED is embedded in the fingertip. Finger movements are controlled via tendon-driven mechanisms to enable flexion, abduction, and adduction. Specifically, the flexion-extension tendon cable (FETC) is anchored at the fingertip to facilitate flexion and extension of the finger. An adduction-abduction tendon cable (AATC) is secured to the proximal phalanx (PP) to control adduction and abduction. A light mixing plate and a chromatic detector are affixed to the palm. The FETC and AATC are actuated by two sets of servo motors, namely the flexion-extension servo motor (FESM) and the adduction-abduction servo motor (AASM), respectively.
+Figure 2b illustrates the working principle of the humanoid dexterous hand. Due to the underactuated design of the finger, when the FESM drives the winding wheel, the FETC on the medial side tightens while the lateral side relaxes. Consequently, the DP and PP can bend naturally, mimicking the movement of the humanoid dexterous hand. Similarly, the AASM achieves abduction and adduction of the MCP joint by actuating the winding wheel to control the tension of the AATC.
+Although PMMA optical fibers exhibit a high refractive index and low optical loss, leading to negligible attenuation over short distances, this property also results in inconspicuous optical bending losses and consequently reduced sensor sensitivity. Moreover, due to the involvement of two degrees of freedom in the MCP joint and the mismatch in elastic modulus between PMMA fibers and the elastomeric cladding, this may lead to stress concentration within the PMMA fibers. Consequently, this could potentially increase the likelihood of micro-crack formation or fiber breakage. We introduced a specialized design at the metacarpophalangeal joint to overcome these limitations. Specifically, we segmented the PMMA optical fibers into several short pieces to fill the elastomeric cladding of the sensor. This design strategy significantly enhances the macro-bending loss rate of PMMA optical fibers and relieves internal residual stresses.
+Figure 2d illustrates the detailed internal structure of the omnidirectional soft bending sensor, featuring three segmented PMMA optical fibers embedded within the elastomeric cladding, with specific dimensions of 150 mm (L) × 20 mm (ΦD2). Each short fiber segment measures 4 mm (l) × 2 mm (ΦD1), with an air gap of 0.5 mm (d) between consecutive segments. The trichromatic LED emits red light (610 nm ~ 620 nm, Xlamp XQ-E, USA), green light (520 nm ~ 535 nm, Xlamp XQ-E, USA), and blue light (465 nm ~ 480 nm, Xlamp XQ-E, USA) sources. These light sources are then fed into the three segmented PMMA optical fibers. The output light emerges at the other end of the sensor, where a light mixing plate blends the three-color light. The intensities of the three colors within the mixed light are then detected by the chromatic detector.
+Figure 2e illustrates the sensing principle of the omnidirectional soft bending sensor. In its straight configuration, the chromatic detector can ascertain the intensity of distinct wavelengths within the light spectrum. The attenuation of light in a medium can be expressed as28:
+$${I}_{{out}}={I}_{0}{e}^{-{\alpha }_{a}{l}_{0}}$$
+ (1)
+where I0 and Iout indicate the input and output integrated light intensity, respectively. Both the values of I0 and Iout can be obtained via a chromatic detector, which is capable of effectively detecting the visible light bands at wavelengths of 400 ~ 500 nm, 500 ~ 600 nm, and 600 ~ 650 nm [Supplementary Figure 2]. The symbol e is the base of the natural logarithm. The absorption coefficient of the medium and the optical path length are denoted by αa and l0, respectively. Therefore, the integrated intensity (Iout) of the light emerging from the end of the sensor can be expressed as:
+$${I}_{{out}}={I}_{0}{e}^{-n{\alpha }_{{pmma}}l-(n-1){\alpha }_{{air}}d}$$
+ (2)
+where n denotes the total count of the short fiber segments incorporated within the sensor. αpmma signifies the absorption coefficient of PMMA material, while αair represents the absorption coefficient for the air present between the individual short fiber segments. l represents the length of each individual short fiber segment, and d specifies the distance between each short fiber segment. The attenuation of light intensity can be expressed as:
+$$P={10log}_{10}\left(\frac{{I}_{{out}}}{{I}_{0}}\right)$$
+ (3)
+By substituting Eq. (2) into Eq. (3), the relationship between the attenuation of the light and the length of the short fiber segment as well as the distance between them is obtained:
+$$P={10log}_{10}{e}^{-n{\alpha }_{{pmma}}l-\left(n-1\right){\alpha }_{{air}}d}$$
+ (4)
+When the sensor is bent, the segmented PMMA optical fibers guiding red light undergo tensile stress. This stress results in an increased gap between each short fiber segment (d1 > d0), leading to an increase in optical attenuation. On the other hand, the segmented PMMA optical fibers guiding blue light are located on the inner side of the sensor, experiencing compressive stress and a reduced gap between short fiber segments (d2 < d0). Consequently, the optical path length within each segmented PMMA optical fiber is altered, leading to varying intensities in the resultant spectrum for each unique wavelength of light. For LED light sources, the incident light intensity does not affect the measurement results of the sensor. According to the theoretical derivation of Eq. 3, the description of the optical path length is only related to the ratio of the incident light intensity to the emergent light intensity. Therefore, as long as the sensor records the light intensity in the initial state at the neutral position, the accuracy of the measurement process can be ensured.
+To ascertain the bending angle and direction from variations in light intensity attenuation, a coordinate system {O} is delineated for the sensor, as illustrated in Supplementary Figure 3a. Assuming one end of the sensor remains fixed and the other end bends in any direction, the strain incurs by the segmented PMMA optical fibers at their respective cross-section positions is directly proportional to the distance of the point from the neutral axis. The method for calculating strain can be represented as:
+$$\varepsilon =\frac{\Delta l}{L}$$
+ (5)
+where ∆l represents the elongation of the segmented PMMA optical fiber, and L represents its original length. Three different wavelengths of visible light sources are arranged orthogonally with a 120° angle between them. R0, G0, and B0 represent the central points of each optical fiber on the cross-section, as illustrated in Supplementary Figure 3b. When the sensor is bent along the bending plane, the strain of each segmented PMMA fiber can be expressed as 29:
+$$\left\{\begin{array}{l}{\varepsilon }_{R}=\frac{\Delta {l}_{R}}{{l}_{R}}=\frac{\left|O{R}_{d}\right|}{r}=\frac{\left|{dcos}\left(\theta \right)\right|}{r}\\ {\varepsilon }_{G}=\frac{\Delta {l}_{G}}{{l}_{G}}=\frac{\left|O{G}_{d}\right|}{r}=\frac{\left|{dcos}\left(\theta -\frac{\pi }{3}\right)\right|}{r}\\ {\varepsilon }_{B}=\frac{\Delta {l}_{B}}{{l}_{B}}=\frac{\left|O{B}_{d}\right|}{r}=\frac{\left|{dcos}\left(\frac{2\pi }{3}-\theta \right)\right|}{r}\end{array}\right.$$
+ (6)
+where r represents the bending radius of the sensor. d denotes the distance of each segmented fiber to the neutral axis, and θ is the angle formed between the bending plane and the XOZ plane of the coordinate system {O}. According to Eqs. (4) and (6), the strain and light intensity mapping relationship can be expressed as:
+$$\left\{\begin{array}{l}{\varepsilon }_{R}={k}_{1}\Delta {P}_{R}+{B}_{1}\\ {\varepsilon }_{G}={k}_{2}\Delta {P}_{G}+{B}_{2}\\ {\varepsilon }_{B}={k}_{3}\Delta {P}_{B}+{B}_{3}\end{array}\right.$$
+ (7)
+Among them, k1, k2, and k3 are calibration coefficients, while B1, B2, and B3 are compensation coefficients. The pitch and yaw of the sensor can be calculated as follows:
+$$\left\{\begin{array}{c}{Yaw}=\frac{{\varepsilon }_{G}-{\varepsilon }_{B}}{\sqrt{3}{d}^{{\prime} }}\\ {Pitch}=\frac{2{\varepsilon }_{R}-{\varepsilon }_{B}-{\varepsilon }_{G}}{3{d}^{{\prime} }}\end{array}\right.$$
+ (8)
+During bending, the resulting deformation can be decomposed into two perpendicular curvature components. The G and B segmented PMMA fibers are symmetric with respect to the sensor’s neutral axis (Z-axis), whereas the R segmented PMMA fiber is aligned along it. For bending in any direction, the yaw angle is derived directly from the differential deformation between the G and B segmented PMMA fibers. Since the R segmented PMMA fiber lies along the Z-axis, it remains largely insensitive to yaw bending but responds prominently to pitch bending. This configuration inherently decouples pitch and yaw measurements, effectively minimizing crosstalk between them.
+Omnidirectional soft bending sensor performance characterization
+Initially, we investigated the correlation between the number of short fiber segments at the MCP joint and the attenuation of light intensity signals under various tensile conditions for an omnidirectional soft bending sensor, as shown in Supplementary Figure 4. The results show that increasing the number of PMMA segments reduces signal attenuation. Therefore, to achieve uniform gauge factors (GF) across the red, green, and blue channels, the six-segment configuration was selected.
+To validate the sensitivity and reliability of the humanoid dexterous hand for fine movement perception, targeted experiments were conducted on the omnidirectional soft bending sensor. These experiments included reliability testing, step response, radial compression response, and hysteresis response, as shown in Supplementary Figure 5. Data were collected from the chromatic detector during 100 cycles of 10% reciprocating stretching [Supplementary Figure 5a]. The insets provide detailed views of the signal within the initial and concluding 3 cycles. The root-mean-square errors (RMSEs) calculated for three channels during the initial 3 cycles and the concluding 3 cycles demonstrate values of 2.1% (red channel), 1.9% (green channel), and 3.2% (blue channel), respectively. These results demonstrate the sensor’s high repeatability and consistent performance.
+The step strain responses of the omnidirectional soft bending sensor were rigorously assessed through tensile testing at incremental elongation levels of 0.25%, 0.5%, 1%, 2.5%, 5%, and 10% [Supplementary Figure 5b]. The sensor demonstrated a robust tensile response, detectable up to 2.5% strain. Since the sensor is integrated within rigid structures (e.g., fingertip, DP, PP) and experiences radial compression during bending, its sensitivity to radial pressure was also evaluated. Consequently, we investigated the sensor’s sensitivity to radial compression. The experimental setup (Supplementary Figure 6) included a standard force sensor (DY-920, DAYSENSOR), a screw slide, and a force-applying rod. The sensor was mounted on the setup, and the rod, attached to the force sensor, was driven by the screw slide to apply a radial pressure of 0–50 N. As shown in Supplementary Figure 5c, the sensor exhibited a stable output under radial pressures below 10 N. Supplementary Table 1 shows the hysteresis response characteristics of the sensor at different strain levels, with hysteresis coefficients at 0.25%, 0.5%, 1%, 2.5%, 5% and 10% strains. The sensor tests in this study were performed under low-speed and no-load conditions, with results indicating that the hysteresis of all three channels was below 12%. Due to the inherent creep behavior and nonlinearity of the flexible material, the sensor is more prone to fatigue deformation under high-speed and high-load conditions. This phenomenon primarily stems from the gradual rearrangement and slippage of polymer chains under sustained external forces. To enhance the sensor’s stability in high-speed and high-load environments, structural enhancements such as integrating a nylon fiber layer onto the surface or embedding nylon filaments axially can be implemented to effectively suppress creep.
+Evaluation of attitude solution accuracy
+To evaluate the accuracy of finger posture perception of the humanoid dexterous hand, the strain of three sets of segmented PMMA optical fibers within the sensor was initially acquired under ±90° pitch and ±90° yaw using ANSYS software. From the simulation results [Supplementary Figure 7], it can be observed that the red channel segmented PMMA fiber exhibits the minimum strain under yaw bending, as the fiber in this channel precisely lies within the neutral plane of the bend. The green and blue channel segmented PMMA fibers show similar strain magnitudes, but with distinct characteristics: the blue channel experiences tensile strain, while the green channel undergoes compressive strain. Under pitch bending, both blue and green channel segmented PMMA fibers demonstrate consistent strain responses, whereas the red channel is subjected to compressive strain. Subsequently, the corresponding theoretical pitch and yaw angles were computed based on the strain data, as illustrated in Fig. 3a, b. The results indicate that during pitching, both the G and B channels of the segmented PMMA optical fibers demonstrate equal strain, while the R channel’s segmented PMMA optical fibers show a slightly higher strain. Conversely, during yaw bending, the segmented PMMA optical fibers in the G and B channels demonstrate equivalent strain, which is higher than that observed in the R channel’s segmented PMMA optical fibers.
+Fig. 3Full size image
+Evaluation of accuracy for the omnidirectional soft bending sensor. a, b Strain characteristics and angle calculations of the sensor under pitch and yaw motion. c, d Pitch and yaw angles calculated by experiment. e, f Comparison between theoretical and experimental values. g Combined movement in the first and third quadrants of the XZ plane. h Combined movement in the second and fourth quadrants of the XZ plane. i Circular motion in the XZ plane
+Subsequently, we conducted experiments on the sensor to evaluate the attenuation characteristics of the segmented PMMA optical fibers. The results indicate that the attenuation of the R channel’s segmented PMMA optical fiber is slightly higher than that of the G and B channels’ segmented PMMA optical fibers (Fig. 3c). During yaw bending, the attenuation of the R channel’s segmented PMMA optical fiber is lower than that of the G and B channels’ segmented PMMA optical fibers (Fig. 3d), with the blue and green channels exhibiting a consistent attenuation trend. The close agreement between the observed light attenuation trends and the simulated strain patterns validates the method of calculating finger postures from light intensity attenuation.
+Finally, we utilized the pitch and yaw angles from an inertial measurement unit (IMU) as reference attitude parameters (Ground Truth) and compared them with the corresponding angles calculated by the proposed sensor. We designed a special experimental setup capable of omnidirectional bending [Supplementary Figure 8]. The sensor is fixed on the acrylic plate at the upper part of the setup, and a sensor fastener is fixed outside the elastomeric cladding. Each fastener contains holes for passing traction tendons. Four miniature traction motors are arranged in a cross shape on the top layer of the setup, realizing omnidirectional bending of the sensor by pulling the traction tendons. Meanwhile, the inertial IMU is additionally installed at the end of the sensor as the attitude angle reference for the pitch and yaw bending of the sensor. The sensor, driven by the traction motors, undergoes unidimensional bending deformation along the X-axis and Y-axis respectively. Given that the application of sensors in dexterous hands primarily involves the perception of slow and fine movements, and requires high stability in static states, it is necessary to further measure and evaluate their static error. To characterize the sensor’s static error, bending tests were performed separately around the yaw and pitch axes. For each axis, the sensor was bent through a series of defined angular ranges (e.g., 0°–10°, 0°–20°, 0°–30°, etc.). Each test at a given range was repeated ten times to ensure statistical reliability. The sensor was bent by a miniature traction motor on the setup, which retracted the traction tendon at a constant speed of 0.5 cm/s. The bending angle was monitored in real-time by an IMU attached to the tip of the setup, which verified when the specified angle was achieved. The experimental results under single bending mode are illustrated in Fig. 3e, f. The sensor demonstrates an average measurement error of ±2.13° for pitch and ±2.34° for yaw. To verify the decoupling characteristics of the proposed sensor, three combined movements (the first and third quadrants combined movement, the second and fourth quadrants combined movement, and circular motion) were conducted to observe the coupling between the pitch and yaw angles of the sensor. The experimental results depicted in Fig. 3g–i demonstrate that during combined motions within the first and third quadrants, the bending trends of pitch and yaw exhibit consistent patterns (Fig. 3g). In contrast, during combined motions in the second and fourth quadrants, these trends display opposite behaviors (Fig. 3h). Additionally, notable phase shifts between pitch and yaw parameters are observed during circular bending motions (Fig. 3i), collectively confirming that the sensor effectively decouples pitch and yaw parameters under complex bending conditions.
+For an effective assessment of the sensor’s crosstalk performance, quantitative calculations of crosstalk were performed. Furthermore, the signal-to-crosstalk ratio (SCR) was employed to quantitatively characterize the degree of signal coupling under both yaw and pitch bending conditions. The specific calculation method for crosstalk is as follows:
+$$\left\{\begin{array}{c}{Cros}{s}_{{Yaw\_to\_Pitch}}=\frac{Y{\rm{M}}}{{PFS}}\times 100 \% \\ {Cros}{s}_{{Pitch\_to\_Yaw}}=\frac{P{\rm{M}}}{{YFS}}\times 100 \% \end{array}\right.$$
+ (9)
+where YM, PM, YFS, and PFS denote the measured yaw angle under individual pitch bending, the measured pitch angle under individual yaw bending, the full-scale yaw bending, and the full-scale pitch bending, respectively. The crosstalk between bending modes is quantified as follows: pure yaw bending contributes 3.2% to the pitch, and pure pitch bending contributes 4.1% to the yaw.
+The SCR is determined by the sensor’s principal sensitivity and crosstalk sensitivity, and it is defined by the following equation:
+$${SC}R=20log\frac{{Sp}}{{Sc}}$$
+ (10)
+where Sp is the sensitivity of the sensor and Sc is the crosstalk sensitivity, defined as:
+$$\left[\begin{array}{c}Sp\\ {Sc}\end{array}\right]=\left[\begin{array}{cc}{Sp}_{{yaw}} & {{Sp}}_{{pitch}}\\ {{Sc}}_{{yaw}\to {pitch}} & {{Sc}}_{{pitch}\to {yaw}}\end{array}\right]$$
+ (11)
+where Spyaw and Sppitch denote the principal sensitivities for measuring the yaw and pitch, respectively. Correspondingly, Scyaw→pitch and Scpitch→yaw represent the cross-sensitivity coefficients, characterizing the interference from yaw to pitch and from pitch to yaw, respectively.
+From the measurements, we calculated SCR of 50.68 dB for yaw bending and 30.81 dB for pitch bending. These values, which indicate that the desired signal is approximately two orders of magnitude stronger than the crosstalk, demonstrate the sensor’s excellent capability in discriminating between these two bending modes.
+To evaluate the angular measurement accuracy of the propose sensor under combined movements, we utilized the setup to drive the sensor for collaborative bending of the pitch and yaw angles. Specifically, the pitch angle of the sensor was bent within a range from -60° to +60°, while the yaw angle simultaneously achieved reverse bending from +60° to -60°. The measurement accuracy of pitch and yaw under combined motion is shown in Supplementary Table 2. These findings indicate that the sensor possesses excellent measurement capabilities, making it suitable for tasks requiring perception of multi-DoF finger postures. Supplementary Table 3 shows a comparison of the performance of different omnidirectional bending sensors.
+Applications
+To investigate the potential applications of the humanoid dexterous hand embedded with omnidirectional soft bending sensors, we conducted experiments involving fine movements commonly encountered in daily activities, such as using scissors, operating a computer mouse, and playing the piano.
+Figure 4a illustrates the process of using a scissor with the humanoid dexterous hand. During this task, flexion control is achieved by bending the index finger. A target pitch angle was inputted into the control system, and the sensor provided real-time feedback on the finger’s posture during the bending process. This allowed the target angle to be accurately achieved through closed-loop control. Due to the tension applied by the tendon cords on the finger, there exists a certain level of hysteresis in the finger’s bending movement driven by the tendon cable servo motor. Additionally, the sensor data from the index finger was represented visually using color coordinates. During the bending process, a noticeable attenuation of blue and green light occurs, resulting in a shift of the color coordinates towards the red region [Supplementary Video 1].
+Fig. 4Full size image
+Signal response of the humanoid dexterous hand for two typical tasks with tracking light chromaticity at CIE 1931 coordinates. a Using scissors. b Operating mouse buttons
+Figure 4b demonstrates the entire process of operating a mouse with the humanoid dexterous hand. The sequence begins with the index finger bending to click the left button, followed by its adduction and flexion to click the middle button. Through the color coordinates, distinct trajectory alterations in the humanoid dexterous hand can be clearly discerned during the clicking of the left and middle mouse button, followed by adduction and flexion movements of the index finger to click the middle mouse button. The color coordinates clearly reveal distinct trajectory changes during clicks of the left and middle mouse buttons [Supplementary Video 2].
+Figure 5 depicts the process of the humanoid dexterous hand playing the piano. Each finger was assigned to one piano key, except for the little finger, which played two keys sequentially via adduction and abduction. Given that playing the piano requires relatively small finger flexion amplitudes, there is a strong correlation between the target angles input into the control system and the angles reported by the sensors. The color coordinates for each finger visually represent the chromatic data from the sensors [Supplementary Video 3].
+Fig. 5Full size image
+The process of playing the piano and sensor signal response of the humanoid dexterous hand. The dexterous hand is fixed in front of the piano (up). The omnidirectional soft bending sensor in the finger collected signals (right) to provide pitch and yaw feedback for control (left)
+Conclusion
+In this study, a novel humanoid dexterous hand incorporating omnidirectional soft bending sensors is presented and investigated. A design methodology integrating soft and hard materials has been employed to facilitate seamless integration with the omnidirectional soft bending sensor, ensuring natural hand movements with excellent compliance and flexibility. Compared with conventional dexterous hands, the proposed hand exhibits a groundbreaking advantage in multi-DoF posture perception. The integrated sensor demonstrates excellent measurement performance across multiple DoFs, along with stability and repeatability. Its sensing capabilities effectively fulfill the posture perception requirements for humanoid robots engaged in multi-DoF operational tasks. To demonstrate the hand’s capabilities, three challenging tasks were assigned to the humanoid dexterous hand, showcasing precise control through closed-loop mechanisms. This work is expected to stimulate advancements in the development of humanoid dexterous hands.
+Methods
+Fabrication of the omnidirectional soft bending sensor
+The omnidirectional soft bending sensor consists of an elastomeric cladding (EcoFlex 00-10, Smooth On, USA; Shore 00 hardness 10; elastic modulus 105 ~ 106 Pa), segmented PMMA optical fibers, a trichromatic light-emitting diode (LED), a light mixing plate, and a chromatic detector (TCS3472, AMS AG, Austria). The elastomeric cladding was embedded with three sets of segmented PMMA optical fibers. A trichromatic light source was applied at one end, and the light was mixed through a light mixing plate at the other end. The colorimetric detector measures the attenuation of each color to calculate the bending angle and direction. Specifically, designed 3D-printed molds were used to facilitate the elastomeric cladding [Supplementary Figure 9a]. The molds were assembled through an interference fit to prevent leakage during the silicone curing process, and steel rods were employed to shape the internal PMMA holes of the elastomeric cladding [Supplementary Figure 9b]. The EcoFlex 00-10 Part A and B were mixed thoroughly in a 1:1 ratio before being poured into the molds. The entire ensemble underwent curing at 60°C for 3 hours in a drying oven. After removing the steel rods from the molded elastomeric cladding, the short fiber segments were successively inserted [Supplementary Figure 9c]. The final assembly of the omnidirectional soft bending sensor was completed by integrating the trichromatic LED and the light mixing plate at both ends of the sensor [Supplementary Figure 9d].
+System architecture of the humanoid dexterous hand
+The electronic system architecture of the humanoid dexterous hand is illustrated in Supplementary Figure 10, comprising two main parts: the perception & actuation system architecture, and the control & drive system architecture. The perception & actuation system features five sensors and nine tendon cable servo motors. The sensors are tasked with gathering posture data for each finger, whereas the servo motors control finger movements. The control & drive system comprises a current source, a voltage source, a multiplexer, a microcontroller (STM32F103RCT6, STMicroelectronics, Italy), and a servo motor drive module. The voltage source supplies a working voltage of 3.3 V to the microcontroller, multiplexer, and current source. The current source provides a constant 250 mA current to power the trichromatic LEDs on the five sensors. Each sensor’s chromatic detector is linked to the multiplexer via the inter-integrated circuit (IIC) bus, enabling the microcontroller to sequentially access the chromatic detector readings from each sensor through the multiplexer. Upon interpreting user commands, the microcontroller acquires the target pitch and yaw angles for each finger’s bending and transmits driving commands to the servo motor drive module via USART. Subsequently, the servo motor drive module generates PWM signals to control the tendon cable servo motors sequentially. Supplementary Figure 11 further shows the connection relationship between each system of the humanoid dexterous hand. the current source, the voltage source, the multiplexer and the microcontroller are integrated on the controller. The sensors are sequentially connected to the IIC multiplexer via an SDA/SCL bus. The controller communicates with the servo motor drive module through a serial port (TX/RX bus), and controls the motor movement through serial port instructions. The servo motor drive module is connected to multiple motors through the signal bus. This design aims to minimize the connection of wires, and each motor can independently decode the drive instructions, reducing the complexity of the system.
+ References
+Marzke, M. W. & Marzke, R. F. Evolution of the human hand: approaches to acquiring, analysing and interpreting the anatomical evidence. J. Anat. 197, 121–140 (2000).
+Article 
+ Google Scholar 
+Lin, J., Wu, Y. & Huang, T. S. Modeling the constraints of human hand motion. in Proceedings Workshop on Human Motion, 121–126 (IEEE, 2000).
+Hamdorf, J. M. & Hall, J. C. Acquiring surgical skills. Br. J. Surg. 87, 28–37 (2000).
+Article 
+ Google Scholar 
+Kyrarini, M., Haseeb, M. A., Ristić-Durrant, D. & Gräser, A. Robot learning of industrial assembly task via human demonstrations. Auton. Robots 43, 239–257 (2019).
+Article 
+ Google Scholar 
+Napier, J. R. The prehensile movements of the human hand. J. Bone Jt. Surg. Br. 38, 902–913 (1956).
+Article 
+ Google Scholar 
+Hakonen, M., Nurmi, T., Vallinoja, J., Jaatela, J. & Piitulainen, H. More comprehensive proprioceptive stimulation of the hand amplifies its cortical processing. J. Neurophysiol. 128, 568–581 (2022).
+Article 
+ Google Scholar 
+Gu, G., Zhang, N., Chen, C., Xu, H. & Zhu, X. Soft robotics enables neuroprosthetic hand design. ACS Nano 17, 9661–9672 (2023).
+Article 
+ Google Scholar 
+Lee, H. J. et al. Topographical analysis of Pacinian corpuscle in the pulp of human cadaver fingertip pulp: a pilot cadaver study. J. Hand Surg. 28, 377–381 (2023).
+ Google Scholar 
+Inspire Robots Dexterous hand. https://en.inspire-robots.com/product/rh56dfx .
+IH2 Azzurra. https://www.prensilia.com/it/portfolio/ih2-azzurra .
+Shang, W. et al. Deep learning method for grasping novel objects using dexterous hands. IEEE Trans. Cybern. 52, 2750–2762 (2020).
+Article 
+ Google Scholar 
+Laffranchi, M. et al. The Hannes hand prosthesis replicates the key biological properties of the human hand. Sci. Robot. 5, eabb0467 (2020).
+Article 
+ Google Scholar 
+Zhang, B., Hu, C., Yang, P., Liao, Z. & Liao, H. Design and modularization of multi-DoF soft robotic actuators. IEEE Robot. Autom. Lett. 4, 2645–2652 (2019).
+Article 
+ Google Scholar 
+Liu, X., Zhang, J., Xu, F., Wang, T. & Zhao, L. Design and modelling of multi-DOF manipulator driven by hysteresis-attenuated pneumatic artificial muscles. IEEE Robot. Autom. Lett. 7, 6447–6454 (2022).
+Article 
+ Google Scholar 
+Fan, W. et al. Multi-DoF soft robotic actuators based on spring reinforce and particle jamming. in Proc. IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 8494–8499 (IEEE, 2022).
+Zhen, R., Jiang, L., Li, H. & Yang, B. Modular bioinspired hand with multijoint rigid-soft finger possessing proprioception. Soft Robot. 10, 380–394 (2023).
+Article 
+ Google Scholar 
+Prado da Fonseca, V. Object Identification and Pose Estimation Using Bio-Inspired Tactile-Enabled Multi-Joint Fingers for In-Hand Manipulation (Doctoral dissertation, Université d’Ottawa/University of Ottawa (2020).
+Lu, X. et al. 3-D tactile-based object recognition for robot hands using force-sensitive and bend sensor arrays. IEEE Trans. Cogn. Dev. Syst. 15, 1645–1655 (2022).
+Article 
+ Google Scholar 
+Peng, Y. et al. A flexible dual-modal sensing system for synchronous pressure and inertial monitoring of finger movement. IEEE Sens. J. 21, 10483–10490 (2021).
+Article 
+ Google Scholar 
+Peng, Y. et al. A flexible and stretchable bending sensor based on hydrazine-reduced porous graphene for human motion monitoring. IEEE Sens. J. 20, 12661–12670 (2020).
+Article 
+ Google Scholar 
+Ye, Z., Zheng, L., Chen, W., Wang, B. & Zhang, L. Recent advances in bioinspired soft robots: fabrication, actuation, tracking, and applications. Adv. Mater. Technol. 9, 2301862 (2024).
+Article 
+ Google Scholar 
+Zhao, H., O’brien, K., Li, S. & Shepherd, R. F. Optoelectronically innervated soft prosthetic hand via stretchable optical waveguides. Sci. Robot. 1, eaai7529 (2016).
+Article 
+ Google Scholar 
+Huang, H. et al. Machine learning-based multi-modal information perception for soft robotic hands. Tsinghua Sci. Technol. 25, 255–269 (2019).
+Article 
+ Google Scholar 
+Homberg, B. S., Katzschmann, R. K., Dogar, M. R. & Rus, D. Robust proprioceptive grasping with a soft robot hand. Auton. Robots 43, 681–696 (2019).
+Article 
+ Google Scholar 
+Zhong, L. et al. Calibration-free optical waveguide bending sensor for soft robots. Soft Sci. 5, 3 (2025).
+Article 
+ Google Scholar 
+Wang, Z. et al. Stretchable liquid metal e-skin for soft robot proprioceptive vibration sensing. IEEE Sens. J. 24, 18327–18335 (2024). pp.
+Article 
+ Google Scholar 
+Farrow, N., and Correll, N., 2015. A soft pneumatic actuator that can sense grasp and touch. in Proc. IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2317–2323 (IEEE, 2015).
+Kirk, J. T. A theoretical analysis of the contribution of algal cells to the attenuation of light within natural waters I. General treatment of suspensions of pigmented cells. N. Phytol. 75, 11–20 (1975).
+Article 
+ Google Scholar 
+Moore, J. P. & Rogge, M. D. Shape sensing using multi-core fiber optic cable and parametric curve solutions. Opt. Express 20, 2967–2973 (2012).
+Article 
+ Google Scholar 
+Download references
+Acknowledgements
+This research was supported by the National Natural Science Foundation of China (No. 52475573), the Natural Science Foundation of Zhejiang Province (No. LTGY23E050002), the National Key Research and Development Program of China (No. 2023YFC2811500), the Science and Technology Innovation Project of the General Administration of Sport of China (24KJCX074), the Key Research and Development Programme of Zhejiang (No. 2024C03259, No. 2023C03196), and the Fundamental Research Funds for the Central Universities.
+Author information
+Authors and Affiliations
+Institute of Exercise Science and Health Engineering, Zhejiang University, Hangzhou, 310058, China
+Liang Zhong, Xian Song & Yuxin Peng
+School of Mechanical Engineering, Hangzhou Dianzi University, Hangzhou, 310018, China
+Xiaoqing Tian
+School of Electronic and Information, Hangzhou Dianzi University, Hangzhou, 310018, China
+Jiyong Wang
+Department of Electronics, Lishui University, Lishui, 323000, China
+Jianfeng Li
+AuthorsLiang ZhongView author publications
+Search author on:PubMed Google Scholar
+Xiaoqing TianView author publications
+Search author on:PubMed Google Scholar
+Jiyong WangView author publications
+Search author on:PubMed Google Scholar
+Xian SongView author publications
+Search author on:PubMed Google Scholar
+Jianfeng LiView author publications
+Search author on:PubMed Google Scholar
+Yuxin PengView author publications
+Search author on:PubMed Google Scholar
+Corresponding author
+Correspondence to
+ Yuxin Peng.
+Ethics declarations
+ Competing interests
+ The authors declare no competing interests.
+Supplementary information
+SUPPLEMENTAL MATERIAL (download DOCX )
+Supplementary Video 1 (download MP4 )
+Supplementary Video 2 (download MP4 )
+Supplementary Video 3 (download MP4 )
+Rights and permissions
+ Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
+ Reprints and permissions
+About this article
+Cite this article
+Zhong, L., Tian, X., Wang, J. et al. Soft sensor for omnidirectional posture perception in humanoid dexterous hands.
+ Microsyst Nanoeng 12, 60 (2026). https://doi.org/10.1038/s41378-026-01179-3
+Download citation
+Received: 28 March 2025
+Revised: 19 November 2025
+Accepted: 20 November 2025
+Published: 12 February 2026
+Version of record: 12 February 2026
+DOI: https://doi.org/10.1038/s41378-026-01179-3
+Share this article
+Anyone you share the following link with will be able to read this content:
+Get shareable linkSorry, a shareable link is not currently available for this article.
+Copy shareable link to clipboard
+ Provided by the Springer Nature SharedIt content-sharing initiative
+ Download PDF
+ Advertisement
+ Explore content
+ Research articles
+ Reviews & Analysis
+ News & Comment
+ Collections
+ Sign up for alerts
+ RSS feed
+ About the journal
+ Aims & Scope
+ Journal Information
+ Editors
+ About the Partner
+ Contact
+ Featured Articles
+ Open Access Fees and Funding
+ Publish with us
+ For Authors & Referees
+ Language editing services
+ Open access funding
+ Submit manuscript
+ Search
+ Search articles by subject, keyword or author
+ Show results from
+ All journals
+ This journal
+ Search
+ Advanced search
+ Quick links
+ Explore articles by subject
+ Find a job
+ Guide to authors
+ Editorial policies
+ Microsystems & Nanoengineering
+ (Microsyst Nanoeng)
+ ISSN 2055-7434 (online)
+ nature.com footer links
+ About Nature Portfolio
+ About us
+ Press releases
+ Press office
+ Contact us
+ Discover content
+ Journals A-Z
+ Articles by subject
+ protocols.io
+ Nature Index
+ Publishing policies
+ Nature portfolio policies
+ Open access
+ Author & Researcher services
+ Reprints & permissions
+ Research data
+ Language editing
+ Scientific editing
+ Nature Masterclasses
+ Research Solutions
+ Libraries & institutions
+ Librarian service & tools
+ Librarian portal
+ Open research
+ Recommend to library
+ Advertising & partnerships
+ Advertising
+ Partnerships & Services
+ Media kits
+ Branded
+ content
+ Professional development
+ Nature Awards
+ Nature Careers
+ Nature 
+ Conferences
+ Regional websites
+ Nature Africa
+ Nature China
+ Nature India
+ Nature Japan
+ Nature Middle East
+ Privacy
+ Policy
+ Use
+ of cookies
+ Your privacy choices/Manage cookies
+ Legal
+ notice
+ Accessibility
+ statement
+ Terms & Conditions
+ Your US state privacy rights
+ © 2026 Springer Nature Limited

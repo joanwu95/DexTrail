@@ -1,0 +1,941 @@
+{
+  "checked_on": "2026-10-04",
+  "publications": {
+    "okada-1974": {
+      "publication": "Transactions of the Society of Instrument and Control Engineers",
+      "article_type": "Research article",
+      "sources": [],
+      "note": ""
+    },
+    "stanford-jpl-1982": {
+      "publication": "IJRR",
+      "article_type": "Research article",
+      "sources": [],
+      "note": ""
+    },
+    "utah-mit-1986": {
+      "publication": "ICRA 1986",
+      "article_type": "Conference paper",
+      "sources": [
+        {
+          "title": "IEEE · Utah/M.I.T. Dextrous Hand，ICRA 1986",
+          "url": "https://ieeexplore.ieee.org/document/1087395/",
+          "kind": "paper",
+          "locator": "出版页、作者记录或论文首页中的出处；时间与正文范围分开核验"
+        }
+      ],
+      "note": ""
+    },
+    "dlr-hand-i-1998": {
+      "publication": "ICRA 1998",
+      "article_type": "Conference paper",
+      "sources": [
+        {
+          "title": "Butterfass 等 · DLR’s Multisensory Articulated Hand，ICRA 1998",
+          "url": "https://www.dlr.de/en/rm/downloads/roboter_und_systeme/hand/icra98part1.pdf/@@download/file",
+          "kind": "paper",
+          "locator": "ICRA 1998 论文首页及机构、传感与系统架构；不以网页上传时间作为首发年"
+        }
+      ],
+      "note": "机构方案另见 ICRA 1998 原始论文；节点年份继续沿用公开展示记录。"
+    },
+    "dlr-hand-ii-2001": {
+      "publication": "ICRA 2001",
+      "article_type": "Conference paper",
+      "sources": [
+        {
+          "title": "DLR 文献库 · DLR-Hand II，ICRA 2001",
+          "url": "https://elib.dlr.de/11717/",
+          "kind": "paper",
+          "locator": "出版记录：ICRA 2001，109–114 页；2001-05-21 至 26，区别于文献库收录日期"
+        }
+      ],
+      "note": ""
+    },
+    "hit-dlr-2003": {
+      "publication": "ICRA 2003",
+      "article_type": "Conference paper",
+      "sources": [],
+      "note": ""
+    },
+    "dlr-hit-ii-2008": {
+      "publication": "IROS 2008",
+      "article_type": "Conference paper",
+      "sources": [],
+      "note": ""
+    },
+    "learning-in-hand-2018": {
+      "publication": "IJRR",
+      "article_type": "Research article",
+      "sources": [
+        {
+          "title": "IJRR · Learning dexterous in-hand manipulation",
+          "url": "https://journals.sagepub.com/doi/10.1177/0278364919887447",
+          "kind": "paper",
+          "locator": "期刊出版页：2019-11-18 OnlineFirst，39(1)，2020；节点保留 2018 预印本日期"
+        }
+      ],
+      "note": "正式论文于 2019-11-18 在线发表，编入 IJRR 39(1)（2020）；顶部期刊名不改变本节点的 2018 年预印本时间。"
+    },
+    "rubiks-cube-2019": {
+      "publication": "arXiv",
+      "article_type": "Preprint",
+      "sources": [],
+      "note": "已核查 arXiv 记录；尚未确认对应正式期刊或会议，标为预印本。"
+    },
+    "trifinger-2020": {
+      "publication": "CoRL 2020",
+      "article_type": "Conference paper",
+      "sources": [
+        {
+          "title": "PMLR · TriFinger，CoRL 2020",
+          "url": "https://proceedings.mlr.press/v155/wuthrich21a.html",
+          "kind": "paper",
+          "locator": "Proceedings of the 2020 Conference on Robot Learning，PMLR 155；论文集 2021 年出版"
+        }
+      ],
+      "note": "会议为 CoRL 2020，PMLR 论文集在 2021 年出版；节点仍采用 2020-08-08 预印本提交。"
+    },
+    "dexmv-2021": {
+      "publication": "ECCV 2022",
+      "article_type": "Conference paper",
+      "sources": [
+        {
+          "title": "DexMV · 作者项目页，ECCV 2022",
+          "url": "https://yzqin.github.io/dexmv/",
+          "kind": "official",
+          "locator": "出版页、作者记录或论文首页中的出处；时间与正文范围分开核验"
+        }
+      ],
+      "note": "作者项目页确认 ECCV 2022；保留 2021 年首次预印本公开日期。"
+    },
+    "dexgraspnet-2022": {
+      "publication": "ICRA 2023",
+      "article_type": "Conference paper",
+      "sources": [
+        {
+          "title": "北京大学 · DexGraspNet，ICRA 2023",
+          "url": "https://cfcs.pku.edu.cn/news/42cfcs241369.htm",
+          "kind": "official",
+          "locator": "出版页、作者记录或论文首页中的出处；时间与正文范围分开核验"
+        }
+      ],
+      "note": "作者机构确认 ICRA 2023；节点仍采用 2022 年首版预印本日期。"
+    },
+    "hora-2022": {
+      "publication": "CoRL 2022",
+      "article_type": "Conference paper",
+      "sources": [],
+      "note": "arXiv 作者 Comments 确认 CoRL 2022；节点采用首版提交日。"
+    },
+    "dextreme-2022": {
+      "publication": "ICRA 2023",
+      "article_type": "Conference paper",
+      "sources": [
+        {
+          "title": "DeXtreme · 作者更新稿与会议说明",
+          "url": "https://arxiv.org/abs/2210.13702",
+          "kind": "paper",
+          "locator": "v2 Comments：较短版本录用于 ICRA 2023；全文预印本与会议短版区分"
+        }
+      ],
+      "note": "作者更新稿说明较短版本录用于 ICRA 2023；节点保留 2022 年完整预印本公开时间。"
+    },
+    "unidexgrasp-2023": {
+      "publication": "CVPR 2023",
+      "article_type": "Conference paper",
+      "sources": [],
+      "note": "arXiv 作者 Comments 确认 Accepted to CVPR 2023。"
+    },
+    "leap-2023": {
+      "publication": "RSS 2023",
+      "article_type": "Conference paper",
+      "sources": [],
+      "note": ""
+    },
+    "dexcap-2024": {
+      "publication": "RSS 2024",
+      "article_type": "Conference paper",
+      "sources": [
+        {
+          "title": "RSS 2024 · DexCap 官方论文集",
+          "url": "https://roboticsproceedings.org/rss20/p043.pdf",
+          "kind": "paper",
+          "locator": "RSS XX 官方论文全文：首页与引用信息"
+        }
+      ],
+      "note": "正式出处为 RSS 2024；节点保留首版预印本时间。"
+    },
+    "anyrotate-2024": {
+      "publication": "CoRL 2024",
+      "article_type": "Conference paper",
+      "sources": [
+        {
+          "title": "AnyRotate · 作者项目页，CoRL 2024",
+          "url": "https://maxyang27896.github.io/anyrotate/",
+          "kind": "official",
+          "locator": "出版页、作者记录或论文首页中的出处；时间与正文范围分开核验"
+        }
+      ],
+      "note": "作者项目页确认 CoRL 2024；节点仍采用预印本首版日期。"
+    },
+    "eyesight-2024": {
+      "publication": "IROS 2024",
+      "article_type": "Conference paper",
+      "sources": [
+        {
+          "title": "EyeSight Hand · 作者项目页，IROS 2024",
+          "url": "https://eyesighthand.github.io/",
+          "kind": "official",
+          "locator": "出版页、作者记录或论文首页中的出处；时间与正文范围分开核验"
+        }
+      ],
+      "note": "作者项目页及 BibTeX 确认 IROS 2024；节点保留预印本时间。"
+    },
+    "dexgraspnet2-2024": {
+      "publication": "CoRL 2024",
+      "article_type": "Conference paper",
+      "sources": [
+        {
+          "title": "PMLR · DexGraspNet 2.0",
+          "url": "https://proceedings.mlr.press/v270/zhang25j.html",
+          "kind": "paper",
+          "locator": "第八届 CoRL 论文集 PMLR 270，5106–5133；2025 出版"
+        },
+        {
+          "title": "DexGraspNet 2.0 · 作者官方仓库",
+          "url": "https://github.com/PKU-EPIC/DexGraspNet2",
+          "kind": "repository",
+          "locator": "README 明确标注 CoRL 2024"
+        }
+      ],
+      "note": "会议为 CoRL 2024，PMLR 270 论文集于 2025 年出版；不将论文集年份替换为节点首版日期。"
+    },
+    "ftac-2025": {
+      "publication": "Nature Machine Intelligence",
+      "article_type": "Research article",
+      "sources": [],
+      "note": ""
+    },
+    "dexumi-2025": {
+      "publication": "CoRL 2025",
+      "article_type": "Conference paper",
+      "sources": [],
+      "note": ""
+    },
+    "adapt-teleop-2025": {
+      "publication": "npj Robotics",
+      "article_type": "Research article",
+      "sources": [],
+      "note": ""
+    },
+    "crawling-hand-2026": {
+      "publication": "Nature Communications",
+      "article_type": "Research article",
+      "sources": [],
+      "note": ""
+    },
+    "tactile-genesis-2026": {
+      "publication": "arXiv",
+      "article_type": "Preprint",
+      "sources": [],
+      "note": "已核查 arXiv 首版与更新记录，未确认正式期刊或会议；标为预印本。"
+    }
+  },
+  "hands": [
+    {
+      "id": "okada-hand",
+      "name": "Okada Artificial Fingers · 1974",
+      "event_id": "okada-1974",
+      "organization": "Electrotechnical Laboratory · Tokuji Okada",
+      "scope": "Okada Artificial Fingers · 1974 · 时间轴所引用的原始版本",
+      "summary": "三指、七个独立驱动关节：拇指一轴，另两指各三轴；结合接触与弯曲状态识别三维形状。",
+      "mechanics": "原文摘要明确各转动关节可独立驱动；七个关节轴与执行器清单分开，完整传动链仍待核。",
+      "sensing": "各指节表面提供 ON/OFF 触觉，关节力矩作为力觉；不将接触开关称为现代高分辨率触觉阵列。",
+      "control": "论文给出特定物体与装置上的形状识别实验，未据此确认阻抗控制、通用力控或学习控制。",
+      "interpretation": "以手与物体的接触获取被遮挡几何，适合研究触觉识别；分类结果不等于通用操作能力。",
+      "dof": 7,
+      "actuators": null,
+      "transmission": null,
+      "parts": [
+        [
+          "拇指",
+          "1",
+          "摘要称关节独立驱动",
+          "一轴转动"
+        ],
+        [
+          "另外两指（每指）",
+          "3",
+          "摘要称关节独立驱动",
+          "三轴转动"
+        ]
+      ],
+      "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+      "software": "已登记论文或官方技术入口；尚未核实本版本的 SDK、URDF、MJCF、MuJoCo、Isaac Sim、ROS 与公开数据集。",
+      "application": "抓握、感知与灵巧操作研究",
+      "product_status": "历史研究平台；当前供应与维护状态待核",
+      "facts": {
+        "country": "日本",
+        "fingers": 3
+      },
+      "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。"
+    },
+    {
+      "id": "stanford-jpl-hand",
+      "name": "Stanford/JPL Hand",
+      "event_id": "stanford-jpl-1982",
+      "organization": "Stanford University / JPL",
+      "scope": "Stanford/JPL Hand · 时间轴所引用的原始版本",
+      "summary": "三根三关节手指的多指研究手；1982 节点讨论运动与力的关系，不代表确定的硬件上市日。",
+      "mechanics": "NASA 原始历史资料确认三指、每指三关节；未将九个关节直接推为本记录已核定的九路主动轴或电机。",
+      "sensing": "本文重点是运动学与力分析；本版本触觉、力矩和关节传感器完整清单仍待核。",
+      "control": "Articulated Hands 分析多指系统的运动与作用力；控制理论不自动等于某一硬件已实现全部控制模式。",
+      "interpretation": "少量手指可研究多点接触和物体运动，但接触模型与实际机构误差仍需同时检查。",
+      "dof": null,
+      "actuators": null,
+      "transmission": null,
+      "parts": [
+        [
+          "整手",
+          "独立轴数待核",
+          "逐指耦合与分配见原始版本说明",
+          "NASA 原始历史资料确认三指、每指三关节；未将九个关节直接推为本记录已核定的九路主动轴或电机。"
+        ]
+      ],
+      "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+      "software": "已登记论文或官方技术入口；尚未核实本版本的 SDK、URDF、MJCF、MuJoCo、Isaac Sim、ROS 与公开数据集。",
+      "application": "抓握、感知与灵巧操作研究",
+      "product_status": "历史研究平台；当前供应与维护状态待核",
+      "facts": {
+        "country": "美国",
+        "fingers": 3
+      },
+      "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+      "extra_sources": [
+        {
+          "title": "NASA · Robot Hand，三指三关节历史说明",
+          "url": "https://ntrs.nasa.gov/citations/20020090918"
+        }
+      ]
+    },
+    {
+      "id": "utah-mit-hand",
+      "name": "Utah/MIT Dextrous Hand · Version III",
+      "event_id": "utah-mit-1986",
+      "organization": "University of Utah / MIT",
+      "scope": "Utah/MIT Dextrous Hand · Version III · 时间轴所引用的原始版本",
+      "summary": "四指、每指四轴；32 路气动执行器以拮抗腱索驱动 16 个关节轴。",
+      "mechanics": "外置气动执行器通过扁平腱带、滑轮和腕部路径传力；每个关节由两路拮抗驱动，不把 32 个执行器计为 32 个轴。",
+      "sensing": "论文描述关节位置和腱张力反馈；腕部布置 32 个张力传感器，可用于关节力矩估计。",
+      "control": "模块化平台用于控制、触觉与遥操作研究；作者说明柔顺系统在高位置环增益下存在稳定性取舍。",
+      "interpretation": "外置驱动降低手指运动部件的质量，重排模块可研究不同接触构型；气源、腱索路由和系统控制增加集成需求。",
+      "dof": 16,
+      "actuators": 32,
+      "transmission": "tendon-driven",
+      "parts": [
+        [
+          "四个相同手指（每指）",
+          "4",
+          "每轴两路拮抗气动执行器",
+          "四关节轴运动；32 路驱动对应 16 轴"
+        ]
+      ],
+      "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+      "software": "已登记论文或官方技术入口；尚未核实本版本的 SDK、URDF、MJCF、MuJoCo、Isaac Sim、ROS 与公开数据集。",
+      "application": "抓握、感知与灵巧操作研究",
+      "product_status": "历史研究平台；当前供应与维护状态待核",
+      "facts": {
+        "country": "美国",
+        "fingers": 4
+      },
+      "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+      "source": {
+        "title": "Jacobsen 等 · Design of the Utah/M.I.T. Dextrous Hand，1986",
+        "url": "https://people.csail.mit.edu/edsinger/raw/jacobsen_design_utah_hand.pdf",
+        "kind": "paper",
+        "locator": "原始论文首页、摘要与设计目标",
+        "verified_on": "2026-10-04"
+      }
+    },
+    {
+      "id": "barrett-hand-1993",
+      "name": "BarrettHand · 第一代（1993）",
+      "event_id": "barrett-1993",
+      "organization": "Barrett Technology / NASA Johnson Space Center",
+      "scope": "BarrettHand · 第一代（1993） · 时间轴所引用的原始版本",
+      "summary": "厂商历史页确认 1993 年与 NASA JSC 合作推出第一代 BarrettHand；与 BH8-280 分开。",
+      "mechanics": "历史回顾不足以确认第一代的逐指参数、驱动数和确切 BH8 型号；不复制 BH8-280 规格。",
+      "sensing": "首代位置、力和触觉配置在当前来源中未核定。",
+      "control": "官方记录确认产品推出，未提供可比的任务协议、控制带宽或操作成功率。",
+      "interpretation": "可用于追踪商业多指研究平台的出现；要分析机械迭代，仍需第一代手册与后代手册逐项对照。",
+      "dof": null,
+      "actuators": null,
+      "transmission": null,
+      "parts": [
+        [
+          "整手",
+          "独立轴数待核",
+          "逐指耦合与分配见原始版本说明",
+          "历史回顾不足以确认第一代的逐指参数、驱动数和确切 BH8 型号；不复制 BH8-280 规格。"
+        ]
+      ],
+      "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+      "software": "已登记论文或官方技术入口；尚未核实本版本的 SDK、URDF、MJCF、MuJoCo、Isaac Sim、ROS 与公开数据集。",
+      "application": "抓握、感知与灵巧操作研究",
+      "product_status": "历史商业平台；首代当前供应状态待核",
+      "facts": {
+        "country": "美国"
+      },
+      "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+      "family": "barrett-family",
+      "basis": "release"
+    },
+    {
+      "id": "dlr-hand-i",
+      "name": "DLR Hand I",
+      "event_id": "dlr-hand-i-1998",
+      "organization": "德国航空航天中心 · DLR",
+      "scope": "DLR Hand I · 时间轴所引用的原始版本",
+      "summary": "四指，每指三个独立运动轴；末节通过弹簧耦合随动。",
+      "mechanics": "两自由度基关节使用特制线性驱动单元，另一驱动单元置于近节，主动带动中节并耦合末节。",
+      "sensing": "各关节有角度与力矩传感，指面触觉薄膜检测接触区域；掌中立体视觉与指尖激光辅助视觉处理。",
+      "control": "局部手指控制器通过 SERCOS 与上层通信；1 ms 通信交换口径不能直接当作所有操作策略频率。",
+      "interpretation": "把驱动、传感与电子装进手内可减少前臂布置需求；高密度集成也使维护、布线和热管理需要单独评估。",
+      "dof": 12,
+      "actuators": 12,
+      "transmission": null,
+      "parts": [
+        [
+          "四个手指（每指）",
+          "3",
+          "末节随中节弹簧耦合",
+          "基关节两轴，指间主动运动一轴"
+        ]
+      ],
+      "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+      "software": "已登记论文或官方技术入口；尚未核实本版本的 SDK、URDF、MJCF、MuJoCo、Isaac Sim、ROS 与公开数据集。",
+      "application": "抓握、感知与灵巧操作研究",
+      "product_status": "历史研究平台；当前供应与维护状态待核",
+      "facts": {
+        "country": "德国",
+        "fingers": 4
+      },
+      "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+      "family": "dlr-family",
+      "milestone": "dlr-hand-i",
+      "source": {
+        "title": "DLR · Hand I 机构与感知",
+        "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hand-i-1998",
+        "kind": "official",
+        "locator": "出版页、作者记录或论文首页中的出处；时间与正文范围分开核验"
+      },
+      "extra_sources": [
+        {
+          "title": "Butterfass 等 · DLR’s Multisensory Articulated Hand，ICRA 1998",
+          "url": "https://www.dlr.de/en/rm/downloads/roboter_und_systeme/hand/icra98part1.pdf/@@download/file"
+        }
+      ],
+      "basis": "demonstration"
+    },
+    {
+      "id": "dlr-hit-hand-i",
+      "name": "HIT/DLR Hand · 2003 原型",
+      "event_id": "hit-dlr-2003",
+      "organization": "哈尔滨工业大学 / DLR",
+      "scope": "ICRA 2003 · work-in-progress 原型；后续 2004/2007 资料需按修订对照",
+      "summary": "四个相同模块手指，每指三主动轴、四关节；ICRA 2003 的 work-in-progress 配置。",
+      "mechanics": "商品化无刷电机结合减速与连杆；末端两关节刚性连杆耦合，不能独立控制。",
+      "sensing": "每指有三路关节角、三路关节力矩与电机位置反馈；论文还介绍指尖六轴力/力矩传感器。",
+      "control": "DSP 局部控制与串行通信服务于集成手；文献强调易制造和维护，不视为已完成批量制造验证。",
+      "interpretation": "通用驱动与模块化降低特制零件需求；耦合末节降低控制维度，同时限制独立指尖姿态。",
+      "dof": null,
+      "actuators": null,
+      "transmission": "hybrid-transmission",
+      "parts": [
+        [
+          "四个手指（每指）",
+          "3",
+          "末端两关节连杆耦合",
+          "基关节两轴＋指间屈伸一轴"
+        ]
+      ],
+      "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+      "software": "已登记论文或官方技术入口；尚未核实本版本的 SDK、URDF、MJCF、MuJoCo、Isaac Sim、ROS 与公开数据集。",
+      "application": "抓握、感知与灵巧操作研究",
+      "product_status": "历史研究平台；当前供应与维护状态待核",
+      "facts": {
+        "dof": "四指合计 12 个主动轴；原文另规划掌部构形轴，未确认原型整手总数",
+        "actuators": "四个指模块各 3 个电机；掌部额外驱动的原型实现待核",
+        "fingers": 4
+      },
+      "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。"
+    },
+    {
+      "id": "dlr-hit-hand-ii",
+      "name": "DLR/HIT Hand II",
+      "event_id": "dlr-hit-ii-2008",
+      "organization": "哈尔滨工业大学 / DLR",
+      "scope": "DLR/HIT Hand II · 时间轴所引用的原始版本",
+      "summary": "五指、每指三主动轴与四关节，总计 15 主动轴；论文列整手约 1.5 kg。",
+      "mechanics": "驱动与电子集成到五个相同指模块；末节经钢丝耦合，中节主动驱动；与四指 DLR Hand II 分开。",
+      "sensing": "原文描述位置、力/力矩及温度反馈，采用 DSP/FPGA 处理与通信。",
+      "control": "论文介绍实时控制体系和指尖约 10 N 的力指标；该指标不等于任意姿态抓握或操作成功率。",
+      "interpretation": "五个相同模块便于更换与制造，但关节数多于独立输入数，规划时仍需显式考虑耦合。",
+      "dof": 15,
+      "actuators": 15,
+      "transmission": "hybrid-transmission",
+      "parts": [
+        [
+          "五个相同手指（每指）",
+          "3",
+          "末端两关节钢丝耦合",
+          "基关节两轴＋指间屈伸一轴"
+        ]
+      ],
+      "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+      "software": "已登记论文或官方技术入口；尚未核实本版本的 SDK、URDF、MJCF、MuJoCo、Isaac Sim、ROS 与公开数据集。",
+      "application": "抓握、感知与灵巧操作研究",
+      "product_status": "历史研究平台；当前供应与维护状态待核",
+      "facts": {
+        "weight": "约 1.5 kg",
+        "fingers": 5
+      },
+      "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+      "extra_sources": [
+        {
+          "title": "DLR · DLR-HIT Hand II 官方项目",
+          "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hit-hand-ii"
+        }
+      ]
+    },
+    {
+      "id": "sdm-hand",
+      "name": "Highly Adaptive SDM Hand",
+      "event_id": "sdm-hand-2010",
+      "organization": "Harvard University / Yale University · Dollar / Howe",
+      "scope": "Highly Adaptive SDM Hand · 时间轴所引用的原始版本",
+      "summary": "四指八关节，由一个电机通过耦合传动驱动；柔顺关节被动适应接触。",
+      "mechanics": "SDM 将刚性连杆、柔顺关节和内部组件结合；单输入驱动不能形成八条独立关节轨迹。",
+      "sensing": "论文的抓握评价没有使用手部传感闭环；电机编码器用于判断堵转，不等于指尖触觉。",
+      "control": "通过电机堵转后减小电流的简单控制，测试定位误差和随机球体分布下的抓握。",
+      "interpretation": "用机构顺应容忍位置误差，适合适应性抓握；单电机方案的独立手内动作受到耦合约束。",
+      "dof": null,
+      "actuators": 1,
+      "transmission": "tendon-driven",
+      "parts": [
+        [
+          "四个双关节手指",
+          "整手 1 路输入",
+          "八关节柔顺与传动耦合",
+          "接触后被动包络物体"
+        ]
+      ],
+      "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+      "software": "已登记论文或官方技术入口；尚未核实本版本的 SDK、URDF、MJCF、MuJoCo、Isaac Sim、ROS 与公开数据集。",
+      "application": "抓握、感知与灵巧操作研究",
+      "product_status": "历史研究平台；当前供应与维护状态待核",
+      "facts": {
+        "country": "美国",
+        "dof": "8 个运动关节；1 路驱动，非 8 路独立主动轴",
+        "fingers": 4
+      },
+      "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。"
+    },
+    {
+      "id": "allegro-v1",
+      "name": "Allegro Hand V1.0",
+      "event_id": "allegro-v1-2012",
+      "organization": "WONIK Robotics · Allegro",
+      "scope": "Allegro Hand V1.0 · 时间轴所引用的原始版本",
+      "summary": "官方历史确认 Allegro Hand 第一代 V1.0 于 2012 年推出。",
+      "mechanics": "此次来源为厂商历史页；首代逐指轴数、执行器和内部减速结构待原始手册，不沿用 V4 或 V5。",
+      "sensing": "首代传感器配置待核；后代指尖触觉不视为 V1.0 标配。",
+      "control": "厂商确认其研究平台定位；具体 PID、力矩与学习实验需对应 V1.0 资料。",
+      "interpretation": "可作为研究平台产品历史入口；评估复现资源必须锁定硬件代际。",
+      "dof": null,
+      "actuators": null,
+      "transmission": null,
+      "parts": [
+        [
+          "整手",
+          "独立轴数待核",
+          "逐指耦合与分配见原始版本说明",
+          "此次来源为厂商历史页；首代逐指轴数、执行器和内部减速结构待原始手册，不沿用 V4 或 V5。"
+        ]
+      ],
+      "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+      "software": "已登记论文或官方技术入口；尚未核实本版本的 SDK、URDF、MJCF、MuJoCo、Isaac Sim、ROS 与公开数据集。",
+      "application": "抓握、感知与灵巧操作研究",
+      "product_status": "历史商业研究平台；V1.0 当前供应与维护待核",
+      "facts": {},
+      "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+      "family": "allegro-family",
+      "basis": "release"
+    },
+    {
+      "id": "qb-softhand-research",
+      "name": "qb SoftHand Research · 单电机",
+      "event_id": "qb-research-2018",
+      "organization": "qbrobotics",
+      "scope": "qb SoftHand Research · 单电机 · 时间轴所引用的原始版本",
+      "summary": "五指单电机腱驱软手；官方回顾记载 2018 年推出，并接入 UR+。",
+      "mechanics": "一个电机牵引腱索驱动五指协同开合，接触后被动适应物体；与双输入 SoftHand2 分开。",
+      "sensing": "本次历史资料未给出独立触觉或指尖力传感配置；机械柔顺不等于闭环感知。",
+      "control": "官方记录展示协作机器人接入与抓握协同；2019 年 Panda 集成是另一条系统接入记录。",
+      "interpretation": "减少动作输入便于构造抓握控制，但无法任意设置每个指关节；适合研究协同与被动适应。",
+      "dof": null,
+      "actuators": 1,
+      "transmission": "tendon-driven",
+      "parts": [
+        [
+          "整手",
+          "独立轴数待核",
+          "逐指耦合与分配见原始版本说明",
+          "一个电机牵引腱索驱动五指协同开合，接触后被动适应物体；与双输入 SoftHand2 分开。"
+        ]
+      ],
+      "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+      "software": "已登记论文或官方技术入口；尚未核实本版本的 SDK、URDF、MJCF、MuJoCo、Isaac Sim、ROS 与公开数据集。",
+      "application": "抓握、感知与灵巧操作研究",
+      "product_status": "官方单电机科研产品记录；具体当前修订另核",
+      "facts": {
+        "country": "意大利",
+        "fingers": 5
+      },
+      "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。"
+    },
+    {
+      "id": "shadow-dex-ee",
+      "name": "Shadow DEX-EE · 对称三指",
+      "event_id": "dexee-2024",
+      "organization": "Shadow Robot / Google DeepMind",
+      "scope": "Shadow DEX-EE · 对称三指 · 时间轴所引用的原始版本",
+      "summary": "对称三指、12 自由度，官方系列页列 4.1 kg；与 Classic 五指手分开。",
+      "mechanics": "每指四个运动轴；公开页强调关节顺应和快速力控制，完整电机数与传动剖面仍待规格书。",
+      "sensing": "位置、力与惯性反馈，指尖光学触觉及近/中指节三维触觉；传感单元数不计为运动自由度。",
+      "control": "2024 公告介绍内部 10 kHz 力环；这不是 ROS 主机策略频率。平台用于长时间机器人学习实验。",
+      "interpretation": "面向重复试错的可维护结构和触觉有助于学习研究；最耐用宣传缺乏统一测试协议，不能作为跨产品排名。",
+      "dof": 12,
+      "actuators": null,
+      "transmission": null,
+      "parts": [
+        [
+          "整手",
+          "12 个独立运动轴",
+          "逐指耦合与分配见原始版本说明",
+          "每指四个运动轴；公开页强调关节顺应和快速力控制，完整电机数与传动剖面仍待规格书。"
+        ]
+      ],
+      "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+      "software": "官方说明 ROS 集成；本次未确认公开 SDK、URDF/MJCF 与可运行仿真下载及版本匹配。",
+      "application": "抓握、感知与灵巧操作研究",
+      "product_status": "厂商公告提供标准配置采购",
+      "facts": {
+        "country": "英国",
+        "weight": "4.1 kg",
+        "fingers": 3
+      },
+      "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+      "family": "shadow-family",
+      "milestone": "shadow-dexee",
+      "basis": "release",
+      "extra_sources": [
+        {
+          "title": "Shadow · DEX-EE 系列规格",
+          "url": "https://shadowrobot.com/dex-ee_series/"
+        }
+      ]
+    },
+    {
+      "id": "tesollo-dg-5f-2024",
+      "name": "Tesollo DG-5F · 2024",
+      "event_id": "tesollo-dg5f-2024",
+      "organization": "Tesollo",
+      "scope": "Tesollo DG-5F · 2024 · 时间轴所引用的原始版本",
+      "summary": "五指，每指四个独立关节，共 20 DoF；官方回顾记载 2024 年在 IROS 展出。",
+      "mechanics": "采用厂商自研执行器，20 轴独立运动；现有历史稿不足以确认每轴传动与执行器精确配置。",
+      "sensing": "旧款触觉选件、位置和力反馈规格待 2024 手册；不套用 DG-5F-S 配置。",
+      "control": "来源确认产品推出和出口，未提供可比的操作成功率或控制带宽。",
+      "interpretation": "独立关节提供丰富姿态变量；集成时需结合尺寸、惯量和通信条件，不只看轴数。",
+      "dof": 20,
+      "actuators": null,
+      "transmission": null,
+      "parts": [
+        [
+          "整手",
+          "20 个独立运动轴",
+          "逐指耦合与分配见原始版本说明",
+          "采用厂商自研执行器，20 轴独立运动；现有历史稿不足以确认每轴传动与执行器精确配置。"
+        ]
+      ],
+      "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+      "software": "已登记论文或官方技术入口；尚未核实本版本的 SDK、URDF、MJCF、MuJoCo、Isaac Sim、ROS 与公开数据集。",
+      "application": "抓握、感知与灵巧操作研究",
+      "product_status": "2024 商业产品记录；与当前 M / S 型号按版本区分",
+      "facts": {
+        "fingers": 5
+      },
+      "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+      "basis": "release"
+    },
+    {
+      "id": "allegro-v5-2024",
+      "name": "Allegro Hand V5 · 2024 四指",
+      "event_id": "allegro-v5-2024",
+      "organization": "WONIK Robotics",
+      "scope": "Allegro Hand V5 · 2024 四指 · 时间轴所引用的原始版本",
+      "summary": "2024 发布稿的四指 V5，每指四自由度，共 16；区别于当前三指 V5 产品页。",
+      "mechanics": "发布稿确认四指多关节结构并改善指间裸露线缆；完整内部传动和电机清单仍待本版手册。",
+      "sensing": "每个指尖引入触觉反馈，读取接触与压力；不将描述直接换算为独立三维测力精度。",
+      "control": "官方定位操作与机器人学习研究；载荷提升宣传的测试条件尚未核定。",
+      "interpretation": "增加指尖接触观测有助于组织接触控制；同名 V5 的指数量与接口需要按年份锁定。",
+      "dof": 16,
+      "actuators": null,
+      "transmission": null,
+      "parts": [
+        [
+          "整手",
+          "16 个独立运动轴",
+          "逐指耦合与分配见原始版本说明",
+          "发布稿确认四指多关节结构并改善指间裸露线缆；完整内部传动和电机清单仍待本版手册。"
+        ]
+      ],
+      "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+      "software": "已登记论文或官方技术入口；尚未核实本版本的 SDK、URDF、MJCF、MuJoCo、Isaac Sim、ROS 与公开数据集。",
+      "application": "抓握、感知与灵巧操作研究",
+      "product_status": "2024 四指发布配置；不覆盖现有三指 V5 和当前 V5 Plus 条目",
+      "facts": {
+        "fingers": 4
+      },
+      "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+      "family": "allegro-family",
+      "basis": "release"
+    },
+    {
+      "id": "unitree-dex5-2025",
+      "name": "Unitree Dex5 · 2025 展示版",
+      "event_id": "unitree-dex5-2025",
+      "organization": "宇树科技 · Unitree",
+      "scope": "Unitree Dex5 · 2025 展示版 · 时间轴所引用的原始版本",
+      "summary": "2025 官方展示的五指 Dex5，20 个运动自由度中含 16 个主动和 4 个被动自由度。",
+      "mechanics": "视频给出构型与主动/被动总数；逐指传动、执行器数量和型号修订未确认，不与 Dex5-1 或 Dex5-S 合并。",
+      "sensing": "本版位置、力与触觉具体配置仍需原始规格，不能从外观或后代型号推断。",
+      "control": "官方动作展示说明平台可执行所示动作，尚无统一物体集、失败判据与长期评测。",
+      "interpretation": "保留原始展示配置便于追踪产品发展；总关节数与可独立命令的运动变量需分开比较。",
+      "dof": 16,
+      "actuators": null,
+      "transmission": null,
+      "parts": [
+        [
+          "整手",
+          "16 个独立运动轴",
+          "逐指耦合与分配见原始版本说明",
+          "视频给出构型与主动/被动总数；逐指传动、执行器数量和型号修订未确认，不与 Dex5-1 或 Dex5-S 合并。"
+        ]
+      ],
+      "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+      "software": "已登记论文或官方技术入口；尚未核实本版本的 SDK、URDF、MJCF、MuJoCo、Isaac Sim、ROS 与公开数据集。",
+      "application": "抓握、感知与灵巧操作研究",
+      "product_status": "2025 公开展示配置；与当前在售型号对应待核",
+      "facts": {
+        "country": "中国",
+        "dof": "20 个运动自由度：16 主动＋4 被动",
+        "fingers": 5
+      },
+      "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+      "basis": "demonstration"
+    },
+    {
+      "id": "figure-03-hand",
+      "name": "Figure 03 Hand",
+      "event_id": "figure03-2025",
+      "organization": "Figure AI",
+      "scope": "Figure 03 Hand · 时间轴所引用的原始版本",
+      "summary": "Figure 03 手部集成掌部相机、柔顺指尖与自研指尖触觉，服务于 Helix 操作系统。",
+      "mechanics": "原始发布稿介绍指尖柔顺与接触面积变化；手部主动轴、驱动数、重量和传动链没有核定。",
+      "sensing": "掌部相机提供近距离视觉，指尖触觉观测接触；检测微小负荷的宣传指标不等同完整测力精度。",
+      "control": "Helix 02 联合掌部视觉、指尖触觉和本体感知输出全身与手指动作；任务表现属于完整机器人系统。",
+      "interpretation": "近距视觉可补充头部相机遮挡时的信息，触觉支持接触判断；不能把全身系统演示全部归因于裸手硬件。",
+      "dof": null,
+      "actuators": null,
+      "transmission": null,
+      "parts": [
+        [
+          "整手",
+          "独立轴数待核",
+          "逐指耦合与分配见原始版本说明",
+          "原始发布稿介绍指尖柔顺与接触面积变化；手部主动轴、驱动数、重量和传动链没有核定。"
+        ]
+      ],
+      "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+      "software": "已登记论文或官方技术入口；尚未核实本版本的 SDK、URDF、MJCF、MuJoCo、Isaac Sim、ROS 与公开数据集。",
+      "application": "抓握、感知与灵巧操作研究",
+      "product_status": "Figure 03 整机内置手部；未核实单独对外供应",
+      "facts": {
+        "country": "美国"
+      },
+      "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+      "source": {
+        "title": "Figure · Introducing Figure 03",
+        "url": "https://www.figure.ai/news/introducing-figure-03",
+        "locator": "官网公告 2025-10-09；手掌相机、柔软指尖、自研触觉与制造目标；厂商陈述，未独立验证寿命或规模交付",
+        "kind": "official",
+        "verified_on": "2026-10-04"
+      },
+      "basis": "release",
+      "extra_sources": [
+        {
+          "title": "Figure · Helix 02 全身控制",
+          "url": "https://www.figure.ai/news/helix-02"
+        }
+      ]
+    },
+    {
+      "id": "yale-model-q",
+      "name": "Yale OpenHand Model Q",
+      "event_id": "compliant-finger-gaiting-2022",
+      "organization": "Yale University · OpenHand",
+      "scope": "Yale OpenHand Model Q · 时间轴所引用的原始版本",
+      "summary": "四个执行器控制四根欠驱动手指；两根独立精细抓握指与旋转包络指组配合换指。",
+      "mechanics": "一个电机驱动对置柔顺双指，另一电机旋转该指组，余下两电机分别腱驱另两指。",
+      "sensing": "2022 实验手无关节编码器或触觉；外部 RGB-D 相机估计物体六维位姿，不是无反馈系统。",
+      "control": "2022 论文结合柔顺性、多模式规划和视觉反馈完成换指及物体姿态调整。",
+      "interpretation": "四路驱动通过接触切换扩展可达操作，代价是状态观测依赖外部视觉和被动关节模型。",
+      "dof": null,
+      "actuators": 4,
+      "transmission": "tendon-driven",
+      "parts": [
+        [
+          "整手",
+          "独立轴数待核",
+          "逐指耦合与分配见原始版本说明",
+          "一个电机驱动对置柔顺双指，另一电机旋转该指组，余下两电机分别腱驱另两指。"
+        ]
+      ],
+      "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+      "software": "官方 Build 提供硬件文件与制造指南；当前未确认完整动力学模型和各软件运行版本。",
+      "application": "抓握、感知与灵巧操作研究",
+      "product_status": "历史研究平台；当前供应与维护状态待核",
+      "facts": {
+        "fingers": 4
+      },
+      "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+      "source": {
+        "title": "Yale · OpenHand Model Q",
+        "url": "https://www.eng.yale.edu/grablab/openhand/model_q.html",
+        "kind": "official",
+        "locator": "出版页、作者记录或论文首页中的出处；时间与正文范围分开核验"
+      },
+      "year": 2014,
+      "date": "2014",
+      "basis": "paper",
+      "time_source": {
+        "title": "Yale Model Q · ROBIO 2014 论文记录",
+        "url": "https://www.eng.yale.edu/grablab/openhand/model_q.html",
+        "kind": "official",
+        "locator": "出版页、作者记录或论文首页中的出处；时间与正文范围分开核验"
+      },
+      "date_note": "官方 Model Q 项目页引用 ROBIO 2014 的设计论文；用 2014 定位设计公开记录，2022 换指实验单独记录。",
+      "extra_sources": [
+        {
+          "title": "Morgan 等 · RA-L 2022 Model Q 实验与控制",
+          "url": "https://www.eng.yale.edu/grablab/pubs/Morgan_RAL2022.pdf"
+        }
+      ],
+      "models": [
+        {
+          "format": "CAD / 制造文件",
+          "status": "作者制造文件",
+          "detail": "官方 Model Q Build 入口提供制造资源；装配修订与许可须按对应文件核对。",
+          "sources": [
+            {
+              "title": "Yale · OpenHand Model Q",
+              "url": "https://www.eng.yale.edu/grablab/openhand/model_q.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "links": {
+    "okada-1974": [
+      "okada-hand"
+    ],
+    "stanford-jpl-1982": [
+      "stanford-jpl-hand"
+    ],
+    "utah-mit-1986": [
+      "utah-mit-hand"
+    ],
+    "barrett-1993": [
+      "barrett-hand-1993"
+    ],
+    "dlr-hand-i-1998": [
+      "dlr-hand-i"
+    ],
+    "hit-dlr-2003": [
+      "dlr-hit-hand-i"
+    ],
+    "dlr-hit-ii-2008": [
+      "dlr-hit-hand-ii"
+    ],
+    "sdm-hand-2010": [
+      "sdm-hand"
+    ],
+    "allegro-v1-2012": [
+      "allegro-v1"
+    ],
+    "qb-research-2018": [
+      "qb-softhand-research"
+    ],
+    "dexee-2024": [
+      "shadow-dex-ee"
+    ],
+    "tesollo-dg5f-2024": [
+      "tesollo-dg-5f-2024"
+    ],
+    "allegro-v5-2024": [
+      "allegro-v5-2024"
+    ],
+    "unitree-dex5-2025": [
+      "unitree-dex5-2025"
+    ],
+    "figure03-2025": [
+      "figure-03-hand"
+    ],
+    "compliant-finger-gaiting-2022": [
+      "yale-model-q"
+    ],
+    "schunk-sdh-2008": [
+      "schunk-sdh-2"
+    ],
+    "robotiq-2010": [
+      "robotiq-3f"
+    ],
+    "soft-hand-demonstrations-2016": [
+      "rbo-hand-2"
+    ],
+    "soft-hand-feedback-2023": [
+      "rbo-hand-3"
+    ],
+    "rubiks-cube-2019": [
+      "shadow-hand"
+    ],
+    "xynova-flex2-2026": [
+      "xynova-flex-2"
+    ],
+    "xynova-prima1-2026": [
+      "xynova-prima-1"
+    ],
+    "allegro-v6f-2026": [
+      "allegro-v6f"
+    ],
+    "helix02-2026": [
+      "figure-03-hand"
+    ],
+    "tactile-genesis-2026": [
+      "robotera-xhand1"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="686" height="392" viewBox="122 203 686 392" role="img"><title>Grasp matrix</title><desc>显示两个对称接触的位置，以及将四个接触力分量映射成 Fx、Fy、Mz 的具体矩阵。</desc>
+<rect width="960" height="720" fill="#f4f1ea"/>
+<polyline points="182.00,297.00 338.00,297.00 338.00,453.00 182.00,453.00 182.00,297.00" fill="none" stroke="#292b29" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="182.00,297.00 338.00,297.00 338.00,453.00 182.00,453.00" fill="#edeae3" stroke="#292b29" stroke-width="1.6" stroke-linejoin="round"/>
+<ellipse cx="182.00" cy="375.00" rx="3.50" ry="3.50" fill="#f4f1ea" stroke="#aa4d3e" stroke-width="1.5"/>
+<polyline points="182.00,391.00 182.00,359.00 158.00,359.00 158.00,391.00 182.00,391.00" fill="none" stroke="#696d67" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="182.00,391.00 182.00,359.00 158.00,359.00 158.00,391.00" fill="#f4f1ea" stroke="#696d67" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="158.00,365.00 148.00,373.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="158.00,375.00 148.00,383.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="158.00,385.00 148.00,393.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="182.00,375.00 242.00,375.00" fill="none" stroke="#aa4d3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="233.82,378.75 242.00,375.00 233.82,371.25" fill="none" stroke="#aa4d3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="182.00,375.00 182.00,308.00" fill="none" stroke="#696d67" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="185.75,316.18 182.00,308.00 178.25,316.18" fill="none" stroke="#696d67" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="164.00" y="418.00" font-size="16" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">C1</text>
+<ellipse cx="338.00" cy="375.00" rx="3.50" ry="3.50" fill="#f4f1ea" stroke="#aa4d3e" stroke-width="1.5"/>
+<polyline points="338.00,359.00 338.00,391.00 362.00,391.00 362.00,359.00 338.00,359.00" fill="none" stroke="#696d67" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="338.00,359.00 338.00,391.00 362.00,391.00 362.00,359.00" fill="#f4f1ea" stroke="#696d67" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="362.00,385.00 372.00,377.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="362.00,375.00 372.00,367.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="362.00,365.00 372.00,357.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="338.00,375.00 278.00,375.00" fill="none" stroke="#aa4d3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="286.18,371.25 278.00,375.00 286.18,378.75" fill="none" stroke="#aa4d3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="338.00,375.00 338.00,308.00" fill="none" stroke="#696d67" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="341.75,316.18 338.00,308.00 334.25,316.18" fill="none" stroke="#696d67" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="320.00" y="418.00" font-size="16" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">C2</text>
+<text x="260.00" y="543.00" font-size="17" fill="#696d67" font-family="Consolas, monospace" font-weight="400" text-anchor="middle">C1 = (−a,0)   C2 = (a,0)</text>
+<text x="503.00" y="250.00" font-size="20" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Contact forces → object wrench</text>
+<text x="503.00" y="311.00" font-size="27" fill="#aa4d3e" font-family="Consolas, monospace" font-weight="400" text-anchor="start">w = G f</text>
+<text x="548.00" y="370.00" font-size="24" fill="#292b29" font-family="Consolas, monospace" font-weight="400" text-anchor="start">[ 1   0   1   0 ]</text>
+<text x="548.00" y="406.00" font-size="24" fill="#292b29" font-family="Consolas, monospace" font-weight="400" text-anchor="start">[ 0   1   0   1 ]</text>
+<text x="548.00" y="442.00" font-size="24" fill="#292b29" font-family="Consolas, monospace" font-weight="400" text-anchor="start">[ 0  −a   0   a ]</text>
+<text x="503.00" y="491.00" font-size="18" fill="#292b29" font-family="Consolas, monospace" font-weight="400" text-anchor="start">f = [fx1, fy1, fx2, fy2]</text>
+<text x="503.00" y="525.00" font-size="18" fill="#292b29" font-family="Consolas, monospace" font-weight="400" text-anchor="start">w = [Fx, Fy, Mz]</text>
+<text x="503.00" y="569.00" font-size="16" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Forces must obey contact constraints</text>
+</svg>

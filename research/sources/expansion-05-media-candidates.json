@@ -1,0 +1,1118 @@
+{
+  "brainco-revo-1": {
+    "source": "https://www.brainco-hz.com/docs/revolimb-hand/revo1/parameters.html",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/hero.png",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/legacy/docs-sdk/revo1_dimensions_zh.jpg",
+        "alt": "img",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/legacy/docs-sdk/vqBsJXktUurIFegx.webp",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/legacy/docs-sdk/cZiyPoGNIlRKTUMn.webp",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/legacy/docs-sdk/VtPNvloRzBpYMdxI.webp",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/legacy/docs-sdk/ENwiXzQARnrOluFU.webp",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "brainco-revo-2": {
+    "source": "https://www.brainco-hz.com/docs/revolimb-hand/revo2/parameters.html",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/hero.png",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/legacy/docs-sdk/UZgpOKWeItmPRqxJ.webp",
+        "alt": "img",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/legacy/docs-sdk/WbXwhniecMNLxKDj.webp",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/legacy/docs-sdk/tnNAsYCIfrTZzRwh.webp",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/legacy/docs-sdk/gPBbsTYXRlaGhSdw.webp",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/legacy/docs-sdk/MFkRNSPsdvDjgmyV.webp",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/legacy/docs-sdk/rMIpaCKuxmEDVONS.webp",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/legacy/docs-sdk/szlYQOeiGTVUJjrA.webp",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/legacy/docs-sdk/AHENkjCgYuqDfotp.webp",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "brainco-revo-3": {
+    "source": "https://www.brainco-hz.com/docs/revolimb-hand/revo3/parameters.html",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/hero.png",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/revo3_rendering.png",
+        "alt": "Revo 3 仿生灵巧手",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/revo3_dimensions.png",
+        "alt": "Revo 3 产品尺寸图",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/revo3_dof_distribution.png",
+        "alt": "Revo 3 主动自由度分布图",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/revo3_accessories_overview.jpeg",
+        "alt": "Revo 3 配件清单图示",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/revo3_interface.png",
+        "alt": "Revo 3 物理接口与接插件定义图",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/revo3_connection.png",
+        "alt": "Revo 3 调试盒连接示意图",
+        "poster": ""
+      }
+    ]
+  },
+  "elephant-h100": {
+    "source": "https://www.elephantrobotics.com/en/mygripper-h100-en/",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://www.facebook.com/tr?id=268908177389695&ev=PageView&noscript=1",
+        "alt": "fbpx",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/06/cropped-大象logo-1.png",
+        "alt": "cropped 大象logo 1",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/06/组-1.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/06/shumei2对齐.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/06/m3对齐.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/06/nv4对齐.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/06/arduino2对齐.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/06/组-3.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2026/06/p1-260.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2018/07/cropped-site_id.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/12/mycntrollerS570.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/04/mycobot-pro-630.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2025/07/LOGO图案.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/01/myAGV_LIMOCobot双图圆角英文_20240122.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/03/导航图标_复制_03-2.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2025/07/LOGO%E5%9B%BE%E6%A1%88.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/01/Accessories.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/03/导航图标_复制_05.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/03/导航图标_复制_03-3.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/03/导航图标_复制_09.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/03/导航图标_复制_11.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2025/01/资源-9.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/01/套装.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/12/metacat11-1.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/03/导航图标_复制_17.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/01/metaDog.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/03/导航图标_复制_19-2.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/07/metapanda-1.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/07/导航图标_复制_14.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/07/WechatIMG441.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/06/metacat-配件.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/03/导航图标_复制_22.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/03/导航图标_复制_39.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/03/导航图标_复制_33.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/06/marscat配个.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/03/导航图标_复制_36.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/07/3.jpg",
+        "alt": "3",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/07/2.jpg",
+        "alt": "2",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/07/1.jpg",
+        "alt": "1",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/11/C-Series.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/11/P-Series.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/11/Joint-Module-M-Series.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2023/06/Higher-productivity-1.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2025/12/United_States.webp",
+        "alt": "USA Flag",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/08/pi-280.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/08/m5-280.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/08/jetsonanl.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/08/arduino.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/08/320-树莓派.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/08/320-m5-1.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/12/25621672302435_.pic_.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/08/mypalletizer-pi.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/08/mypalletizer-m5.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/08/mechArm树莓派.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/08/mechArm-买.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/08/双臂协同机器人.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/08/600-树莓派.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/09/车.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/08/夹爪.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/08/配件.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2023/01/27551673596650_.pic_.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/08/车.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/08/metacat.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/08/MarsCat.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/08/衣服1.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/08/铃铛.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/08/猫窝.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/08/衣服.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2022/08/电桩.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2025/01/指灵巧手-英文-2.png",
+        "alt": "指灵巧手 英文",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2025/01/WeChat_20250120161600.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2025/01/组-22.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2025/01/组-23.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2025/01/组-24.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2025/01/组-25.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2025/01/高度灵活.png",
+        "alt": "高度灵活",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2025/01/10档可调力矩.png",
+        "alt": "10档可调力矩",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/11/多种控制方式.png",
+        "alt": "多种控制方式",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2025/01/开源开放-1.png",
+        "alt": "开源开放",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/11/广泛兼容性.png",
+        "alt": "广泛兼容性",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2025/01/易于编程.png",
+        "alt": "易于编程",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/04/盒子.png",
+        "alt": "盒子",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/04/图层-3.png",
+        "alt": "图层 3",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2024/04/微信图片_20240410192726-1.png",
+        "alt": "微信图片 20240410192726",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2019/03/bottom_logo.png",
+        "alt": "bottom logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/2019/07/QRCode.png",
+        "alt": "QRCode",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/elementor/thumbs/facebook-q0j8wssp1fufe4w5vw8lrdh4d05yvk0taa4rwdq9lq.png",
+        "alt": "facebook",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/elementor/thumbs/youtube-q0j8zbz1gdb8ob7q3hnez8gtzdokm72rytevg7z2u6.png",
+        "alt": "youtube",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/elementor/thumbs/X_logo_2023-r23rhwp965ma2hxcfb2ouob55dnwj6yionufcokfqk.png",
+        "alt": "X logo 2023",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/elementor/thumbs/bkhets_logo-pr4ckoqsb7wpo1ha2g1h7v4e742w6d5cgnbts1o4jo.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/elementor/thumbs/linkedin-q0ja37am0i84irse7mjveimsnahgdh4jon45nimdxg.png",
+        "alt": "linkedin",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.elephantrobotics.com/wp-content/uploads/elementor/thumbs/discord-qbk1tc0k1b38fzt52y586xvp7csrv0ap7kiduo0gac.png",
+        "alt": "discord",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.facebook.com/tr?id=612884835856587&ev=PageView&noscript=1&cd%5Bpage_title%5D=myGripper+H100+en&cd%5Bpost_type%5D=page&cd%5Bpost_id%5D=40209&cd%5Bplugin%5D=PixelYourSite&cd%5Buser_role%5D=guest&cd%5Bevent_url%5D=www.elephantrobotics.com%2Fen%2Fmygripper-h100-en%2F",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "xpeng-iron-hand-2025": {
+    "source": "https://www.xpeng.com/technology/AI_Robot_Iron",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://a-cdn.xpeng.com//website/_next/static/media/logo.37ed1b9a.svg",
+        "alt": "XPENG LOGO",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://a-cdn.xpeng.com//website/_next/static/media/language-icon.17dc08bd.svg",
+        "alt": "language",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-08-20/1d10cdc4b3e94ccca8bc3a5bd6080c9b.png?name=header_L03&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cwebp%2Fquality%2CQ_80",
+        "alt": "header_L03",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-08-20/7622ead693aa4060b0da68d1e57a2f63.png?name=header_X9&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cwebp%2Fquality%2CQ_80",
+        "alt": "header_X9",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-08-20/6e0f8100b635433eb001f874264e9ee0.png?name=header_P7%2B&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cwebp%2Fquality%2CQ_80",
+        "alt": "header_P7+",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-08-20/f0023af50bfb4480bebcdf3a8a160f61.png?name=header_G9&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cwebp%2Fquality%2CQ_80",
+        "alt": "header_G9",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-08-20/73e24bd5169b493992c28cefdf3ecfa6.png?name=header_G6&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cwebp%2Fquality%2CQ_80",
+        "alt": "header_G6",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-08-20/faded5eddd8342f5a2b9012191df58c0.png?name=header_P7&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cwebp%2Fquality%2CQ_80",
+        "alt": "header_P7",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://a-cdn.xpeng.com//website/_next/static/media/close.0aff6061.svg",
+        "alt": "close",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-08-28/fa0a065bdb3640c1b6cee02919f377b5.mp4?name=AI+Robot+-+2+Robots+walking",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-08-28/192c007de45c468db945935f1c69cd05.jpg?name=Robot+History&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cwebp%2Fquality%2CQ_80",
+        "alt": "Robot History",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-08-28/e02b8e95a5614658a9f3c9c8dc8021c6.mp4?name=AI+Robot+2",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-08-28/14885028f502438684cabe3b545fcfa1.mp4?name=AI+Robot+1",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-08-28/36eff73149ba44479697faadb23f564f.mp4?name=AI+Robot+Dancing",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-08-28/5675d46163ef4cf8bfd938b9c3ed4b5b.mp4?name=AI+Robot+Tai+Chi",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-08-31/4a3eb64a33184f199d068b743cea7a04.jpeg?name=AI+Robot&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cwebp%2Fquality%2CQ_80",
+        "alt": "AI Robot",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-09-15/d18058c961aa45ac9e9f4c64ec392c70.jpeg?name=AI+Robot&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cwebp%2Fquality%2CQ_80",
+        "alt": "AI Robot",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-08-30/c428dfa4f1c74cafa60db53d74264b1f.jpeg?name=AI+Robot&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cwebp%2Fquality%2CQ_80",
+        "alt": "AI Robot",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-08-30/d18650eb7c4947bab0fa671c3f1396a6.jpeg?name=3+Turing+Chips&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cwebp%2Fquality%2CQ_80",
+        "alt": "3 Turing Chips",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-08-03/0bf1861efbe84acc91e040f42835dfb5.jpg?x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cwebp%2Fquality%2CQ_80",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-08-30/9accb3b81a1544a38be6bdf3174f2e0a.jpg?name=AI+Robot1&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cwebp%2Fquality%2CQ_80",
+        "alt": "AI Robot1",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-08-30/548f249a144c45d1b1a0e4e224e1addf.jpeg?name=AI+Robot&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cwebp%2Fquality%2CQ_80",
+        "alt": "AI Robot",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-08-30/b02b10fe3d494d88935e6ae552f1dcee.jpeg?name=AI+Robot&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cwebp%2Fquality%2CQ_80",
+        "alt": "AI Robot",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-08-30/6261e79c346b45e6a9c4a2b359f8ab9e.jpg?name=AI+Robot&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cwebp%2Fquality%2CQ_80",
+        "alt": "AI Robot",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-08-30/59539858dadc4e4793542778ff7e6a76.jpeg?name=AI+Robot&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cwebp%2Fquality%2CQ_80",
+        "alt": "AI Robot",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-08-30/f313b709d7b941e4845280e3df1e2cdd.jpg?name=AI+robot&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cwebp%2Fquality%2CQ_80",
+        "alt": "AI robot",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-09-11/7051b9a2965c4336a028d11dae845c65.mp4?name=AI+Robot+Mass+Production",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-08-03/e589fbfda2fe49e09970e885c42b0cc9.jpg?name=AU_IRON_interact&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cwebp%2Fquality%2CQ_80",
+        "alt": "AU_IRON_interact",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-08-03/076371fb7a494281835e765c6cce6d11.jpg?name=AU_IRON_different_roles&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cwebp%2Fquality%2CQ_80",
+        "alt": "AU_IRON_different_roles",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-08-03/4eba5c3ef740417788381bc2486acf03.jpg?name=AU_IRON_human+space&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cwebp%2Fquality%2CQ_80",
+        "alt": "AU_IRON_human space",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/xpwebsite/prod/2024-09-26/f6b84f3c3b764253b8557e0379354610.png?x-oss-process=image%2Fresize%2Cw_64%2Fformat%2Cwebp%2Fquality%2CQ_85",
+        "alt": "Twitter",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/xpwebsite/prod/2024-09-26/4fbdafe68b734ca9813bfa6e0454f297.png?x-oss-process=image%2Fresize%2Cw_64%2Fformat%2Cwebp%2Fquality%2CQ_85",
+        "alt": "Linkedin",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/xpwebsite/prod/2024-09-26/e118eaa088e541b19458bf88a0d145af.png?x-oss-process=image%2Fresize%2Cw_64%2Fformat%2Cwebp%2Fquality%2CQ_85",
+        "alt": "Instagram",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/xpwebsite/prod/2024-09-26/3a5a0f07049e46aaa46087afa17740ca.png?x-oss-process=image%2Fresize%2Cw_64%2Fformat%2Cwebp%2Fquality%2CQ_85",
+        "alt": "Facebook",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/xpwebsite/prod/2024-09-26/be12e877249f4d7088454b1147933998.png?x-oss-process=image%2Fresize%2Cw_64%2Fformat%2Cwebp%2Fquality%2CQ_85",
+        "alt": "Youtube",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://s-cdn.xpeng.com/xpwebsite/prod/2024-09-26/a28445a9d7734ef0a4d8daad7452af1a.png?x-oss-process=image%2Fresize%2Cw_64%2Fformat%2Cwebp%2Fquality%2CQ_85",
+        "alt": "Tiktok",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://a-cdn.xpeng.com/www/public/country/global.svg",
+        "alt": "country",
+        "poster": ""
+      },
+      {
+        "kind": "link",
+        "url": "https://www.googletagmanager.com/ns.html?id=GTM-TXT5RFX",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "link",
+        "url": "https://www.googletagmanager.com/ns.html?id=GTM-W9N66NV",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "tencent-trx-hand": {
+    "source": "https://arxiv.org/html/2304.05141v1",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/icons/smileybones-small.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/arxiv-logo-primary-light.svg",
+        "alt": "arXiv logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2304.05141v1/merged_front_1.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2304.05141v1/robot_hand.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2304.05141v1/reference_pose_notation_tactile_2.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2304.05141v1/merged_cmaes.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2304.05141v1/figs/initial_state_2.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2304.05141v1/figs/initial_state_3.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2304.05141v1/figs/initial_state_4.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2304.05141v1/line.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2304.05141v1/circle.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2304.05141v1/spiral.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2304.05141v1/eight.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2304.05141v1/tactile_analysis_3.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2304.05141v1/sticks_6.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2304.05141v1/comparison_learning_curve.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2304.05141v1/trajectory_stick_merge.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2304.05141v1/figs/bio/wenbin-2.jpg",
+        "alt": "[Uncaptioned image]",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2304.05141v1/figs/bio/bidanhuang.jpg",
+        "alt": "[Uncaptioned image]",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2304.05141v1/figs/bio/wwlee.jpg",
+        "alt": "[Uncaptioned image]",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2304.05141v1/figs/bio/sichengyang.jpg",
+        "alt": "[Uncaptioned image]",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2304.05141v1/figs/bio/yuzheng1.jpg",
+        "alt": "[Uncaptioned image]",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2304.05141v1/figs/bio/ZhibinLi2019.jpg",
+        "alt": "[Uncaptioned image]",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation.png",
+        "alt": "Simons Foundation",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation-international.png",
+        "alt": "Simons Foundation International",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/schmidt-sciences.png",
+        "alt": "Schmidt Sciences",
+        "poster": ""
+      }
+    ]
+  }
+}

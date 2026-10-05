@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="425" viewBox="125 186 720 425" role="img"><title>Internal force</title><desc>对向共线挤压力增大，但其合力与合力矩仍为零。</desc>
+<rect width="960" height="720" fill="#f4f1ea"/>
+<polyline points="185.00,306.00 335.00,306.00 335.00,456.00 185.00,456.00 185.00,306.00" fill="none" stroke="#292b29" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="185.00,306.00 335.00,306.00 335.00,456.00 185.00,456.00" fill="#edeae3" stroke="#292b29" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="185.00,397.00 185.00,365.00 161.00,365.00 161.00,397.00 185.00,397.00" fill="none" stroke="#696d67" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="185.00,397.00 185.00,365.00 161.00,365.00 161.00,397.00" fill="#f4f1ea" stroke="#696d67" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="161.00,371.00 151.00,379.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="161.00,381.00 151.00,389.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="161.00,391.00 151.00,399.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="335.00,365.00 335.00,397.00 359.00,397.00 359.00,365.00 335.00,365.00" fill="none" stroke="#696d67" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="335.00,365.00 335.00,397.00 359.00,397.00 359.00,365.00" fill="#f4f1ea" stroke="#696d67" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="359.00,391.00 369.00,383.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="359.00,381.00 369.00,373.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="359.00,371.00 369.00,363.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="185.00,381.00 230.00,381.00" fill="none" stroke="#aa4d3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="221.82,384.75 230.00,381.00 221.82,377.25" fill="none" stroke="#aa4d3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="335.00,381.00 290.00,381.00" fill="none" stroke="#aa4d3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="298.18,377.25 290.00,381.00 298.18,384.75" fill="none" stroke="#aa4d3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="260.00" y="234.00" font-size="21" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="middle">Gentle squeeze</text>
+<text x="260.00" y="525.00" font-size="20" fill="#292b29" font-family="Consolas, monospace" font-weight="400" text-anchor="middle">Net wrench = 0</text>
+<polyline points="635.00,306.00 785.00,306.00 785.00,456.00 635.00,456.00 635.00,306.00" fill="none" stroke="#292b29" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="635.00,306.00 785.00,306.00 785.00,456.00 635.00,456.00" fill="#edeae3" stroke="#292b29" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="635.00,397.00 635.00,365.00 611.00,365.00 611.00,397.00 635.00,397.00" fill="none" stroke="#696d67" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="635.00,397.00 635.00,365.00 611.00,365.00 611.00,397.00" fill="#f4f1ea" stroke="#696d67" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="611.00,371.00 601.00,379.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="611.00,381.00 601.00,389.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="611.00,391.00 601.00,399.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="785.00,365.00 785.00,397.00 809.00,397.00 809.00,365.00 785.00,365.00" fill="none" stroke="#696d67" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="785.00,365.00 785.00,397.00 809.00,397.00 809.00,365.00" fill="#f4f1ea" stroke="#696d67" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="809.00,391.00 819.00,383.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="809.00,381.00 819.00,373.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="809.00,371.00 819.00,363.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="635.00,381.00 700.00,381.00" fill="none" stroke="#aa4d3e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="691.82,384.75 700.00,381.00 691.82,377.25" fill="none" stroke="#aa4d3e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="785.00,381.00 720.00,381.00" fill="none" stroke="#aa4d3e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="728.18,377.25 720.00,381.00 728.18,384.75" fill="none" stroke="#aa4d3e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="710.00" y="234.00" font-size="21" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="middle">Stronger squeeze</text>
+<text x="710.00" y="525.00" font-size="20" fill="#292b29" font-family="Consolas, monospace" font-weight="400" text-anchor="middle">Net wrench = 0</text>
+<text x="480.00" y="586.00" font-size="22" fill="#aa4d3e" font-family="Consolas, monospace" font-weight="400" text-anchor="middle">G f_int = 0</text>
+</svg>

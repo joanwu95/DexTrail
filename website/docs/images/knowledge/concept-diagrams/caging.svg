@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="834" height="429" viewBox="41 193 834 429" role="img"><title>Caging</title><desc>圆形物体在固定围笼内部平移转动，无法穿过比物体直径小的开口。</desc>
+<rect width="960" height="720" fill="#f4f1ea"/>
+<polyline points="662.00,355.00 662.00,225.00 295.00,225.00 295.00,550.00 662.00,550.00 662.00,405.00" fill="none" stroke="#292b29" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="295.00" cy="225.00" rx="5.00" ry="5.00" fill="#f4f1ea" stroke="#696d67" stroke-width="1.5"/>
+<ellipse cx="295.00" cy="550.00" rx="5.00" ry="5.00" fill="#f4f1ea" stroke="#696d67" stroke-width="1.5"/>
+<ellipse cx="662.00" cy="225.00" rx="5.00" ry="5.00" fill="#f4f1ea" stroke="#696d67" stroke-width="1.5"/>
+<ellipse cx="662.00" cy="550.00" rx="5.00" ry="5.00" fill="#f4f1ea" stroke="#696d67" stroke-width="1.5"/>
+<ellipse cx="552.08" cy="365.84" rx="52.00" ry="52.00" fill="#edeae3" stroke="#292b29" stroke-width="1.8"/>
+<polyline points="552.08,365.84 546.63,400.25" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="546.06" cy="403.85" rx="3.00" ry="3.00" fill="#aa4d3e" stroke="#aa4d3e" stroke-width="1"/>
+<polyline points="348.00,386.00 606.00,386.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 7"/>
+<polyline points="610.00,380.00 648.00,380.00" fill="none" stroke="#aa4d3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="639.82,383.75 648.00,380.00 639.82,376.25" fill="none" stroke="#aa4d3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="714.00" y="353.00" font-size="18" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Narrow gate</text>
+<text x="714.00" y="381.00" font-size="16" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Object cannot pass</text>
+<polyline points="710.00,401.00 685.00,401.00 662.00,380.00" fill="none" stroke="#696d67" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="66.00" y="301.00" font-size="20" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Room to move</text>
+<text x="66.00" y="334.00" font-size="18" fill="#aa4d3e" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">No escape path</text>
+<polyline points="195.00,350.00 238.00,350.00 295.00,350.00" fill="none" stroke="#696d67" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="478.00" y="595.00" font-size="17" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="middle">Fixed cage · moving object</text>
+</svg>

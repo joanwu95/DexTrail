@@ -1,0 +1,1013 @@
+target: 200
+hardware_notes: 198
+existing_website_records: 2
+total_records: 200
+new_records:
+- id: yale-model-q
+  name: Yale Model Q
+  category: research-hand
+  source: https://www.eng.yale.edu/grablab/openhand/model_q.html
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/yale-model-q.md
+- id: yale-model-vf
+  name: Yale Model VF
+  category: research-gripper
+  source: https://www.eng.yale.edu/grablab/openhand/model_vf.html
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/yale-model-vf.md
+- id: yale-model-w
+  name: Yale Model W
+  category: research-gripper
+  source: https://www.eng.yale.edu/grablab/openhand/
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/yale-model-w.md
+- id: yale-model-t42
+  name: Yale Model T42
+  category: research-gripper
+  source: https://www.eng.yale.edu/grablab/openhand/model_t42.html
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/yale-model-t42.md
+- id: yale-stewart-hand
+  name: Yale Stewart Hand
+  category: research-hand
+  source: https://www.eng.yale.edu/grablab/openhand/stewart_hand.html
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/yale-stewart-hand.md
+- id: yale-model-m2
+  name: Yale Model M2
+  category: research-gripper
+  source: https://www.eng.yale.edu/grablab/openhand/model_m2.html
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/yale-model-m2.md
+- id: yale-model-m
+  name: Yale Model M
+  category: research-gripper
+  source: https://www.eng.yale.edu/grablab/openhand/model_m2.html
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/yale-model-m.md
+- id: yale-sphinx
+  name: Yale Sphinx Hand
+  category: research-hand
+  source: https://www.eng.yale.edu/grablab/openhand/sphinx_hand.html
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/yale-sphinx.md
+- id: yale-model-f3
+  name: Yale Model F3
+  category: research-gripper
+  source: https://www.eng.yale.edu/grablab/openhand/model_f3.html
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/yale-model-f3.md
+- id: dlr-hit-hand-ii
+  name: DLR-HIT Hand II
+  category: research-hand
+  source: https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hit-hand-ii
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/dlr-hit-hand-ii.md
+- id: dlr-david
+  name: DLR David / Awiwi Hand
+  category: research-hand
+  source: https://www.dlr.de/en/rm/research/robotic-systems/hands/david-hand
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/dlr-david.md
+- id: dlr-smarthand
+  name: DLR SmartHand
+  category: research-hand
+  source: https://www.dlr.de/en/rm/research/robotic-systems/hands/smarthand
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/dlr-smarthand.md
+- id: dlr-dexhand
+  name: DLR DEXHAND
+  category: research-hand
+  source: https://www.dlr.de/en/rm/research/robotic-systems/hands/dexhand-2012-2015
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/dlr-dexhand.md
+- id: dlr-spacehand
+  name: DLR Spacehand
+  category: research-hand
+  source: https://www.dlr.de/en/rm/research/robotic-systems/hands/spacehand-2015-2018
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/dlr-spacehand.md
+- id: dlr-hand-i
+  name: DLR Hand I
+  category: research-hand
+  source: https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hand-i-1998
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/dlr-hand-i.md
+- id: tesollo-dg-5f-m
+  name: Tesollo DG-5F-M
+  category: commercial-hand
+  source: https://www.tesollo.com/products/grippers/dg-5f-m
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/tesollo-dg-5f-m.md
+- id: tesollo-dg-4f
+  name: Tesollo DG-4F
+  category: commercial-hand
+  source: https://www.tesollo.com/products/grippers/dg-4f
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/tesollo-dg-4f.md
+- id: tesollo-dg-3f-m
+  name: Tesollo DG-3F-M
+  category: commercial-hand
+  source: https://www.tesollo.com/products/grippers/dg-3f-m
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/tesollo-dg-3f-m.md
+- id: tesollo-dg-3f-b
+  name: Tesollo DG-3F-B
+  category: commercial-hand
+  source: https://www.tesollo.com/products/grippers/dg-3f-b
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/tesollo-dg-3f-b.md
+- id: tesollo-dg-2f
+  name: Tesollo DG-2F（多关节版）
+  category: commercial-gripper
+  source: https://www.tesollo.com/products/grippers/dg-2f
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/tesollo-dg-2f.md
+- id: aero-hand-open
+  name: Aero Hand Open
+  category: 研究灵巧手
+  source: https://arxiv.org/abs/2608.28578
+  reading_scope: 作者论文摘要及书目信息已读；全文、实验协议和开源文件仍待逐项核查
+  note: hands/aero-hand-open.md
+- id: chen-qin-tactile-hand
+  name: Chen/Qin 分布式触觉腱驱手
+  category: 研究灵巧手
+  source: https://arxiv.org/abs/2608.25547
+  reading_scope: 作者论文摘要及书目信息已读；全文、实验协议和开源文件仍待逐项核查
+  note: hands/chen-qin-tactile-hand.md
+- id: handroid
+  name: Handroid
+  category: 可重构研究手
+  source: https://arxiv.org/abs/2607.16187
+  reading_scope: 作者论文摘要及书目信息已读；全文、实验协议和开源文件仍待逐项核查
+  note: hands/handroid.md
+- id: midas-hand
+  name: MIDAS Hand
+  category: 研究灵巧手
+  source: https://arxiv.org/abs/2607.14487
+  reading_scope: 作者论文摘要及书目信息已读；全文、实验协议和开源文件仍待逐项核查
+  note: hands/midas-hand.md
+- id: dexlink-hand
+  name: DexLink Hand
+  category: 研究灵巧手
+  source: https://arxiv.org/abs/2606.17418
+  reading_scope: 作者论文摘要及书目信息已读；全文、实验协议和开源文件仍待逐项核查
+  note: hands/dexlink-hand.md
+- id: mcr-bionic-hand
+  name: MCR-Bionic Hand
+  category: 仿生研究手
+  source: https://arxiv.org/abs/2606.13601
+  reading_scope: 作者论文摘要及书目信息已读；全文、实验协议和开源文件仍待逐项核查
+  note: hands/mcr-bionic-hand.md
+- id: zhang-wang-hughes-modular-hand
+  name: Zhang/Wang/Hughes 模块化优化手
+  category: 研究灵巧手
+  source: https://arxiv.org/abs/2606.11826
+  reading_scope: 作者论文摘要及书目信息已读；全文、实验协议和开源文件仍待逐项核查
+  note: hands/zhang-wang-hughes-modular-hand.md
+- id: ruka-v2
+  name: RUKA v2
+  category: 研究灵巧手版本
+  source: https://arxiv.org/abs/2603.26660
+  reading_scope: 作者论文摘要及书目信息已读；全文、实验协议和开源文件仍待逐项核查
+  note: hands/ruka-v2.md
+- id: plato-hand
+  name: PLATO Hand
+  category: 研究灵巧手
+  source: https://arxiv.org/abs/2602.05156
+  reading_scope: 作者论文摘要及书目信息已读；全文、实验协议和开源文件仍待逐项核查
+  note: hands/plato-hand.md
+- id: suction-leap-hand
+  name: SLeap / Suction LEAP Hand
+  category: LEAP吸附改装
+  source: https://arxiv.org/abs/2509.20646
+  reading_scope: 作者论文摘要及书目信息已读；全文、实验协议和开源文件仍待逐项核查
+  note: hands/suction-leap-hand.md
+- id: motif-hand
+  name: MOTIF Hand
+  category: LEAP多模态改装
+  source: https://arxiv.org/abs/2506.19201
+  reading_scope: 作者论文摘要及书目信息已读；全文、实验协议和开源文件仍待逐项核查
+  note: hands/motif-hand.md
+- id: rapid-hand
+  name: RAPID Hand
+  category: 研究灵巧手
+  source: https://arxiv.org/abs/2506.07490
+  reading_scope: 作者论文摘要及书目信息已读；全文、实验协议和开源文件仍待逐项核查
+  note: hands/rapid-hand.md
+- id: eyesight-hand
+  name: EyeSight Hand
+  category: 视觉触觉研究手
+  source: https://arxiv.org/abs/2408.06265
+  reading_scope: 作者论文摘要及书目信息已读；全文、实验协议和开源文件仍待逐项核查
+  note: hands/eyesight-hand.md
+- id: ilda-hand
+  name: ILDA Hand
+  category: 连杆研究手
+  source: https://www.nature.com/articles/s41467-021-27261-0
+  reading_scope: 期刊正文摘要及出版信息已读；力测试协议与完整技术表仍待复核
+  note: hands/ilda-hand.md
+- id: zheng-active-surface-gripper
+  name: Zheng 主动表面可重构夹爪
+  category: 研究夹爪
+  source: https://arxiv.org/abs/2608.26883
+  reading_scope: 作者论文摘要及书目信息已读；全文、实验协议和开源文件仍待逐项核查
+  note: hands/zheng-active-surface-gripper.md
+- id: koala-gripper
+  name: Koala Gripper
+  category: 研究夹爪
+  source: https://arxiv.org/abs/2608.20546
+  reading_scope: 作者论文摘要及书目信息已读；全文、实验协议和开源文件仍待逐项核查
+  note: hands/koala-gripper.md
+- id: vtap-gripper
+  name: VTAP Gripper
+  category: 研究夹爪
+  source: https://arxiv.org/abs/2607.15448
+  reading_scope: 作者论文摘要及书目信息已读；全文、实验协议和开源文件仍待逐项核查
+  note: hands/vtap-gripper.md
+- id: belt-finger
+  name: Belt-Finger
+  category: 主动表面研究夹爪
+  source: https://arxiv.org/abs/2606.20193
+  reading_scope: 作者论文摘要及书目信息已读；全文、实验协议和开源文件仍待逐项核查
+  note: hands/belt-finger.md
+- id: mm-hand
+  name: MM-Hand
+  category: 远置腱驱研究手
+  source: https://arxiv.org/abs/2604.17245
+  reading_scope: 作者论文摘要及书目信息已读；全文、实验协议和开源文件仍待逐项核查
+  note: hands/mm-hand.md
+- id: min-kim-shim-bowden-hand
+  name: Min/Kim/Shim 拮抗Bowden手
+  category: 远置腱驱研究手
+  source: https://arxiv.org/abs/2512.24657
+  reading_scope: 作者论文摘要及书目信息已读；全文、实验协议和开源文件仍待逐项核查
+  note: hands/min-kim-shim-bowden-hand.md
+- id: isyhand
+  name: ISyHand
+  category: 可动掌研究手
+  source: https://arxiv.org/abs/2509.26236
+  reading_scope: 作者论文摘要及书目信息已读；全文、实验协议和开源文件仍待逐项核查
+  note: hands/isyhand.md
+- id: sabd-hand
+  name: SABD Hand
+  category: 研究灵巧手
+  source: https://arxiv.org/abs/2509.13074
+  reading_scope: 作者论文摘要及书目信息已读；全文、实验协议和开源文件仍待逐项核查
+  note: hands/sabd-hand.md
+- id: vulcan-v3
+  name: VulcanV3
+  category: 手语研究手
+  source: https://arxiv.org/abs/2509.03690
+  reading_scope: 作者论文摘要及书目信息已读；全文、实验协议和开源文件仍待逐项核查
+  note: hands/vulcan-v3.md
+- id: ruka-v1
+  name: RUKA v1
+  category: 研究灵巧手版本
+  source: https://arxiv.org/abs/2504.13165
+  reading_scope: 作者论文摘要及书目信息已读；全文、实验协议和开源文件仍待逐项核查
+  note: hands/ruka-v1.md
+- id: orca-hand
+  name: ORCA Hand
+  category: 研究灵巧手
+  source: https://arxiv.org/abs/2504.04259
+  reading_scope: 作者论文摘要及书目信息已读；全文、实验协议和开源文件仍待逐项核查
+  note: hands/orca-hand.md
+- id: bidexhand
+  name: BiDexHand
+  category: 研究灵巧手
+  source: https://arxiv.org/abs/2504.14712
+  reading_scope: 作者论文摘要、书目信息已读；全文实验表和资源文件待核查
+  note: hands/bidexhand.md
+- id: bariflex
+  name: BaRiFlex
+  category: 研究夹爪
+  source: https://arxiv.org/abs/2312.05323
+  reading_scope: 作者论文摘要、书目信息已读；全文实验表和资源文件待核查
+  note: hands/bariflex.md
+- id: correll-perceptive-gripper
+  name: Correll 感知力控夹爪
+  category: 研究夹爪
+  source: https://arxiv.org/abs/2402.06018
+  reading_scope: 作者论文摘要、书目信息已读；全文实验表和资源文件待核查
+  note: hands/correll-perceptive-gripper.md
+- id: romeo-hand
+  name: ROMEO 手掌与手指系统
+  category: 研究灵巧手
+  source: https://arxiv.org/abs/2404.08227
+  reading_scope: 作者论文摘要、书目信息已读；全文实验表和资源文件待核查
+  note: hands/romeo-hand.md
+- id: dash-hand
+  name: DASH
+  category: 软体研究手
+  source: https://arxiv.org/abs/2306.04784
+  reading_scope: 作者论文摘要、书目信息已读；全文实验表和资源文件待核查
+  note: hands/dash-hand.md
+- id: kengoro-hand
+  name: Kengoro 承重肌骨手
+  category: 人形机器人研究手
+  source: https://arxiv.org/abs/2403.17459
+  reading_scope: 作者论文摘要、书目信息已读；全文实验表和资源文件待核查
+  note: hands/kengoro-hand.md
+- id: matusik-pneumatic-hand
+  name: Matusik 多材料打印气动手
+  category: 软体研究手
+  source: https://arxiv.org/abs/2310.16280
+  reading_scope: 作者论文摘要、书目信息已读；全文实验表和资源文件待核查
+  note: hands/matusik-pneumatic-hand.md
+- id: leap-hand-v2
+  name: LEAP Hand v2
+  category: 研究灵巧手版本
+  source: https://v2.leaphand.com/
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/leap-hand-v2.md
+- id: brainco-revo-1
+  name: BrainCo Revo 1
+  category: 商业灵巧手
+  source: https://www.brainco-hz.com/docs/revolimb-hand/en/revo1/parameters.html
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/brainco-revo-1.md
+- id: brainco-revo-2
+  name: BrainCo Revo 2
+  category: 商业灵巧手
+  source: https://www.brainco-hz.com/docs/revolimb-hand/en/revo2/parameters.html
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/brainco-revo-2.md
+- id: brainco-revo-3
+  name: BrainCo Revo 3
+  category: 商业灵巧手
+  source: https://www.brainco-hz.com/docs/revolimb-hand/en/revo3/parameters.html
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/brainco-revo-3.md
+- id: brainrobotics-prosthetic-hand
+  name: BrainRobotics 智能仿生假肢手
+  category: 假肢
+  source: https://www.brainco.cn/en-US/products/brain-robotics
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/brainrobotics-prosthetic-hand.md
+- id: paxini-dexh13
+  name: PaXini DexH13
+  category: 商业灵巧手
+  source: https://paxini.com/robot/dex/gen2
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/paxini-dexh13.md
+- id: inspire-rh56bfx
+  name: 因时 RH56BFX
+  category: 商业灵巧手
+  source: https://en.inspire-robots.com/product/rh56bfx/
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/inspire-rh56bfx.md
+- id: inspire-rh56e2
+  name: 因时 RH56E2
+  category: 商业灵巧手
+  source: https://www.inspire-robots.com/dexterous%20hands/rh56dftp-series/
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/inspire-rh56e2.md
+- id: inspire-rh56f1
+  name: 因时 RH56F1
+  category: 商业灵巧手
+  source: https://en.inspire-robots.com/product/rh56f1/
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/inspire-rh56f1.md
+- id: inspire-rh5dg2
+  name: 因时 RH5DG2
+  category: 商业灵巧手
+  source: https://en.inspire-robots.com/product/rh5dg2/
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/inspire-rh5dg2.md
+- id: inspire-rh56h1
+  name: 因时 RH56H1
+  category: 商业灵巧手
+  source: https://en.inspire-robots.com/product/rh56h1/
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/inspire-rh56h1.md
+- id: linker-l25
+  name: Linker Hand L25
+  category: 商业灵巧手
+  source: https://docs.linkerhub.work/sdk/zh-cn/reference/l25/index.html
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/linker-l25.md
+- id: linker-l30
+  name: Linker Hand L30
+  category: 商业灵巧手
+  source: https://www.linkerbot.cn/details/LinkerHandL30/
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/linker-l30.md
+- id: linker-o30
+  name: Linker Hand O30
+  category: 商业灵巧手
+  source: https://www.linkerbot.cn/details/LinkerHandO30/
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/linker-o30.md
+- id: agibot-omnihand-2025
+  name: 智元 OmniHand 2025
+  category: 商业灵巧手
+  source: https://store.agibot.com/products/omnihand-2025
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/agibot-omnihand-2025.md
+- id: agibot-omnihand-pro-2025
+  name: 智元 OmniHand Pro 2025
+  category: 商业灵巧手
+  source: https://store.agibot.com/products/omnihand-pro-2025
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/agibot-omnihand-pro-2025.md
+- id: oymotion-rohand-a
+  name: OYMotion ROHand A001/A002
+  category: 商业灵巧手系列
+  source: https://developer.oymotion.com/ROHand/ROHand/
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/oymotion-rohand-a.md
+- id: oymotion-rohand-ap001
+  name: OYMotion ROHand AP001
+  category: 商业灵巧手
+  source: https://developer.oymotion.com/ROHand/ROHand/
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/oymotion-rohand-ap001.md
+- id: oymotion-rohand-lites001
+  name: OYMotion ROHand LiteS001
+  category: 商业灵巧手
+  source: https://developer.oymotion.com/ROHand/ROHand/
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/oymotion-rohand-lites001.md
+- id: leadshine-dh116
+  name: 雷赛 DH116
+  category: 商业灵巧手
+  source: https://static.leadshine.com/robots/dextrous-hands/dh116-series.html
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/leadshine-dh116.md
+- id: fourier-fdh-6
+  name: 傅利叶 FDH-6
+  category: 商业灵巧手
+  source: https://support.fftai.com/en/modules/gr-endeffector
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/fourier-fdh-6.md
+- id: fourier-fdh-12
+  name: 傅利叶 FDH-12
+  category: 商业灵巧手
+  source: https://support.fftai.com/en/modules/gr-endeffector
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/fourier-fdh-12.md
+- id: robotstudio-dexhand-v1
+  name: The Robot Studio DexHand v1
+  category: 开源研究手
+  source: https://www.dexhand.org/
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/robotstudio-dexhand-v1.md
+- id: seed-rh8d
+  name: Seed Robotics RH8D
+  category: 商业研究手
+  source: https://www.seedrobotics.com/rh8d-adult-robot-hand
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/seed-rh8d.md
+- id: seed-rh6d
+  name: Seed Robotics RH6D
+  category: 商业研究手
+  source: https://www.seedrobotics.com/
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/seed-rh6d.md
+- id: seed-rh4d
+  name: Seed Robotics RH4D
+  category: 商业研究夹爪
+  source: https://www.seedrobotics.com/
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/seed-rh4d.md
+- id: seed-rh5d-rh7d
+  name: Seed Robotics RH5D/RH7D
+  category: 商业研究手系列
+  source: https://kb.seedrobotics.com/doku.php?id=rh7d%3Ahome
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/seed-rh5d-rh7d.md
+- id: faive-hand
+  name: Faive Hand
+  category: 研究灵巧手
+  source: https://arxiv.org/abs/2308.02453
+  reading_scope: 作者论文摘要及书目信息已读；全文实验与资源文件待核查
+  note: hands/faive-hand.md
+- id: rbo-hand-2
+  name: RBO Hand 2
+  category: 软体研究手
+  source: https://arxiv.org/abs/1603.06348
+  reading_scope: 作者论文摘要及书目信息已读；全文实验与资源文件待核查
+  note: hands/rbo-hand-2.md
+- id: adapt-hand-1
+  name: ADAPT Hand 1
+  category: 柔顺研究手
+  source: https://pmc.ncbi.nlm.nih.gov/articles/PMC12033370/
+  reading_scope: 期刊研究论文平台与刚度配置段落已读，完整补充资料待核查
+  note: hands/adapt-hand-1.md
+- id: adapt-hand-2
+  name: ADAPT Hand 2
+  category: 柔顺研究手版本
+  source: https://doi.org/10.1038/s44182-025-00034-3
+  reading_scope: 期刊论文引言与硬件演变段落已读，实验全表待核查
+  note: hands/adapt-hand-2.md
+- id: h-pac-hand
+  name: H-PAC Hand
+  category: 研究灵巧手
+  source: https://arxiv.org/abs/2608.16712
+  reading_scope: 作者论文摘要及书目信息已读；全文实验与资源文件待核查
+  note: hands/h-pac-hand.md
+- id: wang-hbsf-soft-palm-hand
+  name: Wang HBSF 软掌手
+  category: 软体研究手
+  source: https://arxiv.org/abs/2009.00979
+  reading_scope: 作者论文摘要及书目信息已读；全文实验与资源文件待核查
+  note: hands/wang-hbsf-soft-palm-hand.md
+- id: sylink-hand
+  name: SyLink Hand
+  category: 连杆研究手
+  source: https://arxiv.org/abs/2606.14250
+  reading_scope: 作者论文摘要及书目信息已读；全文实验与资源文件待核查
+  note: hands/sylink-hand.md
+- id: lee-bidirectional-hand
+  name: Lee 双向拮抗腱驱手
+  category: 研究灵巧手
+  source: https://arxiv.org/abs/2609.36241
+  reading_scope: 作者论文摘要及书目信息已读；全文实验与资源文件待核查
+  note: hands/lee-bidirectional-hand.md
+- id: roller-grasper-v2
+  name: Roller Grasper V2
+  category: 主动表面研究夹爪
+  source: https://arxiv.org/abs/2004.08499
+  reading_scope: 作者论文摘要及书目信息已读；全文实验与资源文件待核查
+  note: hands/roller-grasper-v2.md
+- id: nasa-robonaut-1-hand
+  name: NASA Robonaut 1 Hand
+  category: 航天研究手
+  source: https://ntrs.nasa.gov/citations/20000097045
+  reading_scope: 原始论文/官方资料的检索摘录及已显示技术段落已读；完整规格、实验表与附件待核查
+  note: hands/nasa-robonaut-1-hand.md
+- id: nasa-robonaut-2-hand
+  name: NASA Robonaut 2 Hand
+  category: 航天研究手
+  source: https://ntrs.nasa.gov/api/citations/20110023122/downloads/20110023122.pdf
+  reading_scope: 原始论文/官方资料的检索摘录及已显示技术段落已读；完整规格、实验表与附件待核查
+  note: hands/nasa-robonaut-2-hand.md
+- id: nasa-valkyrie-hand
+  name: NASA Valkyrie/R5 Hand
+  category: 人形机器人研究手
+  source: https://www.nasa.gov/technology/r5/
+  reading_scope: 原始论文/官方资料的检索摘录及已显示技术段落已读；完整规格、实验表与附件待核查
+  note: hands/nasa-valkyrie-hand.md
+- id: dh-robotics-dh-3
+  name: 大寰 DH-3
+  category: 商业三指夹爪
+  source: https://en.dh-robotics.com/wp-content/uploads/2024/07/DH_Electric-Gripper-Brochure.pdf
+  reading_scope: 原始论文/官方资料的检索摘录及已显示技术段落已读；完整规格、实验表与附件待核查
+  note: hands/dh-robotics-dh-3.md
+- id: dh-robotics-dh-5-6
+  name: 大寰 DH-5-6
+  category: 商业灵巧手
+  source: https://en.dh-robotics.com/wp-content/uploads/2024/07/DH_Electric-Gripper-Brochure.pdf
+  reading_scope: 原始论文/官方资料的检索摘录及已显示技术段落已读；完整规格、实验表与附件待核查
+  note: hands/dh-robotics-dh-5-6.md
+- id: robotiq-3f
+  name: Robotiq 3-Finger Adaptive Gripper
+  category: 商业三指夹爪
+  source: https://blog.robotiq.com/knowledge/control-fingers-individually-on-the-3f-gripper-5-1736280740122
+  reading_scope: 原始论文/官方资料的检索摘录及已显示技术段落已读；完整规格、实验表与附件待核查
+  note: hands/robotiq-3f.md
+- id: gifu-hand-i
+  name: Gifu Hand I
+  category: 历史研究手
+  source: https://www1.gifu-u.ac.jp/~kawalab/research/research_hand.html
+  reading_scope: 原始论文/官方资料的检索摘录及已显示技术段落已读；完整规格、实验表与附件待核查
+  note: hands/gifu-hand-i.md
+- id: gifu-hand-ii
+  name: Gifu Hand II
+  category: 历史研究手
+  source: https://www1.gifu-u.ac.jp/~kawalab/research/research_hand.html
+  reading_scope: 原始论文/官方资料的检索摘录及已显示技术段落已读；完整规格、实验表与附件待核查
+  note: hands/gifu-hand-ii.md
+- id: gifu-hand-iii
+  name: Gifu Hand III
+  category: 历史研究手
+  source: https://www.jstage.jst.go.jp/article/jamdsm/1/1/1_1_1/_pdf/-char/en
+  reading_scope: 原始论文/官方资料的检索摘录及已显示技术段落已读；完整规格、实验表与附件待核查
+  note: hands/gifu-hand-iii.md
+- id: gifu-kh-hand
+  name: KH Hand
+  category: 历史研究手
+  source: https://www1.gifu-u.ac.jp/~kawalab/research/research_hand.html
+  reading_scope: 原始论文/官方资料的检索摘录及已显示技术段落已读；完整规格、实验表与附件待核查
+  note: hands/gifu-kh-hand.md
+- id: ub-hand-iv
+  name: UB Hand IV
+  category: 腱驱研究手
+  source: https://surgicalroboticslab.nl/wp-content/uploads/2015/01/peerdeman12c-biorob.pdf
+  reading_scope: 原始论文/官方资料的检索摘录及已显示技术段落已读；完整规格、实验表与附件待核查
+  note: hands/ub-hand-iv.md
+- id: ihy-hand
+  name: iRobot-Harvard-Yale iHY Hand
+  category: 欠驱动研究手
+  source: https://journals.sagepub.com/doi/abs/10.1177/0278364913514466
+  reading_scope: 原始论文/官方资料的检索摘录及已显示技术段落已读；完整规格、实验表与附件待核查
+  note: hands/ihy-hand.md
+- id: dlr-hit-hand-i
+  name: DLR/HIT Hand I
+  category: 研究灵巧手
+  source: https://elib.dlr.de/51715/
+  reading_scope: 原始论文/官方资料的检索摘录及已显示技术段落已读；完整规格、实验表与附件待核查
+  note: hands/dlr-hit-hand-i.md
+- id: barrett-bh8-280
+  name: BarrettHand BH8-280
+  category: 商业三指手
+  source: https://web.barrett.com/support/BarrettHand_Documentation/BH8-280_Datasheet.pdf
+  reading_scope: 原始论文/官方资料的检索摘录及已显示技术段落已读；完整规格、实验表与附件待核查
+  note: hands/barrett-bh8-280.md
+- id: barrett-bh8-282
+  name: BarrettHand BH8-282
+  category: 商业三指手版本
+  source: https://web.barrett.com/support/BarrettHand_Documentation/BH8-282_Datasheet.pdf
+  reading_scope: 原始论文/官方资料的检索摘录及已显示技术段落已读；完整规格、实验表与附件待核查
+  note: hands/barrett-bh8-282.md
+- id: schunk-sdh-2
+  name: SCHUNK SDH 2.0
+  category: 商业三指研究手
+  source: https://www.nist.gov/document/9020173r1pdf
+  reading_scope: 原始论文/官方资料的检索摘录及已显示技术段落已读；完整规格、实验表与附件待核查
+  note: hands/schunk-sdh-2.md
+- id: unitree-dex5-1
+  name: 宇树 Dex5-1
+  category: 商业灵巧手
+  source: https://www.unitree.com/Dex5-1/
+  reading_scope: 原始论文/官方资料的检索摘录及已显示技术段落已读；完整规格、实验表与附件待核查
+  note: hands/unitree-dex5-1.md
+- id: unitree-dex5-s
+  name: 宇树 Dex5-S
+  category: 商业灵巧手
+  source: https://www.unitree.com/Dex5-S/
+  reading_scope: 原始论文/官方资料的检索摘录及已显示技术段落已读；完整规格、实验表与附件待核查
+  note: hands/unitree-dex5-s.md
+- id: robotera-xhand-1
+  name: 星动纪元 XHAND1
+  category: 商业灵巧手
+  source: https://www.robotera.com/static/pc/default/images/cnXhand.pdf
+  reading_scope: 原始论文/官方资料的检索摘录及已显示技术段落已读；完整规格、实验表与附件待核查
+  note: hands/robotera-xhand-1.md
+- id: xynova-prima-1
+  name: 曦诺未来 Prima 1
+  category: 商业灵巧手
+  source: https://www.xynova.com.cn/en/xynova-prima-1
+  reading_scope: 原始论文/官方资料的检索摘录及已显示技术段落已读；完整规格、实验表与附件待核查
+  note: hands/xynova-prima-1.md
+- id: qb-softhand-2-research
+  name: qbSoftHand 2 Research
+  category: commercial-research-hand
+  source: https://qbrobotics.com/product/qb-softhand-2-research/
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/qb-softhand-2-research.md
+- id: qb-softhand-industry
+  name: qbSoftHand Industry
+  category: industrial-hand
+  source: https://qbrobotics.com/product/qb-softhand-industry/
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/qb-softhand-industry.md
+- id: agile-hand
+  name: AgileHand
+  category: commercial-research-hand
+  source: https://www.agile-robots.com/de/produkte/agile-hand/
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/agile-hand.md
+- id: allegro-v5
+  name: Allegro Hand V5（三指）
+  category: commercial-research-hand
+  source: https://allegrohand.com/sub/product/p.php?idx=3
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/allegro-v5.md
+- id: ottobock-bebionic
+  name: Ottobock bebionic
+  category: prosthetic-hand
+  source: https://www.ottobock.com/en-us/product/8E7----61161
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/ottobock-bebionic.md
+- id: ottobock-michelangelo
+  name: Ottobock Michelangelo
+  category: prosthetic-hand
+  source: https://corporate.ottobock.com/en/media/media-information/hand-prostheses
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/ottobock-michelangelo.md
+- id: open-bionics-ada
+  name: Open Bionics Ada
+  category: open-research-hand
+  source: https://openbionicslabs.com/blog/category/Blog
+  reading_scope: 官方博客Ada介绍段落已读；原始机械文件未检查
+  note: hands/open-bionics-ada.md
+- id: open-bionics-brunel
+  name: Open Bionics Brunel V1.0
+  category: open-research-hand
+  source: https://openbionicslabs.com/s/Brunel-Instruction-Manual.pdf
+  reading_scope: 官方操作手册首页和连接步骤已读；其他章节待核查
+  note: hands/open-bionics-brunel.md
+- id: prensilia-mia
+  name: Prensilia Mia Hand
+  category: prosthetic-hand
+  source: https://www.prensilia.com/medical/
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/prensilia-mia.md
+- id: festo-bionicsofthand
+  name: Festo BionicSoftHand
+  category: soft-research-hand
+  source: https://www.festo.com/us/en/e/about-festo/research-and-development/bionic-learning-network/bionic-grippers-and-soft-robots/bionicsofthand-id_68106
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/festo-bionicsofthand.md
+- id: festo-bionicsofthand-2
+  name: Festo BionicSoftHand 2.0
+  category: soft-research-hand
+  source: https://www.festo.com/PDF_Flip/corp/Festo_BionicMobileAssistant/en/8/
+  reading_scope: 官方手册第8页技术表已读
+  note: hands/festo-bionicsofthand-2.md
+- id: sonoda-hasel-hand
+  name: Sonoda 等 Peano-HASEL 肌骨手（2026）
+  category: academic-prototype
+  source: https://arxiv.org/abs/2603.24357
+  reading_scope: 作者论文摘要已读，全文与独立验证待核查
+  note: hands/sonoda-hasel-hand.md
+- id: pollen-amazing-hand
+  name: Pollen Robotics Amazing Hand
+  category: open-research-hand
+  source: https://huggingface.co/blog/pollen-robotics/amazing-hand
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/pollen-amazing-hand.md
+- id: delft-hand-2
+  name: Delft Hand 2
+  category: academic-gripper
+  source: https://www.sciencedirect.com/science/article/abs/pii/S0094114X11000565
+  reading_scope: 原论文页面公开章节摘录已读；完整实验数据待核查
+  note: hands/delft-hand-2.md
+- id: dexrobot-dexhand-021
+  name: DexRobot DexHand 021
+  category: industrial-research-hand
+  source: https://arxiv.org/abs/2511.03481
+  reading_scope: 作者论文摘要已读；全文实验及资源文件待核查
+  note: hands/dexrobot-dexhand-021.md
+- id: dclaw
+  name: DClaw（ROBEL）
+  category: open-research-hand
+  source: https://github.com/google-research/robel/blob/master/robel/dclaw/base_env.py
+  reading_scope: 原始页面技术段落或官方资料表已读；完整手册及资源文件待核查
+  note: hands/dclaw.md
+- id: westwood-en02-op
+  name: Westwood EN02-OP
+  category: open-research-hand
+  source: https://robotis.us/products/en02-op-servos-only
+  reading_scope: 原始页面技术段落或官方资料表已读；完整手册及资源文件待核查
+  note: hands/westwood-en02-op.md
+- id: f1-hand
+  name: F1 Hand
+  category: academic-gripper
+  source: https://arxiv.org/abs/2205.07066
+  reading_scope: 作者论文摘要已读；全文实验及资源文件待核查
+  note: hands/f1-hand.md
+- id: krysalis-hand
+  name: Krysalis Hand
+  category: academic-prototype
+  source: https://arxiv.org/abs/2504.12967
+  reading_scope: 作者论文摘要已读；全文实验及资源文件待核查
+  note: hands/krysalis-hand.md
+- id: pudu-dh11
+  name: PUDU DH11
+  category: industrial-hand
+  source: https://www.pudurobotics.com/jp/products/d9
+  reading_scope: 原始页面技术段落或官方资料表已读；完整手册及资源文件待核查
+  note: hands/pudu-dh11.md
+- id: sanctuary-hydraulic-hand
+  name: Sanctuary AI 液压灵巧手（当前17DoF版）
+  category: industrial-hand
+  source: https://sanctuary.ai/solutions/hydraulic-hands/
+  reading_scope: 原始页面技术段落或官方资料表已读；完整手册及资源文件待核查
+  note: hands/sanctuary-hydraulic-hand.md
+- id: hydra-hand
+  name: Hydra Hand
+  category: academic-gripper
+  source: https://arxiv.org/abs/2309.14266
+  reading_scope: 作者论文摘要已读；全文实验及资源文件待核查
+  note: hands/hydra-hand.md
+- id: ruth-gripper
+  name: RUTH Gripper
+  category: academic-gripper
+  source: https://journals.sagepub.com/doi/10.1177/02783649211048929
+  reading_scope: 原始页面技术段落或官方资料表已读；完整手册及资源文件待核查
+  note: hands/ruth-gripper.md
+- id: bach-hand
+  name: BACH（Belt–Augmented Compliant Hand）
+  category: academic-gripper
+  source: https://yuanshenli.com/bach.html
+  reading_scope: 原始页面技术段落或官方资料表已读；完整手册及资源文件待核查
+  note: hands/bach-hand.md
+- id: iit-hannes
+  name: IIT/INAIL Hannes
+  category: prosthetic-hand
+  source: https://rehab.iit.it/hannes
+  reading_scope: 原始页面技术段落或官方资料表已读；完整手册及资源文件待核查
+  note: hands/iit-hannes.md
+- id: ossur-ilimb-quantum
+  name: Össur i-Limb Quantum
+  category: prosthetic-hand
+  source: https://www.ossur.com/en-us/prosthetics/arms/i-limb-quantum
+  reading_scope: 原始页面技术段落或官方资料表已读；完整手册及资源文件待核查
+  note: hands/ossur-ilimb-quantum.md
+- id: covvi-hand
+  name: COVVI Hand
+  category: prosthetic-hand
+  source: https://www.covvi.com/covvi-hand/
+  reading_scope: 原始页面技术段落或官方资料表已读；完整手册及资源文件待核查
+  note: hands/covvi-hand.md
+- id: taska-gen2
+  name: TASKA Gen2
+  category: prosthetic-hand
+  source: https://ik.imagekit.io/taska/cms/173_EN_D_Gen2_A4_Spec_Sheet_W_0fa8085bc9.pdf
+  reading_scope: 原始页面技术段落或官方资料表已读；完整手册及资源文件待核查
+  note: hands/taska-gen2.md
+- id: aether-zeus
+  name: Aether Zeus 手系列（V1/V2）
+  category: prosthetic-hand
+  source: https://www.aetherbiomedical.com/zeus-hand
+  reading_scope: 原始页面技术段落或官方资料表已读；完整手册及资源文件待核查
+  note: hands/aether-zeus.md
+- id: bionit-adams-hand
+  name: BionIT Adam’s Hand
+  category: prosthetic-hand
+  source: https://bionitlabs.com/es/
+  reading_scope: 原始页面技术段落或官方资料表已读；完整手册及资源文件待核查
+  note: hands/bionit-adams-hand.md
+- id: hero-arm-hand
+  name: Open Bionics Hero Arm 手部
+  category: prosthetic-hand
+  source: https://openbionics.com/wp-content/uploads/2025/04/Marketing-Brochure-March-2025-US-D2C-01.04.25-EMAIL.pdf
+  reading_scope: 原始页面技术段落或官方资料表已读；完整手册及资源文件待核查
+  note: hands/hero-arm-hand.md
+- id: hero-pro-hand
+  name: Open Bionics Hero Pro 手部
+  category: prosthetic-hand
+  source: https://openbionics.com/wp-content/uploads/2025/04/Marketing-Brochure-March-2025-US-D2C-01.04.25-EMAIL.pdf
+  reading_scope: 原始页面技术段落或官方资料表已读；完整手册及资源文件待核查
+  note: hands/hero-pro-hand.md
+- id: neo-2026-hand
+  name: 1X NEO 手（2026）
+  category: industrial-hand
+  source: https://www.1x.tech/discover/neos-hands
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/neo-2026-hand.md
+- id: figure-03-hand
+  name: Figure 03 手
+  category: industrial-hand
+  source: https://www.figure.ai/news/helix-02
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/figure-03-hand.md
+- id: festo-learninggripper
+  name: Festo LearningGripper
+  category: research-gripper
+  source: https://www.festo.com/us/en/e/about-festo/research-and-development/bionic-learning-network/bionic-grippers-and-soft-robots/learninggripper-id_33613
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/festo-learninggripper.md
+- id: festo-multichoicegripper
+  name: Festo MultiChoiceGripper
+  category: research-gripper
+  source: https://www.festo.com/PDF_Flip/corp/Festo_MultiChoiceGripper/en/index.html
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/festo-multichoicegripper.md
+- id: allegro-v6f
+  name: Allegro Hand V6F
+  category: industrial-hand
+  source: https://allegrohand.com/sub/product/p.php?idx=25
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/allegro-v6f.md
+- id: allegro-v5-plus
+  name: Allegro Hand V5 Plus
+  category: industrial-hand
+  source: https://allegrohand.com/sub/product/p.php?idx=4
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/allegro-v5-plus.md
+- id: tian-gesture-hand
+  name: Tian 等手势空间设计手（2020）
+  category: academic-hand
+  source: https://arxiv.org/abs/2012.10981
+  reading_scope: 作者论文摘要已读；全文实验、资源文件及版本兼容性待核查
+  note: hands/tian-gesture-hand.md
+- id: acb-hand
+  name: ACB Hand
+  category: academic-hand
+  source: https://arxiv.org/abs/1909.07966
+  reading_scope: 作者论文摘要已读；全文实验、资源文件及版本兼容性待核查
+  note: hands/acb-hand.md
+- id: nadine-cable-hand
+  name: Nadine 腱驱手（2017）
+  category: academic-hand
+  source: https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2017.00065/full
+  reading_scope: 论文设计介绍及皮肤/执行器讨论已读；实验细节仍待逐表核对
+  note: hands/nadine-cable-hand.md
+- id: hri-hand
+  name: HRI Hand
+  category: academic-hand
+  source: https://www.sciencedirect.com/science/article/pii/S2468067220300092
+  reading_scope: 作者论文摘要已读；全文实验、资源文件及版本兼容性待核查
+  note: hands/hri-hand.md
+- id: nelson-reconfigurable-hand
+  name: Nelson 等可重构手（2022）
+  category: academic-hand
+  source: https://journals.sagepub.com/doi/10.1177/09544062221085092?icid=int.sj-abstract.citing-articles.1
+  reading_scope: 作者论文摘要已读；全文实验、资源文件及版本兼容性待核查
+  note: hands/nelson-reconfigurable-hand.md
+- id: liu-modular-hybrid-hand
+  name: Liu 等模块化软硬混合手（2023）
+  category: academic-hand
+  source: https://arxiv.org/abs/2309.16081
+  reading_scope: 作者论文摘要已读；全文实验、资源文件及版本兼容性待核查
+  note: hands/liu-modular-hybrid-hand.md
+- id: vsh1
+  name: VSH1 可变刚度手
+  category: academic-hand
+  source: https://salford-repository.worktribe.com/output/1376431/variable-stiffness-robotic-hand-for-stable-grasp-and-flexible-handling
+  reading_scope: 作者论文摘要已读；全文实验、资源文件及版本兼容性待核查
+  note: hands/vsh1.md
+- id: wang-layer-jamming-hand
+  name: Wang 等层阻塞变刚度软手（2020）
+  category: academic-hand
+  source: https://ietresearch.onlinelibrary.wiley.com/doi/abs/10.1049/ccs.2020.0003
+  reading_scope: 作者论文摘要已读；全文实验、资源文件及版本兼容性待核查
+  note: hands/wang-layer-jamming-hand.md
+- id: nagase-variable-stiffness-hand
+  name: Nagase 等表面变刚度手（2011）
+  category: academic-hand
+  source: https://doi.org/10.1088/0964-1726/20/10/105015
+  reading_scope: 作者论文摘要已读；全文实验、资源文件及版本兼容性待核查
+  note: hands/nagase-variable-stiffness-hand.md
+- id: artus-lite
+  name: ARTUS Lite / Lite+
+  category: industrial-hand
+  source: https://github.com/Sarcomere-Dynamics/Sarcomere_Dynamics_Resources/blob/main/ArtusAPI/robot/artus_lite/ARTUS_LITE.md
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/artus-lite.md
+- id: artus-talos
+  name: ARTUS Talos
+  category: industrial-hand
+  source: https://github.com/Sarcomere-Dynamics/Sarcomere_Dynamics_Resources/blob/main/ArtusAPI/robot/artus_talos/ARTUS_TALOS.MD
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/artus-talos.md
+- id: linker-o6
+  name: Linker Hand O6
+  category: industrial-hand
+  source: https://linkerbot.cn/details/LinkerHandO6/
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/linker-o6.md
+- id: linker-l6
+  name: Linker Hand L6
+  category: industrial-hand
+  source: https://linkerbot.cn/details/LinkerHandL6/
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/linker-l6.md
+- id: cambridge-passive-hand
+  name: Cambridge Gilday 被动柔顺手（2023）
+  category: academic-hand
+  source: https://www.cam.ac.uk/stories/robotic-hand
+  reading_scope: 大学原始研究新闻正文已读；对应论文全文待读
+  note: hands/cambridge-passive-hand.md
+- id: spark-hand
+  name: SPARK Hand
+  category: academic-hand
+  source: https://arxiv.org/abs/2504.20506
+  reading_scope: 作者论文摘要已读；全文实验、资源文件及版本兼容性待核查
+  note: hands/spark-hand.md
+- id: open-parametric-hand
+  name: Open Parametric Hand（OPH）
+  category: academic-hand
+  source: https://arxiv.org/abs/2410.18633
+  reading_scope: 作者论文摘要已读；全文实验、资源文件及版本兼容性待核查
+  note: hands/open-parametric-hand.md
+- id: prensilia-ih2-azzurra
+  name: Prensilia IH2 Azzurra
+  category: industrial-hand
+  source: https://www.prensilia.com/it/ih2-azzurra/
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/prensilia-ih2-azzurra.md
+- id: lau-pam-hand
+  name: 低成本气动肌肉仿人手（2012）
+  category: academic-hand
+  source: https://www.sciencedirect.com/science/article/pii/S1877705812026379
+  reading_scope: 作者论文摘要已读；全文实验、资源文件及版本兼容性待核查
+  note: hands/lau-pam-hand.md
+- id: nikafrooz-single-actuated-hand
+  name: Nikafrooz–Leonessa 单驱动手（2021）
+  category: academic-hand
+  source: https://vtechworks.lib.vt.edu/items/323e2fb9-53ca-4bff-abc1-0ab3e50a3676
+  reading_scope: 作者论文摘要已读；全文实验、资源文件及版本兼容性待核查
+  note: hands/nikafrooz-single-actuated-hand.md
+- id: uw-hand
+  name: UW Hand（20-DoF 气动腱驱原型）
+  category: academic-hand
+  source: https://vikashplus.github.io/P_Finger.html
+  reading_scope: 官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验
+  note: hands/uw-hand.md
+- id: hackberry
+  name: HACKberry
+  category: prosthetic-hand
+  source: https://github.com/mission-arm/HACKberry
+  reading_scope: 官方仓库README与目录已读；未运行程序或打开每个CAD文件
+  note: hands/hackberry.md
+- id: olympic-hand
+  name: OLYMPIC 模块化假肢手
+  category: prosthetic-hand
+  source: https://www.researchgate.net/publication/337618125_OLYMPIC_A_Modular_Tendon-Driven_Prosthetic_Hand_with_Novel_Finger_and_Wrist_Coupling_Mechanisms
+  reading_scope: 作者论文摘要及设计介绍已读；全部实验表格待核查
+  note: hands/olympic-hand.md

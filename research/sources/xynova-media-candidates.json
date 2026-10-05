@@ -1,0 +1,44 @@
+{
+  "xynova-prima-1": {
+    "source": "https://www.xynova.com.cn/en/xynova-prima-1",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://www.xynova.com.cn/_next/image?url=%2Fimages%2Fprima-1%2Fkv.png&w=1920&q=75",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.xynova.com.cn/_next/image?url=%2Fimages%2Fprima-1%2Fprima-1.png&w=1920&q=75",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.xynova.com.cn/_next/image?url=%2Fimages%2Fprima-1%2Fprima-2.png&w=1920&q=75",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.xynova.com.cn/_next/image?url=%2Fimages%2Fprima-1%2Fprima-3.png&w=1920&q=75",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.xynova.com.cn/_next/image?url=%2Fimages%2Fprima-1%2Fprima-4.png&w=1920&q=75",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.xynova.com.cn/_next/image?url=%2Fimages%2Fprima-1%2Fprima-5.png&w=1920&q=75",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  }
+}

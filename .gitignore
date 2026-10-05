@@ -1,0 +1,22 @@
+.venv/
+website/site/
+__pycache__/
+*.log
+
+# Local runtime, generated previews, and release tooling.
+*.pid
+*.py[cod]
+research/previews/**/site/
+.release-build/
+.release-tools/
+node_modules/
+.pytest_cache/
+.cache/
+.DS_Store
+Thumbs.db
+
+# Local credentials must never be published.
+.env
+.env.*
+!.env.example
+!.env.sample

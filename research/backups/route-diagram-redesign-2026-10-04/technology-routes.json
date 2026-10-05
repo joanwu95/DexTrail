@@ -1,0 +1,613 @@
+{
+  "schema_version": 1,
+  "default_chapter": "drive",
+  "sources": {
+    "shadow": {
+      "name": "Shadow · December 2024 技术规格",
+      "url": "https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf",
+      "locator": "December 2024 · §2.3 构型、§3.2 控制、§4 感知、§5 驱动",
+      "verified_on": "2026-10-04"
+    },
+    "soft": {
+      "name": "SoftHand · 原论文 §II、§IV",
+      "url": "https://www.centropiaggio.unipi.it/sites/default/files/PisaIIT_SoftHand_0.pdf",
+      "locator": "原论文 · 摘要、§II 自适应协同、§IV 原型与实验",
+      "verified_on": "2026-10-04"
+    },
+    "leap": {
+      "name": "LEAP v1 · 作者装配资料",
+      "url": "https://v1.leaphand.com/assembly",
+      "locator": "LEAP v1 / Full-Regular · 装配步骤、模块连接与关节编号",
+      "verified_on": "2026-10-04"
+    },
+    "tactile": {
+      "name": "触觉信息综述 · IEEE T-RO",
+      "url": "https://www.ri.cmu.edu/app/uploads/2021/08/LiTRo2020.pdf",
+      "locator": "IEEE T-RO · §III 接触信息、§V 动作、§VI 操作任务",
+      "verified_on": "2026-10-04"
+    },
+    "learning": {
+      "name": "Learning Dexterous In-Hand Manipulation · arXiv v5",
+      "url": "https://arxiv.org/abs/1808.00177v5",
+      "locator": "2018 首版研究 · 所读版本 v5（2019-01-18）· 摘要、训练与实物实验",
+      "verified_on": "2026-10-04"
+    },
+    "leap-paper": {
+      "name": "LEAP Hand · RSS 2023 作者主页",
+      "url": "https://v1.leaphand.com/",
+      "locator": "Kinematics and Dexterity · 通用侧摆机构；v1 与后续 v2 分开",
+      "verified_on": "2026-10-04"
+    },
+    "digit": {
+      "name": "DIGIT · RA-L 2020 原论文",
+      "url": "https://arxiv.org/abs/2005.14679v1",
+      "locator": "摘要、传感器结构与玻璃弹珠手内操作实验",
+      "verified_on": "2026-10-04"
+    },
+    "dapg": {
+      "name": "示范辅助强化学习 DAPG · RSS 2018",
+      "url": "https://arxiv.org/abs/1709.10087v2",
+      "locator": "v2（2018-06-26）· 摘要、方法与模拟实验；不是实物部署结果",
+      "verified_on": "2026-10-04"
+    }
+  },
+  "chapters": [
+    {
+      "id": "shape",
+      "label": "构型与运动",
+      "teaser": "手指如何到达接触位置",
+      "title": "手指怎样形成需要的接触？",
+      "intro": "把手拆成关节轴、运动范围与接触位置，才能解释捏取、包覆和手内重定向对构型的不同要求。",
+      "default_question": 0,
+      "questions": [
+        {
+          "label": "手指布局",
+          "title": "从关节运动到物体接触",
+          "diagram": "shape",
+          "answer": "捏取关注相对的指尖接触；包覆让更多指节参与接触；手内重定向则需要在保持物体的同时改变接触。指长、指间布局和关节范围共同影响这些动作所需的位置与方向。",
+          "conclusion": "手指数描述外形；关节轴与接触关系解释动作。",
+          "source_ids": [
+            "shadow",
+            "leap-paper",
+            "tactile"
+          ]
+        },
+        {
+          "label": "拇指对掌",
+          "title": "拇指朝向哪里，决定怎样与其他手指配合",
+          "diagram": "thumb-opposition",
+          "answer": "对掌让拇指的接触面朝向其他手指。以 Shadow 的 2024 配置为例，拇指由五个关节提供五个自由度，小指还带有一个掌部关节用于与拇指对掌。一个“拇指”名称本身并不能说明轴向和可达范围。",
+          "conclusion": "对掌需要看轴向和运动范围，不能只看拇指是否存在。",
+          "source_ids": [
+            "shadow"
+          ]
+        },
+        {
+          "label": "关节与自由度",
+          "title": "有四个关节，不一定有四个独立运动",
+          "diagram": "joint-coupling",
+          "answer": "Shadow 规格中的长指有四个关节、三个自由度，远端两关节存在运动约束。SoftHand 原型有十九个关节，却由一个执行器组织闭合。这些数字分别描述机构运动、约束和输入，不是同一个参数。",
+          "conclusion": "关节数、机械自由度与驱动输入要分别记录。",
+          "source_ids": [
+            "shadow",
+            "soft"
+          ]
+        }
+      ],
+      "dimensions": [
+        [
+          "布局",
+          "指长、指间距离和掌部结构决定手指相对位置。"
+        ],
+        [
+          "轴与范围",
+          "屈伸、侧摆和耦合关系决定指尖怎样移动。"
+        ],
+        [
+          "接触变化",
+          "保持、滚动或切换接触，对构型提出不同要求。"
+        ]
+      ],
+      "cases": [
+        {
+          "name": "Shadow Classic",
+          "version": "December 2024 电驱配置",
+          "tags": [
+            "kinematics",
+            "in-hand-manipulation"
+          ],
+          "text": "长指远端关节耦合；拇指五自由度；小指有额外掌部关节。",
+          "takeaway": "这些配置用于解释轴与约束，不直接证明任意任务能力。",
+          "source_ids": [
+            "shadow"
+          ],
+          "hand_id": "shadow-hand",
+          "reading": null
+        },
+        {
+          "name": "Pisa/IIT SoftHand",
+          "version": "原论文 · 单执行器原型",
+          "tags": [
+            "kinematics",
+            "compliant-mechanics",
+            "adaptive-grasping"
+          ],
+          "text": "拟人五指结构采用滚动接触关节和弹性韧带，闭合时能够随接触调整手形。",
+          "takeaway": "形状适应同时来自构型、柔顺结构和物体接触。",
+          "source_ids": [
+            "soft"
+          ],
+          "hand_id": "pisa-iit-softhand",
+          "reading": null
+        },
+        {
+          "name": "LEAP Hand v1",
+          "version": "RSS 2023 · Full / Regular",
+          "tags": [
+            "kinematics",
+            "modular-design",
+            "in-hand-manipulation"
+          ],
+          "text": "作者以侧摆机构改善不同屈伸姿态下的横向运动，并公开模型和装配资料。",
+          "takeaway": "关节的排列与轴向会影响已有自由度怎样被用于操作。",
+          "source_ids": [
+            "leap-paper",
+            "leap"
+          ],
+          "hand_id": "leap-hand",
+          "reading": null
+        }
+      ],
+      "tradeoffs": [
+        [
+          "更多运动选择",
+          "Shadow 的拇指与掌部运动提供更多构型调整途径。LEAP 则通过关节排列改善侧摆；两者说明构型设计也包含“如何使用自由度”。"
+        ],
+        [
+          "更多约束需要被处理",
+          "轴向、范围与关节耦合必须进入运动模型。对一个具体动作，可达接触只是条件之一，还需要驱动、反馈与控制共同实现。"
+        ]
+      ],
+      "source_ids": [
+        "shadow",
+        "soft",
+        "leap-paper",
+        "leap",
+        "tactile"
+      ],
+      "evolution": [
+        {
+          "event_id": "contact-kinematics-1988",
+          "year": "1988",
+          "label": "从关节转向接触运动",
+          "text": "研究分析滚动与接触几何，为理解手内运动提供工具。"
+        },
+        {
+          "event_id": "leap-2023",
+          "year": "2023",
+          "label": "构型服务学习与实物操作",
+          "text": "LEAP 将关节排列、硬件实现与学习实验一起讨论。"
+        }
+      ],
+      "further_reading": []
+    },
+    {
+      "id": "drive",
+      "label": "驱动与传动",
+      "teaser": "动力与运动如何分配",
+      "title": "动力如何到达关节，运动怎样分配？",
+      "intro": "先看执行器的位置，再看传力路径，最后看输入与关节的关系。三种设计选择可以组合在同一款手上。",
+      "default_question": 1,
+      "questions": [
+        {
+          "label": "执行器位置",
+          "title": "远置执行器与关节附近的模块",
+          "diagram": "drive",
+          "answer": "Shadow 的执行器集中在手的基部，经腱索驱动关节；LEAP v1 的装配资料展示关节附近的电机模块。位置变化会改变部件如何占据手和前臂的空间，但不能单凭位置判断是否存在减速器或腱索。",
+          "conclusion": "执行器位置和内部传动，是两个不同问题。",
+          "source_ids": [
+            "shadow",
+            "leap"
+          ]
+        },
+        {
+          "label": "传力路径",
+          "title": "执行器、传动与关节：沿着力的路径看结构",
+          "diagram": "transmission-path",
+          "answer": "腱索把拉力沿走索路径送到关节；齿轮或连杆通过啮合或连接传递运动。Shadow 与 SoftHand 都使用腱索，但驱动分配不同；SoftHand 还用弹性韧带配合腱索实现闭合和接触适应。",
+          "conclusion": "“腱绳传动”说明怎样传力，不能确定有多少独立输入。",
+          "source_ids": [
+            "shadow",
+            "soft",
+            "leap"
+          ]
+        },
+        {
+          "label": "独立控制",
+          "title": "多路输入与一个输入带动多个关节",
+          "diagram": "input-allocation",
+          "answer": "欠驱动机构的执行器不足以独立驱动全部机械自由度；一部分运动由机构、弹性与接触决定。SoftHand 原型用一个执行器带动十九个关节，接触后手形能够继续适应，但无法把十九个角度都当作独立目标指定。",
+          "conclusion": "减少控制输入，可以把部分适应性放进机构。",
+          "source_ids": [
+            "soft",
+            "shadow"
+          ]
+        }
+      ],
+      "dimensions": [
+        [
+          "位置",
+          "手内、基部或关节附近：执行器怎样占据空间。"
+        ],
+        [
+          "路径",
+          "腱索、齿轮、连杆：动力怎样到达运动部件。"
+        ],
+        [
+          "输入分配",
+          "哪些运动独立驱动，哪些由耦合、弹性和接触决定。"
+        ]
+      ],
+      "cases": [
+        {
+          "name": "Shadow Classic",
+          "version": "December 2024 电驱配置",
+          "tags": [
+            "tendon-driven",
+            "force-control",
+            "joint-sensing",
+            "calibration"
+          ],
+          "text": "基部电机模组通过腱索驱动；长指远端关节存在耦合；传感器数据在主机端标定。",
+          "takeaway": "多路输入与局部运动约束可以同时存在。",
+          "source_ids": [
+            "shadow"
+          ],
+          "hand_id": "shadow-hand",
+          "reading": null
+        },
+        {
+          "name": "Pisa/IIT SoftHand",
+          "version": "原论文 · 单执行器原型",
+          "tags": [
+            "tendon-driven",
+            "underactuated",
+            "compliant-mechanics",
+            "adaptive-grasping"
+          ],
+          "text": "一个执行器、十九个关节；腱索与弹性结构共同实现自适应协同。",
+          "takeaway": "传力方式与驱动数量应分别描述。",
+          "source_ids": [
+            "soft"
+          ],
+          "hand_id": "pisa-iit-softhand",
+          "reading": null
+        },
+        {
+          "name": "LEAP Hand v1",
+          "version": "RSS 2023 · Full / Regular",
+          "tags": [
+            "modular-design",
+            "integrated-actuation",
+            "open-platform"
+          ],
+          "text": "关节附近的 Dynamixel 模组在装配资料中逐项连接和编号。",
+          "takeaway": "模块靠近关节不意味着“无减速器的直驱”。",
+          "source_ids": [
+            "leap"
+          ],
+          "hand_id": "leap-hand",
+          "reading": null
+        }
+      ],
+      "tradeoffs": [
+        [
+          "用一个输入组织闭合",
+          "SoftHand 原型减少独立输入，通过腱索和弹性关节适应物体形状；原论文用抓握实验展示了这种设计。"
+        ],
+        [
+          "难以逐关节指定目标",
+          "十九个关节角度不能作为十九个独立命令发送。需要逐指调整或精确重定向的任务，还要分析可控运动与具体实验结果。"
+        ]
+      ],
+      "source_ids": [
+        "shadow",
+        "soft",
+        "leap"
+      ],
+      "evolution": [
+        {
+          "event_id": "adaptive-synergies-2014",
+          "year": "2014",
+          "label": "机构与控制共同设计",
+          "text": "SoftHand 把一部分接触适应性放进物理结构。"
+        },
+        {
+          "event_id": "leap-2023",
+          "year": "2023",
+          "label": "模块与开放资料",
+          "text": "LEAP v1 将装配、模型和学习实验一起开放。"
+        }
+      ],
+      "further_reading": [
+        {
+          "label": "腱绳传动：Shadow 与 SoftHand 两种实现",
+          "url": "tendon-driven/"
+        },
+        {
+          "label": "欠驱动与协同：自由闭合与接触闭合",
+          "url": "underactuation-and-synergies/"
+        }
+      ]
+    },
+    {
+      "id": "sense",
+      "label": "感知与反馈",
+      "teaser": "手怎样获得自身与接触信息",
+      "title": "手怎样知道自身状态与物体接触？",
+      "intro": "驱动侧、关节侧和接触表面测到的信息不同。把测量位置与处理过程画出来，才能理解反馈能解决什么问题。",
+      "default_question": 0,
+      "questions": [
+        {
+          "label": "测量位置",
+          "title": "驱动、关节与接触表面",
+          "diagram": "sense",
+          "answer": "Shadow 在关节处测量角度，在传动侧测量成对腱索的负载，并在部分指尖配置触觉传感器。这三类信息分别对应关节状态、传动受力与局部接触，覆盖位置也不同。",
+          "conclusion": "每项读数都要对应到传感器所在的位置。",
+          "source_ids": [
+            "shadow",
+            "tactile"
+          ]
+        },
+        {
+          "label": "读数与估计",
+          "title": "视触觉：物体接触怎样变成一幅图像",
+          "diagram": "optical-tactile",
+          "answer": "DIGIT 用内部摄像头观察受接触影响的弹性表面，输出包含变形信息的图像。接触位置、力或运动状态需要通过处理和模型获得，不能把图像像素直接当作已标定的接触力。",
+          "conclusion": "传感器输出与用于控制的估计结果之间，还有处理过程。",
+          "source_ids": [
+            "digit",
+            "tactile"
+          ]
+        },
+        {
+          "label": "反馈的作用",
+          "title": "接触建立、滑动检测与动作调整",
+          "diagram": "contact-feedback",
+          "answer": "触觉可以帮助判断接触是否建立、物体是否开始滑动，以及何时调整或终止动作。综述中的滑动反馈实例会在检测到初始滑动后调整抓力；具体信号、算法和反应速度仍取决于传感器与控制系统。",
+          "conclusion": "反馈的价值在于它如何改变下一步动作。",
+          "source_ids": [
+            "tactile"
+          ]
+        }
+      ],
+      "dimensions": [
+        [
+          "自身状态",
+          "关节角度与驱动侧信息，对应不同部件。"
+        ],
+        [
+          "局部接触",
+          "指尖、指节或掌面，覆盖哪些接触区域。"
+        ],
+        [
+          "处理与估计",
+          "从原始信号获得接触位置、力或滑动事件。"
+        ]
+      ],
+      "cases": [
+        {
+          "name": "Shadow Classic",
+          "version": "December 2024 电驱配置",
+          "tags": [
+            "joint-sensing",
+            "force-sensing",
+            "tactile-sensing"
+          ],
+          "text": "规格分别记录关节位置、成对腱索负载与指尖触觉。",
+          "takeaway": "腱负载描述传动受力；物体接触力需要进一步映射或估计。",
+          "source_ids": [
+            "shadow"
+          ],
+          "hand_id": "shadow-hand",
+          "reading": null
+        },
+        {
+          "name": "DIGIT",
+          "version": "RA-L 2020 · 视触觉传感器",
+          "tags": [
+            "tactile-sensing",
+            "visual-sensing",
+            "in-hand-manipulation"
+          ],
+          "text": "内部摄像头观察弹性接触表面；原论文包含玻璃弹珠手内操作实验。",
+          "takeaway": "它是可装到多指手上的传感器，不是一款独立灵巧手。",
+          "source_ids": [
+            "digit"
+          ],
+          "hand_id": null,
+          "reading": {
+            "label": "传感器与实验",
+            "url": "https://arxiv.org/abs/2005.14679v1"
+          }
+        }
+      ],
+      "tradeoffs": [
+        [
+          "获得接触区域的信息",
+          "指尖触觉能够提供局部接触信息。DIGIT 通过图像观察表面变化，原论文用相应反馈与模型控制弹珠运动。"
+        ],
+        [
+          "覆盖与估计各有限制",
+          "未布置传感器的区域不能提供同样的直接接触读数。由图像或传动负载推断接触状态，还需要说明处理、标定与模型的适用范围。"
+        ]
+      ],
+      "source_ids": [
+        "shadow",
+        "digit",
+        "tactile"
+      ],
+      "evolution": [
+        {
+          "event_id": "tactile-information-2020",
+          "year": "2020",
+          "label": "从传感信号到操作信息",
+          "text": "综述按接触、物体与动作层次组织触觉的用途。"
+        },
+        {
+          "event_id": "tactile-past-future-2026",
+          "year": "2026",
+          "label": "触觉与机器操作的下一步",
+          "text": "领域观点讨论触觉的发展方向；观点与实物结果分别阅读。"
+        }
+      ],
+      "further_reading": []
+    },
+    {
+      "id": "control",
+      "label": "控制与学习",
+      "teaser": "观测怎样变成操作动作",
+      "title": "怎样把目标与观测变成连续动作？",
+      "intro": "先画运行时的控制闭环，再解释动作规则来自控制律、优化还是学习。训练过程和实物执行需要分别理解。",
+      "default_question": 0,
+      "questions": [
+        {
+          "label": "运行时闭环",
+          "title": "目标、观测、动作与新的反馈",
+          "diagram": "control",
+          "answer": "控制器根据目标和当前观测生成命令，手与物体运动后产生新观测。Shadow 的规格展示关节位置控制与模组内的受力控制；学习策略也要通过具体硬件接口执行动作。方法不同，但都需要说明观测和命令是什么。",
+          "conclusion": "理解一种控制方法，先看它的输入、输出与反馈。",
+          "source_ids": [
+            "shadow",
+            "learning"
+          ]
+        },
+        {
+          "label": "示范与学习",
+          "title": "训练使用示范，运行时执行学到的策略",
+          "diagram": "demonstration-learning",
+          "answer": "DAPG 结合人类示范和强化学习，降低模拟手操作任务的学习样本需求。示范帮助形成策略；运行时策略根据观测输出动作。原研究的结果来自模拟实验，不能据此写成真实机器人已完成相同任务。",
+          "conclusion": "示范采集、策略训练与运行时控制，是不同阶段。",
+          "source_ids": [
+            "dapg"
+          ]
+        },
+        {
+          "label": "仿真到实物",
+          "title": "在变化的仿真条件中训练，再验证实物",
+          "diagram": "simulation-transfer",
+          "answer": "OpenAI 的 2018 工作在仿真中随机化物理参数与物体外观，训练重定向策略，再在真实 Shadow 手上验证；该方法没有使用人类示范。随机化处理的是训练中的变化，迁移效果仍由具体硬件、任务与实验衡量。",
+          "conclusion": "仿真训练和实物验证要分别给出条件与证据。",
+          "source_ids": [
+            "learning"
+          ]
+        }
+      ],
+      "dimensions": [
+        [
+          "目标与观测",
+          "需要达到什么状态，运行时能观察哪些信息。"
+        ],
+        [
+          "动作规则",
+          "控制律、优化或训练，怎样得到下一步命令。"
+        ],
+        [
+          "验证条件",
+          "模拟或实物、任务对象、评价指标与失败情况。"
+        ]
+      ],
+      "cases": [
+        {
+          "name": "Shadow 的控制接口",
+          "version": "December 2024 电驱规格",
+          "tags": [
+            "model-based-control",
+            "force-control",
+            "joint-sensing"
+          ],
+          "text": "主机端关节位置控制与电机模组受力控制分别运行。",
+          "takeaway": "这是平台控制配置，不等于已经实现某种手内操作算法。",
+          "source_ids": [
+            "shadow"
+          ],
+          "hand_id": "shadow-hand",
+          "reading": null
+        },
+        {
+          "name": "DAPG",
+          "version": "RSS 2018 · 模拟手操作",
+          "tags": [
+            "learning-based",
+            "demonstration-data",
+            "in-hand-manipulation"
+          ],
+          "text": "将人类示范与强化学习结合，研究高维手操作的学习效率。",
+          "takeaway": "原论文报告模拟实验；不把样本效率结果改写为实物表现。",
+          "source_ids": [
+            "dapg"
+          ],
+          "hand_id": null,
+          "reading": {
+            "label": "方法与模拟实验",
+            "url": "https://arxiv.org/abs/1709.10087v2"
+          }
+        },
+        {
+          "name": "OpenAI 手内重定向",
+          "version": "2018 研究 · 论文 v5",
+          "tags": [
+            "learning-based",
+            "sim-to-real",
+            "in-hand-manipulation"
+          ],
+          "text": "完全在随机化仿真中训练，并在真实 Shadow 手上验证物体重定向。",
+          "takeaway": "历史研究的硬件与任务条件，应与当前产品规格分开阅读。",
+          "source_ids": [
+            "learning"
+          ],
+          "hand_id": null,
+          "reading": {
+            "label": "方法与实物实验",
+            "url": "../papers/learning-dexterous-in-hand-manipulation/"
+          }
+        }
+      ],
+      "tradeoffs": [
+        [
+          "利用示范或仿真积累经验",
+          "DAPG 用示范辅助模拟学习；OpenAI 工作通过变化的仿真环境训练并迁移到实物。两者解决学习问题的方式不同。"
+        ],
+        [
+          "结果依赖任务与观测",
+          "训练目标、观测、动作接口和硬件配置会影响策略能做什么。单一任务的成功结果不足以证明对所有物体或连续操作都适用。"
+        ]
+      ],
+      "source_ids": [
+        "shadow",
+        "dapg",
+        "learning"
+      ],
+      "evolution": [
+        {
+          "event_id": "dapg-2018",
+          "year": "2018",
+          "label": "用示范辅助强化学习",
+          "text": "在模拟手任务中研究示范如何减少学习样本需求。"
+        },
+        {
+          "event_id": "learning-in-hand-2018",
+          "year": "2018",
+          "label": "从随机化仿真走向实物",
+          "text": "物体重定向策略在真实 Shadow 平台上验证。"
+        }
+      ],
+      "further_reading": [
+        {
+          "label": "手内操作：训练、观测与实物验证",
+          "url": "../papers/learning-dexterous-in-hand-manipulation/"
+        }
+      ]
+    }
+  ]
+}

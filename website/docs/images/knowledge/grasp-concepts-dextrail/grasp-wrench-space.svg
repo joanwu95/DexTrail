@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720" style="max-width:100%;height:auto" role="img" aria-labelledby="title desc"><title id="title">Grasp wrench space</title><desc id="desc">在双指摩擦接触与每指法向力不超过一的预算下，展示零力矩切片的精确可行菱形。</desc>
+<rect width="960" height="720" fill="#f4f1ea"/>
+<text x="34.00" y="35.00" font-size="12" fill="#aa4d3e" font-family="Consolas, monospace" font-weight="400" text-anchor="start">DEXTRAIL / GRASP 10</text>
+<text x="34.00" y="80.00" font-size="29" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Grasp wrench space</text>
+<text x="35.00" y="110.00" font-size="15" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">抓取力旋量空间 · 给定预算下的可行受力集合</text>
+<polyline points="34.00,129.00 926.00,129.00" fill="none" stroke="#d8d8ce" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="158.00,303.00 272.00,303.00 272.00,417.00 158.00,417.00 158.00,303.00" fill="none" stroke="#292b29" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="158.00,303.00 272.00,303.00 272.00,417.00 158.00,417.00" fill="#edeae3" stroke="#292b29" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="158.00,376.00 158.00,344.00 134.00,344.00 134.00,376.00 158.00,376.00" fill="none" stroke="#696d67" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="158.00,376.00 158.00,344.00 134.00,344.00 134.00,376.00" fill="#f4f1ea" stroke="#696d67" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="134.00,350.00 124.00,358.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="134.00,360.00 124.00,368.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="134.00,370.00 124.00,378.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="158.00,360.00 206.30,335.85 206.30,384.15 158.00,360.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="158.00,360.00 206.30,335.85 206.30,384.15" fill="#eee5dd" stroke="#bdbcb6" stroke-width="1" stroke-linejoin="round"/>
+<polyline points="158.00,360.00 216.32,360.00" fill="none" stroke="#696d67" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 7"/>
+<ellipse cx="158.00" cy="360.00" rx="3.50" ry="3.50" fill="#f4f1ea" stroke="#aa4d3e" stroke-width="1.5"/>
+<polyline points="158.00,360.00 198.00,360.00" fill="none" stroke="#aa4d3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="189.82,363.75 198.00,360.00 189.82,356.25" fill="none" stroke="#aa4d3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="272.00,344.00 272.00,376.00 296.00,376.00 296.00,344.00 272.00,344.00" fill="none" stroke="#696d67" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="272.00,344.00 272.00,376.00 296.00,376.00 296.00,344.00" fill="#f4f1ea" stroke="#696d67" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="296.00,370.00 306.00,362.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="296.00,360.00 306.00,352.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="296.00,350.00 306.00,342.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="272.00,360.00 223.70,384.15 223.70,335.85 272.00,360.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="272.00,360.00 223.70,384.15 223.70,335.85" fill="#eee5dd" stroke="#bdbcb6" stroke-width="1" stroke-linejoin="round"/>
+<polyline points="272.00,360.00 213.68,360.00" fill="none" stroke="#696d67" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 7"/>
+<ellipse cx="272.00" cy="360.00" rx="3.50" ry="3.50" fill="#f4f1ea" stroke="#aa4d3e" stroke-width="1.5"/>
+<polyline points="272.00,360.00 232.00,360.00" fill="none" stroke="#aa4d3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="240.18,356.25 232.00,360.00 240.18,363.75" fill="none" stroke="#aa4d3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="215.00" y="482.00" font-size="17" fill="#292b29" font-family="Consolas, monospace" font-weight="400" text-anchor="middle">0 ≤ fn1, fn2 ≤ 1</text>
+<text x="215.00" y="515.00" font-size="17" fill="#292b29" font-family="Consolas, monospace" font-weight="400" text-anchor="middle">μ = 0.5</text>
+<polyline points="354.00,365.00 427.00,365.00" fill="none" stroke="#696d67" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="418.82,368.75 427.00,365.00 418.82,361.25" fill="none" stroke="#696d67" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="535.00,368.00 680.00,513.00 825.00,368.00 680.00,223.00 535.00,368.00" fill="none" stroke="#aa4d3e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="535.00,368.00 680.00,513.00 825.00,368.00 680.00,223.00" fill="#eee5dd" stroke="#aa4d3e" stroke-width="1.8" stroke-linejoin="round"/>
+<polyline points="510.00,368.00 850.00,368.00" fill="none" stroke="#696d67" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="844.55,370.50 850.00,368.00 844.55,365.50" fill="none" stroke="#696d67" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="680.00,517.00 680.00,219.00" fill="none" stroke="#696d67" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="682.50,224.45 680.00,219.00 677.50,224.45" fill="none" stroke="#696d67" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="842.00" y="395.00" font-size="15" fill="#696d67" font-family="Consolas, monospace" font-weight="400" text-anchor="start">Fx</text>
+<text x="692.00" y="224.00" font-size="15" fill="#696d67" font-family="Consolas, monospace" font-weight="400" text-anchor="start">Fy</text>
+<ellipse cx="680.00" cy="368.00" rx="3.00" ry="3.00" fill="#292b29" stroke="#292b29" stroke-width="1"/>
+<text x="680.00" y="199.00" font-size="22" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="middle">Feasible wrench set</text>
+<text x="680.00" y="587.00" font-size="17" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="middle">Exact planar slice: Mz = 0</text>
+<polyline points="34.00,622.00 926.00,622.00" fill="none" stroke="#d8d8ce" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="480.00" y="658.00" font-size="18" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="middle">给定接触、摩擦与力预算后，抓取可产生的力旋量集合</text>
+<text x="34.00" y="702.00" font-size="12" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Planar Mz = 0 slice · normalized forces; not full spatial GWS</text>
+<text x="840.70" y="702.00" font-size="12" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Grasping Primer</text>
+</svg>

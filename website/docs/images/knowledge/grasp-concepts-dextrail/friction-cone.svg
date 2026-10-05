@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720" style="max-width:100%;height:auto" role="img" aria-labelledby="title desc"><title id="title">Friction cone</title><desc id="desc">两个摩擦锥截面对比：锥内需求可静态实现，锥外需求不可维持静止。</desc>
+<rect width="960" height="720" fill="#f4f1ea"/>
+<text x="34.00" y="35.00" font-size="12" fill="#aa4d3e" font-family="Consolas, monospace" font-weight="400" text-anchor="start">DEXTRAIL / GRASP 03</text>
+<text x="34.00" y="80.00" font-size="29" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Friction cone</text>
+<text x="35.00" y="110.00" font-size="15" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">摩擦锥 · 静摩擦允许的接触力范围</text>
+<polyline points="34.00,129.00 926.00,129.00" fill="none" stroke="#d8d8ce" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="115.00,441.00 405.00,441.00" fill="none" stroke="#292b29" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="260.00" cy="463.00" rx="24.00" ry="20.00" fill="#f4f1ea" stroke="#696d67" stroke-width="1.6"/>
+<polyline points="260.00,441.00 174.13,269.27 345.87,269.27 260.00,441.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="260.00,441.00 174.13,269.27 345.87,269.27" fill="#eee5dd" stroke="#bdbcb6" stroke-width="1" stroke-linejoin="round"/>
+<polyline points="260.00,441.00 260.00,233.64" fill="none" stroke="#696d67" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 7"/>
+<ellipse cx="260.00" cy="441.00" rx="3.50" ry="3.50" fill="#f4f1ea" stroke="#aa4d3e" stroke-width="1.5"/>
+<polyline points="260.00,441.00 294.97,268.51" fill="none" stroke="#aa4d3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="297.02,277.27 294.97,268.51 289.66,275.78" fill="none" stroke="#aa4d3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="260.00" y="216.00" font-size="21" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="middle">Inside cone</text>
+<text x="260.00" y="538.00" font-size="18" fill="#aa4d3e" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="middle">Static force feasible</text>
+<text x="260.00" y="571.00" font-size="19" fill="#292b29" font-family="Consolas, monospace" font-weight="400" text-anchor="middle">|ft| ≤ μ fn</text>
+<polyline points="565.00,441.00 855.00,441.00" fill="none" stroke="#292b29" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="710.00" cy="463.00" rx="24.00" ry="20.00" fill="#f4f1ea" stroke="#696d67" stroke-width="1.6"/>
+<polyline points="710.00,441.00 624.13,269.27 795.87,269.27 710.00,441.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="710.00,441.00 624.13,269.27 795.87,269.27" fill="#eee5dd" stroke="#bdbcb6" stroke-width="1" stroke-linejoin="round"/>
+<polyline points="710.00,441.00 710.00,233.64" fill="none" stroke="#696d67" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 7"/>
+<ellipse cx="710.00" cy="441.00" rx="3.50" ry="3.50" fill="#f4f1ea" stroke="#aa4d3e" stroke-width="1.5"/>
+<polyline points="710.00,441.00 819.29,303.05" fill="none" stroke="#696d67" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="817.15,311.79 819.29,303.05 811.27,307.13" fill="none" stroke="#696d67" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="710.00" y="216.00" font-size="21" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="middle">Outside cone</text>
+<text x="710.00" y="538.00" font-size="18" fill="#aa4d3e" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="middle">Static demand infeasible</text>
+<text x="710.00" y="571.00" font-size="19" fill="#292b29" font-family="Consolas, monospace" font-weight="400" text-anchor="middle">|ft| &gt; μ fn</text>
+<polyline points="670.00,480.00 750.00,480.00" fill="none" stroke="#aa4d3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="741.82,483.75 750.00,480.00 741.82,476.25" fill="none" stroke="#aa4d3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="34.00,622.00 926.00,622.00" fill="none" stroke="#d8d8ce" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="480.00" y="658.00" font-size="18" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="middle">静摩擦有上限：切向力需求超出摩擦锥时，无法保持静止</text>
+<text x="34.00" y="702.00" font-size="12" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Spatial teaching model · schematic contact geometry</text>
+<text x="835.04" y="702.00" font-size="12" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Modern Robotics</text>
+</svg>

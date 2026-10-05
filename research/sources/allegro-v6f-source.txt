@@ -1,0 +1,148 @@
+
+ Allegro Hand
+ Product
+ Allegro Hand V6 F
+ Allegro Hand V5 Sense
+ Allegro Hand V5 Plus
+ Allegro Hand V5
+ Allegro Hand V4
+ Tech Info
+ Allegro Hand V6 F
+ Allegro Hand V5 Sense
+ Allegro Hand V5 Plus
+ Allegro Hand V5
+ Allegro Hand V4
+ Community
+ Forum
+ FAQ
+ About Us
+ About Allegro
+ News
+ Video
+ Material
+ Contact Us
+ Contact
+ Sales Network
+ PRODUCT
+ Allegro Hand V6 F
+ Combining pressure sensing across key contact areas with precise control for seamless integration across a wide range of robotic systems.
+ Equipped with pressure sensors at key contact areas for contact detection during manipulation, with versatile control modes and Modbus connectivity.
+ How It Works
+ Introducing the new Allegro Hand V6
+ Product Features
+ Product Spec
+ Sensing
+Full-Hand Sensing
+ Connectivity
+Versatile Control / Modbus
+ Control
+Robust & Precise Control
+ Overview
+ Supports current and position commands, plus a High-Force Mode for tasks that require stronger, more secure grasping. Modbus communication enables flexible system integration.
+ 01
+ Full-Hand Sensing
+ Pressure sensing across key contact areas - the Fingertips, Joints, and Palm
+ Pressure sensors are strategically placed on key contact areas, including the Fingertips, Finger Joints, and Palm, to detect various types of contact that occur during grasping and manipulation.
+ Instant feedback, right at your fingertips.
+ Visual feedback glows directly at each fingertip, making grasping status immediately visible—intuitive, responsive, and always in view.
+ 02
+ Versatile Control & Connectivity
+ Flexible system integration through multiple control modes and enhanced communication protocols
+ Supports multiple control modes, including current, position, and stiffness control. Modbus communication enables enhanced integration with a wide range of robotic and automation systems used in industrial and manufacturing environments.
+ Current Control
+ Direct torque-level actuation for fine, force-sensitive manipulation.
+ Position Control
+ Precise joint-angle positioning for repeatable, predictable motion.
+ Stiffness Control
+ Adjustable joint stiffness for firm holds or safe, impact-absorbing control.
+ 03
+ Robust & Precise Control
+ Stable and precise control through friction and temperature compensation algorithms
+ Friction and temperature compensation algorithms minimize potential control errors caused by friction and temperature variations, enabling stable and precise hand control across diverse operating environments.
+ 04
+ Design
+ Form and function shaped by human anatomy
+ Anatomical Finger & Palm Design
+ Fingers follow the enveloping configuration of the human hand, naturally distributing contact forces for stable grasping across a range of object shapes and sizes. The palm carries that same anatomical thinking further with a three-dimensional, contoured surface — rather than a flat mechanical plane — that increases contact area and improves grasp stability.
+ Aluminum Body with Integrated Heatsinks
+ Integrated heatsink structures on the upper fingers manage the heat generated during high-load operation, seamlessly integrated into the finger structure. The full aluminum body delivers the rigidity, precision, and durability needed for sustained use, with organic curves inspired by human skeletal and muscular forms.
+ 05
+ User Interface
+ Interface & monitoring tools for Allegro Hand operation
+ Real-Time Hand Status Monitoring
+ Real-time visualization of hand motion and pressure for stable, precise manipulation.
+ Hand Pose & Sequence Manager
+ Save, load, and repeat hand poses for quick and consistent operation.
+ Time-Series Hand Data Monitoring
+ Monitor real-time trends in joint position, motor current, temperature, and sensor data.
+ Number of Fingers
+ 4 Fingers + 1 Thumb = 5
+ Degrees of Freedom
+ 5 Fingers × 4 = 20 (Active)
+ Actuation
+ Type
+ DC Motor
+ Gear Ratio
+ 288.35:1 
+ Stall Torque
+ 0.92 Nm
+ Nominal Torque
+ 0.23 Nm
+ Payload
+ Max. 15 kg
+ Weight
+ 1,150 g
+ Joint Resolution
+ 0.088 deg
+ Communication
+ Interface
+ RS-485, Ethernet
+ Protocol
+ Modbus (RTU, TCP), RS-485 Custom 
+ Power Requirement
+ 24.0 V / 5.0 A / 120 W
+ Tactile Sensor*Pressure Sensor
+ Pressure Operating Range
+ 260 to 1260 hPa(Atmospheric pressure is 1,013.25 hPa)
+ Color Indicator(Fingertip Only)
+ Color : hPa Range 
+ Blue: ≤ 1050 
+ Green: 1050 ~ 1130 
+ Olive : 1130 ~ 1170 
+ Red: ≥ 1170 
+ Temperature Operating Range
+ 0~60 ℃
+ Pressure Accuracy
+ 1 kPa
+ System Requirement
+ CPU
+ Intel® CoreTM i3-8109U or higher
+ RAM
+ at least 2GB
+ Storage
+ at least 2GB
+ Graphics
+ OpenGL 3.0 H/W Acceleration enabled with at least 64Mb of video RAM
+ OS
+ Ubuntu® 22.04 LTS & 24.04 LTS
+ Additional S/W
+ ROS2
+ Application Case
+ Contact us
+ Go to tech info
+ Tel(KR) +82-31-8038-9441
+ Tel(Global) +82-31-8038-9179
+ Fax +82-31-8038-9190
+ Email robotics.biz@wonik.com
+ Wonik Bldg. 4F, 20, Pangyo-ro 255beon-gil, Bundang-gu, 
+ Seongnam-si, Gyeonggi-do, Republic of Korea
+ Copyright ⓒ Wonik Robotics. All Rights Reserved
+ Family Site
+ WONIK ROBOTICS
+ WONIK
+ Copyright & Trademark Notice
+ Allegro, the Allegro logo, RoboticsLab, the RoboticsLab logo, and all related files and documentation are Copyright ⓒ 2008-2024 Wonik Robotics Co., Ltd. All rights reserved. RoboticsLab and Allegro are trademarks of Wonik Robotics. All other trademarks or registered trademarks mentioned are the properties of their respective owners.
+ Privacy Policy
+ Prohibition of Unauthorized E-mail Collection
+ Site Map
+ 

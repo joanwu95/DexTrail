@@ -1,0 +1,740 @@
+{
+  "aero-hand-open": {
+    "source": "https://chestnut-robotics.github.io/aero-hand-open/",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "link",
+        "url": "https://www.youtube.com/embed/w1GwRfy01Ag",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://raw.githubusercontent.com/chestnut-robotics/aero-hand-open/main/assets/overview1.png",
+        "alt": "hand 3D image overview1",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://raw.githubusercontent.com/chestnut-robotics/aero-hand-open/main/assets/overview2.png",
+        "alt": "hand 3D image overview2",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://raw.githubusercontent.com/chestnut-robotics/aero-hand-open/main/assets/overview3.png",
+        "alt": "hand 3D image overview3",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://raw.githubusercontent.com/chestnut-robotics/aero-hand-open/main/assets/overview4.png",
+        "alt": "hand 3D image overview4",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://raw.githubusercontent.com/chestnut-robotics/aero-hand-open/main/assets/overview5.png",
+        "alt": "hand 3D image overview5",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://raw.githubusercontent.com/chestnut-robotics/aero-hand-open/main/assets/overview6.png",
+        "alt": "hand 3D image overview6",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://raw.githubusercontent.com/chestnut-robotics/aero-hand-open/main/assets/overview7.png",
+        "alt": "hand 3D image overview7",
+        "poster": ""
+      },
+      {
+        "kind": "link",
+        "url": "https://www.youtube.com/embed/5dC3mGMH704",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "link",
+        "url": "https://www.youtube.com/embed/YquX4tnEGGk",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "link",
+        "url": "https://www.youtube.com/embed/MrtAuY8ZeIo",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "link",
+        "url": "https://www.youtube.com/embed/dJNhkjy4fLo",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "link",
+        "url": "https://www.youtube.com/embed/sxOPMRkkTjg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "link",
+        "url": "https://chestnut-robotics.github.io/aero-hand-open/static/videos/1million_cycle_test.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://chestnut-robotics.github.io/aero-hand-open/static/videos/rollout-sim-trimed.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://chestnut-robotics.github.io/aero-hand-open/static/videos/rollout-in-real.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://chestnut-robotics.github.io/aero-hand-open/static/videos/cash_register.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://chestnut-robotics.github.io/aero-hand-open/static/videos/soda_can.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://chestnut-robotics.github.io/aero-hand-open/static/videos/m5_screw.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://chestnut-robotics.github.io/aero-hand-open/static/videos/pickup_iphone.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://chestnut-robotics.github.io/aero-hand-open/static/videos/scredriver.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://chestnut-robotics.github.io/aero-hand-open/static/videos/pipette.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://chestnut-robotics.github.io/aero-hand-open/static/videos/fruit.mp4",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "dexlink-hand": {
+    "source": "https://arxiv.org/html/2606.17418v1",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/icons/smileybones-small.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/arxiv-logo-primary-light.svg",
+        "alt": "arXiv logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2606.17418v1/fig/Overview.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2606.17418v1/fig/Mechanisms.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2606.17418v1/fig/Kinematics.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2606.17418v1/fig/Hand_Position.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2606.17418v1/fig/Thumb_Opposability.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2606.17418v1/fig/Load_Force.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2606.17418v1/fig/Grasping.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2606.17418v1/fig/Tool_Manipulation.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation.png",
+        "alt": "Simons Foundation",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation-international.png",
+        "alt": "Simons Foundation International",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/schmidt-sciences.png",
+        "alt": "Schmidt Sciences",
+        "poster": ""
+      }
+    ]
+  },
+  "mm-hand": {
+    "source": "https://arxiv.org/html/2604.17245v1",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/icons/smileybones-small.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/arxiv-logo-primary-light.svg",
+        "alt": "arXiv logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2604.17245v1/figure/overview.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2604.17245v1/figure/palm_structure.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2604.17245v1/figure/Theoretical_Analysis.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2604.17245v1/finger_structure.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2604.17245v1/figure/software_tension.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2604.17245v1/Electronics.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2604.17245v1/figure/friction_test_setup.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2604.17245v1/figure/fingertip_force_test.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2604.17245v1/figure/friction_test_result.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2604.17245v1/figure/fingertip_force_static_error_combine.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2604.17245v1/figure/stereo_depth.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation.png",
+        "alt": "Simons Foundation",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation-international.png",
+        "alt": "Simons Foundation International",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/schmidt-sciences.png",
+        "alt": "Schmidt Sciences",
+        "poster": ""
+      }
+    ]
+  },
+  "dmanus": {
+    "source": "https://arxiv.org/html/2210.15658v2",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/icons/smileybones-small.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/arxiv-logo-primary-light.svg",
+        "alt": "arXiv logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2210.15658v2/images/fig-1-new.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2210.15658v2/images/dmanus-fig-2.jpeg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2210.15658v2/images/dmanus_sim.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2210.15658v2/images/data-collection.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2210.15658v2/two-finger-signal-plot.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2210.15658v2/grasps.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2210.15658v2/images/ball-grid.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2210.15658v2/dataset.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2210.15658v2/images/dmanus_params.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation.png",
+        "alt": "Simons Foundation",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation-international.png",
+        "alt": "Simons Foundation International",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/schmidt-sciences.png",
+        "alt": "Schmidt Sciences",
+        "poster": ""
+      }
+    ]
+  },
+  "tesollo-dg-5f-s": {
+    "source": "https://www.tesollo.com/products/grippers/dg-5f-s",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://www.tesollo.com/branding/logo_white.svg",
+        "alt": "TESOLLO",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.tesollo.com/branding/logo_color.svg",
+        "alt": "TESOLLO",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.tesollo.com/site/products/2026/08/146d4c2b-d994-494a-ad50-d38c48ffed34.webp",
+        "alt": "DG-5F-S — A 20-DoF, adult-hand-sized anthropomorphic robotic hand with a sub-1 kg design, optimized for humanoid platforms and advanced manipulation.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/1I0rBwZGxWk/maxresdefault.jpg",
+        "alt": "DG-5F-S demo video",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.tesollo.com/site/products/dg-5f-s/dg-5f-s-product-8.webp",
+        "alt": "Fingertip Sensor (Tactile Sensor)",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.tesollo.com/site/products/dg-5f-s/dg-5f-s-product-5.webp",
+        "alt": "Optional compact configuration (5 fingers / 15 DoF)",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.tesollo.com/site/products/dg-5f-s/dg-5f-s-product-3.webp",
+        "alt": "Gripper mounting stand",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.tesollo.com/site/products/dg-5f-s/dg-5f-s-product.webp",
+        "alt": "Humanoid robotics research and platform integration",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.tesollo.com/site/products/dg-5f-m/dg-5f-m-product-2.webp",
+        "alt": "Tool use and unstructured object grasping/manipulation",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.tesollo.com/site/products/dg-5f-m/dg-5f-m-product.webp",
+        "alt": "Precision tasks such as assembly and fastening",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.tesollo.com/site/products/2026/08/21d43383-2721-4226-b66d-2590382a0349.webp",
+        "alt": "DG-5F-M",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.tesollo.com/site/pages/common/untitled-483-2.webp",
+        "alt": "DG-4F",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.tesollo.com/site/pages/common/untitled-484.webp",
+        "alt": "DG-3F-M",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.tesollo.com/site/products/dg-3f-b/dg-3f-b-hero.webp",
+        "alt": "DG-3F-B",
+        "poster": ""
+      }
+    ]
+  },
+  "paxini-dexh13-gen2": {
+    "source": "https://paxini.com/cn/dex/gen2",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://cdn-cn.paxini.com/official/images/logo_white.png",
+        "alt": "图片",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://paxini.com/images/Home/logo-store.webp",
+        "alt": "PaXiNi官方商城",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://paxini.com/images/Home/logo-aliexpress.webp",
+        "alt": "PaXiNi官方商城",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn-cn.paxini.com/official/images/lange.png",
+        "alt": "图片",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn-cn.paxini.com/official/images/logo_black.png",
+        "alt": "图片",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn-cn.paxini.com/official/images/store.png",
+        "alt": "图片",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn-cn.paxini.com/official/images/dex/dex-h13-1.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn-cn.paxini.com/official/images/dex/dex-h13-7.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn-cn.paxini.com/official/images/dex/dex-h13-2.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn-cn.paxini.com/official/images/dex/dex-h13-5.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn-cn.paxini.com/official/images/dex/dex-h5-9.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn-cn.paxini.com/official/images/dex/dex-h5-8.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn-cn.paxini.com/official/images/dex/dex-h13-6.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn-cn.paxini.com/official/images/robot/robot-apply-1.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn-cn.paxini.com/official/images/robot/robot-apply-2.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn-cn.paxini.com/official/images/robot/robot-apply-3.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn-cn.paxini.com/official/images/robot/robot-apply-4.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn-cn.paxini.com/official/images/robot/robot-apply-5.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn-cn.paxini.com/official/images/dex/dex-3.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://paxini.com/images/footer/arrow-right.png",
+        "alt": "arrow-right",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://paxini.com/images/footer/email.png",
+        "alt": "email",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://paxini.com/images/footer/address.png",
+        "alt": "address",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://paxini.com/images/footer/phone.png",
+        "alt": "phone",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://paxini.com/images/Home/weixin-gray.png",
+        "alt": "微信公众号",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://paxini.com/images/Home/toutiao-gray.png",
+        "alt": "头条号",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://paxini.com/images/Home/baijiahao-gray.png",
+        "alt": "百家号",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://paxini.com/images/Home/zhihu-gray.png",
+        "alt": "帕西尼知乎主页",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://paxini.com/images/Home/twitter-gray.png",
+        "alt": "帕西尼Twitter",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://paxini.com/images/Home/yt-gray.png",
+        "alt": "帕西尼YouTube",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn-cn.paxini.com/official/images/home/tell.png",
+        "alt": "图片",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn-cn.paxini.com/official/images/home/mkt.png",
+        "alt": "图片",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn-cn.paxini.com/official/images/home/hr.png",
+        "alt": "图片",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn-cn.paxini.com/official/images/home/address.png",
+        "alt": "图片",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn-cn.paxini.com/official/images/home/gongzhonghao-black.png",
+        "alt": "图片",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn-cn.paxini.com/official/images/home/toutiao-black.png",
+        "alt": "图片",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn-cn.paxini.com/official/images/home/baijiahao-b.png",
+        "alt": "图片",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn-cn.paxini.com/official/images/home/zhihu-black.png",
+        "alt": "帕西尼知乎主页",
+        "poster": ""
+      }
+    ]
+  }
+}

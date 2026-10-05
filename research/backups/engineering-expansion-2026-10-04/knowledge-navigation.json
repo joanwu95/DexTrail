@@ -1,0 +1,300 @@
+{
+  "schema_version": 1,
+  "groups": {
+    "record": "记录类型",
+    "mechanics": "机构与驱动",
+    "sensing": "感知",
+    "control": "控制与方法",
+    "task": "操作任务",
+    "engineering": "工程与资源"
+  },
+  "tags": {
+    "academic": {
+      "label": "学术研究",
+      "group": "record"
+    },
+    "industry": {
+      "label": "工业与产品",
+      "group": "record"
+    },
+    "kinematics": {
+      "label": "运动学与构型",
+      "group": "mechanics"
+    },
+    "tendon-driven": {
+      "label": "腱绳传动",
+      "group": "mechanics"
+    },
+    "underactuated": {
+      "label": "欠驱动",
+      "group": "mechanics"
+    },
+    "compliant-mechanics": {
+      "label": "柔顺机构",
+      "group": "mechanics"
+    },
+    "modular-design": {
+      "label": "模块化",
+      "group": "mechanics"
+    },
+    "integrated-actuation": {
+      "label": "驱动内部集成",
+      "group": "mechanics"
+    },
+    "tactile-sensing": {
+      "label": "触觉感知",
+      "group": "sensing"
+    },
+    "joint-sensing": {
+      "label": "关节感知",
+      "group": "sensing"
+    },
+    "force-sensing": {
+      "label": "力感知",
+      "group": "sensing"
+    },
+    "visual-sensing": {
+      "label": "视觉感知",
+      "group": "sensing"
+    },
+    "force-control": {
+      "label": "力控制",
+      "group": "control"
+    },
+    "learning-based": {
+      "label": "策略学习",
+      "group": "control"
+    },
+    "sim-to-real": {
+      "label": "仿真到实物",
+      "group": "control"
+    },
+    "adaptive-grasping": {
+      "label": "适应性抓握",
+      "group": "task"
+    },
+    "shape-recognition": {
+      "label": "接触形状识别",
+      "group": "task"
+    },
+    "in-hand-manipulation": {
+      "label": "手内操作",
+      "group": "task"
+    },
+    "demonstration-data": {
+      "label": "人手演示数据",
+      "group": "task"
+    },
+    "contact-data": {
+      "label": "接触数据采集",
+      "group": "task"
+    },
+    "system-integration": {
+      "label": "系统集成",
+      "group": "engineering"
+    },
+    "manufacturing": {
+      "label": "制造与小型化",
+      "group": "engineering"
+    },
+    "product-platform": {
+      "label": "产品平台",
+      "group": "engineering"
+    },
+    "maintenance": {
+      "label": "耐用与维护",
+      "group": "engineering"
+    },
+    "open-platform": {
+      "label": "开放研究平台",
+      "group": "engineering"
+    },
+    "learning-platform": {
+      "label": "学习实验平台",
+      "group": "engineering"
+    },
+    "calibration": {
+      "label": "传动与标定",
+      "group": "engineering"
+    },
+    "field-viewpoint": {
+      "label": "领域观点",
+      "group": "record"
+    },
+    "task-evaluation": {
+      "label": "任务评价",
+      "group": "task"
+    },
+    "co-design": {
+      "label": "机构与控制共同设计",
+      "group": "engineering"
+    },
+    "synthetic-grasp-data": {
+      "label": "合成抓握数据",
+      "group": "task"
+    },
+    "teleoperation": {
+      "label": "遥操作",
+      "group": "control"
+    },
+    "policy-adaptation": {
+      "label": "在线适应",
+      "group": "control"
+    },
+    "generative-policy": {
+      "label": "生成式策略",
+      "group": "control"
+    },
+    "mobile-manipulation": {
+      "label": "移动与操作",
+      "group": "task"
+    },
+    "model-based-control": {
+      "label": "模型与反馈控制",
+      "group": "control"
+    },
+    "contact-planning": {
+      "label": "接触规划",
+      "group": "control"
+    },
+    "industry-viewpoint": {
+      "label": "产业观点",
+      "group": "record"
+    }
+  },
+  "pages": {
+    "development/index.md": {
+      "mode": "history",
+      "unit": "精选节点"
+    },
+    "technologies/index.md": {
+      "mode": "routes",
+      "unit": "关联案例"
+    },
+    "engineering/index.md": {
+      "mode": "filter",
+      "unit": "专题",
+      "items": [
+        {
+          "class": "engineering-story",
+          "tags": [
+            "kinematics",
+            "underactuated"
+          ]
+        },
+        {
+          "class": "engineering-story",
+          "tags": [
+            "force-sensing",
+            "joint-sensing",
+            "tactile-sensing",
+            "force-control"
+          ]
+        },
+        {
+          "class": "engineering-story",
+          "tags": [
+            "tendon-driven",
+            "calibration"
+          ]
+        }
+      ]
+    },
+    "papers/index.md": {
+      "mode": "filter",
+      "unit": "论文",
+      "items": [
+        {
+          "class": "paper-entry",
+          "tags": [
+            "underactuated",
+            "compliant-mechanics",
+            "adaptive-grasping"
+          ]
+        },
+        {
+          "class": "paper-entry",
+          "tags": [
+            "learning-based",
+            "sim-to-real",
+            "in-hand-manipulation"
+          ]
+        },
+        {
+          "class": "paper-entry",
+          "tags": [
+            "open-platform",
+            "learning-platform"
+          ]
+        },
+        {
+          "class": "paper-entry",
+          "tags": [
+            "open-platform",
+            "learning-based",
+            "sim-to-real"
+          ]
+        }
+      ]
+    },
+    "compare.md": {
+      "mode": "compare",
+      "unit": "对比维度"
+    },
+    "technologies/tendon-driven.md": {
+      "mode": "links",
+      "tags": [
+        "tendon-driven",
+        "force-control",
+        "calibration"
+      ]
+    },
+    "technologies/underactuation-and-synergies.md": {
+      "mode": "links",
+      "tags": [
+        "underactuated",
+        "compliant-mechanics",
+        "adaptive-grasping"
+      ]
+    },
+    "engineering/degrees-of-freedom.md": {
+      "mode": "links",
+      "tags": [
+        "kinematics",
+        "underactuated"
+      ]
+    },
+    "engineering/sensing-chain.md": {
+      "mode": "links",
+      "tags": [
+        "force-sensing",
+        "joint-sensing",
+        "tactile-sensing",
+        "force-control"
+      ]
+    },
+    "engineering/transmission.md": {
+      "mode": "links",
+      "tags": [
+        "tendon-driven",
+        "calibration"
+      ]
+    },
+    "papers/leap-hand-2023.md": {
+      "mode": "links",
+      "tags": [
+        "open-platform",
+        "learning-based",
+        "sim-to-real"
+      ]
+    },
+    "papers/learning-dexterous-in-hand-manipulation.md": {
+      "mode": "links",
+      "tags": [
+        "learning-based",
+        "sim-to-real",
+        "in-hand-manipulation"
+      ]
+    }
+  }
+}

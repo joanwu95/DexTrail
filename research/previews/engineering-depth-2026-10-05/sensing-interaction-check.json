@@ -1,0 +1,62 @@
+[
+  {
+    "pressed": "电机端电流 I · A / mA",
+    "product": "shadow-hand",
+    "status": "Shadow Dexterous Hand（Classic 五指版） · 电机端 · 1 项核查记录"
+  },
+  {
+    "pressed": "传动中腱负载 / 张力 · N",
+    "product": "shadow-hand",
+    "status": "Shadow Dexterous Hand（Classic 五指版） · 传动中 · 1 项核查记录"
+  },
+  {
+    "pressed": "关节端角度 q · rad / °",
+    "product": "shadow-hand",
+    "status": "Shadow Dexterous Hand（Classic 五指版） · 关节端 · 1 项核查记录"
+  },
+  {
+    "pressed": "接触端触觉信号 / 接触力",
+    "product": "shadow-hand",
+    "status": "Shadow Dexterous Hand（Classic 五指版） · 接触端 · 1 项核查记录"
+  },
+  {
+    "pressed": "电机端电流 I · A / mA",
+    "product": "leap-hand",
+    "status": "LEAP Hand v1（Full） · 电机端 · 1 项核查记录"
+  },
+  {
+    "pressed": "传动中腱负载 / 张力 · N",
+    "product": "leap-hand",
+    "status": "LEAP Hand v1（Full） · 传动中 · 没有独立通道记录"
+  },
+  {
+    "pressed": "关节端角度 q · rad / °",
+    "product": "leap-hand",
+    "status": "LEAP Hand v1（Full） · 关节端 · 1 项核查记录"
+  },
+  {
+    "pressed": "接触端触觉信号 / 接触力",
+    "product": "leap-hand",
+    "status": "LEAP Hand v1（Full） · 接触端 · 1 项核查记录"
+  },
+  {
+    "pressed": "电机端电流 I · A / mA",
+    "product": "wuji-hand-2",
+    "status": "Wuji Hand 2 · 电机端 · 1 项核查记录"
+  },
+  {
+    "pressed": "传动中腱负载 / 张力 · N",
+    "product": "wuji-hand-2",
+    "status": "Wuji Hand 2 · 传动中 · 没有独立通道记录"
+  },
+  {
+    "pressed": "关节端角度 q · rad / °",
+    "product": "wuji-hand-2",
+    "status": "Wuji Hand 2 · 关节端 · 2 项核查记录"
+  },
+  {
+    "pressed": "接触端触觉信号 / 接触力",
+    "product": "wuji-hand-2",
+    "status": "Wuji Hand 2 · 接触端 · 1 项核查记录"
+  }
+]

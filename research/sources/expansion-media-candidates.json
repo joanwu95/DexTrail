@@ -1,0 +1,1496 @@
+{
+  "wuji-hand": {
+    "source": "https://www.wuji.tech/zh/hand",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "video",
+        "url": "https://www.wuji.tech/assets/videos/hand/C_1_1_mobile.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://www.wuji.tech/assets/videos/hand/C_1_1.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.wuji.tech/assets/posters/hand_video_cover.webp",
+        "alt": "Wuji Hand Video",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.wuji.tech/assets/images/hand/C_1_2.webp",
+        "alt": "20 个主动自由度",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.wuji.tech/assets/images/hand/C_1_3.webp",
+        "alt": "极致轻量",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.wuji.tech/assets/images/hand/C_2_4.webp",
+        "alt": "指尖输出力",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.wuji.tech/assets/images/hand/C_2_5.webp",
+        "alt": "静态抓握力",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.wuji.tech/assets/images/hand/C_2_6_01.webp",
+        "alt": "action-1",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.wuji.tech/assets/images/hand/C_2_6_02.webp",
+        "alt": "action-2",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.wuji.tech/assets/images/hand/C_2_6_03.webp",
+        "alt": "action-3",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.wuji.tech/assets/images/hand/C_2_6_04.webp",
+        "alt": "action-4",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.wuji.tech/assets/images/hand/C_2_6_05.webp",
+        "alt": "action-5",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.wuji.tech/assets/images/hand/C_2_6_06.webp",
+        "alt": "action-6",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.wuji.tech/assets/images/hand/C_2_6_07.webp",
+        "alt": "action-7",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.wuji.tech/assets/images/hand/C_2_6_08.webp",
+        "alt": "action-8",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.wuji.tech/assets/public-security-filing-DzUIhgta.png",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "linker-l6": {
+    "source": "https://www.linkerhand.com/details/LinkerHandL6/",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l6/detail-2.png",
+        "alt": "product2",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l6/detail-3.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l6/detail-4.png",
+        "alt": "Interaction",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/placeholder.MH0gUi18.png",
+        "alt": "Windows GUI",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/logobottom.SRWDOoe5.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/gongzhonghao.BBDptsoE.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/shipinhao.Dre-1gW1.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/qr-wechat-tooltip.D-aOzpyr.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/qr-tiktok-tooltip.BCywJeVV.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/qr-redbook-tooltip.BkVxPwuS.png",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "linker-o6": {
+    "source": "https://www.linkerhand.com/details/LinkerHandO6/",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-o6/detail-2.png",
+        "alt": "product1",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-o6/detail-3.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-o6/detail-4.png",
+        "alt": "Interaction",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/placeholder.MH0gUi18.png",
+        "alt": "Windows GUI",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/logobottom.SRWDOoe5.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/gongzhonghao.BBDptsoE.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/shipinhao.Dre-1gW1.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/qr-wechat-tooltip.D-aOzpyr.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/qr-tiktok-tooltip.BCywJeVV.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/qr-redbook-tooltip.BkVxPwuS.png",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "linker-l20-lite": {
+    "source": "https://www.linkerhand.com/details/LinkerHandL20Lite/",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l20-lite/detail-2.png",
+        "alt": "product3",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l20-lite/detail-3.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l20-lite/detail-4.png",
+        "alt": "Interaction",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/logobottom.SRWDOoe5.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/gongzhonghao.BBDptsoE.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/shipinhao.Dre-1gW1.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/qr-wechat-tooltip.D-aOzpyr.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/qr-tiktok-tooltip.BCywJeVV.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/qr-redbook-tooltip.BkVxPwuS.png",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "linker-l30": {
+    "source": "https://www.linkerhand.com/details/LinkerHandL30/",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l30pro/detail-2.png",
+        "alt": "product6",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l30pro/detail-3.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l30pro/detail-4.png",
+        "alt": "Interaction",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/logobottom.SRWDOoe5.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/gongzhonghao.BBDptsoE.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/shipinhao.Dre-1gW1.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/qr-wechat-tooltip.D-aOzpyr.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/qr-tiktok-tooltip.BCywJeVV.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/qr-redbook-tooltip.BkVxPwuS.png",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "linker-o30": {
+    "source": "https://www.linkerhand.com/details/LinkerHandO30/",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-o30/detail-2.png",
+        "alt": "product9",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-o30/detail-3.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-o30/detail-4.png",
+        "alt": "Interaction",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/logobottom.SRWDOoe5.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/gongzhonghao.BBDptsoE.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/shipinhao.Dre-1gW1.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/qr-wechat-tooltip.D-aOzpyr.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/qr-tiktok-tooltip.BCywJeVV.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/qr-redbook-tooltip.BkVxPwuS.png",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "ilda-hand": {
+    "source": "https://www.nature.com/articles/s41467-021-27261-0",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://pubads.g.doubleclick.net/gampad/ad?iu=/285/nature_communications/article&sz=728x90&c=1798864863&t=pos%3Dtop%26type%3Darticle%26artid%3Ds41467-021-27261-0%26doi%3D10.1038/s41467-021-27261-0%26subjmeta%3D166,639,987,988%26kwrd%3DMechanical+engineering,Electrical+and+electronic+engineering",
+        "alt": "Advertisement",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/full/nature-cms/uploads/product/ncomms/header-7001f06bc3fe2437048388e9f2f44215.svg",
+        "alt": "Nature Communications",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs42256-025-01053-3/MediaObjects/42256_2025_1053_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs44172-025-00407-4/MediaObjects/44172_2025_407_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs41467-025-57741-6/MediaObjects/41467_2025_57741_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-021-27261-0/MediaObjects/41467_2021_27261_Fig1_HTML.png",
+        "alt": "Fig. 1: Overview of the ILDA.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-021-27261-0/MediaObjects/41467_2021_27261_Fig2_HTML.png",
+        "alt": "Fig. 2: Kinematic structure of the proposed mechanism of the robotic finger.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-021-27261-0/MediaObjects/41467_2021_27261_Fig3_HTML.png",
+        "alt": "Fig. 3: Kinematic analysis of the proposed mechanism of the finger.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-021-27261-0/MediaObjects/41467_2021_27261_Fig4_HTML.png",
+        "alt": "Fig. 4: Structure of the robotic finger designed based on the proposed mechanism.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-021-27261-0/MediaObjects/41467_2021_27261_Fig5_HTML.png",
+        "alt": "Fig. 5: Manufactured ILDA hand.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-021-27261-0/MediaObjects/41467_2021_27261_Fig6_HTML.png",
+        "alt": "Fig. 6: Performance tests of the hand.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-021-27261-0/MediaObjects/41467_2021_27261_Fig7_HTML.png",
+        "alt": "Fig. 7: Reliability tests of the hand.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-021-27261-0/MediaObjects/41467_2021_27261_Fig8_HTML.png",
+        "alt": "Fig. 8: Tool manipulation tests with the hand fixed to the robotic arm.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://pubads.g.doubleclick.net/gampad/ad?iu=/285/nature_communications/article&sz=300x250&c=-2130182876&t=pos%3Dright%26type%3Darticle%26artid%3Ds41467-021-27261-0%26doi%3D10.1038/s41467-021-27261-0%26subjmeta%3D166,639,987,988%26kwrd%3DMechanical+engineering,Electrical+and+electronic+engineering",
+        "alt": "Advertisement",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.nature.com/oscar-static/images/logos/sn-logo-white-c8f7a9c061.svg",
+        "alt": "Springer Nature",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.nature.com/static/images/logos/nature-briefing-logo-n150-white-afc2e6ccc7.svg",
+        "alt": "Nature Briefing",
+        "poster": ""
+      }
+    ]
+  },
+  "vms-hand": {
+    "source": "https://www.nature.com/articles/s41467-025-62122-0",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://pubads.g.doubleclick.net/gampad/ad?iu=/285/nature_communications/article&sz=728x90&c=369035783&t=pos%3Dtop%26type%3Darticle%26artid%3Ds41467-025-62122-0%26doi%3D10.1038/s41467-025-62122-0%26techmeta%3D120,123,128%26subjmeta%3D166,639,987,988%26kwrd%3DMechanical+engineering,Electrical+and+electronic+engineering",
+        "alt": "Advertisement",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/full/nature-cms/uploads/product/ncomms/header-7001f06bc3fe2437048388e9f2f44215.svg",
+        "alt": "Nature Communications",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs41378-026-01179-3/MediaObjects/41378_2026_1179_Figa_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs41467-025-65624-z/MediaObjects/41467_2025_65624_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3Aplaceholder%2Fimages/placeholder-figure-nature.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-62122-0/MediaObjects/41467_2025_62122_Fig1_HTML.png",
+        "alt": "Fig. 1: Overview of the integrated actuation-perception hand.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-62122-0/MediaObjects/41467_2025_62122_Fig2_HTML.png",
+        "alt": "Fig. 2: Mechanism design of the VMS hand.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-62122-0/MediaObjects/41467_2025_62122_Fig3_HTML.png",
+        "alt": "Fig. 3: Characterization of tendon properties.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-62122-0/MediaObjects/41467_2025_62122_Fig4_HTML.png",
+        "alt": "Fig. 4: Evaluation of the hand position perception capability.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-62122-0/MediaObjects/41467_2025_62122_Fig5_HTML.png",
+        "alt": "Fig. 5: Evaluation of the hand external force perception capability.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-62122-0/MediaObjects/41467_2025_62122_Fig6_HTML.png",
+        "alt": "Fig. 6: Evaluation of Active Tactile Sensing Capabilities.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://pubads.g.doubleclick.net/gampad/ad?iu=/285/nature_communications/article&sz=300x250&c=-234868411&t=pos%3Dright%26type%3Darticle%26artid%3Ds41467-025-62122-0%26doi%3D10.1038/s41467-025-62122-0%26techmeta%3D120,123,128%26subjmeta%3D166,639,987,988%26kwrd%3DMechanical+engineering,Electrical+and+electronic+engineering",
+        "alt": "Advertisement",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.nature.com/oscar-static/images/logos/sn-logo-white-c8f7a9c061.svg",
+        "alt": "Springer Nature",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.nature.com/static/images/logos/nature-briefing-logo-n150-white-afc2e6ccc7.svg",
+        "alt": "Nature Briefing",
+        "poster": ""
+      }
+    ]
+  },
+  "palm-finger-soft-hand": {
+    "source": "https://www.nature.com/articles/s41467-025-57741-6",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://pubads.g.doubleclick.net/gampad/ad?iu=/285/nature_communications/article&sz=728x90&c=1990504137&t=pos%3Dtop%26type%3Darticle%26artid%3Ds41467-025-57741-6%26doi%3D10.1038/s41467-025-57741-6%26techmeta%3D120,123,129,139%26subjmeta%3D166,639,987,988%26kwrd%3DMechanical+engineering,Electrical+and+electronic+engineering",
+        "alt": "Advertisement",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/full/nature-cms/uploads/product/ncomms/header-7001f06bc3fe2437048388e9f2f44215.svg",
+        "alt": "Nature Communications",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs44182-026-00079-y/MediaObjects/44182_2026_79_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs41467-022-35479-9/MediaObjects/41467_2022_35479_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs42256-025-01053-3/MediaObjects/42256_2025_1053_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-57741-6/MediaObjects/41467_2025_57741_Fig1_HTML.png",
+        "alt": "Fig. 1: General design concept and advantages of TacPalm SoftHand.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-57741-6/MediaObjects/41467_2025_57741_Fig2_HTML.png",
+        "alt": "Fig. 2: Mechanical design.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-57741-6/MediaObjects/41467_2025_57741_Fig3_HTML.png",
+        "alt": "Fig. 3: Tactile sensing performance of the palm.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-57741-6/MediaObjects/41467_2025_57741_Fig4_HTML.png",
+        "alt": "Fig. 4: Finger performance and palm-assisted grasping.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-57741-6/MediaObjects/41467_2025_57741_Fig5_HTML.png",
+        "alt": "Fig. 5: Exquisite perception and classification of different objects.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-57741-6/MediaObjects/41467_2025_57741_Fig6_HTML.png",
+        "alt": "Fig. 6: Cooperation of the tactile palm and soft fingers.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-57741-6/MediaObjects/41467_2025_57741_Fig7_HTML.png",
+        "alt": "Fig. 7: Identification and delivery of packaged object in an HMI application.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://pubads.g.doubleclick.net/gampad/ad?iu=/285/nature_communications/article&sz=300x250&c=1228348577&t=pos%3Dright%26type%3Darticle%26artid%3Ds41467-025-57741-6%26doi%3D10.1038/s41467-025-57741-6%26techmeta%3D120,123,129,139%26subjmeta%3D166,639,987,988%26kwrd%3DMechanical+engineering,Electrical+and+electronic+engineering",
+        "alt": "Advertisement",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.nature.com/oscar-static/images/logos/sn-logo-white-c8f7a9c061.svg",
+        "alt": "Springer Nature",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.nature.com/static/images/logos/nature-briefing-logo-n150-white-afc2e6ccc7.svg",
+        "alt": "Nature Briefing",
+        "poster": ""
+      }
+    ]
+  },
+  "detachable-crawling-hand": {
+    "source": "https://www.nature.com/articles/s41467-025-67675-8",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://pubads.g.doubleclick.net/gampad/ad?iu=/285/nature_communications/article&sz=728x90&c=-1580166247&t=pos%3Dtop%26type%3Darticle%26artid%3Ds41467-025-67675-8%26doi%3D10.1038/s41467-025-67675-8%26subjmeta%3D117,166,639,705,988%26kwrd%3DMechanical+engineering,Computer+science",
+        "alt": "Advertisement",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/full/nature-cms/uploads/product/ncomms/header-7001f06bc3fe2437048388e9f2f44215.svg",
+        "alt": "Nature Communications",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs44172-025-00407-4/MediaObjects/44172_2025_407_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3Aplaceholder%2Fimages/placeholder-figure-nature.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs41598-022-04953-1/MediaObjects/41598_2022_4953_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-67675-8/MediaObjects/41467_2025_67675_Fig1_HTML.png",
+        "alt": "Fig. 1: Concept and design of the symmetric robotic hand.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-67675-8/MediaObjects/41467_2025_67675_Fig2_HTML.png",
+        "alt": "Fig. 2: Overview of the proposed pipeline for optimizing multi-finger robotic hand configurations for both grasping and crawling locomotion.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-67675-8/MediaObjects/41467_2025_67675_Fig3_HTML.png",
+        "alt": "Fig. 3: Demonstrations of the designed hand dexterity.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-67675-8/MediaObjects/41467_2025_67675_Fig4_HTML.png",
+        "alt": "Fig. 4: Role switch between a robotic hand and a crawler.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-67675-8/MediaObjects/41467_2025_67675_Fig5_HTML.jpg",
+        "alt": "Fig. 5: Symmetric design for flip recovery.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-67675-8/MediaObjects/41467_2025_67675_Fig6_HTML.jpg",
+        "alt": "Fig. 6: Reachability map and grasp taxonomy.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-67675-8/MediaObjects/41467_2025_67675_Fig7_HTML.png",
+        "alt": "Fig. 7: A two-dimensional velocity field by the DS.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-67675-8/MediaObjects/41467_2025_67675_Fig8_HTML.png",
+        "alt": "Fig. 8: Mechanical design of the robotic hand and its components.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://pubads.g.doubleclick.net/gampad/ad?iu=/285/nature_communications/article&sz=300x250&c=829742120&t=pos%3Dright%26type%3Darticle%26artid%3Ds41467-025-67675-8%26doi%3D10.1038/s41467-025-67675-8%26subjmeta%3D117,166,639,705,988%26kwrd%3DMechanical+engineering,Computer+science",
+        "alt": "Advertisement",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.nature.com/oscar-static/images/logos/sn-logo-white-c8f7a9c061.svg",
+        "alt": "Springer Nature",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.nature.com/static/images/logos/nature-briefing-ai-and-robotics-logo-2a1193ada7.svg",
+        "alt": "Nature Briefing AI and Robotics",
+        "poster": ""
+      }
+    ]
+  },
+  "open-parametric-hand": {
+    "source": "https://arxiv.org/html/2410.18633v1",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/icons/smileybones-small.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/arxiv-logo-primary-light.svg",
+        "alt": "arXiv logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2410.18633v1/fig1.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2410.18633v1/fig2.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2410.18633v1/fig3.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2410.18633v1/fig4.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2410.18633v1/fig5.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2410.18633v1/fig6.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2410.18633v1/fig7.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2410.18633v1/fig8.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2410.18633v1/figs1.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2410.18633v1/figs2.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2410.18633v1/figs3.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation.png",
+        "alt": "Simons Foundation",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation-international.png",
+        "alt": "Simons Foundation International",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/schmidt-sciences.png",
+        "alt": "Schmidt Sciences",
+        "poster": ""
+      }
+    ]
+  },
+  "dexco-hand": {
+    "source": "https://msc.berkeley.edu/research/mechatronics/dexco.html",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://msc.berkeley.edu/assets/logos/small_2dc.jpg",
+        "alt": "Mechanical Systems Control Lab",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://msc.berkeley.edu/assets/images/research/mechatronics/dexco.png",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "f-tac-hand": {
+    "source": "https://www.nature.com/articles/s42256-025-01053-3",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://pubads.g.doubleclick.net/gampad/ad?iu=/285/natmachintell.nature.com/article&sz=728x90&c=-1239133956&t=pos%3Dtop%26type%3Darticle%26artid%3Ds42256-025-01053-3%26doi%3D10.1038/s42256-025-01053-3%26subjmeta%3D117,166,639,705,988%26kwrd%3DMechanical+engineering,Computer+science",
+        "alt": "Advertisement",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/full/nature-cms/uploads/product/natmachintell/header-3a46d3127519f23b44cac085d4e82c58.svg",
+        "alt": "Nature Machine Intelligence",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs44172-025-00407-4/MediaObjects/44172_2025_407_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3Aplaceholder%2Fimages/placeholder-figure-nature.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs42256-026-01292-y/MediaObjects/42256_2026_1292_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs42256-025-01053-3/MediaObjects/42256_2025_1053_Fig1_HTML.png",
+        "alt": "Fig. 1: Overview of F-TAC Hand.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs42256-025-01053-3/MediaObjects/42256_2025_1053_Fig2_HTML.png",
+        "alt": "Fig. 2: Hardware of F-TAC Hand.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs42256-025-01053-3/MediaObjects/42256_2025_1053_Fig3_HTML.png",
+        "alt": "Fig. 3: Workspace of F-TAC Hand.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs42256-025-01053-3/MediaObjects/42256_2025_1053_Fig4_HTML.png",
+        "alt": "Fig. 4: Comprehensive tactile sensing capabilities of F-TAC Hand.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs42256-025-01053-3/MediaObjects/42256_2025_1053_Fig5_HTML.png",
+        "alt": "Fig. 5: Human-like diverse grasping strategies for single objects.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs42256-025-01053-3/MediaObjects/42256_2025_1053_Fig6_HTML.png",
+        "alt": "Fig. 6: F-TAC Hand’s adaptive behaviours.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://pubads.g.doubleclick.net/gampad/ad?iu=/285/natmachintell.nature.com/article&sz=300x250&c=1869009356&t=pos%3Dright%26type%3Darticle%26artid%3Ds42256-025-01053-3%26doi%3D10.1038/s42256-025-01053-3%26subjmeta%3D117,166,639,705,988%26kwrd%3DMechanical+engineering,Computer+science",
+        "alt": "Advertisement",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.nature.com/oscar-static/images/logos/sn-logo-white-c8f7a9c061.svg",
+        "alt": "Springer Nature",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.nature.com/static/images/logos/nature-briefing-ai-and-robotics-logo-2a1193ada7.svg",
+        "alt": "Nature Briefing AI and Robotics",
+        "poster": ""
+      }
+    ]
+  },
+  "adapt-hand-1": {
+    "source": "https://www.nature.com/articles/s44172-025-00407-4",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://pubads.g.doubleclick.net/gampad/ad?iu=/285/commseng.nature.com/article&sz=728x90&c=-1803131935&t=pos%3Dtop%26type%3Darticle%26artid%3Ds44172-025-00407-4%26doi%3D10.1038/s44172-025-00407-4%26subjmeta%3D166,639,987,988%26kwrd%3DMechanical+engineering,Electrical+and+electronic+engineering",
+        "alt": "Advertisement",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/full/nature-cms/uploads/product/commseng/header-62c0b455996477cb1b5ef064a921a823.svg",
+        "alt": "Communications Engineering",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs42256-025-01053-3/MediaObjects/42256_2025_1053_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs44182-025-00034-3/MediaObjects/44182_2025_34_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs41467-025-67675-8/MediaObjects/41467_2025_67675_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44172-025-00407-4/MediaObjects/44172_2025_407_Fig1_HTML.png",
+        "alt": "Fig. 1: An anthropomorphic robot hand designed with biomimetic spatial distribution of stiffness leads to a emergence of robust and self-organizing behavior.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44172-025-00407-4/MediaObjects/44172_2025_407_Fig2_HTML.png",
+        "alt": "Fig. 2: The ADAPT Hand with its salient features of the finger design and the human matched stiffness profiles.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44172-025-00407-4/MediaObjects/44172_2025_407_Fig3_HTML.png",
+        "alt": "Fig. 3: Experimental results of the effect of a rigid and a soft skin for three different manipulation tasks.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44172-025-00407-4/MediaObjects/44172_2025_407_Fig4_HTML.png",
+        "alt": "Fig. 4: Compilation of the experimental results regarding the finger focusing on the usage of a soft metacarpophalangeal(MCP) joint.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44172-025-00407-4/MediaObjects/44172_2025_407_Fig5_HTML.png",
+        "alt": "Fig. 5: Pick and place experiment results showcasing the setup, object wise evaluation, and a timeseries demonstrating extensive testing.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44172-025-00407-4/MediaObjects/44172_2025_407_Fig6_HTML.png",
+        "alt": "Fig. 6: Experimental results from a contact rich grasping task off a tabletop surface, showcasing the motion, successes, and categorization of grasp types against the object geometry and between the robot and a human.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44172-025-00407-4/MediaObjects/44172_2025_407_Fig7_HTML.png",
+        "alt": "Fig. 7: Detailed description of the ADAPT hand hardware alongside the motion programming scheme.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44172-025-00407-4/MediaObjects/44172_2025_407_Fig8_HTML.png",
+        "alt": "Fig. 8: Experimental setup for measuring hand-environment interactions at the skin and finger level.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://pubads.g.doubleclick.net/gampad/ad?iu=/285/commseng.nature.com/article&sz=300x250&c=-261353252&t=pos%3Dright%26type%3Darticle%26artid%3Ds44172-025-00407-4%26doi%3D10.1038/s44172-025-00407-4%26subjmeta%3D166,639,987,988%26kwrd%3DMechanical+engineering,Electrical+and+electronic+engineering",
+        "alt": "Advertisement",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.nature.com/oscar-static/images/logos/sn-logo-white-c8f7a9c061.svg",
+        "alt": "Springer Nature",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.nature.com/static/images/logos/nature-briefing-logo-n150-white-afc2e6ccc7.svg",
+        "alt": "Nature Briefing",
+        "poster": ""
+      }
+    ]
+  },
+  "adapt-hand-2": {
+    "source": "https://www.nature.com/articles/s44182-025-00034-3",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://pubads.g.doubleclick.net/gampad/ad?iu=/285/npjrobot.nature.com/article&sz=728x90&c=-617712992&t=pos%3Dtop%26type%3Darticle%26artid%3Ds44182-025-00034-3%26doi%3D10.1038/s44182-025-00034-3%26subjmeta%3D166,639,988%26kwrd%3DEngineering,Mechanical+engineering",
+        "alt": "Advertisement",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.nature.com/static/images/product-logos/naturecom-secondary-aba9cc0a61.svg",
+        "alt": "npj Robotics",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs44172-025-00407-4/MediaObjects/44172_2025_407_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs41467-025-67675-8/MediaObjects/41467_2025_67675_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs42256-025-01053-3/MediaObjects/42256_2025_1053_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-025-00034-3/MediaObjects/44182_2025_34_Fig1_HTML.png",
+        "alt": "Fig. 1: Contribution of the paper split to three parts.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-025-00034-3/MediaObjects/44182_2025_34_Fig2_HTML.png",
+        "alt": "Fig. 2: The ADAPT Hand 2.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-025-00034-3/MediaObjects/44182_2025_34_Fig3_HTML.png",
+        "alt": "Fig. 3: 3D workspace comparison for the AH1, AH2, the Shadow hand, and the Allegro hand against a human.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-025-00034-3/MediaObjects/44182_2025_34_Fig4_HTML.png",
+        "alt": "Fig. 4: Characterization of the continuous skin on the hand alongside the compliant joints on the AH2.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-025-00034-3/MediaObjects/44182_2025_34_Fig5_HTML.png",
+        "alt": "Fig. 5: 11 different input human hand poses and the output robot pose using a joint-to-joint mapped teleoperation system.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-025-00034-3/MediaObjects/44182_2025_34_Fig6_HTML.png",
+        "alt": "Fig. 6: Results summarizing the pick and place assessment between the human, AH2, and AH1 for 10 objects of varying geometry.",
+        "poster": ""
+      },
+      {
+        "kind": "link",
+        "url": "https://e.video-cdn.net/watch?video-id=2s2bb9-FXLCUB_o7khd_S-&player-id=-qZL2aSgACrhe2fEUstC_v&channel-id=86512",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-025-00034-3/MediaObjects/44182_2025_34_Fig7_HTML.png",
+        "alt": "Fig. 7",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-025-00034-3/MediaObjects/44182_2025_34_Fig8_HTML.png",
+        "alt": "Fig. 8",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-025-00034-3/MediaObjects/44182_2025_34_Fig9_HTML.png",
+        "alt": "Fig. 9: Summary of the AH2 hardware with a focus on key changes from AH126.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-025-00034-3/MediaObjects/44182_2025_34_Fig10_HTML.png",
+        "alt": "Fig. 10: Diagrams to assist the explanation of the joint angle mapping for the hand and wrist.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://pubads.g.doubleclick.net/gampad/ad?iu=/285/npjrobot.nature.com/article&sz=300x250&c=-1873573098&t=pos%3Dright%26type%3Darticle%26artid%3Ds44182-025-00034-3%26doi%3D10.1038/s44182-025-00034-3%26subjmeta%3D166,639,988%26kwrd%3DEngineering,Mechanical+engineering",
+        "alt": "Advertisement",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.nature.com/oscar-static/images/logos/sn-logo-white-c8f7a9c061.svg",
+        "alt": "Springer Nature",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.nature.com/static/images/logos/nature-briefing-logo-n150-white-afc2e6ccc7.svg",
+        "alt": "Nature Briefing",
+        "poster": ""
+      }
+    ]
+  },
+  "dash-hand": {
+    "source": "https://arxiv.org/html/2306.04784v3",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/icons/smileybones-small.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/arxiv-logo-primary-light.svg",
+        "alt": "arXiv logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2306.04784v3/figure1.jpeg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2306.04784v3/fig2_scaled.jpeg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2306.04784v3/CADdiagram_calib.jpeg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2306.04784v3/teleop.jpeg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2306.04784v3/some_tasks_short.jpeg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2306.04784v3/all_tasks_rainbow.jpeg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2306.04784v3/category_adjusted.jpeg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation.png",
+        "alt": "Simons Foundation",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation-international.png",
+        "alt": "Simons Foundation International",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/schmidt-sciences.png",
+        "alt": "Schmidt Sciences",
+        "poster": ""
+      }
+    ]
+  },
+  "eyesight-hand": {
+    "source": "https://arxiv.org/html/2408.06265v1",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/icons/smileybones-small.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/arxiv-logo-primary-light.svg",
+        "alt": "arXiv logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2408.06265v1/figures/opening.png",
+        "alt": "[Uncaptioned image]",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2408.06265v1/figures/mechanical_design.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2408.06265v1/figures/human_kinematics.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2408.06265v1/figures/tactile.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2408.06265v1/figures/task.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2408.06265v1/eyesighthand-learning.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2408.06265v1/eyesighthand.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation.png",
+        "alt": "Simons Foundation",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation-international.png",
+        "alt": "Simons Foundation International",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/schmidt-sciences.png",
+        "alt": "Schmidt Sciences",
+        "poster": ""
+      }
+    ]
+  },
+  "yale-sphinx": {
+    "source": "https://www.eng.yale.edu/grablab/openhand/sphinx_hand.html",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://www.eng.yale.edu/grablab/openhand/images/logo.png",
+        "alt": "OpenHand",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.eng.yale.edu/grablab/openhand/images/sphinx/sphinx3.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.eng.yale.edu/grablab/openhand/images/sphinx/sphinx2.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.eng.yale.edu/grablab/openhand/images/sphinx/sphinx1.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.eng.yale.edu/grablab/openhand/images/sphinx/sphinx4.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.eng.yale.edu/grablab/openhand/images/sphinx/sphinx5.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.eng.yale.edu/grablab/openhand/images/sphinx/sphinx6.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.eng.yale.edu/grablab/openhand/images/sphinx/sphinx7.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.eng.yale.edu/grablab/openhand/images/sphinx/sphinx8.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.eng.yale.edu/grablab/openhand/images/sphinx/sphinx9.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.eng.yale.edu/grablab/openhand/images/sphinx/sphinx0.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.creativecommons.org/l/by-nc/3.0/88x31.png",
+        "alt": "Creative Commons License",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.eng.yale.edu/grablab/openhand/images/logo_yale.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.eng.yale.edu/grablab/openhand/images/logo_youtube.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.eng.yale.edu/grablab/openhand/images/logo_github.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.eng.yale.edu/grablab/openhand/images/logo_google.png",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  }
+}

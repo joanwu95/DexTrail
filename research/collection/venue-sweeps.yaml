@@ -1,0 +1,116 @@
+cutoff: '2026-10-02'
+keywords:
+- dexterous hand
+- multifingered hand
+- in-hand manipulation
+- robot hand design
+- tactile manipulation
+- underactuated hand
+- soft hand
+- 灵巧手
+- 手内操作
+sweeps:
+- venue: ICRA
+  year: 2026
+  status: partial
+  method: 先查官方议程/论文集/奖项，再读原论文与作者项目页；区分主会、workshop、预印本；核验该年份实际公开状态。
+  coverage: 已核查部分官方奖项页与相关论文；未完成论文集扫描。
+  research_note: conference-evidence.md
+- venue: ICRA
+  year: 2025
+  status: partial
+  method: 先查官方议程/论文集/奖项，再读原论文与作者项目页；区分主会、workshop、预印本；核验该年份实际公开状态。
+  coverage: 已核查部分官方奖项页与相关论文；未完成论文集扫描。
+  research_note: conference-evidence.md
+- venue: ICRA
+  year: 2024
+  status: pending
+  method: 先查官方议程/论文集/奖项，再读原论文与作者项目页；区分主会、workshop、预印本；核验该年份实际公开状态。
+- venue: IROS
+  year: 2026
+  status: partial
+  method: 先查官方议程/论文集/奖项，再读原论文与作者项目页；区分主会、workshop、预印本；核验该年份实际公开状态。
+  coverage: 仅阅读个别作者项目页及其会议信息，尚未核对完整官方录用目录。
+- venue: IROS
+  year: 2025
+  status: pending
+  method: 先查官方议程/论文集/奖项，再读原论文与作者项目页；区分主会、workshop、预印本；核验该年份实际公开状态。
+- venue: IROS
+  year: 2024
+  status: pending
+  method: 先查官方议程/论文集/奖项，再读原论文与作者项目页；区分主会、workshop、预印本；核验该年份实际公开状态。
+- venue: RSS
+  year: 2026
+  status: pending
+  method: 先查官方议程/论文集/奖项，再读原论文与作者项目页；区分主会、workshop、预印本；核验该年份实际公开状态。
+- venue: RSS
+  year: 2025
+  status: pending
+  method: 先查官方议程/论文集/奖项，再读原论文与作者项目页；区分主会、workshop、预印本；核验该年份实际公开状态。
+- venue: RSS
+  year: 2024
+  status: pending
+  method: 先查官方议程/论文集/奖项，再读原论文与作者项目页；区分主会、workshop、预印本；核验该年份实际公开状态。
+- venue: CoRL
+  year: 2026
+  status: pending
+  method: 先查官方议程/论文集/奖项，再读原论文与作者项目页；区分主会、workshop、预印本；核验该年份实际公开状态。
+- venue: CoRL
+  year: 2025
+  status: partial
+  method: 先查官方议程/论文集/奖项，再读原论文与作者项目页；区分主会、workshop、预印本；核验该年份实际公开状态。
+  coverage: 仅阅读个别作者项目页及其会议信息，尚未核对完整官方录用目录。
+- venue: CoRL
+  year: 2024
+  status: pending
+  method: 先查官方议程/论文集/奖项，再读原论文与作者项目页；区分主会、workshop、预印本；核验该年份实际公开状态。
+- venue: Science Robotics
+  years: 2024–2026 优先；经典硬件论文向前追溯
+  status: partial
+  method: 以出版社原文或作者公开版本为准；期刊全名不能统称 Nature/Science 主刊。
+  coverage: 已接入部分硬件原型，本轮新增 MOGrip、MuMuTA；见 research/sources/expansion-02-2026-10-02.md。尚未逐期扫描完整论文目录。
+- venue: Nature
+  years: 2024–2026 优先；经典硬件论文向前追溯
+  status: pending
+  method: 以出版社原文或作者公开版本为准；期刊全名不能统称 Nature/Science 主刊。
+- venue: Nature Communications
+  years: 2024–2026 优先；经典硬件论文向前追溯
+  status: partial
+  method: 以出版社原文或作者公开版本为准；期刊全名不能统称 Nature/Science 主刊。
+  coverage: 已接入部分硬件原型，本轮新增 2026 高灵巧软体神经假手；尚未逐期扫描完整论文目录。
+- venue: Nature Machine Intelligence
+  years: 2024–2026 优先；经典硬件论文向前追溯
+  status: partial
+  method: 以出版社原文或作者公开版本为准；期刊全名不能统称 Nature/Science 主刊。
+  coverage: 已接入 2025 年部分硬件论文，见 research/sources/expansion-2026-10-02.md；未完成逐期目录扫描。
+- venue: npj Robotics
+  years: 2024–2026 优先；经典硬件论文向前追溯
+  status: partial
+  method: 以出版社原文或作者公开版本为准；期刊全名不能统称 Nature/Science 主刊。
+  coverage: 已接入 2025 年部分硬件论文，以及 2026 触觉反应式主动掌面抓手；未完成逐期目录扫描。
+- venue: IEEE Transactions on Robotics
+  years: 2024–2026 优先；经典硬件论文向前追溯
+  status: partial
+  method: 以出版社原文或作者公开版本为准；期刊全名不能统称 Nature/Science 主刊。
+  coverage: 已接入部分硬件原型；2025 五指触觉研究补入 Pisa/IIT SoftHand，不重复计数。RGB-D 软手已读摘要，尚未接入地图。未完成逐期目录扫描。
+- venue: IJRR
+  years: 2024–2026 优先；经典硬件论文向前追溯
+  status: pending
+  method: 以出版社原文或作者公开版本为准；期刊全名不能统称 Nature/Science 主刊。
+- venue: IEEE RA-L
+  years: 2024–2026 优先；经典硬件论文向前追溯
+  status: pending
+  method: 以出版社原文或作者公开版本为准；期刊全名不能统称 Nature/Science 主刊。
+- venue: Soft Robotics
+  years: 2024–2026 优先；经典硬件论文向前追溯
+  status: pending
+  method: 以出版社原文或作者公开版本为准；期刊全名不能统称 Nature/Science 主刊。
+- venue: Communications Engineering
+  status: partial
+  coverage: 2025 ADAPT Hand 1 已接入；其他目录未完成扫描。
+- venue: Science Advances
+  status: partial
+  coverage: 2025 JHU 神经形态触觉假手已接入；依据大学介绍、论文元数据和官方视频，未完成逐期扫描。
+- venue: Microsystems & Nanoengineering
+  status: partial
+  coverage: 2026 全向弯曲感知腱驱手已接入；论文 18 DOF 与 9 舵机的控制映射仍待核清。

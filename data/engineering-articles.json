@@ -1,0 +1,95 @@
+[
+  {
+    "id": "degrees-of-freedom",
+    "title": "20 与 16：自由度数字之后，还要看什么？",
+    "page": "engineering/degrees-of-freedom.md",
+    "hand_ids": [
+      "shadow-hand",
+      "leap-hand"
+    ],
+    "summary": "从含腕范围、耦合关节和任务约束，理解数字可以说明什么、不能说明什么。",
+    "status": "公开资料分析 · 非实验结果"
+  },
+  {
+    "id": "sensing-chain",
+    "title": "力感知，究竟测在哪里？",
+    "page": "engineering/sensing-chain.md",
+    "hand_ids": [
+      "shadow-hand",
+      "leap-hand",
+      "wuji-hand-2"
+    ],
+    "summary": "从电流、腱负载、关节状态到指尖触觉，逐项检查测量位置、单位、标定和配置边界。",
+    "status": "公开资料分析 · 非实物实验"
+  },
+  {
+    "id": "transmission",
+    "title": "腱绳怎样固定、复位和张紧，材料怎样影响控制？",
+    "page": "engineering/transmission.md",
+    "hand_ids": [
+      "shadow-hand",
+      "leap-hand",
+      "pisa-iit-softhand",
+      "orca-hand",
+      "dlr-david",
+      "dlr-clash",
+      "open-parametric-hand",
+      "prensilia-ih2-azzurra",
+      "utah-mit-hand",
+      "dlr-hit-hand-ii",
+      "sdm-hand",
+      "mm-hand",
+      "yale-model-q",
+      "ruka-v1",
+      "bidexhand-v4",
+      "leap-hand-v2",
+      "xynova-flex-2",
+      "dlr-dexhand",
+      "dlr-spacehand",
+      "nasa-robonaut-2-hand",
+      "linker-l30",
+      "vms-hand",
+      "f-tac-hand",
+      "adapt-hand-1",
+      "adapt-hand-2",
+      "dash-hand",
+      "mumuta-hand",
+      "omnidirectional-sensing-hand",
+      "tactile-softhand-a",
+      "faive-hand",
+      "ruka-v2",
+      "dexhand-021",
+      "aero-hand-open",
+      "unitree-dex2-5",
+      "qb-softhand-research",
+      "qb-softhand-2-research",
+      "agibot-omnihand-3-ultra-t",
+      "barrett-bh8-280"
+    ],
+    "summary": "逐手核对绳材、端接、复位与张紧，解释被动回弹、主动拮抗和松绳空程如何影响控制、标定及维护。",
+    "status": "公开资料分析 · 未执行对照实验"
+  },
+  {
+    "id": "tendon-driven-route",
+    "title": "腱绳传动：力怎样到达关节？",
+    "page": "technologies/tendon-driven.md",
+    "hand_ids": [
+      "shadow-hand",
+      "pisa-iit-softhand"
+    ],
+    "summary": "同一传动路线内，分别理解驱动分配、耦合和测量位置。",
+    "status": "资料路线解读 · 非继承证明",
+    "section_label": "技术路线"
+  },
+  {
+    "id": "underactuation-route",
+    "title": "欠驱动与协同：输入变少，运动怎样组织？",
+    "page": "technologies/underactuation-and-synergies.md",
+    "hand_ids": [
+      "pisa-iit-softhand"
+    ],
+    "summary": "将欠驱动、协同和柔顺分开，核对接触适应与任务条件。",
+    "status": "公开资料分析 · 未实物验证",
+    "section_label": "技术路线"
+  }
+]

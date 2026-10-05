@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "hands": {
+    "shadow-hand": {
+      "version": "Shadow Classic Electric · December 2024 规格配置",
+      "edited_on": "2026-10-04",
+      "review_status": "draft",
+      "sources": {
+        "spec": {"title": "Shadow 官方规格书", "url": "https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf", "locator": "§2.3–2.4 构型与质量；§4–5 感知与驱动"}
+      },
+      "brief": [
+        {"title": "技术路线", "kind": "fact", "text": "五指电驱与成对腱索传动；四根长指末节存在耦合，总轴数包含腕部。", "sources": ["spec"]},
+        {"title": "关键取舍", "kind": "interpretation", "text": "仿人运动分配值得研究，但任务规划需显式处理耦合与系统边界；腱负载不能直接替代指尖接触力。", "sources": ["spec"]},
+        {"title": "值得研究的问题", "kind": "interpretation", "text": "在指定接触任务中，拇指和小指掌部运动带来多少可行姿态？如何验证传动负载到接触力的估计？", "sources": ["spec"]}
+      ],
+      "analysis": {
+        "question": "仿人运动分配怎样转化为任务优势？",
+        "evidence": "规格书给出拇指五个自由度、小指额外掌部关节及长指末节耦合；质量口径包括手与前臂。其力反馈测在腱传动侧，而标准指尖触觉配置与腱负载是不同通道。",
+        "source_ids": ["spec"],
+        "reasoning": "这些结构提供了不同位置的运动与反馈，但轴数无法说明目标接触是否可达。耦合限制了可独立指定的关节组合；同样，知道腱负载并不直接知道物体受力。因此应把构型可行性与力估计有效性分别验证。",
+        "judgment": "若任务依赖拇指对掌、小指掌部运动或人手动作映射，可优先检验这些运动是否参与任务。若关注机械臂末端负载，须先分离手与前臂的质量口径；若关注精细接触力控制，须确认标定与接触端误差。这里不判定它在所有任务中优于其他手。",
+        "validation": "固定腕部边界，选定接触点与物体尺寸，在关节限位和耦合约束下求解姿态。另用独立测力参考，在不同姿态和加载方向下检验腱负载到接触力的误差；记录失败条件。以上流程尚未执行。"
+      }
+    },
+    "leap-hand": {
+      "version": "LEAP v1 Full / Regular · 不含 Lite、v2 和 v2 Advanced",
+      "edited_on": "2026-10-04",
+      "review_status": "draft",
+      "sources": {
+        "parts": {"title": "LEAP v1 官方零件表", "url": "https://v1.leaphand.com/parts", "locator": "Full / Lite 电机与制造物料"},
+        "api": {"title": "LEAP v1 官方 API", "url": "https://github.com/leap-hand/LEAP_Hand_API", "locator": "Functionality · 位置、速度、电流与控制入口"},
+        "paper": {"title": "LEAP Hand · RSS 2023", "url": "https://roboticsproceedings.org/rss19/p089.pdf", "locator": "§III–IV 构型；§VI 实验范围"}
+      },
+      "brief": [
+        {"title": "技术路线", "kind": "fact", "text": "四指、每指四个主动轴；Full 零件表列 16 个 XC330-M288-T 集成舵机。", "sources": ["parts", "paper"]},
+        {"title": "关键取舍", "kind": "interpretation", "text": "公开零件与接口便于准备实验，但组装零位、模型对应和单位换算仍须核对；电流读取不等于指尖力测量。", "sources": ["parts", "api"]},
+        {"title": "值得研究的问题", "kind": "interpretation", "text": "在指定物体与接触任务中，四指构型是否足够？模型、装配和控制约定的差异如何影响可复现性？", "sources": ["paper", "api"]}
+      ],
+      "analysis": {
+        "question": "公开的装配与控制入口，怎样变成可复现的平台？",
+        "evidence": "官方零件表区分 Full 的 XC330 与 Lite 的 XL330；API 提供位置、速度和电流读取，以及带电流上限的默认 PID。RSS 2023 描述四指构型与特定任务实验，不能据此推广到其他版本或任意任务。",
+        "source_ids": ["parts", "api", "paper"],
+        "reasoning": "物料和接口公开，能明确实验从哪里开始，却不能消除装配零位、型号差异与模型限位误差。构型轴数与软件可访问性应分开评估；电流也是驱动侧量，不能用来直接证明接触力测量能力。",
+        "judgment": "若目标是自行装配并开发关节控制或学习实验，可将公开物料与 API 作为准备入口。若目标是可比较的精细接触控制，则还需补充测量、标定与任务验证。选型时应确认四指接触构型能否满足任务，不能仅凭 16 个轴判定操作能力。",
+        "validation": "锁定 Full 的电机、代码和模型版本，核对零位、运动方向、限位与反馈单位。用固定接触目标评估姿态求解；力估计采用独立参考测量和未参与标定的条件。本文未装配实物或复现论文策略。"
+      }
+    },
+    "wuji-hand-2": {
+      "version": "Wuji Hand 2 · 2.2 Beta 非触觉样机",
+      "edited_on": "2026-10-04",
+      "review_status": "draft",
+      "sources": {
+        "control": {"title": "舞肌官方控制指南", "url": "https://docs.wuji.tech/docs/zh/wuji-hand/latest/control-guide/", "locator": "关节表、单位与控制接口"},
+        "notice": {"title": "舞肌官方用户须知", "url": "https://docs.wuji.tech/docs/zh/wuji-hand/latest/user-notice/", "locator": "零位、散热、可靠性与外力矩估计边界"},
+        "overview": {"title": "舞肌官方产品概览", "url": "https://docs.wuji.tech/docs/zh/wuji-hand/latest/overview/", "locator": "2.2 Beta 非触觉配置"}
+      },
+      "brief": [
+        {"title": "技术路线", "kind": "fact", "text": "五指、每指四个主动关节；接口给出关节侧位置和速度，effort 的单位为 A。", "sources": ["control"]},
+        {"title": "关键取舍", "kind": "interpretation", "text": "独立关节接口提供控制入口，但当前 Beta 的标定、外力矩估计与持续工作边界仍须验证。", "sources": ["control", "notice"]},
+        {"title": "值得研究的问题", "kind": "interpretation", "text": "如何把关节状态与任务结果关联？在不依赖未验证力估计的前提下，怎样建立可重复的操作评估？", "sources": ["notice"]}
+      ],
+      "analysis": {
+        "question": "控制接口较完整，离可验证的操作系统还差哪些证据？",
+        "evidence": "控制指南列出 20 轴关节表和状态接口，effort 明确以 A 表示；官方用户须知说明电流到外力矩估计所需的一致性与标定尚未收敛，闭环效果未验证，并提醒当前 Beta 的连续温升与可靠性边界。所核查配置为非触觉样机。",
+        "source_ids": ["control", "notice", "overview"],
+        "reasoning": "可读状态、可下命令说明有系统集成入口；它们尚不能说明带载轨迹、外力估计和长时间任务表现已达到目标。评估需要从接口功能继续走到误差、重复性与工作条件，而不是把字段名称当成传感能力。",
+        "judgment": "若目标是建立位置控制与关节状态采集流程，可从当前接口开始核对。若目标依赖触觉闭环、外部接触力判定或持续负载，则应先解决该配置缺少或未验证的证据。该判断只适用于所核查的 2.2 Beta 样机，不推广到后续产品。",
+        "validation": "确认硬件、固件和模型对应，先在官方允许条件内记录位置误差、时间戳和重复性。外力估计另建参考测量；连续运行评估须遵守厂家当前工作边界，记录温升与降频。本文未开展这些试验。"
+      }
+    }
+  }
+}

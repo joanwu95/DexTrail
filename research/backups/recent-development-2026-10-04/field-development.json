@@ -1,0 +1,1325 @@
+{
+  "schema_version": 1,
+  "sources": {
+    "dlr": {
+      "title": "DLR · Hand II",
+      "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/hand-ii",
+      "kind": "official",
+      "locator": "2001 展示年份、传感配置及参考文献；未复现实验",
+      "verified_on": "2026-10-04"
+    },
+    "softhand": {
+      "title": "Catalano 等 · Adaptive Synergies",
+      "url": "https://www.centropiaggio.unipi.it/sites/default/files/PisaIIT_SoftHand_0.pdf",
+      "kind": "paper",
+      "locator": "摘要、§II 协同定义、§IV 机构；未复现实验",
+      "verified_on": "2026-10-04"
+    },
+    "softhand-date": {
+      "title": "SoftHand · 期刊发表元数据",
+      "url": "https://portal.fis.tum.de/en/publications/adaptive-synergies-for-the-design-and-control-of-the-pisaiit-soft/",
+      "kind": "official",
+      "locator": "期刊 2014-04、DOI；不作为原型首发时间",
+      "verified_on": "2026-10-04"
+    },
+    "openai": {
+      "title": "OpenAI 等 · Learning Dexterous In-Hand Manipulation",
+      "url": "https://arxiv.org/abs/1808.00177v5",
+      "kind": "paper",
+      "locator": "摘要及提交历史：v1 为 2018-08-01，所读摘要为 v5；未复现",
+      "verified_on": "2026-10-04"
+    },
+    "qb": {
+      "title": "qbrobotics · Research 产品回溯",
+      "url": "https://qbrobotics.com/between-soft-technology-and-collaborative-robots/",
+      "kind": "official",
+      "locator": "厂商回溯中的 2018 推出记录与设计说明；未核查销量",
+      "verified_on": "2026-10-04"
+    },
+    "trifinger": {
+      "title": "Wüthrich 等 · TriFinger",
+      "url": "https://arxiv.org/abs/2008.03596",
+      "kind": "paper",
+      "locator": "摘要及提交历史；2020-08-08 为 v1，页面当前摘要为 v2；未复现",
+      "verified_on": "2026-10-04"
+    },
+    "leap": {
+      "title": "Shaw 等 · LEAP Hand，RSS 2023",
+      "url": "https://roboticsproceedings.org/rss19/p089.html",
+      "kind": "paper",
+      "locator": "RSS 2023 摘要及会议元数据；未独立验证成本与任务表现",
+      "verified_on": "2026-10-04"
+    },
+    "dexee": {
+      "title": "Shadow · DEX-EE 公告，2024-05-09",
+      "url": "https://shadowrobot.com/shadow-robot-unveils-the-worlds-most-robust-dexterous-robot-hand-developed-in-partnership-with-google-deepmind/",
+      "kind": "official",
+      "locator": "公告日期、DeepMind 合作及长期实验需求；性能为厂商陈述",
+      "verified_on": "2026-10-04"
+    },
+    "okada-1974": {
+      "title": "Okada · Three-Dimensional Pattern Recognition，1974",
+      "url": "https://www.jstage.jst.go.jp/article/sicetr1965/10/2/10_2_230/_article/-char/en",
+      "kind": "paper",
+      "locator": "期刊日期、摘要及机构与识别实验说明",
+      "verified_on": "2026-10-04"
+    },
+    "stanford-jpl-1982": {
+      "title": "Salisbury、Craig · Articulated Hands，1982",
+      "url": "https://journals.sagepub.com/doi/10.1177/027836498200100102",
+      "kind": "paper",
+      "locator": "出版月份、摘要、卷 1 期 1 页 4–17",
+      "verified_on": "2026-10-04"
+    },
+    "utah-mit-1986": {
+      "title": "Jacobsen 等 · Design of the Utah/M.I.T. Dextrous Hand，1986",
+      "url": "https://people.csail.mit.edu/edsinger/raw/jacobsen_design_utah_hand.pdf",
+      "kind": "paper",
+      "locator": "原始论文首页、摘要与设计目标",
+      "verified_on": "2026-10-04"
+    },
+    "barrett-1993": {
+      "title": "Barrett · 公司历史中的 1993 年记录",
+      "url": "https://barrett.com/history",
+      "kind": "official",
+      "locator": "1993 年第一代 BarrettHand 与 NASA 合作条目",
+      "verified_on": "2026-10-04"
+    },
+    "dlr-hand-i-1998": {
+      "title": "DLR · Hand I 与后续手平台",
+      "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands",
+      "kind": "official",
+      "locator": "Hand I（1998）、集成方案与平台谱系",
+      "verified_on": "2026-10-04"
+    },
+    "hit-dlr-2003": {
+      "title": "Liu 等 · The HIT/DLR Dexterous Hand: Work in Progress，2003",
+      "url": "https://www.dlr.de/en/rm/downloads/roboter_und_systeme/hand/icra2003hitdlr.pdf/@@download/file",
+      "kind": "paper",
+      "locator": "首页会议日期、摘要、引言与单指原型说明",
+      "verified_on": "2026-10-04"
+    },
+    "dlr-hit-ii-2008": {
+      "title": "Liu 等 · Multisensory Five-Finger Dexterous Hand，2008",
+      "url": "https://elib.dlr.de/55786/1/LiuHong-Multisensory_Five-Finger_Dexterous_Hand-IROS.pdf",
+      "kind": "paper",
+      "locator": "IROS 日期、摘要与历代合作平台说明",
+      "verified_on": "2026-10-04"
+    },
+    "schunk-sdh-2008": {
+      "title": "SCHUNK · SDH 2.0 数据页（NIST 存档）",
+      "url": "https://www.nist.gov/document/9020173r1pdf",
+      "kind": "official",
+      "locator": "单页原始产品资料，版本日期 2008-04-10",
+      "verified_on": "2026-10-04"
+    },
+    "robotiq-2010": {
+      "title": "Robotiq · 2007–2015 发展记录",
+      "url": "https://blog.robotiq.com/2007-2015",
+      "kind": "official",
+      "locator": "2010 年开始销售及早期应用条目",
+      "verified_on": "2026-10-04"
+    },
+    "allegro-v1-2012": {
+      "title": "Wonik · About Allegro",
+      "url": "https://allegrohand.com/sub/about/allegro.php",
+      "kind": "official",
+      "locator": "第一版 2012 年推出与开发背景",
+      "verified_on": "2026-10-04"
+    },
+    "rubiks-cube-2019": {
+      "title": "OpenAI 等 · Solving Rubik’s Cube with a Robot Hand，2019",
+      "url": "https://arxiv.org/abs/1910.07113",
+      "kind": "paper",
+      "locator": "摘要与 v1 提交历史",
+      "verified_on": "2026-10-04"
+    },
+    "anyrotate-2024": {
+      "title": "Yang 等 · AnyRotate，2024",
+      "url": "https://arxiv.org/abs/2405.07391",
+      "kind": "paper",
+      "locator": "摘要、任务范围与提交历史",
+      "verified_on": "2026-10-04"
+    },
+    "allegro-v5-2024": {
+      "title": "Wonik · Allegro Hand v5 发布公告，2024",
+      "url": "https://wonikrobotics.com/kr/sub/pr/news.php?bid=4&idx=108&mode=view&page=2",
+      "kind": "official",
+      "locator": "公告日期、v4 升级、指尖触觉与线缆说明",
+      "verified_on": "2026-10-04"
+    },
+    "dexumi-2025": {
+      "title": "Xu 等 · DexUMI，CoRL 2025",
+      "url": "https://proceedings.mlr.press/v305/xu25b.html",
+      "kind": "paper",
+      "locator": "会议元数据、摘要、两种硬件平台实验范围",
+      "verified_on": "2026-10-04"
+    },
+    "allegro-v6f-2026": {
+      "title": "Wonik · Allegro Hand v6 F 发布公告，2026",
+      "url": "https://allegrohand.com/sub/about/news.php?bid=4&idx=648&mode=view",
+      "kind": "official",
+      "locator": "公告日期、五指、全手感知与数据平台说明",
+      "verified_on": "2026-10-04"
+    },
+    "nature-touch-view-2019": {
+      "title": "Pasquale · Bridging the gap between artificial vision and touch",
+      "url": "https://www.nature.com/articles/d41586-019-01593-w",
+      "locator": "出版页：News & Views、2019-05-29、导语；期刊官方 PDF 的手套数据、布线及采样讨论",
+      "kind": "paper",
+      "verified_on": "2026-10-04"
+    },
+    "science-manipulation-review-2019": {
+      "title": "Billard 与 Kragic · Science 综述及出版日期",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31221831/",
+      "locator": "出版摘要、Review 类型、2019-06-21、DOI；本轮未读取 Science 付费正文",
+      "kind": "official",
+      "verified_on": "2026-10-04"
+    },
+    "science-manipulation-author-record": {
+      "title": "EPFL LASA · Science 2019 综述作者记录",
+      "url": "https://www.epfl.ch/labs/lasa/sahr/publications/",
+      "locator": "作者机构发表记录：题名、Science、2019-06-21、DOI",
+      "kind": "official",
+      "verified_on": "2026-10-04"
+    },
+    "task-metric-perspective-2019": {
+      "title": "Ortenzi 等 · Robotic manipulation and the role of the task in the metric of success",
+      "url": "https://www.nature.com/articles/s42256-019-0078-4",
+      "locator": "出版页摘要、Perspective、2019-08-09；未读取订阅正文；期刊当期目录也核对了类型",
+      "kind": "paper",
+      "verified_on": "2026-10-04"
+    },
+    "codesign-focus-2021": {
+      "title": "Chen、He 与 Ciocarlie · Co-designing hardware and control for robot hands",
+      "url": "https://roam.me.columbia.edu/sites/default/files/content/papers/science2021_focus_co-optimization.pdf",
+      "locator": "作者机构公开稿：机械与计算共同优化、Hardware as policy 图、仿真与迁移讨论；只链接原稿",
+      "kind": "paper",
+      "verified_on": "2026-10-04"
+    },
+    "codesign-focus-date": {
+      "title": "Science Robotics · Co-design 发表元数据",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34043541/",
+      "locator": "发表日期 2021-05-12、6(54)、eabg2133、DOI；类型另以作者记录核对",
+      "kind": "official",
+      "verified_on": "2026-10-04"
+    },
+    "codesign-focus-type": {
+      "title": "Columbia · Ciocarlie 作者记录中的 Focus 类型",
+      "url": "https://www.engineering.columbia.edu/sites/default/files/2024-04/CV-Matei_Ciocarlie-External.pdf",
+      "locator": "Invited Articles and Editorials / I1 标为 Focus Article；此 CV 的期号与出版元数据不一致，期号不采用 CV",
+      "kind": "official",
+      "verified_on": "2026-10-04"
+    }
+  },
+  "events": [
+    {
+      "id": "okada-1974",
+      "date": "1974-04-30",
+      "date_relation": "on",
+      "basis": "publication",
+      "track": "academic",
+      "title": "Okada：通过抓握识别物体形状",
+      "focus": "多指与触觉",
+      "approach": "三指手结合接触信号与手指弯曲信息，在抓握中辨认三维形状。",
+      "problem": "物体被手遮挡时，能否利用接触和手指姿态识别形状？",
+      "evidence": "论文给出人工手指、触觉信号处理与三维形状识别实验。",
+      "boundary": "结果对应特定装置上的识别实验；本页最早收录年份不表示灵巧手研究从此开始。",
+      "date_note": "采用期刊发表日；1973 年收稿与 2009 年网络上线均不作为本节点年份。",
+      "source_ids": [
+        "okada-1974"
+      ],
+      "hand_ids": [],
+      "tags": [
+        "academic",
+        "tactile-sensing",
+        "joint-sensing",
+        "shape-recognition"
+      ],
+      "tag_sources": {
+        "academic": [
+          "okada-1974"
+        ],
+        "tactile-sensing": [
+          "okada-1974"
+        ],
+        "joint-sensing": [
+          "okada-1974"
+        ],
+        "shape-recognition": [
+          "okada-1974"
+        ]
+      },
+      "selection_reason": "把接触信号用于物体识别，说明早期研究已把感知与抓握联系起来。"
+    },
+    {
+      "id": "stanford-jpl-1982",
+      "date": "1982-03",
+      "date_relation": "on",
+      "basis": "publication",
+      "track": "academic",
+      "title": "Stanford/JPL：多指接触中的运动与力",
+      "focus": "运动学与力控制",
+      "approach": "把手指运动、接触力与内部力放在同一个多指控制问题中讨论。",
+      "problem": "多个手指同时接触物体时，如何协调位置与力，避免手指彼此挤压而不产生所需物体运动？",
+      "evidence": "论文讨论 Stanford/JPL 手的尺寸优化、多环位置／力控制架构及关节力矩子系统的初步结果。",
+      "boundary": "当前依据出版方摘要和元数据；不把初步子系统结果扩展为任意操作能力。",
+      "date_note": "采用 IJRR 1982 年 3 月发表记录，不作为整手首次完成日期。",
+      "source_ids": [
+        "stanford-jpl-1982"
+      ],
+      "hand_ids": [],
+      "tags": [
+        "academic",
+        "kinematics",
+        "force-control"
+      ],
+      "tag_sources": {
+        "academic": [
+          "stanford-jpl-1982"
+        ],
+        "kinematics": [
+          "stanford-jpl-1982"
+        ],
+        "force-control": [
+          "stanford-jpl-1982"
+        ]
+      },
+      "selection_reason": "将多指运动、接触力和内部力组织成控制问题，提供理解后续力控制的基础。"
+    },
+    {
+      "id": "utah-mit-1986",
+      "date": "1986",
+      "date_relation": "on",
+      "basis": "publication",
+      "track": "academic",
+      "title": "Utah/MIT：可重构的多指研究平台",
+      "focus": "硬件与实验平台",
+      "approach": "围绕灵巧操作研究构建多指手，同时考虑模块化、传感、控制与维护。",
+      "problem": "如何提供可反复开展操作与触觉实验、又可调整结构的通用研究工具？",
+      "evidence": "ICRA 论文介绍 Utah/MIT 手的设计目标、实现与可靠性、模块化等工程考虑。",
+      "boundary": "论文将其定位为研究工具；设计目标不能直接等同于工业部署结果。",
+      "date_note": "采用 ICRA 1986 论文年份；文中说明项目始于 1982 年，早期版本出现于 1984 年。",
+      "source_ids": [
+        "utah-mit-1986"
+      ],
+      "hand_ids": [],
+      "tags": [
+        "academic",
+        "modular-design",
+        "system-integration",
+        "maintenance"
+      ],
+      "tag_sources": {
+        "academic": [
+          "utah-mit-1986"
+        ],
+        "modular-design": [
+          "utah-mit-1986"
+        ],
+        "system-integration": [
+          "utah-mit-1986"
+        ],
+        "maintenance": [
+          "utah-mit-1986"
+        ]
+      },
+      "selection_reason": "把机构、传感、控制和维护作为研究平台的整体设计问题。"
+    },
+    {
+      "id": "barrett-1993",
+      "date": "1993",
+      "date_relation": "on",
+      "basis": "retrospective",
+      "track": "industry",
+      "title": "BarrettHand：第一代商业平台",
+      "focus": "商业化与研究合作",
+      "approach": "Barrett 与 NASA 约翰逊航天中心合作，推出第一代 BarrettHand。",
+      "problem": "多指手如何从专用研究装置进入厂商提供的平台？",
+      "evidence": "厂商历史明确列出 1993 年第一代 BarrettHand 及 NASA 合作。",
+      "boundary": "回溯记录没有首批交付日；后来的 BH8-280 参数不能套用到第一代。",
+      "date_note": "年份来自 Barrett 官方历史中的第一代推出记录。",
+      "source_ids": [
+        "barrett-1993"
+      ],
+      "hand_ids": [],
+      "tags": [
+        "industry",
+        "product-platform"
+      ],
+      "tag_sources": {
+        "industry": [
+          "barrett-1993"
+        ],
+        "product-platform": [
+          "barrett-1993"
+        ]
+      },
+      "selection_reason": "记录多指手作为商业平台出现；用于观察研究硬件怎样成为可提供的产品。"
+    },
+    {
+      "id": "dlr-hand-i-1998",
+      "date": "1998",
+      "date_relation": "on",
+      "basis": "retrospective",
+      "track": "academic",
+      "title": "DLR Hand I：把驱动与感知装进手内",
+      "focus": "系统集成",
+      "approach": "将驱动、传感与电子系统集成到多指手，形成一体化研究平台。",
+      "problem": "如何让多指手的执行、测量与电子系统作为一个完整装置工作？",
+      "evidence": "DLR 标记 Hand I 为 1998 年，并描述内部集成及后续 Hand II 的承接关系。",
+      "boundary": "这里记录机构回溯年份，不用当前其他 DLR 手的参数描述 Hand I。",
+      "date_note": "采用 DLR 官方平台谱系中的 Hand I（1998）记录。",
+      "source_ids": [
+        "dlr-hand-i-1998"
+      ],
+      "hand_ids": [],
+      "tags": [
+        "academic",
+        "integrated-actuation",
+        "system-integration"
+      ],
+      "tag_sources": {
+        "academic": [
+          "dlr-hand-i-1998"
+        ],
+        "integrated-actuation": [
+          "dlr-hand-i-1998"
+        ],
+        "system-integration": [
+          "dlr-hand-i-1998"
+        ]
+      },
+      "selection_reason": "突出驱动、传感和电子系统内部集成这一设计方向。"
+    },
+    {
+      "id": "dlr-hand-ii-2001",
+      "date": "2001",
+      "date_relation": "on",
+      "basis": "public-demonstration",
+      "track": "academic",
+      "title": "DLR Hand II：多传感器操作平台",
+      "date_note": "DLR 记载 2001 年首次公开展示；此处不补月份。",
+      "focus": "机构与感知的系统集成",
+      "problem": "为抓取和操作研究提供多传感器手平台。",
+      "approach": "将手指机构、关节侧传感与控制系统集成。",
+      "evidence": "机构官网提供技术配置，并链接 2001 设计论文与 2003 实验论文。",
+      "boundary": "官网配置支持系统集成的描述；传感器数量本身不能证明具体任务能力。",
+      "source_ids": [
+        "dlr"
+      ],
+      "hand_ids": [
+        "dlr-hand-ii"
+      ],
+      "hand_names": {
+        "dlr-hand-ii": "DLR Hand II"
+      },
+      "tags": [
+        "academic",
+        "joint-sensing",
+        "system-integration"
+      ],
+      "tag_sources": {
+        "academic": [
+          "dlr"
+        ],
+        "joint-sensing": [
+          "dlr"
+        ],
+        "system-integration": [
+          "dlr"
+        ]
+      },
+      "selection_reason": "将关节侧感知纳入集成平台，可与早期接触感知及后续触觉路线对照。"
+    },
+    {
+      "id": "hit-dlr-2003",
+      "date": "2003-09",
+      "date_relation": "on",
+      "basis": "publication",
+      "track": "academic",
+      "title": "HIT/DLR：让集成手更容易制造",
+      "focus": "制造与小型化",
+      "approach": "沿用 DLR Hand II 技术，探索更小、更易制造的手指模块。",
+      "problem": "高度集成的设计如何减少专用零件与制造、标定负担？",
+      "evidence": "论文明确说明基于 DLR Hand II，讨论商用无刷电机与串行通信，并报告单指原型。",
+      "boundary": "论文题为 Work in Progress，报告单指原型，不是已完成整手的商业交付。",
+      "date_note": "采用 ICRA 2003 年 9 月会议记录，不作为后续整手首发年份。",
+      "source_ids": [
+        "hit-dlr-2003"
+      ],
+      "hand_ids": [],
+      "tags": [
+        "academic",
+        "integrated-actuation",
+        "manufacturing"
+      ],
+      "tag_sources": {
+        "academic": [
+          "hit-dlr-2003"
+        ],
+        "integrated-actuation": [
+          "hit-dlr-2003"
+        ],
+        "manufacturing": [
+          "hit-dlr-2003"
+        ]
+      },
+      "selection_reason": "来源明确说明技术继承，同时把小型化和制造难度纳入设计目标。"
+    },
+    {
+      "id": "schunk-sdh-2008",
+      "date": "2008-04-10",
+      "date_relation": "by",
+      "basis": "document",
+      "track": "industry",
+      "title": "SCHUNK SDH 2.0：触觉与机械臂接口",
+      "focus": "产品集成",
+      "approach": "三指模块、指节触觉阵列和集成控制器，与机械臂安装及通信接口一起提供。",
+      "problem": "多指手接入机器人时，除了运动机构，还需要哪些传感与接口条件？",
+      "evidence": "数据页列出模块化手指、指节触觉阵列、安装标准及 CAN／Ethernet／RS232。",
+      "boundary": "证明截至该日已有技术记录；IP65 在原文标为目标，不能当作认证。",
+      "date_note": "采用数据页版本日期作为时间上界，不能据此确定产品首发日。",
+      "source_ids": [
+        "schunk-sdh-2008"
+      ],
+      "hand_ids": [],
+      "tags": [
+        "industry",
+        "modular-design",
+        "tactile-sensing",
+        "system-integration"
+      ],
+      "tag_sources": {
+        "industry": [
+          "schunk-sdh-2008"
+        ],
+        "modular-design": [
+          "schunk-sdh-2008"
+        ],
+        "tactile-sensing": [
+          "schunk-sdh-2008"
+        ],
+        "system-integration": [
+          "schunk-sdh-2008"
+        ]
+      },
+      "selection_reason": "将指节触觉、控制器和机械臂接口一起提供，体现产品集成需求。"
+    },
+    {
+      "id": "dlr-hit-ii-2008",
+      "date": "2008-09",
+      "date_relation": "on",
+      "basis": "publication",
+      "track": "academic",
+      "title": "DLR/HIT Hand II：五指模块与内部集成",
+      "focus": "模块化与多传感器",
+      "approach": "用五个模块化手指组织整手，把驱动和电子系统集成在内部。",
+      "problem": "如何在多指构型中兼顾紧凑尺寸、传感配置与模块复用？",
+      "evidence": "IROS 论文给出五指手、无刷电机与谐波传动、FPGA／DSP 电子系统，并说明此前合作平台。",
+      "boundary": "采用论文发表时间，不能由此判断首次展示或实际交付日期。",
+      "date_note": "采用 IROS 2008 年 9 月会议记录。",
+      "source_ids": [
+        "dlr-hit-ii-2008"
+      ],
+      "hand_ids": [],
+      "tags": [
+        "academic",
+        "modular-design",
+        "integrated-actuation",
+        "system-integration"
+      ],
+      "tag_sources": {
+        "academic": [
+          "dlr-hit-ii-2008"
+        ],
+        "modular-design": [
+          "dlr-hit-ii-2008"
+        ],
+        "integrated-actuation": [
+          "dlr-hit-ii-2008"
+        ],
+        "system-integration": [
+          "dlr-hit-ii-2008"
+        ]
+      },
+      "selection_reason": "展示模块化手指与整手内部集成如何在五指构型中组织。"
+    },
+    {
+      "id": "robotiq-2010",
+      "date": "2010",
+      "date_relation": "on",
+      "basis": "retrospective",
+      "track": "industry",
+      "title": "Robotiq 3-Finger：适应性抓手进入销售",
+      "focus": "抓取应用",
+      "approach": "厂商开始销售三指适应性抓手，并记录早期客户与机器人合作项目。",
+      "problem": "适应性抓取装置如何进入实际机器人应用与客户验证？",
+      "evidence": "官方记录写明 2010 年开始销售，列出早期客户及 Comau 概念验证。",
+      "boundary": "适应性抓手是纳入对照的技术分支；销售记录不证明任意手内操作或产线经济性。",
+      "date_note": "年份来自 Robotiq 官方 2007–2015 发展回溯。",
+      "source_ids": [
+        "robotiq-2010"
+      ],
+      "hand_ids": [],
+      "tags": [
+        "industry",
+        "adaptive-grasping",
+        "product-platform"
+      ],
+      "tag_sources": {
+        "industry": [
+          "robotiq-2010"
+        ],
+        "adaptive-grasping": [
+          "robotiq-2010"
+        ],
+        "product-platform": [
+          "robotiq-2010"
+        ]
+      },
+      "selection_reason": "记录适应性抓手进入销售及早期应用，补充工业需求这条线。"
+    },
+    {
+      "id": "allegro-v1-2012",
+      "date": "2012",
+      "date_relation": "on",
+      "basis": "retrospective",
+      "track": "industry",
+      "title": "Allegro v1：厂商提供的灵巧手平台",
+      "focus": "平台可获得性",
+      "approach": "Wonik 推出第一版 Allegro Hand，把灵巧操作硬件作为产品平台提供。",
+      "problem": "研究者如何获得可以持续开发的现成手平台？",
+      "evidence": "官方 About Allegro 记载首版于 2012 年推出，并说明开发背景。",
+      "boundary": "记录 v1 时间，不把当前 v4、v5 或 v6 参数和软件能力追溯到 v1。",
+      "date_note": "采用厂商回溯的 2012 年首版记录。",
+      "source_ids": [
+        "allegro-v1-2012"
+      ],
+      "hand_ids": [],
+      "tags": [
+        "industry",
+        "product-platform"
+      ],
+      "tag_sources": {
+        "industry": [
+          "allegro-v1-2012"
+        ],
+        "product-platform": [
+          "allegro-v1-2012"
+        ]
+      },
+      "selection_reason": "为后续触觉版本提供产品代际对照的起点，不替早期版本补写后来的配置。"
+    },
+    {
+      "id": "adaptive-synergies-2014",
+      "date": "2014-04",
+      "date_relation": "on",
+      "basis": "publication",
+      "track": "academic",
+      "title": "Pisa/IIT SoftHand：把适应性写进机构",
+      "date_note": "采用 IJRR 期刊发表月份；作者稿引用了更早工作，2014 不表示协同概念首次出现。",
+      "focus": "机构与控制协同设计",
+      "problem": "在丰富抓形与控制、硬件复杂度之间寻找取舍。",
+      "approach": "一个执行器带动 19 个关节，关节借助柔顺结构随物体形状调整。",
+      "evidence": "论文给出机构设计及抓取实验，将柔顺结构与低维驱动联系起来。",
+      "boundary": "论文原型与商业产品须分别核查；抓取示例不能证明任意手内操作。",
+      "source_ids": [
+        "softhand",
+        "softhand-date"
+      ],
+      "hand_ids": [
+        "pisa-iit-softhand"
+      ],
+      "hand_names": {
+        "pisa-iit-softhand": "Pisa/IIT SoftHand"
+      },
+      "tags": [
+        "academic",
+        "tendon-driven",
+        "underactuated",
+        "compliant-mechanics",
+        "adaptive-grasping"
+      ],
+      "tag_sources": {
+        "academic": [
+          "softhand",
+          "softhand-date"
+        ],
+        "tendon-driven": [
+          "softhand",
+          "softhand-date"
+        ],
+        "underactuated": [
+          "softhand",
+          "softhand-date"
+        ],
+        "compliant-mechanics": [
+          "softhand",
+          "softhand-date"
+        ],
+        "adaptive-grasping": [
+          "softhand",
+          "softhand-date"
+        ]
+      },
+      "selection_reason": "用少量输入和柔顺结构获得抓握适应性，说明控制复杂度可以部分交给机构。"
+    },
+    {
+      "id": "qb-research-2018",
+      "date": "2018",
+      "date_relation": "on",
+      "basis": "retrospective",
+      "track": "industry",
+      "title": "qb SoftHand Research：面向协作机器人接入",
+      "date_note": "2018 推出时间来自厂商回溯；不当作已核查的首批交付日期。",
+      "focus": "应用接入与产品化",
+      "problem": "厂商提出面向协作机器人的适应性抓握需求。",
+      "approach": "以单电机腱传动和柔顺结构适应抓握，并提供协作机器人接入。",
+      "evidence": "厂商记录 UR+ 接入及协作机器人演示。",
+      "boundary": "这是厂商的产品化记录，不是独立的产线可靠性或经济性评价；本节点不混用 SoftHand2 参数。",
+      "source_ids": [
+        "qb"
+      ],
+      "hand_ids": [],
+      "tags": [
+        "industry",
+        "tendon-driven",
+        "compliant-mechanics",
+        "adaptive-grasping",
+        "system-integration"
+      ],
+      "tag_sources": {
+        "industry": [
+          "qb"
+        ],
+        "tendon-driven": [
+          "qb"
+        ],
+        "compliant-mechanics": [
+          "qb"
+        ],
+        "adaptive-grasping": [
+          "qb"
+        ],
+        "system-integration": [
+          "qb"
+        ]
+      },
+      "selection_reason": "将柔顺抓握方案与协作机器人接入联系起来，说明应用接口也是产品化的一部分。"
+    },
+    {
+      "id": "learning-in-hand-2018",
+      "date": "2018-08-01",
+      "date_relation": "on",
+      "basis": "preprint",
+      "track": "academic",
+      "title": "OpenAI：学习在手中调整物体朝向",
+      "date_note": "采用 arXiv v1 提交日；所引用摘要为 v5，区别于其修订时间。",
+      "focus": "策略学习与迁移",
+      "problem": "让在仿真中训练的物体重定向策略用于真实硬件。",
+      "approach": "在仿真中随机改变物理参数与外观，训练策略后让真实手调整物体朝向。",
+      "evidence": "作者报告在历史 Shadow Hand 系统上实现视觉物体重定向。",
+      "boundary": "结果对应论文中的历史 Shadow Hand 配置与物体重定向任务，不能套用到当前产品或其他任务。",
+      "source_ids": [
+        "openai"
+      ],
+      "hand_ids": [
+        "shadow-hand"
+      ],
+      "hand_names": {
+        "shadow-hand": "Shadow Classic（与历史实验配置区分）"
+      },
+      "tags": [
+        "academic",
+        "learning-based",
+        "sim-to-real",
+        "in-hand-manipulation"
+      ],
+      "tag_sources": {
+        "academic": [
+          "openai"
+        ],
+        "learning-based": [
+          "openai"
+        ],
+        "sim-to-real": [
+          "openai"
+        ],
+        "in-hand-manipulation": [
+          "openai"
+        ]
+      },
+      "selection_reason": "展示仿真训练、随机化和真实手内操作之间的连接。"
+    },
+    {
+      "id": "nature-touch-view-2019",
+      "date": "2019-05-29",
+      "date_relation": "on",
+      "track": "academic",
+      "basis": "publication",
+      "record_kind": "field-viewpoint",
+      "publication": "Nature",
+      "article_type": "News & Views",
+      "title": "Nature：从触觉传感器走向操作数据",
+      "date_note": "Bridging the gap between artificial vision and touch；Nature，News & Views，采用文章发表日期。",
+      "problem": "触觉系统不仅需要传感器，也需要能支持学习与分析的操作数据。",
+      "approach": "评论低成本触觉手套如何积累压力图数据，连接触觉学习与机器人操作。",
+      "evidence": "Pasquale 评论 Sundaram 等的手套研究，讨论触觉数据、视觉与触觉结合，以及布线和采样要求。",
+      "boundary": "这是对人手触觉手套研究的评论，不是新灵巧手产品，也不证明机器人已获得通用操作能力。",
+      "focus": "用领域评论补充感知向数据与学习延伸的研究问题。",
+      "selection_reason": "用领域评论补充感知向数据与学习延伸的研究问题。",
+      "source_ids": [
+        "nature-touch-view-2019"
+      ],
+      "hand_ids": [],
+      "tags": [
+        "academic",
+        "field-viewpoint",
+        "tactile-sensing",
+        "contact-data",
+        "learning-based"
+      ],
+      "tag_sources": {
+        "academic": [
+          "nature-touch-view-2019"
+        ],
+        "field-viewpoint": [
+          "nature-touch-view-2019"
+        ],
+        "tactile-sensing": [
+          "nature-touch-view-2019"
+        ],
+        "contact-data": [
+          "nature-touch-view-2019"
+        ],
+        "learning-based": [
+          "nature-touch-view-2019"
+        ]
+      }
+    },
+    {
+      "id": "science-manipulation-review-2019",
+      "date": "2019-06-21",
+      "date_relation": "on",
+      "track": "academic",
+      "basis": "publication",
+      "record_kind": "field-viewpoint",
+      "publication": "Science",
+      "article_type": "Review",
+      "title": "Science：灵巧操作是感知、机构与学习的共同问题",
+      "date_note": "Trends and challenges in robot manipulation；Science，Review，采用文章发表日期。",
+      "problem": "怎样使机器人在物体和环境变化时继续操作，并处理人机协作中的不确定性？",
+      "approach": "综述视觉与触觉、柔顺机构和学习控制的联系，并讨论人与机器人共同操作。",
+      "evidence": "Billard 与 Kragic 的摘要总结多感知、柔顺执行和机器学习进展，将人机协作列为开放问题。",
+      "boundary": "范围是机器人操作整体；不专指某款多指手。这里依据公开摘要概括，不用综述替代具体实验的能力证据。",
+      "focus": "提供跨机构、感知和控制的领域综述视角，补充单款手和单次实验不能说明的联系。",
+      "selection_reason": "提供跨机构、感知和控制的领域综述视角，补充单款手和单次实验不能说明的联系。",
+      "source_ids": [
+        "science-manipulation-review-2019",
+        "science-manipulation-author-record"
+      ],
+      "hand_ids": [],
+      "tags": [
+        "academic",
+        "field-viewpoint",
+        "tactile-sensing",
+        "visual-sensing",
+        "compliant-mechanics",
+        "learning-based"
+      ],
+      "tag_sources": {
+        "academic": [
+          "science-manipulation-review-2019",
+          "science-manipulation-author-record"
+        ],
+        "field-viewpoint": [
+          "science-manipulation-review-2019",
+          "science-manipulation-author-record"
+        ],
+        "tactile-sensing": [
+          "science-manipulation-review-2019",
+          "science-manipulation-author-record"
+        ],
+        "visual-sensing": [
+          "science-manipulation-review-2019",
+          "science-manipulation-author-record"
+        ],
+        "compliant-mechanics": [
+          "science-manipulation-review-2019",
+          "science-manipulation-author-record"
+        ],
+        "learning-based": [
+          "science-manipulation-review-2019",
+          "science-manipulation-author-record"
+        ]
+      }
+    },
+    {
+      "id": "task-metric-perspective-2019",
+      "date": "2019-08-09",
+      "date_relation": "on",
+      "track": "academic",
+      "basis": "publication",
+      "record_kind": "field-viewpoint",
+      "publication": "Nature Machine Intelligence",
+      "article_type": "Perspective",
+      "title": "Nature Machine Intelligence：抓握成功由任务目标决定",
+      "date_note": "Robotic manipulation and the role of the task in the metric of success；Nature Machine Intelligence，Perspective，采用文章发表日期。",
+      "problem": "握住物体是否足以说明能完成递交、使用工具等后续任务？",
+      "approach": "主张围绕最终任务评价抓握，而不只判断是否抓住物体。",
+      "evidence": "Ortenzi 等在摘要中提出任务应塑造成功指标，并讨论以任务为中心的评价方式。",
+      "boundary": "这是评价方式的观点与建议，不是所有灵巧手性能已改善的证明；不能替代任务实验。",
+      "focus": "把评价关注点从抓握本身延伸到任务完成，说明读者应该怎样理解操作能力。",
+      "selection_reason": "把评价关注点从抓握本身延伸到任务完成，说明读者应该怎样理解操作能力。",
+      "source_ids": [
+        "task-metric-perspective-2019"
+      ],
+      "hand_ids": [],
+      "tags": [
+        "academic",
+        "field-viewpoint",
+        "task-evaluation"
+      ],
+      "tag_sources": {
+        "academic": [
+          "task-metric-perspective-2019"
+        ],
+        "field-viewpoint": [
+          "task-metric-perspective-2019"
+        ],
+        "task-evaluation": [
+          "task-metric-perspective-2019"
+        ]
+      }
+    },
+    {
+      "id": "rubiks-cube-2019",
+      "date": "2019-10-16",
+      "date_relation": "on",
+      "basis": "preprint",
+      "track": "academic",
+      "title": "OpenAI：用真实机器人手操作魔方",
+      "focus": "复杂任务与仿真迁移",
+      "approach": "自动扩大仿真随机化范围，训练视觉估计与操作策略，再迁移到真实机器人手。",
+      "problem": "任务需要连续转动与换握时，如何应对物理条件变化和状态估计误差？",
+      "evidence": "预印本报告自动域随机化、带记忆的策略及真实手魔方实验。",
+      "boundary": "结果对应特定魔方系统，不能解释为对任意物体的通用操作。",
+      "date_note": "采用 arXiv v1 的 2019-10-16 提交日。",
+      "source_ids": [
+        "rubiks-cube-2019"
+      ],
+      "hand_ids": [],
+      "tags": [
+        "academic",
+        "visual-sensing",
+        "learning-based",
+        "sim-to-real",
+        "in-hand-manipulation"
+      ],
+      "tag_sources": {
+        "academic": [
+          "rubiks-cube-2019"
+        ],
+        "visual-sensing": [
+          "rubiks-cube-2019"
+        ],
+        "learning-based": [
+          "rubiks-cube-2019"
+        ],
+        "sim-to-real": [
+          "rubiks-cube-2019"
+        ],
+        "in-hand-manipulation": [
+          "rubiks-cube-2019"
+        ]
+      },
+      "selection_reason": "与前一年的重定向实验对照，观察视觉估计与随机化怎样服务更复杂的任务。"
+    },
+    {
+      "id": "trifinger-2020",
+      "date": "2020-08-08",
+      "date_relation": "on",
+      "basis": "preprint",
+      "track": "academic",
+      "title": "TriFinger：降低真实实验门槛",
+      "date_note": "采用 arXiv v1 提交日；所引用摘要为 v2，区别于其修订时间。",
+      "focus": "开放平台与实验基础设施",
+      "problem": "作者将真实系统实验的时间和费用作为研究障碍。",
+      "approach": "提供开放硬件、软件与安全检查，让真实操作实验更容易搭建与持续运行。",
+      "evidence": "摘要报告控制和学习实验，提出减少人工看护的研究平台。",
+      "boundary": "减少人工看护依赖作者的安全检查和实验环境，不能直接推广到任意场景。",
+      "source_ids": [
+        "trifinger"
+      ],
+      "hand_ids": [
+        "trifinger"
+      ],
+      "hand_names": {
+        "trifinger": "TriFinger"
+      },
+      "tags": [
+        "academic",
+        "open-platform",
+        "learning-platform"
+      ],
+      "tag_sources": {
+        "academic": [
+          "trifinger"
+        ],
+        "open-platform": [
+          "trifinger"
+        ],
+        "learning-platform": [
+          "trifinger"
+        ]
+      },
+      "selection_reason": "把开放资源、安全和持续实验纳入平台设计，回应真实学习实验的搭建门槛。"
+    },
+    {
+      "id": "codesign-focus-2021",
+      "date": "2021-05-12",
+      "date_relation": "on",
+      "track": "academic",
+      "basis": "publication",
+      "record_kind": "field-viewpoint",
+      "publication": "Science Robotics",
+      "article_type": "Focus",
+      "title": "Science Robotics：机构与控制一起设计",
+      "date_note": "Co-designing hardware and control for robot hands；Science Robotics，Focus，采用文章发表日期。",
+      "problem": "机械设计会改变策略可用的动作和动力学，怎样把两者放进同一设计过程？",
+      "approach": "把机械结构与计算策略作为共同优化对象，而不是先固定手再训练控制。",
+      "evidence": "Chen、He 与 Ciocarlie 的作者稿讨论共同优化，说明机械部件也可承担策略的一部分，并联系仿真和迁移。",
+      "boundary": "Focus 讨论设计方法及相关工作；不能据此认定共同设计适用于所有任务，也不直接证明量产能力。",
+      "focus": "将工程取舍扩展到机构与控制的相互作用，连接欠驱动、学习和仿真路线。",
+      "selection_reason": "将工程取舍扩展到机构与控制的相互作用，连接欠驱动、学习和仿真路线。",
+      "source_ids": [
+        "codesign-focus-2021",
+        "codesign-focus-date",
+        "codesign-focus-type"
+      ],
+      "hand_ids": [],
+      "tags": [
+        "academic",
+        "field-viewpoint",
+        "co-design",
+        "underactuated",
+        "learning-based",
+        "sim-to-real"
+      ],
+      "tag_sources": {
+        "academic": [
+          "codesign-focus-2021",
+          "codesign-focus-date",
+          "codesign-focus-type"
+        ],
+        "field-viewpoint": [
+          "codesign-focus-2021",
+          "codesign-focus-date",
+          "codesign-focus-type"
+        ],
+        "co-design": [
+          "codesign-focus-2021",
+          "codesign-focus-date",
+          "codesign-focus-type"
+        ],
+        "underactuated": [
+          "codesign-focus-2021",
+          "codesign-focus-date",
+          "codesign-focus-type"
+        ],
+        "learning-based": [
+          "codesign-focus-2021",
+          "codesign-focus-date",
+          "codesign-focus-type"
+        ],
+        "sim-to-real": [
+          "codesign-focus-2021",
+          "codesign-focus-date",
+          "codesign-focus-type"
+        ]
+      }
+    },
+    {
+      "id": "leap-2023",
+      "date": "2023-07",
+      "date_relation": "on",
+      "basis": "publication",
+      "track": "academic",
+      "title": "LEAP v1：可自行搭建的四指学习平台",
+      "date_note": "采用 RSS 2023 会议月份，区别于后来 arXiv 提交时间。",
+      "focus": "构型、可获得性与开发资源",
+      "problem": "作者将适合机器学习的硬件可获得性作为研究问题。",
+      "approach": "设计四指构型，同时发布制造、模型和接口资源。",
+      "evidence": "论文报告遥操作和 sim2real 等任务；资源公开属于论文与作者项目的记录。",
+      "boundary": "成本、组装与任务表现依赖论文条件；这里记录 v1，不把结果推广到 v2。",
+      "source_ids": [
+        "leap"
+      ],
+      "hand_ids": [
+        "leap-hand"
+      ],
+      "hand_names": {
+        "leap-hand": "LEAP v1 Full"
+      },
+      "tags": [
+        "academic",
+        "open-platform",
+        "learning-based",
+        "sim-to-real"
+      ],
+      "tag_sources": {
+        "academic": [
+          "leap"
+        ],
+        "open-platform": [
+          "leap"
+        ],
+        "learning-based": [
+          "leap"
+        ],
+        "sim-to-real": [
+          "leap"
+        ]
+      },
+      "selection_reason": "将四指构型与制造、模型、接口资源一起发布，补充学习平台的工程路线。"
+    },
+    {
+      "id": "dexee-2024",
+      "date": "2024-05-09",
+      "date_relation": "on",
+      "basis": "announcement",
+      "track": "industry",
+      "title": "DEX-EE：面向反复试错的硬件设计",
+      "date_note": "日期为 Shadow 公告发布；公告预告当月 ICRA 展示，未据此填写实际交付日。",
+      "focus": "长期实验、维修与触觉反馈",
+      "problem": "厂商说明反复试错损伤和维修会中断学习实验。",
+      "approach": "针对学习实验的反复试错，Shadow 与 DeepMind 合作改进硬件耐用性和触觉反馈。",
+      "evidence": "官方明确描述合作过程并提供标准产品购买入口，是研究需求影响硬件设计的具体案例。",
+      "boundary": "耐用性与控制性能为厂商陈述；DEX-EE 不能仅按年份视为 Classic 的直接下一代。",
+      "source_ids": [
+        "dexee"
+      ],
+      "hand_ids": [],
+      "tags": [
+        "industry",
+        "maintenance",
+        "tactile-sensing",
+        "learning-platform"
+      ],
+      "tag_sources": {
+        "industry": [
+          "dexee"
+        ],
+        "maintenance": [
+          "dexee"
+        ],
+        "tactile-sensing": [
+          "dexee"
+        ],
+        "learning-platform": [
+          "dexee"
+        ]
+      },
+      "selection_reason": "让反复试错中的耐用性与触觉反馈成为硬件设计目标。"
+    },
+    {
+      "id": "anyrotate-2024",
+      "date": "2024-05-12",
+      "date_relation": "on",
+      "basis": "preprint",
+      "track": "academic",
+      "title": "AnyRotate：用触觉应对旋转中的接触变化",
+      "focus": "触觉反馈与学习",
+      "approach": "把密集触觉纳入策略，在不同手部朝向下完成物体旋转并应对不稳定抓握。",
+      "problem": "手朝向改变、重力作用变化时，旋转策略如何利用接触信息调整动作？",
+      "evidence": "论文报告仿真触觉到实物的迁移，以及不同轴向、朝向和未见物体的旋转实验。",
+      "boundary": "结果受硬件、物体与实验条件约束，不代表装有触觉的手自动具备该能力。",
+      "date_note": "采用 arXiv v1 的 2024-05-12 提交日。",
+      "source_ids": [
+        "anyrotate-2024"
+      ],
+      "hand_ids": [],
+      "tags": [
+        "academic",
+        "tactile-sensing",
+        "learning-based",
+        "sim-to-real",
+        "in-hand-manipulation"
+      ],
+      "tag_sources": {
+        "academic": [
+          "anyrotate-2024"
+        ],
+        "tactile-sensing": [
+          "anyrotate-2024"
+        ],
+        "learning-based": [
+          "anyrotate-2024"
+        ],
+        "sim-to-real": [
+          "anyrotate-2024"
+        ],
+        "in-hand-manipulation": [
+          "anyrotate-2024"
+        ]
+      },
+      "selection_reason": "把触觉与接触变化纳入手内旋转策略，补充视觉之外的反馈路线。"
+    },
+    {
+      "id": "allegro-v5-2024",
+      "date": "2024-11-15",
+      "date_relation": "on",
+      "basis": "announcement",
+      "track": "industry",
+      "title": "Allegro v5：产品加入指尖触觉",
+      "focus": "触觉与平台迭代",
+      "approach": "在 v4 基础上加入指尖压力触觉，并延续开发环境、改进手指线缆结构。",
+      "problem": "如何在已有平台增加接触反馈，同时降低开发迁移与硬件维护负担？",
+      "evidence": "官方公告介绍 v5 及 Plus，说明指尖全向压力触觉、v4 升级关系与线缆改进。",
+      "boundary": "触觉与耐用性描述来自厂商，没有据此推断学习任务成功率。",
+      "date_note": "采用 Wonik 韩文公告的 2024-11-15 日期。",
+      "source_ids": [
+        "allegro-v5-2024"
+      ],
+      "hand_ids": [],
+      "tags": [
+        "industry",
+        "tactile-sensing",
+        "maintenance",
+        "product-platform"
+      ],
+      "tag_sources": {
+        "industry": [
+          "allegro-v5-2024"
+        ],
+        "tactile-sensing": [
+          "allegro-v5-2024"
+        ],
+        "maintenance": [
+          "allegro-v5-2024"
+        ],
+        "product-platform": [
+          "allegro-v5-2024"
+        ]
+      },
+      "selection_reason": "记录触觉和线缆改进进入产品代际，观察感知与维护需求怎样影响产品。"
+    },
+    {
+      "id": "dexumi-2025",
+      "date": "2025-09",
+      "date_relation": "on",
+      "basis": "publication",
+      "track": "academic",
+      "title": "DexUMI：从人手演示采集操作数据",
+      "focus": "数据采集与技能迁移",
+      "approach": "用可穿戴外骨骼约束人手运动，再处理演示视频中的人手与机器人手外观差异。",
+      "problem": "人手与机器人手运动范围、外观不同，演示数据如何用于机器人策略学习？",
+      "evidence": "CoRL 论文给出硬件适配与视频修补方法，报告两种机器人手的实物实验。",
+      "boundary": "迁移结果限定于所测平台和任务，“通用接口”不表示适用于所有机器人手。",
+      "date_note": "采用 CoRL 2025 年 9 月会议发表记录；预印本为同年 5 月。",
+      "source_ids": [
+        "dexumi-2025"
+      ],
+      "hand_ids": [],
+      "tags": [
+        "academic",
+        "demonstration-data",
+        "learning-based"
+      ],
+      "tag_sources": {
+        "academic": [
+          "dexumi-2025"
+        ],
+        "demonstration-data": [
+          "dexumi-2025"
+        ],
+        "learning-based": [
+          "dexumi-2025"
+        ]
+      },
+      "selection_reason": "把人手演示采集和跨形态差异作为学习系统的问题。"
+    },
+    {
+      "id": "allegro-v6f-2026",
+      "date": "2026-09-07",
+      "date_relation": "on",
+      "basis": "announcement",
+      "track": "industry",
+      "title": "Allegro v6 F：把手作为接触数据平台",
+      "focus": "全手感知与数据采集",
+      "approach": "扩展为五指，在指尖、手指关节区域与掌部配置压力感知，面向操作数据采集。",
+      "problem": "手如何记录接触位置、时机和压力变化，为训练与分析提供数据？",
+      "evidence": "官方公告说明五指架构、全手压力感知、控制输入与数据采集定位。",
+      "boundary": "配置与用途来自发布公告，不能据此判断独立任务表现或规模化交付。",
+      "date_note": "采用 Allegro 官方公告的 2026-09-07 日期。",
+      "source_ids": [
+        "allegro-v6f-2026"
+      ],
+      "hand_ids": [],
+      "tags": [
+        "industry",
+        "tactile-sensing",
+        "contact-data",
+        "product-platform"
+      ],
+      "tag_sources": {
+        "industry": [
+          "allegro-v6f-2026"
+        ],
+        "tactile-sensing": [
+          "allegro-v6f-2026"
+        ],
+        "contact-data": [
+          "allegro-v6f-2026"
+        ],
+        "product-platform": [
+          "allegro-v6f-2026"
+        ]
+      },
+      "selection_reason": "记录接触感知范围扩展及数据采集用途，观察手作为操作数据平台的定位。"
+    }
+  ],
+  "relations": [
+    {
+      "from": "adaptive-synergies-2014",
+      "to": "qb-research-2018",
+      "kind": "same-route",
+      "text": "本站对照：两份资料均讨论少输入、柔顺与适应性抓握。本轮记录只支持同类路线对照，尚未逐项证明论文原型到该商业版本的工程继承。",
+      "source_ids": [
+        "softhand",
+        "qb"
+      ]
+    },
+    {
+      "from": "trifinger-2020",
+      "to": "leap-2023",
+      "kind": "comparison",
+      "text": "本站解读：两项工作都把实验门槛与开放资源放入研究问题，但平台构型和任务不同。共同关注点可用于比较，不表示后者由前者演化。",
+      "source_ids": [
+        "trifinger",
+        "leap"
+      ]
+    },
+    {
+      "from": "dlr-hand-ii-2001",
+      "to": "hit-dlr-2003",
+      "kind": "documented-lineage",
+      "text": "2003 年 HIT/DLR 论文明确说明基于 DLR Hand II 技术，目标包括小型化与更容易制造。该时间点报告的是单指原型；技术继承不等于已完成商业产品转化。",
+      "source_ids": [
+        "hit-dlr-2003"
+      ]
+    }
+  ],
+  "selection": {
+    "type": "curated",
+    "description": "以能解释重要技术变化的案例构成精选时间轴，不是完整产品名录，也不是按期刊声望排名。",
+    "criteria": [
+      "技术方案：能说明机构、感知、控制或操作方法的一项具体变化。",
+      "平台与应用：能说明制造、集成、维护、开放实验或数据采集的一项需求变化。",
+      "领域观点：直接讨论灵巧操作的评价、设计或研究问题，并标明文章类型。"
+    ],
+    "evidence_rule": "每项须有可核对的时间和原始来源。收录理由是本站解读；论文结果、产品记录与领域观点分开标明。",
+    "coverage_note": "当前从 1974 年起收录，起点不是领域诞生年份。未出现的论文和企业不代表不重要；早期历史、地区与路线的覆盖仍不完整。"
+  }
+}

@@ -1,0 +1,43 @@
+checked: '2026-10-02'
+scope: 本索引为本次实际阅读的部分资源；不是全部产品覆盖。在线说明已读不等于模型已运行。
+resources:
+  - id: ability-hand-mujoco
+    hand: PSYONIC Ability Hand
+    maintainer: psyonicinc
+    url: https://github.com/psyonicinc/ability-hand-api/tree/master/python/ah_simulators
+    formats: [MuJoCo XML]
+    configuration: 大小号、左右手；具体硬件修订兼容性待核验
+    evidence: 已读README和文件列表
+    limitation: 控制封装目前仅位置控制；指间关系用Python近似，碰撞和惯量采用简化模型。
+    license_status: 仓库标注MIT；第三方机器人资源另需核验
+    local_tested: false
+  - id: ability-hand-isaac-import
+    hand: PSYONIC Ability Hand
+    maintainer: psyonicinc
+    url: https://github.com/psyonicinc/ability-hand-api/tree/master/python/ah_simulators
+    formats: [URDF]
+    configuration: README针对Isaac Sim 4.5提供导入选项
+    evidence: 已读导入步骤
+    limitation: 仅确认导入说明，未确认完整训练环境或动力学保真度。
+    license_status: 仓库标注MIT；ROS2包许可待另核
+    local_tested: false
+  - id: tesollo-dg5fs-models
+    hand: Tesollo DG-5F-S
+    maintainer: tesollodelto
+    url: https://github.com/tesollodelto/tesollo_model/tree/main/dg5fs
+    formats: [URDF, MJCF, USD, STL, DAE]
+    configuration: 20或15自由度，左右手，带或不带底座分别提供
+    evidence: 已读README及具体文件名
+    limitation: 官方说明参数可能更新，复现前须固定commit与硬件配置。
+    license_status: 仓库标注BSD-3-Clause
+    local_tested: false
+  - id: unitree-g1-dex3-isaaclab
+    hand: Unitree Dex3-1 on G1
+    maintainer: unitreerobotics
+    url: https://github.com/unitreerobotics/unitree_sim_isaaclab
+    formats: [USD]
+    configuration: G1配Dex3任务；资产单独获取
+    evidence: 已读仓库任务与资产说明
+    limitation: 不能将通用unitree_mujoco仓库推断为此配置已适配；未下载资产。
+    license_status: 代码与另取资产的许可须分别核验
+    local_tested: false

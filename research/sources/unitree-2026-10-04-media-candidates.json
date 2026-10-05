@@ -1,0 +1,212 @@
+{
+  "unitree-dex2-5": {
+    "source": "https://www.unitree.com/Dex2-5/",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/11d0a76afbb74e8fb7f692652b4c33e0_800x800.png",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/b53aa7f28733499f9c5f93548fee2baa_800x800.png",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/f951770ea2e74197a6b0c089d13efc5a_800x800.png",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/76658a29925a49a397efe2f726f5e1e3_800x800.png",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/ea2d2b637df84e3bacd508cd1f2711e5_2744x1596.jpg",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/4e6266ec20b849af968750d5d432d391_1372x798.jpg",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://www.unitree.com/images/476f2276e3c14c3b86b286fcc4d7aeb5.mp4",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "unitree-dex5-1": {
+    "source": "https://www.unitree.com/Dex5-1/",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/11d0a76afbb74e8fb7f692652b4c33e0_800x800.png",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/b53aa7f28733499f9c5f93548fee2baa_800x800.png",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/f951770ea2e74197a6b0c089d13efc5a_800x800.png",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/76658a29925a49a397efe2f726f5e1e3_800x800.png",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/ea2d2b637df84e3bacd508cd1f2711e5_2744x1596.jpg",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/4e6266ec20b849af968750d5d432d391_1372x798.jpg",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://www.unitree.com/images/164d17eff0844c228f4ddd64d0c766bb.mp4",
+        "alt": "",
+        "poster": "https://www.unitree.com/images/aacb7e3f428842de9df65063059ea266_3236x1819.png"
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/bb5449be5095404897027b344537f602_2560x1920.gif",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/8d58a1287e5a46cc93ad5907bfeb039c_2560x1920.gif",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/aee66a4bc16c4eb68d8bc705da172761_2000x859.png",
+        "alt": null,
+        "poster": ""
+      }
+    ]
+  },
+  "unitree-dex5-s": {
+    "source": "https://www.unitree.com/Dex5-S/",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/11d0a76afbb74e8fb7f692652b4c33e0_800x800.png",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/b53aa7f28733499f9c5f93548fee2baa_800x800.png",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/f951770ea2e74197a6b0c089d13efc5a_800x800.png",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/76658a29925a49a397efe2f726f5e1e3_800x800.png",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/ea2d2b637df84e3bacd508cd1f2711e5_2744x1596.jpg",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/4e6266ec20b849af968750d5d432d391_1372x798.jpg",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/600db8f7de81451498e86abc98ab4838_3838x2160.jpg",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/f37d2fe6be00471381d623bcda2dd58d_780x603.gif",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/8d545bc816d54ccb81f2892be9367575_780x603.gif",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/7939b286c27d4f21868dba5bead2d574_780x603.gif",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/582e980a2caf4c95b7bdb3dcc4301f83_1920x1080.png",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/d22b6594a69640fc8c830c208c564d5f_1920x1081.png",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/705503d6d8b142ada3489f1563489d59_1920x1080.png",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/aa2db6102a1d48d998ee892eee985ec2_1920x1080.png",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/004c68d7d0054e46b1051c7fcc3166d1_1920x1004.png",
+        "alt": null,
+        "poster": ""
+      }
+    ]
+  }
+}

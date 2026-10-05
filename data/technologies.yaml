@@ -1,0 +1,56 @@
+schema_version: 1
+# 这里是编辑分类，不是已核验的技术定义或产品归类。
+dimensions:
+  - id: actuation
+    name: 驱动方式
+    terms:
+      - {id: electric-actuation, name: 电驱动}
+      - {id: pneumatic-actuation, name: 气动}
+      - {id: hydraulic-actuation, name: 液压}
+  - id: transmission
+    name: 传动机制
+    terms:
+      - {id: direct-drive, name: 直接驱动}
+      - {id: tendon-driven, name: 腱绳传动, page: technologies/tendon-driven.md}
+      - {id: linkage-driven, name: 连杆传动}
+      - {id: hybrid-transmission, name: 混合传动}
+  - id: configuration
+    name: 驱动与关节配置
+    terms:
+      - {id: underactuated, name: 欠驱动, page: technologies/underactuation-and-synergies.md}
+      - {id: fully-actuated, name: 全驱动}
+  - id: structure
+    name: 结构与材料特征
+    terms:
+      - {id: soft-structure, name: 软体结构}
+      - {id: rigid-structure, name: 刚性结构}
+      - {id: rigid-soft-hybrid, name: 刚柔混合结构}
+  - id: sensing
+    name: 感知
+    terms:
+      - {id: position-sensing, name: 位置感知}
+      - {id: current-sensing, name: 电流反馈}
+      - {id: force-sensing, name: 力感知}
+      - {id: tactile-sensing, name: 触觉}
+      - {id: vision, name: 视觉}
+      - {id: fbg, name: FBG}
+      - {id: proprioception, name: 本体感知}
+  - id: control
+    name: 控制与学习
+    terms:
+      - {id: pid, name: PID}
+      - {id: impedance-control, name: 阻抗控制}
+      - {id: force-control, name: 力控制}
+      - {id: mpc, name: MPC}
+      - {id: reinforcement-learning, name: 强化学习}
+      - {id: imitation-learning, name: 模仿学习}
+      - {id: vla, name: VLA}
+      - {id: teleoperation, name: 遥操作}
+  - id: simulation
+    name: 仿真生态
+    terms:
+      - {id: mujoco, name: MuJoCo}
+      - {id: isaac-sim, name: Isaac Sim}
+      - {id: isaac-gym, name: Isaac Gym}
+      - {id: genesis, name: Genesis}
+      - {id: gazebo, name: Gazebo}

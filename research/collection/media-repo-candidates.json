@@ -1,0 +1,27 @@
+{
+  "orca-hand": {
+    "repo": "orcahand/orcahand_description",
+    "branch": "master",
+    "files": []
+  },
+  "open-bionics-ada": {
+    "repo": "Open-Bionics/Ada_3D_model_files",
+    "branch": "master",
+    "files": []
+  },
+  "open-bionics-brunel": {
+    "repo": "Open-Bionics/Brunel",
+    "branch": "master",
+    "files": []
+  },
+  "schunk-sdh-2": {
+    "repo": "ipa320/schunk_modular_robotics",
+    "branch": "master",
+    "files": []
+  },
+  "qb-softhand-2-research": {
+    "repo": "qbrobotics/qbhand-ros",
+    "branch": "master",
+    "files": []
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "shadow-hand": {
+    "dof": 20,
+    "actuators": 20,
+    "year": null,
+    "transmission": "tendon-driven",
+    "scope": "20 主动自由度含 2 腕关节；另有 4 欠驱动运动。与不含腕的手不完全同口径。",
+    "sources": [
+      "shadow-classic-product",
+      "shadow-spec-2024"
+    ]
+  },
+  "leap-hand": {
+    "dof": 16,
+    "actuators": 16,
+    "year": 2023,
+    "transmission": null,
+    "scope": "v1 Full：16 个受控关节角；2023 为论文公开年份。传动分类尚待核验，不推断为直驱。",
+    "sources": [
+      "leap-rss-2023",
+      "leap-v1-parts"
+    ]
+  }
+}

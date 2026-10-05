@@ -1,0 +1,837 @@
+[
+  {
+    "name": "Shadow Classic",
+    "source": "website/docs/hands/reports/shadow-classic.md",
+    "page": "hands/reports/shadow-classic.md",
+    "summary": "位置/腱力/触觉区别，控制频率，Gazebo与MJCF，历史研究边界",
+    "gaps": "全尺寸与材料表、标定协议、独立实验全文"
+  },
+  {
+    "name": "LEAP v1",
+    "source": "website/docs/hands/reports/leap-v1.md",
+    "page": "hands/reports/leap-v1.md",
+    "summary": "运动轴设计，拉脱试验定义，遥操作反例，Gym/Lab/MuJoCo版本",
+    "gaps": "重复试验与统计、独立复现、CAD尺寸"
+  },
+  {
+    "name": "Wuji Hand 2",
+    "source": "research/collection/hands/wuji-hand-2.md",
+    "page": "hands/reports/wuji-hand-2.md",
+    "summary": "硬件固件模型对应，实际接口单位，软垫与碰撞版本差异",
+    "gaps": "轴序映射、传动剖面、标定与可靠性实验"
+  },
+  {
+    "name": "Sharpa W01",
+    "source": "research/collection/hands/sharpa-w01.md",
+    "page": "hands/reports/sharpa-w01.md",
+    "summary": "触觉指标区别，坐标系，模型控制模式，旋转任务与部署条件",
+    "gaps": "配置双列对应、触觉技术原理、独立评测"
+  },
+  {
+    "name": "Allegro V4",
+    "source": "research/collection/hands/allegro-v4.md",
+    "page": "hands/reports/allegro-v4.md",
+    "summary": "ROS 控制、V3/V4 模型区别、力矩接口与传感区别",
+    "gaps": "热限、触觉配置、版本对应"
+  },
+  {
+    "name": "DLR Hand II",
+    "source": "research/collection/hands/dlr-hand-ii.md",
+    "page": "hands/reports/dlr-hand-ii.md",
+    "summary": "差动传动、关节与指尖力矩传感、阻抗控制",
+    "gaps": "规格附件、实验全文、模型"
+  },
+  {
+    "name": "Xynova Flex 2",
+    "source": "research/collection/hands/xynova-flex-2.md",
+    "page": "hands/reports/xynova-flex-2.md",
+    "summary": "线性执行器和腱索、MANUS 映射、宣传指标条件",
+    "gaps": "电机数量、整机重量、标定和独立验证"
+  },
+  {
+    "name": "Linker L20",
+    "source": "research/collection/hands/linker-l20.md",
+    "page": "hands/reports/linker-l20.md",
+    "summary": "手册版本、16主动/21总关节、SDK保留位、仿真型号边界",
+    "gaps": "冲突规格、传感标定、专用仿真验证"
+  },
+  {
+    "name": "Barrett BH8-280",
+    "source": "research/collection/hands/barrett-bh8-280.md",
+    "page": "hands/reports/barrett-bh8-280.md",
+    "summary": "TorqueSwitch、选装关节力矩传感及维护要求",
+    "gaps": "280固件专用接口、触觉和独立实验"
+  },
+  {
+    "name": "TriFinger",
+    "source": "research/collection/hands/trifinger.md",
+    "page": "hands/reports/trifinger.md",
+    "summary": "代际、1kHz控制、到点学习实验、PyBullet资源",
+    "gaps": "各代规格、校准和跨团队比较"
+  },
+  {
+    "name": "RBO Hand 2",
+    "source": "research/collection/hands/rbo-hand-2.md",
+    "page": "hands/reports/rbo-hand-2.md",
+    "summary": "硬件论文、模具CAD和许可、传感改装边界",
+    "gaps": "全文实验表、气源、经过验证的软体仿真"
+  },
+  {
+    "name": "RBO Hand 3",
+    "source": "research/collection/hands/rbo-hand-3.md",
+    "page": "hands/reports/rbo-hand-3.md",
+    "summary": "PneuFlex与气囊、气体质量控制、阀门频率含义",
+    "gaps": "制造附件、完整系统规格、模型"
+  },
+  {
+    "name": "Unitree Dex3-1",
+    "source": "research/collection/hands/unitree-dex3-1.md",
+    "page": "hands/reports/unitree-dex3-1.md",
+    "summary": "7自由度、触觉阵列、负载条件、直驱术语边界",
+    "gaps": "反馈原理、模组对应和独立评测"
+  },
+  {
+    "name": "PSYONIC Ability Hand",
+    "source": "research/collection/hands/psyonic-ability-hand.md",
+    "page": "hands/reports/psyonic-ability-hand.md",
+    "summary": "UART/I2C区别、仿真入口、2026 Isaac Lab 声明",
+    "gaps": "ICD正文、原生资产位置和传感标定"
+  },
+  {
+    "name": "Pisa/IIT SoftHand",
+    "source": "research/collection/hands/pisa-iit-softhand.md",
+    "page": "hands/reports/pisa-iit-softhand.md",
+    "summary": "腱索协同、原型实验条件、Gazebo与Simulink",
+    "gaps": "固定版本规格、重复实验与模型运行"
+  },
+  {
+    "name": "qbSoftHand 2 Research",
+    "source": "research/collection/hands/qb-softhand-2-research.md",
+    "page": "hands/reports/qb-softhand-2-research.md",
+    "summary": "双电机命令、电机反馈、RViz估计限制、CAD",
+    "gaps": "对应动力学仿真、材料寿命和独立实验"
+  },
+  {
+    "name": "ORCA v1",
+    "source": "research/collection/hands/orca-hand.md",
+    "page": "hands/reports/orca-hand.md",
+    "summary": "腕轴计数、二值触觉、皮肤/导线故障、v1/v2模型",
+    "gaps": "固定构建规格、完整可靠性协议、独立复现"
+  },
+  {
+    "name": "RUKA v1",
+    "source": "research/collection/hands/ruka-v1.md",
+    "page": "hands/reports/ruka-v1.md",
+    "summary": "15DoF/11电机、学习控制、载荷测试阈值、XML与权重",
+    "gaps": "全规格、模型许可、接触条件泛化"
+  },
+  {
+    "name": "LEAP v2",
+    "source": "research/collection/hands/leap-hand-v2.md",
+    "page": "hands/reports/leap-hand-v2.md",
+    "summary": "角度/curl单位、90Hz读取、校准和分项许可",
+    "gaps": "专用仿真文件、载荷、重量和标定"
+  },
+  {
+    "name": "Tesollo DG-5F-M",
+    "source": "research/collection/hands/tesollo-dg-5f-m.md",
+    "page": "hands/reports/tesollo-dg-5f-m.md",
+    "summary": "新旧规格区别、选配传感、ROS2迁移、URDF/USD",
+    "gaps": "M版模型对应、传动剖面和独立实验"
+  },
+  {
+    "name": "SCHUNK SVH",
+    "source": "research/collection/hands/schunk-svh.md",
+    "page": "hands/reports/schunk-svh.md",
+    "summary": "九驱动、校准、ROS2与MuJoCo位置接口",
+    "gaps": "关节映射、力反馈和独立测试"
+  },
+  {
+    "name": "SCHUNK SDH 2",
+    "source": "research/collection/hands/schunk-sdh-2.md",
+    "page": "hands/reports/schunk-sdh-2.md",
+    "summary": "厂商历史规格、力矩/阵列口径、防护目标",
+    "gaps": "触觉完整规格、专用软件和实验全文"
+  },
+  {
+    "name": "Inspire RH56DFX",
+    "source": "research/collection/hands/inspire-rh56dfx.md",
+    "page": "hands/reports/inspire-rh56dfx.md",
+    "summary": "外部预印本标定与插孔实验、NVIDIA教程、第三方URDF",
+    "gaps": "固件对应、论文失效模型入口、独立复现"
+  },
+  {
+    "name": "Inspire RH56BFX",
+    "source": "research/collection/hands/inspire-rh56bfx.md",
+    "page": "hands/reports/inspire-rh56bfx.md",
+    "summary": "电缸架构、速度/力取舍、触觉区别、供电版本冲突",
+    "gaps": "专用模型、接口、标定与带载实验"
+  },
+  {
+    "name": "DLR CLASH",
+    "source": "research/collection/hands/dlr-clash.md",
+    "page": "hands/reports/dlr-clash.md",
+    "summary": "弹簧偏转估力、导纳控制、苹果实验及故障注入条件",
+    "gaps": "模型、完整统计、损伤和耐久"
+  },
+  {
+    "name": "DLR David / Awiwi",
+    "source": "research/collection/hands/dlr-david.md",
+    "page": "hands/reports/dlr-david.md",
+    "summary": "拮抗腱驱、主动/被动速度、材料配置与FRCEF改进",
+    "gaps": "代际对应、模型与独立评测"
+  },
+  {
+    "name": "DLR DEXHAND",
+    "source": "research/collection/hands/dlr-dexhand.md",
+    "page": "hands/reports/dlr-dexhand.md",
+    "summary": "关节力矩含义、装配布线限制、航天适用边界",
+    "gaps": "原论文实验、标定和软件"
+  },
+  {
+    "name": "DLR Spacehand",
+    "source": "research/collection/hands/dlr-spacehand.md",
+    "page": "hands/reports/dlr-spacehand.md",
+    "summary": "新旧规格冲突、Zylon腱、应变桥与阻抗控制",
+    "gaps": "最终构型、完整鉴定和模型"
+  },
+  {
+    "name": "Robotiq 3F",
+    "source": "research/collection/hands/robotiq-3f.md",
+    "page": "hands/reports/robotiq-3f.md",
+    "summary": "电流限幅、负载条件、手册力指标冲突与历史Gazebo包",
+    "gaps": "固件对应、动力学验证和独立实验"
+  },
+  {
+    "name": "Prensilia IH2 Azzurra",
+    "source": "research/collection/hands/prensilia-ih2-azzurra.md",
+    "page": "hands/reports/prensilia-ih2-azzurra.md",
+    "summary": "腱传动、传感配置脚注、GF电流映射与串口限制",
+    "gaps": "样机配置、模型与标定误差"
+  },
+  {
+    "name": "NASA Robonaut 2",
+    "source": "research/collection/hands/nasa-robonaut-2-hand.md",
+    "page": "hands/reports/nasa-robonaut-2-hand.md",
+    "summary": "手腕自由度、线性腱驱、三类传感和URDF入口",
+    "gaps": "上游访问、模型许可和独立实验"
+  },
+  {
+    "name": "Festo BionicSoftHand",
+    "source": "research/collection/hands/festo-bionicsofthand.md",
+    "page": "hands/reports/festo-bionicsofthand.md",
+    "summary": "气室编织层、阀控与传感、数字孪生证据边界",
+    "gaps": "开放模型、气源规格和实验统计"
+  },
+  {
+    "name": "Open Bionics Ada",
+    "source": "research/collection/hands/open-bionics-ada.md",
+    "page": "hands/reports/open-bionics-ada.md",
+    "summary": "执行器电位计、Artichoke、制造文件及分项许可",
+    "gaps": "构建规格、传动路径和独立实验"
+  },
+  {
+    "name": "Open Bionics Brunel V1",
+    "source": "research/collection/hands/open-bionics-brunel.md",
+    "page": "hands/reports/open-bionics-brunel.md",
+    "summary": "9DoF/4驱动、V1/V2固件映射和制造文件",
+    "gaps": "固定模型版本、载荷和耐久"
+  },
+  {
+    "name": "Wuji Hand 1",
+    "source": "research/collection/hands/wuji-hand.md",
+    "page": "hands/reports/wuji-hand.md",
+    "summary": "五指，每指 4 个主动轴，共 20 个；与 Hand 2 分开记录。",
+    "gaps": "尚需核对逐电机清单、关节零位、减速结构以及各抓姿力测试协议。",
+    "venue": "官方产品 / 归档 v1 文档"
+  },
+  {
+    "name": "Linker Hand L6",
+    "source": "research/collection/hands/linker-l6.md",
+    "page": "hands/reports/linker-l6.md",
+    "summary": "6 个主动自由度，5 个被动自由度；以当前产品页配置为准。",
+    "gaps": "逐指主动/被动分配、传感器配置、载荷条件和长期重复测试仍需说明书或实测补齐。",
+    "venue": "官方产品规格"
+  },
+  {
+    "name": "Linker Hand O6",
+    "source": "research/collection/hands/linker-o6.md",
+    "page": "hands/reports/linker-o6.md",
+    "summary": "6 个主动自由度，5 个被动自由度；以当前产品页配置为准。",
+    "gaps": "逐指主动/被动分配、传感器配置、载荷条件和长期重复测试仍需说明书或实测补齐。",
+    "venue": "官方产品规格"
+  },
+  {
+    "name": "Linker Hand L20 Lite",
+    "source": "research/collection/hands/linker-l20-lite.md",
+    "page": "hands/reports/linker-l20-lite.md",
+    "summary": "10 个主动自由度，10 个被动自由度；以当前产品页配置为准。",
+    "gaps": "逐指主动/被动分配、传感器配置、载荷条件和长期重复测试仍需说明书或实测补齐。",
+    "venue": "官方产品规格"
+  },
+  {
+    "name": "Linker Hand L30 Pro",
+    "source": "research/collection/hands/linker-l30.md",
+    "page": "hands/reports/linker-l30.md",
+    "summary": "18 个主动自由度，4 个被动自由度；以当前产品页配置为准。",
+    "gaps": "逐指主动/被动分配、传感器配置、载荷条件和长期重复测试仍需说明书或实测补齐。",
+    "venue": "官方产品规格"
+  },
+  {
+    "name": "Linker Hand O30",
+    "source": "research/collection/hands/linker-o30.md",
+    "page": "hands/reports/linker-o30.md",
+    "summary": "20 个主动自由度，0 个被动自由度；以当前产品页配置为准。",
+    "gaps": "逐指主动/被动分配、传感器配置、载荷条件和长期重复测试仍需说明书或实测补齐。",
+    "venue": "官方产品规格"
+  },
+  {
+    "name": "ILDA Hand",
+    "source": "research/collection/hands/ilda-hand.md",
+    "page": "hands/reports/ilda-hand.md",
+    "summary": "五指共 15 个主动自由度、20 个关节；每指 3 个独立运动。",
+    "gaps": "尚需整理各实验载荷和姿态、全部失败样本以及可运行仿真模型。",
+    "venue": "Nature Communications"
+  },
+  {
+    "name": "VMS Hand",
+    "source": "research/collection/hands/vms-hand.md",
+    "page": "hands/reports/vms-hand.md",
+    "summary": "论文称 18 DOF；由 13 条主动腱索控制，不能把 18 当作 18 个独立电机轴。",
+    "gaps": "接触假设、模型误差与多点同时接触时的可辨识性需结合补充实验；不将估计值称为直接测量。",
+    "venue": "Nature Communications"
+  },
+  {
+    "name": "TacPalm SoftHand",
+    "source": "research/collection/hands/palm-finger-soft-hand.md",
+    "page": "hands/reports/palm-finger-soft-hand.md",
+    "summary": "三根软指，每指两个独立气动段，共 6 个压力输入；连续体弯曲不是 6 个刚性转轴。",
+    "gaps": "尚需逐任务整理试验次数、成功率、外置气源体积及循环寿命。",
+    "venue": "Nature Communications"
+  },
+  {
+    "name": "Detachable Crawling Hand",
+    "source": "research/collection/hands/detachable-crawling-hand.md",
+    "page": "hands/reports/detachable-crawling-hand.md",
+    "summary": "可更换指数量的平台；每个可逆手指 4 个舵机，掌部最多安装 6 指，不能统一按 24 轴计数。",
+    "gaps": "尚需逐实验建立指数量、运动范围、控制配置与结果的一一对应。",
+    "venue": "Nature Communications"
+  },
+  {
+    "name": "Open Parametric Hand",
+    "source": "research/collection/hands/open-parametric-hand.md",
+    "page": "hands/reports/open-parametric-hand.md",
+    "summary": "参数化软手平台：每指四个相互耦合的运动自由度，配单/双输入等不同协同驱动方案。",
+    "gaps": "仍需选定标准配置、核对逐轴运动范围与长期材料疲劳。",
+    "venue": "Science Robotics"
+  },
+  {
+    "name": "DexCo Hand",
+    "source": "research/collection/hands/dexco-hand.md",
+    "page": "hands/reports/dexco-hand.md",
+    "summary": "三指加可收缩掌部的软液压手；尚未核清可比较的独立关节角总数。",
+    "gaps": "泵和管路的总体积、泄漏维护、全部力与精度测试条件及可下载仿真入口仍待核查。",
+    "venue": "IEEE Transactions on Robotics · T-RO（2025 卷）"
+  },
+  {
+    "name": "F-TAC Hand",
+    "source": "research/collection/hands/f-tac-hand.md",
+    "page": "hands/reports/f-tac-hand.md",
+    "summary": "五指、每指三个运动自由度；论文总计 15 DOF，驱动与耦合口径待进一步核清。",
+    "gaps": "每根腱索的驱动分配、传感标定误差以及各任务成功率表仍待完整录入。",
+    "venue": "Nature Machine Intelligence"
+  },
+  {
+    "name": "ADAPT Hand 1",
+    "source": "research/collection/hands/adapt-hand-1.md",
+    "page": "hands/reports/adapt-hand-1.md",
+    "summary": "20 个关节、12 个执行器；皮肤、手指与系统腕部柔顺性分层设计。",
+    "gaps": "还需整理柔顺配置表、逐任务结果与耐久测试；不能把机械臂性能计为裸手性能。",
+    "venue": "Communications Engineering"
+  },
+  {
+    "name": "ADAPT Hand 2",
+    "source": "research/collection/hands/adapt-hand-2.md",
+    "page": "hands/reports/adapt-hand-2.md",
+    "summary": "15 个执行器：13 个控制手、2 个控制集成腕。手指的共享侧摆与末节耦合需单列。",
+    "gaps": "完整角度限位、各任务试验数及腕部包含/排除时的对比仍需整理。",
+    "venue": "npj Robotics"
+  },
+  {
+    "name": "DASH Hand",
+    "source": "research/collection/hands/dash-hand.md",
+    "page": "hands/reports/dash-hand.md",
+    "summary": "论文称 16 DOF 的软体腱驱手；软体控制变量与刚性独立关节角不直接等价。",
+    "gaps": "各设计迭代的驱动配置、材料寿命及自主控制泛化尚需分开整理。",
+    "venue": "IEEE-RAS Humanoids"
+  },
+  {
+    "name": "EyeSight Hand",
+    "source": "research/collection/hands/eyesight-hand.md",
+    "page": "hands/reports/eyesight-hand.md",
+    "summary": "三指、7 个主动自由度；采用准直驱与视觉触觉。",
+    "gaps": "需要核对模型仓库、完整成功率表与实际驱动限流条件。",
+    "venue": "arXiv · 2408.06265"
+  },
+  {
+    "name": "Sphinx Hand",
+    "source": "research/collection/hands/yale-sphinx.md",
+    "page": "hands/reports/yale-sphinx.md",
+    "summary": "6 个 Dynamixel 舵机；球面并联机构实现抓握和三轴旋转，不能把舵机数当作物体 6 自由度位姿。",
+    "gaps": "需进一步整理奇异构型、抓取力、碰撞边界与连续转动范围。",
+    "venue": "Nature Machine Intelligence"
+  },
+  {
+    "name": "Allegro Hand V5 · 3F",
+    "source": "research/collection/hands/allegro-v5.md",
+    "page": "hands/reports/allegro-v5.md",
+    "summary": "3 指、9 个独立关节；与其他 Allegro 型号分开记录。",
+    "gaps": "尚缺明确上市年、逐轴运动范围、接触力标定和可比较的操作测试结果。",
+    "venue": "官方产品资料"
+  },
+  {
+    "name": "Allegro Hand V5 Plus · 4F",
+    "source": "research/collection/hands/allegro-v5-plus.md",
+    "page": "hands/reports/allegro-v5-plus.md",
+    "summary": "4 指、16 个独立关节；与其他 Allegro 型号分开记录。",
+    "gaps": "尚缺明确上市年、逐轴运动范围、接触力标定和可比较的操作测试结果。",
+    "venue": "官方产品资料"
+  },
+  {
+    "name": "Allegro Hand V6 F",
+    "source": "research/collection/hands/allegro-v6f.md",
+    "page": "hands/reports/allegro-v6f.md",
+    "summary": "五指，每指 4 个独立关节，共 20 个。",
+    "gaps": "待补逐轴限位、测力标定、公开模型和重复抓取试验。",
+    "venue": "官方产品资料"
+  },
+  {
+    "name": "MuMuTA Biohybrid Hand",
+    "source": "research/collection/hands/mumuta-hand.md",
+    "page": "hands/reports/mumuta-hand.md",
+    "summary": "五指生物混合手；每指一对肌肉束执行器，不能把肌肉束数量当成独立关节角数量。",
+    "gaps": "待核关节角限位、复位操作、培养维护条件及循环寿命。",
+    "venue": "Science Robotics"
+  },
+  {
+    "name": "MOGrip",
+    "source": "research/collection/hands/mogrip.md",
+    "page": "hands/reports/mogrip.md",
+    "summary": "四指与自适应输送掌面组成的多物体抓取装置；驱动数尚未逐项核清。",
+    "gaps": "待核电机清单、感知配置、最大载荷及测试物体尺寸。",
+    "venue": "Science Robotics"
+  },
+  {
+    "name": "Tactile-Reactive Active-Palm Gripper",
+    "source": "research/collection/hands/tactile-active-palm.md",
+    "page": "hands/reports/tactile-active-palm.md",
+    "summary": "三指各有 2 个转动轴，掌面另有 1 个直线轴：6 转动 + 1 平移，不是 7 个关节角。",
+    "gaps": "待补全部旋转关节限位、测试次数与不同触觉配置的对比表。",
+    "venue": "npj Robotics"
+  },
+  {
+    "name": "Omnidirectional-Sensing Dexterous Hand",
+    "source": "research/collection/hands/omnidirectional-sensing-hand.md",
+    "page": "hands/reports/omnidirectional-sensing-hand.md",
+    "summary": "论文称 18 个主动 DOF，但机构使用 9 个舵机；尚不能把 18 填成独立可控关节角。",
+    "gaps": "重点待核：18 DOF 与 9 舵机的映射、被动/耦合关节，以及全关节角反馈覆盖。",
+    "venue": "Microsystems & Nanoengineering"
+  },
+  {
+    "name": "High-Dexterity Soft Neuroprosthetic Hand",
+    "source": "research/collection/hands/high-dexterity-neuroprosthetic.md",
+    "page": "hands/reports/high-dexterity-neuroprosthetic.md",
+    "summary": "论文计 11 个主动 DOF：十个气动指部单元与一个电机驱动的拇掌关节；不等同于 11 个刚性关节角。",
+    "gaps": "待补逐指压力—角度曲线、整套气源重量、操作任务完整统计及长期使用记录。",
+    "venue": "Nature Communications"
+  },
+  {
+    "name": "Matusik Pneumatic Hand",
+    "source": "research/collection/hands/matusik-pneumatic-hand.md",
+    "page": "hands/reports/matusik-pneumatic-hand.md",
+    "summary": "五指、15 个气动执行单元；论文的 15 DOF 不直接作为刚性独立关节角坐标。",
+    "gaps": "待核逐指执行单元映射、气源完整配置、耐久性及可下载仿真模型。",
+    "venue": "arXiv · 2310.16280"
+  },
+  {
+    "name": "Tactile SoftHand-A",
+    "source": "research/collection/hands/tactile-softhand-a.md",
+    "page": "hands/reports/tactile-softhand-a.md",
+    "summary": "五指、两台电机；拮抗腱索与差动结构实现主动张开/闭合和抓姿调整。",
+    "gaps": "待补各布线配置的具体角度范围、载荷与防滑重复实验统计。",
+    "venue": "arXiv · 2406.12731 v2"
+  },
+  {
+    "name": "JHU Neuromorphic Bionic Hand",
+    "source": "research/collection/hands/jhu-neuromorphic-hand.md",
+    "page": "hands/reports/jhu-neuromorphic-hand.md",
+    "summary": "结合刚性骨架、柔性结构和神经形态触觉反馈的研究假手；驱动与独立关节角数量待原文表格核清。",
+    "gaps": "待补完整驱动清单、逐关节结构、不同识别任务的指标定义及可下载模型。",
+    "venue": "Science Advances"
+  },
+  {
+    "name": "Xynova Prima 1",
+    "source": "research/collection/hands/xynova-prima-1.md",
+    "page": "hands/reports/xynova-prima-1.md",
+    "summary": "官网标称 22 DOF，尚未提供本轮可核验的逐指主动 / 被动轴拆分。",
+    "gaps": "待核主动驱动数量、逐轴范围、重量、通信与供电、SDK 版本及可下载模型。",
+    "venue": "官方产品资料"
+  },
+  {
+    "name": "ISyHand v6",
+    "source": "research/collection/hands/isyhand-v6.md",
+    "page": "hands/reports/isyhand-v6.md",
+    "summary": "四指共 16 个主动关节，另有 2 个主动掌部关节；整手 18 主动自由度，由 18 个舵机驱动。不是 ICRA 2025 的 v2。",
+    "gaps": "v6 URDF/CAD 需注册下载；软件页仍写 Coming soon；整套运行包、逐轴限位及独立复现待核。",
+    "venue": "Humanoids 2025"
+  },
+  {
+    "name": "BiDexHand V4",
+    "source": "research/collection/hands/bidexhand-v4.md",
+    "page": "hands/reports/bidexhand-v4.md",
+    "summary": "五指 16 主动自由度：四根长指各 3，拇指 4；长指 DIP 随 PIP 耦合，不额外计为主动轴。",
+    "gaps": "V4 首次发布日期、触觉配置、逐关节限位及自主任务指标尚待补证。",
+    "venue": "官方 V4 开源资料"
+  },
+  {
+    "name": "Faive Hand · Proto 0",
+    "source": "research/collection/hands/faive-hand.md",
+    "page": "hands/reports/faive-hand.md",
+    "summary": "五指共 11 个可驱动自由度、16 个机械关节，使用 16 个腱索舵机；三者分别计数。",
+    "gaps": "真实硬件驱动完整包、制造 CAD、关节限位与后续 Mimic 产品对应关系待核。",
+    "venue": "Humanoids 2023"
+  },
+  {
+    "name": "RUKA-v2",
+    "source": "research/collection/hands/ruka-v2.md",
+    "page": "hands/reports/ruka-v2.md",
+    "summary": "作者标称手指与拇指 16 DoF，另加 2 DoF 腕；本轮尚未逐轴核对耦合与电机映射，暂不把 18 填入手部主动轴坐标。",
+    "gaps": "手指 16 DoF 的独立/耦合映射、电机总数、腕部范围数值与模型对应待文件级核对。",
+    "venue": "arXiv / ICRA Workshop 2026"
+  },
+  {
+    "name": "DexHand 021 · 五指版",
+    "source": "research/collection/hands/dexhand-021.md",
+    "page": "hands/reports/dexhand-021.md",
+    "summary": "五指，12 主动 + 7 被动自由度，12 电机；本页按 2025 论文配置，不混用 021S 三指版。",
+    "gaps": "七个被动轴的逐指归属、硬件修订与模型版本、独立实验及耐久测试协议待补。",
+    "venue": "2025 结构与控制论文"
+  },
+  {
+    "name": "RobotEra XHAND 1",
+    "source": "research/collection/hands/robotera-xhand1.md",
+    "page": "hands/reports/robotera-xhand1.md",
+    "summary": "五指 12 主动自由度、0 被动自由度；拇指与食指各 3，其余三指各 2。不含 Lite 或 Pro。",
+    "gaps": "精确首次公开日期、逐轴运动范围、固件与 SDK 二进制对应关系、触觉标定及任务重复测试待核。",
+    "venue": "官方 XHAND 1 产品页"
+  },
+  {
+    "name": "Aero Hand Open",
+    "source": "research/collection/hands/aero-hand-open.md",
+    "page": "hands/reports/aero-hand-open.md",
+    "summary": "五指、16 个机械关节、7 个电机输入；存在关节耦合，7 个输入不等于 7 个可独立设角的关节。",
+    "gaps": "逐轴物理限位及不同修订的尺寸、质量差异待核。",
+    "venue": "arXiv 2026 · 论文配置"
+  },
+  {
+    "name": "DexLink Hand",
+    "source": "research/collection/hands/dexlink-hand.md",
+    "page": "hands/reports/dexlink-hand.md",
+    "summary": "五指 20 个关节、16 个独立驱动；拇指 4 主动轴，其他四指各 3，长指末节耦合。",
+    "gaps": "BOM 电机数量合计与正文 16 驱动存在差异，保留正文计数；SDK、制造和仿真文件未核实。",
+    "venue": "arXiv 2026 · 机构论文"
+  },
+  {
+    "name": "MM-Hand 1.0",
+    "source": "research/collection/hands/mm-hand.md",
+    "page": "hands/reports/mm-hand.md",
+    "summary": "五指 21 主动关节：四根长指各 4，拇指 5；远端电机总数尚未逐一核对，不由关节数反推。",
+    "gaps": "项目宣传页有张力装置，论文却说明改为软件预紧；按论文版本记录。整套发布包及独立复现待核。",
+    "venue": "arXiv 2026 · 远程腱驱配置"
+  },
+  {
+    "name": "D’Manus · ReSkin 版",
+    "source": "research/collection/hands/dmanus.md",
+    "page": "hands/reports/dmanus.md",
+    "summary": "三指共 10 个独立驱动关节：两指各 3，拇指 4；不是普通同步开合三指夹爪。",
+    "gaps": "论文说明指节及指尖侧/背面没有触觉覆盖；触觉闭环灵巧策略的完整评估仍属后续工作。",
+    "venue": "arXiv 2022 / RA-L 2023"
+  },
+  {
+    "name": "Tesollo DG-5F-S · 20 DoF",
+    "source": "research/collection/hands/tesollo-dg-5f-s.md",
+    "page": "hands/reports/tesollo-dg-5f-s.md",
+    "summary": "五指每指 4 个独立驱动关节，共 20；与同系列 15 DoF 选配、DG-5F-M 分开。",
+    "gaps": "内部传动细节、独立任务测评和实机 SDK/固件兼容性待核；模型包须明确选 S 版。",
+    "venue": "官方 DG-5F-S 20 轴配置"
+  },
+  {
+    "name": "PaXini DexH13 · GEN2",
+    "source": "research/collection/hands/paxini-dexh13-gen2.md",
+    "page": "hands/reports/paxini-dexh13-gen2.md",
+    "summary": "四指，16 个总自由度＝13 主动＋3 被动；电机总数及逐指轴序尚未取得可靠分解。",
+    "gaps": "首发时间、被动关节耦合、执行器数量、SDK 和模型文件仍待明确；不沿用旧概览页的型号混合参数。",
+    "venue": "官方 DexH13 GEN2 产品页"
+  },
+  {
+    "name": "BrainCo Revo 1",
+    "source": "research/collection/hands/brainco-revo-1.md",
+    "page": "hands/reports/brainco-revo-1.md",
+    "summary": "五指共 10 个运动自由度，其中 6 个主动；四根长指末节随动，不能逐节独立设角。",
+    "gaps": "被动轴的精确传动比例、内部机构、各 SKU 的触觉标定误差及第三方对照实验仍待核实。",
+    "venue": "官方 Revo 1 产品手册 · 基础机构"
+  },
+  {
+    "name": "BrainCo Revo 2",
+    "source": "research/collection/hands/brainco-revo-2.md",
+    "page": "hands/reports/brainco-revo-2.md",
+    "summary": "五指共 11 个运动自由度，其中 6 个主动；四根长指末节随动，不能逐节独立设角。",
+    "gaps": "被动轴的精确传动比例、内部机构、各 SKU 的触觉标定误差及第三方对照实验仍待核实。",
+    "venue": "官方 Revo 2 产品手册 · 基础机构"
+  },
+  {
+    "name": "BrainCo Revo 3",
+    "source": "research/collection/hands/brainco-revo-3.md",
+    "page": "hands/reports/brainco-revo-3.md",
+    "summary": "五指 21 个全主动关节、21 个独立电机；拇指 5 轴，其余四指各 4 轴。触觉因 SKU 而异。",
+    "gaps": "重量、内部减速结构、传感器标定与独立任务测评尚待补齐；公开 MJCF 资产的执行器配置仍在完善。",
+    "venue": "官方 Revo 3 · U21 系列"
+  },
+  {
+    "name": "Elephant myGripper H100",
+    "source": "research/collection/hands/elephant-h100.md",
+    "page": "hands/reports/elephant-h100.md",
+    "summary": "三指、六个可动关节、六个数字舵机；支持逐舵机控制，与旧款仅整体开合的五指附件不同。",
+    "gaps": "中英文资料中的寿命与通信频率口径有差异，需按硬件修订确认；尚未核实 H100 专用可运行物理仿真模型。",
+    "venue": "官方 H100 产品页与通信手册"
+  },
+  {
+    "name": "XPENG IRON Hand · 2025",
+    "source": "research/collection/hands/xpeng-iron-hand-2025.md",
+    "page": "hands/reports/xpeng-iron-hand-2025.md",
+    "summary": "五指仿生手，官方称 22 自由度；未披露主动 / 被动分解及电机数量，不把整机 82 自由度计入手部。",
+    "gaps": "手部重量、供电、接口、SDK、模型与逐关节信息尚未确认公开；没有独立操作基准可横向排名。",
+    "venue": "官方 AI Day 2025 · 下一代 IRON 手部"
+  },
+  {
+    "name": "Tencent TRX-Hand · 三指",
+    "source": "research/collection/hands/tencent-trx-hand.md",
+    "page": "hands/reports/tencent-trx-hand.md",
+    "summary": "三指 8 个全主动关节，分配为 3＋3＋2；细杆操作实验固定两个侧摆轴，仅控制其余 6 轴。",
+    "gaps": "未确认公开 SDK、CAD 或 MJCF 下载包；论文描述使用 MuJoCo 不等于模型已开源。五指 TRX-Hand5 属另一版本。",
+    "venue": "arXiv 2023 · 三指触觉实验配置"
+  },
+  {
+    "name": "Unitree Dex2/5",
+    "source": "research/collection/hands/unitree-dex2-5.md",
+    "page": "hands/reports/unitree-dex2-5.md",
+    "summary": "五指共 10 个运动自由度，只有 2 路独立驱动：拇指一路，另外四指共享一路。不能把 10 当作主动控制轴数。",
+    "gaps": "两个输入到各关节的精确耦合关系、完整电机清单、测力原理、独立操作实验及本型号 SDK / 模型文件仍待核查。",
+    "venue": "官方 Dex2/5 产品规格"
+  },
+  {
+    "name": "Unitree Dex5-1",
+    "source": "research/collection/hands/unitree-dex5-1.md",
+    "page": "hands/reports/unitree-dex5-1.md",
+    "summary": "五指共 20 个运动自由度，其中 16 主动、4 耦合：拇指 4 主动，四根长指各 3 主动加 1 个随动末节。",
+    "gaps": "逐轴电机与复合传动剖面、耦合比例、SDK 下载及模型版本、独立力控与耐久实验尚待核查。",
+    "venue": "官方 Dex5-1 / Dex5-1P 产品规格"
+  },
+  {
+    "name": "Unitree Dex5-S",
+    "source": "research/collection/hands/unitree-dex5-s.md",
+    "page": "hands/reports/unitree-dex5-s.md",
+    "summary": "五指、22 个主动自由度和 22 个电机；拇指及小指各 5，食指、中指、无名指各 4。",
+    "gaps": "22 轴方向、逐轴上下限、齿轮比、触觉 Pro 细节、专用 SDK / 模型资源与独立任务实验仍待核实。",
+    "venue": "官方 Dex5-S / Dex5-S Pro 产品规格"
+  },
+  {
+    "name": "Okada Artificial Fingers · 1974",
+    "source": "research/collection/hands/okada-hand.md",
+    "page": "hands/reports/okada-hand.md",
+    "summary": "三指、七个独立驱动关节：拇指一轴，另两指各三轴；结合接触与弯曲状态识别三维形状。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "venue": "Okada Artificial Fingers · 1974 · 时间轴所引用的原始版本",
+    "checked_on": "2026-10-04"
+  },
+  {
+    "name": "Stanford/JPL Hand",
+    "source": "research/collection/hands/stanford-jpl-hand.md",
+    "page": "hands/reports/stanford-jpl-hand.md",
+    "summary": "三根三关节手指的多指研究手；1982 节点讨论运动与力的关系，不代表确定的硬件上市日。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "venue": "Stanford/JPL Hand · 时间轴所引用的原始版本",
+    "checked_on": "2026-10-04"
+  },
+  {
+    "name": "Utah/MIT Dextrous Hand · Version III",
+    "source": "research/collection/hands/utah-mit-hand.md",
+    "page": "hands/reports/utah-mit-hand.md",
+    "summary": "四指、每指四轴；32 路气动执行器以拮抗腱索驱动 16 个关节轴。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "venue": "Utah/MIT Dextrous Hand · Version III · 时间轴所引用的原始版本",
+    "checked_on": "2026-10-04"
+  },
+  {
+    "name": "BarrettHand · 第一代（1993）",
+    "source": "research/collection/hands/barrett-hand-1993.md",
+    "page": "hands/reports/barrett-hand-1993.md",
+    "summary": "厂商历史页确认 1993 年与 NASA JSC 合作推出第一代 BarrettHand；与 BH8-280 分开。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "venue": "BarrettHand · 第一代（1993） · 时间轴所引用的原始版本",
+    "checked_on": "2026-10-04"
+  },
+  {
+    "name": "DLR Hand I",
+    "source": "research/collection/hands/dlr-hand-i.md",
+    "page": "hands/reports/dlr-hand-i.md",
+    "summary": "四指，每指三个独立运动轴；末节通过弹簧耦合随动。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "venue": "DLR Hand I · 时间轴所引用的原始版本",
+    "checked_on": "2026-10-04"
+  },
+  {
+    "name": "HIT/DLR Hand · 2003 原型",
+    "source": "research/collection/hands/dlr-hit-hand-i.md",
+    "page": "hands/reports/dlr-hit-hand-i.md",
+    "summary": "四个相同模块手指，每指三主动轴、四关节；ICRA 2003 的 work-in-progress 配置。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "venue": "ICRA 2003 · work-in-progress 原型；后续 2004/2007 资料需按修订对照",
+    "checked_on": "2026-10-04"
+  },
+  {
+    "name": "DLR/HIT Hand II",
+    "source": "research/collection/hands/dlr-hit-hand-ii.md",
+    "page": "hands/reports/dlr-hit-hand-ii.md",
+    "summary": "五指、每指三主动轴与四关节，总计 15 主动轴；论文列整手约 1.5 kg。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "venue": "DLR/HIT Hand II · 时间轴所引用的原始版本",
+    "checked_on": "2026-10-04"
+  },
+  {
+    "name": "Highly Adaptive SDM Hand",
+    "source": "research/collection/hands/sdm-hand.md",
+    "page": "hands/reports/sdm-hand.md",
+    "summary": "四指八关节，由一个电机通过耦合传动驱动；柔顺关节被动适应接触。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "venue": "Highly Adaptive SDM Hand · 时间轴所引用的原始版本",
+    "checked_on": "2026-10-04"
+  },
+  {
+    "name": "Allegro Hand V1.0",
+    "source": "research/collection/hands/allegro-v1.md",
+    "page": "hands/reports/allegro-v1.md",
+    "summary": "官方历史确认 Allegro Hand 第一代 V1.0 于 2012 年推出。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "venue": "Allegro Hand V1.0 · 时间轴所引用的原始版本",
+    "checked_on": "2026-10-04"
+  },
+  {
+    "name": "qb SoftHand Research · 单电机",
+    "source": "research/collection/hands/qb-softhand-research.md",
+    "page": "hands/reports/qb-softhand-research.md",
+    "summary": "五指单电机腱驱软手；官方回顾记载 2018 年推出，并接入 UR+。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "venue": "qb SoftHand Research · 单电机 · 时间轴所引用的原始版本",
+    "checked_on": "2026-10-04"
+  },
+  {
+    "name": "Shadow DEX-EE · 对称三指",
+    "source": "research/collection/hands/shadow-dex-ee.md",
+    "page": "hands/reports/shadow-dex-ee.md",
+    "summary": "对称三指、12 自由度，官方系列页列 4.1 kg；与 Classic 五指手分开。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "venue": "Shadow DEX-EE · 对称三指 · 时间轴所引用的原始版本",
+    "checked_on": "2026-10-04"
+  },
+  {
+    "name": "Tesollo DG-5F · 2024",
+    "source": "research/collection/hands/tesollo-dg-5f-2024.md",
+    "page": "hands/reports/tesollo-dg-5f-2024.md",
+    "summary": "五指，每指四个独立关节，共 20 DoF；官方回顾记载 2024 年在 IROS 展出。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "venue": "Tesollo DG-5F · 2024 · 时间轴所引用的原始版本",
+    "checked_on": "2026-10-04"
+  },
+  {
+    "name": "Allegro Hand V5 · 2024 四指",
+    "source": "research/collection/hands/allegro-v5-2024.md",
+    "page": "hands/reports/allegro-v5-2024.md",
+    "summary": "2024 发布稿的四指 V5，每指四自由度，共 16；区别于当前三指 V5 产品页。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "venue": "Allegro Hand V5 · 2024 四指 · 时间轴所引用的原始版本",
+    "checked_on": "2026-10-04"
+  },
+  {
+    "name": "Unitree Dex5 · 2025 展示版",
+    "source": "research/collection/hands/unitree-dex5-2025.md",
+    "page": "hands/reports/unitree-dex5-2025.md",
+    "summary": "2025 官方展示的五指 Dex5，20 个运动自由度中含 16 个主动和 4 个被动自由度。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "venue": "Unitree Dex5 · 2025 展示版 · 时间轴所引用的原始版本",
+    "checked_on": "2026-10-04"
+  },
+  {
+    "name": "Figure 03 Hand",
+    "source": "research/collection/hands/figure-03-hand.md",
+    "page": "hands/reports/figure-03-hand.md",
+    "summary": "Figure 03 手部集成掌部相机、柔顺指尖与自研指尖触觉，服务于 Helix 操作系统。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "venue": "Figure 03 Hand · 时间轴所引用的原始版本",
+    "checked_on": "2026-10-04"
+  },
+  {
+    "name": "Yale OpenHand Model Q",
+    "source": "research/collection/hands/yale-model-q.md",
+    "page": "hands/reports/yale-model-q.md",
+    "summary": "四个执行器控制四根欠驱动手指；两根独立精细抓握指与旋转包络指组配合换指。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "venue": "Yale OpenHand Model Q · 时间轴所引用的原始版本",
+    "checked_on": "2026-10-04"
+  },
+  {
+    "name": "智元 OmniHand 2025 · 灵动款",
+    "source": "research/collection/hands/agibot-omnihand-2025.md",
+    "page": "hands/reports/agibot-omnihand-2025.md",
+    "summary": "五指，10 主动 + 6 被动自由度；标准版与触觉版分开描述。",
+    "gaps": "执行器逐项清单、完整材料与尺寸、控制带宽、传感标定及独立任务评测尚待补证；未连接实物或运行仿真。",
+    "venue": "官方产品 / 文档 / SDK",
+    "checked_on": "2026-10-04"
+  },
+  {
+    "name": "智元 OmniHand Pro 2025 · 专业款",
+    "source": "research/collection/hands/agibot-omnihand-pro-2025.md",
+    "page": "hands/reports/agibot-omnihand-pro-2025.md",
+    "summary": "五指，12 主动、19 总自由度；规格与关节耦合按 Pro 2025 核对。",
+    "gaps": "执行器逐项清单、完整材料与尺寸、控制带宽、传感标定及独立任务评测尚待补证；未连接实物或运行仿真。",
+    "venue": "官方产品 / 文档 / SDK",
+    "checked_on": "2026-10-04"
+  },
+  {
+    "name": "智元 OmniHand 3 Lite",
+    "source": "research/collection/hands/agibot-omnihand-3-lite.md",
+    "page": "hands/reports/agibot-omnihand-3-lite.md",
+    "summary": "H3L：4 主动 + 7 被动自由度；CAN 通讯，四路电机位置控制。",
+    "gaps": "执行器逐项清单、完整材料与尺寸、控制带宽、传感标定及独立任务评测尚待补证；未连接实物或运行仿真。",
+    "venue": "官方产品 / 文档 / SDK",
+    "checked_on": "2026-10-04"
+  },
+  {
+    "name": "智元 OmniHand 3 Ultra-T",
+    "source": "research/collection/hands/agibot-omnihand-3-ultra-t.md",
+    "page": "hands/reports/agibot-omnihand-3-ultra-t.md",
+    "summary": "手部 22 主动轴 + 3 腕部自由度；地图只计手部 22 轴。",
+    "gaps": "执行器逐项清单、完整材料与尺寸、控制带宽、传感标定及独立任务评测尚待补证；未连接实物或运行仿真。",
+    "venue": "官方产品 / 文档 / SDK",
+    "checked_on": "2026-10-04"
+  },
+  {
+    "name": "智元 OmniHand 3 Ultra-M · 2026 发布配置",
+    "source": "research/collection/hands/agibot-omnihand-3-ultra-m.md",
+    "page": "hands/reports/agibot-omnihand-3-ultra-m.md",
+    "summary": "2026-07-18 公告：五指、20 主动轴；当前 Ultra 页面已列 21 轴，版本分开记录。",
+    "gaps": "执行器逐项清单、完整材料与尺寸、控制带宽、传感标定及独立任务评测尚待补证；未连接实物或运行仿真。",
+    "venue": "官方产品 / 文档 / SDK",
+    "checked_on": "2026-10-04"
+  }
+]

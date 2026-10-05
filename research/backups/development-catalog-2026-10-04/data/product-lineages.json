@@ -1,0 +1,4562 @@
+{
+  "schema_version": 2,
+  "reviewed_on": "2026-10-04",
+  "families": [
+    {
+      "id": "wuji-hand-family",
+      "organization": "舞肌科技 · WUJI TECH",
+      "name": "Wuji Hand 产品演进",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "wuji-hand",
+        "wuji-hand-2"
+      ],
+      "summary": "从初代到 Hand 2，20 个主动自由度保持不变；值得追踪的是关节特性、控制接口与模型的变化。Hand 2.1 与 2.2 是同代硬件修订，分别对应不同固件与模型。",
+      "scope": "这是已核验的公开记录链，不是完整公司年表。日期分别表示记录上界或文档发布，不等于产品首发、量产或交付日期；不据此推定每年必有一代。",
+      "sources": {
+        "v1-notes": {
+          "title": "初代发布记录 · 2025.11.07 / 2026.06.15",
+          "url": "https://docs.wuji.tech/docs/zh/wuji-hand/v1/release-notes/"
+        },
+        "v1-spec": {
+          "title": "初代产品介绍 · 产品参数",
+          "url": "https://docs.wuji.tech/docs/zh/wuji-hand/v1/overview/"
+        },
+        "beta1-notes": {
+          "title": "Hand 2 发布记录 · 2026.06.02 / 2026.07.14",
+          "url": "https://docs.wuji.tech/docs/zh/wuji-hand/beta1/release-notes/"
+        },
+        "v2-spec": {
+          "title": "Hand 2.2 产品介绍 · 非触觉版样机",
+          "url": "https://docs.wuji.tech/docs/zh/wuji-hand/latest/overview/"
+        },
+        "compatibility": {
+          "title": "官方版本识别与兼容矩阵",
+          "url": "https://docs.wuji.tech/docs/zh/wuji-hand/latest/version-compatibility/"
+        },
+        "v2-notes": {
+          "title": "Hand 2 发布记录 · 2026.08.17 模型更新",
+          "url": "https://docs.wuji.tech/docs/zh/wuji-hand/latest/release-notes/"
+        }
+      },
+      "milestones": [
+        {
+          "id": "wuji-generation-1",
+          "hand_id": "wuji-hand",
+          "name": "Wuji Hand 1",
+          "kind": "初代产品",
+          "date": "2025-11-07",
+          "date_relation": "by",
+          "date_label": "至迟 2025.11.07",
+          "date_basis": "初代固件已有公开记录；首发日待核实",
+          "summary": "五指、20 个主动自由度；官方参数列为自锁旋转直驱、位置控制、USB 通信。",
+          "sources": [
+            "v1-notes",
+            "v1-spec"
+          ]
+        },
+        {
+          "id": "wuji-generation-2-beta1",
+          "hand_id": "wuji-hand-2",
+          "name": "Wuji Hand 2.1 Beta",
+          "kind": "第二代 · 硬件修订",
+          "date": "2026-06-02",
+          "date_relation": "on",
+          "date_label": "2026.06.02",
+          "date_basis": "2.1 Beta 产品文档首次发布",
+          "summary": "保留 20 个主动自由度；文档新增可调的 MIT 力位混合控制与关节级 SDK。",
+          "sources": [
+            "beta1-notes"
+          ]
+        },
+        {
+          "id": "wuji-generation-2-beta2",
+          "hand_id": "wuji-hand-2",
+          "name": "Wuji Hand 2.2 Beta",
+          "kind": "同代 · 硬件修订",
+          "date": "2026-07-14",
+          "date_relation": "by",
+          "date_label": "至迟 2026.07.14",
+          "date_basis": "发布记录已列出面向 2.2 硬件的固件",
+          "summary": "序列号 A01 对应 2.2，A00 对应 2.1；两者须使用各自的模型和固件分支。",
+          "sources": [
+            "beta1-notes",
+            "compatibility"
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "from": "wuji-generation-1",
+          "to": "wuji-generation-2-beta1",
+          "type": "generation",
+          "label": "代际演进",
+          "sources": [
+            "v1-notes",
+            "beta1-notes"
+          ]
+        },
+        {
+          "from": "wuji-generation-2-beta1",
+          "to": "wuji-generation-2-beta2",
+          "type": "revision",
+          "label": "同代修订",
+          "sources": [
+            "compatibility"
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "title": "初代 → Hand 2：具体改变了什么？",
+          "scope": "下面比较初代规格与 Hand 2.2 Beta 非触觉版手册；不是所有中间批次的规格对照，也不是同条件性能测试。",
+          "rows": [
+            {
+              "dimension": "运动与驱动",
+              "before": "20 主动自由度；自锁旋转直驱。",
+              "after": "仍为 20 主动自由度；可反驱旋转直驱。",
+              "interpretation": "变化在于外力与关节运动的关系，而非轴数增加。需实测反驱阻力、摩擦与接触响应，才能判断对具体任务的帮助。",
+              "sources": [
+                "v1-spec",
+                "v2-spec"
+              ]
+            },
+            {
+              "dimension": "控制与接入",
+              "before": "规格表列位置控制，USB 2.0 接入。",
+              "after": "MIT 力位混合控制，RJ45 以太网接入。",
+              "interpretation": "集成时需要重新检查通信与控制参数。提供混合控制接口不等于已实现准确的指尖接触力控制。",
+              "sources": [
+                "v1-spec",
+                "v2-spec"
+              ]
+            },
+            {
+              "dimension": "重量口径",
+              "before": "580 ± 10 g，不含线缆。",
+              "after": "800 g 含软体与输出线缆、不含底座；裸手 650 g。",
+              "interpretation": "不能直接用两个整机数字计算增重比例。应先统一线缆、软体和底座的计入范围，再评估机械臂负载。",
+              "sources": [
+                "v1-spec",
+                "v2-spec"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Hand 2.1 → 2.2：修订版本不能混用",
+          "scope": "同代修订依据兼容矩阵和模型发布记录；模型功能与实机配置分别核对。",
+          "rows": [
+            {
+              "dimension": "固件与模型",
+              "before": "A00 硬件；hand2_beta1 模型；固件停留在 v1.2.4。",
+              "after": "A01 硬件；hand2_beta2 模型；固件从 v2.0.0 分支起。",
+              "interpretation": "升级同一个 SDK 不会把旧硬件变成新修订。实验须同时记录硬件、固件、SDK 和模型版本。",
+              "sources": [
+                "compatibility"
+              ]
+            },
+            {
+              "dimension": "指尖模型",
+              "before": "作为 2.2 的模型修订基础。",
+              "after": "2026.08.17 模型记录新增每指尖 pad 连杆与质量参数；20 个转动关节不变。",
+              "interpretation": "这项更新改变模型的接触与传感器挂载表达，不等于增加运动自由度。当前产品手册仍限定非触觉版样机，不能据模型推定每台实物标配触觉。",
+              "sources": [
+                "v2-notes",
+                "v2-spec"
+              ]
+            }
+          ]
+        }
+      ],
+      "ecosystem": [
+        {
+          "date": "2026.06.15",
+          "text": "初代也接入通用 wuji-sdk，两代 API 逐步对齐。这是旧产品的软件延续，不是新增一代硬件。",
+          "sources": [
+            "v1-notes"
+          ]
+        },
+        {
+          "date": "2026.08.17",
+          "text": "发布记录补充 2.2 Beta 的 URDF、MJCF、USD 与指尖 pad 模型；该日期是模型发布记录，不能替代硬件首次公开日期。",
+          "sources": [
+            "v2-notes"
+          ]
+        }
+      ],
+      "open_questions": "目前仍缺同一任务、物体、控制器与试验条件下的跨代对照。路线可以说明设计和接口如何变化，还不能据此断言新一代抓取成功率、寿命或可靠性更高。",
+      "status": "lineage",
+      "mode": "lineage",
+      "summary_sources": [
+        "v1-notes",
+        "v1-spec",
+        "beta1-notes",
+        "v2-spec",
+        "compatibility",
+        "v2-notes"
+      ]
+    },
+    {
+      "id": "leap-family",
+      "organization": "LEAP 项目组",
+      "name": "LEAP 项目组 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "leap-hand",
+        "leap-hand-v2"
+      ],
+      "summary": "LEAP 从 v1 的独立关节控制，发展出 v2 的低成本欠驱动路线；v2 Advanced 是另一种构型，不能将其参数填到普通 v2。",
+      "open_questions": "v2 的机械自由度与电机数不同。Advanced 的首次公开与普通 v2 的先后关系尚未核清，不画二者的升级箭头。",
+      "status": "lineage",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "leap-hand-date": {
+          "title": "LEAP Hand · RSS 2023",
+          "url": "https://roboticsproceedings.org/rss19/p089.pdf"
+        },
+        "leap-hand-spec": {
+          "title": "LEAP Hand v1（Full） · 机构 / 版本依据",
+          "url": "https://v1.leaphand.com/"
+        },
+        "leap-hand-v2-date": {
+          "title": "LEAP v2 · RSS 2025 Demo",
+          "url": "https://v2.leaphand.com/"
+        },
+        "leap-hand-v2-spec": {
+          "title": "LEAP v2 · 机构 / 版本依据",
+          "url": "https://v2.leaphand.com/"
+        },
+        "v2": {
+          "title": "LEAP v2 · 项目与驱动结构",
+          "url": "https://v2.leaphand.com/"
+        },
+        "advanced": {
+          "title": "LEAP v2 Advanced · 独立项目页面",
+          "url": "https://v2-adv.leaphand.com/"
+        }
+      },
+      "milestones": [
+        {
+          "id": "leap-hand",
+          "hand_id": "leap-hand",
+          "name": "LEAP Hand v1（Full）",
+          "kind": "已收录型号",
+          "date": "2023",
+          "date_relation": "on",
+          "date_label": "2023 · 论文",
+          "date_basis": "采用介绍 LEAP v1 的 RSS 2023 论文年份。",
+          "summary": "四指，每指 4 个独立主动轴，共 16。",
+          "sources": [
+            "leap-hand-date",
+            "leap-hand-spec"
+          ]
+        },
+        {
+          "id": "leap-hand-v2",
+          "hand_id": "leap-hand-v2",
+          "name": "LEAP v2",
+          "kind": "已收录型号",
+          "date": "2025",
+          "date_relation": "on",
+          "date_label": "2025 · 公开展示",
+          "date_basis": "作者项目页明确标注 RSS 2025 Demo；这是第二代公开演示年份，不借用第一代 2023 年论文。",
+          "summary": "16 个运动自由度、8 个电机；每指两个输入。",
+          "sources": [
+            "leap-hand-v2-date",
+            "leap-hand-v2-spec"
+          ]
+        },
+        {
+          "id": "leap-advanced",
+          "hand_id": null,
+          "name": "LEAP v2 Advanced",
+          "kind": "并行研究构型",
+          "date": "",
+          "date_relation": "unknown",
+          "date_label": "公开日期待核实",
+          "date_basis": "仅确认记录存在，未确认首发时间",
+          "summary": "带主动掌部的独立方案；作者列 21 DoF、17 个电机。",
+          "sources": [
+            "advanced"
+          ],
+          "url": "https://v2-adv.leaphand.com/"
+        }
+      ],
+      "relationships": [
+        {
+          "from": "leap-hand",
+          "to": "leap-hand-v2",
+          "label": "项目后续版本",
+          "type": "generation",
+          "sources": [
+            "v2"
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "title": "自由度增加不是唯一演进方向",
+          "scope": "事实取自下列来源；工程解释为本站分析，不等同于跨代实测结论。",
+          "before_label": "LEAP v1",
+          "after_label": "LEAP v2",
+          "rows": [
+            {
+              "dimension": "设计变化与取舍",
+              "before": "v1：四指、16 个独立主动轴。",
+              "after": "普通 v2：16 个机械自由度、8 个电机，采用柔性结构与腱索耦合。",
+              "interpretation": "可独立指定的关节运动减少，制造与控制接口也随之改变；不能把 v1 的逐关节策略直接套到 v2。",
+              "sources": [
+                "leap-hand-spec",
+                "v2"
+              ]
+            }
+          ]
+        }
+      ],
+      "ecosystem": [],
+      "summary_sources": [
+        "leap-hand-date",
+        "leap-hand-spec",
+        "leap-hand-v2-date",
+        "leap-hand-v2-spec",
+        "v2",
+        "advanced"
+      ]
+    },
+    {
+      "id": "ruka-family",
+      "organization": "RUKA 项目组",
+      "name": "RUKA 项目组 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "ruka-v1",
+        "ruka-v2"
+      ],
+      "summary": "作者明确将 RUKA-v2 作为 RUKA 的后续平台，重点扩展手指侧摆与腕部运动。",
+      "open_questions": "手内自由度、腕部轴数和执行器数量须分开。尚未形成相同任务与控制条件下的跨代性能基准。",
+      "status": "lineage",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "ruka-v1-date": {
+          "title": "RUKA · 论文初稿",
+          "url": "https://arxiv.org/abs/2504.13165"
+        },
+        "ruka-v1-spec": {
+          "title": "RUKA v1 · 机构 / 版本依据",
+          "url": "https://arxiv.org/html/2504.13165v1"
+        },
+        "ruka-v2-date": {
+          "title": "arXiv / ICRA Workshop 2026 · 时间依据",
+          "url": "https://ruka-hand-v2.github.io/"
+        },
+        "ruka-v2-spec": {
+          "title": "RUKA-v2 · 机构 / 版本依据",
+          "url": "https://ruka-hand-v2.github.io/"
+        }
+      },
+      "milestones": [
+        {
+          "id": "ruka-v1",
+          "hand_id": "ruka-v1",
+          "name": "RUKA v1",
+          "kind": "已收录型号",
+          "date": "2025",
+          "date_relation": "on",
+          "date_label": "2025 · 论文",
+          "date_basis": "RUKA v1 论文于 2025-04-17 首次公开，采用该论文年份。",
+          "summary": "15 个运动自由度、11 个电机。",
+          "sources": [
+            "ruka-v1-date",
+            "ruka-v1-spec"
+          ]
+        },
+        {
+          "id": "ruka-v2",
+          "hand_id": "ruka-v2",
+          "name": "RUKA-v2",
+          "kind": "已收录型号",
+          "date": "2026",
+          "date_relation": "on",
+          "date_label": "2026 · 论文",
+          "date_basis": "采用 arXiv / ICRA Workshop 2026 的 2026 年发表记录；不是商业上市日期。",
+          "summary": "作者标称手指与拇指 16 DoF，另加 2 DoF 腕；本轮尚未逐轴核对耦合与电机映射，暂不把 18 填入手部主动轴坐标。",
+          "sources": [
+            "ruka-v2-date",
+            "ruka-v2-spec"
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "from": "ruka-v1",
+          "to": "ruka-v2",
+          "label": "作者明确的后续版本",
+          "type": "generation",
+          "sources": [
+            "ruka-v2-spec"
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "title": "从屈伸抓取扩展运动空间",
+          "scope": "事实取自下列来源；工程解释为本站分析，不等同于跨代实测结论。",
+          "before_label": "RUKA v1",
+          "after_label": "RUKA v2",
+          "rows": [
+            {
+              "dimension": "设计变化与取舍",
+              "before": "v1：论文结构采用 11 路驱动。",
+              "after": "v2：作者列 16 个手内 DoF，另加 2 个腕部 DoF。",
+              "interpretation": "腕部与手指侧摆增加了操作选项，也增加了动作映射与标定工作；18 不能直接作为手本体主动轴数。",
+              "sources": [
+                "ruka-v1-spec",
+                "ruka-v2-spec"
+              ]
+            }
+          ]
+        }
+      ],
+      "ecosystem": [],
+      "summary_sources": [
+        "ruka-v1-date",
+        "ruka-v1-spec",
+        "ruka-v2-date",
+        "ruka-v2-spec"
+      ]
+    },
+    {
+      "id": "rbo-family",
+      "organization": "TU Berlin · RBO",
+      "name": "TU Berlin · RBO · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "rbo-hand-2",
+        "rbo-hand-3"
+      ],
+      "summary": "RBO Hand 3 论文回顾前两代软体手，并重点重做拇指与掌部结构；研究路线延续气动柔顺操作。",
+      "open_questions": "软体手的连续形变不能简单按刚性转轴计数；Hand 3 的驱动通道数不能当作前代关节数的直接增量。",
+      "status": "lineage",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "rbo-hand-2-date": {
+          "title": "RBO Hand 2 · 硬件论文作者稿 / IJRR 2016",
+          "url": "https://www.static.tu.berlin/fileadmin/www/10002220/Research/publications/Deimel_and_Brock_-_2016_-_A_novel_type_of_compliant_and_underactuated_roboti.pdf"
+        },
+        "rbo-hand-2-spec": {
+          "title": "RBO Hand 2 · 机构 / 版本依据",
+          "url": "https://arxiv.org/html/2201.10883v1"
+        },
+        "rbo-hand-3-date": {
+          "title": "RBO Hand 3 · 平台论文",
+          "url": "https://arxiv.org/abs/2201.10883"
+        },
+        "rbo-hand-3-spec": {
+          "title": "RBO Hand 3 · 机构 / 版本依据",
+          "url": "https://arxiv.org/html/2201.10883v1"
+        }
+      },
+      "milestones": [
+        {
+          "id": "rbo-hand-2",
+          "hand_id": "rbo-hand-2",
+          "name": "RBO Hand 2",
+          "kind": "已收录型号",
+          "date": "2016",
+          "date_relation": "on",
+          "date_label": "2016 · 论文",
+          "date_basis": "采用硬件论文 IJRR 卷期发表年 2016；作者稿中另有 2015 日期，不将卷期年份描述为产品首发。",
+          "summary": "后续作者论文回顾为 7 个驱动维度；软体结构不以刚性关节计数。",
+          "sources": [
+            "rbo-hand-2-date",
+            "rbo-hand-2-spec"
+          ]
+        },
+        {
+          "id": "rbo-hand-3",
+          "hand_id": "rbo-hand-3",
+          "name": "RBO Hand 3",
+          "kind": "已收录型号",
+          "date": "2022",
+          "date_relation": "on",
+          "date_label": "2022 · 论文",
+          "date_basis": "硬件论文预印本及 IEEE T-RO 期刊记录均为 2022 年。",
+          "summary": "16 个独立气动驱动维度，不是 16 台电机或 16 个刚性铰链。",
+          "sources": [
+            "rbo-hand-3-date",
+            "rbo-hand-3-spec"
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "from": "rbo-hand-2",
+          "to": "rbo-hand-3",
+          "label": "论文确认的下一代",
+          "type": "generation",
+          "sources": [
+            "rbo-hand-3-spec"
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "title": "从软指包络到更丰富的拇指—掌部协作",
+          "scope": "事实取自下列来源；工程解释为本站分析，不等同于跨代实测结论。",
+          "before_label": "RBO Hand 2",
+          "after_label": "RBO Hand 3",
+          "rows": [
+            {
+              "dimension": "设计变化与取舍",
+              "before": "Hand 2：以 PneuFlex 柔性执行器形成自适应抓取。",
+              "after": "Hand 3：重做拇指、掌部并结合不同气动执行结构。",
+              "interpretation": "演进重点是可达到的接触姿态与协同运动。评价时需同时报告气路、压力范围和控制方式。",
+              "sources": [
+                "rbo-hand-3-spec"
+              ]
+            }
+          ]
+        }
+      ],
+      "ecosystem": [],
+      "summary_sources": [
+        "rbo-hand-2-date",
+        "rbo-hand-2-spec",
+        "rbo-hand-3-date",
+        "rbo-hand-3-spec"
+      ]
+    },
+    {
+      "id": "adapt-family",
+      "organization": "ADAPT 项目组",
+      "name": "ADAPT 项目组 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "adapt-hand-1",
+        "adapt-hand-2"
+      ],
+      "summary": "AH2 论文明确说明其建立在 AH1 之上，两篇论文均发表于 2025 年；这是研究平台延续，不能写成逐年产品换代。",
+      "open_questions": "需区分手内与手腕执行器；两篇论文的实验任务不同，不能把展示结果直接解释为硬件提升幅度。",
+      "status": "lineage",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "adapt-hand-1-date": {
+          "title": "Communications Engineering · 时间依据",
+          "url": "https://www.nature.com/articles/s44172-025-00407-4"
+        },
+        "adapt-hand-1-spec": {
+          "title": "ADAPT Hand 1 · 机构 / 版本依据",
+          "url": "https://www.nature.com/articles/s44172-025-00407-4"
+        },
+        "adapt-hand-2-date": {
+          "title": "npj Robotics · 时间依据",
+          "url": "https://www.nature.com/articles/s44182-025-00034-3"
+        },
+        "adapt-hand-2-spec": {
+          "title": "ADAPT Hand 2 · 机构 / 版本依据",
+          "url": "https://www.nature.com/articles/s44182-025-00034-3"
+        }
+      },
+      "milestones": [
+        {
+          "id": "adapt-hand-1",
+          "hand_id": "adapt-hand-1",
+          "name": "ADAPT Hand 1",
+          "kind": "已收录型号",
+          "date": "2025",
+          "date_relation": "on",
+          "date_label": "2025 · 论文",
+          "date_basis": "采用 Communications Engineering 的 2025 年发表记录；不是商业上市日期。",
+          "summary": "20 个关节、12 个执行器；皮肤、手指与系统腕部柔顺性分层设计。",
+          "sources": [
+            "adapt-hand-1-date",
+            "adapt-hand-1-spec"
+          ]
+        },
+        {
+          "id": "adapt-hand-2",
+          "hand_id": "adapt-hand-2",
+          "name": "ADAPT Hand 2",
+          "kind": "已收录型号",
+          "date": "2025",
+          "date_relation": "on",
+          "date_label": "2025 · 论文",
+          "date_basis": "采用 npj Robotics 的 2025 年发表记录；不是商业上市日期。",
+          "summary": "15 个执行器：13 个控制手、2 个控制集成腕。手指的共享侧摆与末节耦合需单列。",
+          "sources": [
+            "adapt-hand-2-date",
+            "adapt-hand-2-spec"
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "from": "adapt-hand-1",
+          "to": "adapt-hand-2",
+          "label": "AH2 明确基于 AH1",
+          "type": "generation",
+          "sources": [
+            "adapt-hand-2-spec"
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "title": "硬件与遥操作共同演进",
+          "scope": "事实取自下列来源；工程解释为本站分析，不等同于跨代实测结论。",
+          "before_label": "AH1",
+          "after_label": "AH2",
+          "rows": [
+            {
+              "dimension": "设计变化与取舍",
+              "before": "AH1：仿生柔顺机构，关注关节、皮肤和被动适应。",
+              "after": "AH2：进一步关注与人手的形态匹配及沉浸式遥操作。",
+              "interpretation": "任务表现同时依赖机构、动作映射与操作者。演进分析应把控制系统变化与裸手变化分开。",
+              "sources": [
+                "adapt-hand-1-spec",
+                "adapt-hand-2-spec"
+              ]
+            }
+          ]
+        }
+      ],
+      "ecosystem": [],
+      "summary_sources": [
+        "adapt-hand-1-date",
+        "adapt-hand-1-spec",
+        "adapt-hand-2-date",
+        "adapt-hand-2-spec"
+      ]
+    },
+    {
+      "id": "dlr-family",
+      "organization": "DLR · 机器人与机电一体化研究所",
+      "name": "DLR · 机器人与机电一体化研究所 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "dlr-hand-ii",
+        "dlr-david",
+        "dlr-dexhand",
+        "dlr-spacehand",
+        "dlr-clash"
+      ],
+      "summary": "DLR 的路线存在汇合与分支：Hand I 到 Hand II；Hand II 与 David 的经验汇入 DEXHAND，再发展 Spacehand；CLASH 则沿 Awiwi 的变刚度路线做简化。",
+      "open_questions": "航天资格验证、工程样机与在轨使用是不同里程碑。CLASH 三指并非 Spacehand 的下一代。",
+      "status": "lineage",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "dlr-hand-ii-date": {
+          "title": "DLR Hand II · 公开展示年份",
+          "url": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/hand-ii"
+        },
+        "dlr-hand-ii-spec": {
+          "title": "DLR Hand II · 机构 / 版本依据",
+          "url": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/hand-ii/design-construction-of-dlr-hand-ii"
+        },
+        "dlr-david-date": {
+          "title": "DLR David Hand · 版本历史",
+          "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/david-hand"
+        },
+        "dlr-david-spec": {
+          "title": "DLR David / Awiwi · 机构 / 版本依据",
+          "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/david-hand"
+        },
+        "dlr-dexhand-date": {
+          "title": "DLR DEXHAND · 系统页",
+          "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dexhand-2012-2015"
+        },
+        "dlr-dexhand-spec": {
+          "title": "DLR DEXHAND · 机构 / 版本依据",
+          "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dexhand-2012-2015"
+        },
+        "dlr-spacehand-date": {
+          "title": "DLR Spacehand · ASTRA 2015 作者论文",
+          "url": "https://elib.dlr.de/114155/1/95690_Chalon.pdf"
+        },
+        "dlr-spacehand-spec": {
+          "title": "DLR Spacehand · 机构 / 版本依据",
+          "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/spacehand-2015-2018"
+        },
+        "dlr-clash-date": {
+          "title": "DLR CLASH · 系统公开展示",
+          "url": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/clash"
+        },
+        "dlr-clash-spec": {
+          "title": "DLR CLASH · 机构 / 版本依据",
+          "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2019.00138/full"
+        },
+        "history": {
+          "title": "DLR · 官方手部项目总览",
+          "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands"
+        }
+      },
+      "milestones": [
+        {
+          "id": "dlr-hand-i",
+          "hand_id": null,
+          "name": "DLR Hand I",
+          "kind": "历史型号 / 外部资料",
+          "date": "1998",
+          "date_relation": "on",
+          "date_label": "1998",
+          "date_basis": "来源记载的事件 / 论文年份",
+          "summary": "官方总览列为 Hand II 的前身。",
+          "sources": [
+            "history"
+          ],
+          "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands"
+        },
+        {
+          "id": "dlr-hand-ii",
+          "hand_id": "dlr-hand-ii",
+          "name": "DLR Hand II",
+          "kind": "已收录型号",
+          "date": "2001",
+          "date_relation": "on",
+          "date_label": "2001 · 公开展示",
+          "date_basis": "DLR 系统页明确列出首次公开展示为 2001 年。",
+          "summary": "四指各 3 个独立运动；另有掌部构形驱动。",
+          "sources": [
+            "dlr-hand-ii-date",
+            "dlr-hand-ii-spec"
+          ]
+        },
+        {
+          "id": "dlr-david",
+          "hand_id": "dlr-david",
+          "name": "DLR David / Awiwi",
+          "kind": "已收录型号",
+          "date": "2010",
+          "date_relation": "on",
+          "date_label": "2010 · 公开展示",
+          "date_basis": "DLR 记载第一版于 2010 年公开展示；2014 年第二版是后续迭代。",
+          "summary": "官方列 20 DoF、前臂 36 电机，不能直接一轴配两个电机相乘。",
+          "sources": [
+            "dlr-david-date",
+            "dlr-david-spec"
+          ]
+        },
+        {
+          "id": "dlr-dexhand",
+          "hand_id": "dlr-dexhand",
+          "name": "DLR DEXHAND",
+          "kind": "已收录型号",
+          "date": "2012",
+          "date_relation": "on",
+          "date_label": "2012 · 公开展示",
+          "date_basis": "沿用 DLR 系统页公开展示年份 2012；2011 已有作者工作报告，不把二者写成同一事件。",
+          "summary": "四指，12 个运动自由度与 12 电机。",
+          "sources": [
+            "dlr-dexhand-date",
+            "dlr-dexhand-spec"
+          ]
+        },
+        {
+          "id": "david-2014",
+          "hand_id": null,
+          "name": "David / Awiwi · 2014 修订",
+          "kind": "同平台硬件修订",
+          "date": "2014",
+          "date_relation": "on",
+          "date_label": "2014",
+          "date_basis": "来源记载的事件 / 论文年份",
+          "summary": "官方记录指出第二版在手指关节中引入滚珠轴承。",
+          "sources": [
+            "dlr-david-spec"
+          ],
+          "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/david-hand"
+        },
+        {
+          "id": "dlr-spacehand",
+          "hand_id": "dlr-spacehand",
+          "name": "DLR Spacehand",
+          "kind": "已收录型号",
+          "date": "2015",
+          "date_relation": "on",
+          "date_label": "2015 · 论文",
+          "date_basis": "采用介绍 Spacehand 设计的 ASTRA 2015 论文年份；2014 项目启动及 2019 工程鉴定模型完成是另外两个里程碑。",
+          "summary": "四指各三个驱动输入，共 12。",
+          "sources": [
+            "dlr-spacehand-date",
+            "dlr-spacehand-spec"
+          ]
+        },
+        {
+          "id": "dlr-clash",
+          "hand_id": "dlr-clash",
+          "name": "DLR CLASH",
+          "kind": "已收录型号",
+          "date": "2018",
+          "date_relation": "on",
+          "date_label": "2018 · 公开展示",
+          "date_basis": "DLR 系统页标记 2018 年公开展示；后续详细期刊论文为 2019 年，两个时间口径区分。",
+          "summary": "官方列 7 DoF；运动自由度与刚度调节输入分开。",
+          "sources": [
+            "dlr-clash-date",
+            "dlr-clash-spec"
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "from": "dlr-hand-i",
+          "to": "dlr-hand-ii",
+          "label": "官方确认的后继",
+          "type": "generation",
+          "sources": [
+            "history"
+          ]
+        },
+        {
+          "from": "dlr-david",
+          "to": "david-2014",
+          "label": "关节轴承修订",
+          "type": "revision",
+          "sources": [
+            "dlr-david-spec"
+          ]
+        },
+        {
+          "from": "dlr-hand-ii",
+          "to": "dlr-dexhand",
+          "label": "技术经验汇入",
+          "type": "branch",
+          "sources": [
+            "history"
+          ]
+        },
+        {
+          "from": "dlr-david",
+          "to": "dlr-dexhand",
+          "label": "技术经验汇入",
+          "type": "branch",
+          "sources": [
+            "history"
+          ]
+        },
+        {
+          "from": "dlr-dexhand",
+          "to": "dlr-spacehand",
+          "label": "面向航天的进一步开发",
+          "type": "generation",
+          "sources": [
+            "history"
+          ]
+        },
+        {
+          "from": "dlr-david",
+          "to": "dlr-clash",
+          "label": "变刚度原理的简化与重设计",
+          "type": "branch",
+          "sources": [
+            "dlr-clash-spec"
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "title": "同一技术积累可以服务不同任务",
+          "scope": "事实取自下列来源；工程解释为本站分析，不等同于跨代实测结论。",
+          "before_label": "David / Awiwi",
+          "after_label": "CLASH",
+          "rows": [
+            {
+              "dimension": "设计变化与取舍",
+              "before": "Awiwi：前臂布置驱动与传感，以拮抗腱索调节姿态和刚度。",
+              "after": "CLASH：沿用变刚度思想，为易损物品操作重做三指构型。",
+              "interpretation": "减少手指和重做传动是在任务、复杂度与刚度调节能力间权衡，不能只按自由度多少评价优劣。",
+              "sources": [
+                "dlr-david-spec",
+                "dlr-clash-spec"
+              ]
+            }
+          ]
+        }
+      ],
+      "ecosystem": [],
+      "summary_sources": [
+        "dlr-hand-ii-date",
+        "dlr-hand-ii-spec",
+        "dlr-david-date",
+        "dlr-david-spec",
+        "dlr-dexhand-date",
+        "dlr-dexhand-spec",
+        "dlr-spacehand-date",
+        "dlr-spacehand-spec",
+        "dlr-clash-date",
+        "dlr-clash-spec",
+        "history"
+      ]
+    },
+    {
+      "id": "allegro-family",
+      "organization": "WONIK Robotics · Allegro",
+      "name": "WONIK Robotics · Allegro · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "allegro-v4",
+        "allegro-v5",
+        "allegro-v5-plus",
+        "allegro-v6f"
+      ],
+      "summary": "Allegro 产品族同时包含三指、四指和五指构型。V5 与 V5 Plus 应作为不同配置比较，不能仅凭 Plus 后缀画成连续升级。",
+      "open_questions": "此处记录系列扩展，不推定新型号替代旧型号。ROS 驱动、轴数和关节映射必须匹配具体型号。",
+      "status": "parallel",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "allegro-v4-date": {
+          "title": "Wonik · V5 发布稿中明确回顾 V4",
+          "url": "https://wonikrobotics.com/kr/sub/pr/news.php?bid=4&idx=108&mode=view&page=2"
+        },
+        "allegro-v4-spec": {
+          "title": "Allegro V4 · 机构 / 版本依据",
+          "url": "https://www.allegrohand.com/sub/product/p.php?idx=1"
+        },
+        "allegro-v5-date": {
+          "title": "官方产品资料 · 时间依据",
+          "url": "https://allegrohand.com/sub/product/p.php?idx=3"
+        },
+        "allegro-v5-spec": {
+          "title": "Allegro Hand V5 · 3F · 机构 / 版本依据",
+          "url": "https://allegrohand.com/sub/product/p.php?idx=3"
+        },
+        "allegro-v5-plus-date": {
+          "title": "官方产品资料 · 时间依据",
+          "url": "https://allegrohand.com/sub/product/p.php?idx=4"
+        },
+        "allegro-v5-plus-spec": {
+          "title": "Allegro Hand V5 Plus · 4F · 机构 / 版本依据",
+          "url": "https://allegrohand.com/sub/product/p.php?idx=4"
+        },
+        "allegro-v6f-date": {
+          "title": "官方产品资料 · 时间依据",
+          "url": "https://allegrohand.com/"
+        },
+        "allegro-v6f-spec": {
+          "title": "Allegro Hand V6 F · 机构 / 版本依据",
+          "url": "https://allegrohand.com/sub/product/p.php?idx=25"
+        },
+        "catalogue": {
+          "title": "Allegro 官方产品与发布记录",
+          "url": "https://www.allegrohand.com/"
+        },
+        "ros": {
+          "title": "官方 Allegro V5 ROS 2 · 版本范围",
+          "url": "https://github.com/Wonikrobotics-git/allegro_hand_ros2_v5/blob/master-4finger/README.md"
+        }
+      },
+      "milestones": [
+        {
+          "id": "allegro-v4",
+          "hand_id": "allegro-v4",
+          "name": "Allegro V4",
+          "kind": "已收录型号",
+          "date": "2024",
+          "date_relation": "by",
+          "date_label": "≤ 2024 · 公开资料",
+          "date_basis": "厂商 2024-11-15 的 V5 发布稿明确说明 V4 为上一代产品，证明 V4 至迟 2024 年已存在；不能把第一代 Allegro 的年份直接赋给 V4。",
+          "summary": "四指各 4 个主动关节，16 个驱动。",
+          "sources": [
+            "allegro-v4-date",
+            "allegro-v4-spec"
+          ]
+        },
+        {
+          "id": "allegro-v5",
+          "hand_id": "allegro-v5",
+          "name": "Allegro Hand V5 · 3F",
+          "kind": "已收录型号",
+          "date": "2026",
+          "date_relation": "by",
+          "date_label": "≤ 2026 · 公开资料",
+          "date_basis": "截至 2026-10-02 可核查的官方产品页；此时间是已公开上界，并非推定上市年。",
+          "summary": "3 指、9 个独立关节；与其他 Allegro 型号分开记录。",
+          "sources": [
+            "allegro-v5-date",
+            "allegro-v5-spec"
+          ]
+        },
+        {
+          "id": "allegro-v5-plus",
+          "hand_id": "allegro-v5-plus",
+          "name": "Allegro Hand V5 Plus · 4F",
+          "kind": "已收录型号",
+          "date": "2026",
+          "date_relation": "by",
+          "date_label": "≤ 2026 · 公开资料",
+          "date_basis": "截至 2026-10-02 可核查的官方产品页；此时间是已公开上界，并非推定上市年。",
+          "summary": "4 指、16 个独立关节；与其他 Allegro 型号分开记录。",
+          "sources": [
+            "allegro-v5-plus-date",
+            "allegro-v5-plus-spec"
+          ]
+        },
+        {
+          "id": "allegro-v6f",
+          "hand_id": "allegro-v6f",
+          "name": "Allegro Hand V6 F",
+          "kind": "已收录型号",
+          "date": "2026",
+          "date_relation": "on",
+          "date_label": "2026 · 公开资料",
+          "date_basis": "厂商首页新闻列出 2026-09-07 的 V6 F 发布记录。",
+          "summary": "五指，每指 4 个独立关节，共 20 个。",
+          "sources": [
+            "allegro-v6f-date",
+            "allegro-v6f-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [
+        {
+          "title": "产品线扩展改变了动作空间",
+          "scope": "事实取自下列来源；工程解释为本站分析，不等同于跨代实测结论。",
+          "before_label": "三指 / 四指产品",
+          "after_label": "五指产品",
+          "rows": [
+            {
+              "dimension": "设计变化与取舍",
+              "before": "V4 / V5 Plus 为四指平台；V5 为三指配置。",
+              "after": "V6 F 扩展到五指、20 DoF；官网列出 2026-09-07 发布记录。",
+              "interpretation": "手指数量改变后，接触组合和动作映射都不同。不能把其他 Allegro 版本的学习结果无条件迁移为该型号的能力证明。",
+              "sources": [
+                "allegro-v4-spec",
+                "allegro-v5-spec",
+                "allegro-v5-plus-spec",
+                "allegro-v6f-spec",
+                "catalogue"
+              ]
+            }
+          ]
+        }
+      ],
+      "ecosystem": [
+        {
+          "date": "版本适配",
+          "text": "官方 V5 ROS 2 仓库有明确适用范围；共同品牌并不意味着 V4 与 V5 驱动可互换。",
+          "sources": [
+            "ros"
+          ]
+        }
+      ],
+      "summary_sources": [
+        "allegro-v4-date",
+        "allegro-v4-spec",
+        "allegro-v5-date",
+        "allegro-v5-spec",
+        "allegro-v5-plus-date",
+        "allegro-v5-plus-spec",
+        "allegro-v6f-date",
+        "allegro-v6f-spec",
+        "catalogue",
+        "ros"
+      ]
+    },
+    {
+      "id": "xynova-family",
+      "organization": "曦诺未来 · Xynova",
+      "name": "曦诺未来 · Xynova · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "xynova-flex-2",
+        "xynova-prima-1"
+      ],
+      "summary": "Flex 2 与 Prima 1 展示两条不同架构路线：电缸—腱索方案与直接驱动方案。型号里的 1、2 不能用于跨系列排序。",
+      "open_questions": "未取得足以串联 Flex 1 → Flex 2 的版本说明，也未确认 Prima 与 Flex 的替代关系。",
+      "status": "parallel",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "xynova-flex-2-date": {
+          "title": "MANUS · Xynova Flex 2 合作案例",
+          "url": "https://www.manus-meta.com/use-cases/how-xynova-teleoperates-the-flex-2-dexterous-hand-with-manus-metagloves-pro-haptic"
+        },
+        "xynova-flex-2-spec": {
+          "title": "Xynova Flex 2 · 机构 / 版本依据",
+          "url": "https://www.manus-meta.com/use-cases/how-xynova-teleoperates-the-flex-2-dexterous-hand-with-manus-metagloves-pro-haptic"
+        },
+        "xynova-prima-1-date": {
+          "title": "官方产品资料 · 时间依据",
+          "url": "https://www.xynova.com.cn/en/xynova-prima-1"
+        },
+        "xynova-prima-1-spec": {
+          "title": "Xynova Prima 1 · 机构 / 版本依据",
+          "url": "https://www.xynova.com.cn/en/xynova-prima-1"
+        },
+        "flex": {
+          "title": "Xynova Flex 2 · 官方产品介绍",
+          "url": "https://www.xynova.com.cn/en/xynova-flex-2"
+        }
+      },
+      "milestones": [
+        {
+          "id": "xynova-flex-2",
+          "hand_id": "xynova-flex-2",
+          "name": "Xynova Flex 2",
+          "kind": "已收录型号",
+          "date": "2026",
+          "date_relation": "by",
+          "date_label": "≤ 2026 · 公开资料",
+          "date_basis": "MANUS 于 2026-06-15 发布与 Xynova 的 Flex 2 遥操作案例，证明该型号至迟当时已公开；产品首发年份继续补查。",
+          "summary": "厂商描述 23 个自由度；主动轴与耦合轴未完整拆分。",
+          "sources": [
+            "xynova-flex-2-date",
+            "xynova-flex-2-spec"
+          ]
+        },
+        {
+          "id": "xynova-prima-1",
+          "hand_id": "xynova-prima-1",
+          "name": "Xynova Prima 1",
+          "kind": "已收录型号",
+          "date": "2026",
+          "date_relation": "by",
+          "date_label": "≤ 2026 · 公开资料",
+          "date_basis": "截至 2026-10-02 官方页面已公开；本记录不将网页访问年当作首次发布日期。",
+          "summary": "官网标称 22 DOF，尚未提供本轮可核验的逐指主动 / 被动轴拆分。",
+          "sources": [
+            "xynova-prima-1-date",
+            "xynova-prima-1-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [
+        {
+          "title": "同公司不同传动选择",
+          "scope": "事实取自下列来源；工程解释为本站分析，不等同于跨代实测结论。",
+          "before_label": "Flex 2",
+          "after_label": "Prima 1",
+          "rows": [
+            {
+              "dimension": "设计变化与取舍",
+              "before": "Flex 2：官方介绍 23 DoF 仿生构型与微型电缸驱动。",
+              "after": "Prima 1：官方介绍 22 DoF 直接驱动路线。",
+              "interpretation": "应比较执行器布置、传动损失、维护与可反驱性，不能仅凭总自由度断言哪款更先进。",
+              "sources": [
+                "flex",
+                "xynova-prima-1-spec"
+              ]
+            }
+          ]
+        }
+      ],
+      "ecosystem": [],
+      "summary_sources": [
+        "xynova-flex-2-date",
+        "xynova-flex-2-spec",
+        "xynova-prima-1-date",
+        "xynova-prima-1-spec",
+        "flex"
+      ]
+    },
+    {
+      "id": "linker-family",
+      "organization": "灵心巧手 · Linker",
+      "name": "灵心巧手 · Linker · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "linker-l6",
+        "linker-o6",
+        "linker-l20-lite",
+        "linker-l20",
+        "linker-l30",
+        "linker-o30"
+      ],
+      "summary": "已收录的六款手属于多条配置路线。L/O、Lite 和编号不能合并为 L6 → O6 → L20 → L30 的升级链。",
+      "open_questions": "目前依据各型号规格和开发文档确认产品并存；缺少完整的首发年表与直接继承说明。L20 的资料口径变化也不自动等于新一代硬件。",
+      "status": "parallel",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "linker-l6-date": {
+          "title": "官方产品规格 · 时间依据",
+          "url": "https://www.linkerhand.com/details/LinkerHandL6/"
+        },
+        "linker-l6-spec": {
+          "title": "Linker Hand L6 · 机构 / 版本依据",
+          "url": "https://www.linkerhand.com/details/LinkerHandL6/"
+        },
+        "linker-o6-date": {
+          "title": "官方产品规格 · 时间依据",
+          "url": "https://www.linkerhand.com/details/LinkerHandO6/"
+        },
+        "linker-o6-spec": {
+          "title": "Linker Hand O6 · 机构 / 版本依据",
+          "url": "https://www.linkerhand.com/details/LinkerHandO6/"
+        },
+        "linker-l20-lite-date": {
+          "title": "官方产品规格 · 时间依据",
+          "url": "https://www.linkerhand.com/details/LinkerHandL20Lite/"
+        },
+        "linker-l20-lite-spec": {
+          "title": "Linker Hand L20 Lite · 机构 / 版本依据",
+          "url": "https://www.linkerhand.com/details/LinkerHandL20Lite/"
+        },
+        "linker-l20-date": {
+          "title": "世界机器人大会 · Linkerbot 厂商资料",
+          "url": "https://www.worldrobotconference.com/profile/robot/download/2025/07/01/灵心巧手公司简介_20250701170402A528.pdf"
+        },
+        "linker-l20-spec": {
+          "title": "Linker L20 · 机构 / 版本依据",
+          "url": "https://www.linkerhand.com/details/LinkerHandL20/"
+        },
+        "linker-l30-date": {
+          "title": "官方产品规格 · 时间依据",
+          "url": "https://www.linkerhand.com/details/LinkerHandL30/"
+        },
+        "linker-l30-spec": {
+          "title": "Linker Hand L30 Pro · 机构 / 版本依据",
+          "url": "https://www.linkerhand.com/details/LinkerHandL30/"
+        },
+        "linker-o30-date": {
+          "title": "官方产品规格 · 时间依据",
+          "url": "https://www.linkerhand.com/details/LinkerHandO30/"
+        },
+        "linker-o30-spec": {
+          "title": "Linker Hand O30 · 机构 / 版本依据",
+          "url": "https://www.linkerhand.com/details/LinkerHandO30/"
+        }
+      },
+      "milestones": [
+        {
+          "id": "linker-l6",
+          "hand_id": "linker-l6",
+          "name": "Linker Hand L6",
+          "kind": "已收录型号",
+          "date": "2026",
+          "date_relation": "by",
+          "date_label": "≤ 2026 · 公开资料",
+          "date_basis": "当前官方产品页已核验；缺少该配置首次发布的日期证据，≤ 2026 只表示至迟存在。",
+          "summary": "6 个主动自由度，5 个被动自由度；以当前产品页配置为准。",
+          "sources": [
+            "linker-l6-date",
+            "linker-l6-spec"
+          ]
+        },
+        {
+          "id": "linker-o6",
+          "hand_id": "linker-o6",
+          "name": "Linker Hand O6",
+          "kind": "已收录型号",
+          "date": "2026",
+          "date_relation": "by",
+          "date_label": "≤ 2026 · 公开资料",
+          "date_basis": "当前官方产品页已核验；缺少该配置首次发布的日期证据，≤ 2026 只表示至迟存在。",
+          "summary": "6 个主动自由度，5 个被动自由度；以当前产品页配置为准。",
+          "sources": [
+            "linker-o6-date",
+            "linker-o6-spec"
+          ]
+        },
+        {
+          "id": "linker-l20-lite",
+          "hand_id": "linker-l20-lite",
+          "name": "Linker Hand L20 Lite",
+          "kind": "已收录型号",
+          "date": "2026",
+          "date_relation": "by",
+          "date_label": "≤ 2026 · 公开资料",
+          "date_basis": "当前官方产品页已核验；缺少该配置首次发布的日期证据，≤ 2026 只表示至迟存在。",
+          "summary": "10 个主动自由度，10 个被动自由度；以当前产品页配置为准。",
+          "sources": [
+            "linker-l20-lite-date",
+            "linker-l20-lite-spec"
+          ]
+        },
+        {
+          "id": "linker-l20",
+          "hand_id": "linker-l20",
+          "name": "Linker L20",
+          "kind": "已收录型号",
+          "date": "2025",
+          "date_relation": "by",
+          "date_label": "≤ 2025 · 公开资料",
+          "date_basis": "2025 世界机器人大会收录的厂商公司资料包含 Linker Hand L20，证明该型号当时已公开；不把公司成立时间或 L20 Lite 日期当作 L20 首发。",
+          "summary": "16 主动 + 5 被动，共 21 个机构自由度。",
+          "sources": [
+            "linker-l20-date",
+            "linker-l20-spec"
+          ]
+        },
+        {
+          "id": "linker-l30",
+          "hand_id": "linker-l30",
+          "name": "Linker Hand L30 Pro",
+          "kind": "已收录型号",
+          "date": "2026",
+          "date_relation": "by",
+          "date_label": "≤ 2026 · 公开资料",
+          "date_basis": "当前官方产品页已核验；缺少该配置首次发布的日期证据，≤ 2026 只表示至迟存在。",
+          "summary": "18 个主动自由度，4 个被动自由度；以当前产品页配置为准。",
+          "sources": [
+            "linker-l30-date",
+            "linker-l30-spec"
+          ]
+        },
+        {
+          "id": "linker-o30",
+          "hand_id": "linker-o30",
+          "name": "Linker Hand O30",
+          "kind": "已收录型号",
+          "date": "2026",
+          "date_relation": "by",
+          "date_label": "≤ 2026 · 公开资料",
+          "date_basis": "当前官方产品页已核验；缺少该配置首次发布的日期证据，≤ 2026 只表示至迟存在。",
+          "summary": "20 个主动自由度，0 个被动自由度；以当前产品页配置为准。",
+          "sources": [
+            "linker-o30-date",
+            "linker-o30-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [
+        {
+          "title": "先对齐独立驱动，再比较系列定位",
+          "scope": "事实取自下列来源；工程解释为本站分析，不等同于跨代实测结论。",
+          "before_label": "低输入配置",
+          "after_label": "其他多轴配置",
+          "rows": [
+            {
+              "dimension": "设计变化与取舍",
+              "before": "L6 / O6：低输入数量的五指方案，含耦合关节。",
+              "after": "L20 Lite / L20 / L30 / O30：提供不同主动轴配置与机构方案。",
+              "interpretation": "名称中的数字并不统一表示主动自由度。比较时应使用本页的逐指拆解、实际驱动数和传感配置。",
+              "sources": [
+                "linker-l6-spec",
+                "linker-o6-spec",
+                "linker-l20-lite-spec",
+                "linker-l20-spec",
+                "linker-l30-spec",
+                "linker-o30-spec"
+              ]
+            }
+          ]
+        }
+      ],
+      "ecosystem": [],
+      "summary_sources": [
+        "linker-l6-date",
+        "linker-l6-spec",
+        "linker-o6-date",
+        "linker-o6-spec",
+        "linker-l20-lite-date",
+        "linker-l20-lite-spec",
+        "linker-l20-date",
+        "linker-l20-spec",
+        "linker-l30-date",
+        "linker-l30-spec",
+        "linker-o30-date",
+        "linker-o30-spec"
+      ]
+    },
+    {
+      "id": "inspire-family",
+      "organization": "因时机器人 · RH56",
+      "name": "因时机器人 · RH56 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "inspire-rh56dfx",
+        "inspire-rh56bfx"
+      ],
+      "summary": "RH56DFX 与 RH56BFX 同列于官方选型资料，是针对不同速度、力量需求的配置。BFX 不是 DFX 的已确认后继。",
+      "open_questions": "不同规格书版本和传感选配不能混成同一型号的统一指标；新系列是否替代 RH56 尚需厂家明确说明。",
+      "status": "parallel",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "inspire-rh56dfx-date": {
+          "title": "因时机器人 · 两系列产品公开报道",
+          "url": "https://www.inspire-robots.com/news/industry%20news/2024-07-31/227.html"
+        },
+        "inspire-rh56dfx-spec": {
+          "title": "Inspire RH56DFX · 机构 / 版本依据",
+          "url": "https://en.inspire-robots.com/wp-content/uploads/2023/12/Inspire-Robots-Products-Selection-Guide-V15.pdf"
+        },
+        "inspire-rh56bfx-date": {
+          "title": "因时机器人 · 两系列产品公开报道",
+          "url": "https://www.inspire-robots.com/news/industry%20news/2024-07-31/227.html"
+        },
+        "inspire-rh56bfx-spec": {
+          "title": "Inspire RH56BFX · 机构 / 版本依据",
+          "url": "https://en.inspire-robots.com/wp-content/uploads/2023/12/Inspire-Robots-Products-Selection-Guide-V15.pdf"
+        }
+      },
+      "milestones": [
+        {
+          "id": "inspire-rh56dfx",
+          "hand_id": "inspire-rh56dfx",
+          "name": "Inspire RH56DFX",
+          "kind": "已收录型号",
+          "date": "2024",
+          "date_relation": "by",
+          "date_label": "≤ 2024 · 公开资料",
+          "date_basis": "厂商官网 2024-07-31 的文章明确列出 RH56DFX 与 RH56BFX；这是有日期的产品存在证据，非声称当年首发。",
+          "summary": "六路控制与十二个可动关节分开计数。",
+          "sources": [
+            "inspire-rh56dfx-date",
+            "inspire-rh56dfx-spec"
+          ]
+        },
+        {
+          "id": "inspire-rh56bfx",
+          "hand_id": "inspire-rh56bfx",
+          "name": "Inspire RH56BFX",
+          "kind": "已收录型号",
+          "date": "2024",
+          "date_relation": "by",
+          "date_label": "≤ 2024 · 公开资料",
+          "date_basis": "厂商官网 2024-07-31 的文章明确列出 RH56BFX 与 RH56DFX；不以公司成立时间替代该型号发布时间。",
+          "summary": "六路控制与十二个可动关节分开计数。",
+          "sources": [
+            "inspire-rh56bfx-date",
+            "inspire-rh56bfx-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [
+        {
+          "title": "保持驱动布局，改变产品取舍",
+          "scope": "事实取自下列来源；工程解释为本站分析，不等同于跨代实测结论。",
+          "before_label": "RH56DFX",
+          "after_label": "RH56BFX",
+          "rows": [
+            {
+              "dimension": "设计变化与取舍",
+              "before": "DFX：官方高力量配置定位。",
+              "after": "BFX：官方高速配置定位。",
+              "interpretation": "选型需看同一物体、相同握姿与循环工况下的表现；高速与大力不能从两列规格中拼接成一款手。",
+              "sources": [
+                "inspire-rh56dfx-spec",
+                "inspire-rh56bfx-spec"
+              ]
+            }
+          ]
+        }
+      ],
+      "ecosystem": [],
+      "summary_sources": [
+        "inspire-rh56dfx-date",
+        "inspire-rh56dfx-spec",
+        "inspire-rh56bfx-date",
+        "inspire-rh56bfx-spec"
+      ]
+    },
+    {
+      "id": "tesollo-family",
+      "organization": "Tesollo · DELTO",
+      "name": "Tesollo · DELTO · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "tesollo-dg-5f-m",
+        "tesollo-dg-5f-s"
+      ],
+      "summary": "DG-5F-M 与 DG-5F-S 是尺寸、重量和集成取向不同的产品配置。不能直接用旧 DG-5F 发布资料代替当前 M/S 规格。",
+      "open_questions": "S 还存在不同轴数配置；本站对应 20 DoF 版。尚未取得足以证明 S 完全替代 M 的材料。",
+      "status": "parallel",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "tesollo-dg-5f-m-date": {
+          "title": "Tesollo · DG-5F-M 研究采用公告",
+          "url": "https://www.tesollo.com/news/press/tesollo-robotic-hand-adopted-as-a-research-platform-at-stanford-university"
+        },
+        "tesollo-dg-5f-m-spec": {
+          "title": "Tesollo DG-5F-M · 机构 / 版本依据",
+          "url": "https://www.tesollo.com/products/grippers/dg-5f-m"
+        },
+        "tesollo-dg-5f-s-date": {
+          "title": "官方 DG-5F-S 20 轴配置 · 时间依据",
+          "url": "https://www.tesollo.com/news/press/tesollo-develops-compact-lightweight-humanoid-hand-dg-5f-s"
+        },
+        "tesollo-dg-5f-s-spec": {
+          "title": "Tesollo DG-5F-S · 20 DoF · 机构 / 版本依据",
+          "url": "https://www.tesollo.com/products/grippers/dg-5f-s"
+        }
+      },
+      "milestones": [
+        {
+          "id": "tesollo-dg-5f-m",
+          "hand_id": "tesollo-dg-5f-m",
+          "name": "Tesollo DG-5F-M",
+          "kind": "已收录型号",
+          "date": "2026",
+          "date_relation": "by",
+          "date_label": "≤ 2026 · 公开资料",
+          "date_basis": "Tesollo 2026-07-29 新闻明确命名 DG-5F-M 并介绍其在 Stanford 项目中的使用；2025 的 DG-5F 发布稿未注明 M，暂不合并为同一次首发。",
+          "summary": "五指各 4 个独立关节，共 20。",
+          "sources": [
+            "tesollo-dg-5f-m-date",
+            "tesollo-dg-5f-m-spec"
+          ]
+        },
+        {
+          "id": "tesollo-dg-5f-s",
+          "hand_id": "tesollo-dg-5f-s",
+          "name": "Tesollo DG-5F-S · 20 DoF",
+          "kind": "已收录型号",
+          "date": "2026",
+          "date_relation": "on",
+          "date_label": "2026 · 公开资料",
+          "date_basis": "官方 2026-01-07 开发公告；2026-02 商业化公告，不以网页素材路径日期代替首发。",
+          "summary": "五指每指 4 个独立驱动关节，共 20；与同系列 15 DoF 选配、DG-5F-M 分开。",
+          "sources": [
+            "tesollo-dg-5f-s-date",
+            "tesollo-dg-5f-s-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [
+        {
+          "title": "紧凑化与承载须分别核对",
+          "scope": "事实取自下列来源；工程解释为本站分析，不等同于跨代实测结论。",
+          "before_label": "DG-5F-M",
+          "after_label": "DG-5F-S",
+          "rows": [
+            {
+              "dimension": "设计变化与取舍",
+              "before": "M：按 M 专用参数、接口和外形核对。",
+              "after": "S：紧凑方案，按 S 的具体轴数版本核对。",
+              "interpretation": "不能取 S 的轻量数据与 M 的载荷数据组合成“新一代更轻且同样强”。跨配置还需确认供电、法兰与控制协议。",
+              "sources": [
+                "tesollo-dg-5f-m-spec",
+                "tesollo-dg-5f-s-spec"
+              ]
+            }
+          ]
+        }
+      ],
+      "ecosystem": [],
+      "summary_sources": [
+        "tesollo-dg-5f-m-date",
+        "tesollo-dg-5f-m-spec",
+        "tesollo-dg-5f-s-date",
+        "tesollo-dg-5f-s-spec"
+      ]
+    },
+    {
+      "id": "schunk-family",
+      "organization": "SCHUNK",
+      "name": "SCHUNK · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "schunk-sdh-2",
+        "schunk-svh"
+      ],
+      "summary": "SDH 2 的三指研究构型与 SVH 的五指仿人构型属于不同平台路线。按公开年代可以追踪产品布局，但不能直接认定为前后代。",
+      "open_questions": "本轮未取得 SDH 初代到 SDH 2 的完整机械变化表；“2”不用于补造前代指标。",
+      "status": "parallel",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "schunk-sdh-2-date": {
+          "title": "SCHUNK SDH-2.0 规格页 · NIST 镜像",
+          "url": "https://www.nist.gov/document/9020173r1pdf"
+        },
+        "schunk-sdh-2-spec": {
+          "title": "SCHUNK SDH 2 · 机构 / 版本依据",
+          "url": "https://www.nist.gov/document/9020173r1pdf"
+        },
+        "schunk-svh-date": {
+          "title": "SCHUNK 产品目录 · 第 5 页产品史（镜像）",
+          "url": "https://robotosvarka.ru/upload/iblock/aea/Katalog-Sistemy-zakhvata-_SCHUNK_.pdf"
+        },
+        "schunk-svh-spec": {
+          "title": "SCHUNK SVH · 机构 / 版本依据",
+          "url": "https://schunk.com/hu/en/gripping-systems/special-gripper/svh/c/PGR_3161"
+        }
+      },
+      "milestones": [
+        {
+          "id": "schunk-sdh-2",
+          "hand_id": "schunk-sdh-2",
+          "name": "SCHUNK SDH 2",
+          "kind": "已收录型号",
+          "date": "2008",
+          "date_relation": "by",
+          "date_label": "≤ 2008 · 公开资料",
+          "date_basis": "NIST 保存的 SCHUNK SDH-2.0 规格页明确写 Version: April 10th, 2008；证明该型号至迟当时已有公开资料。",
+          "summary": "三指各两条主动弯曲轴，加一条共同展指轴，共 7。",
+          "sources": [
+            "schunk-sdh-2-date",
+            "schunk-sdh-2-spec"
+          ]
+        },
+        {
+          "id": "schunk-svh",
+          "hand_id": "schunk-svh",
+          "name": "SCHUNK SVH",
+          "kind": "已收录型号",
+          "date": "2013",
+          "date_relation": "by",
+          "date_label": "≤ 2013 · 公开资料",
+          "date_basis": "SCHUNK 厂商产品史将九电机 SVH 标在 2012 / 2013；地图取区间上界 2013，注明至迟，不假装确定单一首发年。",
+          "summary": "9 个驱动输入与 20 个机构关节分开计数。",
+          "sources": [
+            "schunk-svh-date",
+            "schunk-svh-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [
+        {
+          "title": "三指操作与仿人形态",
+          "scope": "事实取自下列来源；工程解释为本站分析，不等同于跨代实测结论。",
+          "before_label": "SDH 2",
+          "after_label": "SVH",
+          "rows": [
+            {
+              "dimension": "设计变化与取舍",
+              "before": "SDH 2：三指平台，可调整抓握构型。",
+              "after": "SVH：五指仿人平台，采用不同驱动与关节耦合设计。",
+              "interpretation": "选择哪一条路线取决于接触任务、仿人映射与安装约束；不同手指数不是先进程度排序。",
+              "sources": [
+                "schunk-sdh-2-spec",
+                "schunk-svh-spec"
+              ]
+            }
+          ]
+        }
+      ],
+      "ecosystem": [],
+      "summary_sources": [
+        "schunk-sdh-2-date",
+        "schunk-sdh-2-spec",
+        "schunk-svh-date",
+        "schunk-svh-spec"
+      ]
+    },
+    {
+      "id": "open-bionics-family",
+      "organization": "Open Bionics · 开源研究手",
+      "name": "Open Bionics · 开源研究手 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "open-bionics-ada",
+        "open-bionics-brunel"
+      ],
+      "summary": "Brunel 官方规格书明确将其称为 Ada 之后的第二款手；这条关系有直接文字依据。",
+      "open_questions": "Brunel V1、后续下载页文件版本与 Beetroot 固件版本要分开；不能根据软件版本号推断硬件首发年份。",
+      "status": "lineage",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "open-bionics-ada-date": {
+          "title": "Open Bionics · Ada 套件发布",
+          "url": "https://openbionicslabs.com/blog"
+        },
+        "open-bionics-ada-spec": {
+          "title": "Open Bionics Ada · 机构 / 版本依据",
+          "url": "https://github.com/Open-Bionics/Ada_3D_model_files"
+        },
+        "open-bionics-brunel-date": {
+          "title": "Open Bionics Brunel · V1.0 规格书",
+          "url": "https://openbionicslabs.com/s/BrunelV10Datasheet.pdf"
+        },
+        "open-bionics-brunel-spec": {
+          "title": "Open Bionics Brunel V1 · 机构 / 版本依据",
+          "url": "https://openbionicslabs.com/s/BrunelV10Datasheet.pdf"
+        }
+      },
+      "milestones": [
+        {
+          "id": "open-bionics-ada",
+          "hand_id": "open-bionics-ada",
+          "name": "Open Bionics Ada",
+          "kind": "已收录型号",
+          "date": "2016",
+          "date_relation": "on",
+          "date_label": "2016 · 产品公告",
+          "date_basis": "厂商 2016-02-16 博客明确宣布 Ada 开源机器人手套件发布。",
+          "summary": "官方介绍为 5 自由度；机械关节总数未核清。",
+          "sources": [
+            "open-bionics-ada-date",
+            "open-bionics-ada-spec"
+          ]
+        },
+        {
+          "id": "open-bionics-brunel",
+          "hand_id": "open-bionics-brunel",
+          "name": "Open Bionics Brunel V1",
+          "kind": "已收录型号",
+          "date": "2017",
+          "date_relation": "by",
+          "date_label": "≤ 2017 · 公开资料",
+          "date_basis": "Brunel V1.0 规格书为 2017 年 3 月，官方当年也有 Brunel 固件教程。以至迟 2017 定位，保留产品首发日期待补的区别。",
+          "summary": "9 个欠驱动运动自由度，4 个驱动输入。",
+          "sources": [
+            "open-bionics-brunel-date",
+            "open-bionics-brunel-spec"
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "from": "open-bionics-ada",
+          "to": "open-bionics-brunel",
+          "label": "官方确认 Ada 之后的第二款手",
+          "type": "generation",
+          "sources": [
+            "open-bionics-brunel-spec"
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "title": "从可制作原型到改进接触与集成",
+          "scope": "事实取自下列来源；工程解释为本站分析，不等同于跨代实测结论。",
+          "before_label": "Ada",
+          "after_label": "Brunel V1",
+          "rows": [
+            {
+              "dimension": "设计变化与取舍",
+              "before": "Ada：公开制造文件的研究手。",
+              "after": "Brunel：规格书强调接触垫、捏握与电子系统改进。",
+              "interpretation": "这些是厂商说明的设计变化；尚无统一条件的独立耐久与操作成功率对比。",
+              "sources": [
+                "open-bionics-ada-spec",
+                "open-bionics-brunel-spec"
+              ]
+            }
+          ]
+        }
+      ],
+      "ecosystem": [],
+      "summary_sources": [
+        "open-bionics-ada-date",
+        "open-bionics-ada-spec",
+        "open-bionics-brunel-date",
+        "open-bionics-brunel-spec"
+      ]
+    },
+    {
+      "id": "softhand-family",
+      "organization": "Pisa / IIT 与后续 SoftHand 研究",
+      "name": "Pisa / IIT 与后续 SoftHand 研究 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "pisa-iit-softhand",
+        "qb-softhand-2-research",
+        "tactile-softhand-a"
+      ],
+      "summary": "SoftHand 路线沿协同欠驱动结构发展：原始单电机设计、双驱动研究平台，以及其他团队的触觉扩展。跨团队衍生不等于同公司换代。",
+      "open_questions": "Tactile SoftHand-A 不是 qbSoftHand 2 的已确认后继。预印本更新、期刊发表与实体硬件改版也需分开。",
+      "status": "lineage",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "pisa-iit-softhand-date": {
+          "title": "Pisa/IIT SoftHand · 作者机构论文记录",
+          "url": "https://www.centropiaggio.unipi.it/publications/adaptive-synergies-design-and-control-pisaiit-softhand.html"
+        },
+        "pisa-iit-softhand-spec": {
+          "title": "Pisa/IIT SoftHand · 机构 / 版本依据",
+          "url": "https://www.centropiaggio.unipi.it/sites/default/files/PisaIIT_SoftHand_0.pdf"
+        },
+        "qb-softhand-2-research-date": {
+          "title": "qbSoftHand2 Research · 用户手册 V1.0.2",
+          "url": "https://qbrobotics.com/wp-content/uploads/2022/05/qbSoftHand2-Research-User-Manual.pdf"
+        },
+        "qb-softhand-2-research-spec": {
+          "title": "qbSoftHand 2 Research · 机构 / 版本依据",
+          "url": "https://qbrobotics.com/wp-content/uploads/2022/05/qbSoftHand2-Research-User-Manual.pdf"
+        },
+        "tactile-softhand-a-date": {
+          "title": "arXiv · 2406.12731 v2 · 时间依据",
+          "url": "https://arxiv.org/html/2406.12731v2"
+        },
+        "tactile-softhand-a-spec": {
+          "title": "Tactile SoftHand-A · 机构 / 版本依据",
+          "url": "https://arxiv.org/html/2406.12731v2"
+        },
+        "tactile-paper": {
+          "title": "Tactile SoftHand-A · 作者说明的 BPI / Pisa-IIT 基础",
+          "url": "https://doi.org/10.1177/02783649251379516"
+        },
+        "qb": {
+          "title": "qbSoftHand 2 Research · 官方介绍",
+          "url": "https://qbrobotics.com/product/qb-softhand-2-research/"
+        }
+      },
+      "milestones": [
+        {
+          "id": "pisa-iit-softhand",
+          "hand_id": "pisa-iit-softhand",
+          "name": "Pisa/IIT SoftHand",
+          "kind": "已收录型号",
+          "date": "2014",
+          "date_relation": "on",
+          "date_label": "2014 · 论文",
+          "date_basis": "采用本档案机械设计所依据的 Adaptive Synergies 硬件论文正式期刊年份 2014；不宣称此前没有原型或实验。",
+          "summary": "19 个机构自由度由 1 个电机驱动。",
+          "sources": [
+            "pisa-iit-softhand-date",
+            "pisa-iit-softhand-spec"
+          ]
+        },
+        {
+          "id": "qb-softhand-2-research",
+          "hand_id": "qb-softhand-2-research",
+          "name": "qbSoftHand 2 Research",
+          "kind": "已收录型号",
+          "date": "2023",
+          "date_relation": "by",
+          "date_label": "≤ 2023 · 公开资料",
+          "date_basis": "官方用户手册内页写明 JAN 17, 2023 / V1.0.2；该日期证明 Research 型号至迟当时已有资料，不等同产品首发。",
+          "summary": "19 个机构自由度，2 个电机 / 协同输入。",
+          "sources": [
+            "qb-softhand-2-research-date",
+            "qb-softhand-2-research-spec"
+          ]
+        },
+        {
+          "id": "bpi-softhand",
+          "hand_id": null,
+          "name": "BPI SoftHand",
+          "kind": "跨团队研究节点",
+          "date": "2022",
+          "date_relation": "on",
+          "date_label": "2022",
+          "date_basis": "来源记载的事件 / 论文年份",
+          "summary": "Tactile SoftHand-A 论文列出的直接硬件基础，沿用 Pisa/IIT SoftHand 的设计思想。",
+          "sources": [
+            "tactile-paper"
+          ],
+          "url": "https://doi.org/10.1177/02783649251379516"
+        },
+        {
+          "id": "tactile-softhand-a",
+          "hand_id": "tactile-softhand-a",
+          "name": "Tactile SoftHand-A",
+          "kind": "已收录型号",
+          "date": "2025",
+          "date_relation": "on",
+          "date_label": "2025 · 论文",
+          "date_basis": "此档案采用 2025-09-02 的 v2 硬件与触觉配置；预印本编号始于 2024，不将两个版本重复计为两款手。",
+          "summary": "五指、两台电机；拮抗腱索与差动结构实现主动张开/闭合和抓姿调整。",
+          "sources": [
+            "tactile-softhand-a-date",
+            "tactile-softhand-a-spec"
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "from": "pisa-iit-softhand",
+          "to": "qb-softhand-2-research",
+          "label": "协同欠驱动路线扩展",
+          "type": "branch",
+          "sources": [
+            "qb"
+          ]
+        },
+        {
+          "from": "pisa-iit-softhand",
+          "to": "bpi-softhand",
+          "label": "设计思想衍生",
+          "type": "branch",
+          "sources": [
+            "tactile-paper"
+          ]
+        },
+        {
+          "from": "bpi-softhand",
+          "to": "tactile-softhand-a",
+          "label": "触觉与控制扩展",
+          "type": "branch",
+          "sources": [
+            "tactile-paper"
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "title": "改变的是控制协同与接触反馈",
+          "scope": "事实取自下列来源；工程解释为本站分析，不等同于跨代实测结论。",
+          "before_label": "起点",
+          "after_label": "不同分支",
+          "rows": [
+            {
+              "dimension": "设计变化与取舍",
+              "before": "Pisa/IIT：单电机带动多关节协同。",
+              "after": "qbSoftHand 2：双驱动扩展协同；Tactile SoftHand-A：在另一衍生平台上加入触觉研究。",
+              "interpretation": "触觉扩展与增加驱动是两类不同的系统设计选择，不能以手名相近假定模型、控制器或性能可互换。",
+              "sources": [
+                "pisa-iit-softhand-spec",
+                "qb",
+                "tactile-paper"
+              ]
+            }
+          ]
+        }
+      ],
+      "ecosystem": [],
+      "summary_sources": [
+        "pisa-iit-softhand-date",
+        "pisa-iit-softhand-spec",
+        "qb-softhand-2-research-date",
+        "qb-softhand-2-research-spec",
+        "tactile-softhand-a-date",
+        "tactile-softhand-a-spec",
+        "tactile-paper",
+        "qb"
+      ]
+    },
+    {
+      "id": "brainco-family",
+      "organization": "强脑科技 · Revo",
+      "name": "强脑科技 · Revo · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "brainco-revo-1",
+        "brainco-revo-2",
+        "brainco-revo-3"
+      ],
+      "summary": "Revo 文档按 1、2、3 分别维护规格。系列中的关键变化是从少量驱动的耦合结构扩展到多关节独立驱动；不据此认定旧款停产。",
+      "open_questions": "Revo 3 的不同传感选配是同系列配置，不是额外代际；首发与交付时间仍按各型号时间依据理解。",
+      "status": "parallel",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "brainco-revo-1-date": {
+          "title": "官方 Revo 1 产品手册 · 基础机构 · 时间依据",
+          "url": "https://www.brainco-hz.com/docs/revolimb-hand/revo1/guide.html"
+        },
+        "brainco-revo-1-spec": {
+          "title": "BrainCo Revo 1 · 机构 / 版本依据",
+          "url": "https://www.brainco-hz.com/docs/revolimb-hand/revo1/parameters.html"
+        },
+        "brainco-revo-2-date": {
+          "title": "官方 Revo 2 产品手册 · 基础机构 · 时间依据",
+          "url": "https://www.brainco.cn/en-US/news/b6yv48d2gg4tm8glwobox21o"
+        },
+        "brainco-revo-2-spec": {
+          "title": "BrainCo Revo 2 · 机构 / 版本依据",
+          "url": "https://www.brainco-hz.com/docs/revolimb-hand/revo2/parameters.html"
+        },
+        "brainco-revo-3-date": {
+          "title": "官方 Revo 3 · U21 系列 · 时间依据",
+          "url": "https://www.brainco.cn/zh-CN/news"
+        },
+        "brainco-revo-3-spec": {
+          "title": "BrainCo Revo 3 · 机构 / 版本依据",
+          "url": "https://www.brainco-hz.com/docs/revolimb-hand/revo3/parameters.html"
+        }
+      },
+      "milestones": [
+        {
+          "id": "brainco-revo-1",
+          "hand_id": "brainco-revo-1",
+          "name": "BrainCo Revo 1",
+          "kind": "已收录型号",
+          "date": "2024",
+          "date_relation": "by",
+          "date_label": "≤ 2024 · 公开资料",
+          "date_basis": "Revo 1 上位机日志包含 2024-07-31 版本，故以 2024 为已公开上界，未据此认定首发日期。",
+          "summary": "五指共 10 个运动自由度，其中 6 个主动；四根长指末节随动，不能逐节独立设角。",
+          "sources": [
+            "brainco-revo-1-date",
+            "brainco-revo-1-spec"
+          ]
+        },
+        {
+          "id": "brainco-revo-2",
+          "hand_id": "brainco-revo-2",
+          "name": "BrainCo Revo 2",
+          "kind": "已收录型号",
+          "date": "2025",
+          "date_relation": "by",
+          "date_label": "≤ 2025 · 公开资料",
+          "date_basis": "官方 2025-12-18 文章明确介绍 Revo 2，故以 2025 为已公开上界，非确切上市日。",
+          "summary": "五指共 11 个运动自由度，其中 6 个主动；四根长指末节随动，不能逐节独立设角。",
+          "sources": [
+            "brainco-revo-2-date",
+            "brainco-revo-2-spec"
+          ]
+        },
+        {
+          "id": "brainco-revo-3",
+          "hand_id": "brainco-revo-3",
+          "name": "BrainCo Revo 3",
+          "kind": "已收录型号",
+          "date": "2026",
+          "date_relation": "on",
+          "date_label": "2026 · 公开资料",
+          "date_basis": "官方中文新闻列表将 Revo 3 发布列为 2026-04-09；参数取当前 U21 系列手册。",
+          "summary": "五指 21 个全主动关节、21 个独立电机；拇指 5 轴，其余四指各 4 轴。触觉因 SKU 而异。",
+          "sources": [
+            "brainco-revo-3-date",
+            "brainco-revo-3-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [
+        {
+          "title": "系列架构变化",
+          "scope": "事实取自下列来源；工程解释为本站分析，不等同于跨代实测结论。",
+          "before_label": "Revo 1 / 2",
+          "after_label": "Revo 3",
+          "rows": [
+            {
+              "dimension": "设计变化与取舍",
+              "before": "Revo 1 / 2：官方均列 6 个主动自由度，机械总数不同。",
+              "after": "Revo 3：官方列 21 个主动自由度。",
+              "interpretation": "独立控制变量增加有利于研究更丰富的接触动作，但也增加标定、控制和数据需求；尚无统一任务下的三代评测。",
+              "sources": [
+                "brainco-revo-1-spec",
+                "brainco-revo-2-spec",
+                "brainco-revo-3-spec"
+              ]
+            }
+          ]
+        }
+      ],
+      "ecosystem": [],
+      "summary_sources": [
+        "brainco-revo-1-date",
+        "brainco-revo-1-spec",
+        "brainco-revo-2-date",
+        "brainco-revo-2-spec",
+        "brainco-revo-3-date",
+        "brainco-revo-3-spec"
+      ]
+    },
+    {
+      "id": "shadow-family",
+      "organization": "Shadow Robot",
+      "name": "Shadow Robot · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "shadow-hand"
+      ],
+      "summary": "Classic 五指手有多年电驱规格记录。DEX-EE / DEXEE 是同公司的另一条科研硬件路线，不能把它的三指结构和性能移植到 Classic。",
+      "open_questions": "2013 与 2024 是规格书记录，不足以单独证明一次完整换代；早期气动原型到当前电驱产品的逐版变化表仍待补齐。",
+      "status": "parallel",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "shadow-hand-date": {
+          "title": "Shadow E1 官方规格书（镜像），封面 Release",
+          "url": "https://mindtrans.narod.ru/pdfs/shadow_dexterous_hand_technical_specification_E1_20130101.pdf"
+        },
+        "shadow-hand-spec": {
+          "title": "Shadow Dexterous Hand（Classic 五指版） · 机构 / 版本依据",
+          "url": "https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf"
+        },
+        "dexee": {
+          "title": "Shadow · DEX-EE 官方产品路线",
+          "url": "https://shadowrobot.com/dex-ee_series/"
+        }
+      },
+      "milestones": [
+        {
+          "id": "shadow-hand",
+          "hand_id": "shadow-hand",
+          "name": "Shadow Dexterous Hand（Classic 五指版）",
+          "kind": "已收录型号",
+          "date": "2013",
+          "date_relation": "by",
+          "date_label": "≤ 2013 · 公开资料",
+          "date_basis": "E1 系列规格书发布日期为 2013-01-01，证明经典五指平台至迟当时已有公开资料；不是 2024 规格配置的首发年份，也不混用早期气动手的首发时间。",
+          "summary": "20 路独立运动，24 个可动关节；总数包含腕部。",
+          "sources": [
+            "shadow-hand-date",
+            "shadow-hand-spec"
+          ]
+        },
+        {
+          "id": "shadow-dexee",
+          "hand_id": null,
+          "name": "DEX-EE / DEXEE",
+          "kind": "同公司另一产品线",
+          "date": "",
+          "date_relation": "unknown",
+          "date_label": "公开日期待核实",
+          "date_basis": "仅确认记录存在，未确认首发时间",
+          "summary": "与 Classic 区分的科研产品分支，面向机器学习与耐用操作研究。",
+          "sources": [
+            "dexee"
+          ],
+          "url": "https://shadowrobot.com/dex-ee_series/"
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [
+        {
+          "date": "2024 · 文档",
+          "text": "当前 Classic 参数采用 2024 年电驱规格书；旧 E1 文档仅用于确认历史公开记录，不能证明两份文件的配置完全相同。",
+          "sources": [
+            "shadow-hand-spec",
+            "shadow-hand-date"
+          ]
+        }
+      ],
+      "summary_sources": [
+        "shadow-hand-date",
+        "shadow-hand-spec",
+        "dexee"
+      ]
+    },
+    {
+      "id": "orca-family",
+      "organization": "ORCA 项目组",
+      "name": "ORCA 项目组 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "orca-hand"
+      ],
+      "summary": "官方模型仓库分别维护 v1 与 v2，并把 v1 标为旧版。本站 ORCA 条目仍对应 IROS 2025 的 v1，不能自动替换成最新模型。",
+      "open_questions": "仓库确认版本区别，但不足以确定 v2 首发日或给出完整跨代机械差异。extended 表示附加组件模型，不是第三代手。",
+      "status": "lineage",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "orca-hand-date": {
+          "title": "ORCA · 硬件论文 2025",
+          "url": "https://arxiv.org/abs/2504.04259"
+        },
+        "orca-hand-spec": {
+          "title": "ORCA v1 · 机构 / 版本依据",
+          "url": "https://www.orcahand.com/publications/ORCA_IROS_2025.pdf"
+        },
+        "models": {
+          "title": "ORCA 官方描述仓库 · v1 / v2",
+          "url": "https://github.com/orcahand/orcahand_description"
+        }
+      },
+      "milestones": [
+        {
+          "id": "orca-hand",
+          "hand_id": "orca-hand",
+          "name": "ORCA v1",
+          "kind": "已收录型号",
+          "date": "2025",
+          "date_relation": "on",
+          "date_label": "2025 · 论文",
+          "date_basis": "采用介绍 ORCA v1 的 2025 年作者论文；同年发表于 IROS，不与后续 v2 混用。",
+          "summary": "手指 16 主动轴，另有腕 1 轴；整套 17。",
+          "sources": [
+            "orca-hand-date",
+            "orca-hand-spec"
+          ]
+        },
+        {
+          "id": "orca-v2",
+          "hand_id": null,
+          "name": "ORCA v2 · 模型版本",
+          "kind": "后续版本记录",
+          "date": "",
+          "date_relation": "unknown",
+          "date_label": "公开日期待核实",
+          "date_basis": "仅确认记录存在，未确认首发时间",
+          "summary": "仓库列为新版 Fusion360 导出的 URDF / MJCF；与 v1 分目录维护。",
+          "sources": [
+            "models"
+          ],
+          "url": "https://github.com/orcahand/orcahand_description"
+        }
+      ],
+      "relationships": [
+        {
+          "from": "orca-hand",
+          "to": "orca-v2",
+          "label": "仓库明确区分旧版与新版",
+          "type": "revision",
+          "sources": [
+            "models"
+          ]
+        }
+      ],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "orca-hand-date",
+        "orca-hand-spec",
+        "models"
+      ]
+    },
+    {
+      "id": "isyhand-family",
+      "organization": "MPI-IS / University of Augsburg",
+      "name": "MPI-IS / University of Augsburg · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "isyhand-v6"
+      ],
+      "summary": "作者网站明确指出 ICRA 2025 的 v2 是旧版，Humanoids 2025 的 v6 是当前版本，并提醒二者不可互换。",
+      "open_questions": "未取得 v3、v4、v5 的独立公开版本记录，不按编号补出节点。固定掌部对照实验不是另一代产品。",
+      "status": "lineage",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "isyhand-v6-date": {
+          "title": "Humanoids 2025 · 时间依据",
+          "url": "https://arxiv.org/html/2509.26236v1"
+        },
+        "isyhand-v6-spec": {
+          "title": "ISyHand v6 · 机构 / 版本依据",
+          "url": "https://arxiv.org/html/2509.26236v1"
+        },
+        "versions": {
+          "title": "ISyHand 官方 · Version Information",
+          "url": "https://isyhand.is.mpg.de/"
+        }
+      },
+      "milestones": [
+        {
+          "id": "isyhand-v2",
+          "hand_id": null,
+          "name": "ISyHand v2",
+          "kind": "历史型号 / 外部资料",
+          "date": "2025 · ICRA",
+          "date_relation": "on",
+          "date_label": "2025 · ICRA",
+          "date_basis": "来源记载的事件 / 论文年份",
+          "summary": "作者保留 v2 与 v6 两套 URDF；旧版对应视触觉物体位姿估计研究。",
+          "sources": [
+            "versions"
+          ],
+          "url": "https://isyhand.is.mpg.de/"
+        },
+        {
+          "id": "isyhand-v6",
+          "hand_id": "isyhand-v6",
+          "name": "ISyHand v6",
+          "kind": "已收录型号",
+          "date": "2025",
+          "date_relation": "on",
+          "date_label": "2025 · 论文",
+          "date_basis": "采用 Humanoids 2025 的 2025 年发表记录；不是商业上市日期。",
+          "summary": "四指共 16 个主动关节，另有 2 个主动掌部关节；整手 18 主动自由度，由 18 个舵机驱动。不是 ICRA 2025 的 v2。",
+          "sources": [
+            "isyhand-v6-date",
+            "isyhand-v6-spec"
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "from": "isyhand-v2",
+          "to": "isyhand-v6",
+          "label": "作者确认版本延续，模型不可互换",
+          "type": "revision",
+          "sources": [
+            "versions"
+          ]
+        }
+      ],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "isyhand-v6-date",
+        "isyhand-v6-spec",
+        "versions"
+      ]
+    },
+    {
+      "id": "bidex-family",
+      "organization": "BiDexHand · 作者开源项目",
+      "name": "BiDexHand · 作者开源项目 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "bidexhand-v4"
+      ],
+      "summary": "V4 README 明确列出硬件和控制更新，也保留 V3 总线版本的使用入口；版本变化同时涉及机构与控制板。",
+      "open_questions": "2025 论文不自动等于当前 V4 的发布日期。尚未核清 V1、V2 的完整版本年表。",
+      "status": "lineage",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "bidexhand-v4-date": {
+          "title": "官方 V4 开源资料 · 时间依据",
+          "url": "https://github.com/wengmister/BiDexHand"
+        },
+        "bidexhand-v4-spec": {
+          "title": "BiDexHand V4 · 机构 / 版本依据",
+          "url": "https://github.com/wengmister/BiDexHand"
+        }
+      },
+      "milestones": [
+        {
+          "id": "bidex-v3",
+          "hand_id": null,
+          "name": "BiDexHand V3",
+          "kind": "旧版兼容入口",
+          "date": "",
+          "date_relation": "unknown",
+          "date_label": "公开日期待核实",
+          "date_basis": "仅确认记录存在，未确认首发时间",
+          "summary": "V4 README 指向 V3 的 SCS 总线构建脚本。",
+          "sources": [
+            "bidexhand-v4-spec"
+          ],
+          "url": "https://github.com/wengmister/BiDexHand"
+        },
+        {
+          "id": "bidexhand-v4",
+          "hand_id": "bidexhand-v4",
+          "name": "BiDexHand V4",
+          "kind": "已收录型号",
+          "date": "2026",
+          "date_relation": "by",
+          "date_label": "≤ 2026 · 公开资料",
+          "date_basis": "截至 2026-10-02 的作者 README 明确为 V4；2025 论文年份只表示项目论文，不能直接当作 V4 首发。",
+          "summary": "五指 16 主动自由度：四根长指各 3，拇指 4；长指 DIP 随 PIP 耦合，不额外计为主动轴。",
+          "sources": [
+            "bidexhand-v4-date",
+            "bidexhand-v4-spec"
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "from": "bidex-v3",
+          "to": "bidexhand-v4",
+          "label": "作者列出的 V4 更新",
+          "type": "revision",
+          "sources": [
+            "bidexhand-v4-spec"
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "title": "机构与控制板一同修订",
+          "scope": "事实取自下列来源；工程解释为本站分析，不等同于跨代实测结论。",
+          "before_label": "V3 分支",
+          "after_label": "V4 当前仓库",
+          "rows": [
+            {
+              "dimension": "设计变化与取舍",
+              "before": "V3：保留总线舵机代码分支。",
+              "after": "V4：更新指骨设计、加入舵机标定、统一 FeeTech 舵机，并为 PWM 版采用 Servo2040。",
+              "interpretation": "复现时须匹配 CAD、BOM 与控制代码；软件能够编译并不能证明与任一旧版电气接线兼容。",
+              "sources": [
+                "bidexhand-v4-spec"
+              ]
+            }
+          ]
+        }
+      ],
+      "ecosystem": [],
+      "summary_sources": [
+        "bidexhand-v4-date",
+        "bidexhand-v4-spec"
+      ]
+    },
+    {
+      "id": "dash-family",
+      "organization": "DASH · 作者研究平台",
+      "name": "DASH · 作者研究平台 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "dash-hand"
+      ],
+      "summary": "DASH 的五轮迭代发生在同一研究中：先改善手指可达性，再调整指尖与拇指，最后平衡刚度和屈曲范围。它不是五个年度商品型号。",
+      "open_questions": "实验为特定遥操作任务集。v4 的力量改善伴随部分动作受限，说明迭代并不保证每项指标单调提高。",
+      "status": "lineage",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "dash-hand-date": {
+          "title": "IEEE-RAS Humanoids · 时间依据",
+          "url": "https://arxiv.org/html/2306.04784v3"
+        },
+        "dash-hand-spec": {
+          "title": "DASH Hand · 机构 / 版本依据",
+          "url": "https://arxiv.org/html/2306.04784v3"
+        }
+      },
+      "milestones": [
+        {
+          "id": "dash-v1",
+          "hand_id": null,
+          "name": "DASH v1",
+          "kind": "论文内设计迭代",
+          "date": "",
+          "date_relation": "unknown",
+          "date_label": "第 1 轮 · 论文内迭代",
+          "date_basis": "论文记录设计顺序，未列每轮样机的独立公开日期。",
+          "summary": "初始四指柔性设计，较大手掌限制部分精细对指。",
+          "sources": [
+            "dash-hand-spec"
+          ],
+          "url": "https://arxiv.org/html/2306.04784v3"
+        },
+        {
+          "id": "dash-v2",
+          "hand_id": null,
+          "name": "DASH v2",
+          "kind": "论文内设计迭代",
+          "date": "",
+          "date_relation": "unknown",
+          "date_label": "第 2 轮 · 论文内迭代",
+          "date_basis": "论文记录设计顺序，未列每轮样机的独立公开日期。",
+          "summary": "缩小手掌、加长手指并修改 MCP 柔性关节，改善指尖相互可达性。",
+          "sources": [
+            "dash-hand-spec"
+          ],
+          "url": "https://arxiv.org/html/2306.04784v3"
+        },
+        {
+          "id": "dash-v3",
+          "hand_id": null,
+          "name": "DASH v3",
+          "kind": "论文内设计迭代",
+          "date": "",
+          "date_relation": "unknown",
+          "date_label": "第 3 轮 · 论文内迭代",
+          "date_basis": "论文记录设计顺序，未列每轮样机的独立公开日期。",
+          "summary": "调整拇指位置并削薄指尖，改善薄物体接触，但力量存在代价。",
+          "sources": [
+            "dash-hand-spec"
+          ],
+          "url": "https://arxiv.org/html/2306.04784v3"
+        },
+        {
+          "id": "dash-v4",
+          "hand_id": null,
+          "name": "DASH v4",
+          "kind": "论文内设计迭代",
+          "date": "",
+          "date_relation": "unknown",
+          "date_label": "第 4 轮 · 论文内迭代",
+          "date_basis": "论文记录设计顺序，未列每轮样机的独立公开日期。",
+          "summary": "加粗 MCP 结构以提高刚度，屈曲范围受到限制。",
+          "sources": [
+            "dash-hand-spec"
+          ],
+          "url": "https://arxiv.org/html/2306.04784v3"
+        },
+        {
+          "id": "dash-v5",
+          "hand_id": "dash-hand",
+          "name": "DASH v5",
+          "kind": "论文最终迭代",
+          "date": "",
+          "date_relation": "unknown",
+          "date_label": "第 5 轮 · 论文内迭代",
+          "date_basis": "论文记录设计顺序，未列每轮样机的独立公开日期。",
+          "summary": "重新平衡 MCP 与指尖柔顺性；保留 v4 电机组件，扩大屈曲能力。",
+          "sources": [
+            "dash-hand-date",
+            "dash-hand-spec"
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "from": "dash-v1",
+          "to": "dash-v2",
+          "label": "实验反馈驱动的下一轮设计",
+          "type": "revision",
+          "sources": [
+            "dash-hand-spec"
+          ]
+        },
+        {
+          "from": "dash-v2",
+          "to": "dash-v3",
+          "label": "实验反馈驱动的下一轮设计",
+          "type": "revision",
+          "sources": [
+            "dash-hand-spec"
+          ]
+        },
+        {
+          "from": "dash-v3",
+          "to": "dash-v4",
+          "label": "实验反馈驱动的下一轮设计",
+          "type": "revision",
+          "sources": [
+            "dash-hand-spec"
+          ]
+        },
+        {
+          "from": "dash-v4",
+          "to": "dash-v5",
+          "label": "实验反馈驱动的下一轮设计",
+          "type": "revision",
+          "sources": [
+            "dash-hand-spec"
+          ]
+        }
+      ],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "dash-hand-date",
+        "dash-hand-spec"
+      ]
+    },
+    {
+      "id": "festo-family",
+      "organization": "Festo · Bionic Learning Network",
+      "name": "Festo · Bionic Learning Network · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "festo-bionicsofthand"
+      ],
+      "summary": "2019 BionicSoftHand 之后，Festo 在 2020 年介绍 BionicSoftHand 2.0，并将其集成到 BionicMobileAssistant。",
+      "open_questions": "整机演示、腕部与手本体的自由度边界不同；不能把移动机器人系统的能力都归于手部升级。",
+      "status": "lineage",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "festo-bionicsofthand-date": {
+          "title": "Festo · BionicSoftHand 公开展示回顾",
+          "url": "https://press.festo.com/en/node/2709?country_code=ch"
+        },
+        "festo-bionicsofthand-spec": {
+          "title": "Festo BionicSoftHand · 机构 / 版本依据",
+          "url": "https://media.festo.com/media/113649_documentation.pdf"
+        },
+        "v2": {
+          "title": "Festo · 2020 BionicSoftHand 2.0 公告",
+          "url": "https://press.festo.com/index.php/en-gb/bionics-1/festo-gives-the-future-of-safe-automation-a-hand"
+        }
+      },
+      "milestones": [
+        {
+          "id": "festo-bionicsofthand",
+          "hand_id": "festo-bionicsofthand",
+          "name": "Festo BionicSoftHand",
+          "kind": "已收录型号",
+          "date": "2019",
+          "date_relation": "on",
+          "date_label": "2019 · 公开展示",
+          "date_basis": "Festo 官方说明第一代 BionicSoftHand 在 2019 年国际新闻发布会上公开；不与 2020 年 BionicSoftHand 2.0 混淆。",
+          "summary": "12 个气动运动维度；24 个比例阀不是 24 个关节。",
+          "sources": [
+            "festo-bionicsofthand-date",
+            "festo-bionicsofthand-spec"
+          ]
+        },
+        {
+          "id": "festo-2",
+          "hand_id": null,
+          "name": "BionicSoftHand 2.0",
+          "kind": "历史型号 / 外部资料",
+          "date": "2020",
+          "date_relation": "on",
+          "date_label": "2020",
+          "date_basis": "来源记载的事件 / 论文年份",
+          "summary": "官方介绍后续仿生手与移动操作系统的集成。",
+          "sources": [
+            "v2"
+          ],
+          "url": "https://press.festo.com/index.php/en-gb/bionics-1/festo-gives-the-future-of-safe-automation-a-hand"
+        }
+      ],
+      "relationships": [
+        {
+          "from": "festo-bionicsofthand",
+          "to": "festo-2",
+          "label": "官方后续版本",
+          "type": "generation",
+          "sources": [
+            "v2"
+          ]
+        }
+      ],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "festo-bionicsofthand-date",
+        "festo-bionicsofthand-spec",
+        "v2"
+      ]
+    },
+    {
+      "id": "robonaut-family",
+      "organization": "NASA / General Motors",
+      "name": "NASA / General Motors · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "nasa-robonaut-2-hand"
+      ],
+      "summary": "NASA 明确记录 Robonaut 1 到 Robonaut 2 的系统延续。手部演进应放在前臂驱动、上肢与任务系统中理解。",
+      "open_questions": "R2 进入空间站的时间是系统部署事件，不是另一代手的发布日期；R1 / R2 的裸手参数还需同口径对照。",
+      "status": "lineage",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "nasa-robonaut-2-hand-date": {
+          "title": "NASA Robonaut 2 · 官方历史资料",
+          "url": "https://www.nasa.gov/wp-content/uploads/2016/09/robonaut2_508.pdf"
+        },
+        "nasa-robonaut-2-hand-spec": {
+          "title": "NASA Robonaut 2 · 机构 / 版本依据",
+          "url": "https://ntrs.nasa.gov/api/citations/20110023122/downloads/20110023122.pdf"
+        },
+        "nasa-history": {
+          "title": "NASA · What is a Robonaut?",
+          "url": "https://www.nasa.gov/robonaut2/what-is-a-robonaut/"
+        }
+      },
+      "milestones": [
+        {
+          "id": "robonaut-1",
+          "hand_id": null,
+          "name": "Robonaut 1 · 手臂系统",
+          "kind": "前代系统",
+          "date": "",
+          "date_relation": "unknown",
+          "date_label": "公开日期待核实",
+          "date_basis": "仅确认记录存在，未确认首发时间",
+          "summary": "NASA 将 R1 列为 R2 的前身。此节点只确认系统继承关系。",
+          "sources": [
+            "nasa-history"
+          ],
+          "url": "https://www.nasa.gov/robonaut2/what-is-a-robonaut/"
+        },
+        {
+          "id": "nasa-robonaut-2-hand",
+          "hand_id": "nasa-robonaut-2-hand",
+          "name": "NASA Robonaut 2",
+          "kind": "已收录型号",
+          "date": "2010",
+          "date_relation": "on",
+          "date_label": "2010 · 公开展示",
+          "date_basis": "NASA 官方历史明确记载 R2 于 2010 年 2 月公开。手部设计报告另有 2011 元数据和 ICRA 2012 会议记录，此处采用整机携该手的公开展示年。",
+          "summary": "论文总述为手 12 DoF + 腕 2 DoF；不要把可动关节、腱索和独立控制数混加。",
+          "sources": [
+            "nasa-robonaut-2-hand-date",
+            "nasa-robonaut-2-hand-spec"
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "from": "robonaut-1",
+          "to": "nasa-robonaut-2-hand",
+          "label": "系统后继中的手部研发",
+          "type": "generation",
+          "sources": [
+            "nasa-history"
+          ]
+        }
+      ],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "nasa-robonaut-2-hand-date",
+        "nasa-robonaut-2-hand-spec",
+        "nasa-history"
+      ]
+    },
+    {
+      "id": "barrett-family",
+      "organization": "Barrett Technology",
+      "name": "Barrett Technology · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "barrett-bh8-280"
+      ],
+      "summary": "官方控制指南同时区分 BH8-262 与 BH8-280；可确认接口演变，但不把驱动软件的新版本当作新手。",
+      "open_questions": "尚未建立两款的完整首发年表与机械变化表。当前可直接比较的证据主要是通信接口，因此暂不画直接继承箭头。",
+      "status": "parallel",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "barrett-bh8-280-date": {
+          "title": "Robotnik / Barrett · HRI 2011 展示公告",
+          "url": "https://robotnik.eu/robotnik-will-be-attending-hri/"
+        },
+        "barrett-bh8-280-spec": {
+          "title": "Barrett BH8-280 · 机构 / 版本依据",
+          "url": "https://web.barrett.com/support/BarrettHand_Documentation/BH8-280_Datasheet.pdf"
+        },
+        "guide": {
+          "title": "Barrett · BHControl Quick Start Guide",
+          "url": "https://web.barrett.com/support/BarrettHand_Documentation/BHControl_QuickStart_Guide.pdf"
+        }
+      },
+      "milestones": [
+        {
+          "id": "barrett-bh8-280",
+          "hand_id": "barrett-bh8-280",
+          "name": "Barrett BH8-280",
+          "kind": "已收录型号",
+          "date": "2011",
+          "date_relation": "on",
+          "date_label": "2011 · 公开展示",
+          "date_basis": "Robotnik 作为联合参展方于 2011-02-17 公告将与 Barrett 在 HRI 2011 展示新 BH8-280；型号与旧 BH8-262 区分。",
+          "summary": "三指四个驱动：每指闭合一路，另外一路调节展指。",
+          "sources": [
+            "barrett-bh8-280-date",
+            "barrett-bh8-280-spec"
+          ]
+        },
+        {
+          "id": "barrett-262",
+          "hand_id": null,
+          "name": "Barrett BH8-262",
+          "kind": "历史硬件版本",
+          "date": "",
+          "date_relation": "unknown",
+          "date_label": "公开日期待核实",
+          "date_basis": "仅确认记录存在，未确认首发时间",
+          "summary": "控制指南列为 RS-232 接入；BH8-280 还支持 CAN。",
+          "sources": [
+            "guide"
+          ],
+          "url": "https://web.barrett.com/support/BarrettHand_Documentation/BHControl_QuickStart_Guide.pdf"
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "barrett-bh8-280-date",
+        "barrett-bh8-280-spec",
+        "guide"
+      ]
+    },
+    {
+      "id": "ilda-family",
+      "organization": "ILDA 与跨团队衍生",
+      "name": "ILDA 与跨团队衍生 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "ilda-hand"
+      ],
+      "summary": "Pollen Robotics 的 Amazing Hand 公开说明借鉴并简化 ILDA 的机构思想。这是可追溯的跨团队衍生，不是 ILDA 原团队的下一代。",
+      "open_questions": "继承机构思想不等于继承 ILDA 的精度、载荷与实验结果；两种执行器和结构必须分别评价。",
+      "status": "lineage",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "ilda-hand-date": {
+          "title": "Nature Communications · 时间依据",
+          "url": "https://www.nature.com/articles/s41467-021-27261-0"
+        },
+        "ilda-hand-spec": {
+          "title": "ILDA Hand · 机构 / 版本依据",
+          "url": "https://www.nature.com/articles/s41467-021-27261-0"
+        },
+        "amazing": {
+          "title": "Pollen Robotics · Amazing Hand 设计来源",
+          "url": "https://huggingface.co/blog/pollen-robotics/amazing-hand"
+        }
+      },
+      "milestones": [
+        {
+          "id": "ilda-hand",
+          "hand_id": "ilda-hand",
+          "name": "ILDA Hand",
+          "kind": "已收录型号",
+          "date": "2021",
+          "date_relation": "on",
+          "date_label": "2021 · 论文",
+          "date_basis": "采用 Nature Communications 的 2021 年发表记录；不是商业上市日期。",
+          "summary": "五指共 15 个主动自由度、20 个关节；每指 3 个独立运动。",
+          "sources": [
+            "ilda-hand-date",
+            "ilda-hand-spec"
+          ]
+        },
+        {
+          "id": "amazing-hand",
+          "hand_id": null,
+          "name": "Amazing Hand",
+          "kind": "跨团队技术衍生",
+          "date": "2025",
+          "date_relation": "on",
+          "date_label": "2025",
+          "date_basis": "来源记载的事件 / 论文年份",
+          "summary": "作者明确以 ILDA 为主要灵感，将方案简化为四指、每指两个舵机的低成本手。",
+          "sources": [
+            "amazing"
+          ],
+          "url": "https://huggingface.co/blog/pollen-robotics/amazing-hand"
+        }
+      ],
+      "relationships": [
+        {
+          "from": "ilda-hand",
+          "to": "amazing-hand",
+          "label": "作者确认的设计借鉴",
+          "type": "branch",
+          "sources": [
+            "amazing"
+          ]
+        }
+      ],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "ilda-hand-date",
+        "ilda-hand-spec",
+        "amazing"
+      ]
+    },
+    {
+      "id": "unitree-family",
+      "organization": "Unitree · 宇树科技",
+      "name": "Unitree · 宇树科技 · 产品脉络",
+      "reviewed_on": "2026-10-04",
+      "member_ids": [
+        "unitree-dex3-1",
+        "unitree-dex2-5",
+        "unitree-dex5-1",
+        "unitree-dex5-s"
+      ],
+      "summary": "官网公开三指 Dex3-1、两输入五指 Dex2/5、16 主动加 4 耦合的 Dex5-1，以及 22 全主动的 Dex5-S；这是不同构型，不按编号连成代际。",
+      "open_questions": "Dex5 历史发布名称与 Dex5-1 的修订对应仍待确认；尚未核实独立 Dex4 型号。各型号的 SDK、轴序和触觉配置分别检查。",
+      "status": "parallel",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "unitree-dex3-1-date": {
+          "title": "Unitree · Dex3-1 安装说明",
+          "url": "https://www.unitree.com/images/G1-Flagship%20Version%20A%26B%20Terminal%20Three-Fingered%20Dexterous%20Hand%20Dex3-1%20Disassembly%20and%20Assembly%20Guide%20Manual%20V1.1.pdf"
+        },
+        "unitree-dex3-1-spec": {
+          "title": "Unitree Dex3-1 · 机构 / 版本依据",
+          "url": "https://www.unitree.com/Dex3-1/"
+        },
+        "dex5": {
+          "title": "Unitree Dex5-1 · 官方规格",
+          "url": "https://www.unitree.com/Dex5-1/"
+        },
+        "unitree-dex2-5-spec": {
+          "title": "官方 Dex2/5 产品规格",
+          "url": "https://www.unitree.com/Dex2-5/"
+        },
+        "unitree-dex5-1-spec": {
+          "title": "官方 Dex5-1 / Dex5-1P 产品规格",
+          "url": "https://www.unitree.com/Dex5-1/"
+        },
+        "unitree-dex5-s-spec": {
+          "title": "官方 Dex5-S / Dex5-S Pro 产品规格",
+          "url": "https://www.unitree.com/Dex5-S/"
+        },
+        "dex1-gripper": {
+          "title": "官方 Dex1-1 · Gripper 标准 / 相机版本",
+          "url": "https://www.unitree.com/Dex1-1/"
+        }
+      },
+      "milestones": [
+        {
+          "id": "unitree-dex3-1",
+          "hand_id": "unitree-dex3-1",
+          "name": "Unitree Dex3-1",
+          "kind": "已收录型号",
+          "date": "2024",
+          "date_relation": "by",
+          "date_label": "≤ 2024 · 公开资料",
+          "date_basis": "宇树 Dex3-1 安装说明明确使用该型号并标注 ©2024；按有年份的厂商资料定位，不宣称精确上市日期。",
+          "summary": "三指，7 个主动自由度。",
+          "sources": [
+            "unitree-dex3-1-date",
+            "unitree-dex3-1-spec"
+          ]
+        },
+        {
+          "id": "unitree-dex2-5",
+          "hand_id": "unitree-dex2-5",
+          "name": "Unitree Dex2/5",
+          "kind": "已收录并行构型",
+          "date": "2026",
+          "date_relation": "by",
+          "date_label": "≤ 2026 · 公开资料",
+          "date_basis": "截至 2026-10-04 官方已公开本型号产品页，地图采用 2026 作为已公开上界；未确认首次发布日。Dex2/5 是官网完整型号，不拆为 Dex2 和 Dex5。",
+          "summary": "五指共 10 个运动自由度，只有 2 路独立驱动：拇指一路，另外四指共享一路。不能把 10 当作主动控制轴数。",
+          "sources": [
+            "unitree-dex2-5-spec"
+          ]
+        },
+        {
+          "id": "unitree-dex5-1",
+          "hand_id": "unitree-dex5-1",
+          "name": "Unitree Dex5-1",
+          "kind": "已收录并行构型",
+          "date": "2026",
+          "date_relation": "by",
+          "date_label": "≤ 2026 · 公开资料",
+          "date_basis": "当前官方型号为 Dex5-1。2025-03-31 官方发布视频标题为 Dex5、参数为 20（16+4）DOF；尚未取得名称变更与硬件修订对应文件，因此本型号采用 ≤2026 公开上界，不把视频日期直接当 Dex5-1 首发。",
+          "summary": "五指共 20 个运动自由度，其中 16 主动、4 耦合：拇指 4 主动，四根长指各 3 主动加 1 个随动末节。",
+          "sources": [
+            "unitree-dex5-1-spec"
+          ]
+        },
+        {
+          "id": "unitree-dex5-s",
+          "hand_id": "unitree-dex5-s",
+          "name": "Unitree Dex5-S",
+          "kind": "已收录并行构型",
+          "date": "2026",
+          "date_relation": "by",
+          "date_label": "≤ 2026 · 公开资料",
+          "date_basis": "截至 2026-10-04 官方已公开 Dex5-S 产品页，地图采用 ≤2026 已公开上界；本轮没有把媒体发布时间当作已核实首发日。",
+          "summary": "五指、22 个主动自由度和 22 个电机；拇指及小指各 5，食指、中指、无名指各 4。",
+          "sources": [
+            "unitree-dex5-s-spec"
+          ]
+        },
+        {
+          "id": "unitree-dex1-1-excluded",
+          "hand_id": null,
+          "name": "Unitree Dex1-1 · 夹爪",
+          "kind": "范围外相关末端",
+          "date": "2026",
+          "date_relation": "by",
+          "date_label": "≤ 2026 · 官网核验",
+          "date_basis": "2026-10-04 官网已列本产品；不是确定首发日。",
+          "summary": "平行夹爪，非本地图收录的多指灵巧手；保留官方入口说明排除原因。",
+          "sources": [
+            "dex1-gripper"
+          ],
+          "url": "https://www.unitree.com/Dex1-1/"
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "unitree-dex3-1-spec",
+        "unitree-dex2-5-spec",
+        "unitree-dex5-1-spec",
+        "unitree-dex5-s-spec"
+      ]
+    },
+    {
+      "id": "sharpa-family",
+      "organization": "Sharpa",
+      "name": "Sharpa · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "sharpa-w01"
+      ],
+      "summary": "官方咨询页面已同时列出 Wave W01 与 Wave W02，确认存在另一型号线索；目前尚不足以完成逐项代际比较。",
+      "open_questions": "没有把新闻中的 W02 参数或 NVIDIA 整机集成结果回填到 W01。还需 W02 的正式规格、版本说明与交付边界。",
+      "status": "parallel",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "sharpa-w01-date": {
+          "title": "Sharpa · SharpaWave 量产公告",
+          "url": "https://www.prnewswire.com/news-releases/ai-robotmaker-sharpa-reaches-key-milestone-with-mass-production-of-worlds-most-advanced-human-sized-robotic-hand-302643434.html"
+        },
+        "sharpa-w01-spec": {
+          "title": "Sharpa W01 · 机构 / 版本依据",
+          "url": "https://www.sharpa.com/pages/w01"
+        },
+        "contact": {
+          "title": "Sharpa 官方 · 型号选项",
+          "url": "https://www.sharpa.com/pages/contact"
+        }
+      },
+      "milestones": [
+        {
+          "id": "sharpa-w01",
+          "hand_id": "sharpa-w01",
+          "name": "Sharpa W01",
+          "kind": "已收录型号",
+          "date": "2025",
+          "date_relation": "on",
+          "date_label": "2025 · 产品公告",
+          "date_basis": "Sharpa 署名新闻稿于 2025-12-16 宣布 SharpaWave 量产；W01 官方页将产品称为 Wave。这里表示量产公开里程碑，非宣称首次原型出现。",
+          "summary": "厂商列 22 主动自由度 / 22 关节模组。",
+          "sources": [
+            "sharpa-w01-date",
+            "sharpa-w01-spec"
+          ]
+        },
+        {
+          "id": "sharpa-w02",
+          "hand_id": null,
+          "name": "Sharpa Wave W02",
+          "kind": "型号存在，关系待核实",
+          "date": "",
+          "date_relation": "unknown",
+          "date_label": "公开日期待核实",
+          "date_basis": "仅确认记录存在，未确认首发时间",
+          "summary": "官方表单确认型号名称；本轮未取得可核验的完整参数变化表。",
+          "sources": [
+            "contact"
+          ],
+          "url": "https://www.sharpa.com/pages/contact"
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "sharpa-w01-date",
+        "sharpa-w01-spec",
+        "contact"
+      ]
+    },
+    {
+      "id": "prensilia-family",
+      "organization": "Prensilia",
+      "name": "Prensilia · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "prensilia-ih2-azzurra"
+      ],
+      "summary": "公司年表记载 IH2 Azzurra 于 2011 年推出；当前资源中心同时维护 IH2 与 Mia Hand，属于延续中的多产品布局。",
+      "open_questions": "Mia 的假肢、工业与研发版本不能合并为 IH2 的统一下一代。2014 规格书日期也不是 IH2 首发年。",
+      "status": "parallel",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "prensilia-ih2-azzurra-date": {
+          "title": "Prensilia 官方公司年表 · 2011 IH2 Azzurra",
+          "url": "https://www.prensilia.com/it/chi-siamo/"
+        },
+        "prensilia-ih2-azzurra-spec": {
+          "title": "Prensilia IH2 Azzurra · 机构 / 版本依据",
+          "url": "https://www.prensilia.com/wp-content/uploads/support/doc/DS_IH2_v03.pdf"
+        },
+        "history": {
+          "title": "Prensilia · 公司年表（2011）",
+          "url": "https://www.prensilia.com/it/chi-siamo/"
+        },
+        "downloads": {
+          "title": "Prensilia · IH2 与 Mia 独立资源",
+          "url": "https://www.prensilia.com/it/download/"
+        }
+      },
+      "milestones": [
+        {
+          "id": "prensilia-ih2-azzurra",
+          "hand_id": "prensilia-ih2-azzurra",
+          "name": "Prensilia IH2 Azzurra",
+          "kind": "已收录型号",
+          "date": "2011",
+          "date_relation": "on",
+          "date_label": "2011 · 官方发布年表",
+          "date_basis": "官方公司年表明确记载 IH2 Azzurra 于 2011 年推出。",
+          "summary": "11 个机构自由度与 5 个驱动输入。",
+          "sources": [
+            "history",
+            "prensilia-ih2-azzurra-spec"
+          ]
+        },
+        {
+          "id": "mia-family",
+          "hand_id": null,
+          "name": "Mia Hand · 产品族",
+          "kind": "同公司另一产品族",
+          "date": "",
+          "date_relation": "unknown",
+          "date_label": "公开日期待核实",
+          "date_basis": "仅确认记录存在，未确认首发时间",
+          "summary": "官方为 Mia 和 IH2 分别提供手册、软件及传感资料。",
+          "sources": [
+            "downloads"
+          ],
+          "url": "https://www.prensilia.com/it/download/"
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "prensilia-ih2-azzurra-date",
+        "prensilia-ih2-azzurra-spec",
+        "history",
+        "downloads"
+      ]
+    },
+    {
+      "id": "trifinger-family",
+      "organization": "Open Dynamic Robot Initiative",
+      "name": "Open Dynamic Robot Initiative · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "trifinger"
+      ],
+      "summary": "TriFinger 官方文档区分 Pro 与 Edu；这是同一研究平台的不同实现配置，不能只因版本名称不同认定为前后代。",
+      "open_questions": "TriFinger、Pro、Edu 的安装、相机和控制环境应对应具体文档；软件基准的新版本不等于手部硬件换代。",
+      "status": "parallel",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "trifinger-date": {
+          "title": "TriFinger · arXiv v1 提交记录",
+          "url": "https://arxiv.org/abs/2008.03596"
+        },
+        "trifinger-spec": {
+          "title": "TriFinger · 机构 / 版本依据",
+          "url": "https://proceedings.mlr.press/v155/wuthrich21a/wuthrich21a.pdf"
+        },
+        "docs": {
+          "title": "TriFinger 官方文档 · 平台配置",
+          "url": "https://open-dynamic-robot-initiative.github.io/trifinger_docs/"
+        }
+      },
+      "milestones": [
+        {
+          "id": "trifinger",
+          "hand_id": "trifinger",
+          "name": "TriFinger",
+          "kind": "已收录型号",
+          "date": "2020",
+          "date_relation": "on",
+          "date_label": "2020 · 论文",
+          "date_basis": "介绍 TriFinger 平台的作者预印本于 2020-08-08 首次提交；2021 是修订版时间。",
+          "summary": "三个相同的三关节手指，共 9 个主动轴。",
+          "sources": [
+            "trifinger-date",
+            "trifinger-spec"
+          ]
+        },
+        {
+          "id": "trifinger-pro-edu",
+          "hand_id": null,
+          "name": "TriFinger Pro / Edu",
+          "kind": "并行平台配置",
+          "date": "",
+          "date_relation": "unknown",
+          "date_label": "公开日期待核实",
+          "date_basis": "仅确认记录存在，未确认首发时间",
+          "summary": "官方文档分别说明平台配置与安装。",
+          "sources": [
+            "docs"
+          ],
+          "url": "https://open-dynamic-robot-initiative.github.io/trifinger_docs/"
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "trifinger-date",
+        "trifinger-spec",
+        "docs"
+      ]
+    },
+    {
+      "id": "robotera-family",
+      "organization": "星动纪元 · RobotEra",
+      "name": "星动纪元 · RobotEra · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "robotera-xhand1"
+      ],
+      "summary": "官网并列 XHAND 1、Lite、PRO 等命名；目前按产品族扩展展示，不把它们自动解释为连续三代。",
+      "open_questions": "需要逐款版本规格才能确认指数量、驱动与触觉的差别；本站 XHAND 1 指标不从其他配置借用。",
+      "status": "parallel",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "robotera-xhand1-date": {
+          "title": "官方 XHAND 1 产品页 · 时间依据",
+          "url": "https://www.robotera.com/#/product/XHAND"
+        },
+        "robotera-xhand1-spec": {
+          "title": "RobotEra XHAND 1 · 机构 / 版本依据",
+          "url": "https://www.robotera.com/#/product/XHAND"
+        },
+        "catalogue": {
+          "title": "RobotEra · 官方产品目录",
+          "url": "https://www.robotera.com/"
+        }
+      },
+      "milestones": [
+        {
+          "id": "robotera-xhand1",
+          "hand_id": "robotera-xhand1",
+          "name": "RobotEra XHAND 1",
+          "kind": "已收录型号",
+          "date": "2026",
+          "date_relation": "by",
+          "date_label": "≤ 2026 · 公开资料",
+          "date_basis": "以 2026-10-02 已读取的官方 XHAND 1 型号页为公开上界；不将资料 URL 内的日期当成首发。",
+          "summary": "五指 12 主动自由度、0 被动自由度；拇指与食指各 3，其余三指各 2。不含 Lite 或 Pro。",
+          "sources": [
+            "robotera-xhand1-date",
+            "robotera-xhand1-spec"
+          ]
+        },
+        {
+          "id": "xhand-variants",
+          "hand_id": null,
+          "name": "XHAND Lite / PRO",
+          "kind": "并列产品线索",
+          "date": "",
+          "date_relation": "unknown",
+          "date_label": "公开日期待核实",
+          "date_basis": "仅确认记录存在，未确认首发时间",
+          "summary": "官网可见的其他系列配置，继承或替代关系待厂商版本文件确认。",
+          "sources": [
+            "catalogue"
+          ],
+          "url": "https://www.robotera.com/"
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "robotera-xhand1-date",
+        "robotera-xhand1-spec",
+        "catalogue"
+      ]
+    },
+    {
+      "id": "xpeng-family",
+      "organization": "小鹏 · IRON",
+      "name": "小鹏 · IRON · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "xpeng-iron-hand-2025"
+      ],
+      "summary": "小鹏 2025 年公告明确回顾 2024 年第一代 IRON，并介绍新一代 IRON 的 22 自由度手。可确认整机代际，手部细节仍需单独核对。",
+      "open_questions": "没有把整机的 82 自由度当作手部指标，也没有把 22 个总自由度直接等同于 22 个独立驱动。",
+      "status": "lineage",
+      "mode": "family",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "xpeng-iron-hand-2025-date": {
+          "title": "官方 AI Day 2025 · 下一代 IRON 手部 · 时间依据",
+          "url": "https://www.xpeng.com/fr/news/019a81702a099a7b13318a0282930071"
+        },
+        "xpeng-iron-hand-2025-spec": {
+          "title": "XPENG IRON Hand · 2025 · 机构 / 版本依据",
+          "url": "https://www.xpeng.com/technology/AI_Robot_Iron"
+        },
+        "iron-history": {
+          "title": "XPENG · 2025 Physical AI / Next-Gen IRON 公告",
+          "url": "https://www.xpeng.com/pressroom/news/019a56f54fe99a2a0a8d8a0282e402b7"
+        }
+      },
+      "milestones": [
+        {
+          "id": "iron-2024",
+          "hand_id": null,
+          "name": "IRON · 2024 系统",
+          "kind": "前代整机中的手",
+          "date": "2024",
+          "date_relation": "on",
+          "date_label": "2024",
+          "date_basis": "来源记载的事件 / 论文年份",
+          "summary": "官方后续公告明确称其为第一代 IRON；此处不填未核实的旧手逐轴参数。",
+          "sources": [
+            "iron-history"
+          ],
+          "url": "https://www.xpeng.com/pressroom/news/019a56f54fe99a2a0a8d8a0282e402b7"
+        },
+        {
+          "id": "xpeng-iron-hand-2025",
+          "hand_id": "xpeng-iron-hand-2025",
+          "name": "XPENG IRON Hand · 2025",
+          "kind": "已收录型号",
+          "date": "2025",
+          "date_relation": "on",
+          "date_label": "2025 · 公开资料",
+          "date_basis": "官方 AI Day 2025 发布的下一代 IRON，明确手部为 22 自由度；不与 2024 初代混写。",
+          "summary": "五指仿生手，官方称 22 自由度；未披露主动 / 被动分解及电机数量，不把整机 82 自由度计入手部。",
+          "sources": [
+            "xpeng-iron-hand-2025-date",
+            "xpeng-iron-hand-2025-spec"
+          ]
+        }
+      ],
+      "relationships": [
+        {
+          "from": "iron-2024",
+          "to": "xpeng-iron-hand-2025",
+          "label": "官方整机换代，手部参数另核",
+          "type": "generation",
+          "sources": [
+            "iron-history"
+          ]
+        }
+      ],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "xpeng-iron-hand-2025-date",
+        "xpeng-iron-hand-2025-spec",
+        "iron-history"
+      ]
+    },
+    {
+      "id": "psyonic-ability-hand-review",
+      "organization": "PSYONIC",
+      "name": "PSYONIC · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "psyonic-ability-hand"
+      ],
+      "summary": "Ability Hand 的公开资料区分假肢使用与科研接入；科研版发布体现应用与接口扩展，不能仅据此认定换了一代机械手。",
+      "open_questions": "还缺历次硬件修订对应的执行器、传感器和接口变更清单；SDK 更新也不自动代表硬件改版。",
+      "status": "review",
+      "mode": "review",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "psyonic-ability-hand-date": {
+          "title": "PSYONIC · Ability Hand 上市回顾",
+          "url": "https://www.psyonic.io/news/psyonic-releases-ability-hand-for-research-users"
+        },
+        "psyonic-ability-hand-spec": {
+          "title": "PSYONIC Ability Hand · 机构 / 版本依据",
+          "url": "https://www.psyonic.io/news/psyonic-releases-ability-hand-for-research-users"
+        }
+      },
+      "milestones": [
+        {
+          "id": "psyonic-ability-hand",
+          "hand_id": "psyonic-ability-hand",
+          "name": "PSYONIC Ability Hand",
+          "kind": "已收录型号",
+          "date": "2021",
+          "date_relation": "on",
+          "date_label": "2021 · 产品公告",
+          "date_basis": "PSYONIC 官方新闻明确记载 Ability Hand 于 2021 年在美国上市。面向机器人研究者的开放销售是之后的事件。",
+          "summary": "6 个无刷电机；机构柔顺不等于额外独立轴。",
+          "sources": [
+            "psyonic-ability-hand-date",
+            "psyonic-ability-hand-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "psyonic-ability-hand-date",
+        "psyonic-ability-hand-spec"
+      ]
+    },
+    {
+      "id": "robotiq-3f-review",
+      "organization": "Robotiq",
+      "name": "Robotiq · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "robotiq-3f"
+      ],
+      "summary": "核查对象为 3F 自适应三指手。现有手册包含修订日期，但没有足够证据将不同手册日期划成新的机械代际。",
+      "open_questions": "2F、Hand-E 等其他夹爪不作为 3F 的前后代；还需厂家明确的硬件变更记录。",
+      "status": "review",
+      "mode": "review",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "robotiq-3f-date": {
+          "title": "Robotiq · 产品销售历史",
+          "url": "https://blog.robotiq.com/2007-2015"
+        },
+        "robotiq-3f-spec": {
+          "title": "Robotiq 3F · 机构 / 版本依据",
+          "url": "https://assets.robotiq.com/website-assets/support_documents/document/3-Finger_PDF_20190221.pdf"
+        }
+      },
+      "milestones": [
+        {
+          "id": "robotiq-3f",
+          "hand_id": "robotiq-3f",
+          "name": "Robotiq 3F",
+          "kind": "已收录型号",
+          "date": "2010",
+          "date_relation": "on",
+          "date_label": "2010 · 产品公告",
+          "date_basis": "Robotiq 官方历史文章在 2010 年条目下记载开始销售 3-Finger Adaptive Gripper；当前档案参数仍各自绑定手册版本。",
+          "summary": "三路指闭合与一路展指驱动；自适应指节不是额外独立输入。",
+          "sources": [
+            "robotiq-3f-date",
+            "robotiq-3f-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "robotiq-3f-date",
+        "robotiq-3f-spec"
+      ]
+    },
+    {
+      "id": "vms-hand-review",
+      "organization": "VMS Hand · 论文作者团队",
+      "name": "VMS Hand · 论文作者团队 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "vms-hand"
+      ],
+      "summary": "当前可落实到 2025 年论文中的软硬结合、视觉感知平台。论文的传感与驱动实验属于同一设计的验证，不划成多个产品代际。",
+      "open_questions": "尚未确认同团队明确命名的前代或后代；机构相似与论文互引不足以建立继承关系。",
+      "status": "review",
+      "mode": "review",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "vms-hand-date": {
+          "title": "Nature Communications · 时间依据",
+          "url": "https://www.nature.com/articles/s41467-025-62122-0"
+        },
+        "vms-hand-spec": {
+          "title": "VMS Hand · 机构 / 版本依据",
+          "url": "https://www.nature.com/articles/s41467-025-62122-0"
+        }
+      },
+      "milestones": [
+        {
+          "id": "vms-hand",
+          "hand_id": "vms-hand",
+          "name": "VMS Hand",
+          "kind": "已收录型号",
+          "date": "2025",
+          "date_relation": "on",
+          "date_label": "2025 · 论文",
+          "date_basis": "采用 Nature Communications 的 2025 年发表记录；不是商业上市日期。",
+          "summary": "论文称 18 DOF；由 13 条主动腱索控制，不能把 18 当作 18 个独立电机轴。",
+          "sources": [
+            "vms-hand-date",
+            "vms-hand-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "vms-hand-date",
+        "vms-hand-spec"
+      ]
+    },
+    {
+      "id": "palm-finger-soft-hand-review",
+      "organization": "TacPalm · 论文作者团队",
+      "name": "TacPalm · 论文作者团队 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "palm-finger-soft-hand"
+      ],
+      "summary": "论文重点是掌部触觉与软手指协作。已有相关软体手研究，但本轮未核实可直接连接的同平台硬件继承说明。",
+      "open_questions": "掌部传感器的先前研究不一定是整手前代；该论文页面本轮全文访问受限，版本关系暂不连线。",
+      "status": "review",
+      "mode": "review",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "palm-finger-soft-hand-date": {
+          "title": "Nature Communications · 时间依据",
+          "url": "https://www.nature.com/articles/s41467-025-57741-6"
+        },
+        "palm-finger-soft-hand-spec": {
+          "title": "TacPalm SoftHand · 机构 / 版本依据",
+          "url": "https://www.nature.com/articles/s41467-025-57741-6"
+        }
+      },
+      "milestones": [
+        {
+          "id": "palm-finger-soft-hand",
+          "hand_id": "palm-finger-soft-hand",
+          "name": "TacPalm SoftHand",
+          "kind": "已收录型号",
+          "date": "2025",
+          "date_relation": "on",
+          "date_label": "2025 · 论文",
+          "date_basis": "采用 Nature Communications 的 2025 年发表记录；不是商业上市日期。",
+          "summary": "三根软指，每指两个独立气动段，共 6 个压力输入；连续体弯曲不是 6 个刚性转轴。",
+          "sources": [
+            "palm-finger-soft-hand-date",
+            "palm-finger-soft-hand-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "palm-finger-soft-hand-date",
+        "palm-finger-soft-hand-spec"
+      ]
+    },
+    {
+      "id": "detachable-crawling-hand-review",
+      "organization": "EPFL · 可分离爬行手研究",
+      "name": "EPFL · 可分离爬行手研究 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "detachable-crawling-hand"
+      ],
+      "summary": "当前记录对应可分离、可爬行的模块化研究手；不同手指数或安装方式属于构型探索，不能直接当成年代顺序。",
+      "open_questions": "需要作者明确指出原型版本及变化，才能补出前代；当前不把同论文的实验配置重复记为新手。",
+      "status": "review",
+      "mode": "review",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "detachable-crawling-hand-date": {
+          "title": "Nature Communications · 时间依据",
+          "url": "https://www.nature.com/articles/s41467-025-67675-8"
+        },
+        "detachable-crawling-hand-spec": {
+          "title": "Detachable Crawling Hand · 机构 / 版本依据",
+          "url": "https://www.nature.com/articles/s41467-025-67675-8"
+        }
+      },
+      "milestones": [
+        {
+          "id": "detachable-crawling-hand",
+          "hand_id": "detachable-crawling-hand",
+          "name": "Detachable Crawling Hand",
+          "kind": "已收录型号",
+          "date": "2026",
+          "date_relation": "on",
+          "date_label": "2026 · 论文",
+          "date_basis": "采用 Nature Communications 的 2026 年发表记录；不是商业上市日期。",
+          "summary": "可更换指数量的平台；每个可逆手指 4 个舵机，掌部最多安装 6 指，不能统一按 24 轴计数。",
+          "sources": [
+            "detachable-crawling-hand-date",
+            "detachable-crawling-hand-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "detachable-crawling-hand-date",
+        "detachable-crawling-hand-spec"
+      ]
+    },
+    {
+      "id": "open-parametric-hand-review",
+      "organization": "Open Parametric Hand · 作者团队",
+      "name": "Open Parametric Hand · 作者团队 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "open-parametric-hand"
+      ],
+      "summary": "2024 年预印本与后续期刊论文可追踪同一参数化手项目；可生成的多种形态是设计空间，不自动等于多代硬件。",
+      "open_questions": "论文出版进程不代表硬件逐年换代；若要建立具体样机演进，需要 CAD 版本与实验样机对应记录。",
+      "status": "review",
+      "mode": "review",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "open-parametric-hand-date": {
+          "title": "Science Robotics · 时间依据",
+          "url": "https://www.epfl.ch/labs/create/create-lab/publications/"
+        },
+        "open-parametric-hand-spec": {
+          "title": "Open Parametric Hand · 机构 / 版本依据",
+          "url": "https://arxiv.org/html/2410.18633v1"
+        }
+      },
+      "milestones": [
+        {
+          "id": "open-parametric-hand",
+          "hand_id": "open-parametric-hand",
+          "name": "Open Parametric Hand",
+          "kind": "已收录型号",
+          "date": "2025",
+          "date_relation": "on",
+          "date_label": "2025 · 论文",
+          "date_basis": "采用 Science Robotics 的 2025 年发表记录；不是商业上市日期。",
+          "summary": "参数化软手平台：每指四个相互耦合的运动自由度，配单/双输入等不同协同驱动方案。",
+          "sources": [
+            "open-parametric-hand-date",
+            "open-parametric-hand-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "open-parametric-hand-date",
+        "open-parametric-hand-spec"
+      ]
+    },
+    {
+      "id": "dexco-hand-review",
+      "organization": "UC Berkeley · DexCo",
+      "name": "UC Berkeley · DexCo · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "dexco-hand"
+      ],
+      "summary": "DexCo 的项目页面与 TRO 论文记录的是液压柔顺操作研究。在线发表年和卷期年可能不同，不据此创建两代 DexCo。",
+      "open_questions": "尚未取得前后两款硬件及明确变化的对应资料；相关液压手引用暂仅作为背景。",
+      "status": "review",
+      "mode": "review",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "dexco-hand-date": {
+          "title": "IEEE Transactions on Robotics · T-RO（2025 卷） · 时间依据",
+          "url": "https://doi.org/10.1109/TRO.2024.3508932"
+        },
+        "dexco-hand-spec": {
+          "title": "DexCo Hand · 机构 / 版本依据",
+          "url": "https://msc.berkeley.edu/research/mechatronics/dexco.html"
+        }
+      },
+      "milestones": [
+        {
+          "id": "dexco-hand",
+          "hand_id": "dexco-hand",
+          "name": "DexCo Hand",
+          "kind": "已收录型号",
+          "date": "2024",
+          "date_relation": "on",
+          "date_label": "2024 · 论文",
+          "date_basis": "论文于 2024 年在线发表，编入 T-RO 卷 41（2025）；地图采用在线公开年。",
+          "summary": "三指加可收缩掌部的软液压手；尚未核清可比较的独立关节角总数。",
+          "sources": [
+            "dexco-hand-date",
+            "dexco-hand-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "dexco-hand-date",
+        "dexco-hand-spec"
+      ]
+    },
+    {
+      "id": "f-tac-hand-review",
+      "organization": "F-TAC Hand · 作者团队",
+      "name": "F-TAC Hand · 作者团队 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "f-tac-hand"
+      ],
+      "summary": "2024 年预印本与 2025 年论文追踪同一全手触觉研究。传感器技术的迭代与整手硬件代际需分别记录。",
+      "open_questions": "本轮期刊全文访问受限，以作者预印本核对项目范围；不能将后续触觉任务论文自动视为 F-TAC 第二代。",
+      "status": "review",
+      "mode": "review",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "f-tac-hand-date": {
+          "title": "Nature Machine Intelligence · 时间依据",
+          "url": "https://www.nature.com/articles/s42256-025-01053-3"
+        },
+        "f-tac-hand-spec": {
+          "title": "F-TAC Hand · 机构 / 版本依据",
+          "url": "https://www.nature.com/articles/s42256-025-01053-3"
+        },
+        "review-extra": {
+          "title": "F-TAC 作者预印本 · 2024",
+          "url": "https://arxiv.org/abs/2412.14482"
+        }
+      },
+      "milestones": [
+        {
+          "id": "f-tac-hand",
+          "hand_id": "f-tac-hand",
+          "name": "F-TAC Hand",
+          "kind": "已收录型号",
+          "date": "2025",
+          "date_relation": "on",
+          "date_label": "2025 · 论文",
+          "date_basis": "采用 Nature Machine Intelligence 的 2025 年发表记录；不是商业上市日期。",
+          "summary": "五指、每指三个运动自由度；论文总计 15 DOF，驱动与耦合口径待进一步核清。",
+          "sources": [
+            "f-tac-hand-date",
+            "f-tac-hand-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "f-tac-hand-date",
+        "f-tac-hand-spec",
+        "review-extra"
+      ]
+    },
+    {
+      "id": "eyesight-hand-review",
+      "organization": "EyeSight · 作者团队",
+      "name": "EyeSight · 作者团队 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "eyesight-hand"
+      ],
+      "summary": "目前对应 IROS 2024 的视觉触觉集成手。视觉触觉模块的相关工作不是已确认的整手前代。",
+      "open_questions": "仍需作者发布的机械修订或新平台命名，才能建立后继关系；算法实验不单独新增硬件节点。",
+      "status": "review",
+      "mode": "review",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "eyesight-hand-date": {
+          "title": "arXiv · 2408.06265 · 时间依据",
+          "url": "https://arxiv.org/html/2408.06265v1"
+        },
+        "eyesight-hand-spec": {
+          "title": "EyeSight Hand · 机构 / 版本依据",
+          "url": "https://arxiv.org/html/2408.06265v1"
+        }
+      },
+      "milestones": [
+        {
+          "id": "eyesight-hand",
+          "hand_id": "eyesight-hand",
+          "name": "EyeSight Hand",
+          "kind": "已收录型号",
+          "date": "2024",
+          "date_relation": "on",
+          "date_label": "2024 · 论文",
+          "date_basis": "采用 arXiv · 2408.06265 的 2024 年发表记录；不是商业上市日期。",
+          "summary": "三指、7 个主动自由度；采用准直驱与视觉触觉。",
+          "sources": [
+            "eyesight-hand-date",
+            "eyesight-hand-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "eyesight-hand-date",
+        "eyesight-hand-spec"
+      ]
+    },
+    {
+      "id": "yale-sphinx-review",
+      "organization": "Yale · GRAB Lab",
+      "name": "Yale · GRAB Lab · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "yale-sphinx"
+      ],
+      "summary": "官方提供 Sphinx v1.0 装配资料，确认了具体制作版本；同实验室其他 OpenHand 手是相关设计，尚不能自动连为 Sphinx 前代。",
+      "open_questions": "同一研究的论文与装配文件是互补资料，不是两代产品；后续硬件版本与兼容性待确认。",
+      "status": "review",
+      "mode": "review",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "yale-sphinx-date": {
+          "title": "Nature Machine Intelligence · 时间依据",
+          "url": "https://www.nature.com/articles/s42256-025-01039-1"
+        },
+        "yale-sphinx-spec": {
+          "title": "Sphinx Hand · 机构 / 版本依据",
+          "url": "https://www.eng.yale.edu/grablab/openhand/sphinx_hand.html"
+        },
+        "review-extra": {
+          "title": "Sphinx v1.0 · 作者装配文件",
+          "url": "https://www.eng.yale.edu/grablab/openhand/sphinx%20hand/Sphinx%20Hand%20v1.0.pdf"
+        }
+      },
+      "milestones": [
+        {
+          "id": "yale-sphinx",
+          "hand_id": "yale-sphinx",
+          "name": "Sphinx Hand",
+          "kind": "已收录型号",
+          "date": "2025",
+          "date_relation": "on",
+          "date_label": "2025 · 论文",
+          "date_basis": "采用 Nature Machine Intelligence 的 2025 年发表记录；不是商业上市日期。",
+          "summary": "6 个 Dynamixel 舵机；球面并联机构实现抓握和三轴旋转，不能把舵机数当作物体 6 自由度位姿。",
+          "sources": [
+            "yale-sphinx-date",
+            "yale-sphinx-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "yale-sphinx-date",
+        "yale-sphinx-spec",
+        "review-extra"
+      ]
+    },
+    {
+      "id": "mumuta-hand-review",
+      "organization": "东京大学 / 早稻田大学",
+      "name": "东京大学 / 早稻田大学 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "mumuta-hand"
+      ],
+      "summary": "MuMuTA 将培养肌肉执行器用于五指手。早期生物混合执行器研究是技术背景，本轮未确认一条逐代完整手的型号链。",
+      "open_questions": "肌肉束设计、培养方法与手部机构分别迭代；不能把单指实验直接叫作上一代五指手。",
+      "status": "review",
+      "mode": "review",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "mumuta-hand-date": {
+          "title": "Science Robotics · 时间依据",
+          "url": "https://doi.org/10.1126/scirobotics.adr5512"
+        },
+        "mumuta-hand-spec": {
+          "title": "MuMuTA Biohybrid Hand · 机构 / 版本依据",
+          "url": "https://www.u-tokyo.ac.jp/focus/en/press/z0508_00386.html"
+        }
+      },
+      "milestones": [
+        {
+          "id": "mumuta-hand",
+          "hand_id": "mumuta-hand",
+          "name": "MuMuTA Biohybrid Hand",
+          "kind": "已收录型号",
+          "date": "2025",
+          "date_relation": "on",
+          "date_label": "2025 · 论文",
+          "date_basis": "Science Robotics 论文发表于 2025-02-12；大学新闻发表于次日。",
+          "summary": "五指生物混合手；每指一对肌肉束执行器，不能把肌肉束数量当成独立关节角数量。",
+          "sources": [
+            "mumuta-hand-date",
+            "mumuta-hand-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "mumuta-hand-date",
+        "mumuta-hand-spec"
+      ]
+    },
+    {
+      "id": "mogrip-review",
+      "organization": "MOGrip · 作者团队",
+      "name": "MOGrip · 作者团队 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "mogrip"
+      ],
+      "summary": "作者项目页对应多物体抓取平台；不同实验物体与控制策略属于任务验证，尚无明确的产品代际序列。",
+      "open_questions": "后续同名算法或视频需确认是否更换机构；当前只保留已核验样机记录。",
+      "status": "review",
+      "mode": "review",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "mogrip-date": {
+          "title": "Science Robotics · 时间依据",
+          "url": "https://jaemineom.github.io/Project_MOGrip/"
+        },
+        "mogrip-spec": {
+          "title": "MOGrip · 机构 / 版本依据",
+          "url": "https://jaemineom.github.io/Project_MOGrip/"
+        }
+      },
+      "milestones": [
+        {
+          "id": "mogrip",
+          "hand_id": "mogrip",
+          "name": "MOGrip",
+          "kind": "已收录型号",
+          "date": "2024",
+          "date_relation": "on",
+          "date_label": "2024 · 论文",
+          "date_basis": "采用 Science Robotics 的 2024 年发表记录；不是商业上市日期。",
+          "summary": "四指与自适应输送掌面组成的多物体抓取装置；驱动数尚未逐项核清。",
+          "sources": [
+            "mogrip-date",
+            "mogrip-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "mogrip-date",
+        "mogrip-spec"
+      ]
+    },
+    {
+      "id": "tactile-active-palm-review",
+      "organization": "主动触觉掌 · 论文作者团队",
+      "name": "主动触觉掌 · 论文作者团队 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "tactile-active-palm"
+      ],
+      "summary": "论文围绕三指与可移动触觉掌的协同设计。固定掌部、主动掌部等对照条件用于验证机制，不是独立前后代。",
+      "open_questions": "与其他主动掌论文存在方向关联，但未确认硬件直接继承；不凭相似标题连线。",
+      "status": "review",
+      "mode": "review",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "tactile-active-palm-date": {
+          "title": "npj Robotics · 时间依据",
+          "url": "https://www.nature.com/articles/s44182-026-00079-y"
+        },
+        "tactile-active-palm-spec": {
+          "title": "Tactile-Reactive Active-Palm Gripper · 机构 / 版本依据",
+          "url": "https://www.nature.com/articles/s44182-026-00079-y"
+        }
+      },
+      "milestones": [
+        {
+          "id": "tactile-active-palm",
+          "hand_id": "tactile-active-palm",
+          "name": "Tactile-Reactive Active-Palm Gripper",
+          "kind": "已收录型号",
+          "date": "2026",
+          "date_relation": "on",
+          "date_label": "2026 · 论文",
+          "date_basis": "采用 npj Robotics 的 2026 年发表记录；不是商业上市日期。",
+          "summary": "三指各有 2 个转动轴，掌面另有 1 个直线轴：6 转动 + 1 平移，不是 7 个关节角。",
+          "sources": [
+            "tactile-active-palm-date",
+            "tactile-active-palm-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "tactile-active-palm-date",
+        "tactile-active-palm-spec"
+      ]
+    },
+    {
+      "id": "omnidirectional-sensing-hand-review",
+      "organization": "全向姿态感知手 · 论文作者团队",
+      "name": "全向姿态感知手 · 论文作者团队 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "omnidirectional-sensing-hand"
+      ],
+      "summary": "当前来源重点验证软传感器在灵巧手中的姿态感知。传感器更新不自动等于整手构型换代。",
+      "open_questions": "还需确认手本体来源、历次机械版本及传感器装配差异；不将全部关联传感论文排成产品年表。",
+      "status": "review",
+      "mode": "review",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "omnidirectional-sensing-hand-date": {
+          "title": "Microsystems & Nanoengineering · 时间依据",
+          "url": "https://www.nature.com/articles/s41378-026-01179-3"
+        },
+        "omnidirectional-sensing-hand-spec": {
+          "title": "Omnidirectional-Sensing Dexterous Hand · 机构 / 版本依据",
+          "url": "https://www.nature.com/articles/s41378-026-01179-3"
+        }
+      },
+      "milestones": [
+        {
+          "id": "omnidirectional-sensing-hand",
+          "hand_id": "omnidirectional-sensing-hand",
+          "name": "Omnidirectional-Sensing Dexterous Hand",
+          "kind": "已收录型号",
+          "date": "2026",
+          "date_relation": "on",
+          "date_label": "2026 · 论文",
+          "date_basis": "采用 Microsystems & Nanoengineering 的 2026 年发表记录；不是商业上市日期。",
+          "summary": "论文称 18 个主动 DOF，但机构使用 9 个舵机；尚不能把 18 填成独立可控关节角。",
+          "sources": [
+            "omnidirectional-sensing-hand-date",
+            "omnidirectional-sensing-hand-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "omnidirectional-sensing-hand-date",
+        "omnidirectional-sensing-hand-spec"
+      ]
+    },
+    {
+      "id": "high-dexterity-neuroprosthetic-review",
+      "organization": "软体神经假手 · 论文作者团队",
+      "name": "软体神经假手 · 论文作者团队 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "high-dexterity-neuroprosthetic"
+      ],
+      "summary": "2026 年论文记录气动手指与电机驱动拇指—掌部组成的 11 主动自由度平台。相关软体假手工作构成研究背景。",
+      "open_questions": "尚未核实与 TacPalm 或其他软体假手的直接样机继承；相同研究方向或作者交集不够支持代际箭头。",
+      "status": "review",
+      "mode": "review",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "high-dexterity-neuroprosthetic-date": {
+          "title": "Nature Communications · 时间依据",
+          "url": "https://www.nature.com/articles/s41467-026-75105-6"
+        },
+        "high-dexterity-neuroprosthetic-spec": {
+          "title": "High-Dexterity Soft Neuroprosthetic Hand · 机构 / 版本依据",
+          "url": "https://www.nature.com/articles/s41467-026-75105-6"
+        }
+      },
+      "milestones": [
+        {
+          "id": "high-dexterity-neuroprosthetic",
+          "hand_id": "high-dexterity-neuroprosthetic",
+          "name": "High-Dexterity Soft Neuroprosthetic Hand",
+          "kind": "已收录型号",
+          "date": "2026",
+          "date_relation": "on",
+          "date_label": "2026 · 论文",
+          "date_basis": "采用 Nature Communications 的 2026 年发表记录；不是商业上市日期。",
+          "summary": "论文计 11 个主动 DOF：十个气动指部单元与一个电机驱动的拇掌关节；不等同于 11 个刚性关节角。",
+          "sources": [
+            "high-dexterity-neuroprosthetic-date",
+            "high-dexterity-neuroprosthetic-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "high-dexterity-neuroprosthetic-date",
+        "high-dexterity-neuroprosthetic-spec"
+      ]
+    },
+    {
+      "id": "matusik-pneumatic-hand-review",
+      "organization": "Matusik 等 · 气动手研究",
+      "name": "Matusik 等 · 气动手研究 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "matusik-pneumatic-hand"
+      ],
+      "summary": "2023 年作者预印本对应气动执行器驱动的研究手；制造方法、压力控制与操作实验共同描述这一平台。",
+      "open_questions": "未取得明确前代型号与逐项差异；其他气动手不是因同用气压就构成该手前身。",
+      "status": "review",
+      "mode": "review",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "matusik-pneumatic-hand-date": {
+          "title": "arXiv · 2310.16280 · 时间依据",
+          "url": "https://arxiv.org/abs/2310.16280"
+        },
+        "matusik-pneumatic-hand-spec": {
+          "title": "Matusik Pneumatic Hand · 机构 / 版本依据",
+          "url": "https://arxiv.org/html/2310.16280v1"
+        }
+      },
+      "milestones": [
+        {
+          "id": "matusik-pneumatic-hand",
+          "hand_id": "matusik-pneumatic-hand",
+          "name": "Matusik Pneumatic Hand",
+          "kind": "已收录型号",
+          "date": "2023",
+          "date_relation": "on",
+          "date_label": "2023 · 论文",
+          "date_basis": "采用 2023 年首个 arXiv 版本；不冒称 Nature 或 Science 期刊论文。",
+          "summary": "五指、15 个气动执行单元；论文的 15 DOF 不直接作为刚性独立关节角坐标。",
+          "sources": [
+            "matusik-pneumatic-hand-date",
+            "matusik-pneumatic-hand-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "matusik-pneumatic-hand-date",
+        "matusik-pneumatic-hand-spec"
+      ]
+    },
+    {
+      "id": "jhu-neuromorphic-hand-review",
+      "organization": "Johns Hopkins University",
+      "name": "Johns Hopkins University · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "jhu-neuromorphic-hand"
+      ],
+      "summary": "当前项目将柔性接触、手部机构与神经形态触觉反馈组合。神经形态算法的既有研究与机械本体的演进应分开。",
+      "open_questions": "本轮主要依据学校说明及论文入口，仍缺完整机械版本年表；不能将 JHU 所有假手项目合并为同一产品系列。",
+      "status": "review",
+      "mode": "review",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "jhu-neuromorphic-hand-date": {
+          "title": "Science Advances · 时间依据",
+          "url": "https://doi.org/10.1126/sciadv.adr9300"
+        },
+        "jhu-neuromorphic-hand-spec": {
+          "title": "JHU Neuromorphic Bionic Hand · 机构 / 版本依据",
+          "url": "https://engineering.jhu.edu/news/feeling-is-believing-bionic-hand-knows-what-its-touching-grasps-like-a-human/"
+        }
+      },
+      "milestones": [
+        {
+          "id": "jhu-neuromorphic-hand",
+          "hand_id": "jhu-neuromorphic-hand",
+          "name": "JHU Neuromorphic Bionic Hand",
+          "kind": "已收录型号",
+          "date": "2025",
+          "date_relation": "on",
+          "date_label": "2025 · 论文",
+          "date_basis": "采用 Science Advances 的 2025 年发表记录；不是商业上市日期。",
+          "summary": "结合刚性骨架、柔性结构和神经形态触觉反馈的研究假手；驱动与独立关节角数量待原文表格核清。",
+          "sources": [
+            "jhu-neuromorphic-hand-date",
+            "jhu-neuromorphic-hand-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "jhu-neuromorphic-hand-date",
+        "jhu-neuromorphic-hand-spec"
+      ]
+    },
+    {
+      "id": "faive-hand-review",
+      "organization": "ETH SRL · Faive / Mimic",
+      "name": "ETH SRL · Faive / Mimic · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "faive-hand"
+      ],
+      "summary": "作者项目页把 Proto 0 作为研究平台，并说明 Faive Robotics 后以 Mimic Robotics 名称开展工作；这是团队与成果延续线索。",
+      "open_questions": "公司名称变化不是硬件换代。当前商用手与 Proto 0 的结构继承需要型号级文件，暂不画升级箭头。",
+      "status": "review",
+      "mode": "review",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "faive-hand-date": {
+          "title": "Humanoids 2023 · 时间依据",
+          "url": "https://srl-ethz.github.io/get-ball-rolling/"
+        },
+        "faive-hand-spec": {
+          "title": "Faive Hand · Proto 0 · 机构 / 版本依据",
+          "url": "https://srl-ethz.github.io/get-ball-rolling/"
+        }
+      },
+      "milestones": [
+        {
+          "id": "faive-hand",
+          "hand_id": "faive-hand",
+          "name": "Faive Hand · Proto 0",
+          "kind": "已收录型号",
+          "date": "2023",
+          "date_relation": "on",
+          "date_label": "2023 · 论文",
+          "date_basis": "采用 Humanoids 2023 的 2023 年发表记录；不是商业上市日期。",
+          "summary": "五指共 11 个可驱动自由度、16 个机械关节，使用 16 个腱索舵机；三者分别计数。",
+          "sources": [
+            "faive-hand-date",
+            "faive-hand-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "faive-hand-date",
+        "faive-hand-spec"
+      ]
+    },
+    {
+      "id": "dexhand-021-review",
+      "organization": "DexHand 021 · 作者团队",
+      "name": "DexHand 021 · 作者团队 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "dexhand-021"
+      ],
+      "summary": "本站对应论文中的五指 021 平台。021S 等命名线索不能仅凭前缀合并为本产品的时间序列。",
+      "open_questions": "还需各构型的作者版本说明与独立参数；五指与三指配置不自动构成先后代。",
+      "status": "review",
+      "mode": "review",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "dexhand-021-date": {
+          "title": "2025 结构与控制论文 · 时间依据",
+          "url": "https://arxiv.org/html/2511.03481v1"
+        },
+        "dexhand-021-spec": {
+          "title": "DexHand 021 · 五指版 · 机构 / 版本依据",
+          "url": "https://arxiv.org/html/2511.03481v1"
+        }
+      },
+      "milestones": [
+        {
+          "id": "dexhand-021",
+          "hand_id": "dexhand-021",
+          "name": "DexHand 021 · 五指版",
+          "kind": "已收录型号",
+          "date": "2025",
+          "date_relation": "on",
+          "date_label": "2025 · 论文",
+          "date_basis": "采用 2025 结构与控制论文 的 2025 年发表记录；不是商业上市日期。",
+          "summary": "五指，12 主动 + 7 被动自由度，12 电机；本页按 2025 论文配置，不混用 021S 三指版。",
+          "sources": [
+            "dexhand-021-date",
+            "dexhand-021-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "dexhand-021-date",
+        "dexhand-021-spec"
+      ]
+    },
+    {
+      "id": "aero-hand-open-review",
+      "organization": "Aero Hand Open · 作者项目",
+      "name": "Aero Hand Open · 作者项目 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "aero-hand-open"
+      ],
+      "summary": "当前论文、机械说明与仿真文档共同描述开放手平台；仓库早期记录与后续论文日期应分开理解。",
+      "open_questions": "代码提交时间不能替代硬件首发；团队署名或仓库归属变化也不单独构成新一代手。",
+      "status": "review",
+      "mode": "review",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "aero-hand-open-date": {
+          "title": "arXiv 2026 · 论文配置 · 时间依据",
+          "url": "https://arxiv.org/html/2608.28578v1"
+        },
+        "aero-hand-open-spec": {
+          "title": "Aero Hand Open · 机构 / 版本依据",
+          "url": "https://arxiv.org/html/2608.28578v1"
+        }
+      },
+      "milestones": [
+        {
+          "id": "aero-hand-open",
+          "hand_id": "aero-hand-open",
+          "name": "Aero Hand Open",
+          "kind": "已收录型号",
+          "date": "2026",
+          "date_relation": "on",
+          "date_label": "2026 · 论文",
+          "date_basis": "采用 arXiv 2026 · 论文配置 的 2026 年发表记录；不是商业上市日期。",
+          "summary": "五指、16 个机械关节、7 个电机输入；存在关节耦合，7 个输入不等于 7 个可独立设角的关节。",
+          "sources": [
+            "aero-hand-open-date",
+            "aero-hand-open-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "aero-hand-open-date",
+        "aero-hand-open-spec"
+      ]
+    },
+    {
+      "id": "dexlink-hand-review",
+      "organization": "DexLink · 作者团队",
+      "name": "DexLink · 作者团队 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "dexlink-hand"
+      ],
+      "summary": "2026 年论文对应以连杆与耦合机构实现运动的研究手。设计参数和实验配置暂归于同一平台。",
+      "open_questions": "尚无经核实的前后代型号；与其他连杆手的结构相似只可用于技术比较，不作为继承证明。",
+      "status": "review",
+      "mode": "review",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "dexlink-hand-date": {
+          "title": "arXiv 2026 · 机构论文 · 时间依据",
+          "url": "https://arxiv.org/html/2606.17418v1"
+        },
+        "dexlink-hand-spec": {
+          "title": "DexLink Hand · 机构 / 版本依据",
+          "url": "https://arxiv.org/html/2606.17418v1"
+        }
+      },
+      "milestones": [
+        {
+          "id": "dexlink-hand",
+          "hand_id": "dexlink-hand",
+          "name": "DexLink Hand",
+          "kind": "已收录型号",
+          "date": "2026",
+          "date_relation": "on",
+          "date_label": "2026 · 论文",
+          "date_basis": "采用 arXiv 2026 · 机构论文 的 2026 年发表记录；不是商业上市日期。",
+          "summary": "五指 20 个关节、16 个独立驱动；拇指 4 主动轴，其他四指各 3，长指末节耦合。",
+          "sources": [
+            "dexlink-hand-date",
+            "dexlink-hand-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "dexlink-hand-date",
+        "dexlink-hand-spec"
+      ]
+    },
+    {
+      "id": "mm-hand-review",
+      "organization": "MM-Hand · 作者团队",
+      "name": "MM-Hand · 作者团队 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "mm-hand"
+      ],
+      "summary": "作者页面使用 MM-Hand 1.0 名称；预印本、开源文件与控制展示属于同一项目记录。",
+      "open_questions": "“1.0”不证明已经存在 2.0；预紧与控制描述差异需要机械版本文件才能认定为硬件修订。",
+      "status": "review",
+      "mode": "review",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "mm-hand-date": {
+          "title": "arXiv 2026 · 远程腱驱配置 · 时间依据",
+          "url": "https://arxiv.org/html/2604.17245v1"
+        },
+        "mm-hand-spec": {
+          "title": "MM-Hand 1.0 · 机构 / 版本依据",
+          "url": "https://arxiv.org/html/2604.17245v1"
+        },
+        "review-extra": {
+          "title": "MM-Hand 1.0 · 作者项目页",
+          "url": "https://mmlab.hk/research/MM-Hand"
+        }
+      },
+      "milestones": [
+        {
+          "id": "mm-hand",
+          "hand_id": "mm-hand",
+          "name": "MM-Hand 1.0",
+          "kind": "已收录型号",
+          "date": "2026",
+          "date_relation": "on",
+          "date_label": "2026 · 论文",
+          "date_basis": "采用 arXiv 2026 · 远程腱驱配置 的 2026 年发表记录；不是商业上市日期。",
+          "summary": "五指 21 主动关节：四根长指各 4，拇指 5；远端电机总数尚未逐一核对，不由关节数反推。",
+          "sources": [
+            "mm-hand-date",
+            "mm-hand-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "mm-hand-date",
+        "mm-hand-spec",
+        "review-extra"
+      ]
+    },
+    {
+      "id": "dmanus-review",
+      "organization": "D’Manus · 作者团队",
+      "name": "D’Manus · 作者团队 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "dmanus"
+      ],
+      "summary": "2022 年预印本与后续发表记录对应大面积 ReSkin 触觉手。传感覆盖、控制与数据实验是同一平台的研究内容。",
+      "open_questions": "传感器技术的前作不等于 D’Manus 整手前代；本轮未确认明确的新硬件代际。",
+      "status": "review",
+      "mode": "review",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "dmanus-date": {
+          "title": "arXiv 2022 / RA-L 2023 · 时间依据",
+          "url": "https://arxiv.org/abs/2210.15658"
+        },
+        "dmanus-spec": {
+          "title": "D’Manus · ReSkin 版 · 机构 / 版本依据",
+          "url": "https://arxiv.org/html/2210.15658v2"
+        }
+      },
+      "milestones": [
+        {
+          "id": "dmanus",
+          "hand_id": "dmanus",
+          "name": "D’Manus · ReSkin 版",
+          "kind": "已收录型号",
+          "date": "2022",
+          "date_relation": "on",
+          "date_label": "2022 · 论文",
+          "date_basis": "采用 2022 年首版预印本公开时间；RA-L 发表记录为 2023，详情参照修订论文。",
+          "summary": "三指共 10 个独立驱动关节：两指各 3，拇指 4；不是普通同步开合三指夹爪。",
+          "sources": [
+            "dmanus-date",
+            "dmanus-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "dmanus-date",
+        "dmanus-spec"
+      ]
+    },
+    {
+      "id": "paxini-dexh13-gen2-review",
+      "organization": "PaXini · 帕西尼",
+      "name": "PaXini · 帕西尼 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "paxini-dexh13-gen2"
+      ],
+      "summary": "官网明确使用 DexH13 / GEN2 命名，确认当前四指多维触觉方案；代际标签本身尚不足以重建上一代结构。",
+      "open_questions": "需找到 GEN1 的对应官方型号、规格与继承说明；不从第三方混合列表拼接 GEN1 → GEN2 → GEN3。",
+      "status": "review",
+      "mode": "review",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "paxini-dexh13-gen2-date": {
+          "title": "官方 DexH13 GEN2 产品页 · 时间依据",
+          "url": "https://paxini.com/cn/dex/gen2"
+        },
+        "paxini-dexh13-gen2-spec": {
+          "title": "PaXini DexH13 · GEN2 · 机构 / 版本依据",
+          "url": "https://paxini.com/cn/dex/gen2"
+        }
+      },
+      "milestones": [
+        {
+          "id": "paxini-dexh13-gen2",
+          "hand_id": "paxini-dexh13-gen2",
+          "name": "PaXini DexH13 · GEN2",
+          "kind": "已收录型号",
+          "date": "2026",
+          "date_relation": "by",
+          "date_label": "≤ 2026 · 公开资料",
+          "date_basis": "截至 2026-10-02 官网已列明 GEN2 配置；此年为公开上界，非确认的首发年。",
+          "summary": "四指，16 个总自由度＝13 主动＋3 被动；电机总数及逐指轴序尚未取得可靠分解。",
+          "sources": [
+            "paxini-dexh13-gen2-date",
+            "paxini-dexh13-gen2-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "paxini-dexh13-gen2-date",
+        "paxini-dexh13-gen2-spec"
+      ]
+    },
+    {
+      "id": "elephant-h100-review",
+      "organization": "Elephant Robotics · 大象机器人",
+      "name": "Elephant Robotics · 大象机器人 · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "elephant-h100"
+      ],
+      "summary": "官方 2025 年回顾记载 H100 的推出。旧附件目录中的其他灵巧手与 H100 不能仅按页面顺序视为连续代际。",
+      "open_questions": "当前确认 H100 的公开事件；仍缺旧附件型号与 H100 的直接继承或替代说明。",
+      "status": "review",
+      "mode": "review",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "elephant-h100-date": {
+          "title": "Elephant Robotics · 官方 2025 年度回顾",
+          "url": "https://shop.elephantrobotics.com/blogs/news/elephant-robotics-reflects-on-a-landmark-2025-of-innovation-applications-and-global-engagement"
+        },
+        "elephant-h100-spec": {
+          "title": "Elephant myGripper H100 · 机构 / 版本依据",
+          "url": "https://www.elephantrobotics.com/en/mygripper-h100-en/"
+        },
+        "review-extra": {
+          "title": "Elephant Robotics · 2025 年产品回顾",
+          "url": "https://shop.elephantrobotics.com/blogs/news/elephant-robotics-reflects-on-a-landmark-2025-of-innovation-applications-and-global-engagement"
+        }
+      },
+      "milestones": [
+        {
+          "id": "elephant-h100",
+          "hand_id": "elephant-h100",
+          "name": "Elephant myGripper H100",
+          "kind": "已收录型号",
+          "date": "2025",
+          "date_relation": "on",
+          "date_label": "2025 · 产品公告",
+          "date_basis": "官方 2025-12-31 年度回顾明确将 myGripper H100 列为当年推出的产品，故采用 2025 发布年；尚未确认具体首发日。",
+          "summary": "三指、六个可动关节、六个数字舵机；支持逐舵机控制，与旧款仅整体开合的五指附件不同。",
+          "sources": [
+            "elephant-h100-date",
+            "elephant-h100-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "elephant-h100-date",
+        "elephant-h100-spec",
+        "review-extra"
+      ]
+    },
+    {
+      "id": "tencent-trx-hand-review",
+      "organization": "Tencent Robotics X",
+      "name": "Tencent Robotics X · 产品脉络",
+      "reviewed_on": "2026-10-03",
+      "member_ids": [
+        "tencent-trx-hand"
+      ],
+      "summary": "当前三指 TRX-Hand 对应 2023 年论文；另有 TRX-Hand5 的论文线索，但不能把其五指参数混入本页。",
+      "open_questions": "后续五指研究的型号关系与详细机构仍需原始论文确认，本轮不把文献检索条目当作完整代际证据。",
+      "status": "review",
+      "mode": "review",
+      "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
+      "sources": {
+        "tencent-trx-hand-date": {
+          "title": "arXiv 2023 · 三指触觉实验配置 · 时间依据",
+          "url": "https://arxiv.org/abs/2304.05141"
+        },
+        "tencent-trx-hand-spec": {
+          "title": "Tencent TRX-Hand · 三指 · 机构 / 版本依据",
+          "url": "https://arxiv.org/html/2304.05141v1"
+        }
+      },
+      "milestones": [
+        {
+          "id": "tencent-trx-hand",
+          "hand_id": "tencent-trx-hand",
+          "name": "Tencent TRX-Hand · 三指",
+          "kind": "已收录型号",
+          "date": "2023",
+          "date_relation": "on",
+          "date_label": "2023 · 论文",
+          "date_basis": "采用 2023-04-11 首版论文公开时间；细杆操作配置与后续五指版本分开。",
+          "summary": "三指 8 个全主动关节，分配为 3＋3＋2；细杆操作实验固定两个侧摆轴，仅控制其余 6 轴。",
+          "sources": [
+            "tencent-trx-hand-date",
+            "tencent-trx-hand-spec"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": [],
+      "summary_sources": [
+        "tencent-trx-hand-date",
+        "tencent-trx-hand-spec"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "groups": {
+    "anatomy": "手部结构",
+    "motion": "关节运动",
+    "mechanics": "抓取力学",
+    "manipulation": "抓取与手内操作",
+    "control": "机构与控制"
+  },
+  "grasp": [
+    {"slug":"form-closure","group":"mechanics","definition":"仅靠固定接触的几何约束，阻止物体产生任何允许的微小刚体运动。","note":"图中是平面、无摩擦的一阶形封闭示例。","related":["force-closure","caging"]},
+    {"slug":"force-closure","group":"mechanics","definition":"接触允许的力旋量能够覆盖全部方向，从而在理论上抵抗任意方向的外部扰动。","note":"图中是平面摩擦接触示例。力封闭本身不保证实际执行器具有足够抓力。","related":["form-closure","friction-cone","grasp-wrench-space"]},
+    {"slug":"friction-cone","group":"mechanics","definition":"在库仑静摩擦模型下，接触力须满足法向力非负、切向力大小不超过摩擦系数乘法向力。","note":"图中以截面表示摩擦锥；锥外需求不能维持静止接触。","related":["force-closure","antipodal-grasp","sliding"]},
+    {"slug":"antipodal-grasp","group":"mechanics","definition":"两处接触的连线分别落在各自的摩擦锥内，形成可对向挤压的抓取布局。","note":"图中是平面模型；两个硬点接触不能直接推广为三维力封闭。","related":["friction-cone","force-closure"]},
+    {"slug":"caging","group":"mechanics","definition":"通过几何围限使物体无法逃离某个有界区域，但仍可在区域内活动。","note":"围限不要求物体完全静止，也不等于形封闭。","related":["form-closure","force-closure"]},
+    {"slug":"contact-models","group":"mechanics","definition":"接触模型规定接触能传递哪些力与力矩：无摩擦点、摩擦点和软指接触具有不同的约束。","note":"三维软指模型额外允许绕接触法向的摩擦力矩，并非任意方向的力矩。","related":["friction-cone","wrench","grasp-matrix"]},
+    {"slug":"wrench","group":"mechanics","definition":"力旋量把物体所受的力和相对于指定参考点的力矩写成一个统一向量。","note":"三维为六个分量；平面示例为 Fx、Fy 和 Mz。力矩随参考点改变。","related":["grasp-matrix","grasp-wrench-space"]},
+    {"slug":"grasp-matrix","group":"mechanics","definition":"抓取矩阵 G 将各接触处的力分量映射为物体上的合力与合力矩。","note":"图中使用统一世界坐标系下的平面接触力，写作 w = Gf。","related":["wrench","internal-force"]},
+    {"slug":"internal-force","group":"mechanics","definition":"各接触处相互平衡、对物体合力旋量贡献为零的接触力分量，满足 Gf = 0。","note":"合力为零仍可能存在显著挤压力；内力并不表示物体没有受力。","related":["grasp-matrix","force-closure"]},
+    {"slug":"grasp-wrench-space","group":"mechanics","definition":"在给定接触模型和力预算下，抓取能够产生的物体力旋量集合。","note":"图中为零力矩条件下的二维切片，不是完整六维空间。","related":["wrench","grasp-quality","force-closure"]},
+    {"slug":"grasp-quality","group":"mechanics","definition":"在选定模型、力预算和度量下评价抓取；一种方法考察最不利受力方向的抗扰余量。","note":"图中为归一化二维教学截面；不同力与力矩尺度会影响指标，不能作为产品评分。","related":["grasp-wrench-space","equilibrium-stability"]},
+    {"slug":"equilibrium-stability","group":"mechanics","definition":"平衡描述当前受力相互抵消；稳定性关注物体受到小扰动后，运动是否保持在邻域内或返回平衡。","note":"动画对比一维中性平衡与渐近稳定。并非所有稳定系统都必须返回原位。","related":["force-closure","impedance-control"]},
+    {"slug":"grasp-types","group":"manipulation","definition":"按接触区域、拇指姿态与功能区分抓取方式，例如包握、指尖捏取和侧向捏持。","note":"图示为若干代表类型，并非完整抓取分类。","related":["virtual-finger","in-hand-manipulation"]},
+    {"slug":"virtual-finger","group":"manipulation","definition":"将共同发挥作用的多个手指或接触组织为一个功能单元，用于描述抓取中的协作关系。","note":"这是功能分组，不是新增实体手指。","related":["grasp-types","synergy"]},
+    {"slug":"in-hand-manipulation","group":"manipulation","definition":"通过手指和接触的协调，使物体相对于手掌的位置或姿态发生变化。","note":"动画中手掌保持固定；物体在手内改变姿态。","related":["finger-gaiting","rolling","sliding","pivoting"]},
+    {"slug":"finger-gaiting","group":"manipulation","definition":"部分手指暂时解除接触、移到新的位置并重新接触，其他接触继续承担支撑。","note":"动画示意接触切换顺序；持续支撑依赖适当的摩擦和接触力。","related":["in-hand-manipulation","force-closure"]},
+    {"slug":"rolling","group":"manipulation","definition":"接触处没有相对切向滑动，但两表面的接触点随运动发生变化。","note":"动画为纯滚动圆盘，位移和转角满足 Δx = Rθ。","related":["sliding","pivoting","in-hand-manipulation"]},
+    {"slug":"sliding","group":"manipulation","definition":"接触的两表面在切向具有非零相对速度。","note":"动画以不旋转的圆盘示意相对滑动；换向瞬间速度可为零。","related":["rolling","friction-cone"]},
+    {"slug":"pivoting","group":"manipulation","definition":"利用一个支点或接触轴，使物体绕该位置改变朝向。","note":"图中为固定支点的平面转动示例。","related":["rolling","in-hand-manipulation"]},
+    {"slug":"compliance","group":"control","definition":"机构在外力作用下允许产生位移或变形的性质。","note":"动画为弹性顺应示例，卸载后恢复；真实材料可能有迟滞或永久变形。","related":["impedance-control","adaptive-synergy"]},
+    {"slug":"impedance-control","group":"control","definition":"设定期望的力与运动关系，常以虚拟质量、阻尼和刚度组织接触响应。","note":"动画表示期望关系，不是特定控制器的性能仿真。","related":["compliance","equilibrium-stability"]},
+    {"slug":"underactuation","group":"control","definition":"独立驱动输入少于机构的机械自由度，部分运动由耦合、被动结构和接触条件共同决定。","note":"动画为一驱动、两关节的功能示意，不对应某个产品的具体传动。","related":["adaptive-synergy","synergy"]},
+    {"slug":"synergy","group":"control","definition":"用少量协同变量组织多个关节的关联变化，形成较低维的姿态描述或控制命令。","note":"图中为示意姿态协同，不是测量得到的人手主成分。","related":["virtual-finger","adaptive-synergy","underactuation"]},
+    {"slug":"adaptive-synergy","group":"control","definition":"在共享协同输入的基础上，借助机构顺应等机制，使不同分支在接触物体后继续适应其形状。","note":"动画表示一个分支接触后停住、另一个继续闭合的功能关系。","related":["synergy","underactuation","compliance"]}
+  ],
+  "additional": [
+    {"slug":"hand-anatomy","group":"anatomy","title":"Finger segments & joints","name":"手指、指节与指关节","definition":"Thumb、index、middle、ring、little 是五指名称；phalanx 表示单个指骨，phalanges 是复数。MCP、PIP、DIP 对应四指的关节命名，拇指使用 CMC、MCP 和 IP。","note":"这是人体解剖术语的参考映射；机器人的实际关节布局可能不同。","alt":"五指手掌图，标注各手指、指骨以及 MCP、PIP、DIP、CMC 和 IP 关节。","image":"images/knowledge/five-finger-hand-anatomy-dextrail.png","keywords":"proximal distal middle phalanx phalanges metacarpophalangeal interphalangeal carpometacarpal 掌指 近端 远端 指骨","related":["finger-flexion-extension","thumb-opposition-reposition"],"sources":[{"title":"ASSH · Finger Joints","url":"https://assh.my.site.com/handcare/blog/anatomy-101-finger-joints"},{"title":"ASSH · Upper Extremity Joints","url":"https://assh.my.site.com/handcare/safety/joints"}]},
+    {"slug":"finger-flexion-extension","group":"motion","title":"Flexion / Extension","name":"屈曲 / 伸展","definition":"屈曲使关节两侧结构的夹角减小；伸展使夹角增大。手指表现为弯曲和伸直。","related":["hand-anatomy","finger-circumduction"]},
+    {"slug":"finger-abduction-adduction","group":"motion","title":"Abduction / Adduction","name":"外展 / 内收","definition":"手指外展表示离开以中指为参照的手部轴线，内收表示向该轴线靠拢。","related":["finger-circumduction","thumb-radial-abduction-adduction"]},
+    {"slug":"thumb-opposition-reposition","group":"motion","title":"Opposition / Reposition","name":"对掌 / 复位","definition":"对掌使拇指指腹朝向其他手指指腹，复位使拇指返回起始位置。","note":"对掌包含多个关节运动的组合，不是单一的平面弯曲。","related":["grasp-types","thumb-palmar-abduction-adduction"]},
+    {"slug":"thumb-palmar-abduction-adduction","group":"motion","title":"Palmar abduction / Adduction","name":"拇指掌侧外展 / 内收","definition":"拇指从手掌平面向外抬起，再向手掌平面靠回。","note":"完整手掌和同步侧视图用于区分出掌平面的运动；图中角度不是测得的解剖范围。","related":["thumb-radial-abduction-adduction","thumb-opposition-reposition"]},
+    {"slug":"thumb-radial-abduction-adduction","group":"motion","title":"Radial abduction / Adduction","name":"拇指桡侧外展 / 内收","definition":"拇指在手掌平面内离开食指方向展开，再向食指方向靠拢。","related":["thumb-palmar-abduction-adduction","finger-abduction-adduction"]},
+    {"slug":"finger-circumduction","group":"motion","title":"Circumduction","name":"环转","definition":"屈伸与外展、内收组合，使手指末端绕行，形成近似圆锥形的运动轨迹。","note":"图中食指掌指关节位置固定，指尖空间圆投影为椭圆；环转不是绕手指自身轴线扭转。","related":["finger-flexion-extension","finger-abduction-adduction"]}
+  ]
+}

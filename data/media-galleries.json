@@ -1,0 +1,2780 @@
+{
+  "shadow-hand": [
+    {
+      "kind": "image",
+      "url": "https://shadowrobot.com/wp-content/uploads/elementor/thumbs/Shadow-Robot-Co3943-copy-2-rtl5d6fbfdzabfxgtw2jd7f5zyb0v297k3yzrh3154.png",
+      "source": "https://shadowrobot.com/dexterous-hand-series/",
+      "alt": "Shadow 官方产品外观图",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://shadowrobot.com/wp-content/uploads/2022/04/Shadow-Robot-Co3721HR-copy-2-e1650536420490.png",
+      "source": "https://shadowrobot.com/dexterous-hand-series/",
+      "label": "Classic 产品视图 · 官网配图",
+      "alt": "Classic 产品视图 · 官网配图",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://shadowrobot.com/wp-content/uploads/2024/09/Simulating-Shadow-Hand-in-Gazebo.jpg",
+      "source": "https://shadowrobot.com/dexterous-hand-series/",
+      "label": "Gazebo 仿真示意 · 非实物照片",
+      "alt": "Gazebo 仿真示意 · 非实物照片",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "document",
+      "url": "https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf",
+      "source": "https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf",
+      "label": "原始技术图册 / 论文（PDF）",
+      "alt": "原始技术图册 / 论文（PDF）",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "leap-hand": [
+    {
+      "kind": "video",
+      "url": "https://v1.leaphand.com/static/videos/video_segments/in_hand_real_world_new.mp4",
+      "source": "https://v1.leaphand.com/",
+      "alt": "LEAP v1 官方手内操作演示",
+      "poster": "https://v1.leaphand.com/static/videos/teaser.png",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "video",
+      "url": "https://v1.leaphand.com/static/videos/video_segments/demo_vr_rss.mp4",
+      "alt": "VR 遥操作演示",
+      "poster": "",
+      "source": "https://v1.leaphand.com/",
+      "label": "VR 遥操作演示",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "video",
+      "url": "https://v1.leaphand.com/static/videos/video_segments/pour_1.mp4",
+      "alt": "倒物演示",
+      "poster": "",
+      "source": "https://v1.leaphand.com/",
+      "label": "倒物演示",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "video",
+      "url": "https://v1.leaphand.com/static/videos/video_segments/reorient_lab.mp4",
+      "alt": "自主手内转动",
+      "poster": "",
+      "source": "https://v1.leaphand.com/",
+      "label": "自主手内转动",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://v1.leaphand.com/static/figures/behavior_cloning.PNG",
+      "alt": "行为克隆实验图",
+      "poster": "",
+      "source": "https://v1.leaphand.com/",
+      "label": "行为克隆实验图",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "video",
+      "url": "https://v1.leaphand.com/static/videos/video_segments/strength.mp4",
+      "alt": "拉力试验演示",
+      "poster": "",
+      "source": "https://v1.leaphand.com/",
+      "label": "拉力试验演示",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "video",
+      "url": "https://v1.leaphand.com/static/videos/video_segments/grasp_1.mp4",
+      "alt": "抓取演示",
+      "poster": "",
+      "source": "https://v1.leaphand.com/",
+      "label": "抓取演示",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "dlr-hand-ii": [
+    {
+      "kind": "image",
+      "url": "https://www.dlr.de/de/rm/bilder/roboter_und_systeme/hand/hand_ii/handshake_200.jpg/@@images/image-200-908644273f353fe8a6e45372c16a2505.jpeg",
+      "source": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/hand-ii/design-construction-of-dlr-hand-ii",
+      "alt": "dlr-hand-ii 来源页面产品画面",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.dlr.de/de/rm/bilder/roboter_und_systeme/hand/hand_ii/hand-II-finger-kinematics_200.jpg/@@images/image",
+      "alt": "手指运动学",
+      "poster": "",
+      "source": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/hand-ii/design-construction-of-dlr-hand-ii",
+      "label": "手指运动学",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.dlr.de/de/rm/bilder/roboter_und_systeme/hand/hand_ii/bevelgear_200.jpg/@@images/image",
+      "alt": "锥齿轮传动",
+      "poster": "",
+      "source": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/hand-ii/design-construction-of-dlr-hand-ii",
+      "label": "锥齿轮传动",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.dlr.de/de/rm/bilder/roboter_und_systeme/hand/hand_ii/toolretainer_200.jpg/@@images/image",
+      "alt": "工具接口",
+      "poster": "",
+      "source": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/hand-ii/design-construction-of-dlr-hand-ii",
+      "label": "工具接口",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "xynova-flex-2": [
+    {
+      "kind": "image",
+      "url": "https://cdn.prod.website-files.com/6641c0152b531df61b2cefca/6a30ffd95dfcddf91922d85e_use-case-thumbnail-Xynova.jpg",
+      "source": "https://www.manus-meta.com/use-cases/how-xynova-teleoperates-the-flex-2-dexterous-hand-with-manus-metagloves-pro-haptic",
+      "alt": "xynova-flex-2 来源页面产品画面",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "link",
+      "url": "https://www.youtube.com/watch?v=vFn4a5qAPW8",
+      "source": "https://www.manus-meta.com/use-cases/how-xynova-teleoperates-the-flex-2-dexterous-hand-with-manus-metagloves-pro-haptic",
+      "label": "Flex 2 × MANUS 遥操作视频",
+      "alt": "Flex 2 × MANUS 遥操作视频",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "leap-hand-v2": [
+    {
+      "kind": "image",
+      "url": "https://v2.leaphand.com/static/figures/v2_anatomy.png",
+      "source": "https://v2.leaphand.com/",
+      "alt": "LEAP Hand V2 官方结构图",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://v2.leaphand.com/static/figures/finger_cross_section.PNG",
+      "alt": "柔性手指剖面",
+      "poster": "",
+      "source": "https://v2.leaphand.com/",
+      "label": "柔性手指剖面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "video",
+      "url": "https://v2.leaphand.com/static/videos/video_segments/underactuation.mp4",
+      "alt": "欠驱动运动演示",
+      "poster": "",
+      "source": "https://v2.leaphand.com/",
+      "label": "欠驱动运动演示",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "video",
+      "url": "https://v2.leaphand.com/static/videos/video_segments/pinch.mp4",
+      "alt": "指尖捏持",
+      "poster": "",
+      "source": "https://v2.leaphand.com/",
+      "label": "指尖捏持",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "link",
+      "url": "https://v2.leaphand.com/",
+      "source": "https://v2.leaphand.com/",
+      "label": "项目演示页 · 部分视频直链已失效",
+      "alt": "项目演示页",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "schunk-svh": [
+    {
+      "kind": "image",
+      "url": "https://d16vz4puxlsxm1.cloudfront.net/image/076200133045-Prod/image_rbjq655utp0d97e6od2ul2mu60/-FJPG-B600",
+      "source": "https://schunk.com/at/de/greiftechnik/spezialgreifer/svh/c/PGR_3161",
+      "alt": "schunk-svh 来源页面产品画面",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "inspire-rh56dfx": [
+    {
+      "kind": "image",
+      "url": "https://www.inspire-robots.com/tu/lqs/RH56DFX/RH56DFXbanner-m.jpg",
+      "source": "https://www.inspire-robots.com/dexterous%20hands/rh56dfx-series/",
+      "alt": "RH56DFX 官方产品展示图",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.inspire-robots.com/tu/lqs/RH56DFX/RH56DFXbanner01.jpg",
+      "alt": "DFX 产品说明 1",
+      "poster": "",
+      "source": "https://www.inspire-robots.com/dexterous%20hands/rh56dfx-series/",
+      "label": "DFX 产品说明 1",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.inspire-robots.com/tu/lqs/RH56DFX/RH56DFXbanner02.jpg",
+      "alt": "DFX 产品说明 2",
+      "poster": "",
+      "source": "https://www.inspire-robots.com/dexterous%20hands/rh56dfx-series/",
+      "label": "DFX 产品说明 2",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.inspire-robots.com/tu/lqs/RH56DFX/RH56DFXbanner03.jpg",
+      "alt": "DFX 产品说明 3",
+      "poster": "",
+      "source": "https://www.inspire-robots.com/dexterous%20hands/rh56dfx-series/",
+      "label": "DFX 产品说明 3",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.inspire-robots.com/tu/lqs/RH56DFX/RH56DFXbanner05.png",
+      "alt": "DFX 参数图",
+      "poster": "",
+      "source": "https://www.inspire-robots.com/dexterous%20hands/rh56dfx-series/",
+      "label": "DFX 参数图",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "document",
+      "url": "https://en.inspire-robots.com/wp-content/uploads/2023/12/Inspire-Robots-Products-Selection-Guide-V15.pdf",
+      "source": "https://en.inspire-robots.com/wp-content/uploads/2023/12/Inspire-Robots-Products-Selection-Guide-V15.pdf",
+      "label": "原始技术图册 / 论文（PDF）",
+      "alt": "原始技术图册 / 论文（PDF）",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "inspire-rh56bfx": [
+    {
+      "kind": "image",
+      "url": "https://www.inspire-robots.com/tu/lqs/RH56BFX/RH56BFXbanner-m.jpg",
+      "source": "https://www.inspire-robots.com/dexterous%20hands/rh56bfx-series/",
+      "alt": "RH56BFX 官方产品展示图",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.inspire-robots.com/tu/lqs/RH56BFX/RH56BFX01.jpg",
+      "alt": "BFX 产品说明 1",
+      "poster": "",
+      "source": "https://www.inspire-robots.com/dexterous%20hands/rh56bfx-series/",
+      "label": "BFX 产品说明 1",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.inspire-robots.com/tu/lqs/RH56BFX/RH56BFX02.jpg",
+      "alt": "BFX 产品说明 2",
+      "poster": "",
+      "source": "https://www.inspire-robots.com/dexterous%20hands/rh56bfx-series/",
+      "label": "BFX 产品说明 2",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.inspire-robots.com/tu/lqs/RH56BFX/RH56BFX03.jpg",
+      "alt": "BFX 产品说明 3",
+      "poster": "",
+      "source": "https://www.inspire-robots.com/dexterous%20hands/rh56bfx-series/",
+      "label": "BFX 产品说明 3",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.inspire-robots.com/tu/lqs/RH56BFX/RH56BFX05.png",
+      "alt": "BFX 参数图",
+      "poster": "",
+      "source": "https://www.inspire-robots.com/dexterous%20hands/rh56bfx-series/",
+      "label": "BFX 参数图",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "document",
+      "url": "https://en.inspire-robots.com/wp-content/uploads/2023/12/Inspire-Robots-Products-Selection-Guide-V15.pdf",
+      "source": "https://en.inspire-robots.com/wp-content/uploads/2023/12/Inspire-Robots-Products-Selection-Guide-V15.pdf",
+      "label": "原始技术图册 / 论文（PDF）",
+      "alt": "原始技术图册 / 论文（PDF）",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "dlr-clash": [
+    {
+      "kind": "image",
+      "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/clash/clash_automatica2018_apple_cropped_for_16_9_3328x1872.jpg/@@images/image-1000-a3dcdc825eccddb5eb6a8a7df556adcb.jpeg",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/clash",
+      "alt": "dlr-clash 来源页面产品画面",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/clash/Clash_greift_einen_Apfel_0J4A0037_original.jpg/@@images/image-1000-b4b39b8b7ec1da8ab6907370a8f9977e.jpeg",
+      "alt": "苹果抓握",
+      "poster": "",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/clash",
+      "label": "苹果抓握",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/clash/clash_grasps_padlock_2018.jpg/@@images/image-1000-18c9149f03e07056bb6202dc439668ce.jpeg",
+      "alt": "锁具抓握",
+      "poster": "",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/clash",
+      "label": "锁具抓握",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/clash/clash_grasps_tuna_bin_2018.jpg/@@images/image-400-dbb7c7ba8f8b0da74d6f5ca2a90a8648.jpeg",
+      "alt": "罐体抓握",
+      "poster": "",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/clash",
+      "label": "罐体抓握",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "link",
+      "url": "https://youtu.be/IfZVJ8Iv4Qg",
+      "source": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2019.00138/full",
+      "label": "作者实验视频",
+      "alt": "作者实验视频",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "dlr-david": [
+    {
+      "kind": "image",
+      "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/david_hand/David-Hand_mit_Stahlfedern_16_9_1440x810.jpg/@@images/image-1000-ee94d4a377ca54b86d9ee7875676c2e7.jpeg",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/david-hand",
+      "alt": "dlr-david 来源页面产品画面",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/david_hand/David-Hand_mit_Stahlfedern_4993x3328.jpg/@@images/image-1000-dc318044c5df0502c4412c92029fef52.jpeg",
+      "alt": "钢簧版本结构",
+      "poster": "",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/david-hand",
+      "label": "钢簧版本结构",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/david_hand/David-Hand_Metallversion_1746x3104.jpg/@@images/image-1000-2ee91f57741536bc03500cdf6c35f377.jpeg",
+      "alt": "金属版本侧面",
+      "poster": "",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/david-hand",
+      "label": "金属版本侧面",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "dlr-dexhand": [
+    {
+      "kind": "image",
+      "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/dexhand/dexhand_2012_liegend_freigestellt_16_9_4089x2300.jpg/@@images/image-1000-60825be70aa9c14ab4bc1ce8de4ba36d.jpeg",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dexhand-2012-2015",
+      "alt": "dlr-dexhand 来源页面产品画面",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/dexhand/dexhand_2012_stehend_oberseite_freigestellt_3203x2783.jpg/@@images/image-1000-4ca45553faaad572145d454e9fda093e.jpeg",
+      "alt": "背面结构",
+      "poster": "",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dexhand-2012-2015",
+      "label": "背面结构",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/dexhand/dexhand_2012_greift_zylinder_freigestellt_3742x5613.jpg/@@images/image-1000-7a900eb7421fb1b5bb47241a497afd43.jpeg",
+      "alt": "圆柱握持",
+      "poster": "",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dexhand-2012-2015",
+      "label": "圆柱握持",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/dexhand/dexhand_2012_greift_akkubohrer_freigestellt_3456x5184.jpg/@@images/image-1000-dd962fce3fd4140f271bb28e5ddb28c2.jpeg",
+      "alt": "电钻握持",
+      "poster": "",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dexhand-2012-2015",
+      "label": "电钻握持",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/dexhand/dexhand_2012_greift_kabel_freigestellt_5184x3456.jpg/@@images/image-400-6a7bb090bd8afadff8d42b4e0770137c.jpeg",
+      "alt": "线缆握持",
+      "poster": "",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dexhand-2012-2015",
+      "label": "线缆握持",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "dlr-spacehand": [
+    {
+      "kind": "image",
+      "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/spacehand/Spacehand_front_rotated_711x400.jpg/@@images/image-711-f624c552268e02b2c9faa3226f812b26.jpeg",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/spacehand-2015-2018",
+      "alt": "dlr-spacehand 来源页面产品画面",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/spacehand/Spacehand_an_Caesar_0J4A9741_original.jpg/@@images/image-1000-fe0eca87bcdd601867c743d5938bdc71.jpeg",
+      "alt": "CAESAR 机械臂集成",
+      "poster": "",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/spacehand-2015-2018",
+      "label": "CAESAR 机械臂集成",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/spacehand/spacehand_shaker.jpg/@@images/image-1000-653f32bf2135b8648e7e3f97eba30cca.jpeg",
+      "alt": "振动台试验",
+      "poster": "",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/spacehand-2015-2018",
+      "label": "振动台试验",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/spacehand/spacehand_side_view_original.png/@@images/image-1000-e42c205221ab3c1b12a2b7cbace44e17.png",
+      "alt": "侧面结构",
+      "poster": "",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/spacehand-2015-2018",
+      "label": "侧面结构",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "prensilia-ih2-azzurra": [
+    {
+      "kind": "image",
+      "url": "https://www.prensilia.com/wp-content/uploads/2023/03/ih2-azzurra-hand-prensilia.jpg",
+      "source": "https://www.prensilia.com/it/ih2-azzurra/",
+      "alt": "prensilia-ih2-azzurra 来源页面产品画面",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.prensilia.com/wp-content/uploads/2023/03/ih2-azzurra-hand.jpg",
+      "alt": "整手外观",
+      "poster": "",
+      "source": "https://www.prensilia.com/it/ih2-azzurra/",
+      "label": "整手外观",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.prensilia.com/wp-content/uploads/2023/03/ih2-azzurra-cilindrical-1024x1024.jpg",
+      "alt": "圆柱抓握",
+      "poster": "",
+      "source": "https://www.prensilia.com/it/ih2-azzurra/",
+      "label": "圆柱抓握",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.prensilia.com/wp-content/uploads/2023/03/ih2-azzurra-lateral-1024x1024.jpg",
+      "alt": "侧捏",
+      "poster": "",
+      "source": "https://www.prensilia.com/it/ih2-azzurra/",
+      "label": "侧捏",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.prensilia.com/wp-content/uploads/2023/03/ih2-azzurra-precision-1024x1024.jpg",
+      "alt": "精密捏持",
+      "poster": "",
+      "source": "https://www.prensilia.com/it/ih2-azzurra/",
+      "label": "精密捏持",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.prensilia.com/wp-content/uploads/2023/03/ih2-azzurra-grips-1024x1024.jpg",
+      "alt": "抓姿组合",
+      "poster": "",
+      "source": "https://www.prensilia.com/it/ih2-azzurra/",
+      "label": "抓姿组合",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "document",
+      "url": "https://www.prensilia.com/wp-content/uploads/support/doc/DS_IH2_v03.pdf",
+      "source": "https://www.prensilia.com/wp-content/uploads/support/doc/DS_IH2_v03.pdf",
+      "label": "原始技术图册 / 论文（PDF）",
+      "alt": "原始技术图册 / 论文（PDF）",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "wuji-hand-2": [
+    {
+      "kind": "image",
+      "url": "https://docs.wuji.tech/_next/static/media/dimensions-white.b695dabb.png",
+      "source": "https://docs.wuji.tech/docs/zh/wuji-hand/latest/overview/",
+      "alt": "Wuji Hand 2 官方尺寸图（来源文档当前为 2.2 Beta 非触觉版）",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://docs.wuji.tech/_next/static/media/structure-white.1f578143.png",
+      "alt": "结构与模组",
+      "poster": "",
+      "source": "https://docs.wuji.tech/docs/zh/wuji-hand/latest/overview/",
+      "label": "结构与模组",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://docs.wuji.tech/_next/static/media/dof-configuration-white.3b64a4aa.png",
+      "alt": "各指自由度",
+      "poster": "",
+      "source": "https://docs.wuji.tech/docs/zh/wuji-hand/latest/overview/",
+      "label": "各指自由度",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://docs.wuji.tech/_next/static/media/joint-motion-range.a7628288.png",
+      "alt": "关节运动范围",
+      "poster": "",
+      "source": "https://docs.wuji.tech/docs/zh/wuji-hand/latest/overview/",
+      "label": "关节运动范围",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/connector-layout.png",
+      "alt": "接口布局",
+      "poster": "",
+      "source": "https://docs.wuji.tech/docs/zh/wuji-hand/latest/overview/",
+      "label": "接口布局",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "allegro-v4": [
+    {
+      "kind": "image",
+      "url": "https://www.allegrohand.com/upload/prod/product_hand_v4_01_a77b2.png",
+      "source": "https://www.allegrohand.com/sub/product/p.php?idx=1",
+      "alt": "allegro-v4 来源页面产品图；具体版本见正文",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.allegrohand.com/upload/prod/product_hand_v4_02_cdf8f.png",
+      "alt": "V4 产品视图 2",
+      "poster": "",
+      "source": "https://www.allegrohand.com/sub/product/p.php?idx=1",
+      "label": "V4 产品视图 2",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.allegrohand.com/upload/prod/product_hand_v4_03_98282.png",
+      "alt": "V4 产品视图 3",
+      "poster": "",
+      "source": "https://www.allegrohand.com/sub/product/p.php?idx=1",
+      "label": "V4 产品视图 3",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.allegrohand.com/upload/prod/product_hand_v4_04_4db10.png",
+      "alt": "V4 产品视图 4",
+      "poster": "",
+      "source": "https://www.allegrohand.com/sub/product/p.php?idx=1",
+      "label": "V4 产品视图 4",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.allegrohand.com/upload/prod/product_hand_v4_05_a77a0.png",
+      "alt": "V4 产品视图 5",
+      "poster": "",
+      "source": "https://www.allegrohand.com/sub/product/p.php?idx=1",
+      "label": "V4 产品视图 5",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "ruka-v1": [
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2504.13165v1/header.png",
+      "source": "https://arxiv.org/html/2504.13165v1",
+      "alt": "ruka-v1 来源页面产品图；具体版本见正文",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2504.13165v1/kinematics.png",
+      "alt": "运动学与驱动",
+      "poster": "",
+      "source": "https://arxiv.org/html/2504.13165v1",
+      "label": "运动学与驱动",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2504.13165v1/Strength_tests.png",
+      "alt": "力测试装置",
+      "poster": "",
+      "source": "https://arxiv.org/html/2504.13165v1",
+      "label": "力测试装置",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2504.13165v1/Grasps.png",
+      "alt": "抓姿覆盖",
+      "poster": "",
+      "source": "https://arxiv.org/html/2504.13165v1",
+      "label": "抓姿覆盖",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2504.13165v1/teleop_wo_arm.png",
+      "alt": "遥操作系统",
+      "poster": "",
+      "source": "https://arxiv.org/html/2504.13165v1",
+      "label": "遥操作系统",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "rbo-hand-3": [
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2201.10883v1/hand.png",
+      "source": "https://arxiv.org/html/2201.10883v1",
+      "alt": "rbo-hand-3 来源页面产品图；具体版本见正文",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2201.10883v1/2-comp-finger.png",
+      "alt": "双气室手指",
+      "poster": "",
+      "source": "https://arxiv.org/html/2201.10883v1",
+      "label": "双气室手指",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2201.10883v1/thumb-scaffold.png",
+      "alt": "拇指骨架",
+      "poster": "",
+      "source": "https://arxiv.org/html/2201.10883v1",
+      "label": "拇指骨架",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2201.10883v1/kapandji.png",
+      "alt": "拇指对指测试",
+      "poster": "",
+      "source": "https://arxiv.org/html/2201.10883v1",
+      "label": "拇指对指测试",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2201.10883v1/feix.png",
+      "alt": "抓姿分类",
+      "poster": "",
+      "source": "https://arxiv.org/html/2201.10883v1",
+      "label": "抓姿分类",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2201.10883v1/in_hand_manipulation.png",
+      "alt": "手内操作",
+      "poster": "",
+      "source": "https://arxiv.org/html/2201.10883v1",
+      "label": "手内操作",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "psyonic-ability-hand": [
+    {
+      "kind": "image",
+      "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/05ed1bfb-f367-458d-83dd-1a735b816e7a/3.Asembly_Ability+Hand+MK9.5+Product+Release_TEXTLESS.00_00_40_07.Still013.jpg",
+      "source": "https://www.psyonic.io/ability-hand",
+      "alt": "psyonic-ability-hand 来源页面产品图；具体版本见正文",
+      "poster": "",
+      "label": "官网产品画面 · 硬件版本以原图为准",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/bd858022-9a27-45e1-9dd2-eb74fca4c0da/3.Asembly_Ability+Hand+MK9.5+Product+Release_TEXTLESS.00_00_57_18.Still017.jpg",
+      "alt": "MK9.5 外观 · 不代表旧研究版配置",
+      "poster": "",
+      "source": "https://www.psyonic.io/ability-hand",
+      "label": "MK9.5 外观 · 不代表旧研究版配置",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/c88582cc-17ff-4e43-b559-7ec243d5a8e1/3.Asembly_Ability+Hand+MK9.5+Product+Release_TEXTLESS.00_01_06_20.Still021+%282%29.png",
+      "alt": "MK9.5 产品细节 · 新版本",
+      "poster": "",
+      "source": "https://www.psyonic.io/ability-hand",
+      "label": "MK9.5 产品细节 · 新版本",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "linker-l20": [
+    {
+      "kind": "image",
+      "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l20/detail-2.png",
+      "source": "https://www.linkerhand.com/details/LinkerHandL20/",
+      "alt": "Linker L20 官方产品图",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l20/detail-3.png",
+      "alt": "L20 技术说明 1",
+      "poster": "",
+      "source": "https://www.linkerhand.com/details/LinkerHandL20/",
+      "label": "L20 技术说明 1",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l20/detail-4.png",
+      "alt": "L20 技术说明 2",
+      "poster": "",
+      "source": "https://www.linkerhand.com/details/LinkerHandL20/",
+      "label": "L20 技术说明 2",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "trifinger": [
+    {
+      "kind": "image",
+      "url": "https://open-dynamic-robot-initiative.github.io/trifinger_docs/_images/trifingerpro.jpg",
+      "source": "https://open-dynamic-robot-initiative.github.io/trifinger_docs/",
+      "alt": "TriFinger Pro 实物；此图对应 Pro 版本",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "document",
+      "url": "https://proceedings.mlr.press/v155/wuthrich21a/wuthrich21a.pdf",
+      "source": "https://proceedings.mlr.press/v155/wuthrich21a/wuthrich21a.pdf",
+      "label": "原始技术图册 / 论文（PDF）",
+      "alt": "原始技术图册 / 论文（PDF）",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "rbo-hand-2": [
+    {
+      "kind": "image",
+      "url": "https://static.wixstatic.com/media/a3cb45_8489ad820e5642849df51224f57b8c53.jpg/v1/fill/w_300,h_219,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a3cb45_8489ad820e5642849df51224f57b8c53.jpg",
+      "source": "https://www.naturalmachinemotioninitiative.com/rbo-hand-2",
+      "alt": "RBO Hand 2 项目实物图",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "pisa-iit-softhand": [
+    {
+      "kind": "image",
+      "url": "https://static.wixstatic.com/media/a3cb45_9aa9f462fb284c638ae9e2bc89de9c92.png/v1/fill/w_300,h_250,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a3cb45_9aa9f462fb284c638ae9e2bc89de9c92.png",
+      "source": "https://www.naturalmachinemotioninitiative.com/softhand",
+      "alt": "Pisa/IIT SoftHand 项目机械结构展示图",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "document",
+      "url": "https://www.centropiaggio.unipi.it/sites/default/files/PisaIIT_SoftHand_0.pdf",
+      "source": "https://www.centropiaggio.unipi.it/sites/default/files/PisaIIT_SoftHand_0.pdf",
+      "label": "原始技术图册 / 论文（PDF）",
+      "alt": "原始技术图册 / 论文（PDF）",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "tesollo-dg-5f-m": [
+    {
+      "kind": "image",
+      "url": "https://cdn.tesollo.com/site/products/2026/08/21d43383-2721-4226-b66d-2590382a0349.webp",
+      "source": "https://www.tesollo.com/products/grippers/dg-5f-m",
+      "alt": "Tesollo DG-5F-M 官方产品图",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://cdn.tesollo.com/site/products/dg-5f-m/dg-5f-m-product-3.webp",
+      "alt": "DG-5F-M 研究集成",
+      "poster": "",
+      "source": "https://www.tesollo.com/products/grippers/dg-5f-m",
+      "label": "DG-5F-M 研究集成",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://cdn.tesollo.com/site/products/dg-5f-m/dg-5f-m-product-2.webp",
+      "alt": "DG-5F-M 操作展示",
+      "poster": "",
+      "source": "https://www.tesollo.com/products/grippers/dg-5f-m",
+      "label": "DG-5F-M 操作展示",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://cdn.tesollo.com/site/products/dg-5f-m/dg-5f-m-product.webp",
+      "alt": "DG-5F-M 工具展示",
+      "poster": "",
+      "source": "https://www.tesollo.com/products/grippers/dg-5f-m",
+      "label": "DG-5F-M 工具展示",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "link",
+      "url": "https://www.youtube.com/watch?v=7JhqK_k9IGI",
+      "source": "https://www.tesollo.com/products/grippers/dg-5f-m",
+      "label": "DG-5F-M 官方演示视频",
+      "alt": "DG-5F-M 官方演示视频",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "robotiq-3f": [
+    {
+      "kind": "image",
+      "url": "https://robotiq.com/hs-fs/hubfs/Design_3F.jpg?width=461&height=311&name=Design_3F.jpg",
+      "source": "https://robotiq.com/products/3-finger-adaptive-robot-gripper",
+      "alt": "Robotiq 3-Finger 官方应用实物图",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "document",
+      "url": "https://assets.robotiq.com/website-assets/support_documents/document/3-Finger_PDF_20190221.pdf",
+      "source": "https://assets.robotiq.com/website-assets/support_documents/document/3-Finger_PDF_20190221.pdf",
+      "label": "原始技术图册 / 论文（PDF）",
+      "alt": "原始技术图册 / 论文（PDF）",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "nasa-robonaut-2-hand": [
+    {
+      "kind": "image",
+      "url": "https://technology.nasa.gov/t2media/tops/img/MSC-TOPS-104/R2-Sensing-Back-Image-1.jpg",
+      "source": "https://technology.nasa.gov/patent/MSC-TOPS-104",
+      "alt": "NASA R2 腱张力传感器结构示意",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "document",
+      "url": "https://ntrs.nasa.gov/api/citations/20110023122/downloads/20110023122.pdf",
+      "source": "https://ntrs.nasa.gov/api/citations/20110023122/downloads/20110023122.pdf",
+      "label": "原始技术图册 / 论文（PDF）",
+      "alt": "原始技术图册 / 论文（PDF）",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "unitree-dex3-1": [
+    {
+      "kind": "image",
+      "url": "https://www.unitree.com/images/4eff56e5733d4fdbb8276bf6c65daa74_1920x1080.png",
+      "source": "https://www.unitree.com/Dex3-1/",
+      "alt": "Unitree Dex3-1 官方产品图",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.unitree.com/images/ea2d2b637df84e3bacd508cd1f2711e5_2744x1596.jpg",
+      "alt": "Dex3-1 产品说明",
+      "poster": "",
+      "source": "https://www.unitree.com/Dex3-1/",
+      "label": "Dex3-1 产品说明",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "video",
+      "url": "https://www.unitree.com/images/6eb2888b59084fe5a8d0ac2f09856cb8.mp4",
+      "alt": "官方操作视频",
+      "poster": "https://www.unitree.com/images/62b5ebbd23cc428489bf358a2d463b9e_1920x1080.jpg",
+      "source": "https://www.unitree.com/Dex3-1/",
+      "label": "官方操作视频",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "sharpa-w01": [
+    {
+      "kind": "image",
+      "url": "https://www.sharpa.com/cdn/shop/files/preview_images/057a74e11ed94ede9a8d1323c5be8116.thumbnail.0000000000_2000x.jpg?v=1769418805",
+      "source": "https://www.sharpa.com/pages/w01",
+      "alt": "Sharpa W01 官方测试演示封面",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "video",
+      "url": "https://www.sharpa.com/cdn/shop/videos/c/vp/9a835d3229104ab68b31c8cacdd70d52/9a835d3229104ab68b31c8cacdd70d52.HD-1080p-2.5Mbps-88499711.mp4?v=0",
+      "alt": "W01 官方产品视频",
+      "poster": "",
+      "source": "https://www.sharpa.com/pages/w01",
+      "label": "W01 官方产品视频",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "video",
+      "url": "https://www.sharpa.com/cdn/shop/videos/c/vp/249c98129c3349eda95ca60fc226af9d/249c98129c3349eda95ca60fc226af9d.HD-1080p-7.2Mbps-67754346.mp4?v=0",
+      "alt": "W01 操作展示 1",
+      "poster": "",
+      "source": "https://www.sharpa.com/pages/w01",
+      "label": "W01 操作展示 1",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "video",
+      "url": "https://www.sharpa.com/cdn/shop/videos/c/vp/646cf94d7c204c0eb2e770c70026c142/646cf94d7c204c0eb2e770c70026c142.HD-1080p-3.3Mbps-67757370.mp4?v=0",
+      "alt": "W01 操作展示 2",
+      "poster": "",
+      "source": "https://www.sharpa.com/pages/w01",
+      "label": "W01 操作展示 2",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "video",
+      "url": "https://www.sharpa.com/cdn/shop/videos/c/vp/057a74e11ed94ede9a8d1323c5be8116/057a74e11ed94ede9a8d1323c5be8116.HD-1080p-3.3Mbps-67754351.mp4?v=0",
+      "source": "https://www.sharpa.com/pages/w01",
+      "label": "原有演示视频",
+      "alt": "原有演示视频",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "qb-softhand-2-research": [
+    {
+      "kind": "image",
+      "url": "https://qbrobotics.com/wp-content/uploads/2022/05/Posa1-1.jpg",
+      "source": "https://qbrobotics.com/product/qb-softhand-2-research/",
+      "alt": "qb SoftHand 2 Research 官方产品图",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "document",
+      "url": "https://qbrobotics.com/wp-content/uploads/2022/05/qbSoftHand2-Research-User-Manual.pdf",
+      "source": "https://qbrobotics.com/wp-content/uploads/2022/05/qbSoftHand2-Research-User-Manual.pdf",
+      "label": "原始技术图册 / 论文（PDF）",
+      "alt": "原始技术图册 / 论文（PDF）",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "orca-hand": [
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2504.04259v1/figures/MainFigure.png",
+      "source": "https://arxiv.org/html/2504.04259v1",
+      "alt": "ORCA Hand 论文第一版图 1：设计与操作示例",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2504.04259v1/Versatility.png",
+      "alt": "操作示例",
+      "poster": "",
+      "source": "https://arxiv.org/html/2504.04259v1",
+      "label": "操作示例",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2504.04259v1/AutoCalibration.png",
+      "alt": "自动标定",
+      "poster": "",
+      "source": "https://arxiv.org/html/2504.04259v1",
+      "label": "自动标定",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2504.04259v1/AccuracyReliability.png",
+      "alt": "精度与可靠性试验",
+      "poster": "",
+      "source": "https://arxiv.org/html/2504.04259v1",
+      "label": "精度与可靠性试验",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2504.04259v1/ExperimentalSetup.png",
+      "alt": "实验装置",
+      "poster": "",
+      "source": "https://arxiv.org/html/2504.04259v1",
+      "label": "实验装置",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "document",
+      "url": "https://www.orcahand.com/publications/ORCA_IROS_2025.pdf",
+      "source": "https://www.orcahand.com/publications/ORCA_IROS_2025.pdf",
+      "label": "原始技术图册 / 论文（PDF）",
+      "alt": "原始技术图册 / 论文（PDF）",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "festo-bionicsofthand": [
+    {
+      "kind": "image",
+      "url": "https://i.ytimg.com/vi/5e0F14IRxVc/hqdefault.jpg",
+      "source": "https://www.youtube.com/watch?v=5e0F14IRxVc",
+      "alt": "Festo BionicSoftHand 官方演示视频封面",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "link",
+      "url": "https://www.youtube.com/watch?v=5e0F14IRxVc",
+      "source": "https://www.youtube.com/watch?v=5e0F14IRxVc",
+      "label": "原有演示视频",
+      "alt": "原有演示视频",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "document",
+      "url": "https://media.festo.com/media/113649_documentation.pdf",
+      "source": "https://media.festo.com/media/113649_documentation.pdf",
+      "label": "原始技术图册 / 论文（PDF）",
+      "alt": "原始技术图册 / 论文（PDF）",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "open-bionics-ada": [
+    {
+      "kind": "image",
+      "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1455702782346-KI0ONF7H3Z0COK2MFFB1/image-asset.jpeg",
+      "source": "https://openbionicslabs.com/blog",
+      "alt": "Open Bionics Ada 官方发布文章配图",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "open-bionics-brunel": [
+    {
+      "kind": "image",
+      "url": "https://www.frontiersin.org/files/Articles/802070/xml-images/fresc-02-802070-g0001.webp",
+      "source": "https://www.frontiersin.org/journals/rehabilitation-sciences/articles/10.3389/fresc.2021.802070/full",
+      "alt": "Brunel V1.0 研究实验配置（论文图 1，含整套实验装置）",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "document",
+      "url": "https://openbionicslabs.com/s/BrunelV10Datasheet.pdf",
+      "source": "https://openbionicslabs.com/s/BrunelV10Datasheet.pdf",
+      "label": "原始技术图册 / 论文（PDF）",
+      "alt": "原始技术图册 / 论文（PDF）",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "schunk-sdh-2": [
+    {
+      "kind": "image",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bdc2/5981638/874379d2fb98/sensors-18-01412-g009.jpg",
+      "source": "https://www.mdpi.com/1424-8220/18/5/1412",
+      "alt": "SDH2 论文图 9：手部关节与指尖传感器示意",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "barrett-bh8-280": [
+    {
+      "kind": "image",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/5fd4/7806087/275f41067db3/frobt-07-600584-g0002.jpg",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7806087/",
+      "alt": "BH8-280 论文图 2：机械手与 RGB-D 相机实验配置",
+      "poster": "",
+      "label": "产品画面",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "document",
+      "url": "https://web.barrett.com/support/BarrettHand_Documentation/BH8-280_Datasheet.pdf",
+      "source": "https://web.barrett.com/support/BarrettHand_Documentation/BH8-280_Datasheet.pdf",
+      "label": "原始技术图册 / 论文（PDF）",
+      "alt": "原始技术图册 / 论文（PDF）",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "wuji-hand": [
+    {
+      "kind": "image",
+      "url": "https://www.wuji.tech/assets/posters/hand_video_cover.webp",
+      "alt": "Wuji Hand 1 · 产品 / 机构图 1",
+      "label": "产品 / 机构图 1",
+      "source": "https://www.wuji.tech/zh/hand",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.wuji.tech/assets/images/hand/C_1_2.webp",
+      "alt": "Wuji Hand 1 · 产品 / 机构图 2",
+      "label": "产品 / 机构图 2",
+      "source": "https://www.wuji.tech/zh/hand",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.wuji.tech/assets/images/hand/C_1_3.webp",
+      "alt": "Wuji Hand 1 · 产品 / 机构图 3",
+      "label": "产品 / 机构图 3",
+      "source": "https://www.wuji.tech/zh/hand",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "video",
+      "url": "https://www.wuji.tech/assets/videos/hand/C_1_1.mp4",
+      "label": "演示视频 4",
+      "alt": "Wuji Hand 1 · 演示视频 4",
+      "source": "https://www.wuji.tech/zh/hand",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "linker-l6": [
+    {
+      "kind": "image",
+      "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l6/detail-2.png",
+      "alt": "Linker Hand L6 · 产品 / 机构图 1",
+      "label": "产品 / 机构图 1",
+      "source": "https://www.linkerhand.com/details/LinkerHandL6/",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l6/detail-3.png",
+      "label": "产品 / 机构图 2",
+      "alt": "Linker Hand L6 · 产品 / 机构图 2",
+      "source": "https://www.linkerhand.com/details/LinkerHandL6/",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l6/detail-4.png",
+      "alt": "Linker Hand L6 · 产品 / 机构图 3",
+      "label": "产品 / 机构图 3",
+      "source": "https://www.linkerhand.com/details/LinkerHandL6/",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "linker-o6": [
+    {
+      "kind": "image",
+      "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-o6/detail-2.png",
+      "alt": "Linker Hand O6 · 产品 / 机构图 1",
+      "label": "产品 / 机构图 1",
+      "source": "https://www.linkerhand.com/details/LinkerHandO6/",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-o6/detail-3.png",
+      "label": "产品 / 机构图 2",
+      "alt": "Linker Hand O6 · 产品 / 机构图 2",
+      "source": "https://www.linkerhand.com/details/LinkerHandO6/",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-o6/detail-4.png",
+      "alt": "Linker Hand O6 · 产品 / 机构图 3",
+      "label": "产品 / 机构图 3",
+      "source": "https://www.linkerhand.com/details/LinkerHandO6/",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "linker-l20-lite": [
+    {
+      "kind": "image",
+      "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l20-lite/detail-2.png",
+      "alt": "Linker Hand L20 Lite · 产品 / 机构图 1",
+      "label": "产品 / 机构图 1",
+      "source": "https://www.linkerhand.com/details/LinkerHandL20Lite/",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l20-lite/detail-3.png",
+      "label": "产品 / 机构图 2",
+      "alt": "Linker Hand L20 Lite · 产品 / 机构图 2",
+      "source": "https://www.linkerhand.com/details/LinkerHandL20Lite/",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l20-lite/detail-4.png",
+      "alt": "Linker Hand L20 Lite · 产品 / 机构图 3",
+      "label": "产品 / 机构图 3",
+      "source": "https://www.linkerhand.com/details/LinkerHandL20Lite/",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "linker-l30": [
+    {
+      "kind": "image",
+      "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l30pro/detail-2.png",
+      "alt": "Linker Hand L30 Pro · 产品 / 机构图 1",
+      "label": "产品 / 机构图 1",
+      "source": "https://www.linkerhand.com/details/LinkerHandL30/",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l30pro/detail-3.png",
+      "label": "产品 / 机构图 2",
+      "alt": "Linker Hand L30 Pro · 产品 / 机构图 2",
+      "source": "https://www.linkerhand.com/details/LinkerHandL30/",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l30pro/detail-4.png",
+      "alt": "Linker Hand L30 Pro · 产品 / 机构图 3",
+      "label": "产品 / 机构图 3",
+      "source": "https://www.linkerhand.com/details/LinkerHandL30/",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "linker-o30": [
+    {
+      "kind": "image",
+      "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-o30/detail-2.png",
+      "alt": "Linker Hand O30 · 产品 / 机构图 1",
+      "label": "产品 / 机构图 1",
+      "source": "https://www.linkerhand.com/details/LinkerHandO30/",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-o30/detail-3.png",
+      "label": "产品 / 机构图 2",
+      "alt": "Linker Hand O30 · 产品 / 机构图 2",
+      "source": "https://www.linkerhand.com/details/LinkerHandO30/",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-o30/detail-4.png",
+      "alt": "Linker Hand O30 · 产品 / 机构图 3",
+      "label": "产品 / 机构图 3",
+      "source": "https://www.linkerhand.com/details/LinkerHandO30/",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "ilda-hand": [
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-021-27261-0/MediaObjects/41467_2021_27261_Fig1_HTML.png",
+      "alt": "ILDA Hand · 论文 Fig. 1",
+      "label": "论文 Fig. 1",
+      "source": "https://www.nature.com/articles/s41467-021-27261-0",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-021-27261-0/MediaObjects/41467_2021_27261_Fig2_HTML.png",
+      "alt": "ILDA Hand · 论文 Fig. 2",
+      "label": "论文 Fig. 2",
+      "source": "https://www.nature.com/articles/s41467-021-27261-0",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-021-27261-0/MediaObjects/41467_2021_27261_Fig3_HTML.png",
+      "alt": "ILDA Hand · 论文 Fig. 3",
+      "label": "论文 Fig. 3",
+      "source": "https://www.nature.com/articles/s41467-021-27261-0",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "vms-hand": [
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-62122-0/MediaObjects/41467_2025_62122_Fig1_HTML.png",
+      "alt": "VMS Hand · 论文 Fig. 1",
+      "label": "论文 Fig. 1",
+      "source": "https://www.nature.com/articles/s41467-025-62122-0",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-62122-0/MediaObjects/41467_2025_62122_Fig2_HTML.png",
+      "alt": "VMS Hand · 论文 Fig. 2",
+      "label": "论文 Fig. 2",
+      "source": "https://www.nature.com/articles/s41467-025-62122-0",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-62122-0/MediaObjects/41467_2025_62122_Fig3_HTML.png",
+      "alt": "VMS Hand · 论文 Fig. 3",
+      "label": "论文 Fig. 3",
+      "source": "https://www.nature.com/articles/s41467-025-62122-0",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "palm-finger-soft-hand": [
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-57741-6/MediaObjects/41467_2025_57741_Fig1_HTML.png",
+      "alt": "TacPalm SoftHand · 论文 Fig. 1",
+      "label": "论文 Fig. 1",
+      "source": "https://www.nature.com/articles/s41467-025-57741-6",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-57741-6/MediaObjects/41467_2025_57741_Fig2_HTML.png",
+      "alt": "TacPalm SoftHand · 论文 Fig. 2",
+      "label": "论文 Fig. 2",
+      "source": "https://www.nature.com/articles/s41467-025-57741-6",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-57741-6/MediaObjects/41467_2025_57741_Fig3_HTML.png",
+      "alt": "TacPalm SoftHand · 论文 Fig. 3",
+      "label": "论文 Fig. 3",
+      "source": "https://www.nature.com/articles/s41467-025-57741-6",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "detachable-crawling-hand": [
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-67675-8/MediaObjects/41467_2025_67675_Fig1_HTML.png",
+      "alt": "Detachable Crawling Hand · 论文 Fig. 1",
+      "label": "论文 Fig. 1",
+      "source": "https://www.nature.com/articles/s41467-025-67675-8",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-67675-8/MediaObjects/41467_2025_67675_Fig2_HTML.png",
+      "alt": "Detachable Crawling Hand · 论文 Fig. 2",
+      "label": "论文 Fig. 2",
+      "source": "https://www.nature.com/articles/s41467-025-67675-8",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-67675-8/MediaObjects/41467_2025_67675_Fig3_HTML.png",
+      "alt": "Detachable Crawling Hand · 论文 Fig. 3",
+      "label": "论文 Fig. 3",
+      "source": "https://www.nature.com/articles/s41467-025-67675-8",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "open-parametric-hand": [
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2410.18633v1/fig1.png",
+      "alt": "Open Parametric Hand · 产品 / 机构图 1",
+      "label": "产品 / 机构图 1",
+      "source": "https://arxiv.org/html/2410.18633v1",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2410.18633v1/fig2.png",
+      "alt": "Open Parametric Hand · 产品 / 机构图 2",
+      "label": "产品 / 机构图 2",
+      "source": "https://arxiv.org/html/2410.18633v1",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2410.18633v1/fig3.png",
+      "alt": "Open Parametric Hand · 产品 / 机构图 3",
+      "label": "产品 / 机构图 3",
+      "source": "https://arxiv.org/html/2410.18633v1",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "dexco-hand": [
+    {
+      "kind": "image",
+      "url": "https://msc.berkeley.edu/assets/images/research/mechatronics/dexco.png",
+      "label": "产品 / 机构图 1",
+      "alt": "DexCo Hand · 产品 / 机构图 1",
+      "source": "https://msc.berkeley.edu/research/mechatronics/dexco.html",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "f-tac-hand": [
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs42256-025-01053-3/MediaObjects/42256_2025_1053_Fig1_HTML.png",
+      "alt": "F-TAC Hand · 论文 Fig. 1",
+      "label": "论文 Fig. 1",
+      "source": "https://www.nature.com/articles/s42256-025-01053-3",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs42256-025-01053-3/MediaObjects/42256_2025_1053_Fig2_HTML.png",
+      "alt": "F-TAC Hand · 论文 Fig. 2",
+      "label": "论文 Fig. 2",
+      "source": "https://www.nature.com/articles/s42256-025-01053-3",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs42256-025-01053-3/MediaObjects/42256_2025_1053_Fig3_HTML.png",
+      "alt": "F-TAC Hand · 论文 Fig. 3",
+      "label": "论文 Fig. 3",
+      "source": "https://www.nature.com/articles/s42256-025-01053-3",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "adapt-hand-1": [
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44172-025-00407-4/MediaObjects/44172_2025_407_Fig1_HTML.png",
+      "alt": "ADAPT Hand 1 · 论文 Fig. 1",
+      "label": "论文 Fig. 1",
+      "source": "https://www.nature.com/articles/s44172-025-00407-4",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44172-025-00407-4/MediaObjects/44172_2025_407_Fig2_HTML.png",
+      "alt": "ADAPT Hand 1 · 论文 Fig. 2",
+      "label": "论文 Fig. 2",
+      "source": "https://www.nature.com/articles/s44172-025-00407-4",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44172-025-00407-4/MediaObjects/44172_2025_407_Fig3_HTML.png",
+      "alt": "ADAPT Hand 1 · 论文 Fig. 3",
+      "label": "论文 Fig. 3",
+      "source": "https://www.nature.com/articles/s44172-025-00407-4",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "adapt-hand-2": [
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-025-00034-3/MediaObjects/44182_2025_34_Fig1_HTML.png",
+      "alt": "ADAPT Hand 2 · 论文 Fig. 1",
+      "label": "论文 Fig. 1",
+      "source": "https://www.nature.com/articles/s44182-025-00034-3",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-025-00034-3/MediaObjects/44182_2025_34_Fig2_HTML.png",
+      "alt": "ADAPT Hand 2 · 论文 Fig. 2",
+      "label": "论文 Fig. 2",
+      "source": "https://www.nature.com/articles/s44182-025-00034-3",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-025-00034-3/MediaObjects/44182_2025_34_Fig3_HTML.png",
+      "alt": "ADAPT Hand 2 · 论文 Fig. 3",
+      "label": "论文 Fig. 3",
+      "source": "https://www.nature.com/articles/s44182-025-00034-3",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "dash-hand": [
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2306.04784v3/figure1.jpeg",
+      "alt": "DASH Hand · 产品 / 机构图 1",
+      "label": "产品 / 机构图 1",
+      "source": "https://arxiv.org/html/2306.04784v3",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2306.04784v3/fig2_scaled.jpeg",
+      "alt": "DASH Hand · 产品 / 机构图 2",
+      "label": "产品 / 机构图 2",
+      "source": "https://arxiv.org/html/2306.04784v3",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2306.04784v3/CADdiagram_calib.jpeg",
+      "alt": "DASH Hand · 产品 / 机构图 3",
+      "label": "产品 / 机构图 3",
+      "source": "https://arxiv.org/html/2306.04784v3",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "eyesight-hand": [
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2408.06265v1/figures/opening.png",
+      "alt": "EyeSight Hand · 产品 / 机构图 1",
+      "label": "产品 / 机构图 1",
+      "source": "https://arxiv.org/html/2408.06265v1",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2408.06265v1/figures/mechanical_design.png",
+      "alt": "EyeSight Hand · 产品 / 机构图 2",
+      "label": "产品 / 机构图 2",
+      "source": "https://arxiv.org/html/2408.06265v1",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2408.06265v1/figures/human_kinematics.png",
+      "alt": "EyeSight Hand · 产品 / 机构图 3",
+      "label": "产品 / 机构图 3",
+      "source": "https://arxiv.org/html/2408.06265v1",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "yale-sphinx": [
+    {
+      "kind": "image",
+      "url": "https://www.eng.yale.edu/grablab/openhand/images/sphinx/sphinx3.jpg",
+      "label": "产品 / 机构图 1",
+      "alt": "Sphinx Hand · 产品 / 机构图 1",
+      "source": "https://www.eng.yale.edu/grablab/openhand/sphinx_hand.html",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.eng.yale.edu/grablab/openhand/images/sphinx/sphinx2.jpg",
+      "label": "产品 / 机构图 2",
+      "alt": "Sphinx Hand · 产品 / 机构图 2",
+      "source": "https://www.eng.yale.edu/grablab/openhand/sphinx_hand.html",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.eng.yale.edu/grablab/openhand/images/sphinx/sphinx1.png",
+      "label": "产品 / 机构图 3",
+      "alt": "Sphinx Hand · 产品 / 机构图 3",
+      "source": "https://www.eng.yale.edu/grablab/openhand/sphinx_hand.html",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "allegro-v5": [
+    {
+      "kind": "image",
+      "url": "https://allegrohand.com/upload/prod/V5_대표이미지_1_f19ad.png",
+      "label": "官方产品视图 1",
+      "alt": "Allegro Hand V5 · 3F · 官方产品视图 1",
+      "source": "https://allegrohand.com/sub/product/p.php?idx=3",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://allegrohand.com/upload/prod/V5_대표이미지_2_d78d6.png",
+      "label": "官方产品视图 2",
+      "alt": "Allegro Hand V5 · 3F · 官方产品视图 2",
+      "source": "https://allegrohand.com/sub/product/p.php?idx=3",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://allegrohand.com/upload/prod/V5_대표이미지_3_068b3.png",
+      "label": "官方产品视图 3",
+      "alt": "Allegro Hand V5 · 3F · 官方产品视图 3",
+      "source": "https://allegrohand.com/sub/product/p.php?idx=3",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "allegro-v5-plus": [
+    {
+      "kind": "image",
+      "url": "https://allegrohand.com/upload/prod/V5 Plus_대표이미지_3_39513.png",
+      "label": "官方产品视图 1",
+      "alt": "Allegro Hand V5 Plus · 4F · 官方产品视图 1",
+      "source": "https://allegrohand.com/sub/product/p.php?idx=4",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://allegrohand.com/upload/prod/V5 Plus_대표이미지_1_33756.png",
+      "label": "官方产品视图 2",
+      "alt": "Allegro Hand V5 Plus · 4F · 官方产品视图 2",
+      "source": "https://allegrohand.com/sub/product/p.php?idx=4",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://allegrohand.com/upload/prod/V5 Plus_대표이미지_2_db76f.png",
+      "label": "官方产品视图 3",
+      "alt": "Allegro Hand V5 Plus · 4F · 官方产品视图 3",
+      "source": "https://allegrohand.com/sub/product/p.php?idx=4",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "allegro-v6f": [
+    {
+      "kind": "image",
+      "url": "https://allegrohand.com/upload/prod/V6.25_ccbf8.png",
+      "label": "官方产品视图 1",
+      "alt": "Allegro Hand V6 F · 官方产品视图 1",
+      "source": "https://allegrohand.com/sub/product/p.php?idx=25",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://allegrohand.com/upload/prod/V6.26_a09e2.png",
+      "label": "官方产品视图 2",
+      "alt": "Allegro Hand V6 F · 官方产品视图 2",
+      "source": "https://allegrohand.com/sub/product/p.php?idx=25",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://allegrohand.com/upload/prod/V6.53_79ec6.png",
+      "label": "官方产品视图 3",
+      "alt": "Allegro Hand V6 F · 官方产品视图 3",
+      "source": "https://allegrohand.com/sub/product/p.php?idx=25",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "mumuta-hand": [
+    {
+      "kind": "image",
+      "url": "https://www.u-tokyo.ac.jp/content/400256657.png",
+      "alt": "MuMuTA Biohybrid Hand · 生物混合手与肌肉束布局",
+      "label": "生物混合手与肌肉束布局",
+      "source": "https://www.u-tokyo.ac.jp/focus/en/press/z0508_00386.html",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.u-tokyo.ac.jp/content/400256656.gif",
+      "alt": "MuMuTA Biohybrid Hand · 剪刀手势演示",
+      "label": "剪刀手势演示",
+      "source": "https://www.u-tokyo.ac.jp/focus/en/press/z0508_00386.html",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.u-tokyo.ac.jp/content/400256661.png",
+      "alt": "MuMuTA Biohybrid Hand · 肌肉束制作示意",
+      "label": "肌肉束制作示意",
+      "source": "https://www.u-tokyo.ac.jp/focus/en/press/z0508_00386.html",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.u-tokyo.ac.jp/content/400256662.png",
+      "alt": "MuMuTA Biohybrid Hand · 单指驱动原理",
+      "label": "单指驱动原理",
+      "source": "https://www.u-tokyo.ac.jp/focus/en/press/z0508_00386.html",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "mogrip": [
+    {
+      "kind": "image",
+      "url": "https://jaemineom.github.io/Project_MOGrip/assets/Mechanism.gif",
+      "alt": "MOGrip · 手指与输送掌面的机构演示",
+      "label": "手指与输送掌面的机构演示",
+      "source": "https://jaemineom.github.io/Project_MOGrip/",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "link",
+      "url": "https://www.youtube.com/embed/qFD562zo4Vk",
+      "label": "作者项目演示视频",
+      "alt": "MOGrip · 作者项目演示视频",
+      "source": "https://jaemineom.github.io/Project_MOGrip/",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "tactile-active-palm": [
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-026-00079-y/MediaObjects/44182_2026_79_Fig1_HTML.png",
+      "alt": "Tactile-Reactive Active-Palm Gripper · 论文 Fig. 1",
+      "label": "论文 Fig. 1",
+      "source": "https://www.nature.com/articles/s44182-026-00079-y",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-026-00079-y/MediaObjects/44182_2026_79_Fig2_HTML.png",
+      "alt": "Tactile-Reactive Active-Palm Gripper · 论文 Fig. 2",
+      "label": "论文 Fig. 2",
+      "source": "https://www.nature.com/articles/s44182-026-00079-y",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-026-00079-y/MediaObjects/44182_2026_79_Fig3_HTML.png",
+      "alt": "Tactile-Reactive Active-Palm Gripper · 论文 Fig. 3",
+      "label": "论文 Fig. 3",
+      "source": "https://www.nature.com/articles/s44182-026-00079-y",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "omnidirectional-sensing-hand": [
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41378-026-01179-3/MediaObjects/41378_2026_1179_Fig2_HTML.png",
+      "alt": "Omnidirectional-Sensing Dexterous Hand · 论文 Fig. 2",
+      "label": "论文 Fig. 2",
+      "source": "https://www.nature.com/articles/s41378-026-01179-3",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41378-026-01179-3/MediaObjects/41378_2026_1179_Fig1_HTML.png",
+      "alt": "Omnidirectional-Sensing Dexterous Hand · 论文 Fig. 1",
+      "label": "论文 Fig. 1",
+      "source": "https://www.nature.com/articles/s41378-026-01179-3",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41378-026-01179-3/MediaObjects/41378_2026_1179_Fig3_HTML.png",
+      "alt": "Omnidirectional-Sensing Dexterous Hand · 论文 Fig. 3",
+      "label": "论文 Fig. 3",
+      "source": "https://www.nature.com/articles/s41378-026-01179-3",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "high-dexterity-neuroprosthetic": [
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-026-75105-6/MediaObjects/41467_2026_75105_Fig1_HTML.png",
+      "alt": "High-Dexterity Soft Neuroprosthetic Hand · 论文 Fig. 1",
+      "label": "论文 Fig. 1",
+      "source": "https://www.nature.com/articles/s41467-026-75105-6",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-026-75105-6/MediaObjects/41467_2026_75105_Fig2_HTML.png",
+      "alt": "High-Dexterity Soft Neuroprosthetic Hand · 论文 Fig. 2",
+      "label": "论文 Fig. 2",
+      "source": "https://www.nature.com/articles/s41467-026-75105-6",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-026-75105-6/MediaObjects/41467_2026_75105_Fig3_HTML.png",
+      "alt": "High-Dexterity Soft Neuroprosthetic Hand · 论文 Fig. 3",
+      "label": "论文 Fig. 3",
+      "source": "https://www.nature.com/articles/s41467-026-75105-6",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "matusik-pneumatic-hand": [
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2310.16280v1/figures/whole-hand.png",
+      "alt": "Matusik Pneumatic Hand · 整手结构",
+      "label": "整手结构",
+      "source": "https://arxiv.org/html/2310.16280v1",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2310.16280v1/figures/grasps.png",
+      "alt": "Matusik Pneumatic Hand · 论文抓取演示",
+      "label": "论文抓取演示",
+      "source": "https://arxiv.org/html/2310.16280v1",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2310.16280v1/figures/poses.png",
+      "alt": "Matusik Pneumatic Hand · 论文手势展示",
+      "label": "论文手势展示",
+      "source": "https://arxiv.org/html/2310.16280v1",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2310.16280v1/figures/thumb-CMC.png",
+      "alt": "Matusik Pneumatic Hand · 拇指掌根结构",
+      "label": "拇指掌根结构",
+      "source": "https://arxiv.org/html/2310.16280v1",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "tactile-softhand-a": [
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2406.12731v2/figures/fig1.jpg",
+      "alt": "Tactile SoftHand-A · 论文 Fig. 1 · 整手机构",
+      "label": "论文 Fig. 1 · 整手机构",
+      "source": "https://arxiv.org/html/2406.12731v2",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2406.12731v2/figures/fig2.jpg",
+      "alt": "Tactile SoftHand-A · 论文 Fig. 2 · 指部结构",
+      "label": "论文 Fig. 2 · 指部结构",
+      "source": "https://arxiv.org/html/2406.12731v2",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2406.12731v2/figures/fig13_updated.jpg",
+      "alt": "Tactile SoftHand-A · 论文 Fig. 13 · 遥操作与触觉控制",
+      "label": "论文 Fig. 13 · 遥操作与触觉控制",
+      "source": "https://arxiv.org/html/2406.12731v2",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "link",
+      "url": "https://github.com/HaoranLi-Data/Tactile_SoftHand_A/tree/main/Video_demo",
+      "label": "作者完整实验与补充视频",
+      "alt": "Tactile SoftHand-A · 作者完整实验与补充视频",
+      "source": "https://arxiv.org/html/2406.12731v2",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "jhu-neuromorphic-hand": [
+    {
+      "kind": "image",
+      "url": "https://i.ytimg.com/vi/dnPrY7xA08c/hqdefault.jpg",
+      "label": "大学官方演示视频封面",
+      "alt": "JHU Neuromorphic Bionic Hand · 大学官方演示视频封面",
+      "source": "https://engineering.jhu.edu/news/feeling-is-believing-bionic-hand-knows-what-its-touching-grasps-like-a-human/",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "link",
+      "url": "https://www.youtube.com/watch?v=dnPrY7xA08c",
+      "label": "大学官方视频 · Bionic Hand Grasps Like Human",
+      "alt": "JHU Neuromorphic Bionic Hand · 大学官方视频 · Bionic Hand Grasps Like Human",
+      "source": "https://engineering.jhu.edu/news/feeling-is-believing-bionic-hand-knows-what-its-touching-grasps-like-a-human/",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "xynova-prima-1": [
+    {
+      "kind": "image",
+      "url": "https://www.xynova.com.cn/_next/image?url=%2Fimages%2Fprima-1%2Fkv.png&w=1920&q=75",
+      "label": "官方产品与功能图 1",
+      "alt": "Xynova Prima 1 · 官方产品与功能图 1",
+      "source": "https://www.xynova.com.cn/en/xynova-prima-1",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.xynova.com.cn/_next/image?url=%2Fimages%2Fprima-1%2Fprima-1.png&w=1920&q=75",
+      "label": "官方产品与功能图 2",
+      "alt": "Xynova Prima 1 · 官方产品与功能图 2",
+      "source": "https://www.xynova.com.cn/en/xynova-prima-1",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.xynova.com.cn/_next/image?url=%2Fimages%2Fprima-1%2Fprima-2.png&w=1920&q=75",
+      "label": "官方产品与功能图 3",
+      "alt": "Xynova Prima 1 · 官方产品与功能图 3",
+      "source": "https://www.xynova.com.cn/en/xynova-prima-1",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.xynova.com.cn/_next/image?url=%2Fimages%2Fprima-1%2Fprima-3.png&w=1920&q=75",
+      "label": "官方产品与功能图 4",
+      "alt": "Xynova Prima 1 · 官方产品与功能图 4",
+      "source": "https://www.xynova.com.cn/en/xynova-prima-1",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "isyhand-v6": [
+    {
+      "kind": "image",
+      "url": "https://isyhand.is.mpg.de/media/upload/ISyHand_v6.png",
+      "alt": "ISyHand v6 · 作者 ISyHand v6 实物图",
+      "label": "作者 ISyHand v6 实物图",
+      "source": "https://isyhand.is.mpg.de/",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "bidexhand-v4": [
+    {
+      "kind": "image",
+      "url": "https://github.com/wengmister/BiDexHand/raw/main/images/vr_control_exp.gif",
+      "alt": "BiDexHand V4 · 作者动作跟随演示 · 具体演示修订未标",
+      "label": "作者动作跟随演示 · 具体演示修订未标",
+      "source": "https://github.com/wengmister/BiDexHand",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://github.com/wengmister/BiDexHand/raw/main/images/calibration.gif",
+      "alt": "BiDexHand V4 · 作者舵机校准演示",
+      "label": "作者舵机校准演示",
+      "source": "https://github.com/wengmister/BiDexHand",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://github.com/wengmister/BiDexHand/raw/main/images/franka_integration.gif",
+      "alt": "BiDexHand V4 · 作者 Franka 集成演示",
+      "label": "作者 Franka 集成演示",
+      "source": "https://github.com/wengmister/BiDexHand",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "faive-hand": [
+    {
+      "kind": "image",
+      "url": "https://srl-ethz.github.io/get-ball-rolling/img/faive_hand_overview.png",
+      "label": "作者 Proto 0 机构与自由度图",
+      "alt": "Faive Hand · Proto 0 · 作者 Proto 0 机构与自由度图",
+      "source": "https://srl-ethz.github.io/get-ball-rolling/",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "video",
+      "url": "https://srl-ethz.github.io/get-ball-rolling/vid/faive_cover_onoff.mp4",
+      "label": "作者实物与外壳演示",
+      "alt": "Faive Hand · Proto 0 · 作者实物与外壳演示",
+      "source": "https://srl-ethz.github.io/get-ball-rolling/",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "video",
+      "url": "https://srl-ethz.github.io/get-ball-rolling/vid/sphere-rotation_DR.m4v",
+      "label": "域随机化策略的实物转球演示",
+      "alt": "Faive Hand · Proto 0 · 域随机化策略的实物转球演示",
+      "source": "https://srl-ethz.github.io/get-ball-rolling/",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "ruka-v2": [
+    {
+      "kind": "image",
+      "url": "https://ruka-hand-v2.github.io/static/images/hardware_overview.jpeg",
+      "alt": "RUKA-v2 · 作者整手及腕部结构",
+      "label": "作者整手及腕部结构",
+      "source": "https://ruka-hand-v2.github.io/",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://ruka-hand-v2.github.io/static/images/wrist.jpeg",
+      "alt": "RUKA-v2 · 两自由度腕部原理",
+      "label": "两自由度腕部原理",
+      "source": "https://ruka-hand-v2.github.io/",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://ruka-hand-v2.github.io/static/images/knuckle.jpeg",
+      "alt": "RUKA-v2 · 手指展收模块",
+      "label": "手指展收模块",
+      "source": "https://ruka-hand-v2.github.io/",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "link",
+      "url": "https://www.youtube.com/embed/WKVG-CsXR4E?si=Q6dgGQQSL7b689Qa",
+      "label": "作者任务演示视频",
+      "alt": "RUKA-v2 · 作者任务演示视频",
+      "source": "https://ruka-hand-v2.github.io/",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "dexhand-021": [
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2511.03481v1/figure-1.jpg",
+      "alt": "DexHand 021 · 五指版 · 论文 Fig.1 · DexHand 021 实物",
+      "label": "论文 Fig.1 · DexHand 021 实物",
+      "source": "https://arxiv.org/html/2511.03481v1",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2511.03481v1/figure-2.jpg",
+      "alt": "DexHand 021 · 五指版 · 论文 Fig.2 · 关节布局",
+      "label": "论文 Fig.2 · 关节布局",
+      "source": "https://arxiv.org/html/2511.03481v1",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2511.03481v1/figure-6.jpg",
+      "alt": "DexHand 021 · 五指版 · 论文 Fig.6 · 拇指传动",
+      "label": "论文 Fig.6 · 拇指传动",
+      "source": "https://arxiv.org/html/2511.03481v1",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2511.03481v1/figure-7.jpg",
+      "alt": "DexHand 021 · 五指版 · 论文 Fig.7 · 长指传动",
+      "label": "论文 Fig.7 · 长指传动",
+      "source": "https://arxiv.org/html/2511.03481v1",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2511.03481v1/figure-18.jpg",
+      "alt": "DexHand 021 · 五指版 · 论文 Fig.18 · 操作实验",
+      "label": "论文 Fig.18 · 操作实验",
+      "source": "https://arxiv.org/html/2511.03481v1",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "robotera-xhand1": [
+    {
+      "kind": "image",
+      "url": "https://www.robotera.com/img/zyd.7pUi8rG9.png",
+      "label": "官方 XHAND 1 自由度示意",
+      "alt": "RobotEra XHAND 1 · 官方 XHAND 1 自由度示意",
+      "source": "https://www.robotera.com/#/product/XHAND",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "video",
+      "url": "https://www.robotera.com/media/xhand.B8L1F4mZ.mp4",
+      "label": "官方负载与操作演示",
+      "alt": "RobotEra XHAND 1 · 官方负载与操作演示",
+      "source": "https://www.robotera.com/#/product/XHAND",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.robotera.com/img/clm.CBY95yrl.gif",
+      "label": "指端环绕触觉示意",
+      "alt": "RobotEra XHAND 1 · 指端环绕触觉示意",
+      "source": "https://www.robotera.com/#/product/XHAND",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "aero-hand-open": [
+    {
+      "kind": "image",
+      "url": "https://raw.githubusercontent.com/chestnut-robotics/aero-hand-open/main/assets/overview1.png",
+      "alt": "Aero Hand Open · 作者整手结构",
+      "label": "作者整手结构",
+      "source": "https://chestnut-robotics.github.io/aero-hand-open/",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://raw.githubusercontent.com/chestnut-robotics/aero-hand-open/main/assets/overview2.png",
+      "alt": "Aero Hand Open · 作者结构细节",
+      "label": "作者结构细节",
+      "source": "https://chestnut-robotics.github.io/aero-hand-open/",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "video",
+      "url": "https://chestnut-robotics.github.io/aero-hand-open/static/videos/rollout-in-real.mp4",
+      "label": "作者实物转块实验",
+      "alt": "Aero Hand Open · 作者实物转块实验",
+      "source": "https://chestnut-robotics.github.io/aero-hand-open/",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "video",
+      "url": "https://chestnut-robotics.github.io/aero-hand-open/static/videos/rollout-sim-trimed.mp4",
+      "label": "对应仿真转块实验",
+      "alt": "Aero Hand Open · 对应仿真转块实验",
+      "source": "https://chestnut-robotics.github.io/aero-hand-open/",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "dexlink-hand": [
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2606.17418v1/fig/Overview.png",
+      "alt": "DexLink Hand · 论文 · 整手与任务概览",
+      "label": "论文 · 整手与任务概览",
+      "source": "https://arxiv.org/html/2606.17418v1",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2606.17418v1/fig/Mechanisms.png",
+      "alt": "DexLink Hand · 论文 · 关节与执行器映射",
+      "label": "论文 · 关节与执行器映射",
+      "source": "https://arxiv.org/html/2606.17418v1",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2606.17418v1/fig/Grasping.png",
+      "alt": "DexLink Hand · 论文 · 抓姿演示",
+      "label": "论文 · 抓姿演示",
+      "source": "https://arxiv.org/html/2606.17418v1",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2606.17418v1/fig/Tool_Manipulation.png",
+      "alt": "DexLink Hand · 论文 · 工具操作",
+      "label": "论文 · 工具操作",
+      "source": "https://arxiv.org/html/2606.17418v1",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "mm-hand": [
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2604.17245v1/figure/overview.jpg",
+      "alt": "MM-Hand 1.0 · 论文 · 实物与系统概览",
+      "label": "论文 · 实物与系统概览",
+      "source": "https://arxiv.org/html/2604.17245v1",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2604.17245v1/figure/palm_structure.png",
+      "alt": "MM-Hand 1.0 · 论文 · 掌部与快接腱索",
+      "label": "论文 · 掌部与快接腱索",
+      "source": "https://arxiv.org/html/2604.17245v1",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2604.17245v1/finger_structure.png",
+      "alt": "MM-Hand 1.0 · 论文 · 长指与拇指",
+      "label": "论文 · 长指与拇指",
+      "source": "https://arxiv.org/html/2604.17245v1",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2604.17245v1/Electronics.png",
+      "alt": "MM-Hand 1.0 · 论文 · 传感及通信架构",
+      "label": "论文 · 传感及通信架构",
+      "source": "https://arxiv.org/html/2604.17245v1",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "dmanus": [
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2210.15658v2/images/dmanus-fig-2.jpeg",
+      "alt": "D’Manus · ReSkin 版 · 论文 · 实物和触觉布置",
+      "label": "论文 · 实物和触觉布置",
+      "source": "https://arxiv.org/html/2210.15658v2",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2210.15658v2/images/dmanus_sim.png",
+      "alt": "D’Manus · ReSkin 版 · 论文 · MuJoCo 模型",
+      "label": "论文 · MuJoCo 模型",
+      "source": "https://arxiv.org/html/2210.15658v2",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2210.15658v2/grasps.png",
+      "alt": "D’Manus · ReSkin 版 · 论文 · 多物体抓取",
+      "label": "论文 · 多物体抓取",
+      "source": "https://arxiv.org/html/2210.15658v2",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "link",
+      "url": "https://www.youtube.com/watch?v=oiNdePCi_5k",
+      "label": "作者实验视频",
+      "alt": "D’Manus · ReSkin 版 · 作者实验视频",
+      "source": "https://arxiv.org/html/2210.15658v2",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "tesollo-dg-5f-s": [
+    {
+      "kind": "image",
+      "url": "https://cdn.tesollo.com/site/products/2026/08/146d4c2b-d994-494a-ad50-d38c48ffed34.webp",
+      "alt": "Tesollo DG-5F-S · 20 DoF · 官方 S 版 20 DoF 实物",
+      "label": "官方 S 版 20 DoF 实物",
+      "source": "https://www.tesollo.com/products/grippers/dg-5f-s",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://cdn.tesollo.com/site/products/dg-5f-s/dg-5f-s-product-8.webp",
+      "alt": "Tesollo DG-5F-S · 20 DoF · 官方指尖触觉选件",
+      "label": "官方指尖触觉选件",
+      "source": "https://www.tesollo.com/products/grippers/dg-5f-s",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "link",
+      "url": "https://www.youtube.com/watch?v=1I0rBwZGxWk",
+      "label": "官方 DG-5F-S 演示",
+      "alt": "Tesollo DG-5F-S · 20 DoF · 官方 DG-5F-S 演示",
+      "source": "https://www.tesollo.com/products/grippers/dg-5f-s",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "paxini-dexh13-gen2": [
+    {
+      "kind": "image",
+      "url": "https://cdn-cn.paxini.com/official/images/dex/dex-3.png",
+      "label": "官方 DexH13 GEN2 整手",
+      "alt": "PaXini DexH13 · GEN2 · 官方 DexH13 GEN2 整手",
+      "source": "https://paxini.com/cn/dex/gen2",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://cdn-cn.paxini.com/official/images/dex/dex-h13-1.png",
+      "label": "官方手眼相机说明",
+      "alt": "PaXini DexH13 · GEN2 · 官方手眼相机说明",
+      "source": "https://paxini.com/cn/dex/gen2",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://cdn-cn.paxini.com/official/images/dex/dex-h13-7.png",
+      "label": "官方触觉布局",
+      "alt": "PaXini DexH13 · GEN2 · 官方触觉布局",
+      "source": "https://paxini.com/cn/dex/gen2",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "brainco-revo-1": [
+    {
+      "kind": "image",
+      "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/legacy/docs-sdk/vqBsJXktUurIFegx.webp",
+      "label": "官方 Revo 1 产品外观",
+      "alt": "BrainCo Revo 1 · 官方 Revo 1 产品外观",
+      "source": "https://www.brainco-hz.com/docs/revolimb-hand/revo1/parameters.html",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/legacy/docs-sdk/revo1_dimensions_zh.jpg",
+      "alt": "BrainCo Revo 1 · 官方尺寸图",
+      "label": "官方尺寸图",
+      "source": "https://www.brainco-hz.com/docs/revolimb-hand/revo1/parameters.html",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/legacy/docs-sdk/VtPNvloRzBpYMdxI.webp",
+      "label": "官方主动 / 被动关节示意",
+      "alt": "BrainCo Revo 1 · 官方主动 / 被动关节示意",
+      "source": "https://www.brainco-hz.com/docs/revolimb-hand/revo1/parameters.html",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "brainco-revo-2": [
+    {
+      "kind": "image",
+      "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/legacy/docs-sdk/WbXwhniecMNLxKDj.webp",
+      "label": "官方 Revo 2 产品外观",
+      "alt": "BrainCo Revo 2 · 官方 Revo 2 产品外观",
+      "source": "https://www.brainco-hz.com/docs/revolimb-hand/revo2/parameters.html",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/legacy/docs-sdk/tnNAsYCIfrTZzRwh.webp",
+      "label": "官方 Revo 2 外观补充",
+      "alt": "BrainCo Revo 2 · 官方 Revo 2 外观补充",
+      "source": "https://www.brainco-hz.com/docs/revolimb-hand/revo2/parameters.html",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/legacy/docs-sdk/rMIpaCKuxmEDVONS.webp",
+      "label": "官方自由度分布",
+      "alt": "BrainCo Revo 2 · 官方自由度分布",
+      "source": "https://www.brainco-hz.com/docs/revolimb-hand/revo2/parameters.html",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "brainco-revo-3": [
+    {
+      "kind": "image",
+      "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/revo3_rendering.png",
+      "alt": "BrainCo Revo 3 · 官方 Revo 3 外观",
+      "label": "官方 Revo 3 外观",
+      "source": "https://www.brainco-hz.com/docs/revolimb-hand/revo3/parameters.html",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/revo3_dof_distribution.png",
+      "alt": "BrainCo Revo 3 · 官方逐关节编号",
+      "label": "官方逐关节编号",
+      "source": "https://www.brainco-hz.com/docs/revolimb-hand/revo3/parameters.html",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.brainco-hz.com/docs/revolimb-hand/images/revo3_dimensions.png",
+      "alt": "BrainCo Revo 3 · 官方尺寸图",
+      "label": "官方尺寸图",
+      "source": "https://www.brainco-hz.com/docs/revolimb-hand/revo3/parameters.html",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "elephant-h100": [
+    {
+      "kind": "image",
+      "url": "https://static.elephantrobotics.com/wp-content/uploads/2025/01/指灵巧手-英文-2.png",
+      "alt": "Elephant myGripper H100 · 官方 H100 产品概览",
+      "label": "官方 H100 产品概览",
+      "source": "https://www.elephantrobotics.com/en/mygripper-h100-en/",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "video",
+      "url": "https://static.elephantrobotics.com/wp-content/uploads/2025/01/WeChat_20250120161600.mp4",
+      "label": "官方 H100 实物演示",
+      "alt": "Elephant myGripper H100 · 官方 H100 实物演示",
+      "source": "https://www.elephantrobotics.com/en/mygripper-h100-en/",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://static.elephantrobotics.com/wp-content/uploads/2025/01/组-22.png",
+      "label": "官方手势演示",
+      "alt": "Elephant myGripper H100 · 官方手势演示",
+      "source": "https://www.elephantrobotics.com/en/mygripper-h100-en/",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://static.elephantrobotics.com/wp-content/uploads/2025/01/组-23.png",
+      "label": "官方物体抓取",
+      "alt": "Elephant myGripper H100 · 官方物体抓取",
+      "source": "https://www.elephantrobotics.com/en/mygripper-h100-en/",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "xpeng-iron-hand-2025": [
+    {
+      "kind": "video",
+      "url": "https://s-cdn.xpeng.com/commoncms/prod/2026-08-28/14885028f502438684cabe3b545fcfa1.mp4?name=AI+Robot+1",
+      "label": "官方 IRON 冲泡咖啡演示（整机）",
+      "alt": "XPENG IRON Hand · 2025 · 官方 IRON 冲泡咖啡演示（整机）",
+      "source": "https://www.xpeng.com/technology/AI_Robot_Iron",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "tencent-trx-hand": [
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2304.05141v1/merged_front_1.png",
+      "alt": "Tencent TRX-Hand · 三指 · 论文 · 实物操作与实验概览",
+      "label": "论文 · 实物操作与实验概览",
+      "source": "https://arxiv.org/html/2304.05141v1",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2304.05141v1/robot_hand.png",
+      "alt": "Tencent TRX-Hand · 三指 · 论文 · 8 关节机构图",
+      "label": "论文 · 8 关节机构图",
+      "source": "https://arxiv.org/html/2304.05141v1",
+      "verified_on": "2026-10-02"
+    },
+    {
+      "kind": "image",
+      "url": "https://arxiv.org/html/2304.05141v1/reference_pose_notation_tactile_2.png",
+      "alt": "Tencent TRX-Hand · 三指 · 论文 · MuJoCo 任务与触觉建模",
+      "label": "论文 · MuJoCo 任务与触觉建模",
+      "source": "https://arxiv.org/html/2304.05141v1",
+      "verified_on": "2026-10-02"
+    }
+  ],
+  "unitree-dex2-5": [
+    {
+      "kind": "image",
+      "url": "https://www.unitree.com/images/2e06005b29aa4a629c131f0a6448b4f0_800x800.png",
+      "label": "官方 Dex2/5 产品图",
+      "alt": "Unitree Dex2/5 · 官方 Dex2/5 产品图",
+      "source": "https://www.unitree.com/Dex2-5/",
+      "verified_on": "2026-10-04"
+    },
+    {
+      "kind": "video",
+      "url": "https://www.unitree.com/images/476f2276e3c14c3b86b286fcc4d7aeb5.mp4",
+      "label": "官方 Dex2/5 动作演示",
+      "alt": "Unitree Dex2/5 · 官方 Dex2/5 动作演示",
+      "source": "https://www.unitree.com/Dex2-5/",
+      "verified_on": "2026-10-04"
+    }
+  ],
+  "unitree-dex5-1": [
+    {
+      "kind": "image",
+      "url": "https://www.unitree.com/images/148d8cc897044981ac31186d69ce369f_800x800.png",
+      "label": "官方 Dex5-1 产品图",
+      "alt": "Unitree Dex5-1 · 官方 Dex5-1 产品图",
+      "source": "https://www.unitree.com/Dex5-1/",
+      "verified_on": "2026-10-04"
+    },
+    {
+      "kind": "video",
+      "url": "https://www.unitree.com/images/164d17eff0844c228f4ddd64d0c766bb.mp4",
+      "poster": "https://www.unitree.com/images/aacb7e3f428842de9df65063059ea266_3236x1819.png",
+      "label": "官方 Dex5-1 动作演示",
+      "alt": "Unitree Dex5-1 · 官方 Dex5-1 动作演示",
+      "source": "https://www.unitree.com/Dex5-1/",
+      "verified_on": "2026-10-04"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.unitree.com/images/bb5449be5095404897027b344537f602_2560x1920.gif",
+      "label": "官方 Dex5-1 关节运动演示",
+      "alt": "Unitree Dex5-1 · 官方 Dex5-1 关节运动演示",
+      "source": "https://www.unitree.com/Dex5-1/",
+      "verified_on": "2026-10-04"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.unitree.com/images/aee66a4bc16c4eb68d8bc705da172761_2000x859.png",
+      "label": "官方 Dex5-1 结构与规格配图",
+      "alt": "Unitree Dex5-1 · 官方 Dex5-1 结构与规格配图",
+      "source": "https://www.unitree.com/Dex5-1/",
+      "verified_on": "2026-10-04"
+    }
+  ],
+  "unitree-dex5-s": [
+    {
+      "kind": "image",
+      "url": "https://www.unitree.com/images/14bb24498bf74c9f91d1a722b92d23dc_800x800.png",
+      "label": "官方 Dex5-S 产品图",
+      "alt": "Unitree Dex5-S · 官方 Dex5-S 产品图",
+      "source": "https://www.unitree.com/Dex5-S/",
+      "verified_on": "2026-10-04"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.unitree.com/images/600db8f7de81451498e86abc98ab4838_3838x2160.jpg",
+      "label": "官方 Dex5-S 宣传图",
+      "alt": "Unitree Dex5-S · 官方 Dex5-S 宣传图",
+      "source": "https://www.unitree.com/Dex5-S/",
+      "verified_on": "2026-10-04"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.unitree.com/images/f37d2fe6be00471381d623bcda2dd58d_780x603.gif",
+      "label": "官方 Dex5-S 运动演示",
+      "alt": "Unitree Dex5-S · 官方 Dex5-S 运动演示",
+      "source": "https://www.unitree.com/Dex5-S/",
+      "verified_on": "2026-10-04"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.unitree.com/images/582e980a2caf4c95b7bdb3dcc4301f83_1920x1080.png",
+      "label": "官方 Dex5-S 规格配图",
+      "alt": "Unitree Dex5-S · 官方 Dex5-S 规格配图",
+      "source": "https://www.unitree.com/Dex5-S/",
+      "verified_on": "2026-10-04"
+    }
+  ],
+  "okada-hand": [
+    {
+      "kind": "link",
+      "url": "https://www.jstage.jst.go.jp/article/sicetr1965/10/2/10_2_230/_article/-char/en",
+      "source": "https://www.jstage.jst.go.jp/article/sicetr1965/10/2/10_2_230/_article/-char/en",
+      "label": "Okada · Three-Dimensional Pattern Recognition，1974",
+      "alt": "Okada Artificial Fingers · 1974 · 原始资料",
+      "verified_on": "2026-10-04"
+    }
+  ],
+  "stanford-jpl-hand": [
+    {
+      "kind": "link",
+      "url": "https://journals.sagepub.com/doi/10.1177/027836498200100102",
+      "source": "https://journals.sagepub.com/doi/10.1177/027836498200100102",
+      "label": "Salisbury、Craig · Articulated Hands，1982",
+      "alt": "Stanford/JPL Hand · 原始资料",
+      "verified_on": "2026-10-04"
+    },
+    {
+      "kind": "link",
+      "url": "https://ntrs.nasa.gov/citations/20020090918",
+      "source": "https://ntrs.nasa.gov/citations/20020090918",
+      "label": "NASA · Robot Hand，三指三关节历史说明",
+      "alt": "Stanford/JPL Hand · 原始资料",
+      "verified_on": "2026-10-04"
+    }
+  ],
+  "utah-mit-hand": [
+    {
+      "kind": "document",
+      "url": "https://people.csail.mit.edu/edsinger/raw/jacobsen_design_utah_hand.pdf",
+      "source": "https://people.csail.mit.edu/edsinger/raw/jacobsen_design_utah_hand.pdf",
+      "label": "Jacobsen 等 · Design of the Utah/M.I.T. Dextrous Hand，1986",
+      "alt": "Utah/MIT Dextrous Hand · Version III · 原始资料",
+      "verified_on": "2026-10-04"
+    }
+  ],
+  "barrett-hand-1993": [
+    {
+      "kind": "link",
+      "url": "https://barrett.com/history",
+      "source": "https://barrett.com/history",
+      "label": "Barrett · 公司历史中的 1993 年记录",
+      "alt": "BarrettHand · 第一代（1993） · 原始资料",
+      "verified_on": "2026-10-04"
+    }
+  ],
+  "dlr-hand-i": [
+    {
+      "kind": "link",
+      "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hand-i-1998",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hand-i-1998",
+      "label": "DLR · Hand I 机构与感知",
+      "alt": "DLR Hand I · 原始资料",
+      "verified_on": "2026-10-04"
+    },
+    {
+      "kind": "document",
+      "url": "https://www.dlr.de/en/rm/downloads/roboter_und_systeme/hand/icra98part1.pdf/@@download/file",
+      "source": "https://www.dlr.de/en/rm/downloads/roboter_und_systeme/hand/icra98part1.pdf/@@download/file",
+      "label": "Butterfass 等 · DLR’s Multisensory Articulated Hand，ICRA 1998",
+      "alt": "DLR Hand I · 原始资料",
+      "verified_on": "2026-10-04"
+    }
+  ],
+  "dlr-hit-hand-i": [
+    {
+      "kind": "document",
+      "url": "https://www.dlr.de/en/rm/downloads/roboter_und_systeme/hand/icra2003hitdlr.pdf/@@download/file",
+      "source": "https://www.dlr.de/en/rm/downloads/roboter_und_systeme/hand/icra2003hitdlr.pdf/@@download/file",
+      "label": "Liu 等 · The HIT/DLR Dexterous Hand: Work in Progress，2003",
+      "alt": "HIT/DLR Hand · 2003 原型 · 原始资料",
+      "verified_on": "2026-10-04"
+    }
+  ],
+  "dlr-hit-hand-ii": [
+    {
+      "kind": "document",
+      "url": "https://elib.dlr.de/55786/1/LiuHong-Multisensory_Five-Finger_Dexterous_Hand-IROS.pdf",
+      "source": "https://elib.dlr.de/55786/1/LiuHong-Multisensory_Five-Finger_Dexterous_Hand-IROS.pdf",
+      "label": "Liu 等 · Multisensory Five-Finger Dexterous Hand，2008",
+      "alt": "DLR/HIT Hand II · 原始资料",
+      "verified_on": "2026-10-04"
+    },
+    {
+      "kind": "link",
+      "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hit-hand-ii",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hit-hand-ii",
+      "label": "DLR · DLR-HIT Hand II 官方项目",
+      "alt": "DLR/HIT Hand II · 原始资料",
+      "verified_on": "2026-10-04"
+    }
+  ],
+  "sdm-hand": [
+    {
+      "kind": "document",
+      "url": "https://www.eng.yale.edu/grablab/pubs/dollar_ijrr2010.pdf",
+      "source": "https://www.eng.yale.edu/grablab/pubs/dollar_ijrr2010.pdf",
+      "label": "Dollar、Howe · The Highly Adaptive SDM Hand",
+      "alt": "Highly Adaptive SDM Hand · 原始资料",
+      "verified_on": "2026-10-04"
+    }
+  ],
+  "allegro-v1": [
+    {
+      "kind": "link",
+      "url": "https://allegrohand.com/sub/about/allegro.php",
+      "source": "https://allegrohand.com/sub/about/allegro.php",
+      "label": "Wonik · About Allegro",
+      "alt": "Allegro Hand V1.0 · 原始资料",
+      "verified_on": "2026-10-04"
+    }
+  ],
+  "qb-softhand-research": [
+    {
+      "kind": "link",
+      "url": "https://qbrobotics.com/between-soft-technology-and-collaborative-robots/",
+      "source": "https://qbrobotics.com/between-soft-technology-and-collaborative-robots/",
+      "label": "qbrobotics · Research 产品回溯",
+      "alt": "qb SoftHand Research · 单电机 · 原始资料",
+      "verified_on": "2026-10-04"
+    }
+  ],
+  "shadow-dex-ee": [
+    {
+      "kind": "link",
+      "url": "https://shadowrobot.com/shadow-robot-unveils-the-worlds-most-robust-dexterous-robot-hand-developed-in-partnership-with-google-deepmind/",
+      "source": "https://shadowrobot.com/shadow-robot-unveils-the-worlds-most-robust-dexterous-robot-hand-developed-in-partnership-with-google-deepmind/",
+      "label": "Shadow · DEX-EE 公告，2024-05-09",
+      "alt": "Shadow DEX-EE · 对称三指 · 原始资料",
+      "verified_on": "2026-10-04"
+    },
+    {
+      "kind": "link",
+      "url": "https://shadowrobot.com/dex-ee_series/",
+      "source": "https://shadowrobot.com/dex-ee_series/",
+      "label": "Shadow · DEX-EE 系列规格",
+      "alt": "Shadow DEX-EE · 对称三指 · 原始资料",
+      "verified_on": "2026-10-04"
+    }
+  ],
+  "tesollo-dg-5f-2024": [
+    {
+      "kind": "link",
+      "url": "https://www.tesollo.com/news/press/tesollo-develops-compact-lightweight-humanoid-hand-dg-5f-s",
+      "source": "https://www.tesollo.com/news/press/tesollo-develops-compact-lightweight-humanoid-hand-dg-5f-s",
+      "label": "Tesollo · DG-5F 与小型化 DG-5F-S 的官方记录",
+      "alt": "Tesollo DG-5F · 2024 · 原始资料",
+      "verified_on": "2026-10-04"
+    }
+  ],
+  "allegro-v5-2024": [
+    {
+      "kind": "link",
+      "url": "https://wonikrobotics.com/kr/sub/pr/news.php?bid=4&idx=108&mode=view&page=2",
+      "source": "https://wonikrobotics.com/kr/sub/pr/news.php?bid=4&idx=108&mode=view&page=2",
+      "label": "Wonik · Allegro Hand v5 发布公告，2024",
+      "alt": "Allegro Hand V5 · 2024 四指 · 原始资料",
+      "verified_on": "2026-10-04"
+    }
+  ],
+  "unitree-dex5-2025": [
+    {
+      "kind": "link",
+      "url": "https://www.youtube.com/watch?v=0rwYOa7pJCs",
+      "source": "https://www.youtube.com/watch?v=0rwYOa7pJCs",
+      "label": "Unitree · Dex5 官方公开展示",
+      "alt": "Unitree Dex5 · 2025 展示版 · 原始资料",
+      "verified_on": "2026-10-04"
+    }
+  ],
+  "figure-03-hand": [
+    {
+      "kind": "link",
+      "url": "https://www.figure.ai/news/introducing-figure-03",
+      "source": "https://www.figure.ai/news/introducing-figure-03",
+      "label": "Figure · Introducing Figure 03",
+      "alt": "Figure 03 Hand · 原始资料",
+      "verified_on": "2026-10-04"
+    },
+    {
+      "kind": "link",
+      "url": "https://www.figure.ai/news/helix-02",
+      "source": "https://www.figure.ai/news/helix-02",
+      "label": "Figure · Helix 02 全身控制",
+      "alt": "Figure 03 Hand · 原始资料",
+      "verified_on": "2026-10-04"
+    }
+  ],
+  "yale-model-q": [
+    {
+      "kind": "link",
+      "url": "https://www.eng.yale.edu/grablab/openhand/model_q.html",
+      "source": "https://www.eng.yale.edu/grablab/openhand/model_q.html",
+      "label": "Yale · OpenHand Model Q",
+      "alt": "Yale OpenHand Model Q · 原始资料",
+      "verified_on": "2026-10-04"
+    },
+    {
+      "kind": "document",
+      "url": "https://www.eng.yale.edu/grablab/pubs/Morgan_RAL2022.pdf",
+      "source": "https://www.eng.yale.edu/grablab/pubs/Morgan_RAL2022.pdf",
+      "label": "Morgan 等 · RA-L 2022 Model Q 实验与控制",
+      "alt": "Yale OpenHand Model Q · 原始资料",
+      "verified_on": "2026-10-04"
+    }
+  ],
+  "agibot-omnihand-3-ultra-m": [
+    {
+      "kind": "image",
+      "url": "https://www.agibot.com/file/ueditor/php/upload/image/20260718/1784337314818161.jpg",
+      "source": "https://www.agibot.com/article/231/detail/85.html",
+      "label": "WAIC 2026 官方发布配图",
+      "alt": "智元 OmniHand 3 Ultra-M 发布配图",
+      "verified_on": "2026-10-04"
+    }
+  ],
+  "agibot-omnihand-2025": [],
+  "agibot-omnihand-pro-2025": [
+    {
+      "kind": "document",
+      "url": "https://www.agibot.com.cn/file/ueditor/php/upload/file/20260201/1769938713468640.pdf",
+      "source": "https://www.agibot.com.cn/DOCS/OS/Omnihand-O12",
+      "label": "官方规格书 · Pro 2025",
+      "alt": "官方规格书及关节限位",
+      "verified_on": "2026-10-04"
+    }
+  ],
+  "agibot-omnihand-3-lite": [],
+  "agibot-omnihand-3-ultra-t": []
+}

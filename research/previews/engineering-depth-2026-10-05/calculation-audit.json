@@ -1,0 +1,20 @@
+{
+  "two-link-tip-mm": [
+    34.64101615137755,
+    50.0
+  ],
+  "tendon-joint-torque-Nm": 0.1,
+  "pinch-lower-N": 0.9810000000000001,
+  "pressure-array-N": 0.4,
+  "pressure-center-mm": [
+    1.2,
+    1.4
+  ],
+  "gear-output-torque-Nm": 0.16,
+  "position-force-step-m": 2.5e-06,
+  "trajectory-speed-only-min-time-s": 0.8999999999999999,
+  "tactile-stream-bit-s": 1600000,
+  "rgb-stream-bit-s": 55296000,
+  "pressure-limit-25mm2-N": 0.5,
+  "pressure-limit-100mm2-N": 2.0
+}

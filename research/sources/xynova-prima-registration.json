@@ -1,0 +1,72 @@
+[
+  {
+    "id": "xynova-prima-1",
+    "name": "Xynova Prima 1",
+    "company": "曦诺未来 · Xynova",
+    "year": 2026,
+    "venue": "官方产品资料",
+    "summary": "官网标称 22 DOF，尚未提供本轮可核验的逐指主动 / 被动轴拆分。",
+    "dof": null,
+    "actuators": null,
+    "route": null,
+    "parts": [
+      [
+        "五根手指",
+        "官网整手 22 DOF，逐指待核",
+        "主动、耦合及被动口径未拆分",
+        "仿人抓握与对掌"
+      ]
+    ],
+    "drive": "厂商称全直驱、低反驱扭矩；尚缺传动剖面与减速比证据，因此暂不把宣传术语当作已证实的无减速直驱。",
+    "sensing": "官网介绍五指视觉触觉，以接触区域的视觉信息提供感知；尚未给出传感器型号、标定误差及采样接口。",
+    "capability": "官方列出 15 N 指尖力、0.08 s 开合周期和力位混合控制。测试姿态、负载与计时协议尚待取得，不能作为独立实测结果或横向排名。",
+    "ranges": "190 mm 是手部尺寸描述，不是逐指关节运动范围；完整限位表待核。",
+    "gaps": "待核主动驱动数量、逐轴范围、重量、通信与供电、SDK 版本及可下载模型。",
+    "interpretation": "工程解释：较低反驱阻力有利于顺应接触，但需结合实际驱动结构、摩擦和闭环控制条件评估。",
+    "facts": {
+      "fingers": 5,
+      "dimensions": "官网称手尺度 190 mm",
+      "country": "中国",
+      "application": "科研与机器人操作",
+      "product_status": "官方产品页已列示"
+    },
+    "relation": "by",
+    "time_detail": "截至 2026-10-02 官方页面已公开；本记录不将网页访问年当作首次发布日期。",
+    "extra_sources": [
+      [
+        "官方资源中心",
+        "https://www.xynova.com.cn/en/download-center"
+      ]
+    ],
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://www.xynova.com.cn/_next/image?url=%2Fimages%2Fprima-1%2Fkv.png&w=1920&q=75",
+        "alt": "",
+        "poster": "",
+        "label": "官方产品与功能图 1"
+      },
+      {
+        "kind": "image",
+        "url": "https://www.xynova.com.cn/_next/image?url=%2Fimages%2Fprima-1%2Fprima-1.png&w=1920&q=75",
+        "alt": "",
+        "poster": "",
+        "label": "官方产品与功能图 2"
+      },
+      {
+        "kind": "image",
+        "url": "https://www.xynova.com.cn/_next/image?url=%2Fimages%2Fprima-1%2Fprima-2.png&w=1920&q=75",
+        "alt": "",
+        "poster": "",
+        "label": "官方产品与功能图 3"
+      },
+      {
+        "kind": "image",
+        "url": "https://www.xynova.com.cn/_next/image?url=%2Fimages%2Fprima-1%2Fprima-3.png&w=1920&q=75",
+        "alt": "",
+        "poster": "",
+        "label": "官方产品与功能图 4"
+      }
+    ]
+  }
+]

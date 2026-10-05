@@ -1,0 +1,242 @@
+{
+  "shadow-hand": [
+    {
+      "name": "MuJoCo · Menagerie / Shadow E3M5",
+      "url": "https://github.com/google-deepmind/mujoco_menagerie/tree/main/shadow_hand",
+      "note": "MJCF，左右手与场景 XML；E3M5 模型，不默认等同于本站 2024 Classic 配置。README 要求 MuJoCo ≥ 2.2.2。"
+    },
+    {
+      "name": "ROS / Gazebo · Shadow sr_description",
+      "url": "https://github.com/shadow-robot/sr_common/tree/noetic-devel/sr_description",
+      "note": "厂商 URDF/Xacro 与资源目录；noetic-devel 分支。Gazebo 配置依赖完整 ROS 工程，不是独立即开即用模型。"
+    }
+  ],
+  "leap-hand": [
+    {
+      "name": "MuJoCo · Menagerie / LEAP Hand",
+      "url": "https://github.com/google-deepmind/mujoco_menagerie/tree/main/leap_hand",
+      "note": "MJCF 模型目录；使用前核对 README、模型配置和许可证。"
+    },
+    {
+      "name": "Isaac Gym · LEAP Hand v1",
+      "url": "https://github.com/leap-hand/LEAP_Hand_Sim",
+      "note": "作者发布的 v1 仿真与训练工程；不是 Isaac Sim。"
+    }
+  ],
+  "wuji-hand": [
+    {
+      "name": "Wuji v1 · URDF / MJCF / USD / STEP",
+      "url": "https://github.com/wuji-technology/wuji-description/tree/main/hand",
+      "note": "厂商仓库 hand 目录对应一代；hand2 是另一代。含 ROS2 可视化、MuJoCo 与 Isaac Sim 资源；尚未在本机运行。"
+    }
+  ],
+  "yale-sphinx": [
+    {
+      "name": "Sphinx · 作者 CAD",
+      "url": "https://github.com/grablab/openhand-hardware/tree/master/sphinx%20hand",
+      "note": "作者项目页链接的硬件目录；CAD 不等同于可直接运行的 MuJoCo/Gazebo 模型。"
+    }
+  ],
+  "open-parametric-hand": [
+    {
+      "name": "Open Parametric Hand · 参数化设计",
+      "url": "https://github.com/kg398/100_fingers/tree/release_v1.2",
+      "note": "作者项目公布的设计代码入口；尚未验证下载和仿真适配，不标为现成 MJCF。"
+    }
+  ],
+  "detachable-crawling-hand": [
+    {
+      "name": "论文 CAD / 控制补充归档",
+      "url": "https://doi.org/10.5281/zenodo.14210599",
+      "note": "原论文 Code availability 指向的归档；未运行控制代码，也未确认 MuJoCo/Gazebo 兼容性。"
+    }
+  ],
+  "allegro-v5": [
+    {
+      "name": "官方 ROS · V5 三指 URDF / Xacro",
+      "url": "https://github.com/Wonikrobotics-git/allegro_hand_ros_v5-3Finger",
+      "note": "README 指向 description 中的 URDF、Xacro 与网格，以及 ROS/MoveIt 控制。README 个别段落仍残留 16 关节字样，使用前应检查实际三指模型；未在本机运行，不冒称已验证 Gazebo 或 MuJoCo。"
+    }
+  ],
+  "allegro-v5-plus": [
+    {
+      "name": "官方 ROS2 · V5 四指模型与控制",
+      "url": "https://github.com/Wonikrobotics-git/allegro_hand_ros2_v5",
+      "note": "包含 URDF、网格与 MoveIt2；README 列出 Isaac Sim 关节/接触消息接口。存在接口不代表完整仿真环境已在本机验证，也不适用于三指 V5 或 V6 F。"
+    }
+  ],
+  "tactile-active-palm": [
+    {
+      "name": "作者控制与运动学代码",
+      "url": "https://github.com/YuHoChau/7-DOF-Tactile-Gripper",
+      "note": "论文指定的运动学、触觉控制和姿态估计代码入口；未核实可直接运行的 MuJoCo/Gazebo 场景。"
+    }
+  ],
+  "tactile-softhand-a": [
+    {
+      "name": "作者 CAD / 制作说明 / 实验视频",
+      "url": "https://github.com/HaoranLi-Data/Tactile_SoftHand_A",
+      "note": "含整手与指尖 STEP 装配、Manufacturing_instructions 和 Video_demo。CAD 不是带惯性、接触与驱动定义的 MJCF/URDF 仿真模型。"
+    }
+  ],
+  "isyhand-v6": [
+    {
+      "name": "作者 CAD / URDF 下载入口",
+      "url": "https://isyhand.is.mpg.de/",
+      "note": "v2 与 v6 分开；页面要求注册下载，本轮未注册或取得文件。"
+    }
+  ],
+  "bidexhand-v4": [
+    {
+      "name": "作者 CAD、ROS2 与校准代码",
+      "url": "https://github.com/wengmister/BiDexHand",
+      "note": "README 为 V4；STEP/STL 位于 cad_asset，ROS2 在 src。演示媒体没有逐一标注修订，不作为 V4 性能证明。"
+    }
+  ],
+  "faive-hand": [
+    {
+      "name": "FaiveHandP0 · Isaac Gym 训练工程",
+      "url": "https://github.com/srl-ethz/faive_gym_oss",
+      "note": "Isaac Gym Preview 4 / Python 3.8；不是 Isaac Sim 或 Isaac Lab 原生包。"
+    }
+  ],
+  "ruka-v2": [
+    {
+      "name": "作者控制、学习与模型资产",
+      "url": "https://github.com/ruka-hand-v2/RUKA-v2",
+      "note": "assets、assets_v1 和 rukav2_sim 分开；旧 v1 资产不能自动视为 v2 模型。"
+    },
+    {
+      "name": "CAD 与装配入口",
+      "url": "https://ruka-hand-v2.github.io/",
+      "note": "项目页链接 Onshape 与装配指南；CAD 不等于可运行的接触动力学模型。"
+    }
+  ],
+  "dexhand-021": [
+    {
+      "name": "官方 MuJoCo 左右手模型",
+      "url": "https://dexrobot.github.io/dexrobot_mujoco/hand_models/index.html",
+      "note": "完整/简化碰撞、浮动基座和机械臂组合分开；浮动基座 6 轴不属于手部自由度。"
+    },
+    {
+      "name": "官方 Isaac Gym 训练工程",
+      "url": "https://github.com/DexRobot/dexrobot_isaac",
+      "note": "以子仓库安装说明为准，不将 Isaac Gym 与 Isaac Sim 等同。"
+    }
+  ],
+  "robotera-xhand1": [
+    {
+      "name": "官方整机 URDF（含手部）",
+      "url": "https://github.com/roboterax/models",
+      "note": "STAR1 整机描述，README 列双手各 12 DoF；不是独立 XHand1 动力学验证包。"
+    },
+    {
+      "name": "第三方 XHand1 YARP 驱动",
+      "url": "https://github.com/robotology/yarp-device-xhand",
+      "note": "README 引用 x86_64 v146 SDK 和 EtherCAT 设置；不能当成厂商通用 SDK 支持矩阵。"
+    }
+  ],
+  "aero-hand-open": [
+    {
+      "name": "官方 CAD、SDK 与 MuJoCo",
+      "url": "https://github.com/Chestnut-Robotics/aero-hand-open",
+      "note": "hardware、sdk、ros2、sim_rl 分开；软件与制造文件许可不同。"
+    }
+  ],
+  "dexlink-hand": [
+    {
+      "name": "作者论文与机构描述",
+      "url": "https://arxiv.org/html/2606.17418v1",
+      "note": "已查阅结构和实验；论文可读不代表 CAD、SDK、仿真模型已公开。"
+    }
+  ],
+  "mm-hand": [
+    {
+      "name": "作者开源发布入口",
+      "url": "https://mmlab.hk/research/MM-Hand",
+      "note": "作者声明开放 CAD、电子与软件；当前可读取页面未给出可核对的完整代码包，不标为已取得模型。"
+    }
+  ],
+  "dmanus": [
+    {
+      "name": "作者接口、采集与 Gym 封装",
+      "url": "https://github.com/raunaqbhirangi/dmanus_release",
+      "note": "依赖 Dynamixel 与 ReSkin 库；Gym 接口不等于已完成仿真配置验证。"
+    },
+    {
+      "name": "MuJoCo / CAD / 装配入口",
+      "url": "https://sites.google.com/view/dmanus",
+      "note": "作者声明提供模型与制作资源；具体文件修订待核。"
+    }
+  ],
+  "tesollo-dg-5f-s": [
+    {
+      "name": "官方 DG-5F-S ROS2 / Gazebo",
+      "url": "https://github.com/tesollodelto/dg5f_s_ros2",
+      "note": "S 专用描述、驱动与 Gazebo 包；选左右手及 20/15 轴，不使用 M 版替代。"
+    }
+  ],
+  "paxini-dexh13-gen2": [
+    {
+      "name": "官方型号与接口资料",
+      "url": "https://paxini.com/cn/dex/gen2",
+      "note": "已知 EtherCAT / Modbus；尚未确认可公开下载的 SDK、URDF 或仿真包。"
+    }
+  ],
+  "brainco-revo-1": [
+    {
+      "name": "官方 Revo 1 / 2 SDK",
+      "url": "https://github.com/BrainCoTech/brainco-hand-sdk",
+      "note": "C/C++、Python 接口；进阶版需要按硬件类型选择 API，不能仅看产品代数。"
+    }
+  ],
+  "brainco-revo-2": [
+    {
+      "name": "官方 Revo 1 / 2 SDK",
+      "url": "https://github.com/BrainCoTech/brainco-hand-sdk",
+      "note": "C/C++、Python 接口；进阶版需要按硬件类型选择 API，不能仅看产品代数。"
+    }
+  ],
+  "brainco-revo-3": [
+    {
+      "name": "官方 Revo 2 / 3 URDF、MJCF、USD",
+      "url": "https://github.com/BrainCoTech/brainco-description",
+      "note": "2026.09.30 描述资产；MJCF 执行器和可控仿真设置仍列为进行中，不等同完整训练环境。"
+    }
+  ],
+  "elephant-h100": [
+    {
+      "name": "H100 官方串口协议",
+      "url": "https://docs.elephantrobotics.com/docs/acc-cn/2-serialproduct/H100_Gripper/myhand.html",
+      "note": "单舵机控制与反馈寄存器；ROS / RViz 说明不等于已提供 Gazebo 或 MuJoCo 动力学。"
+    }
+  ],
+  "xpeng-iron-hand-2025": [
+    {
+      "name": "官方手部与整机演示",
+      "url": "https://www.xpeng.com/technology/AI_Robot_Iron",
+      "note": "产品展示入口；不是 SDK、CAD 或仿真文件下载。"
+    }
+  ],
+  "tencent-trx-hand": [
+    {
+      "name": "MuJoCo 建模与 sim-to-real 方法",
+      "url": "https://arxiv.org/html/2304.05141v1",
+      "note": "§III–V 描述手、触觉、自锁与回差模型；未核实独立模型文件下载。"
+    }
+  ],
+  "unitree-dex2-5": [
+    {
+      "name": "官方 dex2_5 左右手 URDF 与网格",
+      "url": "https://github.com/unitreerobotics/unitree_ros/tree/master/robots/dexterous_hand_description/dex2_5",
+      "note": "官方目录含 Left_Hand / Right_Hand.urdf、带 G1_5010 腕部的版本及 meshes；腕部轴不计入裸手自由度。未在本机加载或验证耦合与动力学。"
+    }
+  ],
+  "unitree-dex5-1": [
+    {
+      "name": "官方 dex5_1 左右手 URDF 与网格",
+      "url": "https://github.com/unitreerobotics/unitree_ros/tree/master/robots/dexterous_hand_description/dex5_1",
+      "note": "官方目录分 Dex5-URDF-L / R，提供左右手 URDF 与网格资产；文件存在不等于耦合约束、力矩限幅或物理接触已验证，也不代表 MJCF / Gazebo 任务已可运行。"
+    }
+  ]
+}

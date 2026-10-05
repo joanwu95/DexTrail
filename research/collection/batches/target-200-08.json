@@ -1,0 +1,242 @@
+[
+  [
+    "neo-2026-hand",
+    "1X NEO 手（2026）",
+    "industrial-hand",
+    "https://www.1x.tech/discover/neos-hands",
+    "官方2026年7月介绍列25自由度，其中22属于手指和手掌、3属于腕部；采用前臂电机与腱传动，低减速比设计以支持反向驱动。描述指面法向和剪切力感知。",
+    "25不能直接与不含腕部的手指自由度比较。电机移到前臂可减轻手部，但整套驱动的体积、腱路由和摩擦仍应一起评估。"
+  ],
+  [
+    "figure-03-hand",
+    "Figure 03 手",
+    "industrial-hand",
+    "https://www.figure.ai/news/helix-02",
+    "Figure在Helix 02介绍中说明Figure 03手加入掌部相机和指尖触觉，控制网络联合视觉、触觉及本体反馈输出手指关节目标。",
+    "掌部视角可观察头部相机被手或物体遮挡的近距离区域。网络任务表现属于机器人整套系统，不能全部归因于手的硬件；本条不将Helix算法另计为一款手。"
+  ],
+  [
+    "festo-learninggripper",
+    "Festo LearningGripper",
+    "research-gripper",
+    "https://www.festo.com/us/en/e/about-festo/research-and-development/bionic-learning-network/bionic-grippers-and-soft-robots/learninggripper-id_33613",
+    "四根手指各有三个自由度，共使用12个气动波纹管执行器；官方展示通过强化学习调整球体朝向。",
+    "这是研究手内操作而不仅是开合抓取的气动平台。演示学会转球不代表可以直接处理任意物体或任务。"
+  ],
+  [
+    "festo-multichoicegripper",
+    "Festo MultiChoiceGripper",
+    "research-gripper",
+    "https://www.festo.com/PDF_Flip/corp/Festo_MultiChoiceGripper/en/index.html",
+    "2014官方资料展示可转动指座，以切换平行和向心抓取；使用Fin Ray自适应手指，介绍2至6指组合。资料明确扁平物体并非优选对象。",
+    "改变指座布局相当于在抓取前调整接触几何。多个手指组合归入同一平台，不能按手指数把每种配置都算独立产品。"
+  ],
+  [
+    "allegro-v6f",
+    "Allegro Hand V6F",
+    "industrial-hand",
+    "https://allegrohand.com/sub/product/p.php?idx=25",
+    "官方列五指、每指四个主动关节，共20主动自由度，重量1150g；直流电机配减速传动。指尖、关节和手掌有接触压力感知，控制含电流、位置及刚度模式。",
+    "电机控制关节不等于无减速器直驱。压力单位不能直接充当指尖合力；关节角度分辨率也不代表定位准确度。"
+  ],
+  [
+    "allegro-v5-plus",
+    "Allegro Hand V5 Plus",
+    "industrial-hand",
+    "https://allegrohand.com/sub/product/p.php?idx=4",
+    "官方列四指、每指四个主动关节，总计16主动自由度、1024g；采用减速电机、CAN通信，指尖以电容传感器检测气压变化。",
+    "这与另列的三指九自由度V5结构不同。气压变化可提供接触线索，但需要接触面积和标定才能解释为物体受力。"
+  ],
+  [
+    "tian-gesture-hand",
+    "Tian 等手势空间设计手（2020）",
+    "academic-hand",
+    "https://arxiv.org/abs/2012.10981",
+    "论文摘要提出13个驱动自由度的仿人手，依据Feix抓取分类设计运动范围，通过关键抓取手势之间插值生成运动；报告62种手势及连续动作的评估。",
+    "按任务需要设计关节范围，能避免单纯追求自由度数量。复现静态手势和在负载下完成操作是不同评价层级。",
+    "作者论文摘要已读；全文实验、资源文件及版本兼容性待核查"
+  ],
+  [
+    "acb-hand",
+    "ACB Hand",
+    "academic-hand",
+    "https://arxiv.org/abs/1909.07966",
+    "2019论文摘要描述仿生骨骼、韧带、内外在肌肉及腱滑轮网络；使用Landsmeer模型、Kapandji测试、GRASP抓取类型和指尖轨迹进行评价。",
+    "路线重点是复现人体运动结构。抓型覆盖和拇指对指能力可帮助评估运动空间，但不能替代抓取稳定性与寿命测试。",
+    "作者论文摘要已读；全文实验、资源文件及版本兼容性待核查"
+  ],
+  [
+    "nadine-cable-hand",
+    "Nadine 腱驱手（2017）",
+    "academic-hand",
+    "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2017.00065/full",
+    "论文介绍六个伺服电机驱动的3D打印腱驱手，使用互锁手指结构并可安装到Nadine机器人；研究比较硅胶皮肤与执行器配置，指出皮肤会增加运动所需的驱动力。",
+    "外覆皮肤不仅影响外观和接触摩擦，也可能使弯曲变费力，因此驱动选型必须把皮肤阻力算进去。",
+    "论文设计介绍及皮肤/执行器讨论已读；实验细节仍待逐表核对"
+  ],
+  [
+    "hri-hand",
+    "HRI Hand",
+    "academic-hand",
+    "https://www.sciencedirect.com/science/article/pii/S2468067220300092",
+    "2020论文摘要描述五根模块化手指，利用双四杆连杆实现欠驱动以及接触前的预成形；公开说明包含CAD、URDF、Python和ROS/RViz支持。",
+    "连杆先把手指带到合适抓型，再依靠欠驱动适应接触。找到URDF入口不表示碰撞、摩擦和执行器参数已经适合物理仿真。",
+    "作者论文摘要已读；全文实验、资源文件及版本兼容性待核查"
+  ],
+  [
+    "nelson-reconfigurable-hand",
+    "Nelson 等可重构手（2022）",
+    "academic-hand",
+    "https://journals.sagepub.com/doi/10.1177/09544062221085092?icid=int.sj-abstract.citing-articles.1",
+    "论文摘要介绍万向架和平行四边形机构结合的可重构手，目标是在保持欠驱动抓握的同时改变物体姿态；报告实体原型与多体仿真。",
+    "把抓紧物体与改变物体朝向分配给不同机构，有助于理解该路线为何不只增加手指关节。具体可转角度与负载尚需全文核对。",
+    "作者论文摘要已读；全文实验、资源文件及版本兼容性待核查"
+  ],
+  [
+    "liu-modular-hybrid-hand",
+    "Liu 等模块化软硬混合手（2023）",
+    "academic-hand",
+    "https://arxiv.org/abs/2309.16081",
+    "论文摘要描述软硬结合的模块化机器人手，在刚性部件中配置传感以估计姿态，并以人类抓型进行实验。",
+    "柔性部分负责顺应接触，刚性部分提供安装和观测基准。测得部件姿态不等于直接测得每处接触力。",
+    "作者论文摘要已读；全文实验、资源文件及版本兼容性待核查"
+  ],
+  [
+    "vsh1",
+    "VSH1 可变刚度手",
+    "academic-hand",
+    "https://salford-repository.worktribe.com/output/1376431/variable-stiffness-robotic-hand-for-stable-grasp-and-flexible-handling",
+    "2018研究摘要介绍用于稳定抓取和柔性搬运的可变物理刚度手，并讨论通过顺应性处理不确定物体与动态耦合。",
+    "物理刚度改变的是机械结构抵抗变形的程度，区别于软件中设定一个较小的位置控制增益。具体刚度范围和测试条件仍待全文。",
+    "作者论文摘要已读；全文实验、资源文件及版本兼容性待核查"
+  ],
+  [
+    "wang-layer-jamming-hand",
+    "Wang 等层阻塞变刚度软手（2020）",
+    "academic-hand",
+    "https://ietresearch.onlinelibrary.wiley.com/doi/abs/10.1049/ccs.2020.0003",
+    "论文摘要描述三个层阻塞单元，以电机牵引腱线弯曲，并通过独立气路切换刚柔状态；层间结构采用弹簧钢片及热熔胶材料。",
+    "弯曲和变硬由不同机制承担：腱线决定姿态，层间压紧改变滑动阻力。这不等于用气压直接驱动全部弯曲动作。",
+    "作者论文摘要已读；全文实验、资源文件及版本兼容性待核查"
+  ],
+  [
+    "nagase-variable-stiffness-hand",
+    "Nagase 等表面变刚度手（2011）",
+    "academic-hand",
+    "https://doi.org/10.1088/0964-1726/20/10/105015",
+    "论文摘要介绍腱驱手，采用气动软橡胶结构改变手指表面刚度，并研究气压对表面静摩擦的影响。",
+    "这里改变的是接触表面性质，不能直接称作关节刚度调节。表面顺应性和摩擦会影响物体是否滑落。",
+    "作者论文摘要已读；全文实验、资源文件及版本兼容性待核查"
+  ],
+  [
+    "artus-lite",
+    "ARTUS Lite / Lite+",
+    "industrial-hand",
+    "https://github.com/Sarcomere-Dynamics/Sarcomere_Dynamics_Resources/blob/main/ArtusAPI/robot/artus_lite/ARTUS_LITE.md",
+    "官方API资料列24V供电、USB-C、RS485与Wi-Fi TCP接口，提供手指弯曲及侧摆命令；Lite+说明继承默认参数，当前合并为一条。",
+    "文档中的10N和150度每秒是命令默认值，不能当作经过测量的最大指尖力及最高速度。模型入口见同仓库；控制代码未在本地执行。"
+  ],
+  [
+    "artus-talos",
+    "ARTUS Talos",
+    "industrial-hand",
+    "https://github.com/Sarcomere-Dynamics/Sarcomere_Dynamics_Resources/blob/main/ArtusAPI/robot/artus_talos/ARTUS_TALOS.MD",
+    "官方API资料列24V供电、USB-C及RS485 Modbus RTU通信；唤醒后需要标定，手指屈曲范围0至90度，拇指侧摆范围正负55度。",
+    "启动标定影响关节目标的参考零点，需要纳入集成流程。16N命令默认值不作为独立实测力指标；与Lite不同的轴配置单独记录。"
+  ],
+  [
+    "linker-o6",
+    "Linker Hand O6",
+    "industrial-hand",
+    "https://linkerbot.cn/details/LinkerHandO6/",
+    "官方列6主动加5被动自由度、连杆传动、360g，触觉选配，支持CAN/CAN FD/RS485/ECAT；重复定位指标小于正负0.20mm。",
+    "被动关节会随机构或接触运动，并非11个关节都能独立控制。页面同时列负载和指尖力，两者测试口径不同，不能互相换算后排名。"
+  ],
+  [
+    "linker-l6",
+    "Linker Hand L6",
+    "industrial-hand",
+    "https://linkerbot.cn/details/LinkerHandL6/",
+    "官方介绍6主动加5被动自由度、无刷电机和滚珠丝杠方案，通信含CAN和RS485，列重复定位小于正负0.20mm。",
+    "丝杠把电机转动变成直线推力；页面所述200N属于丝杠推力，经过手指连杆后不能原样写成指尖力。"
+  ],
+  [
+    "cambridge-passive-hand",
+    "Cambridge Gilday 被动柔顺手（2023）",
+    "academic-hand",
+    "https://www.cam.ac.uk/stories/robotic-hand",
+    "大学研究介绍中，手指不靠独立电机逐关节控制，而由腕部动作和3D打印结构的被动弹性产生抓取；触觉皮肤用于预测抓取失败。报道包含1200次测试。",
+    "手指不主动驱动不代表整个装置不需要动力。它研究如何利用身体结构降低控制负担，不能据有限物体实验推断任意物体成功率。",
+    "大学原始研究新闻正文已读；对应论文全文待读"
+  ],
+  [
+    "spark-hand",
+    "SPARK Hand",
+    "academic-hand",
+    "https://arxiv.org/abs/2504.20506",
+    "论文摘要描述两指手，将Kempe直线运动机构和平行四边形结合，以保持指尖朝向；利用桌面约束及弹性被动切换捏取和铲取，针对薄平物体。",
+    "桌面在这里参与了操作。评价时应明确是否允许借助环境，不能把铲起纸片的能力与悬空捏取直接等同。",
+    "作者论文摘要已读；全文实验、资源文件及版本兼容性待核查"
+  ],
+  [
+    "open-parametric-hand",
+    "Open Parametric Hand（OPH）",
+    "academic-hand",
+    "https://arxiv.org/abs/2410.18633",
+    "论文摘要介绍非线性滚动关节及仿生腱路由，用较少驱动协调手部动作；参数化结构支持人手、双拇指镜像及指猴形态，已制作原型。",
+    "这是可改变形态的同一设计平台，本目录只计一条。项目资源入口：https://sites.google.com/view/open-parametric-hand/home ，发布源码：https://github.com/kg398/100_fingers/tree/release_v1.2 。原型可打印不等于已具备经过验证的动力学模型。",
+    "作者论文摘要已读；全文实验、资源文件及版本兼容性待核查"
+  ],
+  [
+    "prensilia-ih2-azzurra",
+    "Prensilia IH2 Azzurra",
+    "industrial-hand",
+    "https://www.prensilia.com/it/ih2-azzurra/",
+    "官方列五个驱动、11自由度、640g；无名指与小指耦合。提供位置、电流和力PID模式，四路腱张力传感为可选配置。",
+    "腱张力测量的是拉动手指的绳子有多紧，并不直接告诉你物体表面被压了多少力。耦合手指也不能当作完全独立运动轴。"
+  ],
+  [
+    "lau-pam-hand",
+    "低成本气动肌肉仿人手（2012）",
+    "academic-hand",
+    "https://www.sciencedirect.com/science/article/pii/S1877705812026379",
+    "论文摘要介绍16机械自由度，由14个McKibben气动肌肉通过腱线驱动；欠驱动传力结构用于减少执行器数量，实验包含开环的力量抓取和精细抓取。",
+    "气动肌肉收缩后拉动腱线。开环演示没有根据接触误差实时修正，所以不能由能抓起物体推断具备高精度力控。",
+    "作者论文摘要已读；全文实验、资源文件及版本兼容性待核查"
+  ],
+  [
+    "nikafrooz-single-actuated-hand",
+    "Nikafrooz–Leonessa 单驱动手（2021）",
+    "academic-hand",
+    "https://vtechworks.lib.vt.edu/items/323e2fb9-53ca-4bff-abc1-0ab3e50a3676",
+    "作者论文摘要描述五指19自由度、单执行器腱驱手；指形借鉴Pisa/IIT SoftHand，但重新设计传力机构以减小部件数量和摩擦，并制作3D打印实体原型。",
+    "19个可运动自由度并不意味着19个独立动作命令；单电机通过机械协调完成适应性抓取。结构借鉴不等于同一产品，本条对应独立传动原型。",
+    "作者论文摘要已读；全文实验、资源文件及版本兼容性待核查"
+  ],
+  [
+    "uw-hand",
+    "UW Hand（20-DoF 气动腱驱原型）",
+    "academic-hand",
+    "https://vikashplus.github.io/P_Finger.html",
+    "作者项目页介绍20自由度、模块化3D打印手及可卡装关节；40个低摩擦气缸和比例阀放在手外驱动腱线，并说明建立了MuJoCo运动学模型。",
+    "手体成本和重量应与外置气缸、阀及气源分开记录。作者说建立了模型不等于已核实可下载的MJCF；页面仍标论文投稿中，不据此认定最终出版信息。"
+  ],
+  [
+    "hackberry",
+    "HACKberry",
+    "prosthetic-hand",
+    "https://github.com/mission-arm/HACKberry",
+    "项目仓库提供3D零件、手部电路、传感电路、物料表及Arduino Micro程序；说明反射式光传感器用于检测肌肉隆起。",
+    "它以肌肉形变的光学信号获取使用者意图，不应误写为直接测量肌电。公开硬件文件不等于任意商用开放，具体文件许可应分别核对。",
+    "官方仓库README与目录已读；未运行程序或打开每个CAD文件"
+  ],
+  [
+    "olympic-hand",
+    "OLYMPIC 模块化假肢手",
+    "prosthetic-hand",
+    "https://www.researchgate.net/publication/337618125_OLYMPIC_A_Modular_Tendon-Driven_Prosthetic_Hand_with_Novel_Finger_and_Wrist_Coupling_Mechanisms",
+    "作者论文描述指级和腕级模块化腱驱假肢手，通过耦合机构让手指无需工具、重新穿腱或接线即可拆装；研究拆卸力矩与承受外力之间的取舍，并报告实物抓取测试。",
+    "易拆卸和抓物时不会脱落存在设计矛盾，因此接口的脱开阈值也是性能指标。该手的贡献是维护与传动连接方式，不能只看自由度。",
+    "作者论文摘要及设计介绍已读；全部实验表格待核查"
+  ]
+]

@@ -1,0 +1,490 @@
+[
+  {
+    "slug": "form-closure",
+    "size": [
+      650,
+      393
+    ],
+    "frames": 1,
+    "loop": null,
+    "labels": [
+      "4 frictionless point contacts",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "Fixed contacts",
+      "Friction is not required",
+      "N [1,1,1,1] = 0",
+      "No rotation",
+      "No translation",
+      "Normal wrench matrix N",
+      "rank(N) = 3"
+    ]
+  },
+  {
+    "slug": "force-closure",
+    "size": [
+      752,
+      381
+    ],
+    "frames": 1,
+    "loop": null,
+    "labels": [
+      "All planar wrench directions",
+      "Counter force",
+      "Counter moment",
+      "Force limits still matter",
+      "Frictional contacts",
+      "Two opposed contacts + friction"
+    ]
+  },
+  {
+    "slug": "friction-cone",
+    "size": [
+      796,
+      430
+    ],
+    "frames": 1,
+    "loop": null,
+    "labels": [
+      "Inside cone",
+      "Outside cone",
+      "Static demand infeasible",
+      "Static force feasible",
+      "|ft| > μ fn",
+      "|ft| ≤ μ fn"
+    ]
+  },
+  {
+    "slug": "antipodal-grasp",
+    "size": [
+      732,
+      393
+    ],
+    "frames": 1,
+    "loop": null,
+    "labels": [
+      "Antipodal",
+      "Line inside both cones",
+      "Line outside the cones",
+      "Not antipodal"
+    ]
+  },
+  {
+    "slug": "caging",
+    "size": [
+      834,
+      429
+    ],
+    "frames": 80,
+    "loop": 0,
+    "labels": [
+      "Fixed cage · moving object",
+      "Narrow gate",
+      "No escape path",
+      "Object cannot pass",
+      "Room to move"
+    ]
+  },
+  {
+    "slug": "contact-models",
+    "size": [
+      852,
+      424
+    ],
+    "frames": 1,
+    "loop": null,
+    "labels": [
+      "1 component",
+      "3 components",
+      "4 components",
+      "Also torsional moment",
+      "Frictional point",
+      "Frictionless point",
+      "Normal + tangent",
+      "Normal force",
+      "Soft-finger patch",
+      "fn"
+    ]
+  },
+  {
+    "slug": "wrench",
+    "size": [
+      628,
+      335
+    ],
+    "frames": 1,
+    "loop": null,
+    "labels": [
+      "3 force components",
+      "3 moment components",
+      "Force F",
+      "Moment about O",
+      "O",
+      "r",
+      "w = [ F ; τ ]",
+      "τ = r × F"
+    ]
+  },
+  {
+    "slug": "grasp-matrix",
+    "size": [
+      686,
+      392
+    ],
+    "frames": 1,
+    "loop": null,
+    "labels": [
+      "C1",
+      "C1 = (−a,0)   C2 = (a,0)",
+      "C2",
+      "Contact forces → object wrench",
+      "Forces must obey contact constraints",
+      "[ 0   1   0   1 ]",
+      "[ 0  −a   0   a ]",
+      "[ 1   0   1   0 ]",
+      "f = [fx1, fy1, fx2, fy2]",
+      "w = G f",
+      "w = [Fx, Fy, Mz]"
+    ]
+  },
+  {
+    "slug": "internal-force",
+    "size": [
+      720,
+      425
+    ],
+    "frames": 1,
+    "loop": null,
+    "labels": [
+      "G f_int = 0",
+      "Gentle squeeze",
+      "Net wrench = 0",
+      "Stronger squeeze"
+    ]
+  },
+  {
+    "slug": "grasp-wrench-space",
+    "size": [
+      786,
+      464
+    ],
+    "frames": 1,
+    "loop": null,
+    "labels": [
+      "0 ≤ fn1, fn2 ≤ 1",
+      "Exact planar slice: Mz = 0",
+      "Feasible wrench set",
+      "Fx",
+      "Fy",
+      "μ = 0.5"
+    ]
+  },
+  {
+    "slug": "grasp-quality",
+    "size": [
+      854,
+      453
+    ],
+    "frames": 1,
+    "loop": null,
+    "labels": [
+      "Grasp A",
+      "Grasp B",
+      "Larger worst-case margin",
+      "Smaller worst-case margin",
+      "w1",
+      "w2",
+      "εA < εB"
+    ]
+  },
+  {
+    "slug": "equilibrium-stability",
+    "size": [
+      822,
+      456
+    ],
+    "frames": 80,
+    "loop": 0,
+    "labels": [
+      "Asymptotically stable",
+      "Displace",
+      "Neutral equilibrium",
+      "No restoring force",
+      "Release",
+      "Reset",
+      "Restoring force + damping",
+      "Returns toward reference",
+      "Stays displaced"
+    ]
+  },
+  {
+    "slug": "grasp-types",
+    "size": [
+      855,
+      466
+    ],
+    "frames": 1,
+    "loop": null,
+    "labels": [
+      "Fingertip pinch",
+      "Intermediate grasp",
+      "Lateral pinch",
+      "Power grasp",
+      "Precision grasp",
+      "Tool handle"
+    ]
+  },
+  {
+    "slug": "virtual-finger",
+    "size": [
+      849,
+      411
+    ],
+    "frames": 1,
+    "loop": null,
+    "labels": [
+      "Four fingers",
+      "One functional unit",
+      "Palm",
+      "Similar force direction",
+      "VF 1",
+      "VF 2"
+    ]
+  },
+  {
+    "slug": "in-hand-manipulation",
+    "size": [
+      845,
+      444
+    ],
+    "frames": 80,
+    "loop": 0,
+    "labels": [
+      "Fingers coordinate",
+      "Object moves in the hand",
+      "Object reorientation",
+      "Palm stays fixed"
+    ]
+  },
+  {
+    "slug": "finger-gaiting",
+    "size": [
+      836,
+      443
+    ],
+    "frames": 80,
+    "loop": 0,
+    "labels": [
+      "Hold",
+      "Lift → move → contact",
+      "New contact",
+      "One finger steps",
+      "Return step",
+      "Two contacts support",
+      "the stationary object"
+    ]
+  },
+  {
+    "slug": "rolling",
+    "size": [
+      714,
+      354
+    ],
+    "frames": 80,
+    "loop": 0,
+    "labels": [
+      "Finger pad",
+      "No slip at contact",
+      "Object translates",
+      "and rotates",
+      "v_contact = 0"
+    ]
+  },
+  {
+    "slug": "sliding",
+    "size": [
+      731,
+      354
+    ],
+    "frames": 80,
+    "loop": 0,
+    "labels": [
+      "Contact slips along pad",
+      "Finger pad",
+      "Object translates",
+      "v_relative = 0",
+      "v_relative ≠ 0",
+      "without rotating"
+    ]
+  },
+  {
+    "slug": "pivoting",
+    "size": [
+      776,
+      373
+    ],
+    "frames": 80,
+    "loop": 0,
+    "labels": [
+      "Fixed pivot",
+      "Object rotates",
+      "about the contact"
+    ]
+  },
+  {
+    "slug": "compliance",
+    "size": [
+      753,
+      371
+    ],
+    "frames": 80,
+    "loop": 0,
+    "labels": [
+      "Compliant finger",
+      "Deflection δ",
+      "F = K δ",
+      "Load F",
+      "Yields under load"
+    ]
+  },
+  {
+    "slug": "impedance-control",
+    "size": [
+      674,
+      467
+    ],
+    "frames": 80,
+    "loop": 0,
+    "labels": [
+      "Controlled response",
+      "Displace",
+      "External disturbance",
+      "Impedance controller",
+      "M δ¨ + D δ˙ + K δ = Fext",
+      "Reference",
+      "Release",
+      "Reset",
+      "Virtual K, D"
+    ]
+  },
+  {
+    "slug": "underactuation",
+    "size": [
+      811,
+      396
+    ],
+    "frames": 80,
+    "loop": 0,
+    "labels": [
+      "1 input",
+      "2 joint DOFs",
+      "First link stops",
+      "M",
+      "One motor pulls",
+      "Second keeps moving",
+      "Tendon +",
+      "Two joints respond",
+      "passive joint"
+    ]
+  },
+  {
+    "slug": "synergy",
+    "size": [
+      857,
+      421
+    ],
+    "frames": 80,
+    "loop": 0,
+    "labels": [
+      "Coordinated posture",
+      "Many joint angles",
+      "One synergy coordinate",
+      "Spread",
+      "Together",
+      "q = q0 + S s",
+      "s"
+    ]
+  },
+  {
+    "slug": "adaptive-synergy",
+    "size": [
+      863,
+      430
+    ],
+    "frames": 80,
+    "loop": 0,
+    "labels": [
+      "Adapts after contact",
+      "Common drive",
+      "Compliant branches",
+      "First branch holds",
+      "M",
+      "Other branch continues"
+    ]
+  },
+  {
+    "slug": "finger-abduction-adduction",
+    "size": [
+      482,
+      514
+    ],
+    "frames": 96,
+    "loop": 0
+  },
+  {
+    "slug": "finger-flexion-extension",
+    "size": [
+      606,
+      389
+    ],
+    "frames": 96,
+    "loop": 0
+  },
+  {
+    "slug": "thumb-opposition-reposition",
+    "size": [
+      615,
+      481
+    ],
+    "frames": 96,
+    "loop": 0
+  },
+  {
+    "slug": "thumb-palmar-abduction-adduction",
+    "size": [
+      641,
+      464
+    ],
+    "frames": 96,
+    "loop": 0
+  },
+  {
+    "slug": "thumb-radial-abduction-adduction",
+    "size": [
+      525,
+      477
+    ],
+    "frames": 96,
+    "loop": 0
+  },
+  {
+    "slug": "finger-circumduction",
+    "size": [
+      627,
+      475
+    ],
+    "frames": 96,
+    "loop": 0
+  },
+  {
+    "slug": "hand-anatomy",
+    "size": [
+      1536,
+      1024
+    ],
+    "frames": 1,
+    "loop": null
+  }
+]

@@ -1,0 +1,460 @@
+{
+  "schema_version": 1,
+  "sources": {
+    "force-closure": {
+      "title": "Modern Robotics · Force Closure",
+      "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/12-2-3-force-closure/",
+      "kind": "教材与作者教学资料",
+      "locator": "Description 与 Transcript：摩擦接触、力闭合条件及执行器能力边界",
+      "verified_on": "2026-10-05"
+    },
+    "ik": {
+      "title": "Modern Robotics · Numerical Inverse Kinematics",
+      "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/6-2-numerical-inverse-kinematics-part-1-of-2/",
+      "kind": "教材与作者教学资料",
+      "locator": "数值逆运动学教学页：迭代求解",
+      "verified_on": "2026-10-05"
+    },
+    "feedback": {
+      "title": "Modern Robotics · Motion Control with Torque or Force Inputs",
+      "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/11-4-motion-control-with-torque-or-force-inputs-part-1-of-3/",
+      "kind": "教材与作者教学资料",
+      "locator": "Description 与 Transcript：单关节 PD/PID、力矩接口与动力学",
+      "verified_on": "2026-10-05"
+    },
+    "dexgraspnet": {
+      "title": "DexGraspNet · arXiv v2",
+      "url": "https://arxiv.org/abs/2210.02697v2",
+      "kind": "论文",
+      "locator": "摘要与版本记录；2022 首次提交，2023-03-08 v2",
+      "verified_on": "2026-10-05"
+    },
+    "dexgraspnet-project": {
+      "title": "DexGraspNet · 作者项目页",
+      "url": "https://pku-epic.github.io/DexGraspNet/",
+      "kind": "作者项目资料",
+      "locator": "ICRA 2023 标注、摘要、Code/Dataset 入口；未执行数据生成",
+      "verified_on": "2026-10-05"
+    },
+    "dexmv": {
+      "title": "DexMV · 作者项目页",
+      "url": "https://yzqin.github.io/dexmv/",
+      "kind": "作者项目资料",
+      "locator": "ECCV 2022、Platform and Pipeline、Demonstration Translation 与 Main Results",
+      "verified_on": "2026-10-05"
+    },
+    "retargeting": {
+      "title": "dex-retargeting · 作者仓库",
+      "url": "https://github.com/dexsuite/dex-retargeting",
+      "kind": "代码仓库",
+      "locator": "README：用途、两类示例、关节顺序与方法来源；未运行",
+      "verified_on": "2026-10-05"
+    },
+    "hora": {
+      "title": "In-Hand Object Rotation via Rapid Motor Adaptation · v1",
+      "url": "https://arxiv.org/abs/2210.04887v1",
+      "kind": "论文",
+      "locator": "摘要与 CoRL 2022 标注；首次提交 2022-10-10",
+      "verified_on": "2026-10-05"
+    },
+    "hora-project": {
+      "title": "HORA · 作者项目页",
+      "url": "https://haozhi.io/hora/",
+      "kind": "作者项目资料",
+      "locator": "摘要、Size/Mass Adaptation、Cylinders vs. Spheres 与基线入口",
+      "verified_on": "2026-10-05"
+    },
+    "pp-tac": {
+      "title": "PP-Tac · arXiv v2",
+      "url": "https://arxiv.org/abs/2504.16649v2",
+      "kind": "论文",
+      "locator": "摘要与 RSS 2025 接收备注；v2 为 2025-06-18",
+      "verified_on": "2026-10-05"
+    },
+    "pp-tac-project": {
+      "title": "PP-Tac · 作者项目页",
+      "url": "https://peilin-666.github.io/projects/PP-Tac/",
+      "kind": "作者项目资料",
+      "locator": "摘要、Tactile Sensor、Slip Detection 与资源入口；未核验完整统计协议",
+      "verified_on": "2026-10-05"
+    },
+    "scope": {
+      "title": "Simultaneous Contact Location and Object Pose Estimation · arXiv",
+      "url": "https://arxiv.org/abs/2206.01245",
+      "kind": "论文",
+      "locator": "摘要：CPFGrasp 与 SCOPE 双粒子滤波，验证平台为单臂及双臂系统",
+      "verified_on": "2026-10-05"
+    },
+    "dactyl": {
+      "title": "Learning Dexterous In-Hand Manipulation · v5",
+      "url": "https://arxiv.org/abs/1808.00177v5",
+      "kind": "论文",
+      "locator": "摘要与版本记录；2018 首次提交，阅读 v5（2019-01-18）；沿用本站原论文笔记",
+      "verified_on": "2026-10-05"
+    },
+    "hora-code": {
+      "title": "HORA · 作者代码仓库",
+      "url": "https://github.com/HaozhiQi/hora/",
+      "kind": "代码仓库",
+      "locator": "README：版本、内部 Allegro 与公开 v4、两阶段训练和稳定初始抓姿",
+      "verified_on": "2026-10-05"
+    },
+    "dexgraspnet-code": {
+      "title": "DexGraspNet · 作者代码仓库",
+      "url": "https://github.com/PKU-EPIC/DexGraspNet",
+      "kind": "代码仓库",
+      "locator": "作者项目页链接的 README 与代码目录；未运行",
+      "verified_on": "2026-10-05"
+    },
+    "dexmv-code": {
+      "title": "DexMV · 作者仿真代码仓库",
+      "url": "https://github.com/yzqin/dexmv-sim",
+      "kind": "代码仓库",
+      "locator": "作者项目页链接的 README 与代码目录；未运行",
+      "verified_on": "2026-10-05"
+    },
+    "pp-tac-code": {
+      "title": "PP-Tac · 作者代码仓库",
+      "url": "https://github.com/bigai-ai/PP-Tac/tree/main",
+      "kind": "代码仓库",
+      "locator": "作者项目页链接的 README 与资源入口；未运行",
+      "verified_on": "2026-10-05"
+    }
+  },
+  "problems": [
+    {
+      "id": "perception-and-state",
+      "title": "感知与状态估计",
+      "summary": "物体在哪里？手碰到了什么，是否正在滑动？",
+      "sources": [
+        "scope",
+        "pp-tac",
+        "dexmv"
+      ],
+      "path": "algorithms/problems/perception-and-state.md"
+    },
+    {
+      "id": "grasp-synthesis",
+      "title": "抓取生成与评价",
+      "summary": "手应该怎样摆，接触哪里，怎样检查候选抓姿？",
+      "sources": [
+        "force-closure",
+        "dexgraspnet"
+      ],
+      "path": "algorithms/problems/grasp-synthesis.md"
+    },
+    {
+      "id": "contact-planning",
+      "title": "运动与接触规划",
+      "summary": "怎样到达抓姿，并在滚动、滑动和换指中保持支持？",
+      "sources": [
+        "ik",
+        "force-closure",
+        "hora"
+      ],
+      "path": "algorithms/problems/contact-planning.md"
+    },
+    {
+      "id": "control-and-force",
+      "title": "控制与力分配",
+      "summary": "怎样跟踪目标、调节抓力，并对接触变化作出反馈？",
+      "sources": [
+        "feedback",
+        "force-closure",
+        "pp-tac"
+      ],
+      "path": "algorithms/problems/control-and-force.md"
+    },
+    {
+      "id": "retargeting",
+      "title": "遥操作与动作重定向",
+      "summary": "人手动作怎样映射到尺寸、关节和构型不同的机器人手？",
+      "sources": [
+        "retargeting",
+        "dexmv"
+      ],
+      "path": "algorithms/problems/retargeting.md"
+    },
+    {
+      "id": "skill-learning",
+      "title": "操作技能学习",
+      "summary": "怎样从示范或试错中学会旋转、搬移和抓取？",
+      "sources": [
+        "dexmv",
+        "hora",
+        "dactyl"
+      ],
+      "path": "algorithms/problems/skill-learning.md"
+    },
+    {
+      "id": "identification-and-adaptation",
+      "title": "模型辨识与在线适应",
+      "summary": "物体或系统条件变化后，怎样辨识差异并调整策略？",
+      "sources": [
+        "hora",
+        "hora-project"
+      ],
+      "path": "algorithms/problems/identification-and-adaptation.md"
+    },
+    {
+      "id": "sim-to-real",
+      "title": "仿真迁移与验证",
+      "summary": "仿真里的方法怎样接到真实接口，并检查迁移效果？",
+      "sources": [
+        "dactyl",
+        "hora",
+        "pp-tac"
+      ],
+      "path": "algorithms/problems/sim-to-real.md"
+    }
+  ],
+  "methods": [
+    {
+      "id": "optimization",
+      "title": "几何建模与数值优化",
+      "summary": "把接触、关节和目标写成变量、代价与约束。",
+      "sources": [
+        "ik",
+        "force-closure",
+        "dexgraspnet",
+        "retargeting"
+      ],
+      "path": "algorithms/methods/optimization.md"
+    },
+    {
+      "id": "probabilistic-inference",
+      "title": "概率推断与状态估计",
+      "summary": "结合模型、观测与不确定性，更新状态估计。",
+      "sources": [
+        "scope"
+      ],
+      "path": "algorithms/methods/probabilistic-inference.md"
+    },
+    {
+      "id": "feedback-control",
+      "title": "模型与反馈控制",
+      "summary": "用目标、误差和反馈持续调整动作与接触力。",
+      "sources": [
+        "feedback",
+        "pp-tac"
+      ],
+      "path": "algorithms/methods/feedback-control.md"
+    },
+    {
+      "id": "reinforcement-learning",
+      "title": "强化学习",
+      "summary": "通过任务奖励和交互训练，学习操作策略。",
+      "sources": [
+        "hora",
+        "dactyl",
+        "dexmv"
+      ],
+      "path": "algorithms/methods/reinforcement-learning.md"
+    },
+    {
+      "id": "imitation-learning",
+      "title": "模仿学习",
+      "summary": "把示范数据转换为可以执行的操作策略。",
+      "sources": [
+        "dexmv"
+      ],
+      "path": "algorithms/methods/imitation-learning.md"
+    },
+    {
+      "id": "generative-models",
+      "title": "生成模型",
+      "summary": "学习条件分布，生成候选抓姿或动作序列。",
+      "sources": [
+        "pp-tac",
+        "pp-tac-project"
+      ],
+      "path": "algorithms/methods/generative-models.md"
+    }
+  ],
+  "cases": [
+    {
+      "id": "pp-tac",
+      "title": "PP-Tac · 触觉反馈与动作生成",
+      "summary": "把滑移检测、在线摩擦力控制与扩散策略结合，用于拾取纸类薄物体。",
+      "task": "薄物体拾取",
+      "scope": "灵巧手研究",
+      "boundary": "整体任务的结果不能单独归因于某一个算法模块。",
+      "date_note": "RSS 2025",
+      "sources": [
+        "pp-tac",
+        "pp-tac-project",
+        "pp-tac-code"
+      ],
+      "problems": {
+        "perception-and-state": [
+          "pp-tac"
+        ],
+        "control-and-force": [
+          "pp-tac"
+        ],
+        "skill-learning": [
+          "pp-tac"
+        ],
+        "sim-to-real": [
+          "pp-tac"
+        ]
+      },
+      "methods": {
+        "feedback-control": [
+          "pp-tac"
+        ],
+        "generative-models": [
+          "pp-tac"
+        ]
+      },
+      "path": "algorithms/cases/pp-tac.md"
+    },
+    {
+      "id": "dexgraspnet",
+      "title": "DexGraspNet · 抓姿合成与数据",
+      "summary": "利用可微力闭合估计生成抓姿，并在仿真中检查。",
+      "task": "多指抓姿合成",
+      "scope": "灵巧手研究",
+      "boundary": "仿真检查通过不等于真实接近、抓取与搬运成功。",
+      "date_note": "ICRA 2023 · 预印本 2022",
+      "sources": [
+        "dexgraspnet",
+        "dexgraspnet-project",
+        "dexgraspnet-code"
+      ],
+      "problems": {
+        "grasp-synthesis": [
+          "dexgraspnet"
+        ]
+      },
+      "methods": {
+        "optimization": [
+          "dexgraspnet"
+        ]
+      },
+      "path": "algorithms/cases/dexgraspnet.md"
+    },
+    {
+      "id": "dexmv",
+      "title": "DexMV · 从人类视频到操作示范",
+      "summary": "提取手与物体三维位姿，转换示范，再用于模仿学习。",
+      "task": "搬移、倾倒、放入容器",
+      "scope": "灵巧手研究",
+      "boundary": "人手轨迹转换与最终策略学习需要分别评估。",
+      "date_note": "ECCV 2022",
+      "sources": [
+        "dexmv",
+        "dexmv-code"
+      ],
+      "problems": {
+        "perception-and-state": [
+          "dexmv"
+        ],
+        "retargeting": [
+          "dexmv"
+        ],
+        "skill-learning": [
+          "dexmv"
+        ]
+      },
+      "methods": {
+        "imitation-learning": [
+          "dexmv"
+        ],
+        "reinforcement-learning": [
+          "dexmv"
+        ]
+      },
+      "path": "algorithms/cases/dexmv.md"
+    },
+    {
+      "id": "hora",
+      "title": "HORA · 手内旋转与在线适应",
+      "summary": "在仿真中训练策略，利用本体感知历史适应物体属性。",
+      "task": "手内物体旋转",
+      "scope": "灵巧手研究",
+      "boundary": "摘要主要验证绕 z 轴旋转；不据此推断任意装配能力。",
+      "date_note": "CoRL 2022",
+      "sources": [
+        "hora",
+        "hora-project",
+        "hora-code"
+      ],
+      "problems": {
+        "contact-planning": [
+          "hora"
+        ],
+        "control-and-force": [
+          "hora"
+        ],
+        "skill-learning": [
+          "hora"
+        ],
+        "identification-and-adaptation": [
+          "hora"
+        ],
+        "sim-to-real": [
+          "hora"
+        ]
+      },
+      "methods": {
+        "reinforcement-learning": [
+          "hora"
+        ]
+      },
+      "path": "algorithms/cases/hora.md"
+    },
+    {
+      "id": "scope",
+      "title": "SCOPE · 接触与位姿联合估计",
+      "summary": "用两个互补粒子滤波器估计接触位置和物体位姿。",
+      "task": "物体接触中的状态估计",
+      "scope": "相邻操作研究",
+      "boundary": "原研究验证于单臂及双臂系统，不作为灵巧手实验证据。",
+      "date_note": "预印本 2022",
+      "sources": [
+        "scope"
+      ],
+      "problems": {
+        "perception-and-state": [
+          "scope"
+        ]
+      },
+      "methods": {
+        "probabilistic-inference": [
+          "scope"
+        ]
+      },
+      "path": "algorithms/cases/scope.md"
+    },
+    {
+      "id": "dactyl",
+      "title": "手内操作 · 从仿真训练到真实手",
+      "summary": "强化学习与域随机化用于历史 Shadow 实验系统的物体重定向。",
+      "task": "手内物体重定向",
+      "scope": "灵巧手研究",
+      "boundary": "历史实验配置的结果不能当作现售产品的默认能力。",
+      "date_note": "预印本 2018 · 阅读 v5",
+      "sources": [
+        "dactyl"
+      ],
+      "problems": {
+        "skill-learning": [
+          "dactyl"
+        ],
+        "sim-to-real": [
+          "dactyl"
+        ],
+        "control-and-force": [
+          "dactyl"
+        ]
+      },
+      "methods": {
+        "reinforcement-learning": [
+          "dactyl"
+        ]
+      },
+      "path": "papers/learning-dexterous-in-hand-manipulation.md"
+    }
+  ]
+}

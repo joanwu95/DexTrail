@@ -1,0 +1,25 @@
+
+Yale OpenHand Project - Sphinx Hand
+ Sphinx Hand
+ ABOUT
+ PERFORMANCE
+ BUILD
+ About Sphinx Hand
+ The Sphinx hand is based on a spherical parallel architecture that can both grasp and rotate a wide range of objects in all three axes, combining much of the function of traditional wrists and grippers. The hand mechanism allows for pure spherical rotations of the grasped object about a known fixed point close to the object, thus avoiding parasitic translations and inefficient arm motions. This point also stays fixed with respect to the hand, and is independent of object shape, pose, or initial grasp. 
+ Vatsal. V. Patel and Aaron M. Dollar
+ "Combining Grasping and Rotation with a Spherical Robot Hand Mechanism," Nature Machine Intelligence, 2025.
+ Performance
+ Specifications
+ Actuators: 3x Dynamixel XM-430 W350-R and 3x Dynamixel XL-430 W250-T
+ Base Width: 175mm
+ Weight: 645g
+ Capabilities
+ Screwing in Bulbs and Untangling Ropes with Fixed End-effector Orientation (Video)
+ Manipulation Tasks with Locked Wrist Joints on Arm (Video)
+ Build
+ CAD
+ Latest Revision [Github]
+ Instructions
+ Revision 1.0 Guide (04/25/25)
+ This work is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported License.
+ Home | Model Q | Model VF | Stewart Hand | Model T | Model T42 | Model O | Model M2 | Sphinx Hand | Model F3 | Couplings | HDM

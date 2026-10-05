@@ -1,0 +1,18 @@
+/* Editorial layer: reuse the product canvas and fixed chapter rail. */
+.dex-essay>p,.dex-essay>ul{max-width:1000px}
+.md-typeset .dex-essay>h2{margin-top:52px;padding-top:24px;border-top:1px solid var(--dex-line);font-size:25px;font-weight:600;scroll-margin-top:26px}
+.md-typeset .dex-essay>p{line-height:1.95;color:#cbd3de}
+.md-typeset .dex-essay .essay-thesis{font-size:23px;line-height:1.8;color:var(--dex-text);border-left:2px solid var(--dex-gold);padding:12px 22px;margin:15px 0 28px}
+.md-typeset .essay-counts{max-width:1000px;margin:28px 0;padding:12px 0;background:transparent;border:0;border-radius:0;text-align:left}
+.essay-counts .essay-figure-caption{font-size:14px;color:var(--dex-muted);margin:0 0 22px}
+.essay-count-row{display:grid;grid-template-columns:160px 1fr;gap:20px;align-items:center;margin:16px 0;font-size:15px}
+.essay-count-row strong{font-weight:500}.essay-track{display:flex;height:44px;background:var(--dex-panel);border-radius:4px;overflow:hidden}
+.essay-track span{display:flex;justify-content:center;align-items:center;background:#79bfc229;border:1px solid #79bfc266;color:#b1e1e3;white-space:nowrap;font-size:14px}
+.essay-track .essay-wrist{color:var(--dex-accent);background:color-mix(in srgb,var(--dex-accent) 14.1%,transparent);border-color:color-mix(in srgb,var(--dex-accent) 43.9%,transparent)}
+.essay-counts p{font-size:13px;color:var(--dex-muted);margin:20px 0 0}
+.essay-decision-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin:24px 0}
+.essay-decision-grid article{border-top:2px solid #786847;padding:20px 0}
+.essay-decision-grid span{color:var(--dex-gold);font-size:13px}.essay-decision-grid h3{font-size:20px!important;font-weight:500!important;line-height:1.7!important}.essay-decision-grid p{color:var(--dex-muted)}
+.dex-analysis-link{margin:28px 0;padding:0;background:transparent;font-size:15px;color:var(--dex-muted)}
+.dex-analysis-link a{display:block;font-size:17px;margin:5px 0;color:var(--dex-gold)}
+@media(max-width:650px){.essay-count-row{grid-template-columns:1fr;gap:8px}.essay-decision-grid{grid-template-columns:1fr;gap:0}.md-typeset .essay-counts{padding:12px 0}.md-typeset .dex-essay .essay-thesis{font-size:19px}.essay-track span{font-size:12px}}

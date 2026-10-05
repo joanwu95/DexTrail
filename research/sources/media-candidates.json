@@ -1,0 +1,3785 @@
+{
+  "shadow-hand": {
+    "source": "https://shadowrobot.com/dexterous-hand-series/",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://shadowrobot.com/wp-content/themes/shadow-robot/images/check_list.svg",
+        "alt": "Dexterous Hand Series - check list",
+        "poster": ""
+      }
+    ]
+  },
+  "leap-hand": {
+    "source": "https://v1.leaphand.com/",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "link",
+        "url": "https://www.youtube.com/embed/VKAlJPypQFI?si=cCTNNFVNXYQhLoNS",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v1.leaphand.com/static/videos/video_segments/demo_vr_rss.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v1.leaphand.com/static/videos/video_segments/pringles.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v1.leaphand.com/static/videos/video_segments/pour_1.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v1.leaphand.com/static/videos/video_segments/output_avp_teleop.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v1.leaphand.com/static/videos/video_segments/AVP_pybullet.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v1.leaphand.com/static/videos/video_segments/in_hand_real_world_new.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v1.leaphand.com/static/videos/video_segments/reorient_lab.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v1.leaphand.com/static/videos/video_segments/playground.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v1.leaphand.com/static/videos/video_segments/teleop_1.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v1.leaphand.com/static/videos/video_segments/teleop_2.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v1.leaphand.com/static/videos/video_segments/teleop_3.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v1.leaphand.com/static/videos/video_segments/autonomous_1.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v1.leaphand.com/static/videos/video_segments/autonomous_2.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v1.leaphand.com/static/videos/video_segments/autonomous_3.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://v1.leaphand.com/static/figures/behavior_cloning.PNG",
+        "alt": "Behavior Cloning Results Table",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v1.leaphand.com/static/videos/video_segments/allegro_side_side.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v1.leaphand.com/static/videos/video_segments/leap_c_side_side.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v1.leaphand.com/static/videos/video_segments/leap_side_side.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v1.leaphand.com/static/videos/video_segments/assembly_new.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "link",
+        "url": "https://sketchfab.com/models/229cba1aae88468aa7ce890306adba92/embed?camera=0",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v1.leaphand.com/static/videos/video_segments/strength.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://v1.leaphand.com/static/figures/strength.PNG",
+        "alt": "Strength Results Table",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v1.leaphand.com/static/videos/video_segments/repeatability_test.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://v1.leaphand.com/static/figures/repeatability-1.png",
+        "alt": "Repeatability Test Graph",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://v1.leaphand.com/static/figures/repeatability_caption.png",
+        "alt": "Repeatability Test Caption",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v1.leaphand.com/static/videos/video_segments/grasp_1.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v1.leaphand.com/static/videos/video_segments/grasp_2.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v1.leaphand.com/static/videos/video_segments/grasp_3.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://v1.leaphand.com/static/figures/grasp.PNG",
+        "alt": "Grasping Test Table",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://v1.leaphand.com/static/figures/teleoperation.PNG",
+        "alt": "Teleoperation Test Table",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.websitecounterfree.com/c.php?d=6&id=39103&s=4",
+        "alt": "Free Website Counter",
+        "poster": ""
+      }
+    ]
+  },
+  "dlr-hand-ii": {
+    "source": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/hand-ii/design-construction-of-dlr-hand-ii",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/static/media/LogoSimple.0621bfc3.svg",
+        "alt": "DLR Logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/de/rm/bilder/roboter_und_systeme/hand/hand_ii/handshake_200.jpg/@@images/image",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/de/rm/bilder/roboter_und_systeme/hand/hand_ii/hand-II-finger-kinematics_200.jpg/@@images/image",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/de/rm/bilder/roboter_und_systeme/hand/hand_ii/bevelgear_200.jpg/@@images/image",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/de/rm/bilder/roboter_und_systeme/hand/hand_ii/toolretainer_200.jpg/@@images/image",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/static/media/bmftr_logo_de.f379bb5e.svg",
+        "alt": "Gefördert durch: Bundesministerium für Forschung, Technologie und Raumfahrt",
+        "poster": ""
+      }
+    ]
+  },
+  "xynova-flex-2": {
+    "source": "https://www.manus-meta.com/use-cases/how-xynova-teleoperates-the-flex-2-dexterous-hand-with-manus-metagloves-pro-haptic",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://www.facebook.com/tr?id=946583903993464&ev=PageView&noscript=1",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6617b472be5db819f4dbdf45/6617b5e1de43e22adce59287_56d29ba4e89c14f22421760d8e3d63b3_MANUS%20logo%20black.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6617b472be5db819f4dbdf45/6696658ee475fef76901f07e_icon-menu.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6617b472be5db819f4dbdf45/671277c3cb0e01e6d1f5ecc3_e97857803b728ca18442fc5e336dba73_product-mp-03.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6617b472be5db819f4dbdf45/69271662104d1ae96bf8e34a_3ad6f08649ac98dd3e1e1a8da80c2c6f_mpr-haptic_small.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6617b472be5db819f4dbdf45/6707db2b1a2da7785435fd79_e7058afd9b4b39b1b8a5988a05f6de6e_manus-quantum-metagloves.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6617b472be5db819f4dbdf45/66c6f112325023bfa1cd9fb2_metagloves-accessory-pack.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6617b472be5db819f4dbdf45/68f0b2c7cca22577e1d3b00b_icon_core.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6617b472be5db819f4dbdf45/68f0b2e39c70b112b53e5bdf_icon_licenses.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6617b472be5db819f4dbdf45/6964cf00041fab5722786992_icon_download.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6617b472be5db819f4dbdf45/6863dab2319b92701061576b_icon_robotics.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6617b472be5db819f4dbdf45/6863db964e44b21508035fab_icon_entertainment.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6617b472be5db819f4dbdf45/6863dbabf6dd356a860791c4_icon_vr.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6617b472be5db819f4dbdf45/6863dbbd2fda9f335beb06cc_icon_research.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6617b472be5db819f4dbdf45/68f0b64bcfdac0b49b35176b_dc1d71c738837a4a0b4c5f09aa3c5190_icon_success.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6617b472be5db819f4dbdf45/68f0b66a9227274f81187801_icon_articles.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6617b472be5db819f4dbdf45/6712515ec409d9f6f7d9214d_icon-researchpaper.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6617b472be5db819f4dbdf45/6964d67ceb22392e9ff24cef_6acccdf1b6815dce1ef98397ff30b7b9_icon_aboutus.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6617b472be5db819f4dbdf45/6964d660e23c6e7f6e01da8c_0645fc18ea741480a02dc3950ebbe680_icon_careers.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "link",
+        "url": "https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FvFn4a5qAPW8%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DvFn4a5qAPW8&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FvFn4a5qAPW8%2Fhqdefault.jpg&type=text%2Fhtml&schema=youtube",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6641c0152b531df61b2cefca/6a30ffd95dfcddf91922d85e_use-case-thumbnail-Xynova.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6641c0152b531df61b2cefca/69fb3c6c61824d5be4a1a40c_use-case-thumbnail.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6641c0152b531df61b2cefca/69df9d7cd454f6cd31671db6_use-case-thumbnail-Recovered.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6641c0152b531df61b2cefca/69d66f1eb4fc6105472b0e93_use-case-thumbnail.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6641c0152b531df61b2cefca/69cd22f634f0de79b5ba9b9c_Vesperi_4.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6641c0152b531df61b2cefca/6a845d98af080c791555e88b_thumbnail.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6641c0152b531df61b2cefca/6a7dade5f1e67f310c14905b_thumbnail.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6641c0152b531df61b2cefca/6a6b124d1dc4376704fa04f0_thumbnail.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6641c0152b531df61b2cefca/6a60cb790382663d7160846e_use-case-thumbnail-Recovered.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6617b472be5db819f4dbdf45/665587bfbfd88379bcde3b54_icon_social_instagram.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6617b472be5db819f4dbdf45/671b47f001faa75aa93fb93e_icon_social_x.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6617b472be5db819f4dbdf45/665587bf3235abf520e05f8d_icon_social_linkedin.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6617b472be5db819f4dbdf45/665587bed80244cb785dceac_icon_social_youtube.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6617b472be5db819f4dbdf45/69c274ad9b57bf1188cc4ba2_icon_social_wechat.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.prod.website-files.com/6617b472be5db819f4dbdf45/674824cd0d87f125464b15c2_icon_social_bilibili.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "link",
+        "url": "https://www.googletagmanager.com/ns.html?id=GTM-NM7Q3SR",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://px.ads.linkedin.com/collect/?pid=6568226&fmt=gif",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "leap-hand-v2": {
+    "source": "https://v2.leaphand.com/",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "video",
+        "url": "https://v2.leaphand.com/static/videos/video_segments/dining_bimanual_place.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v2.leaphand.com/static/videos/video_segments/laundry_hanger.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v2.leaphand.com/static/videos/video_segments/operator_tabletop_3.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v2.leaphand.com/static/videos/video_segments/durability.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://v2.leaphand.com/static/figures/finger_cross_section.PNG",
+        "alt": "Palm Articulations",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v2.leaphand.com/static/videos/video_segments/twist.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v2.leaphand.com/static/videos/video_segments/underactuation.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v2.leaphand.com/static/videos/video_segments/pinch.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v2.leaphand.com/static/videos/video_segments/allegro_side_side.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v2.leaphand.com/static/videos/video_segments/leap_side_side.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://v2.leaphand.com/static/videos/video_segments/mcp_side_v2.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "link",
+        "url": "https://sketchfab.com/models/63dadf6388f6478cb8b1e4ddbdd2303d/embed?camera=0",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "link",
+        "url": "https://sketchfab.com/models/893bdbb4d8e542678e7dbde685f65237/embed?camera=0",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://v2.leaphand.com/static/figures/v2_anatomy.png",
+        "alt": "Mounting",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://v2.leaphand.com/static/figures/size_comparison.jpg",
+        "alt": "Size Comparison",
+        "poster": ""
+      }
+    ]
+  },
+  "schunk-svh": {
+    "source": "https://schunk.com/at/de/greiftechnik/spezialgreifer/svh/c/PGR_3161",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "link",
+        "url": "https://www.googletagmanager.com/ns.html?id=GTM-MXSTM96",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://d16vz4puxlsxm1.cloudfront.net/image/076200133045-Prod/image_kk3r7g73r16plat9g14soqpo23/-FJPG-B100",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://d16vz4puxlsxm1.cloudfront.net/image/076200133045-Prod/image_biebgg5dmh5itaphd5drn9f67n/-FWEBP-Tlandscape3360-S600x337",
+        "alt": "Pneumatik TEST 06.05.2025",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://d16vz4puxlsxm1.cloudfront.net/image/076200133045-Prod/image_8i219h441p2e98bpv0249rnk0i/-FWEBP-Tlandscape3360-S600x337",
+        "alt": "Anwendungsbild – EGU",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://d16vz4puxlsxm1.cloudfront.net/image/076200133045-Prod/image_g6n8ij1vut72r5btffkl8b3s6u/-FWEBP-Tlandscape3360-S600x337",
+        "alt": "SCHUNK – Konfigurierbare Produkte",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://d16vz4puxlsxm1.cloudfront.net/image/076200133045-Prod/image_mmvt4pt21h13lca94uu8up473g/-FWEBP-Tlandscape3360-S600x337",
+        "alt": "Produktfinder Greifen",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://d16vz4puxlsxm1.cloudfront.net/image/076200133045-Prod/image_gk0mm9tovp0ef3c2unoc95nj7k/-FWEBP-Tlandscape3360-S600x337",
+        "alt": "Konfigurator Werkzeugwechsler",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://d16vz4puxlsxm1.cloudfront.net/image/076200133045-Prod/image_b1ptkoops50alemfe7tjeomi21/-FWEBP-Tlandscape3360-S600x337",
+        "alt": "Produktfinder Ausgleichseinheiten",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://d16vz4puxlsxm1.cloudfront.net/image/076200133045-Prod/image_oj1a5k4sm16e1bdi8i9q3f8o1a/-FWEBP-Tlandscape3360-S600x337",
+        "alt": "Produktfinder elektrische Linearachsen",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://d16vz4puxlsxm1.cloudfront.net/image/076200133045-Prod/image_1bnk3kovpt5r774664td30t20g/-FWEBP-Tlandscape3360-S600x337",
+        "alt": "Produktbild – Konfigurator Achssysteme",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://d16vz4puxlsxm1.cloudfront.net/image/076200133045-Prod/image_o7brs8p47d05jf6rm6vml1sh2c/-FWEBP-Tlandscape3360-S600x337",
+        "alt": "Werkzeughalter Quickfinder",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://d16vz4puxlsxm1.cloudfront.net/image/076200133045-Prod/image_c9qb1t0c592p92guliba39ic21/-FWEBP-Tlandscape3360-S600x337",
+        "alt": "SCHUNK – easyToolholder",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://d16vz4puxlsxm1.cloudfront.net/image/076200133045-Prod/image_n3b1ppp78p7sr9cmmqb5diau1r/-FWEBP-Tlandscape3360-S600x337",
+        "alt": "iTENDO²",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://d16vz4puxlsxm1.cloudfront.net/image/076200133045-Prod/image_m26u1cpoj95i5d0sjetjtm053q/-FWEBP-Tlandscape3360-S600x337",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://d16vz4puxlsxm1.cloudfront.net/image/076200133045-Prod/image_d9g4dh78n171v3f67i7r001m1a/-FWEBP-Tlandscape3360-S600x337",
+        "alt": "Spannbacken Quickfinder.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://d16vz4puxlsxm1.cloudfront.net/image/076200133045-Prod/image_4curkptest0qd8fgi1jheba85l/-FWEBP-Tlandscape3360-S600x337",
+        "alt": "easyJAW",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://d16vz4puxlsxm1.cloudfront.net/image/076200133045-Prod/image_k2vkh9glt9085dfcmqa5cuvd6o/-FWEBP-Tlandscape3360-S600x337",
+        "alt": "SCHUNK – Adapterbacken",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://d16vz4puxlsxm1.cloudfront.net/image/076200133045-Prod/image_9cdgtmglv13gjf9n7trqinha4n/-FWEBP-Tlandscape3360-S600x337",
+        "alt": "WOW",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://d16vz4puxlsxm1.cloudfront.net/image/076200133045-Prod/image_ppkgtun47l7d18jibsagt0u77n/-FWEBP-Tlandscape3360-S600x337",
+        "alt": "CoLab",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://d16vz4puxlsxm1.cloudfront.net/image/076200133045-Prod/image_947dluk3j52vhbc5jcb48ji933/-FWEBP-Tlandscape3360-S600x337",
+        "alt": "Neuheitenbroschüre",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://d16vz4puxlsxm1.cloudfront.net/image/076200133045-Prod/image_rbjq655utp0d97e6od2ul2mu60/-FWEBP-B600",
+        "alt": "SVH",
+        "poster": ""
+      }
+    ]
+  },
+  "inspire-rh56dfx": {
+    "source": "https://www.inspire-robots.com/dexterous%20hands/rh56dfx-series/",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/skin/default/img/logo.svg",
+        "alt": "因时机器人",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/skin/default/img/searchicoh.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/dg/la.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/dg/laf.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/dg/las.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/dg/lasf.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/dg/bla.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/d/file/p/2025/04-24/9314c40a056fafe5e9a5914cab198a19.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/skin/default/img/logolqs.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/lqs/RH56DFX/RH56DFXbanner.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/lqs/RH56DFX/RH56DFXbanner-m.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/d/file/p/2025/04-25/d5e9e7553cdff3d7d09a6b623b3d794a.gif",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/lqs/RH56DFX/RH56DFXbanner01.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/lqs/RH56DFX/RH56DFXbanner01-m.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/lqs/RH56DFX/RH56DFXbanner02.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/lqs/RH56DFX/RH56DFXbanner02-m.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/lqs/RH56DFX/RH56DFXbanner03.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/lqs/RH56DFX/RH56DFXbanner03-m.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/lqs/RH56DFX/RH56DFXbanner04.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/lqs/RH56DFX/RH56DFXbanner04-m.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/lqs/RH56DFX/RH56DFXbanner05.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/d/file/p/2022/04-29/11b959881c72bd2b88c31a7f5195fda9.png",
+        "alt": "关注因时机器人",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/d/file/p/2022/04-29/4df268bfab01aab772b200cdcfa69fa9.png",
+        "alt": "关注因时机器人",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/d/file/p/2022/04-29/7a719c2b0cb2d48b3710ffa9ac21a8de.png",
+        "alt": "关注因时机器人",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/d/file/p/2022/04-29/512390bb85f78267998b8e24232addee.png",
+        "alt": "关注因时机器人",
+        "poster": ""
+      }
+    ]
+  },
+  "inspire-rh56bfx": {
+    "source": "https://www.inspire-robots.com/dexterous%20hands/rh56bfx-series/",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/skin/default/img/logo.svg",
+        "alt": "因时机器人",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/skin/default/img/searchicoh.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/dg/la.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/dg/laf.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/dg/las.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/dg/lasf.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/dg/bla.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/d/file/p/2025/04-24/9314c40a056fafe5e9a5914cab198a19.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/skin/default/img/logolqs.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/lqs/RH56BFX/RH56BFXbanner.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/lqs/RH56BFX/RH56BFXbanner-m.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/d/file/p/2025/04-24/da2da6d075d9b0ec13cc54167f9ca2e4.gif",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/lqs/RH56BFX/RH56BFX01.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/lqs/RH56BFX/RH56BFX01-m.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/lqs/RH56BFX/RH56BFX02.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/lqs/RH56BFX/RH56BFX02-m.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/lqs/RH56BFX/RH56BFX03.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/lqs/RH56BFX/RH56BFX03-m.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/lqs/RH56BFX/RH56BFX04.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/lqs/RH56BFX/RH56BFX04-m.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/tu/lqs/RH56BFX/RH56BFX05.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/d/file/p/2022/04-29/11b959881c72bd2b88c31a7f5195fda9.png",
+        "alt": "关注因时机器人",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/d/file/p/2022/04-29/4df268bfab01aab772b200cdcfa69fa9.png",
+        "alt": "关注因时机器人",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/d/file/p/2022/04-29/7a719c2b0cb2d48b3710ffa9ac21a8de.png",
+        "alt": "关注因时机器人",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.inspire-robots.com/d/file/p/2022/04-29/512390bb85f78267998b8e24232addee.png",
+        "alt": "关注因时机器人",
+        "poster": ""
+      }
+    ]
+  },
+  "dlr-clash": {
+    "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/clash",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/static/media/LogoSimple.0621bfc3.svg",
+        "alt": "DLR Logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/clash/CLASH_hand_on_robot_2018.jpg/@@images/image-1000-29724f1e6780907a8ebe87b382707fa6.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/clash/Clash_greift_einen_Apfel_0J4A0037_original.jpg/@@images/image-1000-b4b39b8b7ec1da8ab6907370a8f9977e.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/spacehand/IMG_5935_original.jpg/@@images/image-1000-81310cfd4ab74f61c801c5cbf6fb9bed.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/clash/clash_grasps_padlock_2018.jpg/@@images/image-1000-18c9149f03e07056bb6202dc439668ce.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/clash/Clash_greift_einen_Apfel_0J4A0037_original.jpg/@@images/image-400-71f01e16a982a21caa26d295d9cbf320.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/spacehand/IMG_5935_original.jpg/@@images/image-400-94014fde31296dda91e4ffb86554a902.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/clash/IMG_0572.jpg/@@images/image-400-248cf3e3fdd404600a8c4f8051a65894.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/clash/CLASH_hand_on_robot_2018.jpg/@@images/image-400-a41c5af485f18b952348af0d1b57ce38.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/clash/clash_grasps_tuna_bin_2018.jpg/@@images/image-400-dbb7c7ba8f8b0da74d6f5ca2a90a8648.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/clash/clash_grasps_padlock_2018.jpg/@@images/image-400-eb4d9d4c610bd4396343d744faccf5c2.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/static/media/bmftr_logo_en.63127b12.svg",
+        "alt": "Supported by: Federal Ministry of Research, Technology and Space",
+        "poster": ""
+      }
+    ]
+  },
+  "dlr-david": {
+    "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/david-hand",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/static/media/LogoSimple.0621bfc3.svg",
+        "alt": "DLR Logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/david_hand/David-Hand_Metallversion_rotated_1440x810.jpg/@@images/image-1000-cc1f5f5c18234bfa1d5edd56dd5134e5.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/david_hand/David-Hand_mit_Stahlfedern_4993x3328.jpg/@@images/image-1000-dc318044c5df0502c4412c92029fef52.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/david_hand/David-Hand_Metallversion_1746x3104.jpg/@@images/image-1000-2ee91f57741536bc03500cdf6c35f377.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/david_hand/David-Hand_mit_Stahlfedern_4993x3328.jpg/@@images/image-400-47709c1286e8c187069e5c2e808eeffe.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/david_hand/David-Hand_Metallversion_1746x3104.jpg/@@images/image-400-d968fb82809de385de2fcc00aaa515e6.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/static/media/bmftr_logo_en.63127b12.svg",
+        "alt": "Supported by: Federal Ministry of Research, Technology and Space",
+        "poster": ""
+      }
+    ]
+  },
+  "dlr-dexhand": {
+    "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dexhand-2012-2015",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/static/media/LogoSimple.0621bfc3.svg",
+        "alt": "DLR Logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/dexhand/dexhand_2012_liegend_freigestellt_16_9_4089x2300.jpg/@@images/image-1000-60825be70aa9c14ab4bc1ce8de4ba36d.jpeg",
+        "alt": "Dexhand",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/dexhand/dexhand_2012_stehend_oberseite_freigestellt_3203x2783.jpg/@@images/image-1000-4ca45553faaad572145d454e9fda093e.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/dexhand/dexhand_2012_greift_zylinder_freigestellt_3742x5613.jpg/@@images/image-1000-7a900eb7421fb1b5bb47241a497afd43.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/dexhand/dexhand_2012_greift_akkubohrer_freigestellt_3456x5184.jpg/@@images/image-1000-dd962fce3fd4140f271bb28e5ddb28c2.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/dexhand/dexhand_2012_stehend_oberseite_freigestellt_3203x2783.jpg/@@images/image-400-e6f4c04c20c7f38e3c659a2a5a5e43c7.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/dexhand/dexhand_2012_greift_zylinder_freigestellt_3742x5613.jpg/@@images/image-400-e29453d43d850b7f2cc0f809f4409ccc.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/dexhand/dexhand_2012_greift_kabel_freigestellt_5184x3456.jpg/@@images/image-400-6a7bb090bd8afadff8d42b4e0770137c.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/dexhand/dexhand_2012_greift_akkubohrer_freigestellt_3456x5184.jpg/@@images/image-400-3c3399a0eec5407725b1611f556b9186.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/static/media/bmftr_logo_en.63127b12.svg",
+        "alt": "Supported by: Federal Ministry of Research, Technology and Space",
+        "poster": ""
+      }
+    ]
+  },
+  "dlr-spacehand": {
+    "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/spacehand-2015-2018",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/static/media/LogoSimple.0621bfc3.svg",
+        "alt": "DLR Logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/spacehand/Spacehand_front_rotated_711x400.jpg/@@images/image",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/spacehand/Spacehand_an_Caesar_0J4A9741_original.jpg/@@images/image-1000-fe0eca87bcdd601867c743d5938bdc71.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/spacehand/spacehand_shaker.jpg/@@images/image-1000-653f32bf2135b8648e7e3f97eba30cca.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/spacehand/spacehand_side_view_original.png/@@images/image-1000-e42c205221ab3c1b12a2b7cbace44e17.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/spacehand/Spacehand_an_Caesar_0J4A9741_original.jpg/@@images/image-400-a59e4e01e60de68ffce68fd5cb72184f.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/spacehand/spacehand_shaker.jpg/@@images/image-400-146fd966ad1d0640d147b4de5eb7e130.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/spacehand/Spacehand_front_view_IMG_6114_original.png/@@images/image-400-f9dcac0e9aa24747fb0d6d17d2cca823.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/spacehand/spacehand_side_view_original.png/@@images/image-400-5e5d0739040543586a651f3400292043.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.dlr.de/static/media/bmftr_logo_en.63127b12.svg",
+        "alt": "Supported by: Federal Ministry of Research, Technology and Space",
+        "poster": ""
+      }
+    ]
+  },
+  "prensilia-ih2-azzurra": {
+    "source": "https://www.prensilia.com/it/ih2-azzurra/",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://www.facebook.com/tr?id=732964418531406&ev=PageView&noscript=1",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.prensilia.com/wp-content/uploads/2023/04/Logo-Prensilia.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.prensilia.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png",
+        "alt": "Inglese",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.prensilia.com/wp-content/uploads/2023/02/cropped-Icona-Prensilia.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.prensilia.com/wp-content/uploads/2023/03/ih2-azzurra-hand-prensilia.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.prensilia.com/wp-content/uploads/2023/03/ih2-azzurra-hand.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.prensilia.com/wp-content/uploads/2023/03/ih2-azzurra-cilindrical-1024x1024.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.prensilia.com/wp-content/uploads/2023/03/ih2-azzurra-lateral-1024x1024.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.prensilia.com/wp-content/uploads/2023/03/ih2-azzurra-precision-1024x1024.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.prensilia.com/wp-content/uploads/2023/03/ih2-azzurra-grips-1024x1024.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.prensilia.com/wp-content/uploads/2023/02/Logo-Prensilia_dx.png",
+        "alt": "prensilia",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.prensilia.com/wp-content/uploads/2023/04/Senza-titolo-3_Tavola-disegno-1-copia.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.prensilia.com/wp-content/uploads/2023/04/Senza-titolo-3_Tavola-disegno-1-1.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.facebook.com/tr?id=732964418531406&ev=PageView&noscript=1&eid=73296441853140672e45770-ace6-4e33-9c1d-70b5c12059a2&cd%5Bpage_title%5D=IH2+Azzurra&cd%5Bpost_type%5D=page&cd%5Bpost_id%5D=16738&cd%5Bplugin%5D=PixelYourSite&cd%5Bevent_url%5D=www.prensilia.com%2Fit%2Fih2-azzurra%2F&cd%5Buser_role%5D=guest",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "wuji-hand-2": {
+    "source": "https://docs.wuji.tech/docs/zh/wuji-hand/latest/overview/",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/_next/static/media/dimensions-white.b695dabb.png",
+        "alt": "Wuji Hand 2 外形尺寸",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/_next/static/media/dimensions-white-dark.f34ff9af.png",
+        "alt": "Wuji Hand 2 外形尺寸",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/_next/static/media/structure-white.1f578143.png",
+        "alt": "结构示意图",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/_next/static/media/structure-white-dark.ed9194c6.png",
+        "alt": "结构示意图",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/_next/static/media/dof-configuration-white.3b64a4aa.png",
+        "alt": "Wuji Hand 2 自由度配置",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/_next/static/media/dof-configuration-white-dark.807ff01c.png",
+        "alt": "Wuji Hand 2 自由度配置",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/_next/static/media/joint-motion-range.a7628288.png",
+        "alt": "各关节运动方向与范围（以拇指、小指为例）",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/_next/static/media/joint-motion-range-dark.8d6e62fd.png",
+        "alt": "各关节运动方向与范围（以拇指、小指为例）",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/connector-layout.png",
+        "alt": "通信与电源接口示意图",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/connector-layout-dark.png",
+        "alt": "通信与电源接口示意图",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/indicator-white-breathing.svg",
+        "alt": "白色呼吸",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/indicator-white-breathing-dark.svg",
+        "alt": "白色呼吸",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/indicator-blue-breathing.svg",
+        "alt": "蓝色呼吸",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/indicator-blue-breathing-dark.svg",
+        "alt": "蓝色呼吸",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/indicator-white-solid.svg",
+        "alt": "白色常亮",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/indicator-white-solid-dark.svg",
+        "alt": "白色常亮",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/indicator-blue-slow-flash.svg",
+        "alt": "蓝色慢闪",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/indicator-blue-slow-flash-dark.svg",
+        "alt": "蓝色慢闪",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/indicator-yellow-slow-flash.svg",
+        "alt": "黄色慢闪",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/indicator-yellow-slow-flash-dark.svg",
+        "alt": "黄色慢闪",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/indicator-red-slow-flash.svg",
+        "alt": "红色慢闪",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/indicator-red-slow-flash-dark.svg",
+        "alt": "红色慢闪",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/indicator-red-solid.svg",
+        "alt": "红色常亮",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/indicator-red-solid-dark.svg",
+        "alt": "红色常亮",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/power-adapter.png",
+        "alt": "电源适配器",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/power-adapter-dark.png",
+        "alt": "电源适配器",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/power-adapter-ac-cable.png",
+        "alt": "电源适配器 AC 线材",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/power-adapter-ac-cable-dark.png",
+        "alt": "电源适配器 AC 线材",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/rj45-cable.png",
+        "alt": "RJ45 网线",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/rj45-cable-dark.png",
+        "alt": "RJ45 网线",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/xt30-extension-cable.png",
+        "alt": "XT30 公对母延长线",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/xt30-extension-cable-dark.png",
+        "alt": "XT30 公对母延长线",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/adapter-mount.png",
+        "alt": "转接座",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/adapter-mount-dark.png",
+        "alt": "转接座",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/adapter-flange.png",
+        "alt": "转接法兰",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/adapter-flange-dark.png",
+        "alt": "转接法兰",
+        "poster": ""
+      }
+    ]
+  },
+  "allegro-v4": {
+    "source": "https://www.allegrohand.com/sub/product/p.php?idx=1",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "link",
+        "url": "https://www.googletagmanager.com/ns.html?id=GTM-WKLTJ8LM",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.allegrohand.com/img/svg/img_logo.svg",
+        "alt": "Allegro Hand",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.allegrohand.com/img/svg/home_icon.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.allegrohand.com/img/svg/btn_up.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.allegrohand.com/img/svg/btn_down.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.allegrohand.com/upload/prod/product_hand_v4_01_a77b2.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.allegrohand.com/upload/prod/product_hand_v4_02_cdf8f.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.allegrohand.com/upload/prod/product_hand_v4_03_98282.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.allegrohand.com/upload/prod/product_hand_v4_04_4db10.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.allegrohand.com/upload/prod/product_hand_v4_05_a77a0.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.allegrohand.com/upload/prod/product_hand_v4_06_1026d.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.allegrohand.com/upload/prod/product_hand_v4_07_97ee3.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/uRrn0Vai1X4/hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.allegrohand.com/img/main/play_icon.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/gYJH4DdUJG8/hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.allegrohand.com/img/svg/btn_prev.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.allegrohand.com/img/svg/btn_next.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.allegrohand.com/img/svg/product_icon01.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.allegrohand.com/img/svg/product_icon02.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.allegrohand.com/upload/editor/스크린샷 2025-11-05 오전 9.42.37_5a129.png",
+        "alt": "Meta FAIR Research",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.allegrohand.com/upload/editor/Digit 사이트_88c38.png",
+        "alt": "Digit Plexus",
+        "poster": ""
+      },
+      {
+        "kind": "link",
+        "url": "https://www.youtube.com/embed/eyUZX-lCj4M?autoplay=1&mute=1&start=102",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/Y2B6E-G9ih4/hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/Ercb6pmadq0/hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/0uzMXlYT2cA/hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/C8QOwjuQ_AU/hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/Xkg3cJNCGKM/hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/K0-tDhVONHY/hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/mu247rUdNhU/hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.allegrohand.com/img/svg/sns_icon01.svg",
+        "alt": "youtube",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.allegrohand.com/img/svg/sns_icon02.svg",
+        "alt": "Linked in",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.allegrohand.com/img/svg/sns_icon03.svg",
+        "alt": "facebook",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.allegrohand.com/img/svg/btn_top.svg",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "ruka-v1": {
+    "source": "https://arxiv.org/html/2504.13165v1",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/icons/smileybones-small.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/arxiv-logo-primary-light.svg",
+        "alt": "arXiv logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2504.13165v1/header.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2504.13165v1/venn.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2504.13165v1/kinematics.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2504.13165v1/point_cloud.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2504.13165v1/Strength_tests.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2504.13165v1/Grasps.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2504.13165v1/controller_training.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2504.13165v1/controller_testing_comp.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2504.13165v1/teleop_wo_arm.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2504.13165v1/policy_learning.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation.png",
+        "alt": "Simons Foundation",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation-international.png",
+        "alt": "Simons Foundation International",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/schmidt-sciences.png",
+        "alt": "Schmidt Sciences",
+        "poster": ""
+      }
+    ]
+  },
+  "rbo-hand-3": {
+    "source": "https://arxiv.org/html/2201.10883v1",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/icons/smileybones-small.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/arxiv-logo-primary-light.svg",
+        "alt": "arXiv logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2201.10883v1/hand.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2201.10883v1/hands-comparison.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2201.10883v1/2-comp-finger.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2201.10883v1/2comp_workspace_forces.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2201.10883v1/thumb-scaffold.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2201.10883v1/bellow_characterization.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2201.10883v1/experimental_setup.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2201.10883v1/manufacturing.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2201.10883v1/kapandji.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2201.10883v1/object_pullout.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2201.10883v1/feix.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2201.10883v1/replicate_human_grasping.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2201.10883v1/in_hand_manipulation.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2201.10883v1/steffen_puhlmann.png",
+        "alt": "[Uncaptioned image]",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2201.10883v1/jason_harris.png",
+        "alt": "[Uncaptioned image]",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2201.10883v1/oliver_brock.png",
+        "alt": "[Uncaptioned image]",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation.png",
+        "alt": "Simons Foundation",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation-international.png",
+        "alt": "Simons Foundation International",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/schmidt-sciences.png",
+        "alt": "Schmidt Sciences",
+        "poster": ""
+      }
+    ]
+  },
+  "psyonic-ability-hand": {
+    "source": "https://www.psyonic.io/ability-hand",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/6b7cabdc-61ca-45d7-b01e-be7d03202a82/PSY_Wordmark_B_T.png?format=1500w",
+        "alt": "PSYONIC",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/05ed1bfb-f367-458d-83dd-1a735b816e7a/3.Asembly_Ability+Hand+MK9.5+Product+Release_TEXTLESS.00_00_40_07.Still013.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/bd858022-9a27-45e1-9dd2-eb74fca4c0da/3.Asembly_Ability+Hand+MK9.5+Product+Release_TEXTLESS.00_00_57_18.Still017.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/c88582cc-17ff-4e43-b559-7ec243d5a8e1/3.Asembly_Ability+Hand+MK9.5+Product+Release_TEXTLESS.00_01_06_20.Still021+%282%29.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/fbf25798-f58c-4d93-b749-8ccd85063929/3.Asembly_Ability+Hand+MK9.5+Product+Release_TEXTLESS.00_00_15_07.Still004.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/882f93a6-3b0b-47ea-8241-8d60b5ca91a9/ePreGrip+-+Pressure+Sensing+-+Port.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/a5dcdc93-01c4-4464-ac74-fba9d66ca601/eTough.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/3a47e754-6c92-4d63-a322-e3cb0e12c398/3.Asembly_Ability+Hand+MK9.5+Product+Release_TEXTLESS.00_01_06_15.Still020.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/02a88e19-e8be-48d4-a4ac-dc73dd2f0ee7/DSC05378.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/ca3b0476-9c95-414c-be39-0219d2383914/DSC05388.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/1437e960-a8cc-40c7-abcf-dd6b8ddf5a7e/DSC05400.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/ea3d4097-a65a-4aee-90d3-6011a76cab72/DSC05413.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/263df330-49a0-4711-b9f6-ff56459cc919/DSC05419.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/ff265371-accc-4ea0-85dc-a09bcc38e717/DSC05420.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/d7553cd3-c0dd-4d80-90b6-507e389d3cd7/DSC05422.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/6ea7e2fc-bb3b-41b7-afe7-14d9eb864474/DSC05423.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/3cf0d347-3d85-42a4-9bf5-b45c0253c3b4/DSC05424.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/af6d985d-00fb-4570-856d-7497c1f2cf83/DSC05427.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/b5d8c991-368c-4305-9224-25471c3d8c77/DSC05429.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/a5827963-e552-49e8-ac8f-151c71216c60/DSC05430.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/0215cdde-88d4-43cc-b4fc-39a92df531d0/DSC05438.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/ab748103-5227-4bc4-98dc-e9e02f123ecd/DSC05439.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/d4dc8130-500c-4b63-9e7c-27627fb1e8d8/DSC05441.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/286fe770-46bc-4788-aca7-1afe50b16d2a/DSC05445.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/1cc985ef-c779-4876-b88c-a7c8e0bbd53d/DSC05446.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/41fd194d-bc8e-4eae-a893-24a3c8264ca2/DSC05453.jpg.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/37402095-0aae-42b6-9706-aeebcc72a58d/DSC05449.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/b462b161-3a15-4977-ab67-c4767544d760/DSC05452.jpg.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/21c5f535-5489-4cbc-9465-2867a03b4799/DSC05447.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/222c3f22-7617-4239-a263-197abbce2712/DSC05448.jpg.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/7d1683e3-88d2-41a5-8204-eec5355b5652/DSC05455.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/f0c1ff60-a091-4fdf-809a-f83e98f18f3d/DSC054446.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "link",
+        "url": "https://www.googletagmanager.com/ns.html?id=GTM-5LCP9QD8",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://px.ads.linkedin.com/collect/?pid=9053756&fmt=gif",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "linker-l20": {
+    "source": "https://www.linkerhand.com/details/LinkerHandL20/",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l20/detail-2.png",
+        "alt": "product5",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l20/detail-3.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l20/detail-4.png",
+        "alt": "Interaction",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/placeholder.MH0gUi18.png",
+        "alt": "Windows GUI",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/logobottom.SRWDOoe5.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/gongzhonghao.BBDptsoE.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/shipinhao.Dre-1gW1.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/qr-wechat-tooltip.D-aOzpyr.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/qr-tiktok-tooltip.BCywJeVV.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.linkerhand.com/_nuxt/qr-redbook-tooltip.BkVxPwuS.png",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "trifinger": {
+    "source": "https://open-dynamic-robot-initiative.github.io/trifinger_docs/",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://open-dynamic-robot-initiative.github.io/trifinger_docs/_static/",
+        "alt": " logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://open-dynamic-robot-initiative.github.io/trifinger_docs/_images/trifingerpro.jpg",
+        "alt": "TriFingerPro robot holding a cube",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://open-dynamic-robot-initiative.github.io/trifinger_docs/_images/trifingeredu.jpg",
+        "alt": "TriFingerEdu robot",
+        "poster": ""
+      }
+    ]
+  },
+  "rbo-hand-2": {
+    "source": "https://www.naturalmachinemotioninitiative.com/rbo-hand-2",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://static.wixstatic.com/media/a3cb45_8489ad820e5642849df51224f57b8c53.jpg/v1/fill/w_300,h_219,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a3cb45_8489ad820e5642849df51224f57b8c53.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.wixstatic.com/media/8d13be_7201d80ac0864d43bfd2524f764ed3f4.png/v1/fill/w_51,h_51,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/8d13be_7201d80ac0864d43bfd2524f764ed3f4.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.wixstatic.com/media/8d13be_fd91a175eefd493080236db15386bd33.png/v1/fill/w_51,h_51,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/8d13be_fd91a175eefd493080236db15386bd33.png",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "pisa-iit-softhand": {
+    "source": "https://www.naturalmachinemotioninitiative.com/softhand",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://static.wixstatic.com/media/a3cb45_9aa9f462fb284c638ae9e2bc89de9c92.png/v1/fill/w_300,h_250,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a3cb45_9aa9f462fb284c638ae9e2bc89de9c92.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.wixstatic.com/media/a3cb45_d78bd1f2207f4e6fb19554c03b7bb0b2.png/v1/fill/w_88,h_31,al_c,q_85,enc_avif,quality_auto/a3cb45_d78bd1f2207f4e6fb19554c03b7bb0b2.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.wixstatic.com/media/8d13be_7201d80ac0864d43bfd2524f764ed3f4.png/v1/fill/w_51,h_51,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/8d13be_7201d80ac0864d43bfd2524f764ed3f4.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static.wixstatic.com/media/8d13be_fd91a175eefd493080236db15386bd33.png/v1/fill/w_51,h_51,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/8d13be_fd91a175eefd493080236db15386bd33.png",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "tesollo-dg-5f-m": {
+    "source": "https://www.tesollo.com/products/grippers/dg-5f-m",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://www.tesollo.com/branding/logo_white.svg",
+        "alt": "TESOLLO",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.tesollo.com/branding/logo_color.svg",
+        "alt": "TESOLLO",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.tesollo.com/site/products/2026/08/21d43383-2721-4226-b66d-2590382a0349.webp",
+        "alt": "DG-5F-M — A 20-DoF, 5-finger anthropomorphic robotic hand with high-torque actuation for dexterous manipulation and precise object handling.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/7JhqK_k9IGI/maxresdefault.jpg",
+        "alt": "DG-5F-M demo video",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.tesollo.com/site/products/dg-3f-m/dg-3f-m-product-12.webp",
+        "alt": "Fingertip Sensor (6-axis F/T Sensor)",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.tesollo.com/site/products/dg-3f-m/dg-3f-m-product-11.webp",
+        "alt": "Fingertip Sensor (3-axis Force Sensor)",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.tesollo.com/site/products/dg-3f-m/dg-3f-m-product-13.webp",
+        "alt": "Fingertip Sensor (Tactile Sensor)",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.tesollo.com/site/products/dg-5f-m/dg-5f-m-product-12.webp",
+        "alt": "Suction-Type Fingertip",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.tesollo.com/site/products/dg-5f-m/dg-5f-m-product-14.webp",
+        "alt": "Short Wrist Version",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.tesollo.com/site/products/dg-5f-m/dg-5f-m-product-13.webp",
+        "alt": "Gripper Mounting Stand",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.tesollo.com/site/products/dg-5f-m/dg-5f-m-product-3.webp",
+        "alt": "Humanoid Robot Research",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.tesollo.com/site/products/dg-5f-m/dg-5f-m-product-2.webp",
+        "alt": "In-Hand Manipulation Tasks",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.tesollo.com/site/products/dg-5f-m/dg-5f-m-product.webp",
+        "alt": "Tool-Utilization and Dual-Arm Tasks",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.tesollo.com/site/products/2026/08/146d4c2b-d994-494a-ad50-d38c48ffed34.webp",
+        "alt": "DG-5F-S",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.tesollo.com/site/pages/common/untitled-483-2.webp",
+        "alt": "DG-4F",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.tesollo.com/site/pages/common/untitled-484.webp",
+        "alt": "DG-3F-M",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://cdn.tesollo.com/site/products/dg-3f-b/dg-3f-b-hero.webp",
+        "alt": "DG-3F-B",
+        "poster": ""
+      }
+    ]
+  },
+  "robotiq-3f": {
+    "source": "https://robotiq.com/products/adaptive-grippers#Three-Finger-Gripper",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "link",
+        "url": "https://www.googletagmanager.com/ns.html?id=GTM-WBMC2L65",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hubfs/raw_assets/public/theme-hs-parkour3/images/module-icons/magnify.svg",
+        "alt": "magnify-button",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hubfs/raw_assets/public/theme-hs-parkour3/images/module-icons/Close.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hubfs/theme-hs-parkour3/images/brand-images/Robotiq-refonte-logo.svg",
+        "alt": "Robotiq",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hubfs/theme-hs-parkour3/images/brand-images/Robotiq-refonte-black-logo.svg",
+        "alt": "Robotiq",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Dual%20Hand-E%20in%20CNC%20Machine%20with%20coolant.jpg?width=2000&name=Dual%20Hand-E%20in%20CNC%20Machine%20with%20coolant.jpg",
+        "alt": "Dual Hand-E in CNC Machine with coolant",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hubfs/Frame%202208.svg",
+        "alt": "Frame 2208",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hubfs/Frame%202208-1.svg",
+        "alt": "Frame 2208-1",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hubfs/Frame%202208%20(1).svg",
+        "alt": "Frame 2208 (1)",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hubfs/Frame%207.svg",
+        "alt": "Frame 7",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Robotiq_ContactReady_Logo.png?width=300&height=109&name=Robotiq_ContactReady_Logo.png",
+        "alt": "Robotiq_ContactReady_Logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Machine_Tending_3.jpg?width=242&height=167&name=Machine_Tending_3.jpg",
+        "alt": "Machine_Tending_3",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Pick_Place_3.jpg?width=242&height=167&name=Pick_Place_3.jpg",
+        "alt": "Pick_Place_3",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Assembly_3.jpg?width=242&height=167&name=Assembly_3.jpg",
+        "alt": "Assembly_3",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Icon_humanoid_PhysicalAI.png?width=1184&height=864&name=Icon_humanoid_PhysicalAI.png",
+        "alt": "Icon_humanoid_PhysicalAI",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/AdobeStock_480180020%202.png?width=483&height=439&name=AdobeStock_480180020%202.png",
+        "alt": "AdobeStock_480180020 2",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/AdobeStock_480180020%202-1.png?width=461&height=311&name=AdobeStock_480180020%202-1.png",
+        "alt": "AdobeStock_480180020 2-1",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hubfs/isaac_encompassing_view.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hubfs/ROS-release-robotiq-grippers.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hubfs/Robotiq_C++_SDK_social.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hubfs/1786428569394.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hubfs/DARPA%20Robotics%20Challenge.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hubfs/tactile-based-robot-centering.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hubfs/Robotiq_Hand-E_Sidebyside-1.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hubfs/bulles-creation.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hubfs/image-png-Jul-06-2026-06-39-23-7053-PM.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hubfs/Molino%20Merano/molino-merano%20(2).png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/photo.png?width=242&height=167&name=photo.png",
+        "alt": "photo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Robotiq_Hand-E_P7L_Sidebyside-2.png?width=2000&height=2000&name=Robotiq_Hand-E_P7L_Sidebyside-2.png",
+        "alt": "Robotiq_Hand-E_P7L_Sidebyside-2",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Hand_E_Grippers_Process.jpg?width=461&height=311&name=Hand_E_Grippers_Process.jpg",
+        "alt": "Hand_E_Grippers_Design_Process",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Hand_E_Grippers_Design_Process.jpg?width=461&height=311&name=Hand_E_Grippers_Design_Process.jpg",
+        "alt": "Hand_E_Grippers_Integrate_Process",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Hand_E_Grippers_Operate_Process.jpg?width=461&height=311&name=Hand_E_Grippers_Operate_Process.jpg",
+        "alt": "Hand_E_Grippers_Operate_Process",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Vincent%20Usinatech.png?width=350&height=350&name=Vincent%20Usinatech.png",
+        "alt": "Vincent Usinatech",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Steven.png?width=106&height=106&name=Steven.png",
+        "alt": "Steven",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Gripper_Page_Software_Updates_Resource.jpg?width=242&height=167&name=Gripper_Page_Software_Updates_Resource.jpg",
+        "alt": "Gripper_Page_Software_Updates_Resource",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Hand-E_Instruction-Manual_%20thumbnail_2026-07.png?width=716&height=675&name=Hand-E_Instruction-Manual_%20thumbnail_2026-07.png",
+        "alt": "Hand-E_Instruction-Manual_ thumbnail_2026-07",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/HandE_QSG.jpg?width=242&height=167&name=HandE_QSG.jpg",
+        "alt": "HandE_QSG",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Hand-E_Product-Sheet_%20thumbnail_2026-07.png?width=651&height=866&name=Hand-E_Product-Sheet_%20thumbnail_2026-07.png",
+        "alt": "Hand-E_Product-Sheet_ thumbnail_2026-07",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/eLearning_Grippers.jpg?width=242&height=167&name=eLearning_Grippers.jpg",
+        "alt": "eLearning_Grippers",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Gripper_Demo_Generic.jpg?width=242&height=167&name=Gripper_Demo_Generic.jpg",
+        "alt": "Gripper_Demo_Generic",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/241008_Pince-08_v01_01+ombre.png?width=2000&height=1125&name=241008_Pince-08_v01_01+ombre.png",
+        "alt": "241008_Pince-08_v01_01+ombre",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/logo-1.png?width=290&height=135&name=logo-1.png",
+        "alt": "logo-1",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Doosan.png?width=256&height=135&name=Doosan.png",
+        "alt": "Doosan",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/FANUC.png?width=203&height=135&name=FANUC.png",
+        "alt": "FANUC",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Hanwha.png?width=203&height=135&name=Hanwha.png",
+        "alt": "Hanwha",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Omron-logo.png?width=225&height=135&name=Omron-logo.png",
+        "alt": "Omron-logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Techman_Robot_.jpg?width=257&height=135&name=Techman_Robot_.jpg",
+        "alt": "Techman_Robot_",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/universal-robots-logo-600.png?width=431&height=135&name=universal-robots-logo-600.png",
+        "alt": "universal-robots-logo-600",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/logo_yaskawa-1.png?width=270&height=135&name=logo_yaskawa-1.png",
+        "alt": "logo_yaskawa-1",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/avatar.png?width=83&height=82&name=avatar.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/time-magazine.png?width=376&height=501&name=time-magazine.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/2F-84%202F-140%20montage.png?width=2000&height=2000&name=2F-84%202F-140%20montage.png",
+        "alt": "2F-84 2F-140",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Tommy%20Walt%20Machine.png?width=433&height=433&name=Tommy%20Walt%20Machine.png",
+        "alt": "Tommy Walt Machine",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Steven%20Sennheiser.png?width=350&height=350&name=Steven%20Sennheiser.png",
+        "alt": "Steven Sennheiser",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Joel%20APN.png?width=350&height=350&name=Joel%20APN.png",
+        "alt": "Joel APN",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Marvin%20DIEHL.png?width=350&height=350&name=Marvin%20DIEHL.png",
+        "alt": "Marvin DIEHL",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Adiran%20Assa%20Abloy.png?width=349&height=349&name=Adiran%20Assa%20Abloy.png",
+        "alt": "Adiran Assa Abloy",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/2F_Gripper_Manual.jpg?width=242&height=167&name=2F_Gripper_Manual.jpg",
+        "alt": "2F_Gripper_Manual",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/QSG_2F.jpg?width=242&height=167&name=QSG_2F.jpg",
+        "alt": "QSG_2F",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/2F_Product_Sheet.jpg?width=242&height=167&name=2F_Product_Sheet.jpg",
+        "alt": "2F_Product_Sheet",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/2020-02-25-AGC-TIP-421-140.png?width=1950&height=1800&name=2020-02-25-AGC-TIP-421-140.png",
+        "alt": "2020-02-25-AGC-TIP-421-140",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Doosan.png?width=257&height=135&name=Doosan.png",
+        "alt": "Doosan",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Robotiq%20Kits%20for%20Partners/UR%20Robotiq%20Kit%20for%20Partners/Plug%20and%20Play%20Components/2F-85%20and%202F-140%20Adaptive%20Grippers/Photos/2F%20Adaptive%20Grippers/Studio%20photos/2F_Adaptive_Grippers_White.png?width=2000&name=2F_Adaptive_Grippers_White.png",
+        "alt": "2F_Adaptive_Grippers_White",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Walt_Gripper_ROI_2F.jpg?width=461&height=311&name=Walt_Gripper_ROI_2F.jpg",
+        "alt": "Walt_Gripper_Design_2F",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Walt_Gripper_Integration_2FE.jpg?width=461&height=311&name=Walt_Gripper_Integration_2FE.jpg",
+        "alt": "Walt_Gripper_Integration_2FE",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/2F_Operation_Grippers.jpg?width=461&height=311&name=2F_Operation_Grippers.jpg",
+        "alt": "2F_Operation_Grippers",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/241008_Pince-02_v01_01+ombre.png?width=2000&height=1125&name=241008_Pince-02_v01_01+ombre.png",
+        "alt": "241008_Pince-02_v01_01+ombre",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/240524_4k_Gripper_v03_A1_RENDER%20copy2-1.jpg?width=768&height=432&name=240524_4k_Gripper_v03_A1_RENDER%20copy2-1.jpg",
+        "alt": "240524_4k_Gripper_v03_A1_RENDER copy2-1",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Force%20Copilot%20Machine%20Tending-1.jpg?width=2000&height=1125&name=Force%20Copilot%20Machine%20Tending-1.jpg",
+        "alt": "Force Copilot Machine Tending-1",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Instruction%20manuals_Hand_E.jpg?width=242&height=167&name=Instruction%20manuals_Hand_E.jpg",
+        "alt": "Instruction manuals_Hand_E",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/spec%20sheet%20hand-e-1.jpg?width=1122&height=1019&name=spec%20sheet%20hand-e-1.jpg",
+        "alt": "spec sheet hand-e-1",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/241008_Pince-04_v01_01+ombre.png?width=2000&height=1125&name=241008_Pince-04_v01_01+ombre.png",
+        "alt": "241008_Pince-04_v01_01+ombre",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Quality_Testing_3.jpg?width=242&height=167&name=Quality_Testing_3.jpg",
+        "alt": "Quality_Testing_3",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/3%20finger%20gripper-1.png?width=1200&height=800&name=3%20finger%20gripper-1.png",
+        "alt": "3 finger gripper",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Design_3F.jpg?width=461&height=311&name=Design_3F.jpg",
+        "alt": "Design_3F",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Integrate-3F.jpg?width=461&height=311&name=Integrate-3F.jpg",
+        "alt": "Integrate-3F",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Operate_3F.jpg?width=461&height=311&name=Operate_3F.jpg",
+        "alt": "Operate_3F",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Product_Sheet_3F.jpg?width=461&height=311&name=Product_Sheet_3F.jpg",
+        "alt": "Product_Sheet_3F",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/3F_QSG.jpg?width=242&height=167&name=3F_QSG.jpg",
+        "alt": "3F_QSG",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/VaccumGrip.jpg?width=257&height=171&name=VaccumGrip.jpg",
+        "alt": "VaccumGrip",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Frame%2011%20(3).png?width=257&height=171&name=Frame%2011%20(3).png",
+        "alt": "Frame 11 (3)",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Force_FT300s.jpg?width=257&height=171&name=Force_FT300s.jpg",
+        "alt": "Force_FT300s",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hs-fs/hubfs/Frame%2011%20(2).png?width=257&height=171&name=Frame%2011%20(2).png",
+        "alt": "Frame 11 (2)",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://robotiq.com/hubfs/Website/Robotiq-refonte-logo.svg",
+        "alt": "Robotiq white and blue logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://no-cache.hubspot.com/cta/default/13401/interactive-175198965546.png",
+        "alt": "Talk to an expert",
+        "poster": ""
+      }
+    ]
+  },
+  "nasa-robonaut-2-hand": {
+    "source": "https://technology.nasa.gov/patent/MSC-TOPS-104",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://technology.nasa.gov/themes/t2portal/images/t2.logo.horiz.rev.svg",
+        "alt": "NASA Technology Transfer Logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://technology.nasa.gov/themes/t2portal/images/search.svg",
+        "alt": "search icon",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://technology.nasa.gov/themes/t2portal/images/NASA_Insignia-RGB.svg",
+        "alt": "NASA Meatball",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://technology.nasa.gov/t2media/tops/img/MSC-TOPS-104/R2-Units-A-B-__1_.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://technology.nasa.gov/t2media/tops/img/MSC-TOPS-104/R2-Sensing-Back-Image-1.jpg",
+        "alt": "A high-level diagram of R2's tendon tension sensors.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://technology.nasa.gov/t2media/tops/tn/MSC-TOPS-103/R2-Units-A-B-__1_.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://technology.nasa.gov/t2media/tops/tn/MSC-TOPS-102/R2-Units-A-B-__1_.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://technology.nasa.gov/t2media/tops/tn/MSC-TOPS-45/IMG_5221 1388x1050.jpg",
+        "alt": "Robonaut 2: Medical Opportunities",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://technology.nasa.gov/t2media/tops/tn/MSC-TOPS-38/Front_NP-2014-08-1135-HQ.jpg",
+        "alt": "Robonaut 2 Technologies",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://technology.nasa.gov/t2media/tops/tn/MSC-TOPS-101/R2-Units.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://technology.nasa.gov/themes/t2portal/images/Social_Media/f_logo_RGB-White_512.png",
+        "alt": "Facebook Logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://technology.nasa.gov/themes/t2portal/images/Social_Media/logo-white.png",
+        "alt": "X Logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://technology.nasa.gov/themes/t2portal/images/Social_Media/LinkedIn.png",
+        "alt": "Linkedin Logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://technology.nasa.gov/themes/t2portal/images/Social_Media/Youtube.png",
+        "alt": "Youtube Logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://technology.nasa.gov/themes/t2portal/images/NASA.Logo.svg",
+        "alt": "NASA Meatball",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://technology.nasa.gov/themes/t2portal/images/main/Earth-Icon.svg",
+        "alt": "NASA Technology Transfer Logo",
+        "poster": ""
+      }
+    ]
+  },
+  "unitree-dex3-1": {
+    "source": "https://www.unitree.com/Dex3-1/",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/11d0a76afbb74e8fb7f692652b4c33e0_800x800.png",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/b53aa7f28733499f9c5f93548fee2baa_800x800.png",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/f951770ea2e74197a6b0c089d13efc5a_800x800.png",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/76658a29925a49a397efe2f726f5e1e3_800x800.png",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/ea2d2b637df84e3bacd508cd1f2711e5_2744x1596.jpg",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/4e6266ec20b849af968750d5d432d391_1372x798.jpg",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://www.unitree.com/images/6eb2888b59084fe5a8d0ac2f09856cb8.mp4",
+        "alt": "",
+        "poster": "https://www.unitree.com/images/62b5ebbd23cc428489bf358a2d463b9e_1920x1080.jpg"
+      },
+      {
+        "kind": "image",
+        "url": "https://www.unitree.com/images/4eff56e5733d4fdbb8276bf6c65daa74_1920x1080.png",
+        "alt": null,
+        "poster": ""
+      }
+    ]
+  },
+  "sharpa-w01": {
+    "source": "https://www.sharpa.com/pages/w01",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://www.sharpa.com/cdn/shop/files/edead23ab537221471d770861f99ec5f.svg?v=1766560968&width=61",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.sharpa.com/cdn/shop/t/53/assets/sharpa-nav-product-fallback.png?v=178235694775404050771790560473",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.sharpa.com/cdn/shop/t/53/assets/sa-header-logo-dark.svg?v=71615509824511315781788967771",
+        "alt": "Sharpa",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.sharpa.com/cdn/shop/t/53/assets/sa-header-logo-light.svg?v=33667272200186525711788967772",
+        "alt": "Sharpa",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://www.sharpa.com/cdn/shop/videos/c/vp/9a835d3229104ab68b31c8cacdd70d52/9a835d3229104ab68b31c8cacdd70d52.HD-1080p-2.5Mbps-88499711.mp4?v=0",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.sharpa.com/cdn/shop/files/preview_images/9a835d3229104ab68b31c8cacdd70d52.thumbnail.0000000000_2000x.jpg?v=1783587738",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.sharpa.com/cdn/shop/files/09a019e983f676804a9bc2f5d932e6ec7f41b3fb.png?v=1790274003",
+        "alt": "The Next Stage of Robotics is Manipulation",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://www.sharpa.com/cdn/shop/videos/c/vp/249c98129c3349eda95ca60fc226af9d/249c98129c3349eda95ca60fc226af9d.HD-1080p-7.2Mbps-67754346.mp4?v=0",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.sharpa.com/cdn/shop/files/preview_images/249c98129c3349eda95ca60fc226af9d.thumbnail.0000000000_2000x.jpg?v=1769418822",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://www.sharpa.com/cdn/shop/videos/c/vp/646cf94d7c204c0eb2e770c70026c142/646cf94d7c204c0eb2e770c70026c142.HD-1080p-3.3Mbps-67757370.mp4?v=0",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.sharpa.com/cdn/shop/files/preview_images/646cf94d7c204c0eb2e770c70026c142.thumbnail.0000000000_2000x.jpg?v=1769421672",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://www.sharpa.com/cdn/shop/videos/c/vp/c4a97c5140bc443781088b968e2d96c2/c4a97c5140bc443781088b968e2d96c2.HD-1080p-7.2Mbps-67754349.mp4?v=0",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.sharpa.com/cdn/shop/files/preview_images/c4a97c5140bc443781088b968e2d96c2.thumbnail.0000000000_2000x.jpg?v=1769418820",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://www.sharpa.com/cdn/shop/videos/c/vp/057a74e11ed94ede9a8d1323c5be8116/057a74e11ed94ede9a8d1323c5be8116.HD-1080p-3.3Mbps-67754351.mp4?v=0",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.sharpa.com/cdn/shop/files/preview_images/057a74e11ed94ede9a8d1323c5be8116.thumbnail.0000000000_2000x.jpg?v=1769418805",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://www.sharpa.com/cdn/shop/videos/c/vp/a005d28491ea41e7b5b2393492a369ce/a005d28491ea41e7b5b2393492a369ce.HD-1080p-3.3Mbps-67754352.mp4?v=0",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.sharpa.com/cdn/shop/files/preview_images/a005d28491ea41e7b5b2393492a369ce.thumbnail.0000000000_2000x.jpg?v=1769418811",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://www.sharpa.com/cdn/shop/videos/c/vp/0f618560e2144f1d9f5f7d9e3ab6e7ec/0f618560e2144f1d9f5f7d9e3ab6e7ec.HD-1080p-4.8Mbps-67754353.mp4?v=0",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.sharpa.com/cdn/shop/files/preview_images/0f618560e2144f1d9f5f7d9e3ab6e7ec.thumbnail.0000000000_2000x.jpg?v=1769418816",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.sharpa.com/cdn/shop/t/53/assets/sa-dp-ros2.png?v=40779793738788694251788967770",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.sharpa.com/cdn/shop/t/53/assets/sa-dp-mujoco.svg?v=82600768138478360641788967769",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.sharpa.com/cdn/shop/t/53/assets/sa-dp-nvidia.png?v=171865711853821599821788967769",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.sharpa.com/cdn/shop/t/53/assets/sa-dp-sdk.svg?v=19555813144293300691788967771",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.sharpa.com/cdn/shop/t/53/assets/sa-dp-cpp.svg?v=95863360165751027601788967768",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.sharpa.com/cdn/shop/t/53/assets/sa-dp-python.png?v=151630351872348074051788967770",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://www.sharpa.com/cdn/shop/videos/c/vp/c969ca7d34c1436c9ffc34adb607b408/c969ca7d34c1436c9ffc34adb607b408.HD-1080p-2.5Mbps-67748209.mp4?v=0",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.sharpa.com/cdn/shop/files/preview_images/c969ca7d34c1436c9ffc34adb607b408.thumbnail.0000000000_1600x.jpg?v=1769412927",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://www.sharpa.com/cdn/shop/videos/c/vp/8a9b743068db43e5b52585f625426cf1/8a9b743068db43e5b52585f625426cf1.m3u8?v=0",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://www.sharpa.com/cdn/shop/videos/c/vp/8a9b743068db43e5b52585f625426cf1/8a9b743068db43e5b52585f625426cf1.HD-1080p-2.5Mbps-88311857.mp4?v=0",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://www.sharpa.com/cdn/shop/videos/c/vp/642c334562cb4ae9b0e99da8fe94f809/642c334562cb4ae9b0e99da8fe94f809.m3u8?v=0",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://www.sharpa.com/cdn/shop/videos/c/vp/642c334562cb4ae9b0e99da8fe94f809/642c334562cb4ae9b0e99da8fe94f809.HD-1080p-2.5Mbps-88311858.mp4?v=0",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://www.sharpa.com/cdn/shop/videos/c/vp/908102f9fd8a49fa84592a4de655885c/908102f9fd8a49fa84592a4de655885c.m3u8?v=0",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://www.sharpa.com/cdn/shop/videos/c/vp/908102f9fd8a49fa84592a4de655885c/908102f9fd8a49fa84592a4de655885c.HD-1080p-2.5Mbps-88311859.mp4?v=0",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.sharpa.com/cdn/shop/files/W01_32b0a50e-276f-4857-84aa-fc3b007e6f27.png?v=1790442886&width=600",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.sharpa.com/cdn/shop/files/Codex_2026_8_17_17_57_19.jpg?v=1787034361&width=1200",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.sharpa.com/cdn/shop/files/W01-SE.png?v=1790442648&width=600",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.sharpa.com/cdn/shop/files/Codex_2026_8_17_17_56_57_bf2d721c-cb7d-41b7-9077-88a2cc74df19.jpg?v=1787034455&width=1200",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.sharpa.com/cdn/shop/t/53/assets/yd-footer-logo.svg?v=147890208864847077561788967768",
+        "alt": "Sharpa",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.sharpa.com/cdn/shop/t/53/assets/footer-message0123.svg?v=156216208982456218301788967772",
+        "alt": "Message",
+        "poster": ""
+      }
+    ]
+  },
+  "qb-softhand-2-research": {
+    "source": "https://qbrobotics.com/product/qb-softhand-2-research/",
+    "status": "403 Client Error: Forbidden for url: https://qbrobotics.com/product/qb-softhand-2-research/",
+    "assets": []
+  },
+  "orca-hand": {
+    "source": "https://arxiv.org/html/2504.04259v1",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/icons/smileybones-small.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/arxiv-logo-primary-light.svg",
+        "alt": "arXiv logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2504.04259v1/figures/MainFigure.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2504.04259v1/Versatility.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2504.04259v1/AutoCalibration.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2504.04259v1/AccuracyReliability.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2504.04259v1/ExperimentalSetup.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2504.04259v1/LongHorizon.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2504.04259v1/TestAreaIL.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation.png",
+        "alt": "Simons Foundation",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation-international.png",
+        "alt": "Simons Foundation International",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/schmidt-sciences.png",
+        "alt": "Schmidt Sciences",
+        "poster": ""
+      }
+    ]
+  },
+  "festo-bionicsofthand": {
+    "source": "https://www.youtube.com/watch?v=5e0F14IRxVc",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "link",
+        "url": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fsignin_passive%26feature%3Dpassive&hl=en",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "open-bionics-ada": {
+    "source": "https://openbionicslabs.com/blog",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/a341ba69-716c-41eb-b79d-84f2243cda59/Capsule+OB+Logo+Blue.png?format=1000w",
+        "alt": "Open Bionics ",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1512664917303-2DM39QRHHZW17ZQ8PCGK/Tilly_sRGB-3.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1509114190501-RQXTZK8ALIFJKFKE2X5R/Dan+-+Adam+Jensen.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1509113816319-AE1ID8TONNTC8XAUQTR9/UAE+AI+%26+Robotics+Award+for+Good+-+Feb+2017+%281%29.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1509111174057-FG9VNV0T3RC13ELDHBDB/Tilly+-+hand+in+hand.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/12750177_1552583375053945_980315925_n.jpg?ig_cache_key=MTE4Nzk0Mjc0NTM4MzY2MjQ1OQ%3D%3D.2",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1455702766948-2YTM7BRUWQX661I3GIZJ/image-asset.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1455702782346-KI0ONF7H3Z0COK2MFFB1/image-asset.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1455640471275-XXKZSZE40HP3P26F2RN2/image-asset.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1455702807793-32JRJ7PXNEGZ4CKQ8LFQ/image-asset.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1452693975404-WO9LLB26A1EJCI0W9QI6/image-asset.gif",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1452694214090-B7S9AB8OWO6UA5FK1NDD/image-asset.gif",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1452694364545-KH9MWIBRDQOYS14L6V1A/image-asset.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1452694529449-9DPP4RKZ23PKMGT6YLTE/image-asset.gif",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1452694682827-1CDPLODPLK0XH4EW4BJM/image-asset.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1452695783062-BCRFEQH9GHYT4XRKSGJU/OpenBionicsEnable.gif",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1453311960799-RXCLQW8Y6I310HI8TT9F/OpenBionics+3Dprinted+bionic+hero+hands",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1452696015208-9Q7XYLOV9B81S3NUE9ND/image-asset.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1452696466906-1ZPIHFAP28RY2GUOT8UJ/image-asset.gif",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1453719995253-DD2DVRTZYW3FBM4EKFPI/prosthetic+socket",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1452698187292-MJY8OHV469UDVRRPD6CE/image-asset.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1452698466552-UPRMYOWEJU2Q9GLHZZ7V/image-asset.gif",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1452698509047-53B9977FNLAWDB9N4WBF/image-asset.gif",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1452698132875-QCAFSHKAVXFXV7JEIFB2/image-asset.gif",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1452698589917-LDMF8GDO5LF3QP2C7DPE/image-asset.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1452698549299-Q4BDHHA7TE8AZA06LSD7/image-asset.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1452698625105-3B35EMQ01A9VFDOCZIIR/image-asset.jpeg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1452698702863-ZX8F4F6UB6Y8B7EQIBDH/200.gif",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1452698925035-TSYCY6ZZAUWQ0QXY18G4/giphy.gif",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1452698977311-XMINQRC0A92PYOKCVAUM/image-asset.gif",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1446656634251-DCJ8BD80ZGCY7SJJGQRD/3D+Printed+Splint+Arm+Cast",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "link",
+        "url": "https://vine.co/v/eMO5DdHU5Yj/embed/simple",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "open-bionics-brunel": {
+    "source": "https://www.frontiersin.org/journals/rehabilitation-sciences/articles/10.3389/fresc.2021.802070/full",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://d2csxpduxe849s.cloudfront.net/media/E32629C6-9347-4F84-81FEAEF7BFA342B3/4782C939-6D3D-424E-8C34EB2FD5AC5C68/webimage-83A8FE62-CE39-44A5-B6C7B1722D282E92.png",
+        "alt": "Frontiers in Rehabilitation Sciences",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.frontiersin.org/files/Articles/802070/xml-images/fresc-02-802070-g0001.webp",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.frontiersin.org/files/Articles/802070/xml-images/fresc-02-802070-g0002.webp",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.frontiersin.org/files/Articles/802070/xml-images/fresc-02-802070-g0003.webp",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.frontiersin.org/files/Articles/802070/xml-images/fresc-02-802070-g0004.webp",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.frontiersin.org/files/Articles/802070/xml-images/fresc-02-802070-g0005.webp",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.frontiersin.org/files/Articles/802070/xml-images/fresc-02-802070-g0006.webp",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.frontiersin.org/files/Articles/802070/xml-images/fresc-02-802070-g0007.webp",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.frontiersin.org/files/Articles/802070/xml-images/fresc-02-802070-g0008.webp",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.frontiersin.org/files/Articles/802070/xml-images/fresc-02-802070-g0009.webp",
+        "alt": null,
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://static2.frontiersin.org/static-resources/images/crossmark_color.webp",
+        "alt": "Crossmark icon",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.frontiersin.org/api/ipx/s=366x408&fit=outside&f=jpg/https://brand.frontiersin.org/asset/e8101b5e-cd70-402c-b234-d8c42cd1d053/thumbnail/webimage-Doctor-making-notes-in-hospital-corona-virus-concept-Shot-through-glass",
+        "alt": "Doctor making notes in hospital, corona virus concept. Shot through glass.",
+        "poster": ""
+      },
+      {
+        "kind": "link",
+        "url": "https://tag-manager.frontiersin.org/ns.html?id=GTM-M322FV2&gtm_auth=owVbWxfaJr21yQv1fe1cAQ&gtm_preview=env-1&gtm_cookies_win=x",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "schunk-sdh-2": {
+    "source": "https://www.mdpi.com/1424-8220/18/5/1412",
+    "status": "403 Client Error: Forbidden for url: https://www.mdpi.com/1424-8220/18/5/1412",
+    "assets": []
+  },
+  "barrett-bh8-280": {
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7806087/",
+    "status": "403 Client Error: Forbidden for url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7806087/",
+    "assets": []
+  }
+}

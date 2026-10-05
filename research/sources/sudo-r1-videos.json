@@ -1,0 +1,58 @@
+[
+  {
+    "id": "intro",
+    "title": "系统演示",
+    "url": "https://assets.sudo.ai/public/videos/bf4a220b37f0/figure_1-1-2/master.m3u8",
+    "description": "官网开篇的 R1 系统视频。",
+    "source": "https://www.sudo.ai/",
+    "checked_on": "2026-10-02"
+  },
+  {
+    "id": "evaluation",
+    "title": "60 分钟连续评估",
+    "url": "https://assets.sudo.ai/public/videos/bf4a220b37f0/figure_6-1/master.m3u8",
+    "description": "官网连续评估视频；完整任务和成功率口径见原文。",
+    "source": "https://www.sudo.ai/",
+    "checked_on": "2026-10-02"
+  },
+  {
+    "id": "conditions",
+    "title": "不同光照与背景",
+    "url": "https://assets.sudo.ai/public/videos/bf4a220b37f0/figure_3-4-1/master.m3u8",
+    "description": "官网不同视觉条件下的抓取演示之一。",
+    "source": "https://www.sudo.ai/",
+    "checked_on": "2026-10-02"
+  },
+  {
+    "id": "agility",
+    "title": "外界干扰与闭环响应",
+    "url": "https://assets.sudo.ai/public/videos/bf4a220b37f0/figure_3-1-1/master.m3u8",
+    "description": "官网任务中施加干扰的演示之一。",
+    "source": "https://www.sudo.ai/",
+    "checked_on": "2026-10-02"
+  },
+  {
+    "id": "spatial",
+    "title": "障碍与受限空间",
+    "url": "https://assets.sudo.ai/public/videos/bf4a220b37f0/figure_5-1-1/master.m3u8",
+    "description": "官网受限空间中接近目标的演示之一。",
+    "source": "https://www.sudo.ai/",
+    "checked_on": "2026-10-02"
+  },
+  {
+    "id": "clutter",
+    "title": "杂乱物体抓取",
+    "url": "https://assets.sudo.ai/public/videos/bf4a220b37f0/figure_4-1-1/master.m3u8",
+    "description": "官网杂乱物体条件下的抓取演示之一。",
+    "source": "https://www.sudo.ai/",
+    "checked_on": "2026-10-02"
+  },
+  {
+    "id": "simulation",
+    "title": "仿真演示",
+    "url": "https://assets.sudo.ai/public/videos/bf4a220b37f0/figure_7-3-1/master.m3u8",
+    "description": "官网 Why Simulation 章节中的仿真视频，不标作真实硬件演示。",
+    "source": "https://www.sudo.ai/",
+    "checked_on": "2026-10-02"
+  }
+]

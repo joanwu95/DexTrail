@@ -1,0 +1,772 @@
+[
+  {
+    "hand": "shadow-hand",
+    "label": "产品画面",
+    "url": "https://shadowrobot.com/wp-content/uploads/elementor/thumbs/Shadow-Robot-Co3943-copy-2-rtl5d6fbfdzabfxgtw2jd7f5zyb0v297k3yzrh3154.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "shadow-hand",
+    "label": "Classic 产品视图 · 官网配图",
+    "url": "https://shadowrobot.com/wp-content/uploads/2022/04/Shadow-Robot-Co3721HR-copy-2-e1650536420490.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "shadow-hand",
+    "label": "Gazebo 仿真示意 · 非实物照片",
+    "url": "https://shadowrobot.com/wp-content/uploads/2024/09/Simulating-Shadow-Hand-in-Gazebo.jpg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "leap-hand",
+    "label": "产品画面",
+    "url": "https://v1.leaphand.com/static/videos/video_segments/in_hand_real_world_new.mp4",
+    "status": 200,
+    "content_type": "video/mp4"
+  },
+  {
+    "hand": "leap-hand",
+    "label": "VR 遥操作演示",
+    "url": "https://v1.leaphand.com/static/videos/video_segments/demo_vr_rss.mp4",
+    "status": 200,
+    "content_type": "video/mp4"
+  },
+  {
+    "hand": "leap-hand",
+    "label": "倒物演示",
+    "url": "https://v1.leaphand.com/static/videos/video_segments/pour_1.mp4",
+    "status": 200,
+    "content_type": "video/mp4"
+  },
+  {
+    "hand": "leap-hand",
+    "label": "自主手内转动",
+    "url": "https://v1.leaphand.com/static/videos/video_segments/reorient_lab.mp4",
+    "status": 200,
+    "content_type": "video/mp4"
+  },
+  {
+    "hand": "leap-hand",
+    "label": "行为克隆实验图",
+    "url": "https://v1.leaphand.com/static/figures/behavior_cloning.PNG",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "leap-hand",
+    "label": "拉力试验演示",
+    "url": "https://v1.leaphand.com/static/videos/video_segments/strength.mp4",
+    "status": 200,
+    "content_type": "video/mp4"
+  },
+  {
+    "hand": "leap-hand",
+    "label": "抓取演示",
+    "url": "https://v1.leaphand.com/static/videos/video_segments/grasp_1.mp4",
+    "status": 200,
+    "content_type": "video/mp4"
+  },
+  {
+    "hand": "dlr-hand-ii",
+    "label": "产品画面",
+    "url": "https://www.dlr.de/de/rm/bilder/roboter_und_systeme/hand/hand_ii/handshake_200.jpg/@@images/image-200-908644273f353fe8a6e45372c16a2505.jpeg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "dlr-hand-ii",
+    "label": "手指运动学",
+    "url": "https://www.dlr.de/de/rm/bilder/roboter_und_systeme/hand/hand_ii/hand-II-finger-kinematics_200.jpg/@@images/image",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "dlr-hand-ii",
+    "label": "锥齿轮传动",
+    "url": "https://www.dlr.de/de/rm/bilder/roboter_und_systeme/hand/hand_ii/bevelgear_200.jpg/@@images/image",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "dlr-hand-ii",
+    "label": "工具接口",
+    "url": "https://www.dlr.de/de/rm/bilder/roboter_und_systeme/hand/hand_ii/toolretainer_200.jpg/@@images/image",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "xynova-flex-2",
+    "label": "产品画面",
+    "url": "https://cdn.prod.website-files.com/6641c0152b531df61b2cefca/6a30ffd95dfcddf91922d85e_use-case-thumbnail-Xynova.jpg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "leap-hand-v2",
+    "label": "产品画面",
+    "url": "https://v2.leaphand.com/static/figures/v2_anatomy.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "leap-hand-v2",
+    "label": "柔性手指剖面",
+    "url": "https://v2.leaphand.com/static/figures/finger_cross_section.PNG",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "leap-hand-v2",
+    "label": "欠驱动运动演示",
+    "url": "https://v2.leaphand.com/static/videos/video_segments/underactuation.mp4",
+    "status": 200,
+    "content_type": "video/mp4"
+  },
+  {
+    "hand": "leap-hand-v2",
+    "label": "托盘遥操作",
+    "url": "https://v2.leaphand.com/static/videos/video_segments/dining_bimanual_place.mp4",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8"
+  },
+  {
+    "hand": "leap-hand-v2",
+    "label": "衣架遥操作",
+    "url": "https://v2.leaphand.com/static/videos/video_segments/laundry_hanger.mp4",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8"
+  },
+  {
+    "hand": "leap-hand-v2",
+    "label": "指尖捏持",
+    "url": "https://v2.leaphand.com/static/videos/video_segments/pinch.mp4",
+    "status": 200,
+    "content_type": "video/mp4"
+  },
+  {
+    "hand": "leap-hand-v2",
+    "label": "原有演示视频",
+    "url": "https://v2.leaphand.com/resources/1/drill1.mp4",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8"
+  },
+  {
+    "hand": "schunk-svh",
+    "label": "产品画面",
+    "url": "https://d16vz4puxlsxm1.cloudfront.net/image/076200133045-Prod/image_rbjq655utp0d97e6od2ul2mu60/-FJPG-B600",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "inspire-rh56dfx",
+    "label": "产品画面",
+    "url": "https://www.inspire-robots.com/tu/lqs/RH56DFX/RH56DFXbanner-m.jpg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "inspire-rh56dfx",
+    "label": "DFX 产品说明 1",
+    "url": "https://www.inspire-robots.com/tu/lqs/RH56DFX/RH56DFXbanner01.jpg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "inspire-rh56dfx",
+    "label": "DFX 产品说明 2",
+    "url": "https://www.inspire-robots.com/tu/lqs/RH56DFX/RH56DFXbanner02.jpg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "inspire-rh56dfx",
+    "label": "DFX 产品说明 3",
+    "url": "https://www.inspire-robots.com/tu/lqs/RH56DFX/RH56DFXbanner03.jpg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "inspire-rh56dfx",
+    "label": "DFX 参数图",
+    "url": "https://www.inspire-robots.com/tu/lqs/RH56DFX/RH56DFXbanner05.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "inspire-rh56bfx",
+    "label": "产品画面",
+    "url": "https://www.inspire-robots.com/tu/lqs/RH56BFX/RH56BFXbanner-m.jpg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "inspire-rh56bfx",
+    "label": "BFX 产品说明 1",
+    "url": "https://www.inspire-robots.com/tu/lqs/RH56BFX/RH56BFX01.jpg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "inspire-rh56bfx",
+    "label": "BFX 产品说明 2",
+    "url": "https://www.inspire-robots.com/tu/lqs/RH56BFX/RH56BFX02.jpg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "inspire-rh56bfx",
+    "label": "BFX 产品说明 3",
+    "url": "https://www.inspire-robots.com/tu/lqs/RH56BFX/RH56BFX03.jpg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "inspire-rh56bfx",
+    "label": "BFX 参数图",
+    "url": "https://www.inspire-robots.com/tu/lqs/RH56BFX/RH56BFX05.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "dlr-clash",
+    "label": "产品画面",
+    "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/clash/clash_automatica2018_apple_cropped_for_16_9_3328x1872.jpg/@@images/image-1000-a3dcdc825eccddb5eb6a8a7df556adcb.jpeg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "dlr-clash",
+    "label": "苹果抓握",
+    "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/clash/Clash_greift_einen_Apfel_0J4A0037_original.jpg/@@images/image-1000-b4b39b8b7ec1da8ab6907370a8f9977e.jpeg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "dlr-clash",
+    "label": "锁具抓握",
+    "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/clash/clash_grasps_padlock_2018.jpg/@@images/image-1000-18c9149f03e07056bb6202dc439668ce.jpeg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "dlr-clash",
+    "label": "罐体抓握",
+    "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/clash/clash_grasps_tuna_bin_2018.jpg/@@images/image-400-dbb7c7ba8f8b0da74d6f5ca2a90a8648.jpeg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "dlr-david",
+    "label": "产品画面",
+    "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/david_hand/David-Hand_mit_Stahlfedern_16_9_1440x810.jpg/@@images/image-1000-ee94d4a377ca54b86d9ee7875676c2e7.jpeg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "dlr-david",
+    "label": "钢簧版本结构",
+    "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/david_hand/David-Hand_mit_Stahlfedern_4993x3328.jpg/@@images/image-1000-dc318044c5df0502c4412c92029fef52.jpeg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "dlr-david",
+    "label": "金属版本侧面",
+    "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/david_hand/David-Hand_Metallversion_1746x3104.jpg/@@images/image-1000-2ee91f57741536bc03500cdf6c35f377.jpeg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "dlr-dexhand",
+    "label": "产品画面",
+    "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/dexhand/dexhand_2012_liegend_freigestellt_16_9_4089x2300.jpg/@@images/image-1000-60825be70aa9c14ab4bc1ce8de4ba36d.jpeg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "dlr-dexhand",
+    "label": "背面结构",
+    "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/dexhand/dexhand_2012_stehend_oberseite_freigestellt_3203x2783.jpg/@@images/image-1000-4ca45553faaad572145d454e9fda093e.jpeg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "dlr-dexhand",
+    "label": "圆柱握持",
+    "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/dexhand/dexhand_2012_greift_zylinder_freigestellt_3742x5613.jpg/@@images/image-1000-7a900eb7421fb1b5bb47241a497afd43.jpeg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "dlr-dexhand",
+    "label": "电钻握持",
+    "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/dexhand/dexhand_2012_greift_akkubohrer_freigestellt_3456x5184.jpg/@@images/image-1000-dd962fce3fd4140f271bb28e5ddb28c2.jpeg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "dlr-dexhand",
+    "label": "线缆握持",
+    "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/dexhand/dexhand_2012_greift_kabel_freigestellt_5184x3456.jpg/@@images/image-400-6a7bb090bd8afadff8d42b4e0770137c.jpeg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "dlr-spacehand",
+    "label": "产品画面",
+    "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/spacehand/Spacehand_front_rotated_711x400.jpg/@@images/image-711-f624c552268e02b2c9faa3226f812b26.jpeg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "dlr-spacehand",
+    "label": "CAESAR 机械臂集成",
+    "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/spacehand/Spacehand_an_Caesar_0J4A9741_original.jpg/@@images/image-1000-fe0eca87bcdd601867c743d5938bdc71.jpeg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "dlr-spacehand",
+    "label": "振动台试验",
+    "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/spacehand/spacehand_shaker.jpg/@@images/image-1000-653f32bf2135b8648e7e3f97eba30cca.jpeg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "dlr-spacehand",
+    "label": "侧面结构",
+    "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/spacehand/spacehand_side_view_original.png/@@images/image-1000-e42c205221ab3c1b12a2b7cbace44e17.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "prensilia-ih2-azzurra",
+    "label": "产品画面",
+    "url": "https://www.prensilia.com/wp-content/uploads/2023/03/ih2-azzurra-hand-prensilia.jpg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "prensilia-ih2-azzurra",
+    "label": "整手外观",
+    "url": "https://www.prensilia.com/wp-content/uploads/2023/03/ih2-azzurra-hand.jpg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "prensilia-ih2-azzurra",
+    "label": "圆柱抓握",
+    "url": "https://www.prensilia.com/wp-content/uploads/2023/03/ih2-azzurra-cilindrical-1024x1024.jpg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "prensilia-ih2-azzurra",
+    "label": "侧捏",
+    "url": "https://www.prensilia.com/wp-content/uploads/2023/03/ih2-azzurra-lateral-1024x1024.jpg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "prensilia-ih2-azzurra",
+    "label": "精密捏持",
+    "url": "https://www.prensilia.com/wp-content/uploads/2023/03/ih2-azzurra-precision-1024x1024.jpg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "prensilia-ih2-azzurra",
+    "label": "抓姿组合",
+    "url": "https://www.prensilia.com/wp-content/uploads/2023/03/ih2-azzurra-grips-1024x1024.jpg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "wuji-hand-2",
+    "label": "产品画面",
+    "url": "https://docs.wuji.tech/_next/static/media/dimensions-white.b695dabb.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "wuji-hand-2",
+    "label": "结构与模组",
+    "url": "https://docs.wuji.tech/_next/static/media/structure-white.1f578143.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "wuji-hand-2",
+    "label": "各指自由度",
+    "url": "https://docs.wuji.tech/_next/static/media/dof-configuration-white.3b64a4aa.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "wuji-hand-2",
+    "label": "关节运动范围",
+    "url": "https://docs.wuji.tech/_next/static/media/joint-motion-range.a7628288.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "wuji-hand-2",
+    "label": "接口布局",
+    "url": "https://docs.wuji.tech/shared/assets/images/zh/wuji-hand/latest/overview/connector-layout.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "allegro-v4",
+    "label": "产品画面",
+    "url": "https://www.allegrohand.com/upload/prod/product_hand_v4_01_a77b2.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "allegro-v4",
+    "label": "V4 产品视图 2",
+    "url": "https://www.allegrohand.com/upload/prod/product_hand_v4_02_cdf8f.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "allegro-v4",
+    "label": "V4 产品视图 3",
+    "url": "https://www.allegrohand.com/upload/prod/product_hand_v4_03_98282.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "allegro-v4",
+    "label": "V4 产品视图 4",
+    "url": "https://www.allegrohand.com/upload/prod/product_hand_v4_04_4db10.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "allegro-v4",
+    "label": "V4 产品视图 5",
+    "url": "https://www.allegrohand.com/upload/prod/product_hand_v4_05_a77a0.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "ruka-v1",
+    "label": "产品画面",
+    "url": "https://arxiv.org/html/2504.13165v1/header.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "ruka-v1",
+    "label": "运动学与驱动",
+    "url": "https://arxiv.org/html/2504.13165v1/kinematics.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "ruka-v1",
+    "label": "力测试装置",
+    "url": "https://arxiv.org/html/2504.13165v1/Strength_tests.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "ruka-v1",
+    "label": "抓姿覆盖",
+    "url": "https://arxiv.org/html/2504.13165v1/Grasps.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "ruka-v1",
+    "label": "遥操作系统",
+    "url": "https://arxiv.org/html/2504.13165v1/teleop_wo_arm.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "rbo-hand-3",
+    "label": "产品画面",
+    "url": "https://arxiv.org/html/2201.10883v1/hand.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "rbo-hand-3",
+    "label": "双气室手指",
+    "url": "https://arxiv.org/html/2201.10883v1/2-comp-finger.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "rbo-hand-3",
+    "label": "拇指骨架",
+    "url": "https://arxiv.org/html/2201.10883v1/thumb-scaffold.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "rbo-hand-3",
+    "label": "拇指对指测试",
+    "url": "https://arxiv.org/html/2201.10883v1/kapandji.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "rbo-hand-3",
+    "label": "抓姿分类",
+    "url": "https://arxiv.org/html/2201.10883v1/feix.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "rbo-hand-3",
+    "label": "手内操作",
+    "url": "https://arxiv.org/html/2201.10883v1/in_hand_manipulation.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "psyonic-ability-hand",
+    "label": "官网产品画面 · 硬件版本以原图为准",
+    "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/05ed1bfb-f367-458d-83dd-1a735b816e7a/3.Asembly_Ability+Hand+MK9.5+Product+Release_TEXTLESS.00_00_40_07.Still013.jpg",
+    "status": 200,
+    "content_type": "image/webp"
+  },
+  {
+    "hand": "psyonic-ability-hand",
+    "label": "MK9.5 外观 · 不代表旧研究版配置",
+    "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/bd858022-9a27-45e1-9dd2-eb74fca4c0da/3.Asembly_Ability+Hand+MK9.5+Product+Release_TEXTLESS.00_00_57_18.Still017.jpg",
+    "status": 200,
+    "content_type": "image/webp"
+  },
+  {
+    "hand": "psyonic-ability-hand",
+    "label": "MK9.5 产品细节 · 新版本",
+    "url": "https://images.squarespace-cdn.com/content/v1/61229f1b98e6c829c570bace/c88582cc-17ff-4e43-b559-7ec243d5a8e1/3.Asembly_Ability+Hand+MK9.5+Product+Release_TEXTLESS.00_01_06_20.Still021+%282%29.png",
+    "status": 200,
+    "content_type": "image/webp"
+  },
+  {
+    "hand": "linker-l20",
+    "label": "产品画面",
+    "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l20/detail-2.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "linker-l20",
+    "label": "L20 技术说明 1",
+    "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l20/detail-3.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "linker-l20",
+    "label": "L20 技术说明 2",
+    "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l20/detail-4.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "trifinger",
+    "label": "产品画面",
+    "url": "https://open-dynamic-robot-initiative.github.io/trifinger_docs/_images/trifingerpro.jpg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "rbo-hand-2",
+    "label": "产品画面",
+    "url": "https://static.wixstatic.com/media/a3cb45_8489ad820e5642849df51224f57b8c53.jpg/v1/fill/w_300,h_219,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a3cb45_8489ad820e5642849df51224f57b8c53.jpg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "pisa-iit-softhand",
+    "label": "产品画面",
+    "url": "https://static.wixstatic.com/media/a3cb45_9aa9f462fb284c638ae9e2bc89de9c92.png/v1/fill/w_300,h_250,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a3cb45_9aa9f462fb284c638ae9e2bc89de9c92.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "tesollo-dg-5f-m",
+    "label": "产品画面",
+    "url": "https://cdn.tesollo.com/site/products/2026/08/21d43383-2721-4226-b66d-2590382a0349.webp",
+    "status": 200,
+    "content_type": "image/webp"
+  },
+  {
+    "hand": "tesollo-dg-5f-m",
+    "label": "DG-5F-M 研究集成",
+    "url": "https://cdn.tesollo.com/site/products/dg-5f-m/dg-5f-m-product-3.webp",
+    "status": 200,
+    "content_type": "image/webp"
+  },
+  {
+    "hand": "tesollo-dg-5f-m",
+    "label": "DG-5F-M 操作展示",
+    "url": "https://cdn.tesollo.com/site/products/dg-5f-m/dg-5f-m-product-2.webp",
+    "status": 200,
+    "content_type": "image/webp"
+  },
+  {
+    "hand": "tesollo-dg-5f-m",
+    "label": "DG-5F-M 工具展示",
+    "url": "https://cdn.tesollo.com/site/products/dg-5f-m/dg-5f-m-product.webp",
+    "status": 200,
+    "content_type": "image/webp"
+  },
+  {
+    "hand": "robotiq-3f",
+    "label": "产品画面",
+    "url": "https://robotiq.com/hs-fs/hubfs/Design_3F.jpg?width=461&height=311&name=Design_3F.jpg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "nasa-robonaut-2-hand",
+    "label": "产品画面",
+    "url": "https://technology.nasa.gov/t2media/tops/img/MSC-TOPS-104/R2-Sensing-Back-Image-1.jpg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "unitree-dex3-1",
+    "label": "产品画面",
+    "url": "https://www.unitree.com/images/4eff56e5733d4fdbb8276bf6c65daa74_1920x1080.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "unitree-dex3-1",
+    "label": "Dex3-1 产品说明",
+    "url": "https://www.unitree.com/images/ea2d2b637df84e3bacd508cd1f2711e5_2744x1596.jpg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "unitree-dex3-1",
+    "label": "官方操作视频",
+    "url": "https://www.unitree.com/images/6eb2888b59084fe5a8d0ac2f09856cb8.mp4",
+    "status": 200,
+    "content_type": "video/mp4"
+  },
+  {
+    "hand": "sharpa-w01",
+    "label": "产品画面",
+    "url": "https://www.sharpa.com/cdn/shop/files/preview_images/057a74e11ed94ede9a8d1323c5be8116.thumbnail.0000000000_2000x.jpg?v=1769418805",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "sharpa-w01",
+    "label": "W01 官方产品视频",
+    "url": "https://www.sharpa.com/cdn/shop/videos/c/vp/9a835d3229104ab68b31c8cacdd70d52/9a835d3229104ab68b31c8cacdd70d52.HD-1080p-2.5Mbps-88499711.mp4?v=0",
+    "status": 200,
+    "content_type": "video/mp4"
+  },
+  {
+    "hand": "sharpa-w01",
+    "label": "W01 操作展示 1",
+    "url": "https://www.sharpa.com/cdn/shop/videos/c/vp/249c98129c3349eda95ca60fc226af9d/249c98129c3349eda95ca60fc226af9d.HD-1080p-7.2Mbps-67754346.mp4?v=0",
+    "status": 200,
+    "content_type": "video/mp4"
+  },
+  {
+    "hand": "sharpa-w01",
+    "label": "W01 操作展示 2",
+    "url": "https://www.sharpa.com/cdn/shop/videos/c/vp/646cf94d7c204c0eb2e770c70026c142/646cf94d7c204c0eb2e770c70026c142.HD-1080p-3.3Mbps-67757370.mp4?v=0",
+    "status": 200,
+    "content_type": "video/mp4"
+  },
+  {
+    "hand": "sharpa-w01",
+    "label": "原有演示视频",
+    "url": "https://www.sharpa.com/cdn/shop/videos/c/vp/057a74e11ed94ede9a8d1323c5be8116/057a74e11ed94ede9a8d1323c5be8116.HD-1080p-3.3Mbps-67754351.mp4?v=0",
+    "status": 200,
+    "content_type": "video/mp4"
+  },
+  {
+    "hand": "qb-softhand-2-research",
+    "label": "产品画面",
+    "url": "https://qbrobotics.com/wp-content/uploads/2022/05/Posa1-1.jpg",
+    "status": 403,
+    "content_type": ""
+  },
+  {
+    "hand": "orca-hand",
+    "label": "产品画面",
+    "url": "https://arxiv.org/html/2504.04259v1/figures/MainFigure.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "orca-hand",
+    "label": "操作示例",
+    "url": "https://arxiv.org/html/2504.04259v1/Versatility.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "orca-hand",
+    "label": "自动标定",
+    "url": "https://arxiv.org/html/2504.04259v1/AutoCalibration.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "orca-hand",
+    "label": "精度与可靠性试验",
+    "url": "https://arxiv.org/html/2504.04259v1/AccuracyReliability.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "orca-hand",
+    "label": "实验装置",
+    "url": "https://arxiv.org/html/2504.04259v1/ExperimentalSetup.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "festo-bionicsofthand",
+    "label": "产品画面",
+    "url": "https://i.ytimg.com/vi/5e0F14IRxVc/hqdefault.jpg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "open-bionics-ada",
+    "label": "产品画面",
+    "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1455702782346-KI0ONF7H3Z0COK2MFFB1/image-asset.jpeg",
+    "status": 200,
+    "content_type": "image/webp"
+  },
+  {
+    "hand": "open-bionics-brunel",
+    "label": "产品画面",
+    "url": "https://www.frontiersin.org/files/Articles/802070/xml-images/fresc-02-802070-g0001.webp",
+    "status": 200,
+    "content_type": "image/webp"
+  },
+  {
+    "hand": "schunk-sdh-2",
+    "label": "产品画面",
+    "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bdc2/5981638/874379d2fb98/sensors-18-01412-g009.jpg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "barrett-bh8-280",
+    "label": "产品画面",
+    "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/5fd4/7806087/275f41067db3/frobt-07-600584-g0002.jpg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  }
+]

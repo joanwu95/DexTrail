@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720" style="max-width:100%;height:auto" role="img" aria-labelledby="title desc"><title id="title">Grasp quality</title><desc id="desc">同一归一化与预算下，比较两个示意力旋量截面的原点中心内切圆半径。</desc>
+<rect width="960" height="720" fill="#f4f1ea"/>
+<text x="34.00" y="35.00" font-size="12" fill="#aa4d3e" font-family="Consolas, monospace" font-weight="400" text-anchor="start">DEXTRAIL / GRASP 11</text>
+<text x="34.00" y="80.00" font-size="29" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Grasp quality</text>
+<text x="35.00" y="110.00" font-size="15" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">抓取质量 · 最不利方向的抗扰余量</text>
+<polyline points="34.00,129.00 926.00,129.00" fill="none" stroke="#d8d8ce" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="400.00,382.00 295.00,447.00 140.00,436.00 140.00,320.00 325.00,328.00 400.00,382.00" fill="none" stroke="#696d67" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="400.00,382.00 295.00,447.00 140.00,436.00 140.00,320.00 325.00,328.00" fill="#edeae3" stroke="#696d67" stroke-width="1.6" stroke-linejoin="round"/>
+<ellipse cx="260.00" cy="382.00" rx="56.76" ry="56.76" fill="#eee5dd" stroke="#aa4d3e" stroke-width="1.8"/>
+<polyline points="88.00,382.00 432.00,382.00" fill="none" stroke="#696d67" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="426.55,384.50 432.00,382.00 426.55,379.50" fill="none" stroke="#696d67" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="260.00,527.00 260.00,237.00" fill="none" stroke="#696d67" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="262.50,242.45 260.00,237.00 257.50,242.45" fill="none" stroke="#696d67" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="424.00" y="409.00" font-size="15" fill="#696d67" font-family="Consolas, monospace" font-weight="400" text-anchor="start">w1</text>
+<text x="272.00" y="242.00" font-size="15" fill="#696d67" font-family="Consolas, monospace" font-weight="400" text-anchor="start">w2</text>
+<polyline points="260.00,382.00 262.45,325.30" fill="none" stroke="#aa4d3e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="265.09,331.78 262.45,325.30 259.26,331.53" fill="none" stroke="#aa4d3e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="260.00" y="218.00" font-size="22" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="middle">Grasp A</text>
+<text x="260.00" y="566.00" font-size="17" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="middle">Smaller worst-case margin</text>
+<polyline points="842.00,382.00 776.00,496.32 644.00,496.32 578.00,382.00 644.00,267.68 776.00,267.68 842.00,382.00" fill="none" stroke="#696d67" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="842.00,382.00 776.00,496.32 644.00,496.32 578.00,382.00 644.00,267.68 776.00,267.68" fill="#edeae3" stroke="#696d67" stroke-width="1.6" stroke-linejoin="round"/>
+<ellipse cx="710.00" cy="382.00" rx="114.32" ry="114.32" fill="#eee5dd" stroke="#aa4d3e" stroke-width="1.8"/>
+<polyline points="538.00,382.00 882.00,382.00" fill="none" stroke="#696d67" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="876.55,384.50 882.00,382.00 876.55,379.50" fill="none" stroke="#696d67" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="710.00,527.00 710.00,237.00" fill="none" stroke="#696d67" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="712.50,242.45 710.00,237.00 707.50,242.45" fill="none" stroke="#696d67" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="874.00" y="409.00" font-size="15" fill="#696d67" font-family="Consolas, monospace" font-weight="400" text-anchor="start">w1</text>
+<text x="722.00" y="242.00" font-size="15" fill="#696d67" font-family="Consolas, monospace" font-weight="400" text-anchor="start">w2</text>
+<polyline points="710.00,382.00 611.00,439.16" fill="none" stroke="#aa4d3e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="615.05,433.45 611.00,439.16 617.97,438.50" fill="none" stroke="#aa4d3e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="710.00" y="218.00" font-size="22" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="middle">Grasp B</text>
+<text x="710.00" y="566.00" font-size="17" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="middle">Larger worst-case margin</text>
+<text x="480.00" y="602.00" font-size="20" fill="#aa4d3e" font-family="Consolas, monospace" font-weight="400" text-anchor="middle">εA &lt; εB</text>
+<polyline points="34.00,622.00 926.00,622.00" fill="none" stroke="#d8d8ce" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="480.00" y="658.00" font-size="18" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="middle">同一力预算和归一化下，最不利方向的抗扰余量越大越好</text>
+<text x="34.00" y="702.00" font-size="12" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Illustrative normalized 2D section · not the full 6D metric</text>
+<text x="840.70" y="702.00" font-size="12" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Grasping Primer</text>
+</svg>

@@ -1,0 +1,722 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><base href="http://127.0.0.1:8000/"><title>DexTrail · A · 浅薄荷 / 墨黑 / 红 · detail</title><link rel="stylesheet" href="http://127.0.0.1:8000/assets/stylesheets/main.ec1eaa64.min.css"><link rel="stylesheet" href="http://127.0.0.1:8000/assets/stylesheets/palette.ab4e12ef.min.css"><link rel="stylesheet" href="http://127.0.0.1:8000/stylesheets/extra.css"><link rel="stylesheet" href="http://127.0.0.1:8000/stylesheets/theme.css"><link rel="stylesheet" href="http://127.0.0.1:8000/stylesheets/dextrail.css"><link rel="stylesheet" href="http://127.0.0.1:8000/stylesheets/product-details.css"><link rel="stylesheet" href="http://127.0.0.1:8000/stylesheets/product-lineage.css"><link rel="stylesheet" href="http://127.0.0.1:8000/stylesheets/explorer-rail.css"><link rel="stylesheet" href="http://127.0.0.1:8000/stylesheets/comparison.css"><link rel="stylesheet" href="http://127.0.0.1:8000/stylesheets/engineering-notes.css"><link rel="stylesheet" href="http://127.0.0.1:8000/stylesheets/sensing-chain.css"><link rel="stylesheet" href="http://127.0.0.1:8000/stylesheets/product-editorials.css"><link rel="stylesheet" href="http://127.0.0.1:8000/stylesheets/map-exploration.css"><style>:root{--bg:#edf6f0;--panel:#fbfdfa;--ink:#1d302b;--muted:#52675f;--line:#b9ccc1;--accent:#bc3540;--chip:#dfece3;}</style><link rel="stylesheet" href="http://127.0.0.1:8768/preview.css"></head><body data-variant="mint"><div class="preview-bar"><span><b>A · 浅薄荷 / 墨黑 / 红</b> · 独立设计预览</span><nav><a href="http://127.0.0.1:8768/detail-mint.html">A</a><a href="http://127.0.0.1:8768/detail-tiffany.html">B</a><a href="http://127.0.0.1:8768/detail-seafoam.html">C</a><a href="http://127.0.0.1:8768/home-mint.html">产品地图 ↗</a></nav></div><main class="md-typeset"><div class="dex-hand-page has-dex-rail" markdown="0">
+
+<aside class="dex-rail dex-detail-rail" aria-label="章节目录与产品标签"><div class="dex-rail-heading"><strong>本页目录</strong></div><nav class="dex-scroll-nav" aria-label="本页章节目录"><a href="#hand-intro">产品概览</a><a href="#technical-summary">技术摘要</a><a href="#record-lineage">产品演进</a><a href="#complete-metrics">技术指标</a><a href="#record-mechanics">机械与驱动</a><a href="#record-sensing">感知系统</a><a href="#record-control">控制与操作</a><a href="#record-simulation">硬件 / SDK / 模型</a><a href="#record-assessment">优势与局限</a><a href="#record-editorial">工程分析 · 草稿</a><a href="#record-research">技术解读</a><a href="#record-sources">资料来源</a></nav><div class="dex-rail-tags"><div class="dex-rail-heading"><strong>产品标签</strong></div><p class="dex-rail-hint">点击标签定位相关说明；悬停查看适用范围。</p><div class="dex-tag-group" data-tag-group="transmission"><h3>传动机构</h3><div class="dex-tag-list"><a class="dex-tag" data-tag="transmission:tendon-driven" href="#record-mechanics" title="20 主动自由度含 2 腕关节；另有 4 欠驱动运动。与不含腕的手不完全同口径。">腱绳传动</a></div></div><div class="dex-tag-group" data-tag-group="fingers"><h3>手指构型</h3><div class="dex-tag-list"><a class="dex-tag" data-tag="fingers:5" href="#complete-metrics" title="5">5 指</a></div></div><div class="dex-tag-group" data-tag-group="actuation"><h3>驱动源</h3><div class="dex-tag-list"><a class="dex-tag" data-tag="actuation:electric-actuation" href="#record-mechanics" title="2024 规格书 §1、§5：电机驱动">电驱动</a></div></div><div class="dex-tag-group" data-tag-group="configuration"><h3>驱动配置</h3><div class="dex-tag-list"><a class="dex-tag" data-tag="configuration:underactuated" href="#record-mechanics" title="Classic：4 个欠驱动运动，不表示整手所有关节均欠驱动">含欠驱动机构</a></div></div><div class="dex-tag-group" data-tag-group="sensing"><h3>感知</h3><div class="dex-tag-list"><a class="dex-tag" data-tag="sensing:current-sensing" href="#record-sensing" title="Shadow Classic Electric · December 2024 规格配置。电机的电流反馈；不是直接测量指尖对物体的接触力。 不能把电流读数直接命名为指尖接触力。">电流反馈</a><a class="dex-tag" data-tag="sensing:force-sensing" href="#record-sensing" title="Shadow Classic Electric · December 2024 规格配置。Smart Motor 测量一对腱绳中的负载；零点对应两根腱绳之间的负载差为零。 没有由该读数直接得到指尖三维接触力的保证，也不能把 30 mN 写成接触力误差。">腱负载感知</a><a class="dex-tag" data-tag="sensing:position-sensing" href="#record-sensing" title="Shadow Classic Electric · December 2024 规格配置。关节的转角。 测得角度不代表每个关节都可以独立驱动，也不等于测得关节力矩。">位置感知</a><a class="dex-tag" data-tag="sensing:tactile-sensing" href="#record-sensing" title="Shadow Classic Electric · December 2024 规格配置。接触导致的磁体变化，由三轴霍尔读数表示。 单凭规格书不能确认已提供标定后的指尖力、滑觉算法或完整手掌皮肤。">触觉</a></div></div><div class="dex-tag-group" data-tag-group="control"><h3>控制证据</h3><div class="dex-tag-list"><a class="dex-tag" data-tag="control:pid" href="#record-control" title="2024 规格书 §3.2、§5：可配置 PID">PID</a><a class="dex-tag" data-tag="control:force-control" href="#record-control" title="2024 规格书 §5：电机端腱力控制；不据此承诺指尖力控制精度">力控制</a><a class="dex-tag" data-tag="control:reinforcement-learning" href="#record-control" title="OpenAI 历史实验：仿真训练后在实物 Shadow Hand 执行物体重定向；非 2024 配置验证或出厂功能">强化学习 · 文献</a></div></div><div class="dex-tag-group" data-tag-group="simulation"><h3>仿真资料</h3><div class="dex-tag-list"><a class="dex-tag" data-tag="simulation:gazebo" href="#record-simulation" title="2024 规格书 §6.2 描述 Gazebo 模型；版本兼容性及运行未验证">Gazebo</a></div></div><div class="dex-tag-group" data-tag-group="software"><h3>软件与模型资料</h3><div class="dex-tag-list"><a class="dex-tag" data-tag="software:interface-docs" href="#record-simulation" title="官方启动流程连接手部控制器和 MoveIt；sr_common 提供消息和模型。仿真启动参数 sim:=true。 本条为 Classic；E3M5 模型的传感器、驱动配置不能直接覆盖 2024 实物。">接口资料</a><a class="dex-tag" data-tag="software:urdf" href="#record-simulation" title="官方文件：sr_common/noetic-devel 中的描述与网格；ROS1。">URDF 资料</a><a class="dex-tag" data-tag="software:mjcf" href="#record-simulation" title="第三方模型 / 版本有差异：Menagerie E3M5 左右手；MuJoCo ≥2.2.2，Apache-2.0；不等同所有 Classic 传感配置。">MJCF 资料</a></div></div><p class="dex-rail-hint">仅列已整理标签；未标注不代表不支持。</p></div></aside>
+
+<header class="hand-brand"><a class="hand-brand-name" href="../../.."><svg class="dex-emblem" viewBox="0 0 52 52" aria-hidden="true"><path d="M10 39C4 18 14 8 25 8c15 0 22 13 16 27M17 42C8 18 21 10 31 17c7 5 7 13 3 23M24 44c-8-14-9-23 0-23 8 0 5 10 5 16"></path><circle cx="41" cy="35" r="3"></circle></svg>DexTrail<span>.</span></a><a class="hand-back" href="../../..">← 返回产品地图</a></header>
+
+<section class="hand-overview hand-record-section" id="hand-intro" aria-labelledby="hand-overview-title" markdown="0">
+<header class="hand-section-heading"><h2 id="hand-overview-title">产品概览</h2></header><div class="hand-section-body">
+
+
+<div class="hand-explorer" data-hand-explorer="{&quot;entries&quot;: [{&quot;id&quot;: &quot;overview&quot;, &quot;title&quot;: &quot;基本信息&quot;, &quot;content_html&quot;: &quot;&lt;table&gt;\n&lt;thead&gt;\n&lt;tr&gt;\n&lt;th&gt;指标&lt;/th&gt;\n&lt;th&gt;已知内容 / 适用条件&lt;/th&gt;\n&lt;th&gt;依据&lt;/th&gt;\n&lt;/tr&gt;\n&lt;/thead&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td&gt;型号 / 版本&lt;/td&gt;\n&lt;td&gt;Classic 五指电驱版；规格基准 December 2024，不含 Lite / DEX-EE&lt;/td&gt;\n&lt;td&gt;&lt;a href=\&quot;https://shadowrobot.com/dexterous-hand-series/\&quot;&gt;Shadow 官方产品页 — Classic 对比表&lt;/a&gt; · &lt;a href=\&quot;https://shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf\&quot;&gt;Shadow Dexterous Hand 规格书 — December 2024&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;公司 / 机构&lt;/td&gt;\n&lt;td&gt;Shadow Robot Company&lt;/td&gt;\n&lt;td&gt;&lt;a href=\&quot;https://shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf\&quot;&gt;Shadow Dexterous Hand 规格书 — December 2024&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;国家&lt;/td&gt;\n&lt;td&gt;英国（厂商地址，非产地声明）&lt;/td&gt;\n&lt;td&gt;&lt;a href=\&quot;https://shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf\&quot;&gt;Shadow Dexterous Hand 规格书 — December 2024&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;时间定位与依据&lt;/td&gt;\n&lt;td&gt;≤ 2013 · 公开资料。E1 系列规格书发布日期为 2013-01-01，证明经典五指平台至迟当时已有公开资料；不是 2024 规格配置的首发年份，也不混用早期气动手的首发时间。&lt;/td&gt;\n&lt;td&gt;&lt;a href=\&quot;https://mindtrans.narod.ru/pdfs/shadow_dexterous_hand_technical_specification_E1_20130101.pdf\&quot;&gt;Shadow E1 官方规格书（镜像），封面 Release&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;应用&lt;/td&gt;\n&lt;td&gt;抓取与操作研究&lt;/td&gt;\n&lt;td&gt;&lt;a href=\&quot;https://shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf\&quot;&gt;Shadow Dexterous Hand 规格书 — December 2024&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;产品状态&lt;/td&gt;\n&lt;td&gt;官网展示并提供咨询入口；库存及交期未核验&lt;/td&gt;\n&lt;td&gt;&lt;a href=\&quot;https://shadowrobot.com/dexterous-hand-series/\&quot;&gt;Shadow 官方产品页 — Classic 对比表&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;手指数&lt;/td&gt;\n&lt;td&gt;5&lt;/td&gt;\n&lt;td&gt;&lt;a href=\&quot;https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf\&quot;&gt;产品资料&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;自由度（注明主动 / 被动）&lt;/td&gt;\n&lt;td&gt;20 路独立运动，24 个可动关节；总数包含腕部。&lt;/td&gt;\n&lt;td&gt;&lt;a href=\&quot;https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf\&quot;&gt;机构核查依据&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;驱动数量&lt;/td&gt;\n&lt;td&gt;20 个直流电机&lt;/td&gt;\n&lt;td&gt;&lt;a href=\&quot;https://shadowrobot.com/dexterous-hand-series/\&quot;&gt;Shadow 官方产品页 — Classic 对比表&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;重量（含单位）&lt;/td&gt;\n&lt;td&gt;4.3 kg（手与前臂总重）&lt;/td&gt;\n&lt;td&gt;&lt;a href=\&quot;https://shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf\&quot;&gt;Shadow Dexterous Hand 规格书 — December 2024&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;尺寸（含单位）&lt;/td&gt;\n&lt;td&gt;待核验&lt;/td&gt;\n&lt;td&gt;待补充&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;材料&lt;/td&gt;\n&lt;td&gt;待核验&lt;/td&gt;\n&lt;td&gt;待补充&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;&quot;, &quot;available&quot;: true}, {&quot;id&quot;: &quot;mechanics&quot;, &quot;title&quot;: &quot;机械与驱动&quot;, &quot;content_html&quot;: &quot;&lt;h3&gt;关节与自由度拆解&lt;/h3&gt;\n&lt;p&gt;&lt;strong&gt;读表说明：&lt;/strong&gt; 主动输入是控制器能分别调节的运动或驱动量；耦合关节由腱索、连杆等带动，不能任意独立指定角度。MCP 指手指根部关节，PIP 指中间关节，DIP 指靠近指尖的关节；拇指 CMC 在掌根，IP 是拇指的指间关节。&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;适用版本：&lt;/strong&gt; Classic Electric · 2024-12-04 规格书&lt;/p&gt;\n&lt;p&gt;20 路独立运动，24 个可动关节；总数包含腕部。&lt;/p&gt;\n&lt;table&gt;\n&lt;thead&gt;\n&lt;tr&gt;\n&lt;th&gt;部位&lt;/th&gt;\n&lt;th&gt;主动控制 / 输入&lt;/th&gt;\n&lt;th&gt;被动、耦合或省略的运动&lt;/th&gt;\n&lt;th&gt;具体怎样动&lt;/th&gt;\n&lt;/tr&gt;\n&lt;/thead&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td&gt;拇指&lt;/td&gt;\n&lt;td&gt;5&lt;/td&gt;\n&lt;td&gt;0&lt;/td&gt;\n&lt;td&gt;TH1–TH5，屈伸与对指相关运动，轴向见规格书关节图&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;食指 / 中指 / 无名指（每指）&lt;/td&gt;\n&lt;td&gt;3&lt;/td&gt;\n&lt;td&gt;1&lt;/td&gt;\n&lt;td&gt;根部屈伸、侧摆、指间屈伸；末节随中节运动&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;小指&lt;/td&gt;\n&lt;td&gt;4&lt;/td&gt;\n&lt;td&gt;1&lt;/td&gt;\n&lt;td&gt;前三种运动加掌部对掌&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;腕&lt;/td&gt;\n&lt;td&gt;2&lt;/td&gt;\n&lt;td&gt;0&lt;/td&gt;\n&lt;td&gt;两个腕部转轴&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;h3&gt;驱动如何传到关节&lt;/h3&gt;\n&lt;p&gt;20 个电机模组通过成对腱索传力。四根长指的末节不是额外的独立电机轴；中节与末节之间有耦合约束。&lt;/p&gt;\n&lt;h3&gt;运动范围&lt;/h3&gt;\n&lt;p&gt;单位为度（°）。四长指 J1 与 J2 受耦合约束，不能按两条任意独立轨迹命令；整手可行姿态还受接触与碰撞限制。&lt;/p&gt;\n&lt;table&gt;\n&lt;thead&gt;\n&lt;tr&gt;\n&lt;th&gt;部位&lt;/th&gt;\n&lt;th&gt;轴名&lt;/th&gt;\n&lt;th&gt;运动说明&lt;/th&gt;\n&lt;th&gt;下限（°）&lt;/th&gt;\n&lt;th&gt;上限（°）&lt;/th&gt;\n&lt;/tr&gt;\n&lt;/thead&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td&gt;四长指（每指）&lt;/td&gt;\n&lt;td&gt;J1&lt;/td&gt;\n&lt;td&gt;末节（耦合）&lt;/td&gt;\n&lt;td&gt;0&lt;/td&gt;\n&lt;td&gt;90&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;四长指（每指）&lt;/td&gt;\n&lt;td&gt;J2&lt;/td&gt;\n&lt;td&gt;中节&lt;/td&gt;\n&lt;td&gt;0&lt;/td&gt;\n&lt;td&gt;90&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;四长指（每指）&lt;/td&gt;\n&lt;td&gt;J3&lt;/td&gt;\n&lt;td&gt;根部屈伸&lt;/td&gt;\n&lt;td&gt;-15&lt;/td&gt;\n&lt;td&gt;90&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;四长指（每指）&lt;/td&gt;\n&lt;td&gt;J4&lt;/td&gt;\n&lt;td&gt;根部侧摆&lt;/td&gt;\n&lt;td&gt;-20&lt;/td&gt;\n&lt;td&gt;20&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;小指&lt;/td&gt;\n&lt;td&gt;J5&lt;/td&gt;\n&lt;td&gt;掌部对掌&lt;/td&gt;\n&lt;td&gt;0&lt;/td&gt;\n&lt;td&gt;45&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;拇指&lt;/td&gt;\n&lt;td&gt;TH1&lt;/td&gt;\n&lt;td&gt;轴向见规格书 §2.3 图&lt;/td&gt;\n&lt;td&gt;-15&lt;/td&gt;\n&lt;td&gt;90&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;拇指&lt;/td&gt;\n&lt;td&gt;TH2&lt;/td&gt;\n&lt;td&gt;轴向见规格书 §2.3 图&lt;/td&gt;\n&lt;td&gt;-40&lt;/td&gt;\n&lt;td&gt;40&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;拇指&lt;/td&gt;\n&lt;td&gt;TH3&lt;/td&gt;\n&lt;td&gt;轴向见规格书 §2.3 图&lt;/td&gt;\n&lt;td&gt;-12&lt;/td&gt;\n&lt;td&gt;12&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;拇指&lt;/td&gt;\n&lt;td&gt;TH4&lt;/td&gt;\n&lt;td&gt;轴向见规格书 §2.3 图&lt;/td&gt;\n&lt;td&gt;0&lt;/td&gt;\n&lt;td&gt;70&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;拇指&lt;/td&gt;\n&lt;td&gt;TH5&lt;/td&gt;\n&lt;td&gt;轴向见规格书 §2.3 图&lt;/td&gt;\n&lt;td&gt;-60&lt;/td&gt;\n&lt;td&gt;60&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;腕&lt;/td&gt;\n&lt;td&gt;WR1&lt;/td&gt;\n&lt;td&gt;腕部转轴&lt;/td&gt;\n&lt;td&gt;-40&lt;/td&gt;\n&lt;td&gt;28&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;腕&lt;/td&gt;\n&lt;td&gt;WR2&lt;/td&gt;\n&lt;td&gt;腕部转轴&lt;/td&gt;\n&lt;td&gt;-28&lt;/td&gt;\n&lt;td&gt;8&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;h3&gt;尚未核清的细节&lt;/h3&gt;\n&lt;p&gt;TH1–TH5 的具体空间轴向请结合规格书 §2.3 示意图；这些机械角度范围不代表任意组合都无自碰撞。&lt;/p&gt;\n&lt;p&gt;核查日期：2026-10-02&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&quot;https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf\&quot;&gt;本次机构与操作核查依据&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h3&gt;电驱动&lt;/h3&gt;\n&lt;p&gt;官方资料 · 2024 规格书 §1、§5：电机驱动&lt;/p&gt;\n&lt;p&gt;&lt;a href=\&quot;https://shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf\&quot;&gt;Shadow Dexterous Hand 规格书 — December 2024&lt;/a&gt;&lt;/p&gt;\n&lt;h3&gt;腱绳传动&lt;/h3&gt;\n&lt;p&gt;官方资料 · Classic 五指版；官网 Tendon Driven 与对比表&lt;/p&gt;\n&lt;p&gt;&lt;a href=\&quot;https://shadowrobot.com/dexterous-hand-series/\&quot;&gt;Shadow 官方产品页 — Classic 对比表&lt;/a&gt;&lt;/p&gt;\n&lt;h3&gt;欠驱动&lt;/h3&gt;\n&lt;p&gt;官方资料 · Classic：4 个欠驱动运动，不表示整手所有关节均欠驱动&lt;/p&gt;\n&lt;p&gt;&lt;a href=\&quot;https://shadowrobot.com/dexterous-hand-series/\&quot;&gt;Shadow 官方产品页 — Classic 对比表&lt;/a&gt;&lt;/p&gt;&quot;, &quot;available&quot;: true}, {&quot;id&quot;: &quot;sensing&quot;, &quot;title&quot;: &quot;感知系统&quot;, &quot;content_html&quot;: &quot;&lt;h3&gt;感知通道逐项核查&lt;/h3&gt;\n&lt;p&gt;&lt;strong&gt;版本：Shadow Classic Electric · December 2024 规格配置&lt;/strong&gt; · 资料复核：2026-10-03&lt;/p&gt;\n&lt;p&gt;以下是原始资料的具体内容转述；工程解读单独标注。频率来自资料或接口说明，未在本机测量。&lt;/p&gt;\n&lt;h4&gt;电机电流 · 资料明确支持&lt;/h4&gt;\n&lt;table&gt;\n&lt;thead&gt;\n&lt;tr&gt;\n&lt;th&gt;核查项&lt;/th&gt;\n&lt;th&gt;资料说明&lt;/th&gt;\n&lt;/tr&gt;\n&lt;/thead&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td&gt;测什么&lt;/td&gt;\n&lt;td&gt;电机的电流反馈；不是直接测量指尖对物体的接触力。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;测在哪里&lt;/td&gt;\n&lt;td&gt;Smart Motor 电机模块；规格书未展开测量电路。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;输出与单位&lt;/td&gt;\n&lt;td&gt;规格书确认电流读数，但未在此给出总线字段的单位换算。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;更新 / 查询频率&lt;/td&gt;\n&lt;td&gt;典型电流更新 100 Hz；不是指尖力控制带宽。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;标定情况&lt;/td&gt;\n&lt;td&gt;此规格书未提供电流读数的完整标定流程。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;配置范围&lt;/td&gt;\n&lt;td&gt;电驱 Classic 配置；与电机温度一同用于安全和可靠性监测。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;用于什么控制&lt;/td&gt;\n&lt;td&gt;官方说明其用于安全、可靠性控制。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;不能据此断言什么&lt;/td&gt;\n&lt;td&gt;不能把电流读数直接命名为指尖接触力。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;p&gt;&lt;a href=\&quot;https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf\&quot;&gt;Shadow 官方规格书 · December 2024 · §3.2、§4.1–4.4、§5&lt;/a&gt;&lt;/p&gt;\n&lt;h4&gt;成对腱绳负载 · 资料明确支持&lt;/h4&gt;\n&lt;table&gt;\n&lt;thead&gt;\n&lt;tr&gt;\n&lt;th&gt;核查项&lt;/th&gt;\n&lt;th&gt;资料说明&lt;/th&gt;\n&lt;/tr&gt;\n&lt;/thead&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td&gt;测什么&lt;/td&gt;\n&lt;td&gt;Smart Motor 测量一对腱绳中的负载；零点对应两根腱绳之间的负载差为零。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;测在哪里&lt;/td&gt;\n&lt;td&gt;电机模块中的腱负载测量装置，位于驱动与腱绳传动侧。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;输出与单位&lt;/td&gt;\n&lt;td&gt;规格书称分辨率约 30 mN；这是负载测量分辨率，不是指尖接触力的精度。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;更新 / 查询频率&lt;/td&gt;\n&lt;td&gt;典型力反馈更新 500 Hz；电机内部力矩控制环另列为 5 kHz，两者不能混用。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;标定情况&lt;/td&gt;\n&lt;td&gt;出厂置零，但未进行负载标定。置零只建立腱负载差的零参考。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;配置范围&lt;/td&gt;\n&lt;td&gt;2024 年电驱 Classic 的 Smart Motor；不是指尖触觉单元。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;用于什么控制&lt;/td&gt;\n&lt;td&gt;读数用于电机本地力矩控制，同时发送到主机。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;不能据此断言什么&lt;/td&gt;\n&lt;td&gt;没有由该读数直接得到指尖三维接触力的保证，也不能把 30 mN 写成接触力误差。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;p&gt;&lt;strong&gt;工程解读：&lt;/strong&gt; 若要估计物体受到多大力，还需核对腱绳力臂、关节姿态、摩擦与接触位置，并用参考测力装置验证。这里提出的是工程核查条件。&lt;/p&gt;\n&lt;p&gt;&lt;a href=\&quot;https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf\&quot;&gt;Shadow 官方规格书 · December 2024 · §3.2、§4.1–4.4、§5&lt;/a&gt;&lt;/p&gt;\n&lt;h4&gt;关节角反馈 · 资料明确支持&lt;/h4&gt;\n&lt;table&gt;\n&lt;thead&gt;\n&lt;tr&gt;\n&lt;th&gt;核查项&lt;/th&gt;\n&lt;th&gt;资料说明&lt;/th&gt;\n&lt;/tr&gt;\n&lt;/thead&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td&gt;测什么&lt;/td&gt;\n&lt;td&gt;关节的转角。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;测在哪里&lt;/td&gt;\n&lt;td&gt;每个关节的非接触霍尔旋转传感器。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;输出与单位&lt;/td&gt;\n&lt;td&gt;12 bit 原始读数；主机应用标定后得到角度。典型分辨率 0.2°，不等于总系统绝对精度。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;更新 / 查询频率&lt;/td&gt;\n&lt;td&gt;典型位置更新 1000 Hz。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;标定情况&lt;/td&gt;\n&lt;td&gt;标定由主机侧应用，规格书未给出完整误差评定。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;配置范围&lt;/td&gt;\n&lt;td&gt;规格书描述的关节传感配置。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;用于什么控制&lt;/td&gt;\n&lt;td&gt;主机位置控制；官方允许结合其他传感输入实现不同控制策略。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;不能据此断言什么&lt;/td&gt;\n&lt;td&gt;测得角度不代表每个关节都可以独立驱动，也不等于测得关节力矩。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;p&gt;&lt;a href=\&quot;https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf\&quot;&gt;Shadow 官方规格书 · December 2024 · §3.2、§4.1–4.4、§5&lt;/a&gt;&lt;/p&gt;\n&lt;h4&gt;STF 指尖触觉 · 资料明确支持&lt;/h4&gt;\n&lt;table&gt;\n&lt;thead&gt;\n&lt;tr&gt;\n&lt;th&gt;核查项&lt;/th&gt;\n&lt;th&gt;资料说明&lt;/th&gt;\n&lt;/tr&gt;\n&lt;/thead&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td&gt;测什么&lt;/td&gt;\n&lt;td&gt;接触导致的磁体变化，由三轴霍尔读数表示。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;测在哪里&lt;/td&gt;\n&lt;td&gt;拇指和食指指尖的 STF；每个单元有 17 个三轴触觉点。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;输出与单位&lt;/td&gt;\n&lt;td&gt;未标定的 12 bit 原始数据。三轴读数并不自动等于以 N 表示的三维接触力。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;更新 / 查询频率&lt;/td&gt;\n&lt;td&gt;规格书列典型触觉更新 1000 Hz。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;标定情况&lt;/td&gt;\n&lt;td&gt;原始触觉数据未标定；接触力换算与误差需另行确认。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;配置范围&lt;/td&gt;\n&lt;td&gt;标准配备两个 STF（拇指、食指）；其他指尖可增配，不能默认全手均装触觉。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;用于什么控制&lt;/td&gt;\n&lt;td&gt;可作为接触端反馈；规格书允许在主机控制中融合触觉与关节等输入。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;不能据此断言什么&lt;/td&gt;\n&lt;td&gt;单凭规格书不能确认已提供标定后的指尖力、滑觉算法或完整手掌皮肤。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;p&gt;&lt;a href=\&quot;https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf\&quot;&gt;Shadow 官方规格书 · December 2024 · §3.2、§4.1–4.4、§5&lt;/a&gt;&lt;/p&gt;\n&lt;p&gt;&lt;a href=\&quot;../../../engineering/sensing-chain/\&quot;&gt;打开测量位置图：这些量分别测在哪里？&lt;/a&gt;&lt;/p&gt;&quot;, &quot;available&quot;: true}, {&quot;id&quot;: &quot;control&quot;, &quot;title&quot;: &quot;控制与操作&quot;, &quot;content_html&quot;: &quot;&lt;h3&gt;抓取与操作：证据能说明什么&lt;/h3&gt;\n&lt;p&gt;&lt;strong&gt;官方说明 / 演示&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;规格书给出动力抓握承载 4 kg；这是厂商规格，不是对随机物体的操作成功率。历史强化学习实验的手、触觉配置与控制栈须按各自论文记录，不能自动归到 2024 标准配置。&lt;/p&gt;\n&lt;p&gt;&lt;a href=\&quot;https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf\&quot;&gt;操作证据出处&lt;/a&gt;&lt;/p&gt;\n&lt;h3&gt;PID&lt;/h3&gt;\n&lt;p&gt;官方资料 · 2024 规格书 §3.2、§5：可配置 PID&lt;/p&gt;\n&lt;p&gt;&lt;a href=\&quot;https://shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf\&quot;&gt;Shadow Dexterous Hand 规格书 — December 2024&lt;/a&gt;&lt;/p&gt;\n&lt;h3&gt;力控制&lt;/h3&gt;\n&lt;p&gt;官方资料 · 2024 规格书 §5：电机端腱力控制；不据此承诺指尖力控制精度&lt;/p&gt;\n&lt;p&gt;&lt;a href=\&quot;https://shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf\&quot;&gt;Shadow Dexterous Hand 规格书 — December 2024&lt;/a&gt;&lt;/p&gt;\n&lt;h3&gt;强化学习&lt;/h3&gt;\n&lt;p&gt;文献实现 · OpenAI 历史实验：仿真训练后在实物 Shadow Hand 执行物体重定向；非 2024 配置验证或出厂功能&lt;/p&gt;\n&lt;p&gt;&lt;a href=\&quot;https://arxiv.org/abs/1808.00177v5\&quot;&gt;OpenAI et al. — Learning Dexterous In-Hand Manipulation&lt;/a&gt;&lt;/p&gt;&quot;, &quot;available&quot;: true}, {&quot;id&quot;: &quot;simulation&quot;, &quot;title&quot;: &quot;硬件 / SDK / 模型&quot;, &quot;content_html&quot;: &quot;&lt;h3&gt;硬件版本与接入&lt;/h3&gt;\n&lt;p&gt;&lt;strong&gt;适用型号：Shadow Dexterous Hand（Classic 五指版）&lt;/strong&gt; · 整理日期：2026-10-02&lt;/p&gt;\n&lt;table&gt;\n&lt;thead&gt;\n&lt;tr&gt;\n&lt;th&gt;项目&lt;/th&gt;\n&lt;th&gt;具体情况&lt;/th&gt;\n&lt;/tr&gt;\n&lt;/thead&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td&gt;硬件与驱动&lt;/td&gt;\n&lt;td&gt;20 路独立运动，24 个可动关节；总数包含腕部。 20 个电机模组通过成对腱索传力。四根长指的末节不是额外的独立电机轴；中节与末节之间有耦合约束。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;接入条件&lt;/td&gt;\n&lt;td&gt;尚未取得该配置完整的供电、线缆、转接器和主机兼容表；不从外观或同系列型号推断。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;p&gt;&lt;a href=\&quot;https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf\&quot;&gt;本次机构与操作核查依据&lt;/a&gt;&lt;/p&gt;\n&lt;h3&gt;SDK 与控制接口&lt;/h3&gt;\n&lt;p&gt;&lt;strong&gt;资料状态：已有公开接口资料&lt;/strong&gt;&lt;/p&gt;\n&lt;table&gt;\n&lt;thead&gt;\n&lt;tr&gt;\n&lt;th&gt;项目&lt;/th&gt;\n&lt;th&gt;支持内容与限制&lt;/th&gt;\n&lt;/tr&gt;\n&lt;/thead&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td&gt;语言 / 软件栈&lt;/td&gt;\n&lt;td&gt;ROS 接口 / 控制器&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;主机 / 系统 / 通信&lt;/td&gt;\n&lt;td&gt;官方容器、ROS1 / noetic 系列；当前系统兼容性待验证&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;命令、反馈与功能&lt;/td&gt;\n&lt;td&gt;官方启动流程连接手部控制器和 MoveIt；sr_common 提供消息和模型。仿真启动参数 sim:=true。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;硬件 / 固件兼容边界&lt;/td&gt;\n&lt;td&gt;本条为 Classic；E3M5 模型的传感器、驱动配置不能直接覆盖 2024 实物。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;授权与许可&lt;/td&gt;\n&lt;td&gt;许可尚待逐文件核查。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;p&gt;&lt;a href=\&quot;https://shadow-robot-company-dexterous-hand.readthedocs-hosted.com/en/latest/user_guide/sim_gazebo.html\&quot;&gt;SDK / 接口依据&lt;/a&gt;&lt;/p&gt;\n&lt;h3&gt;模型与仿真支持矩阵&lt;/h3&gt;\n&lt;p&gt;CAD 用于制造，URDF 描述机构，MJCF / USD 等用于特定仿真环境；文件存在、作者声明和本机验证分别记录。&lt;/p&gt;\n&lt;table&gt;\n&lt;thead&gt;\n&lt;tr&gt;\n&lt;th&gt;格式 / 平台&lt;/th&gt;\n&lt;th&gt;状态&lt;/th&gt;\n&lt;th&gt;具体版本、内容与限制&lt;/th&gt;\n&lt;th&gt;入口 / 依据&lt;/th&gt;\n&lt;/tr&gt;\n&lt;/thead&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td&gt;CAD / 制造文件&lt;/td&gt;\n&lt;td&gt;尚未核实&lt;/td&gt;\n&lt;td&gt;当前已核对资料中尚未确认适用于本版本的公开文件及运行说明；不表示不支持。&lt;/td&gt;\n&lt;td&gt;尚未取得可核验文件&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;URDF / Xacro&lt;/td&gt;\n&lt;td&gt;官方文件&lt;/td&gt;\n&lt;td&gt;sr_common/noetic-devel 中的描述与网格；ROS1。&lt;/td&gt;\n&lt;td&gt;&lt;a href=\&quot;https://github.com/shadow-robot/sr_common/tree/noetic-devel/sr_description\&quot;&gt;模型与版本依据&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;MuJoCo / MJCF&lt;/td&gt;\n&lt;td&gt;第三方模型 / 版本有差异&lt;/td&gt;\n&lt;td&gt;Menagerie E3M5 左右手；MuJoCo ≥2.2.2，Apache-2.0；不等同所有 Classic 传感配置。&lt;/td&gt;\n&lt;td&gt;&lt;a href=\&quot;https://github.com/google-deepmind/mujoco_menagerie/tree/main/shadow_hand\&quot;&gt;模型与版本依据&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;Isaac Sim / Lab / Gym&lt;/td&gt;\n&lt;td&gt;尚未核实&lt;/td&gt;\n&lt;td&gt;当前已核对资料中尚未确认适用于本版本的公开文件及运行说明；不表示不支持。&lt;/td&gt;\n&lt;td&gt;尚未取得可核验文件&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;Gazebo&lt;/td&gt;\n&lt;td&gt;官方启动文档&lt;/td&gt;\n&lt;td&gt;官方容器内 ROS1 启动，需完整控制器栈；不是裸 URDF 即开即用。&lt;/td&gt;\n&lt;td&gt;&lt;a href=\&quot;https://shadow-robot-company-dexterous-hand.readthedocs-hosted.com/en/latest/user_guide/sim_gazebo.html\&quot;&gt;模型与版本依据&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;其他仿真 / 学习模型&lt;/td&gt;\n&lt;td&gt;尚未核实&lt;/td&gt;\n&lt;td&gt;当前已核对资料中尚未确认适用于本版本的公开文件及运行说明；不表示不支持。&lt;/td&gt;\n&lt;td&gt;尚未取得可核验文件&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;h3&gt;配套资源入口&lt;/h3&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&quot;https://github.com/google-deepmind/mujoco_menagerie/tree/main/shadow_hand\&quot;&gt;MuJoCo · Menagerie / Shadow E3M5&lt;/a&gt;：MJCF，左右手与场景 XML；E3M5 模型，不默认等同于本站 2024 Classic 配置。README 要求 MuJoCo ≥ 2.2.2。&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&quot;https://github.com/shadow-robot/sr_common/tree/noetic-devel/sr_description\&quot;&gt;ROS / Gazebo · Shadow sr_description&lt;/a&gt;：厂商 URDF/Xacro 与资源目录；noetic-devel 分支。Gazebo 配置依赖完整 ROS 工程，不是独立即开即用模型。&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h3&gt;当前验证范围&lt;/h3&gt;\n&lt;p&gt;未在本机连接实物、编译 SDK 或加载仿真。支持情况依据文档 / 文件目录，不是本机测试结论。&lt;/p&gt;\n&lt;h3&gt;Gazebo&lt;/h3&gt;\n&lt;p&gt;官方资料 · 2024 规格书 §6.2 描述 Gazebo 模型；版本兼容性及运行未验证&lt;/p&gt;\n&lt;p&gt;&lt;a href=\&quot;https://shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf\&quot;&gt;Shadow Dexterous Hand 规格书 — December 2024&lt;/a&gt;&lt;/p&gt;&quot;, &quot;available&quot;: true}, {&quot;id&quot;: &quot;assessment&quot;, &quot;title&quot;: &quot;优势与局限&quot;, &quot;content_html&quot;: &quot;&lt;p&gt;&lt;strong&gt;工程解释&lt;/strong&gt;：比较末端质量时，应统一是否包含前臂的统计边界&lt;/p&gt;\n&lt;p&gt;适用条件：以 4.3 kg 的官方统计口径为依据；不是对其他产品优劣的判断&lt;/p&gt;\n&lt;p&gt;&lt;a href=\&quot;https://shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf\&quot;&gt;Shadow Dexterous Hand 规格书 — December 2024&lt;/a&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;事实&lt;/strong&gt;：部分固件源码与电子原理图需依 NDA 申请&lt;/p&gt;\n&lt;p&gt;适用条件：2024 规格书 §6.1；不能由公开 ROS 仓库推断整机完全开源&lt;/p&gt;\n&lt;p&gt;&lt;a href=\&quot;https://shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf\&quot;&gt;Shadow Dexterous Hand 规格书 — December 2024&lt;/a&gt;&lt;/p&gt;&quot;, &quot;available&quot;: true}, {&quot;id&quot;: &quot;research&quot;, &quot;title&quot;: &quot;技术解读&quot;, &quot;content_html&quot;: &quot;&lt;p&gt;&lt;a href=\&quot;../../../hands/reports/shadow-classic/\&quot;&gt;阅读工程分析&lt;/a&gt;&lt;/p&gt;\n&lt;h3&gt;跨产品工程解读&lt;/h3&gt;\n&lt;p&gt;&lt;a href=\&quot;../../../engineering/degrees-of-freedom/\&quot;&gt;20 与 16：自由度数字之后，还要看什么？&lt;/a&gt;&lt;/p&gt;\n&lt;p&gt;从含腕范围、耦合关节和任务约束，理解数字可以说明什么、不能说明什么。&lt;/p&gt;\n&lt;p&gt;公开资料分析 · 非实验结果&lt;/p&gt;\n&lt;h3&gt;跨产品工程解读&lt;/h3&gt;\n&lt;p&gt;&lt;a href=\&quot;../../../engineering/sensing-chain/\&quot;&gt;力感知，究竟测在哪里？&lt;/a&gt;&lt;/p&gt;\n&lt;p&gt;从电流、腱负载、关节状态到指尖触觉，逐项检查测量位置、单位、标定和配置边界。&lt;/p&gt;\n&lt;p&gt;公开资料分析 · 非实物实验&lt;/p&gt;&quot;, &quot;available&quot;: true}, {&quot;id&quot;: &quot;sources&quot;, &quot;title&quot;: &quot;资料来源&quot;, &quot;content_html&quot;: &quot;&lt;ul&gt;\n&lt;li&gt;\n&lt;p&gt;&lt;a href=\&quot;https://shadowrobot.com/dexterous-hand-series/\&quot;&gt;Shadow 官方产品页 — Classic 对比表&lt;/a&gt; · 核验：2026-10-01&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;&lt;a href=\&quot;https://shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf\&quot;&gt;Shadow Dexterous Hand 规格书 — December 2024&lt;/a&gt; · 核验：2026-10-01&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;&lt;a href=\&quot;https://github.com/shadow-robot/sr_common/tree/noetic-devel\&quot;&gt;Shadow Robot sr_common — URDF、消息与服务&lt;/a&gt; · 核验：2026-10-01&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;&lt;a href=\&quot;https://arxiv.org/abs/1808.00177v5\&quot;&gt;OpenAI et al. — Learning Dexterous In-Hand Manipulation&lt;/a&gt; · 核验：2026-10-01&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;&lt;a href=\&quot;https://mindtrans.narod.ru/pdfs/shadow_dexterous_hand_technical_specification_E1_20130101.pdf\&quot;&gt;Shadow E1 官方规格书（镜像），封面 Release&lt;/a&gt; · 核验：2026-10-02&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;&lt;a href=\&quot;https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf\&quot;&gt;Shadow 官方规格书&lt;/a&gt; · December 2024 · §3.2、§4.1–4.4、§5 · 复核：2026-10-03&lt;/p&gt;\n&lt;/li&gt;\n&lt;/ul&gt;&quot;, &quot;available&quot;: true}]}"><div class="hand-hero-media" data-hand-gallery><figure class="hand-gallery-slide" id="media-shadow-hand-0" data-slide="0"><a class="hand-image-link" href="https://shadowrobot.com/wp-content/uploads/elementor/thumbs/Shadow-Robot-Co3943-copy-2-rtl5d6fbfdzabfxgtw2jd7f5zyb0v297k3yzrh3154.png" target="_blank" rel="noopener" aria-label="查看大图：产品画面"><img src="https://shadowrobot.com/wp-content/uploads/elementor/thumbs/Shadow-Robot-Co3943-copy-2-rtl5d6fbfdzabfxgtw2jd7f5zyb0v297k3yzrh3154.png" alt="产品画面" decoding="async" loading="lazy"></a><figcaption class="hand-media-caption"><span>产品画面</span><a href="https://shadowrobot.com/dexterous-hand-series/" target="_blank" rel="noopener">查看出处 ↗</a></figcaption></figure><figure class="hand-gallery-slide" id="media-shadow-hand-1" data-slide="1" hidden><a class="hand-image-link" href="https://shadowrobot.com/wp-content/uploads/2022/04/Shadow-Robot-Co3721HR-copy-2-e1650536420490.png" target="_blank" rel="noopener" aria-label="查看大图：Classic 产品视图 · 官网配图"><img src="https://shadowrobot.com/wp-content/uploads/2022/04/Shadow-Robot-Co3721HR-copy-2-e1650536420490.png" alt="Classic 产品视图 · 官网配图" decoding="async" loading="lazy"></a><figcaption class="hand-media-caption"><span>Classic 产品视图 · 官网配图</span><a href="https://shadowrobot.com/dexterous-hand-series/" target="_blank" rel="noopener">查看出处 ↗</a></figcaption></figure><figure class="hand-gallery-slide" id="media-shadow-hand-2" data-slide="2" hidden><a class="hand-image-link" href="https://shadowrobot.com/wp-content/uploads/2024/09/Simulating-Shadow-Hand-in-Gazebo.jpg" target="_blank" rel="noopener" aria-label="查看大图：Gazebo 仿真示意 · 非实物照片"><img src="https://shadowrobot.com/wp-content/uploads/2024/09/Simulating-Shadow-Hand-in-Gazebo.jpg" alt="Gazebo 仿真示意 · 非实物照片" decoding="async" loading="lazy"></a><figcaption class="hand-media-caption"><span>Gazebo 仿真示意 · 非实物照片</span><a href="https://shadowrobot.com/dexterous-hand-series/" target="_blank" rel="noopener">查看出处 ↗</a></figcaption></figure><nav class="hand-gallery-picker" aria-label="图片与视频"><button type="button" data-gallery-index="0" aria-controls="media-shadow-hand-0" aria-pressed="true"><img class="hand-gallery-thumbnail" src="https://shadowrobot.com/wp-content/uploads/elementor/thumbs/Shadow-Robot-Co3943-copy-2-rtl5d6fbfdzabfxgtw2jd7f5zyb0v297k3yzrh3154.png" alt="" loading="lazy" aria-hidden="true"><span class="hand-gallery-label">产品画面</span></button><button type="button" data-gallery-index="1" aria-controls="media-shadow-hand-1" aria-pressed="false"><img class="hand-gallery-thumbnail" src="https://shadowrobot.com/wp-content/uploads/2022/04/Shadow-Robot-Co3721HR-copy-2-e1650536420490.png" alt="" loading="lazy" aria-hidden="true"><span class="hand-gallery-label">Classic 产品视图 · 官网配图</span></button><button type="button" data-gallery-index="2" aria-controls="media-shadow-hand-2" aria-pressed="false"><img class="hand-gallery-thumbnail" src="https://shadowrobot.com/wp-content/uploads/2024/09/Simulating-Shadow-Hand-in-Gazebo.jpg" alt="" loading="lazy" aria-hidden="true"><span class="hand-gallery-label">Gazebo 仿真示意 · 非实物照片</span></button></nav><div class="hand-gallery-links"><a href="https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf" target="_blank" rel="noopener">原始技术图册 / 论文（PDF） ↗</a></div></div><div class="hand-inspector"><div class="hand-heading"><div class="hand-heading-identity"><h1>Shadow Hand</h1><p class="hand-model-name">Shadow Dexterous Hand（Classic 五指版）</p><p class="hand-identity">Shadow Robot Company · ≤ 2013 · 公开资料</p><span class="hand-status">已整理 · 持续核验</span></div><a class="dex-compare-entry" data-compare-hand="shadow-hand" href="../../../compare/?add=shadow-hand">加入技术对比 ↗</a></div><dl class="hand-overview-facts"><div><dt>手指数量</dt><dd><a href="#complete-metrics" title="查看完整指标与依据">5（四指加拇指）</a></dd></div><div><dt>驱动数量</dt><dd><a href="#complete-metrics" title="查看完整指标与依据">20 个直流电机</a></dd></div><div><dt>重量 / 统计范围</dt><dd><a href="#complete-metrics" title="查看完整指标与依据">4.3 kg（手与前臂总重）</a></dd></div></dl><p class="hand-overview-mechanism"><span>机构口径</span>20 路独立运动，24 个可动关节；总数包含腕部。 <a href="#record-mechanics">查看说明 ↓</a></p><p class="hand-browser-label">技术维度 <span>悬停、点击或用键盘选择</span></p><nav class="hand-dimensions" aria-label="产品技术维度"></nav><section class="hand-dimension-detail" aria-label="当前技术说明" tabindex="0"></section><noscript>完整内容见下方技术记录。</noscript></div></div>
+
+</div></section>
+
+<section class="hand-brief hand-record-section" id="technical-summary" aria-labelledby="hand-brief-title">
+<header class="hand-brief-heading hand-section-heading"><h2 id="hand-brief-title">技术摘要</h2>
+<a href="#record-editorial">阅读分析 ↓</a>
+</header>
+<div class="hand-section-body">
+<p class="hand-brief-scope">Shadow Classic Electric · December 2024 规格配置</p>
+<div class="hand-brief-grid">
+<article>
+<span class="hand-brief-kind">资料事实</span>
+<h3>技术路线</h3><p>五指电驱与成对腱索传动；四根长指末节存在耦合，总轴数包含腕部。</p>
+<details class="hand-brief-sources"><summary>查看依据</summary><a href="https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf" target="_blank" rel="noopener">Shadow 官方规格书 · §2.3–2.4 构型与质量；§4–5 感知与驱动 ↗</a></details>
+</article>
+<article>
+<span class="hand-brief-kind">工程解读 · 草稿</span>
+<h3>关键取舍</h3><p>仿人运动分配值得研究，但任务规划需显式处理耦合与系统边界；腱负载不能直接替代指尖接触力。</p>
+<details class="hand-brief-sources"><summary>查看依据</summary><a href="https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf" target="_blank" rel="noopener">Shadow 官方规格书 · §2.3–2.4 构型与质量；§4–5 感知与驱动 ↗</a></details>
+</article>
+<article>
+<span class="hand-brief-kind">工程解读 · 草稿</span>
+<h3>值得研究的问题</h3><p>在指定接触任务中，拇指和小指掌部运动带来多少可行姿态？如何验证传动负载到接触力的估计？</p>
+<details class="hand-brief-sources"><summary>查看依据</summary><a href="https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf" target="_blank" rel="noopener">Shadow 官方规格书 · §2.3–2.4 构型与质量；§4–5 感知与驱动 ↗</a></details>
+</article>
+</div>
+<p class="hand-brief-note">公开资料摘要与编辑解读分别标注。完整推理见下方分析。</p>
+</div>
+</section>
+
+<section class="hand-lineage hand-record-section lineage-mode-family" id="record-lineage" aria-labelledby="lineage-title">
+<header class="lineage-heading hand-section-heading"><div>
+<h2 id="lineage-title">产品演进 <span>Shadow Robot</span></h2></div>
+<span class="lineage-reviewed">核查 2026-10-03</span></header>
+<div class="hand-section-body">
+<span class="lineage-status">产品族 / 并行路线</span>
+<p class="lineage-lead">Classic 五指手有多年电驱规格记录。DEX-EE / DEXEE 是同公司的另一条科研硬件路线，不能把它的三指结构和性能移植到 Classic。</p>
+<p class="lineage-hint">本页型号高亮 · 已收录型号可跳转详情 · 外部历史节点打开原始资料</p>
+<ol class="lineage-track" aria-label="产品、修订与相关研究节点">
+<li class="lineage-node is-current" id="lineage-shadow-hand">
+<p class="lineage-date">≤ 2013 · 公开资料</p>
+<span class="lineage-kind">已收录型号</span>
+<h3><a href="#hand-intro">Shadow Dexterous Hand（Classic 五指版）</a></h3>
+<span class="lineage-current">本页型号</span>
+<p class="lineage-basis">E1 系列规格书发布日期为 2013-01-01，证明经典五指平台至迟当时已有公开资料；不是 2024 规格配置的首发年份，也不混用早期气动手的首发时间。</p>
+<p>20 路独立运动，24 个可动关节；总数包含腕部。</p>
+<p class="lineage-sources"><a href="https://mindtrans.narod.ru/pdfs/shadow_dexterous_hand_technical_specification_E1_20130101.pdf">Shadow E1 官方规格书（镜像），封面 Release</a> · <a href="https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf">Shadow Dexterous Hand（Classic 五指版） · 机构 / 版本依据</a></p>
+</li>
+<li class="lineage-node" id="lineage-shadow-dexee">
+<p class="lineage-date">公开日期待核实</p>
+<span class="lineage-kind">同公司另一产品线</span>
+<h3><a href="https://shadowrobot.com/dex-ee_series/">DEX-EE / DEXEE</a></h3>
+<span class="lineage-external">外部历史 / 相关节点 ↗</span>
+<p class="lineage-basis">仅确认记录存在，未确认首发时间</p>
+<p>与 Classic 区分的科研产品分支，面向机器学习与耐用操作研究。</p>
+<p class="lineage-sources"><a href="https://shadowrobot.com/dex-ee_series/">Shadow · DEX-EE 官方产品路线</a></p>
+</li>
+</ol>
+<p class="lineage-scope">年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。</p>
+<details class="lineage-ecosystem"><summary>软件、模型与文档的延续</summary><ul>
+<li><time>2024 · 文档</time><p>当前 Classic 参数采用 2024 年电驱规格书；旧 E1 文档仅用于确认历史公开记录，不能证明两份文件的配置完全相同。</p><p class="lineage-sources"><a href="https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf">Shadow Dexterous Hand（Classic 五指版） · 机构 / 版本依据</a> · <a href="https://mindtrans.narod.ru/pdfs/shadow_dexterous_hand_technical_specification_E1_20130101.pdf">Shadow E1 官方规格书（镜像），封面 Release</a></p></li>
+</ul></details>
+<details class="lineage-ecosystem lineage-evidence"><summary>查看本次核查依据</summary><ul>
+<li><a href="https://mindtrans.narod.ru/pdfs/shadow_dexterous_hand_technical_specification_E1_20130101.pdf">Shadow E1 官方规格书（镜像），封面 Release</a></li>
+<li><a href="https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf">Shadow Dexterous Hand（Classic 五指版） · 机构 / 版本依据</a></li>
+<li><a href="https://shadowrobot.com/dex-ee_series/">Shadow · DEX-EE 官方产品路线</a></li>
+</ul></details>
+<div class="lineage-boundary"><strong>证据边界与待核实内容</strong>
+<p>2013 与 2024 是规格书记录，不足以单独证明一次完整换代；早期气动原型到当前电驱产品的逐版变化表仍待补齐。</p></div>
+</div>
+</section>
+
+<h2>完整技术记录</h2>
+
+<p class="hand-record-intro">参数、适用条件与出处放在一起阅读。未知字段不代表不支持；不同版本与实验条件不能直接比较。</p>
+
+<section class="hand-record-section" id="complete-metrics">
+<header class="hand-section-heading"><h2>完整技术指标</h2></header>
+<div class="hand-section-body"><div class="hand-record-topic"><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>已知内容 / 适用条件</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>型号 / 版本</td>
+<td>Classic 五指电驱版；规格基准 December 2024，不含 Lite / DEX-EE</td>
+<td><a href="https://shadowrobot.com/dexterous-hand-series/">Shadow 官方产品页 — Classic 对比表</a> · <a href="https://shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf">Shadow Dexterous Hand 规格书 — December 2024</a></td>
+</tr>
+<tr>
+<td>公司 / 机构</td>
+<td>Shadow Robot Company</td>
+<td><a href="https://shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf">Shadow Dexterous Hand 规格书 — December 2024</a></td>
+</tr>
+<tr>
+<td>国家</td>
+<td>英国（厂商地址，非产地声明）</td>
+<td><a href="https://shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf">Shadow Dexterous Hand 规格书 — December 2024</a></td>
+</tr>
+<tr>
+<td>时间定位与依据</td>
+<td>≤ 2013 · 公开资料。E1 系列规格书发布日期为 2013-01-01，证明经典五指平台至迟当时已有公开资料；不是 2024 规格配置的首发年份，也不混用早期气动手的首发时间。</td>
+<td><a href="https://mindtrans.narod.ru/pdfs/shadow_dexterous_hand_technical_specification_E1_20130101.pdf">Shadow E1 官方规格书（镜像），封面 Release</a></td>
+</tr>
+<tr>
+<td>应用</td>
+<td>抓取与操作研究</td>
+<td><a href="https://shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf">Shadow Dexterous Hand 规格书 — December 2024</a></td>
+</tr>
+<tr>
+<td>产品状态</td>
+<td>官网展示并提供咨询入口；库存及交期未核验</td>
+<td><a href="https://shadowrobot.com/dexterous-hand-series/">Shadow 官方产品页 — Classic 对比表</a></td>
+</tr>
+<tr>
+<td>手指数</td>
+<td>5</td>
+<td><a href="https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf">产品资料</a></td>
+</tr>
+<tr>
+<td>自由度（注明主动 / 被动）</td>
+<td>20 路独立运动，24 个可动关节；总数包含腕部。</td>
+<td><a href="https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf">机构核查依据</a></td>
+</tr>
+<tr>
+<td>驱动数量</td>
+<td>20 个直流电机</td>
+<td><a href="https://shadowrobot.com/dexterous-hand-series/">Shadow 官方产品页 — Classic 对比表</a></td>
+</tr>
+<tr>
+<td>重量（含单位）</td>
+<td>4.3 kg（手与前臂总重）</td>
+<td><a href="https://shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf">Shadow Dexterous Hand 规格书 — December 2024</a></td>
+</tr>
+<tr>
+<td>尺寸（含单位）</td>
+<td>待核验</td>
+<td>待补充</td>
+</tr>
+<tr>
+<td>材料</td>
+<td>待核验</td>
+<td>待补充</td>
+</tr>
+</tbody>
+</table></div></div>
+</section>
+
+<section class="hand-record-section" id="record-mechanics">
+<header class="hand-section-heading"><h2>机械与驱动</h2></header>
+<div class="hand-section-body"><div class="hand-record-topic"><h3>关节与自由度拆解</h3>
+<p><strong>读表说明：</strong> 主动输入是控制器能分别调节的运动或驱动量；耦合关节由腱索、连杆等带动，不能任意独立指定角度。MCP 指手指根部关节，PIP 指中间关节，DIP 指靠近指尖的关节；拇指 CMC 在掌根，IP 是拇指的指间关节。</p>
+<p><strong>适用版本：</strong> Classic Electric · 2024-12-04 规格书</p>
+<p>20 路独立运动，24 个可动关节；总数包含腕部。</p>
+<table>
+<thead>
+<tr>
+<th>部位</th>
+<th>主动控制 / 输入</th>
+<th>被动、耦合或省略的运动</th>
+<th>具体怎样动</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>拇指</td>
+<td>5</td>
+<td>0</td>
+<td>TH1–TH5，屈伸与对指相关运动，轴向见规格书关节图</td>
+</tr>
+<tr>
+<td>食指 / 中指 / 无名指（每指）</td>
+<td>3</td>
+<td>1</td>
+<td>根部屈伸、侧摆、指间屈伸；末节随中节运动</td>
+</tr>
+<tr>
+<td>小指</td>
+<td>4</td>
+<td>1</td>
+<td>前三种运动加掌部对掌</td>
+</tr>
+<tr>
+<td>腕</td>
+<td>2</td>
+<td>0</td>
+<td>两个腕部转轴</td>
+</tr>
+</tbody>
+</table>
+</div><div class="hand-record-topic"><h3>驱动如何传到关节</h3>
+<p>20 个电机模组通过成对腱索传力。四根长指的末节不是额外的独立电机轴；中节与末节之间有耦合约束。</p>
+</div><div class="hand-record-topic"><h3>运动范围</h3>
+<p>单位为度（°）。四长指 J1 与 J2 受耦合约束，不能按两条任意独立轨迹命令；整手可行姿态还受接触与碰撞限制。</p>
+<table>
+<thead>
+<tr>
+<th>部位</th>
+<th>轴名</th>
+<th>运动说明</th>
+<th>下限（°）</th>
+<th>上限（°）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>四长指（每指）</td>
+<td>J1</td>
+<td>末节（耦合）</td>
+<td>0</td>
+<td>90</td>
+</tr>
+<tr>
+<td>四长指（每指）</td>
+<td>J2</td>
+<td>中节</td>
+<td>0</td>
+<td>90</td>
+</tr>
+<tr>
+<td>四长指（每指）</td>
+<td>J3</td>
+<td>根部屈伸</td>
+<td>-15</td>
+<td>90</td>
+</tr>
+<tr>
+<td>四长指（每指）</td>
+<td>J4</td>
+<td>根部侧摆</td>
+<td>-20</td>
+<td>20</td>
+</tr>
+<tr>
+<td>小指</td>
+<td>J5</td>
+<td>掌部对掌</td>
+<td>0</td>
+<td>45</td>
+</tr>
+<tr>
+<td>拇指</td>
+<td>TH1</td>
+<td>轴向见规格书 §2.3 图</td>
+<td>-15</td>
+<td>90</td>
+</tr>
+<tr>
+<td>拇指</td>
+<td>TH2</td>
+<td>轴向见规格书 §2.3 图</td>
+<td>-40</td>
+<td>40</td>
+</tr>
+<tr>
+<td>拇指</td>
+<td>TH3</td>
+<td>轴向见规格书 §2.3 图</td>
+<td>-12</td>
+<td>12</td>
+</tr>
+<tr>
+<td>拇指</td>
+<td>TH4</td>
+<td>轴向见规格书 §2.3 图</td>
+<td>0</td>
+<td>70</td>
+</tr>
+<tr>
+<td>拇指</td>
+<td>TH5</td>
+<td>轴向见规格书 §2.3 图</td>
+<td>-60</td>
+<td>60</td>
+</tr>
+<tr>
+<td>腕</td>
+<td>WR1</td>
+<td>腕部转轴</td>
+<td>-40</td>
+<td>28</td>
+</tr>
+<tr>
+<td>腕</td>
+<td>WR2</td>
+<td>腕部转轴</td>
+<td>-28</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+</div><div class="hand-record-topic"><h3>尚未核清的细节</h3>
+<p>TH1–TH5 的具体空间轴向请结合规格书 §2.3 示意图；这些机械角度范围不代表任意组合都无自碰撞。</p>
+<p>核查日期：2026-10-02</p>
+<ul>
+<li><a href="https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf">本次机构与操作核查依据</a></li>
+</ul>
+</div><div class="hand-record-topic"><h3>电驱动</h3>
+<p>官方资料 · 2024 规格书 §1、§5：电机驱动</p>
+<p><a href="https://shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf">Shadow Dexterous Hand 规格书 — December 2024</a></p>
+</div><div class="hand-record-topic"><h3>腱绳传动</h3>
+<p>官方资料 · Classic 五指版；官网 Tendon Driven 与对比表</p>
+<p><a href="https://shadowrobot.com/dexterous-hand-series/">Shadow 官方产品页 — Classic 对比表</a></p>
+</div><div class="hand-record-topic"><h3>欠驱动</h3>
+<p>官方资料 · Classic：4 个欠驱动运动，不表示整手所有关节均欠驱动</p>
+<p><a href="https://shadowrobot.com/dexterous-hand-series/">Shadow 官方产品页 — Classic 对比表</a></p></div></div>
+</section>
+
+<section class="hand-record-section" id="record-sensing">
+<header class="hand-section-heading"><h2>感知系统</h2></header>
+<div class="hand-section-body"><div class="hand-record-topic"><h3>感知通道逐项核查</h3>
+<p><strong>版本：Shadow Classic Electric · December 2024 规格配置</strong> · 资料复核：2026-10-03</p>
+<p>以下是原始资料的具体内容转述；工程解读单独标注。频率来自资料或接口说明，未在本机测量。</p>
+<h4>电机电流 · 资料明确支持</h4>
+<table>
+<thead>
+<tr>
+<th>核查项</th>
+<th>资料说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>测什么</td>
+<td>电机的电流反馈；不是直接测量指尖对物体的接触力。</td>
+</tr>
+<tr>
+<td>测在哪里</td>
+<td>Smart Motor 电机模块；规格书未展开测量电路。</td>
+</tr>
+<tr>
+<td>输出与单位</td>
+<td>规格书确认电流读数，但未在此给出总线字段的单位换算。</td>
+</tr>
+<tr>
+<td>更新 / 查询频率</td>
+<td>典型电流更新 100 Hz；不是指尖力控制带宽。</td>
+</tr>
+<tr>
+<td>标定情况</td>
+<td>此规格书未提供电流读数的完整标定流程。</td>
+</tr>
+<tr>
+<td>配置范围</td>
+<td>电驱 Classic 配置；与电机温度一同用于安全和可靠性监测。</td>
+</tr>
+<tr>
+<td>用于什么控制</td>
+<td>官方说明其用于安全、可靠性控制。</td>
+</tr>
+<tr>
+<td>不能据此断言什么</td>
+<td>不能把电流读数直接命名为指尖接触力。</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf">Shadow 官方规格书 · December 2024 · §3.2、§4.1–4.4、§5</a></p>
+<h4>成对腱绳负载 · 资料明确支持</h4>
+<table>
+<thead>
+<tr>
+<th>核查项</th>
+<th>资料说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>测什么</td>
+<td>Smart Motor 测量一对腱绳中的负载；零点对应两根腱绳之间的负载差为零。</td>
+</tr>
+<tr>
+<td>测在哪里</td>
+<td>电机模块中的腱负载测量装置，位于驱动与腱绳传动侧。</td>
+</tr>
+<tr>
+<td>输出与单位</td>
+<td>规格书称分辨率约 30 mN；这是负载测量分辨率，不是指尖接触力的精度。</td>
+</tr>
+<tr>
+<td>更新 / 查询频率</td>
+<td>典型力反馈更新 500 Hz；电机内部力矩控制环另列为 5 kHz，两者不能混用。</td>
+</tr>
+<tr>
+<td>标定情况</td>
+<td>出厂置零，但未进行负载标定。置零只建立腱负载差的零参考。</td>
+</tr>
+<tr>
+<td>配置范围</td>
+<td>2024 年电驱 Classic 的 Smart Motor；不是指尖触觉单元。</td>
+</tr>
+<tr>
+<td>用于什么控制</td>
+<td>读数用于电机本地力矩控制，同时发送到主机。</td>
+</tr>
+<tr>
+<td>不能据此断言什么</td>
+<td>没有由该读数直接得到指尖三维接触力的保证，也不能把 30 mN 写成接触力误差。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>工程解读：</strong> 若要估计物体受到多大力，还需核对腱绳力臂、关节姿态、摩擦与接触位置，并用参考测力装置验证。这里提出的是工程核查条件。</p>
+<p><a href="https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf">Shadow 官方规格书 · December 2024 · §3.2、§4.1–4.4、§5</a></p>
+<h4>关节角反馈 · 资料明确支持</h4>
+<table>
+<thead>
+<tr>
+<th>核查项</th>
+<th>资料说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>测什么</td>
+<td>关节的转角。</td>
+</tr>
+<tr>
+<td>测在哪里</td>
+<td>每个关节的非接触霍尔旋转传感器。</td>
+</tr>
+<tr>
+<td>输出与单位</td>
+<td>12 bit 原始读数；主机应用标定后得到角度。典型分辨率 0.2°，不等于总系统绝对精度。</td>
+</tr>
+<tr>
+<td>更新 / 查询频率</td>
+<td>典型位置更新 1000 Hz。</td>
+</tr>
+<tr>
+<td>标定情况</td>
+<td>标定由主机侧应用，规格书未给出完整误差评定。</td>
+</tr>
+<tr>
+<td>配置范围</td>
+<td>规格书描述的关节传感配置。</td>
+</tr>
+<tr>
+<td>用于什么控制</td>
+<td>主机位置控制；官方允许结合其他传感输入实现不同控制策略。</td>
+</tr>
+<tr>
+<td>不能据此断言什么</td>
+<td>测得角度不代表每个关节都可以独立驱动，也不等于测得关节力矩。</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf">Shadow 官方规格书 · December 2024 · §3.2、§4.1–4.4、§5</a></p>
+<h4>STF 指尖触觉 · 资料明确支持</h4>
+<table>
+<thead>
+<tr>
+<th>核查项</th>
+<th>资料说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>测什么</td>
+<td>接触导致的磁体变化，由三轴霍尔读数表示。</td>
+</tr>
+<tr>
+<td>测在哪里</td>
+<td>拇指和食指指尖的 STF；每个单元有 17 个三轴触觉点。</td>
+</tr>
+<tr>
+<td>输出与单位</td>
+<td>未标定的 12 bit 原始数据。三轴读数并不自动等于以 N 表示的三维接触力。</td>
+</tr>
+<tr>
+<td>更新 / 查询频率</td>
+<td>规格书列典型触觉更新 1000 Hz。</td>
+</tr>
+<tr>
+<td>标定情况</td>
+<td>原始触觉数据未标定；接触力换算与误差需另行确认。</td>
+</tr>
+<tr>
+<td>配置范围</td>
+<td>标准配备两个 STF（拇指、食指）；其他指尖可增配，不能默认全手均装触觉。</td>
+</tr>
+<tr>
+<td>用于什么控制</td>
+<td>可作为接触端反馈；规格书允许在主机控制中融合触觉与关节等输入。</td>
+</tr>
+<tr>
+<td>不能据此断言什么</td>
+<td>单凭规格书不能确认已提供标定后的指尖力、滑觉算法或完整手掌皮肤。</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf">Shadow 官方规格书 · December 2024 · §3.2、§4.1–4.4、§5</a></p>
+<p><a href="../../../engineering/sensing-chain/">打开测量位置图：这些量分别测在哪里？</a></p></div></div>
+</section>
+
+<section class="hand-record-section" id="record-control">
+<header class="hand-section-heading"><h2>控制与操作</h2></header>
+<div class="hand-section-body"><div class="hand-record-topic"><h3>抓取与操作：证据能说明什么</h3>
+<p><strong>官方说明 / 演示</strong></p>
+<p>规格书给出动力抓握承载 4 kg；这是厂商规格，不是对随机物体的操作成功率。历史强化学习实验的手、触觉配置与控制栈须按各自论文记录，不能自动归到 2024 标准配置。</p>
+<p><a href="https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf">操作证据出处</a></p>
+</div><div class="hand-record-topic"><h3>PID</h3>
+<p>官方资料 · 2024 规格书 §3.2、§5：可配置 PID</p>
+<p><a href="https://shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf">Shadow Dexterous Hand 规格书 — December 2024</a></p>
+</div><div class="hand-record-topic"><h3>力控制</h3>
+<p>官方资料 · 2024 规格书 §5：电机端腱力控制；不据此承诺指尖力控制精度</p>
+<p><a href="https://shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf">Shadow Dexterous Hand 规格书 — December 2024</a></p>
+</div><div class="hand-record-topic"><h3>强化学习</h3>
+<p>文献实现 · OpenAI 历史实验：仿真训练后在实物 Shadow Hand 执行物体重定向；非 2024 配置验证或出厂功能</p>
+<p><a href="https://arxiv.org/abs/1808.00177v5">OpenAI et al. — Learning Dexterous In-Hand Manipulation</a></p></div></div>
+</section>
+
+<section class="hand-record-section" id="record-simulation">
+<header class="hand-section-heading"><h2>硬件 / SDK / 模型</h2></header>
+<div class="hand-section-body"><div class="hand-record-topic"><h3>硬件版本与接入</h3>
+<p><strong>适用型号：Shadow Dexterous Hand（Classic 五指版）</strong> · 整理日期：2026-10-02</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>具体情况</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>硬件与驱动</td>
+<td>20 路独立运动，24 个可动关节；总数包含腕部。 20 个电机模组通过成对腱索传力。四根长指的末节不是额外的独立电机轴；中节与末节之间有耦合约束。</td>
+</tr>
+<tr>
+<td>接入条件</td>
+<td>尚未取得该配置完整的供电、线缆、转接器和主机兼容表；不从外观或同系列型号推断。</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf">本次机构与操作核查依据</a></p>
+</div><div class="hand-record-topic"><h3>SDK 与控制接口</h3>
+<p><strong>资料状态：已有公开接口资料</strong></p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>支持内容与限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>语言 / 软件栈</td>
+<td>ROS 接口 / 控制器</td>
+</tr>
+<tr>
+<td>主机 / 系统 / 通信</td>
+<td>官方容器、ROS1 / noetic 系列；当前系统兼容性待验证</td>
+</tr>
+<tr>
+<td>命令、反馈与功能</td>
+<td>官方启动流程连接手部控制器和 MoveIt；sr_common 提供消息和模型。仿真启动参数 sim:=true。</td>
+</tr>
+<tr>
+<td>硬件 / 固件兼容边界</td>
+<td>本条为 Classic；E3M5 模型的传感器、驱动配置不能直接覆盖 2024 实物。</td>
+</tr>
+<tr>
+<td>授权与许可</td>
+<td>许可尚待逐文件核查。</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://shadow-robot-company-dexterous-hand.readthedocs-hosted.com/en/latest/user_guide/sim_gazebo.html">SDK / 接口依据</a></p>
+</div><div class="hand-record-topic"><h3>模型与仿真支持矩阵</h3>
+<p>CAD 用于制造，URDF 描述机构，MJCF / USD 等用于特定仿真环境；文件存在、作者声明和本机验证分别记录。</p>
+<table>
+<thead>
+<tr>
+<th>格式 / 平台</th>
+<th>状态</th>
+<th>具体版本、内容与限制</th>
+<th>入口 / 依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CAD / 制造文件</td>
+<td>尚未核实</td>
+<td>当前已核对资料中尚未确认适用于本版本的公开文件及运行说明；不表示不支持。</td>
+<td>尚未取得可核验文件</td>
+</tr>
+<tr>
+<td>URDF / Xacro</td>
+<td>官方文件</td>
+<td>sr_common/noetic-devel 中的描述与网格；ROS1。</td>
+<td><a href="https://github.com/shadow-robot/sr_common/tree/noetic-devel/sr_description">模型与版本依据</a></td>
+</tr>
+<tr>
+<td>MuJoCo / MJCF</td>
+<td>第三方模型 / 版本有差异</td>
+<td>Menagerie E3M5 左右手；MuJoCo ≥2.2.2，Apache-2.0；不等同所有 Classic 传感配置。</td>
+<td><a href="https://github.com/google-deepmind/mujoco_menagerie/tree/main/shadow_hand">模型与版本依据</a></td>
+</tr>
+<tr>
+<td>Isaac Sim / Lab / Gym</td>
+<td>尚未核实</td>
+<td>当前已核对资料中尚未确认适用于本版本的公开文件及运行说明；不表示不支持。</td>
+<td>尚未取得可核验文件</td>
+</tr>
+<tr>
+<td>Gazebo</td>
+<td>官方启动文档</td>
+<td>官方容器内 ROS1 启动，需完整控制器栈；不是裸 URDF 即开即用。</td>
+<td><a href="https://shadow-robot-company-dexterous-hand.readthedocs-hosted.com/en/latest/user_guide/sim_gazebo.html">模型与版本依据</a></td>
+</tr>
+<tr>
+<td>其他仿真 / 学习模型</td>
+<td>尚未核实</td>
+<td>当前已核对资料中尚未确认适用于本版本的公开文件及运行说明；不表示不支持。</td>
+<td>尚未取得可核验文件</td>
+</tr>
+</tbody>
+</table>
+</div><div class="hand-record-topic"><h3>配套资源入口</h3>
+<ul>
+<li><a href="https://github.com/google-deepmind/mujoco_menagerie/tree/main/shadow_hand">MuJoCo · Menagerie / Shadow E3M5</a>：MJCF，左右手与场景 XML；E3M5 模型，不默认等同于本站 2024 Classic 配置。README 要求 MuJoCo ≥ 2.2.2。</li>
+<li><a href="https://github.com/shadow-robot/sr_common/tree/noetic-devel/sr_description">ROS / Gazebo · Shadow sr_description</a>：厂商 URDF/Xacro 与资源目录；noetic-devel 分支。Gazebo 配置依赖完整 ROS 工程，不是独立即开即用模型。</li>
+</ul>
+</div><div class="hand-record-topic"><h3>当前验证范围</h3>
+<p>未在本机连接实物、编译 SDK 或加载仿真。支持情况依据文档 / 文件目录，不是本机测试结论。</p>
+</div><div class="hand-record-topic"><h3>Gazebo</h3>
+<p>官方资料 · 2024 规格书 §6.2 描述 Gazebo 模型；版本兼容性及运行未验证</p>
+<p><a href="https://shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf">Shadow Dexterous Hand 规格书 — December 2024</a></p></div></div>
+</section>
+
+<section class="hand-record-section" id="record-assessment">
+<header class="hand-section-heading"><h2>优势与局限</h2></header>
+<div class="hand-section-body"><div class="hand-record-topic"><p><strong>工程解释</strong>：比较末端质量时，应统一是否包含前臂的统计边界</p>
+<p>适用条件：以 4.3 kg 的官方统计口径为依据；不是对其他产品优劣的判断</p>
+<p><a href="https://shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf">Shadow Dexterous Hand 规格书 — December 2024</a></p>
+<p><strong>事实</strong>：部分固件源码与电子原理图需依 NDA 申请</p>
+<p>适用条件：2024 规格书 §6.1；不能由公开 ROS 仓库推断整机完全开源</p>
+<p><a href="https://shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf">Shadow Dexterous Hand 规格书 — December 2024</a></p></div></div>
+</section>
+
+<section class="hand-editorial hand-record-section" id="record-editorial" aria-labelledby="editorial-title">
+<header class="hand-editorial-heading hand-section-heading"><div><span class="hand-editorial-label">ENGINEERING INTERPRETATION</span>
+<h2 id="editorial-title">Joan Wu’s Analysis</h2></div></header>
+<div class="hand-section-body">
+<span class="hand-editorial-status">编辑草稿 · 待 Joan Wu 审阅</span>
+<p class="hand-editorial-scope">Shadow Classic Electric · December 2024 规格配置 · 编辑日期 2026-10-04</p>
+<h3 class="hand-editorial-question">仿人运动分配怎样转化为任务优势？</h3>
+<ol class="hand-editorial-steps">
+<li>
+<div class="hand-editorial-step-title"><h4>依据</h4><span>公开资料说明了什么</span></div>
+<p>规格书给出拇指五个自由度、小指额外掌部关节及长指末节耦合；质量口径包括手与前臂。其力反馈测在腱传动侧，而标准指尖触觉配置与腱负载是不同通道。</p>
+<div class="hand-editorial-sources"><a href="https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf" target="_blank" rel="noopener">Shadow 官方规格书 · §2.3–2.4 构型与质量；§4–5 感知与驱动 ↗</a></div>
+</li>
+<li>
+<div class="hand-editorial-step-title"><h4>推理</h4><span>从依据推导，保留条件</span></div>
+<p>这些结构提供了不同位置的运动与反馈，但轴数无法说明目标接触是否可达。耦合限制了可独立指定的关节组合；同样，知道腱负载并不直接知道物体受力。因此应把构型可行性与力估计有效性分别验证。</p>
+</li>
+<li>
+<div class="hand-editorial-step-title"><h4>有条件的判断</h4><span>在什么任务下值得考虑</span></div>
+<p>若任务依赖拇指对掌、小指掌部运动或人手动作映射，可优先检验这些运动是否参与任务。若关注机械臂末端负载，须先分离手与前臂的质量口径；若关注精细接触力控制，须确认标定与接触端误差。这里不判定它在所有任务中优于其他手。</p>
+</li>
+<li>
+<div class="hand-editorial-step-title"><h4>待验证问题</h4><span>尚未执行的验证流程</span></div>
+<p>固定腕部边界，选定接触点与物体尺寸，在关节限位和耦合约束下求解姿态。另用独立测力参考，在不同姿态和加载方向下检验腱负载到接触力的误差；记录失败条件。以上流程尚未执行。</p>
+</li>
+</ol>
+<p class="hand-editorial-boundary">基于公开资料的编辑分析；不代表厂商结论或本站实物验证。本节为待作者审阅的草稿。</p>
+</div>
+</section>
+
+<section class="hand-record-section" id="record-research">
+<header class="hand-section-heading"><h2>技术解读</h2></header>
+<div class="hand-section-body"><div class="hand-record-topic"><p><a href="../../../hands/reports/shadow-classic/">阅读工程分析</a></p>
+</div><div class="hand-record-topic"><h3>跨产品工程解读</h3>
+<p><a href="../../../engineering/degrees-of-freedom/">20 与 16：自由度数字之后，还要看什么？</a></p>
+<p>从含腕范围、耦合关节和任务约束，理解数字可以说明什么、不能说明什么。</p>
+<p>公开资料分析 · 非实验结果</p>
+</div><div class="hand-record-topic"><h3>跨产品工程解读</h3>
+<p><a href="../../../engineering/sensing-chain/">力感知，究竟测在哪里？</a></p>
+<p>从电流、腱负载、关节状态到指尖触觉，逐项检查测量位置、单位、标定和配置边界。</p>
+<p>公开资料分析 · 非实物实验</p></div></div>
+</section>
+
+<section class="hand-record-section" id="record-sources">
+<header class="hand-section-heading"><h2>资料来源</h2></header>
+<div class="hand-section-body"><div class="hand-record-topic"><ul>
+<li>
+<p><a href="https://shadowrobot.com/dexterous-hand-series/">Shadow 官方产品页 — Classic 对比表</a> · 核验：2026-10-01</p>
+</li>
+<li>
+<p><a href="https://shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf">Shadow Dexterous Hand 规格书 — December 2024</a> · 核验：2026-10-01</p>
+</li>
+<li>
+<p><a href="https://github.com/shadow-robot/sr_common/tree/noetic-devel">Shadow Robot sr_common — URDF、消息与服务</a> · 核验：2026-10-01</p>
+</li>
+<li>
+<p><a href="https://arxiv.org/abs/1808.00177v5">OpenAI et al. — Learning Dexterous In-Hand Manipulation</a> · 核验：2026-10-01</p>
+</li>
+<li>
+<p><a href="https://mindtrans.narod.ru/pdfs/shadow_dexterous_hand_technical_specification_E1_20130101.pdf">Shadow E1 官方规格书（镜像），封面 Release</a> · 核验：2026-10-02</p>
+</li>
+<li>
+<p><a href="https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf">Shadow 官方规格书</a> · December 2024 · §3.2、§4.1–4.4、§5 · 复核：2026-10-03</p>
+</li>
+</ul></div></div>
+</section>
+
+<footer class="hand-bottom"><a href="../../..">← 返回产品地图</a><span>DexTrail · Tracing the paths to robotic dexterity.</span></footer>
+
+</div></main><script src="http://127.0.0.1:8000/javascripts/tag-palette.js"></script><script src="http://127.0.0.1:8000/javascripts/reading-rail.js"></script><script src="http://127.0.0.1:8000/javascripts/hand-detail.js"></script></body></html>

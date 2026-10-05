@@ -1,0 +1,118 @@
+
+ Allegro Hand
+ Product
+ Allegro Hand V6 F
+ Allegro Hand V5 Sense
+ Allegro Hand V5 Plus
+ Allegro Hand V5
+ Allegro Hand V4
+ Tech Info
+ Allegro Hand V6 F
+ Allegro Hand V5 Sense
+ Allegro Hand V5 Plus
+ Allegro Hand V5
+ Allegro Hand V4
+ Community
+ Forum
+ FAQ
+ About Us
+ About Allegro
+ News
+ Video
+ Material
+ Contact Us
+ Contact
+ Sales Network
+ PRODUCT
+ Allegro Hand V5 Plus
+ The Allegro Hand V5 Plus offers 16 degrees of freedom, enabling more precise control and stable grasping of objects with diverse shapes.
+ Its key components have been enhanced with the latest technology and are equipped with 360° omnidirectional pneumatic tactile sensors that detect pressure.
+ How It Works
+ Pick & Place Demonstration – Apple
+ Pick & Place Demonstration – Beverage Can
+ Pick & Place Demonstration – Dumbbell
+ Product Features
+ Product Spec
+ Technology
+ Technology Overview
+ Low-cost dexterous manipulation with applications in research and industry
+ Multiple ready-to-use grasping algorithms capable of handling a variety of object geometries
+ 16 independent current-controlled joints (4 fingers × 4 DOF ea.)
+ Support for real-time control and online simulation
+ Omnidirectional tactile sensors have been applied to each fingertip, allowing for various types of research
+ Sensor
+ Fingertip Pressure Sensor
+ A 360° omnidirectional pressure-sensitive tactile sensor in the shape of a finger
+ Stiffness similar to a human finger
+ Various fingertip options provided (sold separately)
+ The color changes based on tactile sensitivity
+ Air pressure measurement method using a capacitive pressure sensor
+ Capable of flexibly manipulating objects, from rigid to deformable soft materials
+ Options
+ Fingertip Type
+ Choose the fingertip that best fits your application
+ Type A (Default)
+ Standard attachment model, with an internal structure to support the external silicone surface, enabling a firm grip.
+ Type B
+ The supporting structure for the silicone surface is positioned externally, making it suitable for delicate object gripping.
+ Type C
+ The sensor length is reduced, and measurement is restricted to the upper part of the sensor, allowing for a strong grip.
+ Type D
+ A wide supporting structure is installed on the back of the sensor, enabling a strong lateral grip.
+ Software
+ Allegro Hand UXD
+ Comprehensive hand control system via Visualized Application
+ Real-time hand status monitoring
+ Effortless hand pose generation
+ Versatile hand motion control via buttons
+ Number of Fingers
+ 3 Fingers + 1 Thumb = 4
+ Degrees of Freedom
+ 4 Fingers × 4 = 16 (Active)
+ Actuation
+ Type
+ DC Motor
+ Gear Ratio
+ 288.35:1 / 576.7:1 (2nd joint of the finger excluding the thumb)
+ Stall Torque
+ 0.92 Nm / 1.84 Nm (2nd joint of the finger excluding the thumb)
+ Nominal Torque
+ 0.23 Nm / 0.46 Nm (2nd joint of the finger excluding the thumb)
+ Payload
+ 15 kg (depending on the measurement method)
+ Weight
+ 1,024 g
+ Joint Resolution
+ 0.088 deg
+ Communication
+ Type
+ CAN
+ Frequency
+ 500 Hz (CAN)
+ Power Requirement
+ 24.0 V / 5.0 A / 120 W
+ Certification
+ CE Certified (SZUTEST Attestation No. SZT-25MA37567-1, Issued: 24.02.2025)
+ Application Case
+ Allegro Hand V5 Plus Introduction
+ UXD Motion Demo – Motion 1
+ UXD Motion Demo – Motion 2
+ UXD Motion Demo – Motion 3
+ Contact us
+ Go to tech info
+ Tel(KR) +82-31-8038-9441
+ Tel(Global) +82-31-8038-9179
+ Fax +82-31-8038-9190
+ Email robotics.biz@wonik.com
+ Wonik Bldg. 4F, 20, Pangyo-ro 255beon-gil, Bundang-gu, 
+ Seongnam-si, Gyeonggi-do, Republic of Korea
+ Copyright ⓒ Wonik Robotics. All Rights Reserved
+ Family Site
+ WONIK ROBOTICS
+ WONIK
+ Copyright & Trademark Notice
+ Allegro, the Allegro logo, RoboticsLab, the RoboticsLab logo, and all related files and documentation are Copyright ⓒ 2008-2024 Wonik Robotics Co., Ltd. All rights reserved. RoboticsLab and Allegro are trademarks of Wonik Robotics. All other trademarks or registered trademarks mentioned are the properties of their respective owners.
+ Privacy Policy
+ Prohibition of Unauthorized E-mail Collection
+ Site Map
+ 

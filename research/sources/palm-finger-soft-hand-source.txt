@@ -1,0 +1,564 @@
+
+ Soft robotic hand with tactile palm-finger coordination | Nature Communications
+ Skip to main content
+ Thank you for visiting nature.com. You are using a browser version with limited support for CSS. To obtain
+ the best experience, we recommend you use a more up to date browser (or turn off compatibility mode in
+ Internet Explorer). In the meantime, to ensure continued support, we are displaying the site without styles
+ and JavaScript.
+ Advertisement
+ View all journals
+ Saved research
+ Search
+ Log in
+ Content
+ Explore content
+ About the journal
+ Publish with us
+ Sign up for alerts
+ RSS feed
+ nature
+nature communications
+articles
+ article
+ Soft robotic hand with tactile palm-finger coordination
+ Download PDF
+ Download PDF
+ Article
+ Open access
+ Published: 10 March 2025
+ Soft robotic hand with tactile palm-finger coordination
+ Ningbin Zhang1 na1, 
+Jieji Ren1 na1, 
+Yueshi Dong1, 
+Xinyu Yang1, 
+Rong Bian1, 
+Jinhao Li 
+ ORCID: orcid.org/0009-0001-1535-36641, 
+Guoying Gu 
+ ORCID: orcid.org/0000-0002-7778-45231,2,3 & 
+…
+Xiangyang Zhu 
+ ORCID: orcid.org/0000-0003-4914-66361,2,3 
+Show authors
+ Nature Communications
+ volume 16, Article number: 2395 (2025) Cite this article
+ Save article
+ View saved research
+ 33k Accesses
+ 93 Citations
+ 13 Altmetric
+ Metrics details
+ Abstract
+Soft robotic hands with integrated sensing capabilities hold great potential for interactive operations. Previous work has typically focused on integrating sensors with fingers. The palm, as a large and crucial contact region providing mechanical support and sensory feedback, remains underexplored due to the currently limited sensing density and interaction with the fingers. Here, we develop a sensorized robotic hand that integrates a high-density tactile palm, dexterous soft fingers, and cooperative palm-finger interaction strategies. The palm features a compact visual-tactile design to capture delicate contact information. The soft fingers are designed as fiber-reinforced pneumatic actuators, each providing two-segment motions for multimodal grasping. These features enable extensive palm-finger interactions, offering mutual benefits such as improved grasping stability, automatic exquisite surface reconstruction, and accurate object classification. We also develop palm-finger feedback strategies to enable dynamic tasks, including planar object pickup, continuous flaw detection, and grasping pose adjustment. Furthermore, our development, augmented by artificial intelligence, shows improved potential for human-robot collaboration. Our results suggest the promise of fusing rich palm tactile sensing with soft dexterous fingers for advanced interactive robotic operations.
+ Similar content being viewed by others
+ Tactile-reactive gripper with an active palm for dexterous manipulation
+ Article
+ Open access
+ 10 February 2026
+ Finger-palm synergistic soft gripper for dynamic capture via energy harvesting and dissipation
+ Article
+ Open access
+ 13 December 2022
+ Embedding high-resolution touch across robotic hands enables adaptive human-like grasping
+ Article
+ Open access
+ 09 June 2025
+ Explore related subjects
+ Discover the latest articles and news in related subjects.
+ Electrical and electronic engineering
+ Mechanical engineering
+ Soft Robotic Systems and Actuation Technologies
+ Introduction
+Over the past decade, the field of robotic hands has significantly expanded, transitioning from traditional industrial applications to more complex human environments1. This shift has necessitated the development of robotic hands capable of providing increasingly dexterous movements and rich tactile sensing. The conventional approach to designing such advanced robotic hands has typically involved the introduction of a large number of sophisticated rigid mechanisms and distributed hard sensors2,3, but also introduces high structural and control complexity, especially when applying it for delicate operations4.
+Soft robotics5,6,7,8,9,10,11,12,13, which employs low-modulus materials and compliant structures to build robotic functions, has emerged as a promising candidate to address this challenge. This cutting-edge technology has enabled robotic hands to achieve high dexterity and versatility while maintaining the simplicity of structure and control14,15,16,17,18,19, promoting their wide application in fields such as industrial picking up20,21, underwater exploration22,23, and neuroprosthetics13,14. Meanwhile, numerous tactile sensors based on different sensing principles (e.g., resistive24,25, capacitive26,27, barometric28,29, and optoelectronic30) have been developed to enhance soft robotic hands with tactile sensations (e.g., pressure, strain, and temperature), thus enhancing the ability of soft robotic hands to sense and interact with the environment.
+Despite the recent advances in soft robotic hands integrating tactile sensing, current studies primarily focus on implementing tactile sensing on the finger or fingertip13,18,24,25,26,27,28,29. To comprehensively mimic the human hand’s capabilities, integrating palm tactile sensing is also crucial because the palm is involved in a considerable portion of grasping and manipulation tasks30,31 for enhanced reliability and improved versatility15,16. The absence of tactile sensing of palm-object contacts precludes the full utilization of the palm functions for these tasks. Furthermore, the exquisite tactile feedback of object-palm contact during such operations has not been well achieved32. This demands a highly integrated palm-finger design to provide both high-density tactile sensing (up to about 240 unit/cm2)33 and dexterous multimodal finger movements to ensure effective object-palm contact, akin to those of the human hand. During the past decade, many pioneering works combining the sensing palm and soft fingers have been reported29,34,35,36,37,38,39, where the sensing density of the palm is typically less than 10 units/cm2 and the finger movements are usually simple. Currently, it remains elusive to design soft dexterous hands with high-density tactile sensing (Supplementary Table 1).
+This work presents a dexterous soft robotic hand that integrates a high-density tactile palm and pneumatic two-segment soft fingers (termed TacPalm SoftHand), enabling rich tactile feedback for robotic operations (Fig. 1). The palm is designed employing a visual-tactile sensing approach40,41,42,43,44,45,46, having a compliant surface to capture the high-density three-dimensional shape information of the contacted object. The finger is designed based on soft pneumatic fiber-reinforced actuators47,48, featuring two independently actuated segments to enable multimodal bending motions. These characteristics enable TacPalm SoftHand to adaptively grasp objects with diverse physical properties and placements, and achieve detailed perception and accurate classification of their surface features. By coordinating finger movements with dense tactile sensing on the palm, TacPalm SoftHand further unlocks new possibilities for various delicate operations and seamless human–robot collaboration.
+Fig. 1: General design concept and advantages of TacPalm SoftHand.Full size image
+a Extensive tactile engagement between the palm and various objects during daily activities of the human hand. b The human hand performs dexterous finger motions and leverages the palm to provide high-density tactile feedback. The cooperation between fingers and the palm enables rich perceptions of object properties and delicate hand operations. c TacPalm SoftHand is composed of a high-density visual-tactile palm, dual-segment soft fingers, and their cooperation strategies, mimicking those of the human hand. The high-density sensing stems from the complementary metal oxide semiconductor (CMOS) in the camera with high resolution. d The cooperation of finger dexterity and high-density palm tactile sensing expands the capabilities and application boundaries of soft robotic hands. e A comparison of the sensing density of the palm and the finger dexterity with other soft robotic hands equipped with palm tactile sensing.
+Results
+Design of TacPalm SoftHand
+The design objective of TacPalm SoftHand is to achieve high-density tactile sensing on the palm and dexterous movement capabilities for grasping a wide range of everyday objects. Considering sensing technologies32, human grasp taxonomies30, and robotic grasp principles49, we propose that: (i) the visual-tactile sensing principle is a promising approach for integration into the palm region to provide high-density tactile feedback; (ii) a three-finger hand capable of both powerful wrapping and precise pinching could be sufficient for most grasping tasks. To this end, the mechanical structure of TacPalm SoftHand includes a compact visual-tactile tactile palm, soft two-segment fingers that can generate both power wrap and precision pinch, and a palm-finger connector (Fig. 2a).
+Fig. 2: Mechanical design.Full size image
+a The soft robotic hand mechanism mainly consists of a tactile palm, three soft fingers, and a palm-finger connector. b The palm integrates the visual-tactile sensing principle in a compact structure. c The design parameter of LED mounting height hl for the tactile palm is described by a geometric optical model. We take its minimum hlm as the optimal one to avoid the LED’s virtual image being reflected into the camera. In this model, the parameters θc wl, rp, and hca denote the field of view, the width of each LED, the palm radium, and the distance between the camera and the acrylic layer, respectively. d Each soft finger integrates two independent segments actuated by varied pneumatic pressures p1 and p2 to mimic the behaviors of the human finger.
+The tactile palm, with a cylinder-like shape, consists of a micro camera module, a multi-layer sensing body, a light-emitting diode (LED) ring, and accessorial components (Fig. 2b). The multi-layer sensing body includes a transparent elastomer layer covered with gray ink membrane for recording the object’s surface morphology with uniform albedo, a transparent acrylic layer for supporting the elastomer, and a diffuser layer for spreading out the light. The sensing body deforms when an object touches it, and the planar deformation information is captured by the embedded camera. To further obtain the depth information, the LEDs on the ring are programmed into three sets of red (R), green (G), and blue (B), generating colored light gradients for varied touch depth. To eliminate the inter-reflection from the transparent acrylic layer, the optimized LED mounting height is set as \({h}_{{lm}}=({r}_{p}-{w}_{l})/\tan \left(\frac{\theta }{2}\right)-{h}_{{ca}}=4.56{{\rm{mm}}}\) according to a theoretical optical model (Fig. 2c), where wl = 5 mm is the width of each LED, rp = 25 mm is the palm radium, and hca = 24 mm is the distance between camera and the acrylic layer. The accessorial components are designed to support components and provide assembly alignment.
+As shown in Fig. 2d, the soft finger consists of a two-segment fiber-reinforced elastomeric chamber made of low-modulus silicone rubber (Young’s modulus E = 0.16 MPa, Dragon Skin 10), a high-modulus polyethylene sheet (E = 275 MPa) attached to the bottom of the elastomeric chamber, and an elastomeric skin made of lower-modulus silicone rubber (Ecoflex 00-30, E = 0.07 MPa). During pneumatic actuation, the top side of the fiber-reinforced elastomeric chamber elongates, while the polyethylene sheet restricts elongation on the bottom side. This difference in elongation between the top and bottom sides creates the segment’s bending motion. The proximal segment and distal segment can be independently or uniformly actuated, allowing the finger to achieve both power wrap and precision pinch for most grasping tasks49,50. The segment length ratio is set to \({L}_{p}:{L}_{d}=2:3\), which is comparable to that of the human finger ([proximal phalange]: [middle phalange + distal phalange])51. Additionally, the elastomeric skin encapsulates the inner components to provide the finger with anthropomorphic appearances and more compliant contact surfaces. To integrate soft fingers with the tactile palm, we design a palm-finger connector featuring three symmetric finger mounting bases, each with an inclination angle of 40°. We prototype TacPalm SoftHand using 3D printing and molding. The fingers are actuated by a multi-channel pneumatic system. Details of fabrication and assembly are provided in Supplementary Fig. 1, Supplementary Fig. 2, and the “Methods” section.
+Sensing performance of the visual-tactile palm
+We characterize the tactile sensing performance of the palm by using a motion platform equipped with a force sensor to press different standard probes normally (z-direction) against the palm surface (x–y plane) (Fig. 3a). The standard probes have two types of head geometries: a flat head with a circular contact face (probe A) to evaluate the sensing density and minimum pressure response, and a hemispherical head (probe B) to evaluate force-depth relationships. The sensing density is defined as the number of sensing units per square centimeter (unit/cm2). As the total number of sensing units is given (1280 × 800), the measurement of the total sensing area is required. The probe A is pressed onto the palm surface to generate a circular indentation, which is captured by the tactile palm and presented as an image form (termed raw image). Through dimension mapping between the circular geometry in the raw image and the contact surface of probe A (Fig. 3b), the total sensing area is determined to be a rectangle of dimensions 30.08 × 18.80 mm, and the sensing density is calculated as 181,000 unit/cm2 (“Methods” section). This sensing density is significantly higher than 240 unit/cm2 for the human hand33. We subsequently control probe A to apply different normal pressing forces (0.05 N to 5 N, n = 3 trials) on the palm surface and find that the palm can respond to a minimum pressure response of 1 kPa. Since the indentation generated by the flat head of probe A lacks depth information (Supplementary Fig. 3), we further investigate the indentation geometries in response to varying normal pressing forces (0.05 N to 5 N, n = 3 trials) using probe B with a hemispherical head. Our observations reveal that the dimensions of the indentation increase with the applied normal pressing force (Fig. 3c), thereby enabling the estimation of depth with a geometric model (Fig. 3a and “Methods” section). This suggests that we can leverage the indentation variations to approximately estimate the normal pressing force during robotic operations. The long-term pressing cycling further reveals the response stability of normal pressing force for constant pressed depth (measured at 2.5 mm), without observing significant degradation in normal pressing force for more than 5000 loading-unloading cycles (Fig. 3d).
+Fig. 3: Tactile sensing performance of the palm.Full size image
+a Experimental setups and standard probes/blocks for evaluating the tactile sensing performance of the palm. Probe A has a diameter df. Probe B has a radius rf, and its pressed depth and the generated circle diameter are denoted as hp and rp, respectively. b Schematic illustration for calculating the size of the sensing region and the sensing density. Probe A is used for the experiment. c The measured pressed depth under the varied applied normal force of probe B. d Cycling stability at a pressed depth of 2.5 mm (5000 cycles). The insets show the first 10 cycles and the last 10 cycles. e Light intensity distributions of the sensing region with average value, R channel, G channel, and B channel. The values are dimensionless and are displayed in a.u. in the figures. f The depth gradient accuracies for estimated Gx and Gx in the look-up table. The values are dimensionless and are displayed in a.u. in the figures. g, h Reconstructed 3D geometries for standard block A and block B. Scale bars, 10 mm.
+Building on the high sensing density of the palm, we evaluate its ability to reconstruct the three-dimensional (3D) surface shape of objects. To this end, we first analyze the intensity distributions of the raw image (without load) and its RGB channels to evaluate the light illumination. The results show that the tactile palm has relatively uniform continuous illumination for shape reconstruction (Fig. 3e). Since the shape reconstruction requires depth information, we perform a calibration test by pressing a size-known ball onto the palm surface to build a look-up table that maps the RGB intensity \(({I}_{{{\rm{R}}}},{I}_{{{\rm{G}}}},{I}_{{{\rm{B}}}})\) of the generated raw image and the depth gradient \(({G}_{x},{G}_{y})\), and use the Fast Poisson Reconstruction algorithm39 to generate the surface shape of an unknown object based on the look-up table (Supplementary Fig. 4, Supplementary Fig. 5, and “Methods” section). To check the accuracy of the look-up table, we compare the estimated value and ground truth value of \(({G}_{x},{G}_{y})\), where the former is obtained from the look-up table and the latter is calculated based on the size of calibration ball (diameter of 5.09 mm). Figure 3f shows the accuracy of the estimated values (coefficient of determination, R2 = 0.9783 and R2 = 0.9798 for the x-direction and y-direction, respectively). The shape reconstruction ability for the x–y plane is evaluated by normally pressing a block with parallel isometric stripes (termed block A, 1 mm interval between adjacent strips) onto the palm surface (Fig. 3a). As shown in Fig. 3g, the reconstructed surface shape of block A has obvious straight stripes and jagged peak features at the sub-millimeter scale. The shape reconstruction ability for z-direction is evaluated by pressing a block with triangular steps (termed block B, 0.5 mm height difference between two concentric triangular steps) onto the palm surface (Fig. 3a). Processed with the same algorithm, the reconstructed surface shape of block B is shown in Fig. 3h. We additionally propose an index of surface shape reconstruction accuracy (SSRA) to quantify the quality of the reconstructed surface shapes. As described in the “Methods” section, the SSRA for the x–y plane and z-direction are calculated as 92.3% and 81%, respectively.
+Finger characteristics and grasping performance
+We next evaluate the finger characteristics and grasping performance of the hand mechanism. The finger workspace is evaluated using an OptiTrack visual tracking system to capture the fingertip trajectories and finger flexion angle (Supplementary Fig. 6). The actuation pressures for the proximal and distal finger segments vary from 0 to 150 kPa. The generated workspace has a crescent-shape spanning 57.2 mm in x-direction and 96.5 mm in y-direction (Fig. 4a). It can be regarded as the combination results of three primitive actuation modes: only the proximal finger segment is pressurized (termed proximal actuation), only the distal finger segment is pressurized (termed distal actuation), and both segments share the same pressure (termed uniform actuation). In all actuation modes, the finger flexion angle nonlinearly increases with the actuation pressure (Fig. 4b). The maximum flexion angles reach 85.3 ± 5.4° in proximal actuation (PA) mode, 117.9 ± 1.7° in distal actuation (DA) mode, and 204.3 ± 7.6° in uniform actuation (UA) mode (mean ± s.d., n = 3 measurements), similar to those of the human finger. We measure the fingertip forces52 in three actuation modes by contacting a force sensor (QMA 147, Futek, Inc.) mounted on the base below the fingertip (Fig. 4c). The maximum fingertip force respectively reaches 0.71 ± 0.04 N, 1.31 ± 0.09 N and 2.19 ± 0.09 N (mean ± s.d., n = 3 measurements). The experimental results (Supplementary Fig. 7) show that the maximum grasping force of TacPalm SoftHand is about 14.6 ± 0.6 N (mean ± s.d., n = 3 measurements), which is generally sufficient in grasping tasks for most common daily objects30 (typically below 10 N). The minimum closing time and maximum finger speed52 are about 0.6 ± 0.1 s and 153 ± 6.5°/s (mean ± s.d., n = 10 measurements, detailed in the “Methods” section), respectively, which are comparable to existing robotic hands4,53. Overall, the multi-mode movement and gentle output force of the finger are suitable for handling daily objects, reducing the potential damage to their surface shapes and textures.
+Fig. 4: Finger performance and palm-assisted grasping.Full size image
+a Workspace of the soft finger represented by the captured fingertip trajectories. The two segments of the finger are actuated with pressures [p1, p2], each ranging from 0 to 150 kPa. The abbreviations PA, DA, and UA denote proximal actuation, distal actuation, and uniform actuation, respectively. b Measured finger bending angles under varied supplied pressures in three actuation modes. c Measured fingertip force under varied supplied pressures in three actuation modes. d Illustration of TacPalm SoftHand with a single finger actuated and all fingers actuated in three modes. e Demonstrations of TacPalm SoftHand performing multimodal grasping from precision pinch to power wrap. f Demonstration of TacPalm SoftHand with (upper panel) or without (lower panel) tactile feedback grasping an object during a high-speed delivery task. The object is initially placed on the desk. g Demonstration of TacPalm SoftHand with (upper panel) or without (lower panel) tactile feedback grasping a cup cap during an easy-slip picking up task. The success rate in each panel is calculated based on n = 20 experimental trials.
+As shown in Fig. 4d, we mount TacPalm SoftHand on a 7-DOF robotic arm (Zu7, JAKA Inc.) to evaluate its grasping performance. The finger segments of TacPalm SoftHand can be independently or synergistically controlled through three actuation modes (Supplementary Movie 1), enabling two basic grasp types: precision pinch and power wrap. Their distinction lies in how TacPalm SoftHand contacts the object. In the case of precision pinch, contact is typically established between the distal finger segment and the object. In contrast, power wrap is characterized by contact between both finger segments and the object. It is also important to note that this study emphasizes the interaction between the soft fingers and the tactile palm during object grasping. Therefore, we focus on grasping scenarios where the palm is involved, as the palm plays a crucial role in both human and robotic grasping tasks. For instance, it accounts for a significant portion of involvement in grasping activities34 (Supplementary Fig. 8), enhances grasping reliability15, and enables object recognition through tactile feedback32. Supplementary Movie 2 and Fig. 4e showcase representative examples of human–robot object handovers54, where a participant transfers the object to TacPalm SoftHand for grasping. In these examples, the finger actuation mode generally transmits from PA mode to DA mode to UA mode, leading to the two grasp types ranging from precision pinch to power wrap. The contact areas between the fingers and the objects increase (Supplementary Fig. 9). TacPalm SoftHand can grip slender objects (e.g., a marker pen) or flat objects (e.g., a card) supported by their tips or edges against the palm. The inherent compliance of the fingers and the palm surface ensures safe interaction with deformable fragile objects (e.g., a disposable plastic cup). TacPalm SoftHand can also grasp loose objects (e.g., cherry branches and grapes) or oblate objects (e.g., a paper box and an orange) by enveloping them toward the palm, and can passively accommodate large non-convex objects (e.g., an octopus tripod).
+In more common scenarios where objects are placed on a plane, palm tactile feedback demonstrates its advantages in assisting grasping (Supplementary Movie 3). For example, during a high-speed object delivery task with the robotic arm (Fig. 4f, maximum arm joint speed, 180 °/s; maximum arm joint acceleration, 720 °/s²), TacPalm SoftHand with palm tactile feedback achieves successful delivery (in contrast to the one without tactile feedback experiences delivery failure). Furthermore, we demonstrate the advantage of palm tactile feedback by picking up a cup cap. As shown in Fig. 4g, TacPalm SoftHand with palm tactile feedback achieves more robust picking (100% success rate, n = 20 trials) compared to the one without tactile feedback (65% success rate, n = 20 trials). With tactile feedback, the contact between the palm and the cup cap can serve as a signal to initiate a power wrap enveloping the cap edge for picking up. Without tactile feedback, the cap is picked up with a precision pinch at its tip and prone to slippage. The grasping and delivering of more objects with palm tactile feedback are demonstrated in Supplementary Fig. 10. The cooperation strategies of robotic hand–arm actions and tactile feedback during these grasping processes are shown in Supplementary Fig. 11. Detailed experimental setups are described in the “Methods” section.
+The above experimental results demonstrate that the integration of soft fingers and the tactile palm in TacPalm SoftHand enables adaptive grasping of objects with varying placements, shapes, dimensions, and weights. Detailed characteristics of the objects used in these experiments are provided in Supplementary Table 2.
+Exquisite object perception and classification during grasping
+To evaluate TacPalm SoftHand’s capability to perceive object surface properties and classify objects during grasping, we select three representative categories of objects (see Supplementary Table 3 for detailed information about the objects). The objects are transferred from a participant to TacPalm SoftHand for grasping. The first category comprises natural objects with thick dimensions (characteristic thickness, 40.2 ± 11.5 mm, mean ± s.d., n = 3 measurements) and irregular fragile surface textures, such as a balsam pear, a cookie, and a pinecone. Through analysis of the finger workspace and experiments (n = 10 tests for each object), it is found that actuating all fingers in a proximal-to-distal pressure sequence can effectively grasp the object without pushing it sideways, enabling near-vertical against the palm surface. With such near-vertical pressing, the object’s contact indentation is captured and processed into reconstructed 3D surface shapes. From these reconstructed shapes, we can observe the vivid features of the object’s surface. Notably, no obvious surface damage to the objects is observed after grasping (Fig. 5a and Supplementary Movie 4).
+Fig. 5: Exquisite perception and classification of different objects.Full size image
+a Demonstration of TacPalm SoftHand grasping different daily objects of irregular and fragile surface textures. All three fingers are actuated with a proximal-to-diatal pressure sequence to envelop the object and press it toward the palm. The palm captures the corresponding tactile features. b Demonstration of TacPalm SoftHand grasping different small objects. Only one finger is actuated with a distal-to-proximal pressure sequence to slightly press the object toward the palm, and the palm captures the corresponding tactile features. c Demonstration of TacPalm SoftHand grasping different fabrics. All three fingers are actuated with a distal-to-proximal pressure sequence to slightly press the fabric toward the palm, and the palm captures the corresponding tactile features. d The capability of TacPalm SoftHand integrated with machine learning algorithms to classify ten fabric types. Upper panel, images of different fabric types. Lower panel, the probability of classified fabric type in each test. e The classification confusion matrix of ten fabric types based on the experimental data.
+The second category of objects are small industrial components with discernible geometric features on their surfaces, such as a circuit board, a check valve, and a screw. In contrast to the first category, these objects are typically thin (characteristic thickness, 5.0 ± 4.2 mm, mean ± s.d., n = 3 measurements). It is found that actuating a single finger in a distal-to-proximal pressure sequence can accurately grasp and press the object near-vertically against the palm surface (n = 10 tests for each object). With this near-vertical pressing, the tactile palm generates reconstructed images that capture the subtle geometric features of objects, which may provide valuable information for subsequent operations (Fig. 5b and Supplementary Movie 5).
+The third category of objects are deformable fabrics with a characteristic thickness of 0.5 ± 0.1 mm (mean ± s.d., n = 3 measurements), which are prone to wrinkling, and their fine texture information can be easily confounded with finger indentations. It is found that actuating all fingers in a distal-to-proximal pressure sequence can flatten the fabrics and press the fabric near-vertically against the palm surface (n = 10 tests for each object). Through this pressing, the tactile palm generates reconstructed images, enhanced by a filtering algorithm to mitigate the confounding effects of finger indentations, vividly capturing the fabric’s intricate textures (Fig. 5c and Supplementary Movie 6). Furthermore, the Fast Fourier Transform (FFT) is employed to analyze the overall periodicity and directional characteristics of the textures in a spectrum map manner. For example, the pineapple lattice and mesh fabric exhibit more prominent periodic patterns compared to the lace cloth, while the pleated cloth displays distinct slanting variations in its texture (Supplementary Fig. 12).
+The tactile sensing capability of TacPalm SoftHand is further evaluated through classification experiments involving ten fabrics of different texture patterns (Fig. 5d). In prior, we built a dataset containing tactile images of ten different fabric types. During data collection, we control TacPalm SoftHand to randomly grasp each fabric type using the method described above, obtaining images for training and testing (detailed in the “Methods” section). In the experiment, we employ ResNet3455 as the foundational learning model for fabric classification and fine-tune it for the tactile image dataset, considering both real-time computational efficiency (processing time of the tactile image, <0.01 s) and feasible hardware implementation. The testing results, shown in the confusion matrix (Fig. 5e), indicate that the system achieves 97% mean classification accuracy. The only misclassification occurs with fabric type 5, which can be attributed to the incomplete capture of its large hole-like patterns in the tactile images obtained during finger pressing.
+The tests are performed by actuating all three fingers with proper pneumatic pressures (distal segments, 130 kPa; proximal segments, 110 kPa). The measured finger force applied to the fabric is 2.1 N. An investigation matrix describing the relationships between classification accuracy, finger force, and pneumatic pressure reveals an operational region where classification accuracy consistently exceeds 90% (Supplementary Fig. 13). These findings demonstrate that proper control of both finger force and pneumatic pressure settings is crucial for reliable and accurate fabric classification.
+Delicate operation with palm tactile feedback
+Delicate operation requires closer cooperation of dexterous finger movements and palm tactile feedback. As shown in Fig. 6a and Supplementary Movie 7, TacPalm SoftHand mounted on a robotic arm picks up a card placed on the desk, with only the card’s top surface initially exposed for contact (n = 3 task times). Using a cyclic finger gait strategy consisting of coordinated two-segment movements (rest-touch-pull-raise-recover, Fig. 6b), TacPalm SoftHand gradually moves the card away from the desk toward the tactile palm, exposing the card’s lateral edge. An edge detection algorithm is employed by the tactile palm to detect line-shaped indentations caused by contact between the card’s lateral edge and the palm (detailed in the “Methods” section). This information triggers the pneumatic actuation system (Fig. 6c) to control other fingers for adaptive grasping (Fig. 6d). This finger-palm cooperation is not limited to the solid card56. As shown in Supplementary Fig. 14, our TacPalm SoftHand can pick up planar objects with porous surfaces.
+Fig. 6: Cooperation of the tactile palm and soft fingers.Full size image
+a Demonstration of TacPalm SoftHand picking up a card on a desk. A finger pulls the card away from the desk using a single-finger gait strategy circularly until the card edge touches the palm, followed by the palm withstanding the card and providing subtle tactile feedback of line-shaped indentation to control all fingers for grasping. b Illustration of the single-finger gait with five time points (T0, T1, T2, T3, T4). The fingertip has a free trajectory in its workspace and a constraint trajectory when interacting conformably with the card on the desk. c Actuation and control system of the finger-palm cooperation strategy for picking up the card. d Variations of actuation pressures and tactile sensing states during the picking up task. Actuation pressures are described by P = [p11, p21, p12, p22, p13, p23]. The first subscript denotes whether the finger segment is proximal or distal. The second subscript denotes the finger number. e TacPalm SoftHand continuously detects subtle flaws on a variegated fabric using cyclic finger gaits. f Distinct indentation differences between the flaw and flawless cases in representative tactile images. CDM (color difference metric) is a dimensionless parameter calculated by summing the color variations between the highest and lowest RGB values in the tactile image. The value of CDM ≥ 40 indicates a flaw, while CDM < 40 indicates a flawless surface (showing only fingertip indentation). Flaws typically create discontinuous geometries that generate image regions with a wider range of color variation. Flawless regions produce more uniform tactile images showing only the finger indentation. g TacPalm SoftHand adjusts the grasping pose during teapot pouring. The tactile palm continuously monitors the subtle changes of the geometric feature on the teapot’s bottom and informs the finger to adjust the teapot’s pose to avoid it falling. h Demonstration of the tracked geometries on the teapot’s bottom and the corresponding contour area in the tactile image. i Actuation and control system of the finger-palm cooperation strategy for the teapot pouring task. j Variations of actuation pressures and tactile sensing states during the teapot pouring task.
+This finger-palm cooperation strategy can be further leveraged to achieve continuous surface detection of the object held by the palm. As shown in Fig. 6e and Supplementary Movie 8, a variegated fabric with dispersed surface flaws (which are visually obscured by its variegated pattern) is placed on TacPalm SoftHand’s palm. To detect these dispersed flaws, TacPalm SoftHand executes finger gaits to simultaneously press and move the fabric step by step in one direction. This approach allows the tactile palm to detect flaws continuously, rather than only at fixed locations. The indentation differences between the “flaw” case and the “flawless” case in the tactile images can be distinguished using an image processing algorithm based on the color difference (Fig. 6f and “Methods” section). This application shows the potential of coordinated finger-palm interactions to extend the sensing boundary beyond the physical limitations of the pre-designed palm dimensions, facilitating automatic perception over a larger area without introducing additional robotic devices.
+Furthermore, we demonstrate a teapot pouring application where TacPalm SoftHand grasps a teapot transferred by a participant and dynamically regulates its grasping pose based on the real-time palm tactile feedback (Fig. 6g and Supplementary Movie 9, n = 3 task times). Detailed experimental setups are described in Supplementary Fig. 15. During time T1-T2, soft fingers bend in PA mode (all proximal finger segments, 130 kPa) to grasp the teapot with its bottom in contact with the palm surface. The palm monitors the indentation of a selected dot on the teapot bottom in real-time (Fig. 6h). The extent of indentation is quantified as the pixel numbers of indentation contour area (ICA)57 in the tactile image. The tactile-feedback control system is illustrated in Fig. 6i. During teapot pouring (time T3), the teapot’s center of gravity shifts slightly due to the water movement inside, which affects the grasping stability. This subtle change is not easily observed visually but can be detected through the reduced ICA. When ICA falls below the predefined threshold during the tea-pouring process, the pneumatic actuation system inflates the distal segment of one finger with predefined actuation pressures (80 kPa) to adjust the teapot pose and stabilize it on the palm (time T4), which is reflected by the increase of ICA. During the subsequent tea-pouring process, the teapot is stably grasped to complete the task as ICA remains above the threshold (time T4–T6). The variation of pneumatic pressures and ICA during the process are shown in Fig. 6j.
+The teapot pouring experiment demonstrates the advantage of palm-finger cooperation for dynamic tasks. In this approach, the palm provides stable support with an enlarging contact area for tactile feedback, while the fingers serve as dedicated end-effectors. This differs from conventional methods where fingers simultaneously handle both feedback and execution tasks. This separation of functions becomes especially beneficial in human-involved scenarios, where relying solely on real-time finger position adjustments would require complex control systems and potentially pose safety risks.
+Identification and delivery of blind bags for human–robot collaboration
+Finally, we demonstrate an intelligent human–machine interaction (HMI) application by mounting TacPalm SoftHand on the robotic arm to identify and deliver objects that have been packaged and are difficult to visually recognize (Fig. 7 and Supplementary Movie 10). In this application (Fig. 7a), five different clusters of objects (hexagon nuts, peas, bolts, melon seeds, and sagos) are, respectively, packaged in black plastic bags (referred to as “blind bags”). Before the experiment, we collected tactile images by using TacPalm SoftHand to grasp these bags and used machine learning (ResNet34 model) to train an identification algorithm based on the tactile images (detailed in the “Methods” section). In the experiment (as shown in Fig. 7b), a participant seeking specific items (such as melon seeds) commands the intelligent robotic hand–arm system to find them among several blind bags hanging on a string. The results are immediately displayed on a computer screen (Fig. 7c). If the identified items are not the desired melon seeds, the robotic hand–arm system moves on to the next bag, repeating this process. Once found, the robotic hand–arm system pulls down the bag and safely delivers it to the participant, who then opens it to verify the identification accuracy. Confusion matrix analysis (Fig. 7d) reveals that the overall mean accuracy for all five objects in blind bags is 88%. Melon seeds demonstrate the highest classification accuracy (100%). Two groups of objects (hexagon nuts vs. sagos; bolts vs. peas) are moderately misclassified as the latter in each group (confusion rate, 15%), which is reflected by the probability analysis (Fig. 7e). This misclassification is mainly due to their similar sizes and geometric shapes, as well as the blurring effect of the bag.
+Fig. 7: Identification and delivery of packaged object in an HMI application.Full size image
+a Experimental setup of the human–machine interface (HMI) experiment. Five object clusters are packaged in blind bags. The tactile images are obtained by controlling TacPalm SoftHand to grasp the blind bags, which are then used to construct a dataset for machine learning. The trained model is integrated with the robotic hand–arm system to identify objects in grasped blind bags during the experiment. Commands from the participant are input via a smart pad. b Time-lapse images of the HMI experiment. The identification results (classified object and its probability) are shown on the computer display. c The captured tactile images of blind bags and the identification results in the HMI experiment. d The classification confusion matrix of five objects based on the experimental data. e The probability of the classified object in each test.
+Discussion
+In summary, we have developed TacPalm SoftHand that seamlessly integrates a high-density visual-tactile palm, two-segment pneumatic soft fingers, and their coordination strategies for exquisite perceptions, versatile delicate operations, and human-involved environments. The tactile palm has a high sensing density (181,000 unit/cm2), low response pressure (1 kPa), long-term durability (over 5000 cycles), and relatively accurate shape reconstruction capabilities (92.3% in the x–y plane and 81% in the z-direction). The soft finger features two degrees of actuation, allowing TacPalm SoftHand to perform multimodal grasps for objects with various shapes and sizes. As shown in Fig. 1c, the high-density tactile palm expands the capabilities and application boundaries of the soft robotic hand to acquire exquisite 3D surface details of objects. The tactile feedback experiments additionally showcase the potential of TacPalm SoftHand for delicate operations, overcoming the limitations of traditional robotic hands in such challenging domains.
+As shown in Fig. 1d and Supplementary Table 1, the application of existing soft robotic hands with palm sensing is largely hindered due to the limited palm-finger cooperation, which stems from either the sparse palm sensing densities or the restricted finger movements. In contrast to existing works, TacPalm SoftHand features tight and extensive cooperation between the tactile palm and soft dexterous fingers. This creates significant mutual benefits and applications beyond a simple combination: the tactile palm enhances the fingers’ grasping and manipulation capabilities with various feedback strategies, while the soft dexterous fingers enhance the palm’s tactile perception by enriching the contact interactions between objects and the palm surface. Such palm-finger cooperation has demonstrated great potential, such as exquisite 3D surface reconstruction, accurate object classification, delicate dynamic manipulation, and intelligent human–robot collaboration. In the future, we envision that by integrating novel multimodal sensors, soft-rigid hybrid finger mechanisms, and advanced control algorithms, this palm-finger integrated design could further promote the development of intelligent robotic hands and pave the way for new practical human-involved applications.
+Methods
+Finger fabrication
+All the finger molds and endcaps are manufactured with a three-dimensional (3D) printer (Bambu Lab X1). The material of the molds and encaps is the printable polylactic acid (PLA). In the molding process, we first pour the mixed liquid silicone rubber Dragon Skin 10 (Smooth on, Inc., 1:1 ratio) into the molds for the finger’s inner body. A vacuum pump is used to remove the air bubbles. After 7 h of curing at 25 °C, the inner body can be demolded from the molds. Next, the endcaps and tubes are attached to the inner body with the adhesive (Sil-Poxy, Smooth on Inc.) for strong sealing. A polyethylene fabric mesh is cut by laser and attached to the bottom of the inner body. A single thread of 0.8 mm diameter is manually wound around the inner body. Finally, the inner body is attached to the molds for the finger’s outer skin, and mixed silicone rubber Ecoflex 00-30 (Smooth on, Inc., 1:1 ratio) is poured into the molds. After similar molding and demolding processes of the inner body, we can obtain the cured soft finger with the outer skin.
+Palm fabrication and assembly
+All rigid components including the bottom base, middle holder, and top holder are 3D printed with PLA material. First, the camera (size of 30 × 25 × 12 mm, resolution of 1280 × 800, field of view of θc = 70°) and LED ring are glued to the bottom base and the middle holder, respectively. The diffuser panel and acrylic plate are cut by laser. The mixed liquid silicone 00-30 (Wesitru Inc.,1:1 ratio) is injected into the mold to cast the sensing elastomer. We directly use the acrylic plate as the bottom of the mold for seamless bonding between the acrylic plate and the sensing elastomer. This eliminates the optical inhomogeneity of glue and improves the robustness in contact. After 4 h of curing at 50 °C, we carefully demold the sensing elastomer from the molds except its bottom connecting to the acrylic plate. Next, the gray silicone ink (Cool Gray, OKAI Inc.) is uniformly sprayed on the top of the sensing elastomer with a spray gun. The cure time of the ink is about 15 min at 120 °C. A thin layer of hand-feeling silicone oil (Yonglihua Inc.) is uniformly sprayed on the top surface (curing 15 min at 120 °C). Finally, the ink-covered sensing elastomer with acrylic plate and diffuser panel is mounted on the top holder with the silicone gel 704 (Kafuter Inc.).
+Pneumatic control system
+The pneumatic control system mainly includes the pump, the dSPACE DS1103 board, the Matlab (Version 2022a) control interface, and the multi-channel pressure regulation modules. In each module, the proportional regulator (Proportion-air Inc.) ensures the desired output pressures with high accuracy (0.8 kPa) and the pressure sensor (HUBA Inc.) monitors the real pressure for the specific finger segment.
+Calculation of sensing density and other sensing performance evaluations
+(i) As the diameter of cylinder probe A (diameter df = 8 mm) and the camera pixel numbers (\({N}_{x}=1280\), \({N}_{y}=800\)) are known, then we can calculate the size of each pixel dp = df/Na = 0.0235 mm/pixel, where \({N}_{a}=340\) is the detected pixel number along the circle diameter in the raw image. The sensing region can be calculated as \({L}_{x}={N}_{x}{d}_{f}/{N}_{a}=30.08{{\rm{mm}}}\) and \({L}_{y}={{N}_{y}d}_{f}/{N}_{a}=18.80\,{{\rm{mm}}}\), There, the sensing density can be calculated as \({D}_{s}=({N}_{x}{N}_{y})/({L}_{x}{L}_{y})\). (ii) For the calculation of pressure generated by probe A, the normal pressing force is denoted as \({f}_{p}\) and the corresponding pressure can be calculated as \({P}_{p}={4f}_{p}/(\pi {{d}_{f}}^{2})\). (iii) For the calculation of pressed depth generated by probe B, the radius of probe B is given (rf = 4 mm) and the pressed depth is calculated by \({h}_{p}={r}_{f}-\sqrt{{{r}_{f}}^{2}-{{r}_{b}}^{2}}={r}_{f}\left(1-\sqrt{1-{N}_{b}^{2}/{N}_{a}^{2}}\right)\). The parameters rb and Nb are the actual indentation circle radius and the pixel number along the circle diameter in the raw image, respectively. (iv) For the calculation of light intensity distribution, we convert the observed RGB raw image to an intensity map and then present its intensity contour and contour line. We also check the intensity of each channel to analyze the illumination effect of each color light.
+3D Shape reconstruction algorithm
+The palm contact surface can be modeled as a height function \(z=f(x,y)\), and the surface normal map is \({{\bf{N}}}=(\frac{\partial f}{\partial x},\frac{\partial f}{\partial y},-1)\). The observed light intensity at \((x,y)\) can be expressed as I(x,y,IR,IG,IB) = R(Gx,Gy), where \({G}_{x}=\frac{\partial f}{\partial x}\) and \({G}_{y}=\frac{\partial f}{\partial y}\) denote the surface gradient with x- and y-direction. For the lighting source of RGB image, \(I(x,y)\) has three channels and we have \(({G}_{x},{G}_{y})={{{\mathscr{R}}}}^{-1}({I}_{{{\rm{R}}}},{I}_{{{\rm{G}}}},{I}_{{{\rm{B}}}})\). We build a look-up table by the pressed images from the small ball with a diameter of 5.09 mm, and use the look-up table as \({{{\mathscr{R}}}}^{-1}\) to find the \(({G}_{x},{G}_{y})\) by the observed \(({I}_{{{\rm{R}}}},{I}_{{{\rm{G}}}},{I}_{{{\rm{B}}}})\). We use \(({G}_{x},{G}_{y})\) and the Fast Poisson Reconstruction algorithm to obtain the 3D surface shape of the object.
+Calculation of surface shape reconstruction accuracy (SSRA)
+The SSRA for x–y plane is calculated as \({\eta }_{{xy}}=1-|{w}_{g}-{\sum }_{i=1}^{n}{w}_{{gi}}/n|/{w}_{g}\), where wgi is the ith gap width and n is the number of intervals in the reconstructed 3D shape. The SSRA for z-direction is calculated as \({\eta }_{z}=1-|{h}_{t}-{\sum }_{i=1}^{n}{h}_{{ti}}/n|/{h}_{t}\), where hti is the ith pixel height in the area of the reconstructed geometry corresponding to the small step and n is the pixel number.
+Experimental setups and calculations for evaluating finger characteristics
+The minimum closing time tc is calculated by tc = tc5/5, where tc5 is the measured execution time for a soft finger performing 5 bending-extension cycles. During the cycles, the finger is actuated in UA mode with a supplied pressure of 150 kPa and a flow rate of about 12 lpm. Correspondingly, the maximum finger speed vf is calculated by vf = θbending/tc, where θbending is the finger flexion angle measured by the visual tracking system. Each kind of measurement is performed 10 times and the data are averaged.
+Experimental setups and tactile feedback algorithms for objects grasped from a plane
+The TacPalm SoftHand, mounted on the robotic arm, is positioned above the object for each grasping task. The robotic arm is controlled to move downward, allowing TacPalm SoftHand to approach the object. To establish palm tactile feedback for the pneumatic control of the fingers, we have developed an algorithm to calculate the tactile image’s variation caused by palm-object contact. A tactile image without contact is denoted as the reference image. During grasping, the real-time tactile image is captured and transmitted for analysis, where the reference image is subtracted from the current image to reveal the contact variation. This image is converted from the RGB color space to the HSV color space and the saturation channel is extracted, as the contact region tends to exhibit higher saturation. Thus, the pixel number with high saturation (PNHS) can be used to identify the contact region. The threshold for PNHS is set to m pixels based on preliminary experiments. If PNHS>m pixels, the system identifies that the object is in contact with the palm. Thus, the robotic hand–arm system can accordingly regulate its subsequent movements for different objects.
+Experimental setups for palm perception
+In both fabric classification and blind bag identification tasks, we create datasets containing tactile images from different items (fabrics or blind bags) to train the tactile perception neural network. For each item, we randomly collect 100 images for training and 10 images for testing. In the fabric classification task, we actuate all three fingers with a distal-to-proximal pressure sequence (distal segments, 130 kPa; proximal segments, 110 kPa) to press the fabric toward the palm, obtaining clear tactile images. In the blind bag identification task, we actuate all three fingers with a proximal-to-distal pressure sequence (proximal segments, 90 kPa; distal segments, 120 kPa) to press the blind bag toward the palm, obtaining clear tactile images. In both fabric classification and blind bag identification tasks, we take ResNet34 as the model to fine-tune the created dataset. In the training process, we resize collected images into 224 × 224 resolution and send them to the tactile perception neural network (initial learning rate, 0.00001; Adam optimizer; learning rate scheduler, ReduceLROnPlateau; 50 epochs of training).
+Image processing for fabric flaw detection
+We introduce a color difference metric (CDM, a dimensionless parameter) to identify whether a flaw exists. We first capture a reference tactile image without any pressing. During the fabric flaw detection experiment, we capture the corresponding tactile images with finger pressing. Their difference is calculated and is termed the difference image. For this image, we calculate the color variation between each RGB channel’s highest and lowest values. The variations of each channel are summed to obtain the CDM. Flaw regions exhibit a higher CDM while other regions merely pressed by the soft finger have a lower CDM. A threshold of CDM = 40 is preset based on our preliminary experiments to distinguish between the “flaw” case and the “flawless” case (i.e., the fingertip indentation).
+ Data availability
+ All data needed to evaluate the conclusions are presented in the paper, its “Methods” section, and Supplementary Information. The original videos and data are available from the corresponding authors on request. The source data for Figs. 3c–h, 4a–c, 5a–d, 6j, 7e, and Supplementary Figs. 7b, 11a–d are provided as a separate Source Data file. Source data are provided with this paper.
+References
+Piazza, C., Grioli, G., Catalano, M. & Bicchi, A. A century of robotic hands. Annu. Rev. Control Robot. Auton. Syst. 2, 1–32 (2019).
+Article 
+ MATH 
+ Google Scholar 
+Laffranchi, M. et al. The Hannes hand prosthesis replicates the key biological properties of the human hand. Sci. Robot. 5, eabb0467 (2020).
+Article 
+ PubMed 
+ Google Scholar 
+Kim, U. et al. Integrated linkage-driven dexterous anthropomorphic robotic hand. Nat. Commun. 12, 7177 (2021).
+Article 
+ ADS 
+ CAS 
+ PubMed 
+ PubMed Central 
+ Google Scholar 
+Shintake, J., Cacucciolo, V., Floreano, D. & Shea, H. Soft robotic grippers. Adv. Mater. 30, 1707035 (2018).
+Article 
+ Google Scholar 
+Laschi, C., Mazzolai, B. & Cianchetti, M. Soft robotics: technologies and systems pushing the boundaries of robot abilities. Sci. Robot. 1, eaah3690 (2016).
+Article 
+ PubMed 
+ Google Scholar 
+Whitesides, G. M. Soft robotics. Angew. Chem. Int. Ed. 57, 4258–4273 (2018).
+Article 
+ CAS 
+ MATH 
+ Google Scholar 
+Rus, D. & Tolley, M. T. Design, fabrication and control of soft robots. Nature 521, 467 (2015).
+Article 
+ ADS 
+ CAS 
+ PubMed 
+ MATH 
+ Google Scholar 
+Gu, G., Zhu, J., Zhu, L. & Zhu, X. A survey on dielectric elastomer actuators for soft robots. Bioinspir. Biomim. 12, 011003 (2017).
+Article 
+ ADS 
+ PubMed 
+ MATH 
+ Google Scholar 
+Shepherd, R. F. et al. Multigait soft robot. Proc. Natl. Acad. Sci. USA 108, 20400 (2011).
+Article 
+ ADS 
+ CAS 
+ PubMed 
+ PubMed Central 
+ Google Scholar 
+Baines, R. et al. Multi-environment robotic transitions through adaptive morphogenesis. Nature 610, 283–289 (2022).
+Article 
+ ADS 
+ CAS 
+ PubMed 
+ MATH 
+ Google Scholar 
+Li, G. et al. Self-powered soft robot in the Mariana Trench. Nature 591, 66–71 (2021).
+Article 
+ ADS 
+ CAS 
+ PubMed 
+ MATH 
+ Google Scholar 
+Li, S., Vogt, D. M., Rus, D. & Wood, R. J. Fluid-driven origami-inspired artificial muscles. Proc. Natl. Acad. Sci. USA 114, 13132–13137 (2017).
+Article 
+ ADS 
+ CAS 
+ PubMed 
+ PubMed Central 
+ Google Scholar 
+Gu, G. et al. A soft neuroprosthetic hand providing simultaneous myoelectric control and tactile feedback. Nat. Biomed. Eng. 7, 589–598 (2023).
+Article 
+ PubMed 
+ MATH 
+ Google Scholar 
+Catalano, M. G. et al. Adaptive synergies for the design and control of the Pisa/IIT SoftHand. Int. J. Robot. Res. 33, 768–782 (2014).
+Article 
+ MATH 
+ Google Scholar 
+Zhou, J., Chen, S. & Wang, Z. A soft-robotic gripper with enhanced object adaptation and grasping reliability. IEEE Robot. Autom. Lett. 2, 2287–2293 (2017).
+Article 
+ MATH 
+ Google Scholar 
+Teeple, C. B. et al. Controlling palm-object interactions via friction for enhanced in-hand manipulation. IEEE Robot. Autom. Lett. 7, 2258–2265 (2022).
+Article 
+ MATH 
+ Google Scholar 
+Deimel, R. & Brock, O. A novel type of compliant and underactuated robotic hand for dexterous grasping. Int. J. Robot. Res. 35, 161–185 (2016).
+Article 
+ MATH 
+ Google Scholar 
+Zhao, H., O’Brien, K., Li, S. & Shepherd, R. F. Optoelectronically innervated soft prosthetic hand via stretchable optical waveguides. Sci. Robot. 1, eaai7529 (2016).
+Becker, K. et al. Active entanglement enables stochastic, topological grasping. Proc. Natl. Acad. Sci. USA 119, e2209819119 (2022).
+Article 
+ CAS 
+ PubMed 
+ PubMed Central 
+ MATH 
+ Google Scholar 
+Ruotolo, W., Brouwer, D. & Cutkosky, M. R. From grasping to manipulation with gecko-inspired adhesives on a multifinger gripper. Sci. Robot. 6, eabi9773 (2021).
+Article 
+ PubMed 
+ Google Scholar 
+Dollar, A. M. & Howe, R. D. The highly adaptive SDM Hand: design and performance evaluation. Int. J. Robot. Res. 29, 585–597 (2010).
+Article 
+ MATH 
+ Google Scholar 
+Galloway, K. C. et al. Soft robotic grippers for biological sampling on deep reefs. Soft Robot. 3, 23–33 (2016).
+Article 
+ PubMed 
+ PubMed Central 
+ MATH 
+ Google Scholar 
+Xie, Z. et al. Octopus-inspired sensorized soft arm for environmental interaction. Sci. Robot. 8, eadh7852 (2023).
+Article 
+ PubMed 
+ Google Scholar 
+Xu, H. et al. A learning‐based sensor array for untethered soft prosthetic hand aiming at restoring tactile sensation. Adv. Intell. Syst. https://doi.org/10.1002/aisy.202300221, (2023).
+Truby, R. L. et al. Soft somatosensitive actuators via embedded 3D printing. Adv. Mater. 30, 1706383 (2018).
+Article 
+ Google Scholar 
+Shen, Z., Zhu, X., Majidi, C. & Gu, G. Cutaneous ionogel mechanoreceptors for soft machines, physiological sensing, and amputee prostheses. Adv. Mater. 33, 2102069 (2021).
+Article 
+ CAS 
+ Google Scholar 
+Boutry, C. M. et al. A hierarchically patterned, bioinspired e-skin able to detect the direction of applied pressure for robotics. Sci. Robot. 3, eaau6914 (2018).
+Article 
+ PubMed 
+ MATH 
+ Google Scholar 
+Gilday, K., George-Thuruthel, T. & Iida, F. Predictive learning of error recovery with a sensorized passivity-based soft anthropomorphic hand. Adv. Intell. Syst. 5, 2200390 (2023).
+Article 
+ Google Scholar 
+Shorthose, O., Albini, A., He, L. & Maiolino, P. Design of a 3D-printed soft robotic hand with integrated distributed tactile sensing. IEEE Robot. Autom. Lett. 7, 3945–3952 (2022).
+Article 
+ MATH 
+ Google Scholar 
+Feix, T., Romero, J., Schmiedmayer, H. B., Dollar, A. M. & Kragic, D. The grasp taxonomy of human grasp types. IEEE Trans. Hum. Mach. Syst. 46, 66–77 (2016).
+Article 
+ Google Scholar 
+Bullock, I. M., Ma, R. R. & Dollar, A. M. A hand-centric classification of human and robot dexterous manipulation. IEEE Trans. Haptics 6, 129–144 (2012).
+Article 
+ MATH 
+ Google Scholar 
+Qu, J. et al. Recent progress in advanced tactile sensing technologies for soft grippers. Adv. Funct. Mater. 33, 2306249 (2023).
+Article 
+ CAS 
+ MATH 
+ Google Scholar 
+Sundaram, S. How to improve robotic touch. Science 370, 768–769 (2020).
+Article 
+ ADS 
+ CAS 
+ PubMed 
+ MATH 
+ Google Scholar 
+Yu, Y. et al. All-printed soft human-machine interface for robotic physicochemical sensing. Sci. Robot. 7, eabn0495 (2022).
+Article 
+ PubMed 
+ PubMed Central 
+ Google Scholar 
+Su, M. et al. Soft tactile sensing for object classification and fine grasping adjustment using a pneumatic hand with an inflatable palm. IEEE Trans. Ind. Electron. 71, 3873–3883 (2024).
+Article 
+ ADS 
+ MATH 
+ Google Scholar 
+Zhang, S. et al. PaLmTac: a vision-based tactile sensor leveraging distributed-modality design and modal-matching recognition for soft hand perception. IEEE J. Sel. Top. Signal Process. https://doi.org/10.1109/JSTSP.2024.3386070. (2024).
+Lei, Z. et al. A biomimetic tactile palm for robotic object manipulation. IEEE Robot. Autom. Lett. 7, 11500–11507 (2022).
+Article 
+ Google Scholar 
+Hogan, F. R., Ballester, J., Dong, S. & Rodriguez, A. Tactile dexterity: manipulation primitives with tactile feedback. In 2020 IEEE International Conference on Robotics and Automation (ICRA) 8863-–8869 (IEEE, 2020).
+Pozzi, M. et al. Actuated palms for soft robotic hands: review and perspectives. IEEE/ASME Trans. Mechatron. 29, 902–912 (2023).
+Article 
+ MATH 
+ Google Scholar 
+Yuan, W., Dong, S. & Adelson, E. H. GelSight: high-resolution robot tactile sensors for estimating geometry and force. Sensors 17, 2762 (2017).
+Article 
+ ADS 
+ PubMed 
+ PubMed Central 
+ MATH 
+ Google Scholar 
+Taylor, I. H., Dong, S. & Rodriguez, A. GelSlim 3.0: high-resolution measurement of shape, force and slip in a compact tactile-sensing finger. In 2022 International Conference on Robotics and Automation (ICRA) 10781–10787 (IEEE, 2022).
+Ma, D., Dong, S. & Rodriguez, A. Extrinsic contact sensing with relative-motion tracking from distributed tactile measurements. In 2021 IEEE International Conference on Robotics and Automation (ICRA) 11262–11268 (IEEE, 2021).
+Lin, C., Zhang, H., Xu, J., Wu, L. & Xu, H. 9DTact: a compact vision-based tactile sensor for accurate 3D shape reconstruction and generalizable 6D force estimation. IEEE Robot. Autom. Lett. 17, 923–930 (2023).
+MATH 
+ Google Scholar 
+Li, S. et al. Visual-tactile fusion for transparent object grasping in complex backgrounds. IEEE Trans. Robot. 39, 3838–3856 (2023).
+Article 
+ MATH 
+ Google Scholar 
+Zhang, Y., Chen, X., Wang, M. Y. & Yu, H. Multidimensional tactile sensor with a thin compound eye-inspired imaging system. Soft Robot. 9, 861–870 (2021).
+Article 
+ PubMed 
+ MATH 
+ Google Scholar 
+Gomes, D. F., Lin, Z. & Luo, S. GelTip: a finger-shaped optical tactile sensor for robotic manipulation. In 2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 9903–9909 (IEEE, 2020).
+Polygerinos, P. et al. Modeling of soft fiber-reinforced bending actuators. IEEE Trans. Robot. 31, 778–789 (2015).
+Article 
+ MATH 
+ Google Scholar 
+Connolly, F., Walsh, C. J. & Bertoldi, K. Automatic design of fiber-reinforced soft actuators for trajectory matching. Proc. Natl. Acad. Sci. USA 114, 51 (2017).
+Article 
+ ADS 
+ CAS 
+ PubMed 
+ MATH 
+ Google Scholar 
+Cutkosky, M. R. On grasp choice, grasp models, and the design of hands for manufacturing tasks. IEEE Trans. Robot. Autom. 5, 269–279 (1989).
+Article 
+ MATH 
+ Google Scholar 
+Teeple, C. B., Koutros, T. N., Graule, M. A. & Wood, R. J. Multi-segment soft robotic fingers enable robust precision grasping. Int. J. Robot. Res. 39, 1647–1667 (2020).
+Article 
+ Google Scholar 
+Neumann, D. A. Kinesiology of the Musculoskeletal System 25–40 (Mosby, St Louis, 2002).
+Falco, J. et al. Grasping the performance: facilitating replicable performance measures via benchmarking and standardized methodologies. IEEE Robot. Autom. Mag. 22, 125–136 (2015).
+Article 
+ MATH 
+ Google Scholar 
+Belter, J. T., Segil, J. L. & Sm, B. S. Mechanical design and performance specifications of anthropomorphic prosthetic hands: a review. J. Rehabil. Res. Dev. 50, 599 (2013).
+Article 
+ PubMed 
+ Google Scholar 
+Cini, F. et al. On the choice of grasp type and location when handing over an object. Sci. Robot. 4, eaau9757 (2019).
+Article 
+ PubMed 
+ MATH 
+ Google Scholar 
+He, K. et al. Deep residual learning for image recognition. In Proc. IEEE Conference on Computer Vision and Pattern Recognition 770–778 (IEEE, 2016).
+Kim, J. et al. Octopus-inspired suction cup array for versatile grasping operations. IEEE Robot. Autom. Lett. 8, 2962–2969 (2023).
+Article 
+ MATH 
+ Google Scholar 
+Yang, D. et al. An overview of edge and object contour detection. Neurocomputing 488, 470–493 (2022).
+Article 
+ MATH 
+ Google Scholar 
+Download references
+Acknowledgements
+This study was supported in part by the National Natural Science Foundation of China (Grant Nos. 52025057, 52305029, and 91948302), the Science and Technology Commission of Shanghai Municipality (Grant No. 24511103400), the China Postdoctoral Innovation Talents Support Program (Grant BX20220204), and the China Postdoctoral Science Foundation (Grant 2022M722085). We thank the support from the Xplorer Prize. We thank J. Yu for her help on machine learning. We thank J. Zhang and T. Huang for their help on experimental setups.
+Author information
+Author notesThese authors contributed equally: Ningbin Zhang, Jieji Ren.
+Authors and Affiliations
+Robotics Institute, School of Mechanical Engineering, Shanghai Jiao Tong University, Shanghai, China
+Ningbin Zhang, Jieji Ren, Yueshi Dong, Xinyu Yang, Rong Bian, Jinhao Li, Guoying Gu & Xiangyang Zhu
+State Key Laboratory of Mechanical System and Vibration, Shanghai Jiao Tong University, Shanghai, China
+Guoying Gu & Xiangyang Zhu
+Shanghai Key Laboratory of Intelligent Robotics, Meta Robotics Institute, Shanghai Jiao Tong University, Shanghai, China
+Guoying Gu & Xiangyang Zhu
+AuthorsNingbin ZhangView author publications
+Search author on:PubMed Google Scholar
+Jieji RenView author publications
+Search author on:PubMed Google Scholar
+Yueshi DongView author publications
+Search author on:PubMed Google Scholar
+Xinyu YangView author publications
+Search author on:PubMed Google Scholar
+Rong BianView author publications
+Search author on:PubMed Google Scholar
+Jinhao LiView author publications
+Search author on:PubMed Google Scholar
+Guoying GuView author publications
+Search author on:PubMed Google Scholar
+Xiangyang ZhuView author publications
+Search author on:PubMed Google Scholar
+Contributions
+N.Z. and J.R. conceived the idea and designed the study. N.Z., J.R., Y.D., X.Y., R.B., and J.L. conducted the experiments. N.Z., J.R., and Y.D. analyzed and interpreted the results. X.Z. and G.G. directed the project. All the authors contributed to the writing and editing.
+Corresponding authors
+Correspondence to
+ Guoying Gu or Xiangyang Zhu.
+Ethics declarations
+ Competing interests
+ The authors declare no competing interests.
+Peer review
+ Peer review information
+ Nature Communications thanks Gionata Salvietti and the other anonymous reviewer for their contribution to the peer review of this work. A peer review file is available.
+Additional information
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+Supplementary information
+Supplementary Information (download PDF )
+Description of Additional Supplementary Files (download DOCX )
+Supplementary Movie 1 (download MP4 )
+Supplementary Movie 2 (download MP4 )
+Supplementary Movie 3 (download MP4 )
+Supplementary Movie 4 (download MP4 )
+Supplementary Movie 5 (download MP4 )
+Supplementary Movie 6 (download MP4 )
+Supplementary Movie 7 (download MP4 )
+Supplementary Movie 8 (download MP4 )
+Supplementary Movie 9 (download MP4 )
+Supplementary Movie 10 (download MP4 )
+Transparent Peer Review file (download PDF )
+Source data
+Source Data (download ZIP )
+Rights and permissions
+ Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
+ Reprints and permissions
+About this article
+Cite this article
+Zhang, N., Ren, J., Dong, Y. et al. Soft robotic hand with tactile palm-finger coordination.
+ Nat Commun 16, 2395 (2025). https://doi.org/10.1038/s41467-025-57741-6
+Download citation
+Received: 28 June 2024
+Accepted: 26 February 2025
+Published: 10 March 2025
+Version of record: 10 March 2025
+DOI: https://doi.org/10.1038/s41467-025-57741-6
+Share this article
+Anyone you share the following link with will be able to read this content:
+Get shareable linkSorry, a shareable link is not currently available for this article.
+Copy shareable link to clipboard
+ Provided by the Springer Nature SharedIt content-sharing initiative
+ Download PDF
+ Advertisement
+ Explore content
+ Research articles
+ Reviews & Analysis
+ News & Comment
+ Videos
+ Collections
+ Subjects
+ Follow us on Facebook
+ Follow us on X
+ Sign up for alerts
+ RSS feed
+ About the journal
+ Aims & Scope
+ Editors
+ Journal Information
+ Open Access Fees and Funding
+ Calls for Papers
+ Editorial Values Statement
+ Journal Metrics
+ Editors' Highlights
+ Contact
+ Editorial policies
+ Top Articles
+ Publish with us
+ For authors
+ For Reviewers
+ Language editing services
+ Open access funding
+ Submit manuscript
+ Search
+ Search articles by subject, keyword or author
+ Show results from
+ All journals
+ This journal
+ Search
+ Advanced search
+ Quick links
+ Explore articles by subject
+ Find a job
+ Guide to authors
+ Editorial policies
+ Nature Communications
+ (Nat Commun)
+ ISSN 2041-1723 (online)
+ nature.com footer links
+ About Nature Portfolio
+ About us
+ Press releases
+ Press office
+ Contact us
+ Discover content
+ Journals A-Z
+ Articles by subject
+ protocols.io
+ Nature Index
+ Publishing policies
+ Nature portfolio policies
+ Open access
+ Author & Researcher services
+ Reprints & permissions
+ Research data
+ Language editing
+ Scientific editing
+ Nature Masterclasses
+ Research Solutions
+ Libraries & institutions
+ Librarian service & tools
+ Librarian portal
+ Open research
+ Recommend to library
+ Advertising & partnerships
+ Advertising
+ Partnerships & Services
+ Media kits
+ Branded
+ content
+ Professional development
+ Nature Awards
+ Nature Careers
+ Nature 
+ Conferences
+ Regional websites
+ Nature Africa
+ Nature China
+ Nature India
+ Nature Japan
+ Nature Middle East
+ Privacy
+ Policy
+ Use
+ of cookies
+ Your privacy choices/Manage cookies
+ Legal
+ notice
+ Accessibility
+ statement
+ Terms & Conditions
+ Your US state privacy rights
+ © 2026 Springer Nature Limited
+ Close banner
+ Close
+ Sign up for the Nature Briefing newsletter — what matters in science, free to your inbox daily.
+ Email address
+ Sign up
+ I agree my information will be processed in accordance with the Nature and Springer Nature Limited Privacy Policy.
+ Close banner
+ Close
+ Get the most important science stories of the day, free in your inbox.
+ Sign up for Nature Briefing

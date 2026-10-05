@@ -1,0 +1,1689 @@
+updated: '2026-10-02'
+items:
+- id: shadow-classic
+  name: Shadow Classic 2024
+  status: explain-existing
+- id: leap-v1
+  name: LEAP Hand v1 Full
+  status: explain-existing
+- id: allegro-v4
+  name: Allegro Hand V4
+  status: partial
+- id: dlr-hand-ii
+  name: DLR Hand II
+  status: partial
+- id: barrett-bh8-280
+  name: Barrett BH8-280
+  status: partial
+  research_note: hands/barrett-bh8-280.md
+- id: candidate-01
+  name: Xynova Flex series
+  status: candidate
+  note: 已拆出一个具体型号开展核查，其余系列型号仍待核查；不重复计为独立硬件。
+  children:
+  - xynova-flex-2
+- id: candidate-02
+  name: Allegro V5 / V5 Plus / V5 Sense / V6 F
+  status: candidate
+  note: 名称与版本待核验；检索线索，不是已确认产品记录
+- id: candidate-03
+  name: Shadow DEX-EE / Lite
+  status: candidate
+  note: 已拆出具体型号笔记；系列线索不重复计数，其余内容仍待核验。
+  children:
+  - shadow-dex-ee
+  - shadow-dex-ee-chiral
+- id: candidate-04
+  name: LEAP v2 / v2 Advanced
+  status: candidate
+  note: 名称与版本待核验；检索线索，不是已确认产品记录
+- id: candidate-05
+  name: DLR HIT Hand II
+  status: candidate
+  note: 名称与版本待核验；检索线索，不是已确认产品记录
+- id: candidate-06
+  name: DLR CLASH
+  status: candidate
+  note: 已拆出具体型号笔记；系列线索不重复计数，其余内容仍待核验。
+  children:
+  - dlr-clash
+- id: candidate-07
+  name: Pisa IIT SoftHand
+  status: candidate
+  note: 已拆出具体型号笔记；系列线索不重复计数，其余内容仍待核验。
+  children:
+  - pisa-iit-softhand
+- id: candidate-08
+  name: SoftHand Pro
+  status: candidate
+  note: 已拆出具体型号笔记；系列线索不重复计数，其余内容仍待核验。
+  children:
+  - softhand-pro
+- id: candidate-09
+  name: RBO Hand 2 / 3
+  status: candidate
+  note: 名称与版本待核验；检索线索，不是已确认产品记录
+- id: candidate-10
+  name: iCub hand
+  status: candidate
+  note: 名称与版本待核验；检索线索，不是已确认产品记录
+- id: candidate-11
+  name: iCub ergoCub hand
+  status: candidate
+  note: 名称与版本待核验；检索线索，不是已确认产品记录
+- id: candidate-12
+  name: Robonaut hand
+  status: candidate
+  note: 名称与版本待核验；检索线索，不是已确认产品记录
+- id: candidate-13
+  name: NASA Valkyrie hand
+  status: candidate
+  note: 名称与版本待核验；检索线索，不是已确认产品记录
+- id: candidate-14
+  name: TriFinger
+  status: candidate
+  note: 已拆出具体型号笔记；系列线索不重复计数，其余内容仍待核验。
+  children:
+  - trifinger
+- id: candidate-15
+  name: Dactyl Manuform research hands
+  status: candidate
+  note: 名称与版本待核验；检索线索，不是已确认产品记录
+- id: candidate-16
+  name: Yale OpenHand Model O / T
+  status: candidate
+  note: 已拆出具体型号笔记；系列线索不重复计数，其余内容仍待核验。
+  children:
+  - yale-model-t
+  - yale-model-o
+- id: candidate-17
+  name: GR2 gripper research platform
+  status: candidate
+  note: 名称与版本待核验；检索线索，不是已确认产品记录
+- id: candidate-18
+  name: SCHUNK SVH / SIH
+  status: candidate
+  note: 已拆出具体型号笔记；系列线索不重复计数，其余内容仍待核验。
+  children:
+  - schunk-svh
+- id: candidate-19
+  name: qb SoftHand
+  status: candidate
+  note: 名称与版本待核验；检索线索，不是已确认产品记录
+- id: candidate-20
+  name: PSYONIC Ability Hand
+  status: partial
+  note: 名称与版本待核验；检索线索，不是已确认产品记录
+  research_note: hands/psyonic-ability-hand.md
+- id: candidate-21
+  name: ROBOTIS RH-P12-RN
+  status: candidate
+  note: 已拆出具体型号笔记；系列线索不重复计数，其余内容仍待核验。
+  children:
+  - robotis-rh-p12-rn
+- id: candidate-22
+  name: Tesollo DELTO grippers
+  status: candidate
+  note: 已拆出一个具体型号开展核查，其余系列型号仍待核查；不重复计为独立硬件。
+  children:
+  - tesollo-dg-5f-s
+- id: candidate-23
+  name: Inspire RH56 series
+  status: candidate
+  note: 已拆出一个具体型号开展核查，其余系列型号仍待核查；不重复计为独立硬件。
+  children:
+  - inspire-rh56dfx
+- id: candidate-24
+  name: Linker Hand
+  status: candidate
+  note: 名称与版本待核验；检索线索，不是已确认产品记录
+- id: candidate-25
+  name: DexRobot DexHand
+  status: candidate
+  note: 名称与版本待核验；检索线索，不是已确认产品记录
+- id: candidate-26
+  name: Unitree Dex3 / Dex5
+  status: candidate
+  note: 已拆出一个具体型号开展核查，其余系列型号仍待核查；不重复计为独立硬件。
+  children:
+  - unitree-dex3-1
+- id: candidate-27
+  name: BrainCo dexterous hand
+  status: candidate
+  note: 名称与版本待核验；检索线索，不是已确认产品记录
+- id: candidate-28
+  name: PaXini dexterous hand
+  status: candidate
+  note: 名称与版本待核验；检索线索，不是已确认产品记录
+- id: candidate-29
+  name: F-TAC Hand
+  status: candidate
+  note: 已拆出具体型号笔记；系列线索不重复计数，其余内容仍待核验。
+  children:
+  - f-tac-hand
+- id: candidate-30
+  name: GelSight Svelte Hand
+  status: candidate
+  note: 已拆出具体型号笔记；系列线索不重复计数，其余内容仍待核验。
+  children:
+  - gelsight-svelte
+- id: candidate-31
+  name: ADAPT Hand / ADAPT Teleop
+  status: source-opened
+  note: Primary full text blocked; cached excerpts are leads only. Separate hardware
+    from ADAPT-Teleop.
+  research_note: papers/adapt-hand-source-lead.md
+- id: candidate-32
+  name: Tesla Optimus hand generations
+  status: candidate
+  note: 名称与版本待核验；检索线索，不是已确认产品记录
+- id: candidate-33
+  name: Figure hand generations
+  status: candidate
+  note: 名称与版本待核验；检索线索，不是已确认产品记录
+- id: candidate-34
+  name: Sanctuary Phoenix hand
+  status: candidate
+  note: 名称与版本待核验；检索线索，不是已确认产品记录
+- id: candidate-35
+  name: Apptronik Apollo hand
+  status: candidate
+  note: 名称与版本待核验；检索线索，不是已确认产品记录
+- id: candidate-36
+  name: Fourier dexterous hand
+  status: candidate
+  note: 名称与版本待核验；检索线索，不是已确认产品记录
+- id: sharpa-w01
+  name: Sharpa W01 / Wave
+  entity_type: hardware
+  status: partial
+  priority: high
+  source_leads:
+  - https://www.sharpa.com/pages/about
+  note: 已读官方来源并写入独立笔记；版本差异、测试条件与外部评价仍待补。
+  research_note: hands/sharpa-w01.md
+- id: sharpa-w02
+  name: Sharpa W02
+  entity_type: hardware
+  status: candidate
+  priority: high
+  source_leads:
+  - https://www.sharpa.com/
+  note: 新检索线索；需打开原始来源核验。论文、机构、整机系统不计作新增灵巧手型号。
+- id: sudo-r1
+  name: Sudo R1 系统与自研硬件
+  entity_type: system
+  status: partial
+  priority: high
+  source_leads:
+  - https://www.sudo.ai/
+  note: 已读原始项目网页并解释实验指标；硬件版本、完整实验协议待核验。
+  research_note: systems/sudo-r1.md
+- id: linker-l20
+  name: Linker Hand L20
+  entity_type: hardware
+  status: partial
+  priority: high
+  source_leads:
+  - https://www.linkerhand.com/faq/overview/
+  note: 已读官方来源并写入独立笔记；版本差异、测试条件与外部评价仍待补。
+  research_note: hands/linker-l20.md
+- id: linker-l30
+  name: Linker Hand L30
+  entity_type: hardware
+  status: partial
+  priority: high
+  source_leads:
+  - https://www.linkerhand.com/faq/overview/
+  note: 新检索线索；需打开原始来源核验。论文、机构、整机系统不计作新增灵巧手型号。
+  research_note: hands/linker-l30.md
+- id: linker-lineup
+  name: 灵心巧手其他型号与文档目录
+  entity_type: organization
+  status: candidate
+  priority: high
+  source_leads:
+  - https://linkerhand.com/about/
+  note: 新检索线索；需打开原始来源核验。论文、机构、整机系统不计作新增灵巧手型号。
+- id: nvidia-research
+  name: NVIDIA 灵巧操作研究及实际使用硬件
+  entity_type: organization
+  status: candidate
+  priority: high
+  source_leads:
+  - https://research.nvidia.com/research-area/robotics
+  note: 新检索线索；需打开原始来源核验。论文、机构、整机系统不计作新增灵巧手型号。
+- id: dexpilot
+  name: DexPilot
+  entity_type: paper-system
+  status: candidate
+  priority: high
+  source_leads:
+  - https://research.nvidia.com/publication/2020-05_dexpilot-vision-based-teleoperation-dexterous-robotic-hand-arm-system
+  note: 新检索线索；需打开原始来源核验。论文、机构、整机系统不计作新增灵巧手型号。
+- id: dextreme
+  name: DeXtreme
+  entity_type: paper-system
+  status: partial
+  priority: high
+  source_leads:
+  - https://research.nvidia.com/publication/2023-06_dextreme-transfer-agile-hand-manipulation-simulation-reality
+  note: 已读原始项目网页并解释实验指标；硬件版本、完整实验协议待核验。
+  research_note: papers/dextreme.md
+- id: dexplore
+  name: Dexplore
+  entity_type: paper-system
+  status: partial
+  priority: high
+  source_leads:
+  - https://research.nvidia.com/labs/srl/projects/dexplore/
+  note: 新检索线索；需打开原始来源核验。论文、机构、整机系统不计作新增灵巧手型号。
+  research_note: papers/dexplore.md
+- id: adapt-teleop-paper
+  name: ADAPT-Teleop
+  entity_type: paper-system
+  status: candidate
+  priority: high
+  source_leads:
+  - https://www.nature.com/articles/s44182-025-00034-3
+  note: 新检索线索；需打开原始来源核验。论文、机构、整机系统不计作新增灵巧手型号。
+- id: detachable-crawling-hand
+  name: A detachable crawling robotic hand
+  entity_type: paper-hardware
+  status: partial
+  priority: high
+  source_leads:
+  - https://www.nature.com/articles/s41467-025-67675-8
+  note: Read selected original paper sections; protocol and resource gaps recorded
+    in note.
+  research_note: hands/detachable-crawling-hand.md
+- id: soft-neuroprosthetic-2026
+  name: A high-dexterity soft neuroprosthetic hand for daily activities
+  entity_type: paper-hardware-adjacent
+  status: candidate
+  priority: high
+  source_leads:
+  - https://www.nature.com/articles/s41467-026-75105-6
+  note: 新检索线索；需打开原始来源核验。论文、机构、整机系统不计作新增灵巧手型号。
+- id: dexlink-hand
+  name: DexLink Hand
+  entity_type: paper-hardware
+  status: partial
+  priority: high
+  source_leads:
+  - https://arxiv.org/abs/2606.17418
+  note: 新检索线索；需打开原始来源核验。论文、机构、整机系统不计作新增灵巧手型号。
+  research_note: hands/dexlink-hand.md
+- id: rbo-hand3-paper
+  name: RBO Hand 3 — A Platform for Soft Dexterous Manipulation
+  entity_type: paper-hardware
+  status: partial
+  priority: high
+  source_leads:
+  - https://arxiv.org/abs/2201.10883
+  note: Read selected original paper sections; protocol and resource gaps recorded
+    in note.
+  research_note: hands/rbo-hand-3.md
+- id: hand-intelligence-survey
+  name: 'Towards Robotic Dexterous Hand Intelligence: A Survey'
+  entity_type: survey-discovery
+  status: candidate
+  priority: high
+  source_leads:
+  - https://arxiv.org/abs/2605.13925
+  note: 新检索线索；需打开原始来源核验。论文、机构、整机系统不计作新增灵巧手型号。
+- id: hands-workshop-2026
+  name: HANDS 2026 Challenge 与 LinkerHand O6 线索
+  entity_type: paper-system
+  status: candidate
+  priority: high
+  source_leads:
+  - https://arxiv.org/abs/2609.21511
+  note: 新检索线索；需打开原始来源核验。论文、机构、整机系统不计作新增灵巧手型号。
+- id: wuji-hand
+  name: 舞肌科技 Wuji Hand（初代）
+  entity_type: hardware
+  status: partial
+  priority: high
+  source_leads:
+  - https://www.wuji.tech/zh/hand
+  research_note: hands/wuji-hand.md
+  note: 已读产品页、控制文档和模型入口；不跨版本合并触觉和负载参数。
+- id: wuji-hand-2
+  name: 舞肌科技 Wuji Hand 2（2.2 Beta 文档）
+  entity_type: hardware
+  status: partial
+  priority: high
+  source_leads:
+  - https://docs.wuji.tech/docs/zh/wuji-hand/latest/
+  research_note: hands/wuji-hand-2.md
+  note: 已读产品页、控制文档和模型入口；不跨版本合并触觉和负载参数。
+- id: dexco-hand
+  name: DexCo Hand
+  entity_type: paper-hardware
+  status: partial
+  priority: high
+  research_note: hands/dexco-hand.md
+  source_leads:
+  - https://msc.berkeley.edu/research/mechatronics/dexco.html
+- id: digiarm
+  name: DigiArm
+  entity_type: paper-hardware-adjacent
+  status: partial
+  priority: high
+  research_note: hands/digiarm.md
+  source_leads:
+  - https://arxiv.org/abs/2602.23017
+- id: dro-grasp
+  name: D(R,O) Grasp
+  entity_type: paper-system
+  status: partial
+  priority: high
+  research_note: papers/dro-grasp.md
+  source_leads:
+  - https://nus-lins-lab.github.io/drograspweb/
+- id: dexfit
+  name: DexFIT
+  entity_type: paper-system
+  status: partial
+  priority: high
+  research_note: papers/dexfit.md
+  source_leads:
+  - https://jaylee00.github.io/Dex-FIT/
+- id: inspire-rh56dfx
+  name: Inspire RH56DFX
+  status: partial
+  entity_type: hardware
+  research_note: hands/inspire-rh56dfx.md
+  parent_candidate: candidate-23
+- id: tesollo-dg-5f-s
+  name: Tesollo DG-5F-S
+  status: partial
+  entity_type: hardware
+  research_note: hands/tesollo-dg-5f-s.md
+  parent_candidate: candidate-22
+- id: unitree-dex3-1
+  name: Unitree Dex3-1
+  status: partial
+  entity_type: hardware
+  research_note: hands/unitree-dex3-1.md
+  parent_candidate: candidate-26
+- id: xynova-flex-2
+  name: Xynova Flex 2
+  status: partial
+  entity_type: hardware
+  research_note: hands/xynova-flex-2.md
+  parent_candidate: candidate-01
+- id: yale-model-t
+  name: Yale OpenHand Model T
+  entity_type: hardware
+  status: partial
+  research_note: hands/yale-model-t.md
+  source_leads:
+  - https://www.eng.yale.edu/grablab/openhand/model_t.html
+  parent_candidate: candidate-16
+- id: yale-model-o
+  name: Yale OpenHand Model O
+  entity_type: hardware
+  status: partial
+  research_note: hands/yale-model-o.md
+  source_leads:
+  - https://www.eng.yale.edu/grablab/openhand/model_o.html
+  parent_candidate: candidate-16
+- id: pisa-iit-softhand
+  name: Pisa/IIT SoftHand
+  entity_type: hardware
+  status: partial
+  research_note: hands/pisa-iit-softhand.md
+  source_leads:
+  - https://www.iit.it/en-US/web/robotics-for-a-better-life/softhand_pro
+  parent_candidate: candidate-07
+- id: softhand-pro
+  name: SoftHand Pro
+  entity_type: hardware
+  status: partial
+  research_note: hands/softhand-pro.md
+  source_leads:
+  - https://www.iit.it/en-US/web/robotics-for-a-better-life/softhand_pro
+  parent_candidate: candidate-08
+- id: dlr-clash
+  name: DLR CLASH
+  entity_type: hardware
+  status: partial
+  research_note: hands/dlr-clash.md
+  source_leads:
+  - https://www.dlr.de/de/rm/forschung/robotersysteme/hande/clash
+  parent_candidate: candidate-06
+- id: schunk-svh
+  name: SCHUNK SVH（右手1545592）
+  entity_type: hardware
+  status: partial
+  research_note: hands/schunk-svh.md
+  source_leads:
+  - https://schunk.com/us/en/gripping-systems/special-gripper/svh/svh-rechte-hand/p/000000000001545592
+  parent_candidate: candidate-18
+- id: trifinger
+  name: TriFinger（RL Datasets平台）
+  entity_type: hardware
+  status: partial
+  research_note: hands/trifinger.md
+  source_leads:
+  - https://webdav.tuebingen.mpg.de/trifinger-rl/docs/real_robot/about_platform.html
+  parent_candidate: candidate-14
+- id: robotis-rh-p12-rn
+  name: ROBOTIS RH-P12-RN
+  entity_type: hardware
+  status: partial
+  research_note: hands/robotis-rh-p12-rn.md
+  source_leads:
+  - https://en.robotis.com/model/page.php?co_id=prd_hand
+  parent_candidate: candidate-21
+- id: gelsight-svelte
+  name: GelSight Svelte Hand
+  entity_type: hardware
+  status: partial
+  research_note: hands/gelsight-svelte.md
+  source_leads:
+  - https://arxiv.org/abs/2309.10886
+  parent_candidate: candidate-30
+- id: bpi-softhand
+  name: BRL/Pisa/IIT SoftHand
+  entity_type: hardware
+  status: partial
+  research_note: hands/bpi-softhand.md
+  source_leads:
+  - https://arxiv.org/abs/2206.12655
+- id: tactile-model-o
+  name: Tactile Model O（T-MO）
+  entity_type: hardware
+  status: partial
+  research_note: hands/tactile-model-o.md
+  source_leads:
+  - https://arxiv.org/abs/1907.07535
+- id: f-tac-hand
+  name: F-TAC Hand
+  entity_type: hardware
+  status: partial
+  research_note: hands/f-tac-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2412.14482
+  parent_candidate: candidate-29
+- id: tactile-softhand-a
+  name: Tactile SoftHand-A
+  entity_type: hardware
+  status: partial
+  research_note: hands/tactile-softhand-a.md
+  source_leads:
+  - https://arxiv.org/abs/2406.12731
+- id: shadow-dex-ee
+  name: Shadow DEX-EE
+  entity_type: hardware
+  status: partial
+  research_note: hands/shadow-dex-ee.md
+  source_leads:
+  - https://shadowrobot.com/dex-ee_series/
+  parent_candidate: candidate-03
+- id: shadow-dex-ee-chiral
+  name: Shadow DEX-EE Chiral
+  entity_type: hardware
+  status: partial
+  research_note: hands/shadow-dex-ee-chiral.md
+  source_leads:
+  - https://shadowrobot.com/dex-ee_series/
+  parent_candidate: candidate-03
+- id: yale-model-q
+  name: Yale Model Q
+  entity_type: research-hand
+  status: partial
+  research_note: hands/yale-model-q.md
+  source_leads:
+  - https://www.eng.yale.edu/grablab/openhand/model_q.html
+- id: yale-model-vf
+  name: Yale Model VF
+  entity_type: research-gripper
+  status: partial
+  research_note: hands/yale-model-vf.md
+  source_leads:
+  - https://www.eng.yale.edu/grablab/openhand/model_vf.html
+- id: yale-model-w
+  name: Yale Model W
+  entity_type: research-gripper
+  status: partial
+  research_note: hands/yale-model-w.md
+  source_leads:
+  - https://www.eng.yale.edu/grablab/openhand/
+- id: yale-model-t42
+  name: Yale Model T42
+  entity_type: research-gripper
+  status: partial
+  research_note: hands/yale-model-t42.md
+  source_leads:
+  - https://www.eng.yale.edu/grablab/openhand/model_t42.html
+- id: yale-stewart-hand
+  name: Yale Stewart Hand
+  entity_type: research-hand
+  status: partial
+  research_note: hands/yale-stewart-hand.md
+  source_leads:
+  - https://www.eng.yale.edu/grablab/openhand/stewart_hand.html
+- id: yale-model-m2
+  name: Yale Model M2
+  entity_type: research-gripper
+  status: partial
+  research_note: hands/yale-model-m2.md
+  source_leads:
+  - https://www.eng.yale.edu/grablab/openhand/model_m2.html
+- id: yale-model-m
+  name: Yale Model M
+  entity_type: research-gripper
+  status: partial
+  research_note: hands/yale-model-m.md
+  source_leads:
+  - https://www.eng.yale.edu/grablab/openhand/model_m2.html
+- id: yale-sphinx
+  name: Yale Sphinx Hand
+  entity_type: research-hand
+  status: partial
+  research_note: hands/yale-sphinx.md
+  source_leads:
+  - https://www.eng.yale.edu/grablab/openhand/sphinx_hand.html
+- id: yale-model-f3
+  name: Yale Model F3
+  entity_type: research-gripper
+  status: partial
+  research_note: hands/yale-model-f3.md
+  source_leads:
+  - https://www.eng.yale.edu/grablab/openhand/model_f3.html
+- id: dlr-hit-hand-ii
+  name: DLR-HIT Hand II
+  entity_type: research-hand
+  status: partial
+  research_note: hands/dlr-hit-hand-ii.md
+  source_leads:
+  - https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hit-hand-ii
+- id: dlr-david
+  name: DLR David / Awiwi Hand
+  entity_type: research-hand
+  status: partial
+  research_note: hands/dlr-david.md
+  source_leads:
+  - https://www.dlr.de/en/rm/research/robotic-systems/hands/david-hand
+- id: dlr-smarthand
+  name: DLR SmartHand
+  entity_type: research-hand
+  status: partial
+  research_note: hands/dlr-smarthand.md
+  source_leads:
+  - https://www.dlr.de/en/rm/research/robotic-systems/hands/smarthand
+- id: dlr-dexhand
+  name: DLR DEXHAND
+  entity_type: research-hand
+  status: partial
+  research_note: hands/dlr-dexhand.md
+  source_leads:
+  - https://www.dlr.de/en/rm/research/robotic-systems/hands/dexhand-2012-2015
+- id: dlr-spacehand
+  name: DLR Spacehand
+  entity_type: research-hand
+  status: partial
+  research_note: hands/dlr-spacehand.md
+  source_leads:
+  - https://www.dlr.de/en/rm/research/robotic-systems/hands/spacehand-2015-2018
+- id: dlr-hand-i
+  name: DLR Hand I
+  entity_type: research-hand
+  status: partial
+  research_note: hands/dlr-hand-i.md
+  source_leads:
+  - https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hand-i-1998
+- id: tesollo-dg-5f-m
+  name: Tesollo DG-5F-M
+  entity_type: commercial-hand
+  status: partial
+  research_note: hands/tesollo-dg-5f-m.md
+  source_leads:
+  - https://www.tesollo.com/products/grippers/dg-5f-m
+- id: tesollo-dg-4f
+  name: Tesollo DG-4F
+  entity_type: commercial-hand
+  status: partial
+  research_note: hands/tesollo-dg-4f.md
+  source_leads:
+  - https://www.tesollo.com/products/grippers/dg-4f
+- id: tesollo-dg-3f-m
+  name: Tesollo DG-3F-M
+  entity_type: commercial-hand
+  status: partial
+  research_note: hands/tesollo-dg-3f-m.md
+  source_leads:
+  - https://www.tesollo.com/products/grippers/dg-3f-m
+- id: tesollo-dg-3f-b
+  name: Tesollo DG-3F-B
+  entity_type: commercial-hand
+  status: partial
+  research_note: hands/tesollo-dg-3f-b.md
+  source_leads:
+  - https://www.tesollo.com/products/grippers/dg-3f-b
+- id: tesollo-dg-2f
+  name: Tesollo DG-2F（多关节版）
+  entity_type: commercial-gripper
+  status: partial
+  research_note: hands/tesollo-dg-2f.md
+  source_leads:
+  - https://www.tesollo.com/products/grippers/dg-2f
+- id: aero-hand-open
+  name: Aero Hand Open
+  entity_type: 研究灵巧手
+  status: partial
+  research_note: hands/aero-hand-open.md
+  source_leads:
+  - https://arxiv.org/abs/2608.28578
+- id: chen-qin-tactile-hand
+  name: Chen/Qin 分布式触觉腱驱手
+  entity_type: 研究灵巧手
+  status: partial
+  research_note: hands/chen-qin-tactile-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2608.25547
+- id: handroid
+  name: Handroid
+  entity_type: 可重构研究手
+  status: partial
+  research_note: hands/handroid.md
+  source_leads:
+  - https://arxiv.org/abs/2607.16187
+- id: midas-hand
+  name: MIDAS Hand
+  entity_type: 研究灵巧手
+  status: partial
+  research_note: hands/midas-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2607.14487
+- id: mcr-bionic-hand
+  name: MCR-Bionic Hand
+  entity_type: 仿生研究手
+  status: partial
+  research_note: hands/mcr-bionic-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2606.13601
+- id: zhang-wang-hughes-modular-hand
+  name: Zhang/Wang/Hughes 模块化优化手
+  entity_type: 研究灵巧手
+  status: partial
+  research_note: hands/zhang-wang-hughes-modular-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2606.11826
+- id: ruka-v2
+  name: RUKA v2
+  entity_type: 研究灵巧手版本
+  status: partial
+  research_note: hands/ruka-v2.md
+  source_leads:
+  - https://arxiv.org/abs/2603.26660
+- id: plato-hand
+  name: PLATO Hand
+  entity_type: 研究灵巧手
+  status: partial
+  research_note: hands/plato-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2602.05156
+- id: suction-leap-hand
+  name: SLeap / Suction LEAP Hand
+  entity_type: LEAP吸附改装
+  status: partial
+  research_note: hands/suction-leap-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2509.20646
+- id: motif-hand
+  name: MOTIF Hand
+  entity_type: LEAP多模态改装
+  status: partial
+  research_note: hands/motif-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2506.19201
+- id: rapid-hand
+  name: RAPID Hand
+  entity_type: 研究灵巧手
+  status: partial
+  research_note: hands/rapid-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2506.07490
+- id: eyesight-hand
+  name: EyeSight Hand
+  entity_type: 视觉触觉研究手
+  status: partial
+  research_note: hands/eyesight-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2408.06265
+- id: ilda-hand
+  name: ILDA Hand
+  entity_type: 连杆研究手
+  status: partial
+  research_note: hands/ilda-hand.md
+  source_leads:
+  - https://www.nature.com/articles/s41467-021-27261-0
+- id: zheng-active-surface-gripper
+  name: Zheng 主动表面可重构夹爪
+  entity_type: 研究夹爪
+  status: partial
+  research_note: hands/zheng-active-surface-gripper.md
+  source_leads:
+  - https://arxiv.org/abs/2608.26883
+- id: koala-gripper
+  name: Koala Gripper
+  entity_type: 研究夹爪
+  status: partial
+  research_note: hands/koala-gripper.md
+  source_leads:
+  - https://arxiv.org/abs/2608.20546
+- id: vtap-gripper
+  name: VTAP Gripper
+  entity_type: 研究夹爪
+  status: partial
+  research_note: hands/vtap-gripper.md
+  source_leads:
+  - https://arxiv.org/abs/2607.15448
+- id: belt-finger
+  name: Belt-Finger
+  entity_type: 主动表面研究夹爪
+  status: partial
+  research_note: hands/belt-finger.md
+  source_leads:
+  - https://arxiv.org/abs/2606.20193
+- id: mm-hand
+  name: MM-Hand
+  entity_type: 远置腱驱研究手
+  status: partial
+  research_note: hands/mm-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2604.17245
+- id: min-kim-shim-bowden-hand
+  name: Min/Kim/Shim 拮抗Bowden手
+  entity_type: 远置腱驱研究手
+  status: partial
+  research_note: hands/min-kim-shim-bowden-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2512.24657
+- id: isyhand
+  name: ISyHand
+  entity_type: 可动掌研究手
+  status: partial
+  research_note: hands/isyhand.md
+  source_leads:
+  - https://arxiv.org/abs/2509.26236
+- id: sabd-hand
+  name: SABD Hand
+  entity_type: 研究灵巧手
+  status: partial
+  research_note: hands/sabd-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2509.13074
+- id: vulcan-v3
+  name: VulcanV3
+  entity_type: 手语研究手
+  status: partial
+  research_note: hands/vulcan-v3.md
+  source_leads:
+  - https://arxiv.org/abs/2509.03690
+- id: ruka-v1
+  name: RUKA v1
+  entity_type: 研究灵巧手版本
+  status: partial
+  research_note: hands/ruka-v1.md
+  source_leads:
+  - https://arxiv.org/abs/2504.13165
+- id: orca-hand
+  name: ORCA Hand
+  entity_type: 研究灵巧手
+  status: partial
+  research_note: hands/orca-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2504.04259
+- id: bidexhand
+  name: BiDexHand
+  entity_type: 研究灵巧手
+  status: partial
+  research_note: hands/bidexhand.md
+  source_leads:
+  - https://arxiv.org/abs/2504.14712
+- id: bariflex
+  name: BaRiFlex
+  entity_type: 研究夹爪
+  status: partial
+  research_note: hands/bariflex.md
+  source_leads:
+  - https://arxiv.org/abs/2312.05323
+- id: correll-perceptive-gripper
+  name: Correll 感知力控夹爪
+  entity_type: 研究夹爪
+  status: partial
+  research_note: hands/correll-perceptive-gripper.md
+  source_leads:
+  - https://arxiv.org/abs/2402.06018
+- id: romeo-hand
+  name: ROMEO 手掌与手指系统
+  entity_type: 研究灵巧手
+  status: partial
+  research_note: hands/romeo-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2404.08227
+- id: dash-hand
+  name: DASH
+  entity_type: 软体研究手
+  status: partial
+  research_note: hands/dash-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2306.04784
+- id: kengoro-hand
+  name: Kengoro 承重肌骨手
+  entity_type: 人形机器人研究手
+  status: partial
+  research_note: hands/kengoro-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2403.17459
+- id: matusik-pneumatic-hand
+  name: Matusik 多材料打印气动手
+  entity_type: 软体研究手
+  status: partial
+  research_note: hands/matusik-pneumatic-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2310.16280
+- id: leap-hand-v2
+  name: LEAP Hand v2
+  entity_type: 研究灵巧手版本
+  status: partial
+  research_note: hands/leap-hand-v2.md
+  source_leads:
+  - https://v2.leaphand.com/
+- id: brainco-revo-1
+  name: BrainCo Revo 1
+  entity_type: 商业灵巧手
+  status: partial
+  research_note: hands/brainco-revo-1.md
+  source_leads:
+  - https://www.brainco-hz.com/docs/revolimb-hand/en/revo1/parameters.html
+- id: brainco-revo-2
+  name: BrainCo Revo 2
+  entity_type: 商业灵巧手
+  status: partial
+  research_note: hands/brainco-revo-2.md
+  source_leads:
+  - https://www.brainco-hz.com/docs/revolimb-hand/en/revo2/parameters.html
+- id: brainco-revo-3
+  name: BrainCo Revo 3
+  entity_type: 商业灵巧手
+  status: partial
+  research_note: hands/brainco-revo-3.md
+  source_leads:
+  - https://www.brainco-hz.com/docs/revolimb-hand/en/revo3/parameters.html
+- id: brainrobotics-prosthetic-hand
+  name: BrainRobotics 智能仿生假肢手
+  entity_type: 假肢
+  status: partial
+  research_note: hands/brainrobotics-prosthetic-hand.md
+  source_leads:
+  - https://www.brainco.cn/en-US/products/brain-robotics
+- id: paxini-dexh13
+  name: PaXini DexH13
+  entity_type: 商业灵巧手
+  status: partial
+  research_note: hands/paxini-dexh13.md
+  source_leads:
+  - https://paxini.com/robot/dex/gen2
+- id: inspire-rh56bfx
+  name: 因时 RH56BFX
+  entity_type: 商业灵巧手
+  status: partial
+  research_note: hands/inspire-rh56bfx.md
+  source_leads:
+  - https://en.inspire-robots.com/product/rh56bfx/
+- id: inspire-rh56e2
+  name: 因时 RH56E2
+  entity_type: 商业灵巧手
+  status: partial
+  research_note: hands/inspire-rh56e2.md
+  source_leads:
+  - https://www.inspire-robots.com/dexterous%20hands/rh56dftp-series/
+- id: inspire-rh56f1
+  name: 因时 RH56F1
+  entity_type: 商业灵巧手
+  status: partial
+  research_note: hands/inspire-rh56f1.md
+  source_leads:
+  - https://en.inspire-robots.com/product/rh56f1/
+- id: inspire-rh5dg2
+  name: 因时 RH5DG2
+  entity_type: 商业灵巧手
+  status: partial
+  research_note: hands/inspire-rh5dg2.md
+  source_leads:
+  - https://en.inspire-robots.com/product/rh5dg2/
+- id: inspire-rh56h1
+  name: 因时 RH56H1
+  entity_type: 商业灵巧手
+  status: partial
+  research_note: hands/inspire-rh56h1.md
+  source_leads:
+  - https://en.inspire-robots.com/product/rh56h1/
+- id: linker-l25
+  name: Linker Hand L25
+  entity_type: 商业灵巧手
+  status: partial
+  research_note: hands/linker-l25.md
+  source_leads:
+  - https://docs.linkerhub.work/sdk/zh-cn/reference/l25/index.html
+- id: linker-o30
+  name: Linker Hand O30
+  entity_type: 商业灵巧手
+  status: partial
+  research_note: hands/linker-o30.md
+  source_leads:
+  - https://www.linkerbot.cn/details/LinkerHandO30/
+- id: agibot-omnihand-2025
+  name: 智元 OmniHand 2025
+  entity_type: 商业灵巧手
+  status: partial
+  research_note: hands/agibot-omnihand-2025.md
+  source_leads:
+  - https://store.agibot.com/products/omnihand-2025
+- id: agibot-omnihand-pro-2025
+  name: 智元 OmniHand Pro 2025
+  entity_type: 商业灵巧手
+  status: partial
+  research_note: hands/agibot-omnihand-pro-2025.md
+  source_leads:
+  - https://store.agibot.com/products/omnihand-pro-2025
+- id: oymotion-rohand-a
+  name: OYMotion ROHand A001/A002
+  entity_type: 商业灵巧手系列
+  status: partial
+  research_note: hands/oymotion-rohand-a.md
+  source_leads:
+  - https://developer.oymotion.com/ROHand/ROHand/
+- id: oymotion-rohand-ap001
+  name: OYMotion ROHand AP001
+  entity_type: 商业灵巧手
+  status: partial
+  research_note: hands/oymotion-rohand-ap001.md
+  source_leads:
+  - https://developer.oymotion.com/ROHand/ROHand/
+- id: oymotion-rohand-lites001
+  name: OYMotion ROHand LiteS001
+  entity_type: 商业灵巧手
+  status: partial
+  research_note: hands/oymotion-rohand-lites001.md
+  source_leads:
+  - https://developer.oymotion.com/ROHand/ROHand/
+- id: leadshine-dh116
+  name: 雷赛 DH116
+  entity_type: 商业灵巧手
+  status: partial
+  research_note: hands/leadshine-dh116.md
+  source_leads:
+  - https://static.leadshine.com/robots/dextrous-hands/dh116-series.html
+- id: fourier-fdh-6
+  name: 傅利叶 FDH-6
+  entity_type: 商业灵巧手
+  status: partial
+  research_note: hands/fourier-fdh-6.md
+  source_leads:
+  - https://support.fftai.com/en/modules/gr-endeffector
+- id: fourier-fdh-12
+  name: 傅利叶 FDH-12
+  entity_type: 商业灵巧手
+  status: partial
+  research_note: hands/fourier-fdh-12.md
+  source_leads:
+  - https://support.fftai.com/en/modules/gr-endeffector
+- id: robotstudio-dexhand-v1
+  name: The Robot Studio DexHand v1
+  entity_type: 开源研究手
+  status: partial
+  research_note: hands/robotstudio-dexhand-v1.md
+  source_leads:
+  - https://www.dexhand.org/
+- id: seed-rh8d
+  name: Seed Robotics RH8D
+  entity_type: 商业研究手
+  status: partial
+  research_note: hands/seed-rh8d.md
+  source_leads:
+  - https://www.seedrobotics.com/rh8d-adult-robot-hand
+- id: seed-rh6d
+  name: Seed Robotics RH6D
+  entity_type: 商业研究手
+  status: partial
+  research_note: hands/seed-rh6d.md
+  source_leads:
+  - https://www.seedrobotics.com/
+- id: seed-rh4d
+  name: Seed Robotics RH4D
+  entity_type: 商业研究夹爪
+  status: partial
+  research_note: hands/seed-rh4d.md
+  source_leads:
+  - https://www.seedrobotics.com/
+- id: seed-rh5d-rh7d
+  name: Seed Robotics RH5D/RH7D
+  entity_type: 商业研究手系列
+  status: partial
+  research_note: hands/seed-rh5d-rh7d.md
+  source_leads:
+  - https://kb.seedrobotics.com/doku.php?id=rh7d%3Ahome
+- id: faive-hand
+  name: Faive Hand
+  entity_type: 研究灵巧手
+  status: partial
+  research_note: hands/faive-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2308.02453
+- id: rbo-hand-2
+  name: RBO Hand 2
+  entity_type: 软体研究手
+  status: partial
+  research_note: hands/rbo-hand-2.md
+  source_leads:
+  - https://arxiv.org/abs/1603.06348
+- id: adapt-hand-1
+  name: ADAPT Hand 1
+  entity_type: 柔顺研究手
+  status: partial
+  research_note: hands/adapt-hand-1.md
+  source_leads:
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC12033370/
+- id: adapt-hand-2
+  name: ADAPT Hand 2
+  entity_type: 柔顺研究手版本
+  status: partial
+  research_note: hands/adapt-hand-2.md
+  source_leads:
+  - https://doi.org/10.1038/s44182-025-00034-3
+- id: h-pac-hand
+  name: H-PAC Hand
+  entity_type: 研究灵巧手
+  status: partial
+  research_note: hands/h-pac-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2608.16712
+- id: wang-hbsf-soft-palm-hand
+  name: Wang HBSF 软掌手
+  entity_type: 软体研究手
+  status: partial
+  research_note: hands/wang-hbsf-soft-palm-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2009.00979
+- id: sylink-hand
+  name: SyLink Hand
+  entity_type: 连杆研究手
+  status: partial
+  research_note: hands/sylink-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2606.14250
+- id: lee-bidirectional-hand
+  name: Lee 双向拮抗腱驱手
+  entity_type: 研究灵巧手
+  status: partial
+  research_note: hands/lee-bidirectional-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2609.36241
+- id: roller-grasper-v2
+  name: Roller Grasper V2
+  entity_type: 主动表面研究夹爪
+  status: partial
+  research_note: hands/roller-grasper-v2.md
+  source_leads:
+  - https://arxiv.org/abs/2004.08499
+- id: nasa-robonaut-1-hand
+  name: NASA Robonaut 1 Hand
+  entity_type: 航天研究手
+  status: partial
+  research_note: hands/nasa-robonaut-1-hand.md
+  source_leads:
+  - https://ntrs.nasa.gov/citations/20000097045
+- id: nasa-robonaut-2-hand
+  name: NASA Robonaut 2 Hand
+  entity_type: 航天研究手
+  status: partial
+  research_note: hands/nasa-robonaut-2-hand.md
+  source_leads:
+  - https://ntrs.nasa.gov/api/citations/20110023122/downloads/20110023122.pdf
+- id: nasa-valkyrie-hand
+  name: NASA Valkyrie/R5 Hand
+  entity_type: 人形机器人研究手
+  status: partial
+  research_note: hands/nasa-valkyrie-hand.md
+  source_leads:
+  - https://www.nasa.gov/technology/r5/
+- id: dh-robotics-dh-3
+  name: 大寰 DH-3
+  entity_type: 商业三指夹爪
+  status: partial
+  research_note: hands/dh-robotics-dh-3.md
+  source_leads:
+  - https://en.dh-robotics.com/wp-content/uploads/2024/07/DH_Electric-Gripper-Brochure.pdf
+- id: dh-robotics-dh-5-6
+  name: 大寰 DH-5-6
+  entity_type: 商业灵巧手
+  status: partial
+  research_note: hands/dh-robotics-dh-5-6.md
+  source_leads:
+  - https://en.dh-robotics.com/wp-content/uploads/2024/07/DH_Electric-Gripper-Brochure.pdf
+- id: robotiq-3f
+  name: Robotiq 3-Finger Adaptive Gripper
+  entity_type: 商业三指夹爪
+  status: partial
+  research_note: hands/robotiq-3f.md
+  source_leads:
+  - https://blog.robotiq.com/knowledge/control-fingers-individually-on-the-3f-gripper-5-1736280740122
+- id: gifu-hand-i
+  name: Gifu Hand I
+  entity_type: 历史研究手
+  status: partial
+  research_note: hands/gifu-hand-i.md
+  source_leads:
+  - https://www1.gifu-u.ac.jp/~kawalab/research/research_hand.html
+- id: gifu-hand-ii
+  name: Gifu Hand II
+  entity_type: 历史研究手
+  status: partial
+  research_note: hands/gifu-hand-ii.md
+  source_leads:
+  - https://www1.gifu-u.ac.jp/~kawalab/research/research_hand.html
+- id: gifu-hand-iii
+  name: Gifu Hand III
+  entity_type: 历史研究手
+  status: partial
+  research_note: hands/gifu-hand-iii.md
+  source_leads:
+  - https://www.jstage.jst.go.jp/article/jamdsm/1/1/1_1_1/_pdf/-char/en
+- id: gifu-kh-hand
+  name: KH Hand
+  entity_type: 历史研究手
+  status: partial
+  research_note: hands/gifu-kh-hand.md
+  source_leads:
+  - https://www1.gifu-u.ac.jp/~kawalab/research/research_hand.html
+- id: ub-hand-iv
+  name: UB Hand IV
+  entity_type: 腱驱研究手
+  status: partial
+  research_note: hands/ub-hand-iv.md
+  source_leads:
+  - https://surgicalroboticslab.nl/wp-content/uploads/2015/01/peerdeman12c-biorob.pdf
+- id: ihy-hand
+  name: iRobot-Harvard-Yale iHY Hand
+  entity_type: 欠驱动研究手
+  status: partial
+  research_note: hands/ihy-hand.md
+  source_leads:
+  - https://journals.sagepub.com/doi/abs/10.1177/0278364913514466
+- id: dlr-hit-hand-i
+  name: DLR/HIT Hand I
+  entity_type: 研究灵巧手
+  status: partial
+  research_note: hands/dlr-hit-hand-i.md
+  source_leads:
+  - https://elib.dlr.de/51715/
+- id: barrett-bh8-282
+  name: BarrettHand BH8-282
+  entity_type: 商业三指手版本
+  status: partial
+  research_note: hands/barrett-bh8-282.md
+  source_leads:
+  - https://web.barrett.com/support/BarrettHand_Documentation/BH8-282_Datasheet.pdf
+- id: schunk-sdh-2
+  name: SCHUNK SDH 2.0
+  entity_type: 商业三指研究手
+  status: partial
+  research_note: hands/schunk-sdh-2.md
+  source_leads:
+  - https://www.nist.gov/document/9020173r1pdf
+- id: unitree-dex5-1
+  name: 宇树 Dex5-1
+  entity_type: 商业灵巧手
+  status: partial
+  research_note: hands/unitree-dex5-1.md
+  source_leads:
+  - https://www.unitree.com/Dex5-1/
+- id: unitree-dex5-s
+  name: 宇树 Dex5-S
+  entity_type: 商业灵巧手
+  status: partial
+  research_note: hands/unitree-dex5-s.md
+  source_leads:
+  - https://www.unitree.com/Dex5-S/
+- id: robotera-xhand-1
+  name: 星动纪元 XHAND1
+  entity_type: 商业灵巧手
+  status: partial
+  research_note: hands/robotera-xhand-1.md
+  source_leads:
+  - https://www.robotera.com/static/pc/default/images/cnXhand.pdf
+- id: xynova-prima-1
+  name: 曦诺未来 Prima 1
+  entity_type: 商业灵巧手
+  status: partial
+  research_note: hands/xynova-prima-1.md
+  source_leads:
+  - https://www.xynova.com.cn/en/xynova-prima-1
+- id: qb-softhand-2-research
+  name: qbSoftHand 2 Research
+  entity_type: commercial-research-hand
+  status: partial
+  research_note: hands/qb-softhand-2-research.md
+  source_leads:
+  - https://qbrobotics.com/product/qb-softhand-2-research/
+- id: qb-softhand-industry
+  name: qbSoftHand Industry
+  entity_type: industrial-hand
+  status: partial
+  research_note: hands/qb-softhand-industry.md
+  source_leads:
+  - https://qbrobotics.com/product/qb-softhand-industry/
+- id: agile-hand
+  name: AgileHand
+  entity_type: commercial-research-hand
+  status: partial
+  research_note: hands/agile-hand.md
+  source_leads:
+  - https://www.agile-robots.com/de/produkte/agile-hand/
+- id: allegro-v5
+  name: Allegro Hand V5（三指）
+  entity_type: commercial-research-hand
+  status: partial
+  research_note: hands/allegro-v5.md
+  source_leads:
+  - https://allegrohand.com/sub/product/p.php?idx=3
+- id: ottobock-bebionic
+  name: Ottobock bebionic
+  entity_type: prosthetic-hand
+  status: partial
+  research_note: hands/ottobock-bebionic.md
+  source_leads:
+  - https://www.ottobock.com/en-us/product/8E7----61161
+- id: ottobock-michelangelo
+  name: Ottobock Michelangelo
+  entity_type: prosthetic-hand
+  status: partial
+  research_note: hands/ottobock-michelangelo.md
+  source_leads:
+  - https://corporate.ottobock.com/en/media/media-information/hand-prostheses
+- id: open-bionics-ada
+  name: Open Bionics Ada
+  entity_type: open-research-hand
+  status: partial
+  research_note: hands/open-bionics-ada.md
+  source_leads:
+  - https://openbionicslabs.com/blog/category/Blog
+- id: open-bionics-brunel
+  name: Open Bionics Brunel V1.0
+  entity_type: open-research-hand
+  status: partial
+  research_note: hands/open-bionics-brunel.md
+  source_leads:
+  - https://openbionicslabs.com/s/Brunel-Instruction-Manual.pdf
+- id: prensilia-mia
+  name: Prensilia Mia Hand
+  entity_type: prosthetic-hand
+  status: partial
+  research_note: hands/prensilia-mia.md
+  source_leads:
+  - https://www.prensilia.com/medical/
+- id: festo-bionicsofthand
+  name: Festo BionicSoftHand
+  entity_type: soft-research-hand
+  status: partial
+  research_note: hands/festo-bionicsofthand.md
+  source_leads:
+  - https://www.festo.com/us/en/e/about-festo/research-and-development/bionic-learning-network/bionic-grippers-and-soft-robots/bionicsofthand-id_68106
+- id: festo-bionicsofthand-2
+  name: Festo BionicSoftHand 2.0
+  entity_type: soft-research-hand
+  status: partial
+  research_note: hands/festo-bionicsofthand-2.md
+  source_leads:
+  - https://www.festo.com/PDF_Flip/corp/Festo_BionicMobileAssistant/en/8/
+- id: sonoda-hasel-hand
+  name: Sonoda 等 Peano-HASEL 肌骨手（2026）
+  entity_type: academic-prototype
+  status: partial
+  research_note: hands/sonoda-hasel-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2603.24357
+- id: pollen-amazing-hand
+  name: Pollen Robotics Amazing Hand
+  entity_type: open-research-hand
+  status: partial
+  research_note: hands/pollen-amazing-hand.md
+  source_leads:
+  - https://huggingface.co/blog/pollen-robotics/amazing-hand
+- id: delft-hand-2
+  name: Delft Hand 2
+  entity_type: academic-gripper
+  status: partial
+  research_note: hands/delft-hand-2.md
+  source_leads:
+  - https://www.sciencedirect.com/science/article/abs/pii/S0094114X11000565
+- id: dexrobot-dexhand-021
+  name: DexRobot DexHand 021
+  entity_type: industrial-research-hand
+  status: partial
+  research_note: hands/dexrobot-dexhand-021.md
+  source_leads:
+  - https://arxiv.org/abs/2511.03481
+- id: dclaw
+  name: DClaw（ROBEL）
+  entity_type: open-research-hand
+  status: partial
+  research_note: hands/dclaw.md
+  source_leads:
+  - https://github.com/google-research/robel/blob/master/robel/dclaw/base_env.py
+- id: westwood-en02-op
+  name: Westwood EN02-OP
+  entity_type: open-research-hand
+  status: partial
+  research_note: hands/westwood-en02-op.md
+  source_leads:
+  - https://robotis.us/products/en02-op-servos-only
+- id: f1-hand
+  name: F1 Hand
+  entity_type: academic-gripper
+  status: partial
+  research_note: hands/f1-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2205.07066
+- id: krysalis-hand
+  name: Krysalis Hand
+  entity_type: academic-prototype
+  status: partial
+  research_note: hands/krysalis-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2504.12967
+- id: pudu-dh11
+  name: PUDU DH11
+  entity_type: industrial-hand
+  status: partial
+  research_note: hands/pudu-dh11.md
+  source_leads:
+  - https://www.pudurobotics.com/jp/products/d9
+- id: sanctuary-hydraulic-hand
+  name: Sanctuary AI 液压灵巧手（当前17DoF版）
+  entity_type: industrial-hand
+  status: partial
+  research_note: hands/sanctuary-hydraulic-hand.md
+  source_leads:
+  - https://sanctuary.ai/solutions/hydraulic-hands/
+- id: hydra-hand
+  name: Hydra Hand
+  entity_type: academic-gripper
+  status: partial
+  research_note: hands/hydra-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2309.14266
+- id: ruth-gripper
+  name: RUTH Gripper
+  entity_type: academic-gripper
+  status: partial
+  research_note: hands/ruth-gripper.md
+  source_leads:
+  - https://journals.sagepub.com/doi/10.1177/02783649211048929
+- id: bach-hand
+  name: BACH（Belt–Augmented Compliant Hand）
+  entity_type: academic-gripper
+  status: partial
+  research_note: hands/bach-hand.md
+  source_leads:
+  - https://yuanshenli.com/bach.html
+- id: iit-hannes
+  name: IIT/INAIL Hannes
+  entity_type: prosthetic-hand
+  status: partial
+  research_note: hands/iit-hannes.md
+  source_leads:
+  - https://rehab.iit.it/hannes
+- id: ossur-ilimb-quantum
+  name: Össur i-Limb Quantum
+  entity_type: prosthetic-hand
+  status: partial
+  research_note: hands/ossur-ilimb-quantum.md
+  source_leads:
+  - https://www.ossur.com/en-us/prosthetics/arms/i-limb-quantum
+- id: covvi-hand
+  name: COVVI Hand
+  entity_type: prosthetic-hand
+  status: partial
+  research_note: hands/covvi-hand.md
+  source_leads:
+  - https://www.covvi.com/covvi-hand/
+- id: taska-gen2
+  name: TASKA Gen2
+  entity_type: prosthetic-hand
+  status: partial
+  research_note: hands/taska-gen2.md
+  source_leads:
+  - https://ik.imagekit.io/taska/cms/173_EN_D_Gen2_A4_Spec_Sheet_W_0fa8085bc9.pdf
+- id: aether-zeus
+  name: Aether Zeus 手系列（V1/V2）
+  entity_type: prosthetic-hand
+  status: partial
+  research_note: hands/aether-zeus.md
+  source_leads:
+  - https://www.aetherbiomedical.com/zeus-hand
+- id: bionit-adams-hand
+  name: BionIT Adam’s Hand
+  entity_type: prosthetic-hand
+  status: partial
+  research_note: hands/bionit-adams-hand.md
+  source_leads:
+  - https://bionitlabs.com/es/
+- id: hero-arm-hand
+  name: Open Bionics Hero Arm 手部
+  entity_type: prosthetic-hand
+  status: partial
+  research_note: hands/hero-arm-hand.md
+  source_leads:
+  - https://openbionics.com/wp-content/uploads/2025/04/Marketing-Brochure-March-2025-US-D2C-01.04.25-EMAIL.pdf
+- id: hero-pro-hand
+  name: Open Bionics Hero Pro 手部
+  entity_type: prosthetic-hand
+  status: partial
+  research_note: hands/hero-pro-hand.md
+  source_leads:
+  - https://openbionics.com/wp-content/uploads/2025/04/Marketing-Brochure-March-2025-US-D2C-01.04.25-EMAIL.pdf
+- id: neo-2026-hand
+  name: 1X NEO 手（2026）
+  entity_type: industrial-hand
+  status: partial
+  research_note: hands/neo-2026-hand.md
+  source_leads:
+  - https://www.1x.tech/discover/neos-hands
+- id: figure-03-hand
+  name: Figure 03 手
+  entity_type: industrial-hand
+  status: partial
+  research_note: hands/figure-03-hand.md
+  source_leads:
+  - https://www.figure.ai/news/helix-02
+- id: festo-learninggripper
+  name: Festo LearningGripper
+  entity_type: research-gripper
+  status: partial
+  research_note: hands/festo-learninggripper.md
+  source_leads:
+  - https://www.festo.com/us/en/e/about-festo/research-and-development/bionic-learning-network/bionic-grippers-and-soft-robots/learninggripper-id_33613
+- id: festo-multichoicegripper
+  name: Festo MultiChoiceGripper
+  entity_type: research-gripper
+  status: partial
+  research_note: hands/festo-multichoicegripper.md
+  source_leads:
+  - https://www.festo.com/PDF_Flip/corp/Festo_MultiChoiceGripper/en/index.html
+- id: allegro-v6f
+  name: Allegro Hand V6F
+  entity_type: industrial-hand
+  status: partial
+  research_note: hands/allegro-v6f.md
+  source_leads:
+  - https://allegrohand.com/sub/product/p.php?idx=25
+- id: allegro-v5-plus
+  name: Allegro Hand V5 Plus
+  entity_type: industrial-hand
+  status: partial
+  research_note: hands/allegro-v5-plus.md
+  source_leads:
+  - https://allegrohand.com/sub/product/p.php?idx=4
+- id: tian-gesture-hand
+  name: Tian 等手势空间设计手（2020）
+  entity_type: academic-hand
+  status: partial
+  research_note: hands/tian-gesture-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2012.10981
+- id: acb-hand
+  name: ACB Hand
+  entity_type: academic-hand
+  status: partial
+  research_note: hands/acb-hand.md
+  source_leads:
+  - https://arxiv.org/abs/1909.07966
+- id: nadine-cable-hand
+  name: Nadine 腱驱手（2017）
+  entity_type: academic-hand
+  status: partial
+  research_note: hands/nadine-cable-hand.md
+  source_leads:
+  - https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2017.00065/full
+- id: hri-hand
+  name: HRI Hand
+  entity_type: academic-hand
+  status: partial
+  research_note: hands/hri-hand.md
+  source_leads:
+  - https://www.sciencedirect.com/science/article/pii/S2468067220300092
+- id: nelson-reconfigurable-hand
+  name: Nelson 等可重构手（2022）
+  entity_type: academic-hand
+  status: partial
+  research_note: hands/nelson-reconfigurable-hand.md
+  source_leads:
+  - https://journals.sagepub.com/doi/10.1177/09544062221085092?icid=int.sj-abstract.citing-articles.1
+- id: liu-modular-hybrid-hand
+  name: Liu 等模块化软硬混合手（2023）
+  entity_type: academic-hand
+  status: partial
+  research_note: hands/liu-modular-hybrid-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2309.16081
+- id: vsh1
+  name: VSH1 可变刚度手
+  entity_type: academic-hand
+  status: partial
+  research_note: hands/vsh1.md
+  source_leads:
+  - https://salford-repository.worktribe.com/output/1376431/variable-stiffness-robotic-hand-for-stable-grasp-and-flexible-handling
+- id: wang-layer-jamming-hand
+  name: Wang 等层阻塞变刚度软手（2020）
+  entity_type: academic-hand
+  status: partial
+  research_note: hands/wang-layer-jamming-hand.md
+  source_leads:
+  - https://ietresearch.onlinelibrary.wiley.com/doi/abs/10.1049/ccs.2020.0003
+- id: nagase-variable-stiffness-hand
+  name: Nagase 等表面变刚度手（2011）
+  entity_type: academic-hand
+  status: partial
+  research_note: hands/nagase-variable-stiffness-hand.md
+  source_leads:
+  - https://doi.org/10.1088/0964-1726/20/10/105015
+- id: artus-lite
+  name: ARTUS Lite / Lite+
+  entity_type: industrial-hand
+  status: partial
+  research_note: hands/artus-lite.md
+  source_leads:
+  - https://github.com/Sarcomere-Dynamics/Sarcomere_Dynamics_Resources/blob/main/ArtusAPI/robot/artus_lite/ARTUS_LITE.md
+- id: artus-talos
+  name: ARTUS Talos
+  entity_type: industrial-hand
+  status: partial
+  research_note: hands/artus-talos.md
+  source_leads:
+  - https://github.com/Sarcomere-Dynamics/Sarcomere_Dynamics_Resources/blob/main/ArtusAPI/robot/artus_talos/ARTUS_TALOS.MD
+- id: linker-o6
+  name: Linker Hand O6
+  entity_type: industrial-hand
+  status: partial
+  research_note: hands/linker-o6.md
+  source_leads:
+  - https://linkerbot.cn/details/LinkerHandO6/
+- id: linker-l6
+  name: Linker Hand L6
+  entity_type: industrial-hand
+  status: partial
+  research_note: hands/linker-l6.md
+  source_leads:
+  - https://linkerbot.cn/details/LinkerHandL6/
+- id: cambridge-passive-hand
+  name: Cambridge Gilday 被动柔顺手（2023）
+  entity_type: academic-hand
+  status: partial
+  research_note: hands/cambridge-passive-hand.md
+  source_leads:
+  - https://www.cam.ac.uk/stories/robotic-hand
+- id: spark-hand
+  name: SPARK Hand
+  entity_type: academic-hand
+  status: partial
+  research_note: hands/spark-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2504.20506
+- id: open-parametric-hand
+  name: Open Parametric Hand（OPH）
+  entity_type: academic-hand
+  status: partial
+  research_note: hands/open-parametric-hand.md
+  source_leads:
+  - https://arxiv.org/abs/2410.18633
+- id: prensilia-ih2-azzurra
+  name: Prensilia IH2 Azzurra
+  entity_type: industrial-hand
+  status: partial
+  research_note: hands/prensilia-ih2-azzurra.md
+  source_leads:
+  - https://www.prensilia.com/it/ih2-azzurra/
+- id: lau-pam-hand
+  name: 低成本气动肌肉仿人手（2012）
+  entity_type: academic-hand
+  status: partial
+  research_note: hands/lau-pam-hand.md
+  source_leads:
+  - https://www.sciencedirect.com/science/article/pii/S1877705812026379
+- id: nikafrooz-single-actuated-hand
+  name: Nikafrooz–Leonessa 单驱动手（2021）
+  entity_type: academic-hand
+  status: partial
+  research_note: hands/nikafrooz-single-actuated-hand.md
+  source_leads:
+  - https://vtechworks.lib.vt.edu/items/323e2fb9-53ca-4bff-abc1-0ab3e50a3676
+- id: uw-hand
+  name: UW Hand（20-DoF 气动腱驱原型）
+  entity_type: academic-hand
+  status: partial
+  research_note: hands/uw-hand.md
+  source_leads:
+  - https://vikashplus.github.io/P_Finger.html
+- id: hackberry
+  name: HACKberry
+  entity_type: prosthetic-hand
+  status: partial
+  research_note: hands/hackberry.md
+  source_leads:
+  - https://github.com/mission-arm/HACKberry
+- id: olympic-hand
+  name: OLYMPIC 模块化假肢手
+  entity_type: prosthetic-hand
+  status: partial
+  research_note: hands/olympic-hand.md
+  source_leads:
+  - https://www.researchgate.net/publication/337618125_OLYMPIC_A_Modular_Tendon-Driven_Prosthetic_Hand_with_Novel_Finger_and_Wrist_Coupling_Mechanisms
+scope_note: 开放式滚动检索，不以条目数量为完成标准；候选条目、论文、机构、独立硬件型号分开统计。

@@ -1,0 +1,521 @@
+{
+  "isyhand-v6": {
+    "source": "https://isyhand.is.mpg.de/",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://isyhand.is.mpg.de/media/upload/ISyHand_v6.png",
+        "alt": "ISyHand_v6",
+        "poster": ""
+      }
+    ]
+  },
+  "bidexhand-v4": {
+    "source": "https://github.com/wengmister/BiDexHand",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://camo.githubusercontent.com/b67d8e6d24a1313aea83504111a5b8123ed1282d567adf23489e407a5108470f/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f58387a564b6c5a4e6f72632f302e6a7067",
+        "alt": "Biomimetic Dexterous Hand Demonstration",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://github.com/wengmister/BiDexHand/raw/main/images/vr_control_exp.gif",
+        "alt": "MR",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://github.com/wengmister/BiDexHand/raw/main/images/calibration.gif",
+        "alt": "Calibration",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://github.com/wengmister/BiDexHand/raw/main/images/franka_integration.gif",
+        "alt": "Franka",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://github.com/wengmister/BiDexHand/raw/main/images/franka_teleop.gif",
+        "alt": "Franka Teleop",
+        "poster": ""
+      }
+    ]
+  },
+  "ruka-v2": {
+    "source": "https://ruka-hand-v2.github.io/",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://ruka-hand-v2.github.io/static/images/X.png",
+        "alt": "X",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://ruka-hand-v2.github.io/static/images/onshape_logo.png",
+        "alt": "Onshape",
+        "poster": ""
+      },
+      {
+        "kind": "link",
+        "url": "https://www.youtube.com/embed/WKVG-CsXR4E?si=Q6dgGQQSL7b689Qa",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://ruka-hand-v2.github.io/static/images/hardware_overview.jpeg",
+        "alt": "RUKA-v2 Hardware Overview",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://ruka-hand-v2.github.io/static/images/wrist.jpeg",
+        "alt": "2-DOF Wrist Kinematics",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://ruka-hand-v2.github.io/static/images/knuckle.jpeg",
+        "alt": "Finger Abduction/Adduction Module",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://ruka-hand-v2.github.io/static/videos/replay_human.mov",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://ruka-hand-v2.github.io/static/videos/replay_urdf.mov",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://ruka-hand-v2.github.io/static/videos/replay_robot_1.mov",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://ruka-hand-v2.github.io/static/videos/pen_teleop.mov",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://ruka-hand-v2.github.io/static/videos/writing_r.mov",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://ruka-hand-v2.github.io/static/videos/box_weight.mov",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://ruka-hand-v2.github.io/static/videos/box_bread.mov",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://ruka-hand-v2.github.io/static/videos/music_box.mov",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://ruka-hand-v2.github.io/static/videos/usb_plugging.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://ruka-hand-v2.github.io/static/videos/book_open.MOV",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://ruka-hand-v2.github.io/static/videos/card_sliding.mov",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://ruka-hand-v2.github.io/static/videos/pick_place.mov",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://ruka-hand-v2.github.io/static/videos/Oven_teleop.MOV",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://ruka-hand-v2.github.io/static/videos/bim_oven_bread.mov",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://ruka-hand-v2.github.io/static/videos/bim_decluttering.mov",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://ruka-hand-v2.github.io/static/videos/bim_wiping.mov",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://ruka-hand-v2.github.io/static/videos/pen_policy.MOV",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://ruka-hand-v2.github.io/static/videos/fork_policy.mov",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://ruka-hand-v2.github.io/static/videos/music_policy.MOV",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://ruka-hand-v2.github.io/static/videos/bread_policy.MOV",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://ruka-hand-v2.github.io/static/images/payload_dip_pip.jpg",
+        "alt": "Finger DIP-PIP load test",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://ruka-hand-v2.github.io/static/images/payload_supination.jpg",
+        "alt": "Wrist supination load test",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://ruka-hand-v2.github.io/static/images/payload_sideways.jpg",
+        "alt": "Wrist radial/ulnar load test",
+        "poster": ""
+      }
+    ]
+  },
+  "faive-hand": {
+    "source": "https://srl-ethz.github.io/get-ball-rolling/",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "video",
+        "url": "https://srl-ethz.github.io/get-ball-rolling/vid/handoff_video_bidirectional.m4v",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://srl-ethz.github.io/get-ball-rolling/img/soft-robotics-lab-white-logo.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://srl-ethz.github.io/get-ball-rolling/img/faive logo3 white_Zeichenfläche 1.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://srl-ethz.github.io/get-ball-rolling/img/eth_logo_kurz_neg.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://srl-ethz.github.io/get-ball-rolling/img/link.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "link",
+        "url": "https://www.youtube.com/embed/Nwa7xP3RtO0?si=HC3nj3CBjolEEo0w",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "link",
+        "url": "https://www.youtube.com/embed/YahsMhqNU8o?si=O3EJOQqkEs6c0kkO",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://srl-ethz.github.io/get-ball-rolling/img/faive_hand_overview.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://srl-ethz.github.io/get-ball-rolling/vid/joint_coupling.m4v",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://srl-ethz.github.io/get-ball-rolling/vid/rolling_contact_joint_mujoco.m4v",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://srl-ethz.github.io/get-ball-rolling/vid/faive_cover_onoff.mp4",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://srl-ethz.github.io/get-ball-rolling/vid/ekf.m4v",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://srl-ethz.github.io/get-ball-rolling/vid/swoop-over-faives.m4v",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://srl-ethz.github.io/get-ball-rolling/img/faive_rl_sim2real.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://srl-ethz.github.io/get-ball-rolling/img/rewards_plot.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://srl-ethz.github.io/get-ball-rolling/img/sim_speed_plot.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://srl-ethz.github.io/get-ball-rolling/img/speed_boxplot.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://srl-ethz.github.io/get-ball-rolling/vid/sphere-rotation_DR.m4v",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://srl-ethz.github.io/get-ball-rolling/vid/sphere-rotation_non-DR.m4v",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "video",
+        "url": "https://srl-ethz.github.io/get-ball-rolling/vid/sphere_rotation_reverse.m4v",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "dexhand-021": {
+    "source": "https://arxiv.org/html/2511.03481v1",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/icons/smileybones-small.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/arxiv-logo-primary-light.svg",
+        "alt": "arXiv logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2511.03481v1/figure-1.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2511.03481v1/figure-2.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2511.03481v1/figure-3.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2511.03481v1/figure-4.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2511.03481v1/figure-5.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2511.03481v1/figure-6.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2511.03481v1/figure-7.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2511.03481v1/figure-8.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2511.03481v1/figure-9.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2511.03481v1/figure-10.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2511.03481v1/figure-11.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2511.03481v1/figure-12.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2511.03481v1/figure-13.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2511.03481v1/figure-14.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2511.03481v1/figure-15.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2511.03481v1/figure-16.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2511.03481v1/figure-17.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2511.03481v1/figure-18.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation.png",
+        "alt": "Simons Foundation",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation-international.png",
+        "alt": "Simons Foundation International",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/schmidt-sciences.png",
+        "alt": "Schmidt Sciences",
+        "poster": ""
+      }
+    ]
+  },
+  "robotera-xhand1": {
+    "source": "https://www.robotera.com/#/product/XHAND",
+    "status": "Browser DOM verified 2026-10-02",
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://www.robotera.com/img/zyd.7pUi8rG9.png",
+        "label": "官方 XHAND 1 自由度示意"
+      },
+      {
+        "kind": "video",
+        "url": "https://www.robotera.com/media/xhand.B8L1F4mZ.mp4",
+        "label": "官方负载与操作演示"
+      },
+      {
+        "kind": "image",
+        "url": "https://www.robotera.com/img/clm.CBY95yrl.gif",
+        "label": "指端环绕触觉示意"
+      }
+    ]
+  }
+}

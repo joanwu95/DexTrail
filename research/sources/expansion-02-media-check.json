@@ -1,0 +1,188 @@
+[
+  {
+    "id": "allegro-v5",
+    "url": "https://allegrohand.com/upload/prod/V5_대표이미지_1_f19ad.png",
+    "status": 200,
+    "type": "image/png"
+  },
+  {
+    "id": "allegro-v5",
+    "url": "https://allegrohand.com/upload/prod/V5_대표이미지_2_d78d6.png",
+    "status": 200,
+    "type": "image/png"
+  },
+  {
+    "id": "allegro-v5",
+    "url": "https://allegrohand.com/upload/prod/V5_대표이미지_3_068b3.png",
+    "status": 200,
+    "type": "image/png"
+  },
+  {
+    "id": "allegro-v5-plus",
+    "url": "https://allegrohand.com/upload/prod/V5 Plus_대표이미지_3_39513.png",
+    "status": 200,
+    "type": "image/png"
+  },
+  {
+    "id": "allegro-v5-plus",
+    "url": "https://allegrohand.com/upload/prod/V5 Plus_대표이미지_1_33756.png",
+    "status": 200,
+    "type": "image/png"
+  },
+  {
+    "id": "allegro-v5-plus",
+    "url": "https://allegrohand.com/upload/prod/V5 Plus_대표이미지_2_db76f.png",
+    "status": 200,
+    "type": "image/png"
+  },
+  {
+    "id": "allegro-v6f",
+    "url": "https://allegrohand.com/upload/prod/V6.25_ccbf8.png",
+    "status": 200,
+    "type": "image/png"
+  },
+  {
+    "id": "allegro-v6f",
+    "url": "https://allegrohand.com/upload/prod/V6.26_a09e2.png",
+    "status": 200,
+    "type": "image/png"
+  },
+  {
+    "id": "allegro-v6f",
+    "url": "https://allegrohand.com/upload/prod/V6.53_79ec6.png",
+    "status": 200,
+    "type": "image/png"
+  },
+  {
+    "id": "mumuta-hand",
+    "url": "https://www.u-tokyo.ac.jp/content/400256657.png",
+    "status": 200,
+    "type": "image/png"
+  },
+  {
+    "id": "mumuta-hand",
+    "url": "https://www.u-tokyo.ac.jp/content/400256656.gif",
+    "status": 200,
+    "type": "image/gif"
+  },
+  {
+    "id": "mumuta-hand",
+    "url": "https://www.u-tokyo.ac.jp/content/400256661.png",
+    "status": 200,
+    "type": "image/png"
+  },
+  {
+    "id": "mumuta-hand",
+    "url": "https://www.u-tokyo.ac.jp/content/400256662.png",
+    "status": 200,
+    "type": "image/png"
+  },
+  {
+    "id": "mogrip",
+    "url": "https://jaemineom.github.io/Project_MOGrip/assets/Mechanism.gif",
+    "status": 200,
+    "type": "image/gif"
+  },
+  {
+    "id": "tactile-active-palm",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-026-00079-y/MediaObjects/44182_2026_79_Fig1_HTML.png",
+    "status": 200,
+    "type": "image/png"
+  },
+  {
+    "id": "tactile-active-palm",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-026-00079-y/MediaObjects/44182_2026_79_Fig2_HTML.png",
+    "status": 200,
+    "type": "image/png"
+  },
+  {
+    "id": "tactile-active-palm",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-026-00079-y/MediaObjects/44182_2026_79_Fig3_HTML.png",
+    "status": 200,
+    "type": "image/png"
+  },
+  {
+    "id": "omnidirectional-sensing-hand",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41378-026-01179-3/MediaObjects/41378_2026_1179_Fig2_HTML.png",
+    "status": 200,
+    "type": "image/png"
+  },
+  {
+    "id": "omnidirectional-sensing-hand",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41378-026-01179-3/MediaObjects/41378_2026_1179_Fig1_HTML.png",
+    "status": 200,
+    "type": "image/png"
+  },
+  {
+    "id": "omnidirectional-sensing-hand",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41378-026-01179-3/MediaObjects/41378_2026_1179_Fig3_HTML.png",
+    "status": 200,
+    "type": "image/png"
+  },
+  {
+    "id": "high-dexterity-neuroprosthetic",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-026-75105-6/MediaObjects/41467_2026_75105_Fig1_HTML.png",
+    "status": 200,
+    "type": "image/png"
+  },
+  {
+    "id": "high-dexterity-neuroprosthetic",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-026-75105-6/MediaObjects/41467_2026_75105_Fig2_HTML.png",
+    "status": 200,
+    "type": "image/png"
+  },
+  {
+    "id": "high-dexterity-neuroprosthetic",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-026-75105-6/MediaObjects/41467_2026_75105_Fig3_HTML.png",
+    "status": 200,
+    "type": "image/png"
+  },
+  {
+    "id": "matusik-pneumatic-hand",
+    "url": "https://arxiv.org/html/2310.16280v1/figures/whole-hand.png",
+    "status": 200,
+    "type": "image/png"
+  },
+  {
+    "id": "matusik-pneumatic-hand",
+    "url": "https://arxiv.org/html/2310.16280v1/figures/grasps.png",
+    "status": 200,
+    "type": "image/png"
+  },
+  {
+    "id": "matusik-pneumatic-hand",
+    "url": "https://arxiv.org/html/2310.16280v1/figures/poses.png",
+    "status": 200,
+    "type": "image/png"
+  },
+  {
+    "id": "matusik-pneumatic-hand",
+    "url": "https://arxiv.org/html/2310.16280v1/figures/thumb-CMC.png",
+    "status": 200,
+    "type": "image/png"
+  },
+  {
+    "id": "tactile-softhand-a",
+    "url": "https://arxiv.org/html/2406.12731v2/figures/fig1.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "id": "tactile-softhand-a",
+    "url": "https://arxiv.org/html/2406.12731v2/figures/fig2.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "id": "tactile-softhand-a",
+    "url": "https://arxiv.org/html/2406.12731v2/figures/fig13_updated.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "id": "jhu-neuromorphic-hand",
+    "url": "https://i.ytimg.com/vi/dnPrY7xA08c/hqdefault.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  }
+]

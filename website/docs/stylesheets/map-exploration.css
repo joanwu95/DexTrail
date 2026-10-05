@@ -1,0 +1,21 @@
+/* Keep exploration controls quiet, with the same individual tag colours as the rail. */
+.dex-active-filters{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:12px 0 4px;font:400 13px/1.6 var(--dex-sans)}
+.dex-filter-label{color:var(--dex-muted);flex:none}
+.dex-active-filter-list{display:flex;align-items:center;flex:1;min-width:0;gap:8px;flex-wrap:wrap}
+.dex-active-filter{--tag-color:var(--dex-gold);display:inline-flex;align-items:center;gap:10px;max-width:100%;min-height:34px;padding:5px 12px;border:1px solid color-mix(in srgb,var(--tag-color),transparent 48%);border-radius:999px;background:color-mix(in srgb,var(--tag-color),transparent 92%);color:var(--tag-color);font:inherit;text-align:left;cursor:pointer}
+.dex-active-filter>span:first-child{min-width:0;overflow-wrap:anywhere}
+.dex-active-filter:hover{border-color:var(--tag-color);background:color-mix(in srgb,var(--tag-color),transparent 82%)}
+.dex-filter-remove{flex:none;font-size:17px;line-height:1}
+.dex-clear-all,.dex-start-over{background:none;border:0;padding:6px 0;color:var(--dex-gold);font:inherit;cursor:pointer;text-underline-offset:4px}
+.dex-clear-all{flex:none;margin-left:auto}
+.dex-clear-all:hover,.dex-start-over:hover{text-decoration:underline}
+.md-typeset .dex-resume-note{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin:8px 0 0;color:var(--dex-muted);font:400 12px/1.6 var(--dex-sans)}
+.dex-active-filters[hidden],.md-typeset .dex-resume-note[hidden]{display:none}
+.dex-clear-filters:disabled{color:var(--dex-muted);opacity:.55;cursor:default}
+.dex-active-filters button:focus-visible,.dex-start-over:focus-visible{outline:2px solid var(--dex-gold);outline-offset:3px}
+@media(max-width:600px){
+  .dex-active-filters{align-items:flex-start;gap:8px;margin-top:6px}
+  .dex-active-filter-list{flex-basis:100%;order:3}
+  .dex-active-filter{min-height:40px}
+  .dex-clear-all{min-height:40px;padding-top:0;padding-bottom:0;margin-top:-6px}
+}

@@ -1,0 +1,22 @@
+.md-typeset :is(#dextrail-home,.dex-hand-page) :is(.knowledge-home-purpose,.knowledge-section-purpose){font:400 13px/1.8 var(--dex-sans);color:var(--dex-muted);margin:12px 0 16px;max-width:850px}
+.md-typeset .dex-knowledge>.hand-heading .hand-identity{font-size:13px}
+.knowledge-tag-rail .dex-rail-tags{flex:1;min-height:0}
+.knowledge-tag-rail .dex-scroll-nav{border-top:1px solid var(--dex-line);padding-top:12px}
+.knowledge-tag-rail [data-topic-clear]:disabled{color:var(--dex-dim);cursor:default}
+[data-topic-item][hidden],.history-year[hidden],.history-scroll[hidden],.knowledge-filter-empty[hidden]{display:none!important}
+.knowledge-item-tags{display:flex;flex-wrap:wrap;gap:5px;margin:12px 0 7px}
+.knowledge-topic-chip{display:inline-flex;align-items:center;border:1px solid color-mix(in srgb,var(--dex-accent) 32%,transparent);background:color-mix(in srgb,var(--dex-accent) 6%,transparent);color:var(--dex-accent);border-radius:999px;padding:3px 8px;font:400 11px/1.6 var(--dex-sans);cursor:pointer}
+.knowledge-topic-chip:hover,.knowledge-topic-chip[aria-pressed=true]{background:color-mix(in srgb,var(--dex-accent) 16%,transparent);border-color:var(--dex-accent)}
+.knowledge-topic-chip[aria-pressed=true]::before{content:'✓';margin-right:4px}
+.knowledge-topic-chip:focus-visible{outline:2px solid var(--dex-accent);outline-offset:3px}
+.route-spread.is-filtered{grid-template-columns:1fr}
+.route-feature[hidden]+.route-feature::before{display:none}
+.md-typeset .knowledge-filter-empty{font-size:14px;margin:36px 0;color:var(--dex-muted)}
+.history-selection{margin:0 0 18px}
+.md-typeset .history-selection>summary{font:400 12px/1.7 var(--dex-sans);color:var(--dex-muted)}
+.md-typeset .history-publication{font:500 11px/1.6 var(--dex-sans);color:var(--dex-accent);margin:0 0 6px}
+.md-typeset .dex-development>.evidence-drawer{border:1px solid var(--dex-line);border-radius:0;background:transparent;box-shadow:none;margin:16px 0;color:var(--dex-muted)}
+.md-typeset .dex-development>.evidence-drawer>summary{background:transparent;font:400 12px/1.7 var(--dex-sans);color:var(--dex-muted);margin:0}
+@media(max-width:1050px){.dex-hand-page:has(.knowledge-tag-rail)>.dex-rail-toggle{position:static;right:auto;bottom:auto;transform:none;margin:0 0 16px;padding:8px 12px;border-radius:4px;box-shadow:none}}
+@media(max-width:1050px){.dex-hand-page:has(.knowledge-tag-rail).rail-open>.dex-rail-toggle{visibility:hidden}}
+@media(max-width:1050px){.knowledge-tag-rail.is-open{top:12px;bottom:12px;overflow-y:auto}}

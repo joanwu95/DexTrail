@@ -1,0 +1,320 @@
+[
+  {
+    "hand": "wuji-hand",
+    "url": "https://www.wuji.tech/assets/posters/hand_video_cover.webp",
+    "status": 200,
+    "content_type": "image/webp"
+  },
+  {
+    "hand": "wuji-hand",
+    "url": "https://www.wuji.tech/assets/images/hand/C_1_2.webp",
+    "status": 200,
+    "content_type": "image/webp"
+  },
+  {
+    "hand": "wuji-hand",
+    "url": "https://www.wuji.tech/assets/images/hand/C_1_3.webp",
+    "status": 200,
+    "content_type": "image/webp"
+  },
+  {
+    "hand": "wuji-hand",
+    "url": "https://www.wuji.tech/assets/videos/hand/C_1_1.mp4",
+    "status": 200,
+    "content_type": "video/mp4"
+  },
+  {
+    "hand": "linker-l6",
+    "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l6/detail-2.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "linker-l6",
+    "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l6/detail-3.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "linker-l6",
+    "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l6/detail-4.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "linker-o6",
+    "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-o6/detail-2.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "linker-o6",
+    "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-o6/detail-3.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "linker-o6",
+    "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-o6/detail-4.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "linker-l20-lite",
+    "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l20-lite/detail-2.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "linker-l20-lite",
+    "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l20-lite/detail-3.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "linker-l20-lite",
+    "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l20-lite/detail-4.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "linker-l30",
+    "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l30pro/detail-2.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "linker-l30",
+    "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l30pro/detail-3.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "linker-l30",
+    "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l30pro/detail-4.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "linker-o30",
+    "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-o30/detail-2.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "linker-o30",
+    "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-o30/detail-3.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "linker-o30",
+    "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-o30/detail-4.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "ilda-hand",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-021-27261-0/MediaObjects/41467_2021_27261_Fig1_HTML.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "ilda-hand",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-021-27261-0/MediaObjects/41467_2021_27261_Fig2_HTML.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "ilda-hand",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-021-27261-0/MediaObjects/41467_2021_27261_Fig3_HTML.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "vms-hand",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-62122-0/MediaObjects/41467_2025_62122_Fig1_HTML.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "vms-hand",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-62122-0/MediaObjects/41467_2025_62122_Fig2_HTML.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "vms-hand",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-62122-0/MediaObjects/41467_2025_62122_Fig3_HTML.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "palm-finger-soft-hand",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-57741-6/MediaObjects/41467_2025_57741_Fig1_HTML.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "palm-finger-soft-hand",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-57741-6/MediaObjects/41467_2025_57741_Fig2_HTML.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "palm-finger-soft-hand",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-57741-6/MediaObjects/41467_2025_57741_Fig3_HTML.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "detachable-crawling-hand",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-67675-8/MediaObjects/41467_2025_67675_Fig1_HTML.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "detachable-crawling-hand",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-67675-8/MediaObjects/41467_2025_67675_Fig2_HTML.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "detachable-crawling-hand",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-67675-8/MediaObjects/41467_2025_67675_Fig3_HTML.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "open-parametric-hand",
+    "url": "https://arxiv.org/html/2410.18633v1/fig1.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "open-parametric-hand",
+    "url": "https://arxiv.org/html/2410.18633v1/fig2.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "open-parametric-hand",
+    "url": "https://arxiv.org/html/2410.18633v1/fig3.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "dexco-hand",
+    "url": "https://msc.berkeley.edu/assets/images/research/mechatronics/dexco.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "f-tac-hand",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs42256-025-01053-3/MediaObjects/42256_2025_1053_Fig1_HTML.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "f-tac-hand",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs42256-025-01053-3/MediaObjects/42256_2025_1053_Fig2_HTML.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "f-tac-hand",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs42256-025-01053-3/MediaObjects/42256_2025_1053_Fig3_HTML.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "adapt-hand-1",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44172-025-00407-4/MediaObjects/44172_2025_407_Fig1_HTML.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "adapt-hand-1",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44172-025-00407-4/MediaObjects/44172_2025_407_Fig2_HTML.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "adapt-hand-1",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44172-025-00407-4/MediaObjects/44172_2025_407_Fig3_HTML.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "adapt-hand-2",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-025-00034-3/MediaObjects/44182_2025_34_Fig1_HTML.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "adapt-hand-2",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-025-00034-3/MediaObjects/44182_2025_34_Fig2_HTML.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "adapt-hand-2",
+    "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-025-00034-3/MediaObjects/44182_2025_34_Fig3_HTML.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "dash-hand",
+    "url": "https://arxiv.org/html/2306.04784v3/figure1.jpeg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "dash-hand",
+    "url": "https://arxiv.org/html/2306.04784v3/fig2_scaled.jpeg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "dash-hand",
+    "url": "https://arxiv.org/html/2306.04784v3/CADdiagram_calib.jpeg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "eyesight-hand",
+    "url": "https://arxiv.org/html/2408.06265v1/figures/opening.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "eyesight-hand",
+    "url": "https://arxiv.org/html/2408.06265v1/figures/mechanical_design.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "eyesight-hand",
+    "url": "https://arxiv.org/html/2408.06265v1/figures/human_kinematics.png",
+    "status": 200,
+    "content_type": "image/png"
+  },
+  {
+    "hand": "yale-sphinx",
+    "url": "https://www.eng.yale.edu/grablab/openhand/images/sphinx/sphinx3.jpg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "yale-sphinx",
+    "url": "https://www.eng.yale.edu/grablab/openhand/images/sphinx/sphinx2.jpg",
+    "status": 200,
+    "content_type": "image/jpeg"
+  },
+  {
+    "hand": "yale-sphinx",
+    "url": "https://www.eng.yale.edu/grablab/openhand/images/sphinx/sphinx1.png",
+    "status": 200,
+    "content_type": "image/png"
+  }
+]

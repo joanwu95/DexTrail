@@ -1,0 +1,42 @@
+/* A single reading column, with the site's existing tag rail on the right. */
+.algo-reader [hidden]{display:none!important}
+.algo-reader .algo-tag-rail .dex-tag-group{--tag-color:var(--dex-accent)}
+.algo-reader .algo-tag-rail .dex-rail-tags{flex:1;min-height:0}
+.algo-reader .algo-tag-rail .dex-rail-hint{margin:0;font-size:12px}
+.algo-reader .algo-tag-rail .dex-tag-group h3{color:var(--dex-muted)}
+.algo-reader .algo-tag-rail .dex-clear-filters:disabled{color:var(--dex-muted);cursor:default}
+.md-typeset .algo-reader .algo-breadcrumb{font-size:12px;margin:0 0 24px;color:var(--dex-muted)}
+.md-typeset .algo-reader .algo-caption{font-size:12px;line-height:1.8;color:var(--dex-muted);margin:20px 0}
+.algo-view-switch{display:flex;flex-wrap:wrap;gap:28px;margin:4px 0 8px;border-bottom:1px solid var(--dex-line)}
+.algo-view-switch a{min-height:44px;display:flex;align-items:center;color:var(--dex-muted);border-bottom:2px solid transparent;font-size:14px}
+.algo-view-switch a[aria-current]{border-color:var(--dex-accent);color:var(--dex-accent)}
+.algo-topic-list{display:block}
+.algo-topic{display:block;border-bottom:1px solid var(--dex-line);padding:18px 0;color:var(--dex-text)!important}
+.algo-topic strong{display:block;font-size:18px;font-weight:550;line-height:1.6}
+.algo-topic:hover strong{color:var(--dex-accent)}
+.algo-question{display:block;font-size:14px;color:var(--dex-muted);line-height:1.8;margin-top:5px}
+.algo-case{display:block;padding:20px 0;border-bottom:1px solid var(--dex-line)}
+.md-typeset .algo-reader .algo-case h2{font-size:19px;margin:0 0 7px;line-height:1.6;font-weight:550}
+.algo-case h2 a{color:var(--dex-text)}
+.algo-case h2 a:hover{color:var(--dex-accent)}
+.md-typeset .algo-reader .algo-case p{font-size:14px;margin:0;line-height:1.8}
+.algo-adjacent{display:inline-block;margin-left:14px;font-size:11px;color:var(--dex-muted);font-weight:400}
+.algo-case-details,.algo-related{background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important}
+.algo-case-details{margin:10px 0 0!important;padding:0!important}
+.md-typeset .algo-reader :is(.algo-case-details,.algo-related)>summary{position:static;background:transparent!important;display:list-item;cursor:pointer;padding:0!important;margin:0!important;color:var(--dex-muted);font-size:12px;font-weight:400;min-height:28px;line-height:28px}
+.algo-reader :is(.algo-case-details,.algo-related)>summary::before,.algo-reader :is(.algo-case-details,.algo-related)>summary::after{display:none!important}
+.md-typeset .algo-reader .algo-case-details[open] p{font-size:12px;margin:8px 0}
+.algo-empty{padding:24px 0}
+.algo-reader :is(a,button,summary):focus-visible{outline:2px solid var(--dex-accent);outline-offset:4px}
+.algo-reader section{scroll-margin-top:24px}
+.algo-related{border-top:1px solid var(--dex-line)!important;margin:32px 0!important;padding:16px 0!important}
+.md-typeset .algo-related h3{font-size:13px;color:var(--dex-muted);margin:18px 0 8px}
+.algo-related-links{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:14px}
+.algo-equation{border-left:2px solid var(--dex-accent);padding:18px 22px;background:#eeebe3;margin:24px 0}
+.algo-equation code{white-space:normal;overflow-wrap:anywhere;font-size:14px}
+.md-typeset .algo-equation p{font-size:12px;line-height:1.8;margin-bottom:0}
+.algo-source-register dt{margin-top:24px;font-size:15px}
+.algo-source-register dd{font-size:13px;margin:8px 0 0}
+@media(min-width:1051px){.algo-reader [data-algorithm-atlas]{max-width:940px}}
+@media(max-width:700px){.algo-view-switch{gap:24px}.algo-topic{padding:16px 0}.algo-topic strong{font-size:17px}.algo-question{font-size:13px}.algo-reader .algo-tag-rail .dex-tag{min-height:36px;box-sizing:border-box}.algo-adjacent{display:block;margin:4px 0 0}}
+

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720" style="max-width:100%;height:auto" role="img" aria-labelledby="title desc"><title id="title">Caging</title><desc id="desc">圆形物体在固定围笼内部平移转动，无法穿过比物体直径小的开口。</desc>
+<rect width="960" height="720" fill="#f4f1ea"/>
+<text x="34.00" y="35.00" font-size="12" fill="#aa4d3e" font-family="Consolas, monospace" font-weight="400" text-anchor="start">DEXTRAIL / GRASP 05</text>
+<text x="34.00" y="80.00" font-size="29" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Caging</text>
+<text x="35.00" y="110.00" font-size="15" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">笼式约束 · 可以活动，但不能逃脱</text>
+<polyline points="34.00,129.00 926.00,129.00" fill="none" stroke="#d8d8ce" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="662.00,355.00 662.00,225.00 295.00,225.00 295.00,550.00 662.00,550.00 662.00,405.00" fill="none" stroke="#292b29" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="295.00" cy="225.00" rx="5.00" ry="5.00" fill="#f4f1ea" stroke="#696d67" stroke-width="1.5"/>
+<ellipse cx="295.00" cy="550.00" rx="5.00" ry="5.00" fill="#f4f1ea" stroke="#696d67" stroke-width="1.5"/>
+<ellipse cx="662.00" cy="225.00" rx="5.00" ry="5.00" fill="#f4f1ea" stroke="#696d67" stroke-width="1.5"/>
+<ellipse cx="662.00" cy="550.00" rx="5.00" ry="5.00" fill="#f4f1ea" stroke="#696d67" stroke-width="1.5"/>
+<ellipse cx="551.67" cy="362.18" rx="52.00" ry="52.00" fill="#edeae3" stroke="#292b29" stroke-width="1.8"/>
+<polyline points="551.67,362.18 545.14,396.40" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="544.46" cy="399.97" rx="3.00" ry="3.00" fill="#aa4d3e" stroke="#aa4d3e" stroke-width="1"/>
+<polyline points="348.00,386.00 606.00,386.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 7"/>
+<polyline points="610.00,380.00 648.00,380.00" fill="none" stroke="#aa4d3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="639.82,383.75 648.00,380.00 639.82,376.25" fill="none" stroke="#aa4d3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="714.00" y="353.00" font-size="18" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Narrow gate</text>
+<text x="714.00" y="381.00" font-size="16" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Object cannot pass</text>
+<polyline points="710.00,401.00 685.00,401.00 662.00,380.00" fill="none" stroke="#696d67" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="66.00" y="301.00" font-size="20" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Room to move</text>
+<text x="66.00" y="334.00" font-size="18" fill="#aa4d3e" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">No escape path</text>
+<polyline points="195.00,350.00 238.00,350.00 295.00,350.00" fill="none" stroke="#696d67" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="478.00" y="595.00" font-size="17" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="middle">Fixed cage · moving object</text>
+<polyline points="34.00,622.00 926.00,622.00" fill="none" stroke="#d8d8ce" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="480.00" y="658.00" font-size="18" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="middle">物体仍可平移和转动，但无法从固定围笼中逃脱</text>
+<text x="34.00" y="702.00" font-size="12" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Planar teaching model · geometry and loads are schematic</text>
+<text x="860.44" y="702.00" font-size="12" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Mahler et al.</text>
+</svg>

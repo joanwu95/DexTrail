@@ -1,0 +1,574 @@
+{
+  "edition": "DexTrail grasp concepts",
+  "palette": {
+    "paper": "#f4f1ea",
+    "ink": "#292b29",
+    "accent": "#aa4d3e"
+  },
+  "assets": [
+    {
+      "number": 1,
+      "slug": "form-closure",
+      "title": "Form closure",
+      "subtitle": "形封闭 · 固定接触的几何约束",
+      "animated": false,
+      "scope": "Planar teaching model · geometry and loads are schematic",
+      "alt": "四个固定无摩擦接触约束平面方块，阻止平移与转动。",
+      "width": 960,
+      "height": 720,
+      "duration_ms": null,
+      "files": [
+        "form-closure.png",
+        "form-closure.svg"
+      ],
+      "sources": [
+        {
+          "title": "Modern Robotics 12.1.7",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/12-1-7-form-closure/"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "slug": "force-closure",
+      "title": "Force closure",
+      "subtitle": "力封闭 · 接触力与摩擦提供抗扰方向",
+      "animated": false,
+      "scope": "Planar teaching model · geometry and loads are schematic",
+      "alt": "两个对向摩擦接触的平面夹持示例，显示摩擦锥、合力和力矩。",
+      "width": 960,
+      "height": 720,
+      "duration_ms": null,
+      "files": [
+        "force-closure.png",
+        "force-closure.svg"
+      ],
+      "sources": [
+        {
+          "title": "Modern Robotics 12.2.3",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/12-2-3-force-closure/"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "slug": "friction-cone",
+      "title": "Friction cone",
+      "subtitle": "摩擦锥 · 静摩擦允许的接触力范围",
+      "animated": false,
+      "scope": "Spatial teaching model · schematic contact geometry",
+      "alt": "两个摩擦锥截面对比：锥内需求可静态实现，锥外需求不可维持静止。",
+      "width": 960,
+      "height": 720,
+      "duration_ms": null,
+      "files": [
+        "friction-cone.png",
+        "friction-cone.svg"
+      ],
+      "sources": [
+        {
+          "title": "Modern Robotics 12.2.1",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/12-2-1-friction/"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "slug": "antipodal-grasp",
+      "title": "Antipodal grasp",
+      "subtitle": "对向抓取 · 接触连线与摩擦锥",
+      "animated": false,
+      "scope": "Planar teaching model · geometry and loads are schematic",
+      "alt": "平面模型中，接触连线在两个摩擦锥内部和外部的对比。",
+      "width": 960,
+      "height": 720,
+      "duration_ms": null,
+      "files": [
+        "antipodal-grasp.png",
+        "antipodal-grasp.svg"
+      ],
+      "sources": [
+        {
+          "title": "UC Berkeley: Introduction to Grasping",
+          "url": "https://pages.github.berkeley.edu/EECS-106/sp22-site/assets/scribe_notes/scribe_lec_9A.pdf"
+        },
+        {
+          "title": "Modern Robotics 12.2.3",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/12-2-3-force-closure/"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "slug": "caging",
+      "title": "Caging",
+      "subtitle": "笼式约束 · 可以活动，但不能逃脱",
+      "animated": true,
+      "scope": "Planar teaching model · geometry and loads are schematic",
+      "alt": "圆形物体在固定围笼内部平移转动，无法穿过比物体直径小的开口。",
+      "width": 960,
+      "height": 720,
+      "duration_ms": 6400,
+      "files": [
+        "caging.png",
+        "caging.svg",
+        "caging.gif"
+      ],
+      "sources": [
+        {
+          "title": "Mahler et al.: Synthesis of Energy-Bounded Planar Caging",
+          "url": "https://goldberg.berkeley.edu/pubs/Cage-Grasp-Synthesis-WAFR-accepted-Dec-2016.pdf"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "slug": "contact-models",
+      "title": "Contact models",
+      "subtitle": "接触模型 · 无摩擦点、摩擦点与软指接触",
+      "animated": false,
+      "scope": "Spatial teaching model · schematic contact geometry",
+      "alt": "三个接触模型分别允许法向力、法向加切向力，以及额外的法向扭转力矩。",
+      "width": 960,
+      "height": 720,
+      "duration_ms": null,
+      "files": [
+        "contact-models.png",
+        "contact-models.svg"
+      ],
+      "sources": [
+        {
+          "title": "Multi-Fingered Robotic Grasping: A Primer",
+          "url": "https://arxiv.org/pdf/1607.06620"
+        },
+        {
+          "title": "Modern Robotics 12.2.3",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/12-2-3-force-closure/"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "slug": "wrench",
+      "title": "Wrench",
+      "subtitle": "力旋量 · 力与力矩的统一描述",
+      "animated": false,
+      "scope": "Spatial teaching model · schematic contact geometry",
+      "alt": "偏心作用力相对参考点 O 产生力矩，右侧列出力旋量组成。",
+      "width": 960,
+      "height": 720,
+      "duration_ms": null,
+      "files": [
+        "wrench.png",
+        "wrench.svg"
+      ],
+      "sources": [
+        {
+          "title": "Multi-Fingered Robotic Grasping: A Primer",
+          "url": "https://arxiv.org/pdf/1607.06620"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "slug": "grasp-matrix",
+      "title": "Grasp matrix",
+      "subtitle": "抓取矩阵 · 从接触力到物体力旋量",
+      "animated": false,
+      "scope": "Planar teaching model · geometry and loads are schematic",
+      "alt": "显示两个对称接触的位置，以及将四个接触力分量映射成 Fx、Fy、Mz 的具体矩阵。",
+      "width": 960,
+      "height": 720,
+      "duration_ms": null,
+      "files": [
+        "grasp-matrix.png",
+        "grasp-matrix.svg"
+      ],
+      "sources": [
+        {
+          "title": "Multi-Fingered Robotic Grasping: A Primer",
+          "url": "https://arxiv.org/pdf/1607.06620"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "slug": "internal-force",
+      "title": "Internal force",
+      "subtitle": "抓取内力 · 挤压与物体运动解耦",
+      "animated": false,
+      "scope": "Internal-force component only · external loads omitted",
+      "alt": "对向共线挤压力增大，但其合力与合力矩仍为零。",
+      "width": 960,
+      "height": 720,
+      "duration_ms": null,
+      "files": [
+        "internal-force.png",
+        "internal-force.svg"
+      ],
+      "sources": [
+        {
+          "title": "UC Berkeley: Introduction to Grasping",
+          "url": "https://pages.github.berkeley.edu/EECS-106/sp22-site/assets/scribe_notes/scribe_lec_9A.pdf"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "slug": "grasp-wrench-space",
+      "title": "Grasp wrench space",
+      "subtitle": "抓取力旋量空间 · 给定预算下的可行受力集合",
+      "animated": false,
+      "scope": "Planar Mz = 0 slice · normalized forces; not full spatial GWS",
+      "alt": "在双指摩擦接触与每指法向力不超过一的预算下，展示零力矩切片的精确可行菱形。",
+      "width": 960,
+      "height": 720,
+      "duration_ms": null,
+      "files": [
+        "grasp-wrench-space.png",
+        "grasp-wrench-space.svg"
+      ],
+      "sources": [
+        {
+          "title": "Multi-Fingered Robotic Grasping: A Primer",
+          "url": "https://arxiv.org/pdf/1607.06620"
+        },
+        {
+          "title": "Modern Robotics 12.2.1",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/12-2-1-friction/"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "slug": "grasp-quality",
+      "title": "Grasp quality",
+      "subtitle": "抓取质量 · 最不利方向的抗扰余量",
+      "animated": false,
+      "scope": "Illustrative normalized 2D section · not the full 6D metric",
+      "alt": "同一归一化与预算下，比较两个示意力旋量截面的原点中心内切圆半径。",
+      "width": 960,
+      "height": 720,
+      "duration_ms": null,
+      "files": [
+        "grasp-quality.png",
+        "grasp-quality.svg"
+      ],
+      "sources": [
+        {
+          "title": "Multi-Fingered Robotic Grasping: A Primer",
+          "url": "https://arxiv.org/pdf/1607.06620"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "slug": "equilibrium-stability",
+      "title": "Equilibrium & stability",
+      "subtitle": "平衡与稳定性 · 初始平衡不等于受扰后恢复",
+      "animated": true,
+      "scope": "1D explanatory model · neutral versus asymptotically stable",
+      "alt": "同时移开两个初始平衡的物体并释放：有恢复力与阻尼的物体回位，中性物体保持偏移；重置阶段标明。",
+      "width": 960,
+      "height": 720,
+      "duration_ms": 6400,
+      "files": [
+        "equilibrium-stability.png",
+        "equilibrium-stability.svg",
+        "equilibrium-stability.gif"
+      ],
+      "sources": [
+        {
+          "title": "Multi-Fingered Robotic Grasping: A Primer",
+          "url": "https://arxiv.org/pdf/1607.06620"
+        },
+        {
+          "title": "DLR Hand II: Experiments and Experiences",
+          "url": "https://www.robotic.dlr.de/fileadmin/robotic/borst/BorstEtAl-ICRA03-HandApplications.pdf"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "slug": "grasp-types",
+      "title": "Power, precision & intermediate",
+      "subtitle": "抓取类型 · 包握、指尖捏取与侧向捏持",
+      "animated": false,
+      "scope": "Schematic hand postures · classification follows GRASP taxonomy",
+      "alt": "完整五指手分别包握工具柄、指尖捏小球和侧向捏钥匙。",
+      "width": 960,
+      "height": 720,
+      "duration_ms": null,
+      "files": [
+        "grasp-types.png",
+        "grasp-types.svg"
+      ],
+      "sources": [
+        {
+          "title": "Feix et al.: GRASP taxonomy",
+          "url": "https://www.eng.yale.edu/grablab/pubs/Feix_THMS2016.pdf"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "slug": "virtual-finger",
+      "title": "Virtual finger",
+      "subtitle": "虚拟手指 · 多个接触作为功能单元",
+      "animated": false,
+      "scope": "Palm opposition example · functional grouping, not anatomy",
+      "alt": "包握中手掌作为虚拟手指一，四个协同手指作为虚拟手指二。",
+      "width": 960,
+      "height": 720,
+      "duration_ms": null,
+      "files": [
+        "virtual-finger.png",
+        "virtual-finger.svg"
+      ],
+      "sources": [
+        {
+          "title": "Feix et al.: GRASP taxonomy",
+          "url": "https://www.eng.yale.edu/grablab/pubs/Feix_THMS2016.pdf"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "slug": "in-hand-manipulation",
+      "title": "In-hand manipulation",
+      "subtitle": "手内操作 · 物体相对于手掌改变姿态",
+      "animated": true,
+      "scope": "Planar teaching model · geometry and loads are schematic",
+      "alt": "完整手掌保持固定，三个手指协同使带方向标记的圆形物体往复转动。",
+      "width": 960,
+      "height": 720,
+      "duration_ms": 6400,
+      "files": [
+        "in-hand-manipulation.png",
+        "in-hand-manipulation.svg",
+        "in-hand-manipulation.gif"
+      ],
+      "sources": [
+        {
+          "title": "Northwestern: In-hand Sliding Manipulation",
+          "url": "https://www.robotics.northwestern.edu/research/topics/dynamic-nonprehensile-manipulation/in-hand-sliding-manipulation.html"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "slug": "finger-gaiting",
+      "title": "Finger gaiting",
+      "subtitle": "指间换步 · 解除接触、移动与重新接触",
+      "animated": true,
+      "scope": "Planar model · supporting contacts assumed adequately frictional",
+      "alt": "完整手掌中的食指离开物体、沿弧线换位再接触；两个对向支撑接触保持固定。",
+      "width": 960,
+      "height": 720,
+      "duration_ms": 6400,
+      "files": [
+        "finger-gaiting.png",
+        "finger-gaiting.svg",
+        "finger-gaiting.gif"
+      ],
+      "sources": [
+        {
+          "title": "Shi et al.: Dynamic In-hand Sliding Manipulation",
+          "url": "https://robotics.northwestern.edu/documents/publications/dynamic-in-hand-sliding-manipulation-tro.pdf"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "slug": "rolling",
+      "title": "Rolling",
+      "subtitle": "滚动 · 接触处没有相对滑动",
+      "animated": true,
+      "scope": "2D rolling kinematics · dx = R dθ; schematic finger pad",
+      "alt": "物体边移动边转动，材料标记随转动改变位置；角度与平移满足无滑动滚动关系。",
+      "width": 960,
+      "height": 720,
+      "duration_ms": 6400,
+      "files": [
+        "rolling.png",
+        "rolling.svg",
+        "rolling.gif"
+      ],
+      "sources": [
+        {
+          "title": "Northwestern: In-hand Sliding Manipulation",
+          "url": "https://www.robotics.northwestern.edu/research/topics/dynamic-nonprehensile-manipulation/in-hand-sliding-manipulation.html"
+        },
+        {
+          "title": "Modern Robotics 12.1.2: Contact Types",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/12-1-2-contact-types-rolling-sliding-and-breaking/"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "slug": "sliding",
+      "title": "Sliding",
+      "subtitle": "滑动 · 物体相对于指腹移动",
+      "animated": true,
+      "scope": "2D sliding kinematics · orientation fixed in this example",
+      "alt": "物体保持方向不变沿静止指腹往复滑动，接触处显示相对运动箭头。",
+      "width": 960,
+      "height": 720,
+      "duration_ms": 6400,
+      "files": [
+        "sliding.png",
+        "sliding.svg",
+        "sliding.gif"
+      ],
+      "sources": [
+        {
+          "title": "Northwestern: In-hand Sliding Manipulation",
+          "url": "https://www.robotics.northwestern.edu/research/topics/dynamic-nonprehensile-manipulation/in-hand-sliding-manipulation.html"
+        },
+        {
+          "title": "Modern Robotics 12.1.2: Contact Types",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/12-1-2-contact-types-rolling-sliding-and-breaking/"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "slug": "pivoting",
+      "title": "Pivoting",
+      "subtitle": "绕支点转动 · 接触位置保持固定",
+      "animated": true,
+      "scope": "2D kinematic example · pivot fixed in the world frame",
+      "alt": "长条物体围绕手指上的固定支点往复转动，弧线显示端部轨迹。",
+      "width": 960,
+      "height": 720,
+      "duration_ms": 6400,
+      "files": [
+        "pivoting.png",
+        "pivoting.svg",
+        "pivoting.gif"
+      ],
+      "sources": [
+        {
+          "title": "Northwestern: In-hand Sliding Manipulation",
+          "url": "https://www.robotics.northwestern.edu/research/topics/dynamic-nonprehensile-manipulation/in-hand-sliding-manipulation.html"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "slug": "compliance",
+      "title": "Compliance",
+      "subtitle": "顺应性 · 受力变形与卸载恢复",
+      "animated": true,
+      "scope": "Quasistatic linear compliance example · F = K δ",
+      "alt": "加载时物体和指腹下移，手指随之变形，卸载后回到参考姿态。",
+      "width": 960,
+      "height": 720,
+      "duration_ms": 6400,
+      "files": [
+        "compliance.png",
+        "compliance.svg",
+        "compliance.gif"
+      ],
+      "sources": [
+        {
+          "title": "DLR Hand II: Experiments and Experiences",
+          "url": "https://www.robotic.dlr.de/fileadmin/robotic/borst/BorstEtAl-ICRA03-HandApplications.pdf"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "slug": "impedance-control",
+      "title": "Impedance control",
+      "subtitle": "阻抗控制 · 设定期望的力与运动关系",
+      "animated": true,
+      "scope": "1D virtual mass–spring–damper · model, not controller simulation",
+      "alt": "外部扰动使接触物体偏移，随后按虚拟弹簧阻尼响应回位；显示阻抗关系。",
+      "width": 960,
+      "height": 720,
+      "duration_ms": 6400,
+      "files": [
+        "impedance-control.png",
+        "impedance-control.svg",
+        "impedance-control.gif"
+      ],
+      "sources": [
+        {
+          "title": "DLR Hand II: Experiments and Experiences",
+          "url": "https://www.robotic.dlr.de/fileadmin/robotic/borst/BorstEtAl-ICRA03-HandApplications.pdf"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "slug": "underactuation",
+      "title": "Underactuation",
+      "subtitle": "欠驱动 · 独立输入少于机械自由度",
+      "animated": true,
+      "scope": "Conceptual tendon mechanism · motion distribution is prescribed",
+      "alt": "一台电机牵引二自由度手指，近端连杆接触后停止，远端关节继续运动。",
+      "width": 960,
+      "height": 720,
+      "duration_ms": 6400,
+      "files": [
+        "underactuation.png",
+        "underactuation.svg",
+        "underactuation.gif"
+      ],
+      "sources": [
+        {
+          "title": "Adaptive Synergies for the Pisa/IIT SoftHand",
+          "url": "https://arpi.unipi.it/handle/11568/507072"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "slug": "synergy",
+      "title": "Postural synergy",
+      "subtitle": "姿态协同 · 少数变量组织多关节动作",
+      "animated": true,
+      "scope": "Illustrative spread synergy · not a measured human principal synergy",
+      "alt": "一个滑块变量同时协调完整五指手的张开与收拢。",
+      "width": 960,
+      "height": 720,
+      "duration_ms": 6400,
+      "files": [
+        "synergy.png",
+        "synergy.svg",
+        "synergy.gif"
+      ],
+      "sources": [
+        {
+          "title": "Adaptive Synergies for the Pisa/IIT SoftHand",
+          "url": "https://arpi.unipi.it/handle/11568/507072"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "slug": "adaptive-synergy",
+      "title": "Adaptive synergy",
+      "subtitle": "自适应协同 · 共享驱动与接触后的适应",
+      "animated": true,
+      "scope": "Functional linkage schematic · no product-specific transmission claim",
+      "alt": "共享电机驱动两个顺应分支，一侧先接触后保持，另一侧继续闭合直到接触。",
+      "width": 960,
+      "height": 720,
+      "duration_ms": 6400,
+      "files": [
+        "adaptive-synergy.png",
+        "adaptive-synergy.svg",
+        "adaptive-synergy.gif"
+      ],
+      "sources": [
+        {
+          "title": "Adaptive Synergies for the Pisa/IIT SoftHand",
+          "url": "https://arpi.unipi.it/handle/11568/507072"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+site_name: DexTrail
+site_description: Tracing the paths to robotic dexterity.
+dev_addr: 127.0.0.1:8000
+hooks:
+  - hooks/atlas.py
+  - hooks/reports.py
+watch:
+  - ../data
+  - ../research/collection
+theme:
+  name: material
+  favicon: images/brand/dextrail-fingerprint-brick.svg
+  language: zh
+  font: false
+  palette:
+    primary: blue grey
+    accent: teal
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+plugins:
+  - search:
+      lang:
+        - en
+        - zh
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/theme.css
+  - stylesheets/dextrail.css
+  - stylesheets/product-details.css
+  - stylesheets/product-lineage.css
+  - stylesheets/explorer-rail.css
+  - stylesheets/comparison.css
+  - stylesheets/engineering-notes.css
+  - stylesheets/sensing-chain.css
+  - stylesheets/product-editorials.css
+  - stylesheets/map-exploration.css
+  - stylesheets/paper-theme.css
+extra_javascript:
+  - javascripts/tag-palette.js
+  - javascripts/atlas-map.js
+  - javascripts/map-state.js
+  - javascripts/map-layout.js
+  - javascripts/dextrail-map.js
+  - javascripts/hand-detail.js
+  - javascripts/reading-rail.js
+  - javascripts/sudo-videos.js
+  - javascripts/comparison.js
+  - javascripts/sensing-chain.js
+  - javascripts/directory.js
+nav:
+  - 首页: index.md
+  - 技术对比: compare.md
+  - 视觉样稿: visual-lab/design-notes.md
+  - 灵巧手数据库:
+      - 数据库: hands/index.md
+  - 技术资料:
+      - 全部资料: hands/reports/index.md
+  - 技术地图: technologies/index.md
+  - 操作能力: capabilities.md
+  - 工程专题:
+      - 研究问题: engineering/index.md
+      - 自由度与构型判断: engineering/degrees-of-freedom.md
+      - 感知的测量位置: engineering/sensing-chain.md
+      - 传动与标定: engineering/transmission.md
+      - 力估计与抓取: engineering/force-estimation.md
+      - 仿真与现实: engineering/sim-to-real.md
+  - 研究与实验:
+      - 苏度 Sudo R1 系统: systems/sudo-r1.md
+      - 研究入口: research/index.md
+      - 抓取仿真与误差分析: research/grasp-simulation.md
+      - 案例模板: research/template.md
+  - 资源库:
+      - 资源分类: resources/index.md
+      - 论文: papers/index.md
+      - LEAP Hand 论文笔记: papers/leap-hand-2023.md
+      - 手内操作论文笔记: papers/learning-dexterous-in-hand-manipulation.md
+      - 来源与核验: resources/evidence.md

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720" style="max-width:100%;height:auto" role="img" aria-labelledby="title desc"><title id="title">Wrench</title><desc id="desc">偏心作用力相对参考点 O 产生力矩，右侧列出力旋量组成。</desc>
+<rect width="960" height="720" fill="#f4f1ea"/>
+<text x="34.00" y="35.00" font-size="12" fill="#aa4d3e" font-family="Consolas, monospace" font-weight="400" text-anchor="start">DEXTRAIL / GRASP 07</text>
+<text x="34.00" y="80.00" font-size="29" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Wrench</text>
+<text x="35.00" y="110.00" font-size="15" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">力旋量 · 力与力矩的统一描述</text>
+<polyline points="34.00,129.00 926.00,129.00" fill="none" stroke="#d8d8ce" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="232.00,314.00 430.00,314.00 430.00,462.00 232.00,462.00 232.00,314.00" fill="none" stroke="#292b29" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="232.00,314.00 430.00,314.00 430.00,462.00 232.00,462.00" fill="#edeae3" stroke="#292b29" stroke-width="1.6" stroke-linejoin="round"/>
+<ellipse cx="430.00" cy="314.00" rx="3.50" ry="3.50" fill="#f4f1ea" stroke="#aa4d3e" stroke-width="1.5"/>
+<ellipse cx="331.00" cy="388.00" rx="3.00" ry="3.00" fill="#696d67" stroke="#696d67" stroke-width="1"/>
+<polyline points="331.00,388.00 430.00,314.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 7"/>
+<polyline points="430.00,314.00 430.00,214.00" fill="none" stroke="#aa4d3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="433.75,222.18 430.00,214.00 426.25,222.18" fill="none" stroke="#aa4d3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="450.00" y="252.00" font-size="19" fill="#aa4d3e" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Force F</text>
+<polyline points="296.91,434.92 302.07,438.27 307.55,441.05 313.29,443.23 319.24,444.79 325.32,445.72 331.46,446.00 337.59,445.62 343.65,444.60 349.57,442.95 355.28,440.67 360.72,437.81 365.82,434.38 370.54,430.44 374.81,426.01 378.58,421.16 381.83,415.94 384.50,410.41 386.57,404.62 388.01,398.64 388.82,392.55 388.98,386.41 388.48,380.28 387.34,374.24 385.57,368.35 383.19,362.69 380.21,357.31 376.69,352.27 372.65,347.64 368.15,343.46 363.22,339.77 357.94,336.64 352.35,334.07 346.52,332.12 340.52,330.79 334.41,330.10 328.27,330.06 322.15,330.68 316.14,331.94 310.29,333.83 304.67,336.32" fill="none" stroke="#aa4d3e" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="316.14,331.94 304.67,336.32" fill="none" stroke="#aa4d3e" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="310.27,330.61 304.67,336.32 312.65,336.84" fill="none" stroke="#aa4d3e" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="222.00" y="499.00" font-size="18" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Moment about O</text>
+<text x="305.00" y="423.00" font-size="15" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">O</text>
+<text x="371.00" y="378.00" font-size="17" fill="#696d67" font-family="Consolas, monospace" font-weight="400" text-anchor="start">r</text>
+<text x="614.00" y="275.00" font-size="24" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Wrench</text>
+<text x="614.00" y="334.00" font-size="26" fill="#292b29" font-family="Consolas, monospace" font-weight="400" text-anchor="start">w = [ F ; τ ]</text>
+<text x="614.00" y="391.00" font-size="24" fill="#292b29" font-family="Consolas, monospace" font-weight="400" text-anchor="start">τ = r × F</text>
+<text x="614.00" y="447.00" font-size="18" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">3 force components</text>
+<text x="614.00" y="479.00" font-size="18" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">3 moment components</text>
+<polyline points="34.00,622.00 926.00,622.00" fill="none" stroke="#d8d8ce" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="480.00" y="658.00" font-size="18" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="middle">力旋量同时描述力与力矩；力矩取决于参考点 O</text>
+<text x="34.00" y="702.00" font-size="12" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Spatial teaching model · schematic contact geometry</text>
+<text x="840.70" y="702.00" font-size="12" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Grasping Primer</text>
+</svg>

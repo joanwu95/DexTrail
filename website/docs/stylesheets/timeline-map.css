@@ -1,0 +1,47 @@
+/* B: year columns, category lanes, one independent link per product. */
+#dex-map .dex-timeline-stage{height:auto;min-height:0;overflow:hidden;cursor:default;touch-action:auto;background:none}
+#dex-map .dex-lane-heading{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:88px;padding:16px 0}
+#dex-map .dex-map-caption{position:static;pointer-events:auto;min-width:0}
+#dex-map .dex-view-title{margin:0;font-size:22px;font-weight:500}
+#dex-map .dex-coverage{margin-top:6px;font-size:12px;line-height:1.5}
+#dex-map .dex-coverage>span{display:inline}
+#dex-map .dex-view-coverage{margin-left:18px;color:var(--dex-muted)}
+#dex-map .dex-scale{position:static;flex-direction:row;gap:4px;color:var(--dex-muted);flex-shrink:0}
+#dex-map .dex-scale button{width:40px;height:40px}
+#dex-map .dex-zoom-readout{min-width:48px;text-align:center}
+#dex-map .dex-coordinate-note{display:none}
+#dex-map .dex-lanes{height:clamp(410px,57vh,720px);position:relative;overflow:auto;overscroll-behavior:contain;border-top:1px solid var(--dex-line);border-bottom:1px solid var(--dex-line);scrollbar-width:thin;scrollbar-color:#b4b7ab transparent;touch-action:pan-x pan-y;scroll-padding:50px 20px 20px 118px}
+#dex-map .dex-lane-matrix{display:grid;grid-template-columns:108px repeat(var(--lane-years),var(--lane-width,176px));width:max-content;min-width:100%;padding-right:var(--lane-tail,0px);font:400 13px/1.5 var(--dex-sans)}
+#dex-map .dex-lane-row{display:contents}
+#dex-map .dex-lane-year{position:sticky;top:0;z-index:4;background:var(--dex-bg);height:46px;border-bottom:1px solid var(--dex-line);padding:13px 12px;color:var(--dex-muted);font-size:12px;font-variant-numeric:tabular-nums}
+#dex-map .dex-lane-corner{left:0;z-index:6;font-size:11px}
+#dex-map .dex-lane-title{position:sticky;left:0;z-index:3;background:var(--dex-bg);border-bottom:1px solid var(--dex-line);padding:18px 12px 14px 0;color:var(--dex-muted);font-size:12px;overflow-wrap:anywhere}
+#dex-map .dex-lane-cell{display:flex;flex-direction:column;gap:4px;min-height:72px;padding:12px 10px 16px;border-bottom:1px solid var(--dex-line);border-right:1px solid color-mix(in srgb,var(--dex-line),transparent 60%)}
+#dex-map .dex-lane-row:last-child>:is(.dex-lane-title,.dex-lane-cell){border-bottom:0}
+#dex-map a.dex-lane-item{position:relative;display:grid;grid-template-columns:28px minmax(0,1fr);gap:9px;align-items:center;min-height:36px;padding:3px 0;color:var(--dex-text);text-decoration:none;background:none;border:0;border-radius:0;box-shadow:none}
+#dex-map .dex-lane-item img{width:28px;height:30px;object-fit:contain;mix-blend-mode:multiply}
+#dex-map .dex-lane-glyph{display:grid;place-items:center;width:28px;height:30px;font:11px var(--dex-mono);color:var(--dex-muted)}
+#dex-map .dex-lane-caption{display:flex;flex-direction:column;gap:2px;min-width:0}
+#dex-map .dex-lane-caption strong{font-size:12px;font-weight:500;line-height:1.5;overflow-wrap:anywhere;color:inherit}
+#dex-map .dex-lane-caption small{font-size:10px;line-height:1.5;color:var(--dex-muted);font-variant-numeric:tabular-nums}
+#dex-map .dex-lane-item:hover,#dex-map .dex-lane-item:focus-visible{color:var(--dex-accent);z-index:1}
+#dex-map .dex-lane-item:hover:before,#dex-map .dex-lane-item:focus-visible:before{content:'';position:absolute;left:-6px;height:22px;width:2px;background:var(--dex-accent)}
+#dex-map .dex-lane-item:focus-visible{outline:2px solid var(--dex-accent);outline-offset:3px}
+#dex-map .dex-inspector{left:auto;right:16px;top:108px;bottom:auto;width:310px;max-height:calc(100% - 132px)}
+#dex-map .dex-inspector[data-side=left]{left:16px;right:auto}
+#dex-map .dex-inspector .dex-preview-img{width:62px;height:65px}
+#dex-map .dex-empty{position:absolute;top:155px;left:126px;right:22px;z-index:2;background:var(--dex-bg);padding:20px;font-size:14px;color:var(--dex-muted)}
+#dex-map .dex-console{padding-top:14px}
+@media(max-width:600px){
+  #dex-map .dex-lane-heading{gap:6px;padding:15px 0;min-height:100px}
+  #dex-map .dex-view-title{font-size:19px}
+  #dex-map .dex-coverage>span{display:block}
+  #dex-map .dex-view-coverage{margin-left:0}
+  #dex-map .dex-scale{gap:0}
+  #dex-map .dex-scale button{width:36px;height:44px}
+  #dex-map .dex-zoom-readout{min-width:38px;font-size:11px}
+  #dex-map .dex-lanes{height:58vh;min-height:360px}
+  #dex-map a.dex-lane-item{min-height:44px}
+  #dex-map .dex-inspector{left:10px;right:10px;width:auto;top:110px;max-height:calc(100% - 132px)}
+  #dex-map .dex-inspector[data-side=left]{left:10px;right:10px}
+}

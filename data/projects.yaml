@@ -1,0 +1,10 @@
+schema_version: 1
+projects:
+  - id: grasp-simulation
+    name: 抓取仿真与误差分析
+    status: planned
+    page: research/grasp-simulation.md
+    hand_ids: []
+    technology_ids: [mujoco]
+    source_ids: []
+    summary: 计划建立最小抓取实验，记录运行条件、评价指标和误差；尚未实现。

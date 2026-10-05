@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#e5bd78" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="title desc">
+  <title id="title">DexTrail — articulated hand</title>
+  <desc id="desc">Four fingers of differing lengths and an opposing thumb, drawn as single articulated lines above an open palm and wrist.</desc>
+  <path d="M20 34 18 23 19 14"/>
+  <path d="M30 32 29 19 30 7"/>
+  <path d="M40 33 40 22 41 12"/>
+  <path d="M49 35 50 27 51 20"/>
+  <path d="M22 43 13 35 8 26"/>
+  <path d="M20 34 22 43 28 53 39 53 46 44 49 35"/>
+  <circle cx="33.5" cy="57" r="1.9" fill="#e5bd78" stroke="none"/>
+</svg>

@@ -1,0 +1,313 @@
+{
+  "sources": {
+    "shadow": {
+      "name": "Shadow · December 2024 技术规格",
+      "url": "https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf"
+    },
+    "soft": {
+      "name": "SoftHand · 原论文 §II、§IV",
+      "url": "https://www.centropiaggio.unipi.it/sites/default/files/PisaIIT_SoftHand_0.pdf"
+    },
+    "leap": {
+      "name": "LEAP v1 · 作者装配资料",
+      "url": "https://v1.leaphand.com/assembly"
+    },
+    "tactile": {
+      "name": "触觉信息综述 · IEEE T-RO",
+      "url": "https://www.ri.cmu.edu/app/uploads/2021/08/LiTRo2020.pdf"
+    },
+    "learning": {
+      "name": "Learning Dexterous In-Hand Manipulation · arXiv v5",
+      "url": "https://arxiv.org/abs/1808.00177v5"
+    }
+  },
+  "hands": {
+    "shadow": {
+      "name": "Shadow Classic",
+      "version": "December 2024 电驱配置",
+      "page": "hands/generated/shadow-hand/",
+      "source": "shadow"
+    },
+    "soft": {
+      "name": "Pisa/IIT SoftHand",
+      "version": "原论文的单执行器原型",
+      "page": "hands/generated/pisa-iit-softhand/",
+      "source": "soft"
+    },
+    "leap": {
+      "name": "LEAP Hand v1",
+      "version": "RSS 2023 · Full / Regular",
+      "page": "hands/generated/leap-hand/",
+      "source": "leap"
+    }
+  },
+  "chapters": {
+    "drive": {
+      "label": "驱动与传动",
+      "title": "动力如何从执行器到达手指？",
+      "intro": "先区分执行器的位置、力的传递方式和独立输入数量，再理解不同手为什么作出不同选择。",
+      "questions": [
+        "执行器放在哪里",
+        "动力怎样传递",
+        "多少运动能独立控制"
+      ],
+      "defaultQuestion": 1,
+      "figure": "两种执行器布置的概念对照",
+      "explainTitle": "布置与传动分别理解",
+      "explain": "远置执行器可以通过腱索把力传到关节；关节附近也可以放置执行器模块。<strong>位置、传动和驱动分配需要分别说明。</strong> 采用腱索的手，既可能有多路输入，也可能只有少量输入。",
+      "dimensions": [
+        [
+          "执行器位置",
+          "前臂、掌部或关节附近。关注空间、运动部件质量和系统布置。"
+        ],
+        [
+          "传力方式",
+          "腱索、齿轮、连杆等。关注具体走索、接触与传动约束。"
+        ],
+        [
+          "独立输入",
+          "能分别指定哪些运动。耦合、欠驱动与柔顺需要另行说明。"
+        ]
+      ],
+      "outline": [
+        "执行器放在哪里？",
+        "腱索、齿轮与连杆怎样传力？",
+        "主动轴、驱动输入与关节怎么数？",
+        "欠驱动与柔顺怎样配合？"
+      ],
+      "benefit": "SoftHand：减少独立控制输入",
+      "benefitText": "一个执行器组织整手闭合，腱索与弹性结构使手形随接触条件调整。论文把一部分抓握适应性放进机构。",
+      "cost": "同时限制逐关节指定运动",
+      "costText": "19 个关节不能当作 19 个独立控制目标。需要精细手内动作时，还要检查机构可实现的运动和具体任务证据。",
+      "refs": [
+        "shadow",
+        "soft",
+        "leap"
+      ],
+      "cases": [
+        {
+          "id": "shadow",
+          "tags": [
+            "腱绳传动",
+            "多路输入"
+          ],
+          "text": "多路驱动与腱传力结合，长指末节仍存在运动约束。",
+          "takeaway": "看“采用腱索”之外，还要看哪些运动能独立指定。"
+        },
+        {
+          "id": "soft",
+          "tags": [
+            "腱绳传动",
+            "欠驱动",
+            "柔顺机构"
+          ],
+          "text": "一个执行器组织 19 个关节，腱索与弹性结构共同参与闭合。",
+          "takeaway": "相同传动类别，可以对应不同的输入与适应方式。"
+        },
+        {
+          "id": "leap",
+          "tags": [
+            "模块化",
+            "多路输入"
+          ],
+          "text": "作者装配资料逐一连接关节附近的 Dynamixel 执行器模块。",
+          "takeaway": "模块的布置、内部减速与机构关节，需要分别阅读。"
+        }
+      ]
+    },
+    "shape": {
+      "label": "构型与运动",
+      "title": "手指怎样到达并保持需要的接触？",
+      "intro": "以指尖和物体的关系组织构型内容：指头数量、关节轴与拇指布局，分别影响哪些动作？",
+      "questions": [
+        "指尖怎样到达物体",
+        "拇指如何对掌",
+        "关节轴怎样安排"
+      ],
+      "defaultQuestion": 0,
+      "figure": "从关节运动到指尖接触位置",
+      "explainTitle": "从接触需求解释构型",
+      "explain": "专题先画关节轴和指尖位置，再用同一个操作动作说明运动需求。<strong>比较需要的接触与运动，而不靠手指数量直接评价能力。</strong> 图中只是接触关系示意，具体可达范围需要对应产品模型。",
+      "dimensions": [
+        [
+          "手指布局",
+          "三指、四指、五指以及拇指的位置，怎样组织接触。"
+        ],
+        [
+          "关节轴",
+          "屈伸、侧摆及对掌的轴向与范围，怎样改变指尖运动。"
+        ],
+        [
+          "操作动作",
+          "捏取、包覆、换指和重定向，需要哪些接触与运动。"
+        ]
+      ],
+      "outline": [
+        "三指、四指与五指各解决什么问题？",
+        "拇指的对掌能力怎样读？",
+        "侧摆轴为什么影响操作？",
+        "抓握与手内操作需要什么不同构型？"
+      ],
+      "benefit": "用轴向与范围解释可用动作",
+      "benefitText": "Shadow 的关节范围表与 LEAP 的模块布局，提供了比手指数量更具体的运动信息；它们应与指尖接触需求一起阅读。",
+      "cost": "几何可达仍需要控制与任务证据",
+      "costText": "指尖能够到达某个位置，不等于已经实现稳定抓握或连续操作。摩擦、接触力和控制条件仍会影响实际结果。",
+      "refs": [
+        "shadow",
+        "soft",
+        "leap"
+      ],
+      "cases": [
+        {
+          "id": "shadow",
+          "tags": [
+            "五指",
+            "关节耦合"
+          ],
+          "text": "规格列出拇指和长指的关节范围，并注明长指末节的运动约束。",
+          "takeaway": "用关节轴图解释拟人外形背后的可控运动。"
+        },
+        {
+          "id": "soft",
+          "tags": [
+            "五指",
+            "柔顺机构"
+          ],
+          "text": "论文给出拟人五指原型的运动结构以及滚动接触关节。",
+          "takeaway": "构型与柔顺结构一起影响接触中的手形。"
+        },
+        {
+          "id": "leap",
+          "tags": [
+            "四指",
+            "模块化"
+          ],
+          "text": "作者装配资料包含三根长指和拇指的模块连接与关节布局。",
+          "takeaway": "可按作者模型追踪每个轴，而不是只看四指轮廓。"
+        }
+      ]
+    },
+    "sense": {
+      "label": "感知与反馈",
+      "title": "手怎样知道自己在动、在哪里接触？",
+      "intro": "沿测量位置理解感知：驱动侧、关节侧和接触表面，获得的信息并不相同。",
+      "questions": [
+        "测量发生在哪里",
+        "读数代表什么",
+        "如何用于操作反馈"
+      ],
+      "defaultQuestion": 0,
+      "figure": "驱动、关节与物体接触的测量位置",
+      "explainTitle": "读数与推断分开",
+      "explain": "先画传感器位于哪里，再说明它直接测到什么。<strong>从一个读数推断接触状态，需要相应映射、标定或模型。</strong> 不同触觉传感器的输出，应按具体原理与算法解释。",
+      "dimensions": [
+        [
+          "自身状态",
+          "位置、速度、电流等信息如何对应执行器与关节。"
+        ],
+        [
+          "接触信息",
+          "指尖、指节与掌面的传感器测什么，覆盖在哪里。"
+        ],
+        [
+          "状态估计",
+          "如何从原始信号得到接触位置、物体属性或滑动判断。"
+        ]
+      ],
+      "outline": [
+        "编码器位于电机还是关节？",
+        "腱负载与物体接触力有什么区别？",
+        "视触觉怎样把变形转成信息？",
+        "需要测力、接触还是滑动？"
+      ],
+      "benefit": "分开获得关节与传动侧信息",
+      "benefitText": "Shadow 用关节侧传感器读位置，用单独的负载传感器读取成对腱索的负载信息；这两种测量服务不同的控制问题。",
+      "cost": "传动侧负载需要继续解释",
+      "costText": "腱索读数不能直接替代物体接触力。还需要结合姿态、机构与接触条件，说明使用何种映射或估计。",
+      "refs": [
+        "shadow",
+        "tactile"
+      ],
+      "cases": [
+        {
+          "id": "shadow",
+          "tags": [
+            "关节感知",
+            "腱负载"
+          ],
+          "text": "规格分别介绍关节位置与传动侧负载等感知，适合用来解释测量位置。",
+          "takeaway": "读数与外部接触力之间的关系，需要具体机构与接触条件。"
+        }
+      ]
+    },
+    "control": {
+      "label": "控制与学习",
+      "title": "观测怎样变成稳定、连续的操作动作？",
+      "intro": "从目标、观测和动作的闭环出发，解释模型、反馈、示范和策略学习怎样参与控制。",
+      "questions": [
+        "闭环怎样组织",
+        "示范怎样使用",
+        "仿真怎样走向实物"
+      ],
+      "defaultQuestion": 0,
+      "figure": "同一个操作闭环，可以容纳不同控制方法",
+      "explainTitle": "先看输入与输出",
+      "explain": "每种方法先回答：目标是什么、能观察什么、输出什么指令。<strong>训练过程与运行时的控制闭环分别呈现。</strong> 再通过具体研究说明它解决了哪个任务，而不把方法名字作为能力证明。",
+      "dimensions": [
+        [
+          "运行时反馈",
+          "状态与接触信息怎样改变下一步动作。"
+        ],
+        [
+          "策略来源",
+          "控制律、优化、示范与学习分别怎样得到动作规则。"
+        ],
+        [
+          "实物验证",
+          "训练环境、硬件配置、任务指标与失败情况怎样对应。"
+        ]
+      ],
+      "outline": [
+        "位置、力与阻抗控制怎样区别？",
+        "遥操作怎样成为示范数据？",
+        "强化学习改变了控制的哪一部分？",
+        "域随机化解决什么迁移问题？"
+      ],
+      "benefit": "机构与策略都可以参与适应",
+      "benefitText": "SoftHand 的例子把接触适应放进机构；学习手内操作的例子则训练动作策略。不同工作需要分别看目标、观测与动作。",
+      "cost": "训练方式不代替实物任务验证",
+      "costText": "策略的训练环境、运行时观测与历史硬件配置要分别对应。研究中的成功结果应保留原论文的物体、任务和评价条件。",
+      "refs": [
+        "learning",
+        "soft"
+      ],
+      "cases": [
+        {
+          "id": "shadow",
+          "tags": [
+            "策略学习",
+            "仿真到实物"
+          ],
+          "text": "OpenAI 的 2018 研究在仿真训练重定向策略，并在真实 Shadow 手上验证。",
+          "takeaway": "研究硬件配置与当前 Classic 档案应分别阅读。",
+          "sourceOverride": "learning"
+        },
+        {
+          "id": "soft",
+          "tags": [
+            "柔顺机构",
+            "欠驱动"
+          ],
+          "text": "SoftHand 原论文将机构与控制一起设计，用单执行器实现自适应协同。",
+          "takeaway": "控制简化也可以通过机构实现；原理与实验分开呈现。"
+        }
+      ]
+    }
+  },
+  "diagrams": {
+    "drive": "<svg class=\"diagram\" viewBox=\"0 0 860 215\" role=\"img\" aria-label=\"左侧远置执行器经腱索传到关节，右侧执行器模块布置在关节附近，均为概念图\"><path d=\"M430 18V194\" class=\"boundary\"/><text x=\"12\" y=\"24\" class=\"small\">A · 远置执行器，通过腱索传力</text><text x=\"451\" y=\"24\" class=\"small\">B · 执行器位于关节附近</text><rect x=\"20\" y=\"78\" width=\"75\" height=\"74\" rx=\"5\" class=\"drive\"/><circle cx=\"61\" cy=\"115\" r=\"16\" class=\"path\"/><text x=\"55\" y=\"120\" class=\"small\">M</text><path d=\"M94 132H180L257 96L330 116\" class=\"structure\"/><circle cx=\"181\" cy=\"132\" r=\"15\" class=\"joint\"/><circle cx=\"259\" cy=\"96\" r=\"12\" class=\"joint\"/><path d=\"M77 108H179Q189 108 194 115L254 75Q262 71 271 78L331 95\" class=\"path\"/><path d=\"M107 108H139\" class=\"path\"/><path d=\"M139 108l-6 -3v6Z\" class=\"arrow\"/><path d=\"M205 50L216 75\" class=\"leader\"/><text x=\"150\" y=\"48\" class=\"small\">沿腱索传递拉力</text><path d=\"M23 166V180H99\" class=\"leader\"/><text x=\"104\" y=\"184\" class=\"small\">执行器</text><text x=\"265\" y=\"160\" class=\"small\">关节</text><path d=\"M273 145L263 112\" class=\"leader\"/><path d=\"M478 137H556L648 90L734 111\" class=\"structure\"/><rect x=\"532\" y=\"116\" width=\"48\" height=\"42\" rx=\"4\" class=\"drive\"/><rect x=\"626\" y=\"70\" width=\"48\" height=\"42\" rx=\"4\" class=\"drive\"/><circle cx=\"556\" cy=\"137\" r=\"9\" class=\"path\"/><circle cx=\"650\" cy=\"91\" r=\"9\" class=\"path\"/><path d=\"M561 135L598 116M654 93L695 104\" class=\"path\"/><path d=\"M557 116V62H612\" class=\"leader\"/><text x=\"618\" y=\"66\" class=\"small\">关节附近的执行器模块</text><text x=\"484\" y=\"185\" class=\"small\">内部传动与减速形式需继续展开</text><text x=\"13\" y=\"208\" class=\"tiny\">示意仅说明布置与传力；走索、回复结构和关节约束依具体设计而异。</text></svg>",
+    "shape": "<svg class=\"diagram\" viewBox=\"0 0 860 215\" role=\"img\" aria-label=\"从关节轴和指尖位置理解对物体的接触，非产品几何\"><path d=\"M20 141H97L146 96L210 107\" class=\"structure\"/><circle cx=\"97\" cy=\"141\" r=\"12\" class=\"joint\"/><circle cx=\"146\" cy=\"96\" r=\"10\" class=\"joint\"/><path d=\"M123 44L119 83\" class=\"leader\"/><text x=\"50\" y=\"35\">关节轴与运动范围</text><circle cx=\"210\" cy=\"107\" r=\"5\" fill=\"#aa4d3e\"/><path d=\"M260 109H323\" class=\"path\"/><path d=\"M323 109l-7 -4v8Z\" class=\"arrow\"/><text x=\"254\" y=\"151\" class=\"small\">改变指尖位置</text><circle cx=\"461\" cy=\"110\" r=\"58\" class=\"muted-fill\"/><path d=\"M362 57L422 67M355 144L402 138M566 84L517 90\" class=\"structure\"/><circle cx=\"422\" cy=\"67\" r=\"5\" fill=\"#aa4d3e\"/><circle cx=\"402\" cy=\"138\" r=\"5\" fill=\"#aa4d3e\"/><circle cx=\"517\" cy=\"90\" r=\"5\" fill=\"#aa4d3e\"/><text x=\"444\" y=\"114\" class=\"small\">物体</text><path d=\"M547 162L593 185\" class=\"leader\"/><text x=\"601\" y=\"190\" class=\"small\">接触位置与方向</text><text x=\"634\" y=\"72\">以动作理解构型</text><text x=\"634\" y=\"105\" class=\"small\">捏取 · 包覆 · 重定向</text><text x=\"634\" y=\"132\" class=\"small\">需要不同接触与运动</text><text x=\"13\" y=\"208\" class=\"tiny\">接触关系概念图；不代表具体手的可达范围或任务能力。</text></svg>",
+    "sense": "<svg class=\"diagram\" viewBox=\"0 0 860 215\" role=\"img\" aria-label=\"驱动侧、关节侧与接触表面三个测量位置的概念链\"><path d=\"M93 88H337L566 88H741\" stroke=\"#d8d8ce\" stroke-width=\"2\"/><rect x=\"35\" y=\"60\" width=\"117\" height=\"57\" rx=\"4\" class=\"muted-fill\"/><text x=\"67\" y=\"94\">执行器</text><rect x=\"279\" y=\"60\" width=\"117\" height=\"57\" rx=\"4\" class=\"muted-fill\"/><text x=\"313\" y=\"94\">关节</text><rect x=\"510\" y=\"60\" width=\"117\" height=\"57\" rx=\"4\" class=\"muted-fill\"/><text x=\"551\" y=\"94\">指尖</text><circle cx=\"741\" cy=\"88\" r=\"33\" class=\"muted-fill\"/><text x=\"724\" y=\"94\">物体</text><circle cx=\"92\" cy=\"112\" r=\"5\" fill=\"#aa4d3e\"/><circle cx=\"337\" cy=\"112\" r=\"5\" fill=\"#aa4d3e\"/><circle cx=\"626\" cy=\"88\" r=\"5\" fill=\"#aa4d3e\"/><path d=\"M93 117V146M337 117V146M626 92V146\" class=\"path\"/><text x=\"35\" y=\"170\">驱动侧信息</text><text x=\"278\" y=\"170\">关节侧信息</text><text x=\"554\" y=\"170\">接触信息</text><text x=\"35\" y=\"195\" class=\"small\">读数对应哪个部件？</text><text x=\"278\" y=\"195\" class=\"small\">关节状态怎样测量？</text><text x=\"554\" y=\"195\" class=\"small\">传感原理与算法是什么？</text><text x=\"13\" y=\"26\" class=\"tiny\">不是所有手都具备所有位置的传感；每项需要具体硬件证据。</text></svg>",
+    "control": "<svg class=\"diagram\" viewBox=\"0 0 860 215\" role=\"img\" aria-label=\"目标和观测进入控制器或策略，动作作用于手与物体，新的观测返回形成闭环\"><rect x=\"16\" y=\"70\" width=\"155\" height=\"54\" rx=\"4\" class=\"muted-fill\"/><text x=\"36\" y=\"102\">目标与当前观测</text><rect x=\"278\" y=\"70\" width=\"155\" height=\"54\" rx=\"4\" class=\"drive\"/><text x=\"305\" y=\"102\">控制器／策略</text><rect x=\"548\" y=\"70\" width=\"155\" height=\"54\" rx=\"4\" class=\"muted-fill\"/><text x=\"582\" y=\"102\">手与物体</text><path d=\"M171 97H268M433 97H538\" class=\"path\"/><path d=\"M267 97l-7 -4v8ZM537 97l-7 -4v8Z\" class=\"arrow\"/><text x=\"459\" y=\"84\" class=\"small\">动作</text><path d=\"M625 125V176H92V134\" class=\"path\"/><path d=\"M92 134l-4 7h8Z\" class=\"arrow\"/><text x=\"310\" y=\"169\" class=\"small\">新的状态与接触观测</text><path d=\"M355 33V61\" class=\"boundary\"/><text x=\"284\" y=\"23\" class=\"small\">控制律／优化／策略训练</text><text x=\"736\" y=\"95\" class=\"small\">真实运行</text><text x=\"13\" y=\"208\" class=\"tiny\">闭环概念图；具体方法的观测、动作接口与训练过程按原论文展开。</text></svg>"
+  }
+}

@@ -1,0 +1,294 @@
+{
+  "responsive": [
+    {
+      "figures": 0,
+      "items": 8,
+      "overflow": [],
+      "page": 360,
+      "url": "/engineering/",
+      "width": 375
+    },
+    {
+      "figures": 1,
+      "items": 0,
+      "overflow": [],
+      "page": 360,
+      "url": "/engineering/degrees-of-freedom/",
+      "width": 375
+    },
+    {
+      "figures": 1,
+      "items": 0,
+      "overflow": [],
+      "page": 360,
+      "url": "/engineering/finger-count/",
+      "width": 375
+    },
+    {
+      "figures": 2,
+      "items": 0,
+      "overflow": [],
+      "page": 360,
+      "url": "/engineering/sensing-chain/",
+      "width": 375
+    },
+    {
+      "figures": 1,
+      "items": 0,
+      "overflow": [],
+      "page": 360,
+      "url": "/engineering/transmission/",
+      "width": 375
+    },
+    {
+      "figures": 1,
+      "items": 0,
+      "overflow": [],
+      "page": 360,
+      "url": "/engineering/motion-planning/",
+      "width": 375
+    },
+    {
+      "figures": 1,
+      "items": 0,
+      "overflow": [],
+      "page": 360,
+      "url": "/engineering/control-modes/",
+      "width": 375
+    },
+    {
+      "figures": 1,
+      "items": 0,
+      "overflow": [],
+      "page": 360,
+      "url": "/engineering/force-estimation/",
+      "width": 375
+    },
+    {
+      "figures": 1,
+      "items": 0,
+      "overflow": [],
+      "page": 360,
+      "url": "/engineering/sim-to-real/",
+      "width": 375
+    },
+    {
+      "figures": 0,
+      "items": 8,
+      "overflow": [],
+      "page": 753,
+      "url": "/engineering/",
+      "width": 768
+    },
+    {
+      "figures": 1,
+      "items": 0,
+      "overflow": [],
+      "page": 753,
+      "url": "/engineering/degrees-of-freedom/",
+      "width": 768
+    },
+    {
+      "figures": 1,
+      "items": 0,
+      "overflow": [],
+      "page": 753,
+      "url": "/engineering/finger-count/",
+      "width": 768
+    },
+    {
+      "figures": 2,
+      "items": 0,
+      "overflow": [],
+      "page": 753,
+      "url": "/engineering/sensing-chain/",
+      "width": 768
+    },
+    {
+      "figures": 1,
+      "items": 0,
+      "overflow": [],
+      "page": 753,
+      "url": "/engineering/transmission/",
+      "width": 768
+    },
+    {
+      "figures": 1,
+      "items": 0,
+      "overflow": [],
+      "page": 753,
+      "url": "/engineering/motion-planning/",
+      "width": 768
+    },
+    {
+      "figures": 1,
+      "items": 0,
+      "overflow": [],
+      "page": 753,
+      "url": "/engineering/control-modes/",
+      "width": 768
+    },
+    {
+      "figures": 1,
+      "items": 0,
+      "overflow": [],
+      "page": 753,
+      "url": "/engineering/force-estimation/",
+      "width": 768
+    },
+    {
+      "figures": 1,
+      "items": 0,
+      "overflow": [],
+      "page": 753,
+      "url": "/engineering/sim-to-real/",
+      "width": 768
+    },
+    {
+      "figures": 0,
+      "items": 8,
+      "overflow": [],
+      "page": 1265,
+      "url": "/engineering/",
+      "width": 1280
+    },
+    {
+      "figures": 1,
+      "items": 0,
+      "overflow": [],
+      "page": 1265,
+      "url": "/engineering/degrees-of-freedom/",
+      "width": 1280
+    },
+    {
+      "figures": 1,
+      "items": 0,
+      "overflow": [],
+      "page": 1265,
+      "url": "/engineering/finger-count/",
+      "width": 1280
+    },
+    {
+      "figures": 2,
+      "items": 0,
+      "overflow": [],
+      "page": 1265,
+      "url": "/engineering/sensing-chain/",
+      "width": 1280
+    },
+    {
+      "figures": 1,
+      "items": 0,
+      "overflow": [],
+      "page": 1265,
+      "url": "/engineering/transmission/",
+      "width": 1280
+    },
+    {
+      "figures": 1,
+      "items": 0,
+      "overflow": [],
+      "page": 1265,
+      "url": "/engineering/motion-planning/",
+      "width": 1280
+    },
+    {
+      "figures": 1,
+      "items": 0,
+      "overflow": [],
+      "page": 1265,
+      "url": "/engineering/control-modes/",
+      "width": 1280
+    },
+    {
+      "figures": 1,
+      "items": 0,
+      "overflow": [],
+      "page": 1265,
+      "url": "/engineering/force-estimation/",
+      "width": 1280
+    },
+    {
+      "figures": 1,
+      "items": 0,
+      "overflow": [],
+      "page": 1265,
+      "url": "/engineering/sim-to-real/",
+      "width": 1280
+    }
+  ],
+  "sensing": [
+    {
+      "hand": "shadow-hand",
+      "stage": "电机端",
+      "status": "Shadow Dexterous Hand（Classic 五指版） · 电机端 · 1 项核查记录",
+      "pressed": "true"
+    },
+    {
+      "hand": "shadow-hand",
+      "stage": "传动中",
+      "status": "Shadow Dexterous Hand（Classic 五指版） · 传动中 · 1 项核查记录",
+      "pressed": "true"
+    },
+    {
+      "hand": "shadow-hand",
+      "stage": "关节端",
+      "status": "Shadow Dexterous Hand（Classic 五指版） · 关节端 · 1 项核查记录",
+      "pressed": "true"
+    },
+    {
+      "hand": "shadow-hand",
+      "stage": "接触端",
+      "status": "Shadow Dexterous Hand（Classic 五指版） · 接触端 · 1 项核查记录",
+      "pressed": "true"
+    },
+    {
+      "hand": "leap-hand",
+      "stage": "电机端",
+      "status": "LEAP Hand v1（Full） · 电机端 · 1 项核查记录",
+      "pressed": "true"
+    },
+    {
+      "hand": "leap-hand",
+      "stage": "传动中",
+      "status": "LEAP Hand v1（Full） · 传动中 · 没有独立通道记录",
+      "pressed": "true"
+    },
+    {
+      "hand": "leap-hand",
+      "stage": "关节端",
+      "status": "LEAP Hand v1（Full） · 关节端 · 1 项核查记录",
+      "pressed": "true"
+    },
+    {
+      "hand": "leap-hand",
+      "stage": "接触端",
+      "status": "LEAP Hand v1（Full） · 接触端 · 1 项核查记录",
+      "pressed": "true"
+    },
+    {
+      "hand": "wuji-hand-2",
+      "stage": "电机端",
+      "status": "Wuji Hand 2 · 电机端 · 1 项核查记录",
+      "pressed": "true"
+    },
+    {
+      "hand": "wuji-hand-2",
+      "stage": "传动中",
+      "status": "Wuji Hand 2 · 传动中 · 没有独立通道记录",
+      "pressed": "true"
+    },
+    {
+      "hand": "wuji-hand-2",
+      "stage": "关节端",
+      "status": "Wuji Hand 2 · 关节端 · 2 项核查记录",
+      "pressed": "true"
+    },
+    {
+      "hand": "wuji-hand-2",
+      "stage": "接触端",
+      "status": "Wuji Hand 2 · 接触端 · 1 项核查记录",
+      "pressed": "true"
+    }
+  ]
+}

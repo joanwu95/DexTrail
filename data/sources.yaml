@@ -1,0 +1,59 @@
+schema_version: 1
+# 每项记录 id、title、url、kind、version、verified_on。
+# kind: official / paper / report / repository / video / community
+# 无真实来源时保持空列表，不创建虚假文献。
+sources:
+  - id: leap-v1-project
+    title: LEAP Hand v1 项目主页
+    url: https://v1.leaphand.com/
+    kind: official
+    version: v1；RSS 2023 项目，动态页面
+    verified_on: '2026-10-01'
+  - id: leap-v1-parts
+    title: LEAP Hand v1 零件清单
+    url: https://v1.leaphand.com/parts
+    kind: official
+    version: Full / Regular；价格表注明 Aug 2023，不作为现价
+    verified_on: '2026-10-01'
+  - id: leap-v1-api
+    title: LEAP Hand v1 API
+    url: https://github.com/leap-hand/LEAP_Hand_API
+    kind: repository
+    version: main README；未锁定提交，未运行
+    verified_on: '2026-10-01'
+  - id: leap-rss-2023
+    title: Shaw et al. — LEAP Hand（RSS 2023）
+    url: https://roboticsproceedings.org/rss19/p089.pdf
+    kind: paper
+    version: RSS 2023；核验机构、设计和 §VI.D，未复现
+    verified_on: '2026-10-01'
+  - id: leap-v1-sim
+    title: LEAP Hand v1 Isaac Gym 仿真仓库
+    url: https://github.com/leap-hand/LEAP_Hand_Sim
+    kind: repository
+    version: 仓库入口；未锁定提交，未安装或训练
+    verified_on: '2026-10-01'
+  - id: shadow-classic-product
+    title: Shadow 官方产品页 — Classic 对比表
+    url: https://shadowrobot.com/dexterous-hand-series/
+    kind: official
+    version: 动态页面；Classic Dexterous Hand 列
+    verified_on: '2026-10-01'
+  - id: shadow-spec-2024
+    title: Shadow Dexterous Hand 规格书 — December 2024
+    url: https://shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf
+    kind: official
+    version: December 2024；不是产品发布年份
+    verified_on: '2026-10-01'
+  - id: shadow-sr-common
+    title: Shadow Robot sr_common — URDF、消息与服务
+    url: https://github.com/shadow-robot/sr_common/tree/noetic-devel
+    kind: repository
+    version: noetic-devel；未锁定提交，未本地运行
+    verified_on: '2026-10-01'
+  - id: openai-in-hand-2018
+    title: OpenAI et al. — Learning Dexterous In-Hand Manipulation
+    url: https://arxiv.org/abs/1808.00177v5
+    kind: paper
+    version: arXiv v5，2019-01-18；初稿 2018-08-01；本次核验摘要
+    verified_on: '2026-10-01'

@@ -1,0 +1,157 @@
+{
+  "checked_on": "2026-10-04",
+  "hands": [
+    {
+      "id": "agibot-omnihand-2025",
+      "name": "智元 OmniHand 2025 · 灵动款",
+      "dof": 10,
+      "route": "linkage-driven",
+      "year": 2025,
+      "month": 8,
+      "relation": "by",
+      "time": "https://www.agibot.com.cn/DOCS/OS/Omnihand-O10",
+      "source": "https://store.agibot.com/products/omnihand-2025",
+      "summary": "五指，10 主动 + 6 被动自由度；标准版与触觉版分开描述。",
+      "facts": {
+        "weight": "标准版 ≤500 g；触觉版 ≤550 g",
+        "dimensions": "180 × 85 × 38.5 mm",
+        "materials": "PA + 硅胶（英文产品表）"
+      },
+      "drive": "电机和齿轮经连杆传动；10 个主动轴不等于 16 路独立控制。",
+      "sensing": "标准版提供位置、速度、力矩及电流等反馈；触觉版另有全手 400+ 触点。当前中文产品页也出现 268 触点口径，选型时须核对 SKU 与说明书版本。力矩反馈的传感原理尚未核实。",
+      "control": "公开产品表列位置/角度、力矩、位置与力矩混合及速度模式，触觉版增加触觉模式。PID、阻抗控制和学习策略实现尚未核实。",
+      "application": "交互手势、轻载抓取、科研教育及机器人集成",
+      "interpretation": "工程解释：少量主动轴带动耦合关节，可简化抓姿命令；被动轴不能任意独立设角。400+ 触点描述仅适用于相应触觉配置。",
+      "docs": "https://www.agibot.com.cn/DOCS/OS/Omnihand-O10",
+      "sdk": true,
+      "urdf": true,
+      "resources": [
+        [
+          "中文官方产品页（配置差异）",
+          "https://www.agibot.com.cn/products/OmniHand_O10"
+        ]
+      ]
+    },
+    {
+      "id": "agibot-omnihand-pro-2025",
+      "name": "智元 OmniHand Pro 2025 · 专业款",
+      "dof": 12,
+      "route": "linkage-driven",
+      "year": 2025,
+      "month": 8,
+      "relation": "by",
+      "time": "https://www.agibot.com.cn/DOCS/OS/Omnihand-O12",
+      "source": "https://www.agibot.com.cn/file/ueditor/php/upload/file/20260201/1769938713468640.pdf",
+      "summary": "五指，12 主动、19 总自由度；规格与关节耦合按 Pro 2025 核对。",
+      "facts": {
+        "weight": "≤820 g（2026-02-01 规格书）；旧商城曾列 ≤750 g",
+        "dimensions": "207 × 98 × 56 mm"
+      },
+      "drive": "商城将驱动描述为电机、丝杠与连杆；规格书明确部分指间关节耦合，不能把 19 总自由度当作独立轴数。",
+      "sensing": "规格书确认指尖三维力感知，阵列分辨率 0.1 N、感知范围 0–50 N。SDK 另列位置、力矩和触觉接口；这些接口名称不能代替传感器原理说明。",
+      "control": "SDK 明确提供位置、力矩与混合控制接口；各耦合关节映射以该型号 API 和 URDF 为准。PID、阻抗控制及学习策略实现尚未核实。",
+      "application": "科研教育、精细操作与机器人集成",
+      "interpretation": "工程解释：指尖三维力反馈支持分析接触方向；耦合关节仍限制可独立命令的姿态。重量采用有更新日期的规格书，同时保留旧页面冲突，不能据此推断减重升级。",
+      "docs": "https://www.agibot.com.cn/DOCS/OS/Omnihand-O12",
+      "sdk": true,
+      "urdf": true,
+      "resources": [
+        [
+          "官方商城（驱动与旧规格）",
+          "https://store.agibot.com/products/omnihand-pro-2025"
+        ]
+      ]
+    },
+    {
+      "id": "agibot-omnihand-3-lite",
+      "name": "智元 OmniHand 3 Lite",
+      "dof": 4,
+      "route": null,
+      "year": 2026,
+      "month": 4,
+      "relation": "event",
+      "time": "https://www.agibot.com/article/231/detail/63.html",
+      "source": "https://www.agilink-ai.com/omni-hand3-lite.html",
+      "summary": "H3L：4 主动 + 7 被动自由度；CAN 通讯，四路电机位置控制。",
+      "facts": {
+        "weight": "350 g",
+        "dimensions": "140 × 70 × 32 mm",
+        "materials": "金属骨架、一体硅胶包覆（厂商描述）"
+      },
+      "drive": "SDK 确认四路控制和 CAN 通讯；内部传动、执行器清单与逐指分配尚未核实。",
+      "sensing": "H3L API 明确标注无触觉传感器；当前产品页提供可选腕部相机。电机位置反馈与物体接触力分别理解。",
+      "control": "H3L API 提供四路电机位置控制；位置单位为 ticks（0–4096），没有运动学求解器，角度控制为桩实现。官方另提供 C++、Python 和 Linux ROS2 入口。",
+      "application": "成本与空间敏感的机器人集成场景",
+      "interpretation": "工程解释：四路主动控制有利于简化系统接口，但不足以任意控制所有指节。厂商公告将其定位于抗冲击场景，未取得独立耐久性报告。",
+      "docs": "https://github.com/AgibotTech/agillink_omnihand_sdk/blob/main/README_zh_cn.md",
+      "sdk": true,
+      "urdf": false,
+      "resources": [
+        [
+          "H3L C++ API（功能边界）",
+          "https://github.com/AgibotTech/agillink_omnihand_sdk/blob/main/doc/zh_cn/API_CPP_H3L.md"
+        ]
+      ]
+    },
+    {
+      "id": "agibot-omnihand-3-ultra-t",
+      "name": "智元 OmniHand 3 Ultra-T",
+      "dof": 22,
+      "route": "tendon-driven",
+      "year": 2026,
+      "month": 4,
+      "relation": "event",
+      "time": "https://www.agibot.com/article/231/detail/63.html",
+      "source": "https://cn.agilink-ai.com/omni-hand3-ultra-t.html",
+      "summary": "手部 22 主动轴 + 3 腕部自由度；地图只计手部 22 轴。",
+      "facts": {
+        "weight": "手部 500 g；含驱动组件的整手约 1.7 kg（当前产品页）"
+      },
+      "drive": "腱绳传动，驱动单元布置在前臂；手部与腕部自由度、手部与整机质量分别记录。",
+      "sensing": "当前产品页列全手分布式三维触觉和掌内相机；未取得标定误差、触觉分布与相机同步说明。",
+      "control": "官方列力、位置、速度与混合模式，CANFD / EtherCAT 接口。独立 PID、阻抗控制实现及可下载学习策略尚未核实。",
+      "application": "富接触操作、工业装配与科研集成",
+      "interpretation": "工程解释：把驱动移至前臂可减轻手部惯量，但系统重量仍需包含驱动组件；腱绳路径与张力标定是集成时需要验证的项目。",
+      "docs": "https://cn.agilink-ai.com/omni-hand3-ultra-t.html",
+      "sdk": false,
+      "urdf": false,
+      "resources": []
+    },
+    {
+      "id": "agibot-omnihand-3-ultra-m",
+      "name": "智元 OmniHand 3 Ultra-M · 2026 发布配置",
+      "dof": 20,
+      "route": null,
+      "year": 2026,
+      "month": 7,
+      "relation": "event",
+      "time": "https://www.agibot.com/article/231/detail/85.html",
+      "source": "https://www.agibot.com/article/231/detail/85.html",
+      "summary": "2026-07-18 公告：五指、20 主动轴；当前 Ultra 页面已列 21 轴，版本分开记录。",
+      "facts": {
+        "weight": "630 g（2026 发布配置）"
+      },
+      "drive": "公告称全直驱；没有足够内部剖面证明无减速器，地图传动分类暂留待核实。当前官网 21 轴不覆盖此处的 20 轴发布配置。",
+      "sensing": "发布稿确认指尖视触觉与掌面触觉阵列；逐点标定与带宽未核实。",
+      "control": "发布稿面向遥操作、示教采集与富接触操作；现行 SDK 索引已列 H3UM/O20 的 C++ 和 Python API，尚未验证与发布硬件的兼容性。",
+      "application": "具身智能训练、遥操作、示教数据采集与富接触操作",
+      "interpretation": "工程解释：独立轴为精细姿态调节提供更多变量；轴数本身不证明任务成功率。现行官网 21 轴与发布稿 20 轴存在版本差异，不能直接合并。",
+      "docs": "https://cn.agilink-ai.com/ultra-m.html",
+      "sdk": true,
+      "urdf": false,
+      "resources": [
+        [
+          "当前 Ultra 产品页（21 主动轴配置）",
+          "https://cn.agilink-ai.com/ultra-m.html"
+        ]
+      ]
+    }
+  ],
+  "event_ids": [
+    "agibot-omnihand-3-2026",
+    "agibot-omnihand-docs-2025",
+    "agibot-ultra-m-2026",
+    "agibot-visuotactile-hand-2024"
+  ],
+  "boundary": "文档核验；没有实物、SDK 编译或仿真运行。2024 原型与 2025 型号不推断继承；Ultra-M 20/21 轴分开。"
+}

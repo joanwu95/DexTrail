@@ -1,0 +1,138 @@
+schema_version: 2
+# null = 未知；sources 指向 sources.yaml 中的 ID。
+hands:
+  - id: shadow-hand
+    name: Shadow Dexterous Hand（Classic 五指版）
+    display_name: Shadow Hand
+    status: researched
+    analysis_page: hands/reports/shadow-classic.md
+    facts:
+      model: {value: 'Classic 五指电驱版；规格基准 December 2024，不含 Lite / DEX-EE', sources: [shadow-classic-product, shadow-spec-2024]}
+      company: {value: Shadow Robot Company, sources: [shadow-spec-2024]}
+      country: {value: '英国（厂商地址，非产地声明）', sources: [shadow-spec-2024]}
+      year: {value: null, sources: []}
+      application: {value: 抓取与操作研究, sources: [shadow-spec-2024]}
+      product_status: {value: '官网展示并提供咨询入口；库存及交期未核验', sources: [shadow-classic-product]}
+      fingers: {value: '5（四指加拇指）', sources: [shadow-classic-product]}
+      dof: {value: '20 主动自由度 + 4 欠驱动运动，共 24 关节；含 2 腕关节', sources: [shadow-classic-product]}
+      actuators: {value: 20 个直流电机, sources: [shadow-classic-product]}
+      weight: {value: '4.3 kg（手与前臂总重）', sources: [shadow-spec-2024]}
+      dimensions: {value: null, sources: []}
+      materials: {value: null, sources: []}
+    technologies:
+      - id: electric-actuation
+        evidence_type: official
+        scope: '2024 规格书 §1、§5：电机驱动'
+        sources: [shadow-spec-2024]
+      - id: tendon-driven
+        evidence_type: official
+        scope: Classic 五指版；官网 Tendon Driven 与对比表
+        sources: [shadow-classic-product]
+      - id: underactuated
+        evidence_type: official
+        scope: 'Classic：4 个欠驱动运动，不表示整手所有关节均欠驱动'
+        sources: [shadow-classic-product]
+      - id: position-sensing
+        evidence_type: official
+        scope: '2024 规格书 §4.1：关节局部 Hall 角度测量'
+        sources: [shadow-spec-2024]
+      - id: force-sensing
+        evidence_type: official
+        scope: '2024 规格书 §4.3：腱负载测量，不等同于指尖接触力'
+        explanation:
+          - title: 测的是什么？
+            kind: fact
+            text: 'Smart Motor 驱动成对腱绳，独立力传感器测量这对腱绳的负载。这里测的是传动中的受力，不是在指尖表面直接测物体受力。'
+          - title: 规格书给了哪些数字？
+            kind: fact
+            text: '§4.3 给出约 30 mN（0.03 N）的分辨率，采用 12 位 ADC 采集；§4 总表列出力数据向电脑更新的典型频率为 500 Hz。'
+          - title: 零读数代表什么？
+            kind: fact
+            text: '传感器做过归零，但没有完成标定。规格书明确：零读数表示两根腱绳之间的负载差为零。'
+          - title: 用来做什么？
+            kind: fact
+            text: '测量数据在电机单元内部用于转矩控制，同时传回电脑。§5 说明可配置电机端腱力控制或关节位置控制。'
+          - title: 怎样理解这些数字？
+            kind: interpretation
+            text: '分辨率描述可分辨的小变化，不等于测量误差保证。500 Hz 表示每秒约 500 次数据更新，也不是控制精度。两根腱绳都绷紧但负载相同，差值仍可能为零，所以不能把零读数理解为完全没有拉力。'
+          - title: 为什么不能直接当作指尖力？
+            kind: interpretation
+            text: '腱绳受力和物体接触力处在传动链的不同位置。从前者推算后者，还需要关节姿态、传动几何和接触位置等信息，并验证摩擦等因素的影响。因此不能说这只手能以 0.03 N 的准确度测量指尖力。'
+        sources: [shadow-spec-2024]
+      - id: tactile-sensing
+        evidence_type: official
+        scope: '2024 规格书 §4.2：拇指与食指标准配备 STF，其余可增配'
+        sources: [shadow-spec-2024]
+      - id: pid
+        evidence_type: official
+        scope: '2024 规格书 §3.2、§5：可配置 PID'
+        sources: [shadow-spec-2024]
+      - id: force-control
+        evidence_type: official
+        scope: '2024 规格书 §5：电机端腱力控制；不据此承诺指尖力控制精度'
+        sources: [shadow-spec-2024]
+      - id: gazebo
+        evidence_type: official
+        scope: '2024 规格书 §6.2 描述 Gazebo 模型；版本兼容性及运行未验证'
+        sources: [shadow-spec-2024]
+      - id: reinforcement-learning
+        evidence_type: paper
+        scope: 'OpenAI 历史实验：仿真训练后在实物 Shadow Hand 执行物体重定向；非 2024 配置验证或出厂功能'
+        sources: [openai-in-hand-2018]
+    assessments:
+      - kind: interpretation
+        text: 比较末端质量时，应统一是否包含前臂的统计边界
+        scope: '以 4.3 kg 的官方统计口径为依据；不是对其他产品优劣的判断'
+        sources: [shadow-spec-2024]
+      - kind: fact
+        text: 部分固件源码与电子原理图需依 NDA 申请
+        scope: '2024 规格书 §6.1；不能由公开 ROS 仓库推断整机完全开源'
+        sources: [shadow-spec-2024]
+    resources: [shadow-classic-product, shadow-spec-2024, shadow-sr-common, openai-in-hand-2018]
+  - {id: allegro-hand, name: Allegro Hand, status: planned}
+  - id: leap-hand
+    name: LEAP Hand v1（Full）
+    status: researched
+    analysis_page: hands/reports/leap-v1.md
+    facts:
+      model: {value: 'v1 Full / Regular；不含 Lite、v2 或 v2 Advanced', sources: [leap-v1-project, leap-v1-parts]}
+      company: {value: Carnegie Mellon University, sources: [leap-v1-project]}
+      year: {value: '2023（论文公开年份，非量产上市日期）', sources: [leap-rss-2023]}
+      application: {value: 机器人学习与灵巧操作研究, sources: [leap-v1-project]}
+      product_status: {value: '研究平台；提供装配与软件资源，库存和交期未核验', sources: [leap-v1-project]}
+      dof: {value: '16 个受控关节角；论文策略输入和输出各为 16 维', sources: [leap-rss-2023]}
+      actuators: {value: '16 × DYNAMIXEL XC330-M288-T（Full 配置）', sources: [leap-v1-parts]}
+    technologies:
+      - id: electric-actuation
+        evidence_type: official
+        scope: v1 Full；零件表列出 16 个 DYNAMIXEL 舵机
+        sources: [leap-v1-parts]
+      - id: position-sensing
+        evidence_type: official
+        scope: v1 API 提供关节位置、速度和电流读取；不把电流当作指尖力
+        sources: [leap-v1-api]
+      - id: pid
+        evidence_type: official
+        scope: v1 API README 的默认控制为带电流上限的 PID；未在本地运行
+        sources: [leap-v1-api]
+      - id: teleoperation
+        evidence_type: paper
+        scope: RSS 2023 论文报告视觉遥操作任务；不是本项目复现
+        sources: [leap-rss-2023]
+      - id: reinforcement-learning
+        evidence_type: paper
+        scope: 'RSS 2023 §VI.D：PPO 训练方块手内旋转策略；限论文实验设置'
+        sources: [leap-rss-2023]
+      - id: isaac-gym
+        evidence_type: official
+        scope: 作者发布 v1 仿真仓库；未核验当前环境兼容性，不等同于 Isaac Sim
+        sources: [leap-v1-sim]
+    assessments:
+      - kind: interpretation
+        text: 可把公开零件表和 API 作为自行装配与实验准备的入口
+        scope: 仍需验证选定版本、授权、物料供应和运行环境
+        sources: [leap-v1-parts, leap-v1-api]
+    resources: [leap-v1-project, leap-v1-parts, leap-v1-api, leap-rss-2023, leap-v1-sim]
+  - {id: dlr-hand, name: DLR Hand, status: planned}
+  - {id: barrett-hand, name: Barrett Hand, status: planned}
+  - {id: xynova-flex-series, name: Xynova Flex series, status: planned}

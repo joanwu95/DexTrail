@@ -1,0 +1,11 @@
+/* The map and all branded reading pages share one header and declaration. */
+.md-typeset :is(#dextrail-home,.dex-hand-page) .dex-wordmark h1{font:600 var(--dex-brand-size)/1.12 var(--dex-sans);color:var(--dex-text);letter-spacing:var(--dex-brand-tracking);margin:0 0 10px}
+.md-typeset :is(#dextrail-home,.dex-hand-page) .dex-wordmark p{font:400 16px/1.5 var(--dex-sans);margin:0;letter-spacing:0;color:var(--dex-muted)}
+.md-typeset :is(#dextrail-home,.dex-hand-page) .dex-disclaimer p{font:400 13px/1.8 var(--dex-sans);margin:0;color:var(--dex-muted)}
+.md-typeset :is(#dextrail-home,.dex-hand-page) .dex-disclaimer .dex-signature{margin-top:8px;text-align:right;color:var(--dex-accent);letter-spacing:.03em}
+.md-typeset .dex-hand-page>.hand-heading{padding:35px 0 30px}
+.md-typeset .dex-hand-page>.hand-heading h1{font-size:clamp(30px,3.2vw,46px);font-weight:550;line-height:1.3;letter-spacing:-.04em;margin:6px 0 12px}
+.md-typeset .dex-hand-page>.hand-heading .hand-identity{font-size:16px;max-width:100%}
+.md-typeset .site-context-back{font-size:12px;margin:14px 0 0}
+@media(max-width:700px){.md-typeset .dex-hand-page>.hand-heading{padding:28px 0 24px}.md-typeset .dex-hand-page>.hand-heading .hand-identity{font-size:14px}}
+@media(max-width:600px){.md-typeset :is(#dextrail-home,.dex-hand-page) .dex-wordmark p{font-size:14px;max-width:255px}}

@@ -1,0 +1,55 @@
+
+ MOGrip: Gripper for Multi-Object Grasping in Pick-and-Place Tasks Using Translational Movements of Fingers
+ MOGrip: Gripper for Multi-Object Grasping in Pick-and-Place Tasks Using Translational Movements of Fingers
+ Jaemin Eom1, Sung Yol Yu1, Woongbae Kim2, Chunghoon Park1,3, Kristine Yoonseo Lee1, Kyu-Jin Cho1
+ 1Biorobotics Laboratory, Seoul National University 2Korea Institute of Science and Technology 3Global Technology Research, Samsung Electronics Co. Ltd.
+ Paper
+ Video
+ Abstract
+Humans use their dexterous fingers and adaptable palm in various multi-object 
+grasping strategies to efficiently move multiple objects together in various situations. 
+Advanced manipulation skills, such as finger-to-palm translation and palm-to-finger 
+translation, enhance the dexterity in multiobject grasping. These translational movements 
+allow the fingers to transfer the grasped objects to the palm for storage, enabling the 
+fingers to freely perform various pick-and-place tasks while the palm stores multiple 
+objects. However, conventional grippers, although able to handle multiple objects 
+simultaneously, lack this integrated functionality, which combines the palm’s 
+storage with the fingers’ precise placement. Here, we introduce a gripper for 
+multi-object grasping that applies translational movements of fingertips 
+to leverage the synergistic use of fingers and the palm for enhanced 
+pick-and-place functionality. The proposed gripper consists of four fingers 
+and an adaptive conveyor palm. The fingers sequentially grasp and transfer objects 
+to the palm, where the objects are stored simultaneously, allowing the gripper to move 
+multiple objects at once. Furthermore, by reversing this process, the fingers retrieve 
+the stored objects and place them one by one in the desired position and orientation. 
+A finger design for simple object translating and a palm design for simultaneous object 
+storing were proposed and validated. In addition, the time efficiency and pick-and-place 
+capabilities of the developed gripper were demonstrated. Our work shows the potential of 
+finger translation to enhance functionality and broaden the applicability of multi-object 
+grasping.
+ Video
+This video explains the research motivation, the mechanism design of the proposed gripper, and its applications.
+ Demo - Logistics
+ A lab-scale logistics demonstration was conducted to validate that the developed gripper can selectively pick up and transport multiple objects together.
+ Comparison - Single-Object Grasping
+ Compared to the same demonstration performed with single-object grasping, the proposed multi-object gripper reduced the end-effector's travel distance by approximately 71% and the overall process time by about 34%.
+ Demo - Tidying Up a Desk
+ To verify that the proposed gripper can place the stored objects in their desired locations, we demonstrated a gripper tidying up a cluttered desk in a domestic environment.
+ Pick and Place Various Objects
+ The gripper also successfully grasped, stored, retrieved, and placed 23 different types of objects due to the adaptability of its fingers and conveyor palm.
+Grasp Strategy I – Hand Segmentation
+Grasp Strategy II – Finger-to-Palm and Palm-to-Finger Translation
+Mechanism Design
+ What mechanism design enables a robotic gripper to effectively replicate human finger-to-palm and palm-to-finger translation? 
+ BibTeX
+@article{eom2024mogrip,
+ title={MOGrip: Gripper for multiobject grasping in pick-and-place tasks using translational movements of fingers},
+ author={Eom, Jaemin and Yu, Sung Yol and Kim, Woongbae and Park, Chunghoon and Lee, Kristine Yoonseo and Cho, Kyu-Jin},
+ journal={Science Robotics},
+ volume={9},
+ number={97},
+ pages={eado3939},
+ year={2024},
+ publisher={American Association for the Advancement of Science}
+}
+ Website template borrowed from NeRFies. 

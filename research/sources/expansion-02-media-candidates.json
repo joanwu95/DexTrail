@@ -1,0 +1,1458 @@
+{
+  "allegro-v5": {
+    "source": "https://allegrohand.com/sub/product/p.php?idx=3",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "link",
+        "url": "https://www.googletagmanager.com/ns.html?id=GTM-WKLTJ8LM",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/img_logo.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/home_icon.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/btn_up.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/btn_down.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/prod/V5_대표이미지_1_f19ad.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/prod/V5_대표이미지_2_d78d6.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/prod/V5_대표이미지_3_068b3.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/prod/V5_대표이미지_4_59cc0.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/RNBkmuc1GCQ/hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/main/play_icon.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/PfvAdaWcukg/hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/1acJcLn9ZBM/hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/btn_prev.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/btn_next.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/product_icon01.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/product_icon02.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/이미지 2_05902.png",
+        "alt": "Product Feature",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/fingertip_1_b2ffb.png",
+        "alt": "Fingertip Pressure Sensor",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/아트보드 4_d3bbd.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/아트보드 5_84bd8.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/아트보드 6_56ca1.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/아트보드 7_07992.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/V5 3F-1_2d471.png",
+        "alt": "GUI",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/GUI_3finger_9a258.png",
+        "alt": "MoveIt",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/s9fp_oKMEDU/hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/vsii5cvLtQ0/hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/ZEVMOJLqCO4/hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/bu345aK4UgQ/hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/zTtf4Mfi93Y/hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/clBnLe93_u8/hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/sns_icon01.svg",
+        "alt": "youtube",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/sns_icon02.svg",
+        "alt": "Linked in",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/sns_icon03.svg",
+        "alt": "facebook",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/btn_top.svg",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "allegro-v5-plus": {
+    "source": "https://allegrohand.com/sub/product/p.php?idx=4",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "link",
+        "url": "https://www.googletagmanager.com/ns.html?id=GTM-WKLTJ8LM",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/img_logo.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/home_icon.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/btn_up.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/btn_down.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/prod/V5 Plus_대표이미지_3_39513.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/prod/V5 Plus_대표이미지_1_33756.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/prod/V5 Plus_대표이미지_2_db76f.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/prod/V5 Plus_대표이미지_4_af144.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/7ArBNTXUfNc/hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/main/play_icon.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/NrOa9VXo37M/hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/PC4E1fdVBpI/hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/btn_prev.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/btn_next.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/product_icon01.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/product_icon02.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/아트보드 8_71d3e.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/fingertip_1_b2ffb.png",
+        "alt": "Fingertip Pressure Sensor",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/아트보드 4_d3bbd.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/아트보드 5_84bd8.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/아트보드 6_56ca1.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/아트보드 7_07992.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/GUI_1_795a4.jpg",
+        "alt": "GUI",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/MOVEIT_1_b7eac.jpg",
+        "alt": "MoveIt",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/s9fp_oKMEDU/hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/yUdwXGJr5GI/hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/fMX_dqVkE70/hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/GWrEKpiIKf0/hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/sns_icon01.svg",
+        "alt": "youtube",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/sns_icon02.svg",
+        "alt": "Linked in",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/sns_icon03.svg",
+        "alt": "facebook",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/btn_top.svg",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "allegro-v6f": {
+    "source": "https://allegrohand.com/sub/product/p.php?idx=25",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "link",
+        "url": "https://www.googletagmanager.com/ns.html?id=GTM-WKLTJ8LM",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/img_logo.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/home_icon.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/btn_up.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/btn_down.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/prod/V6.25_ccbf8.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/prod/V6.26_a09e2.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/prod/V6.53_79ec6.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/prod/V6.7_3e2a0.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/prod/V6.60_e4d23.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/prod/V6.61_b43e7.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi/Zu9CXUPhoSY/hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/main/play_icon.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/btn_prev.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/btn_next.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/product_icon01.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/product_icon02.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/V6.88-80_b9e01.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/센서 분할_1f982.png",
+        "alt": "Allegro Hand V6 Force — assembled",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/센서 분할1_8cbba.png",
+        "alt": "Allegro Hand V6 Force — interchangeable fingertip caps",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/V6.43_b2e5e.png",
+        "alt": "Fingertip — base state",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/V6.43_01_20131.png",
+        "alt": "Fingertip — glow state",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/V6.85_2b3a4.png",
+        "alt": "Friction and temperature compensation",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/V6.67_02_74e7d.png",
+        "alt": "...",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/V6.19_dfed6.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/Interface 1_e9add.png",
+        "alt": "Real-time hand status monitoring UI",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/Interface 2_75619.png",
+        "alt": "Hand pose and sequence manager UI",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/upload/editor/Interface 3_a34aa.png",
+        "alt": "Time-series hand data monitoring UI",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://i.ytimg.com/vi//hqdefault.jpg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/sns_icon01.svg",
+        "alt": "youtube",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/sns_icon02.svg",
+        "alt": "Linked in",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/sns_icon03.svg",
+        "alt": "facebook",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://allegrohand.com/img/svg/btn_top.svg",
+        "alt": "",
+        "poster": ""
+      }
+    ]
+  },
+  "mumuta-hand": {
+    "source": "https://www.u-tokyo.ac.jp/focus/en/press/z0508_00386.html",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "link",
+        "url": "https://www.googletagmanager.com/ns.html?id=GTM-WC55Q74",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.u-tokyo.ac.jp/content/400244322.svg",
+        "alt": "The University of Tokyo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.u-tokyo.ac.jp/content/400244321.svg",
+        "alt": "Search",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.u-tokyo.ac.jp/content/400244317.svg",
+        "alt": "Open a new window",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.u-tokyo.ac.jp/content/400244331.png",
+        "alt": "HOME",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.u-tokyo.ac.jp/content/100074653.png",
+        "alt": "Open a new window",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.u-tokyo.ac.jp/content/100074646.png",
+        "alt": "Print",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.u-tokyo.ac.jp/content/400256654.gif",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.u-tokyo.ac.jp/content/400256656.gif",
+        "alt": "GIF of biohybrid hand moving into a scissor gesture.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.u-tokyo.ac.jp/content/400256657.png",
+        "alt": "An annotated photo of the biohybrid robot hand.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.u-tokyo.ac.jp/content/400256661.png",
+        "alt": "Illustrations of the formation of the MuMuTAs.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.u-tokyo.ac.jp/content/400256662.png",
+        "alt": "Illustration of biohybrid robot finger.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.u-tokyo.ac.jp/content/100074629.png",
+        "alt": "Facebook (Open a new window)",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.u-tokyo.ac.jp/content/100074651.png",
+        "alt": "Twitter (Open a new window)",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.u-tokyo.ac.jp/content/100074655.jpg",
+        "alt": "YouTube (Open a new window)",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.u-tokyo.ac.jp/content/400194255.png",
+        "alt": "Instagram (Open a new window)",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.u-tokyo.ac.jp/content/400194256.gif",
+        "alt": "LinkedIn (Open a new window)",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.u-tokyo.ac.jp/content/100074660.jpg",
+        "alt": "Go back to page TOP",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.u-tokyo.ac.jp/content/100097993.jpg",
+        "alt": "Access Map",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.u-tokyo.ac.jp/content/100099002.jpg",
+        "alt": "Kashiwa Campus",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.u-tokyo.ac.jp/content/100099000.jpg",
+        "alt": "Hongo Campus",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.u-tokyo.ac.jp/content/100099001.jpg",
+        "alt": "Komaba Campus",
+        "poster": ""
+      }
+    ]
+  },
+  "mogrip": {
+    "source": "https://jaemineom.github.io/Project_MOGrip/",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "link",
+        "url": "https://www.youtube.com/embed/qFD562zo4Vk?autoplay=1&mute=1&loop=1&playlist=qFD562zo4Vk&controls=1&fs=1",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "link",
+        "url": "https://www.youtube.com/embed/ecViSuzARwk?autoplay=1&mute=1&loop=1&playlist=ecViSuzARwk&controls=1&fs=1",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "link",
+        "url": "https://www.youtube.com/embed/-rwAbY39Fcw?autoplay=1&mute=1&loop=1&playlist=-rwAbY39Fcw&controls=1&fs=1",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "link",
+        "url": "https://www.youtube.com/embed/5ofxzuH4yJU?autoplay=1&mute=1&loop=1&playlist=5ofxzuH4yJU&controls=1&fs=1",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "link",
+        "url": "https://www.youtube.com/embed/eDikWCNutgM?autoplay=1&mute=1&loop=1&playlist=eDikWCNutgM&controls=1&fs=1",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://jaemineom.github.io/Project_MOGrip/assets/Segment_hand.png",
+        "alt": "PNG Image",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://jaemineom.github.io/Project_MOGrip/assets/Segment.gif",
+        "alt": "Animated GIF",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://jaemineom.github.io/Project_MOGrip/assets/Segment_word.png",
+        "alt": "PNG Imgae",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://jaemineom.github.io/Project_MOGrip/assets/Translation.gif",
+        "alt": "Animated GIF",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://jaemineom.github.io/Project_MOGrip/assets/Translation_word.png",
+        "alt": "PNG Image",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://jaemineom.github.io/Project_MOGrip/assets/Mechanism.gif",
+        "alt": "Animated GIF",
+        "poster": ""
+      }
+    ]
+  },
+  "jhu-neuromorphic-hand": {
+    "source": "https://engineering.jhu.edu/news/feeling-is-believing-bionic-hand-knows-what-its-touching-grasps-like-a-human/",
+    "status": "403 Client Error: Forbidden for url: https://biomedicalodyssey.blogs.hopkinsmedicine.org/2025/04/newly-published-design-of-prosthetic-hand-able-to-differentiate-shapes-and-textures/",
+    "assets": []
+  },
+  "cable-rgbd-soft-hand": {
+    "source": "https://ieeexplore.ieee.org/abstract/document/11288075",
+    "status": "420 Client Error:  for url: https://ieeexplore.ieee.org/abstract/document/11288075",
+    "assets": []
+  },
+  "tactile-active-palm": {
+    "source": "https://www.nature.com/articles/s44182-026-00079-y",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://pubads.g.doubleclick.net/gampad/ad?iu=/285/npjrobot.nature.com/article&sz=728x90&c=-226010403&t=pos%3Dtop%26type%3Darticle%26artid%3Ds44182-026-00079-y%26doi%3D10.1038/s44182-026-00079-y%26subjmeta%3D166,301,639%26kwrd%3DEngineering,Materials+science",
+        "alt": "Advertisement",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.nature.com/static/images/product-logos/naturecom-secondary-aba9cc0a61.svg",
+        "alt": "npj Robotics",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs41467-025-57741-6/MediaObjects/41467_2025_57741_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs41467-022-35479-9/MediaObjects/41467_2022_35479_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3Aplaceholder%2Fimages/placeholder-figure-nature.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-026-00079-y/MediaObjects/44182_2026_79_Fig1_HTML.png",
+        "alt": "Fig. 1: Design and functionalities of the proposed tactile-reactive gripper.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-026-00079-y/MediaObjects/44182_2026_79_Fig2_HTML.png",
+        "alt": "Fig. 2: Grasping performance assessment.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-026-00079-y/MediaObjects/44182_2026_79_Fig3_HTML.png",
+        "alt": "Fig. 3: In-hand manipulation performance assessment.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-026-00079-y/MediaObjects/44182_2026_79_Fig4_HTML.png",
+        "alt": "Fig. 4: Multi-sensing perception and classification.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-026-00079-y/MediaObjects/44182_2026_79_Fig5_HTML.png",
+        "alt": "Fig. 5: Delicate fruit picking using the proposed gripper.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-026-00079-y/MediaObjects/44182_2026_79_Fig6_HTML.png",
+        "alt": "Fig. 6: Applications demonstrating the cooperation of tactile fingers and the active tactile palm.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://pubads.g.doubleclick.net/gampad/ad?iu=/285/npjrobot.nature.com/article&sz=300x250&c=1871070079&t=pos%3Dright%26type%3Darticle%26artid%3Ds44182-026-00079-y%26doi%3D10.1038/s44182-026-00079-y%26subjmeta%3D166,301,639%26kwrd%3DEngineering,Materials+science",
+        "alt": "Advertisement",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.nature.com/oscar-static/images/logos/sn-logo-white-c8f7a9c061.svg",
+        "alt": "Springer Nature",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.nature.com/static/images/logos/nature-briefing-logo-n150-white-afc2e6ccc7.svg",
+        "alt": "Nature Briefing",
+        "poster": ""
+      }
+    ]
+  },
+  "omnidirectional-sensing-hand": {
+    "source": "https://www.nature.com/articles/s41378-026-01179-3",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://pubads.g.doubleclick.net/gampad/ad?iu=/285/micronano.nature.com/article&sz=728x90&c=-1241018829&t=pos%3Dtop%26type%3Darticle%26artid%3Ds41378-026-01179-3%26doi%3D10.1038/s41378-026-01179-3%26subjmeta%3D166,639,925,929,987%26kwrd%3DElectrical+and+electronic+engineering,Other+nanotechnology",
+        "alt": "Advertisement",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/full/nature-cms/uploads/product/micronano/header-2bd9680d889a2a9d4dffec84222b276c.svg",
+        "alt": "Microsystems & Nanoengineering",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41378-026-01179-3/MediaObjects/41378_2026_1179_Figa_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs41467-024-50101-w/MediaObjects/41467_2024_50101_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs41467-025-58403-3/MediaObjects/41467_2025_58403_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3Aplaceholder%2Fimages/placeholder-figure-nature.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41378-026-01179-3/MediaObjects/41378_2026_1179_Fig1_HTML.png",
+        "alt": "Fig. 1",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41378-026-01179-3/MediaObjects/41378_2026_1179_Fig2_HTML.png",
+        "alt": "Fig. 2",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41378-026-01179-3/MediaObjects/41378_2026_1179_Fig3_HTML.png",
+        "alt": "Fig. 3",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41378-026-01179-3/MediaObjects/41378_2026_1179_Fig4_HTML.png",
+        "alt": "Fig. 4",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41378-026-01179-3/MediaObjects/41378_2026_1179_Fig5_HTML.png",
+        "alt": "Fig. 5",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://pubads.g.doubleclick.net/gampad/ad?iu=/285/micronano.nature.com/article&sz=300x250&c=-1307275254&t=pos%3Dright%26type%3Darticle%26artid%3Ds41378-026-01179-3%26doi%3D10.1038/s41378-026-01179-3%26subjmeta%3D166,639,925,929,987%26kwrd%3DElectrical+and+electronic+engineering,Other+nanotechnology",
+        "alt": "Advertisement",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.nature.com/oscar-static/images/logos/sn-logo-white-c8f7a9c061.svg",
+        "alt": "Springer Nature",
+        "poster": ""
+      }
+    ]
+  },
+  "rel-hand": {
+    "source": "https://www.nature.com/articles/s41598-026-63917-x",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://pubads.g.doubleclick.net/gampad/ad?iu=/285/scientific_reports/article&sz=728x90&c=1523584045&t=pos%3Dtop%26type%3Darticle%26artid%3Ds41598-026-63917-x%26doi%3D10.1038/s41598-026-63917-x%26subjmeta%3D166,639,705%26kwrd%3DEngineering,Mathematics+and+computing",
+        "alt": "Advertisement",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/full/nature-cms/uploads/product/srep/header-d3c533c187c710c1bedbd8e293815d5f.svg",
+        "alt": "Scientific Reports",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs41467-025-67675-8/MediaObjects/41467_2025_67675_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs42256-025-01053-3/MediaObjects/42256_2025_1053_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs44172-025-00407-4/MediaObjects/44172_2025_407_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://pubads.g.doubleclick.net/gampad/ad?iu=/285/scientific_reports/article&sz=300x250&c=891810440&t=pos%3Dright%26type%3Darticle%26artid%3Ds41598-026-63917-x%26doi%3D10.1038/s41598-026-63917-x%26subjmeta%3D166,639,705%26kwrd%3DEngineering,Mathematics+and+computing",
+        "alt": "Advertisement",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.nature.com/oscar-static/images/logos/sn-logo-white-c8f7a9c061.svg",
+        "alt": "Springer Nature",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.nature.com/static/images/logos/nature-briefing-ai-and-robotics-logo-2a1193ada7.svg",
+        "alt": "Nature Briefing AI and Robotics",
+        "poster": ""
+      }
+    ]
+  },
+  "high-dexterity-neuroprosthetic": {
+    "source": "https://www.nature.com/articles/s41467-026-75105-6",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://pubads.g.doubleclick.net/gampad/ad?iu=/285/nature_communications/article&sz=728x90&c=471393393&t=pos%3Dtop%26type%3Darticle%26artid%3Ds41467-026-75105-6%26doi%3D10.1038/s41467-026-75105-6%26techmeta%3D129,139%26subjmeta%3D166,639,985,988%26kwrd%3DMechanical+engineering,Biomedical+engineering",
+        "alt": "Advertisement",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/full/nature-cms/uploads/product/ncomms/header-7001f06bc3fe2437048388e9f2f44215.svg",
+        "alt": "Nature Communications",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs41598-021-02562-y/MediaObjects/41598_2021_2562_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs41598-022-04953-1/MediaObjects/41598_2022_4953_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/w215h120/springer-static/image/art%3A10.1038%2Fs41467-025-56352-5/MediaObjects/41467_2025_56352_Fig1_HTML.png",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-026-75105-6/MediaObjects/41467_2026_75105_Fig1_HTML.png",
+        "alt": "Fig. 1: High-dexterity soft neuroprosthetic hand design and capabilities.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-026-75105-6/MediaObjects/41467_2026_75105_Fig2_HTML.png",
+        "alt": "Fig. 2: Mechanical structure and hand performance.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-026-75105-6/MediaObjects/41467_2026_75105_Fig3_HTML.png",
+        "alt": "Fig. 3: Neural control scheme and resulting performance.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-026-75105-6/MediaObjects/41467_2026_75105_Fig4_HTML.png",
+        "alt": "Fig. 4: Restoration of versatile grasping capabilities for amputees.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-026-75105-6/MediaObjects/41467_2026_75105_Fig5_HTML.png",
+        "alt": "Fig. 5: Manipulation capability and user-centered advantages.",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://pubads.g.doubleclick.net/gampad/ad?iu=/285/nature_communications/article&sz=300x250&c=1728782910&t=pos%3Dright%26type%3Darticle%26artid%3Ds41467-026-75105-6%26doi%3D10.1038/s41467-026-75105-6%26techmeta%3D129,139%26subjmeta%3D166,639,985,988%26kwrd%3DMechanical+engineering,Biomedical+engineering",
+        "alt": "Advertisement",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.nature.com/oscar-static/images/logos/sn-logo-white-c8f7a9c061.svg",
+        "alt": "Springer Nature",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://www.nature.com/static/images/logos/nature-briefing-logo-n150-white-afc2e6ccc7.svg",
+        "alt": "Nature Briefing",
+        "poster": ""
+      }
+    ]
+  },
+  "matusik-pneumatic-hand": {
+    "source": "https://arxiv.org/html/2310.16280v1",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/icons/smileybones-small.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/arxiv-logo-primary-light.svg",
+        "alt": "arXiv logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2310.16280v1/figures/bellow.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2310.16280v1/figures/bellowFEA.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2310.16280v1/figures/bellowseries.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2310.16280v1/figures/actuatpr.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2310.16280v1/figures/actuator-bending.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2310.16280v1/figures/AnglePressureGraph.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2310.16280v1/figures/pressure-angle-pic.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2310.16280v1/figures/finger.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2310.16280v1/figures/FourFingers.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2310.16280v1/figures/thumbMCP.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2310.16280v1/figures/thumb-CMC.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2310.16280v1/figures/palm.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2310.16280v1/figures/whole-hand.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2310.16280v1/figures/arm.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2310.16280v1/figures/poses.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2310.16280v1/figures/grasps.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2310.16280v1/figures/teleop1.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2310.16280v1/figures/teleop2.png",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation.png",
+        "alt": "Simons Foundation",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation-international.png",
+        "alt": "Simons Foundation International",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/schmidt-sciences.png",
+        "alt": "Schmidt Sciences",
+        "poster": ""
+      }
+    ]
+  },
+  "tactile-softhand-a": {
+    "source": "https://arxiv.org/html/2406.12731v2",
+    "status": 200,
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/icons/smileybones-small.svg",
+        "alt": "",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/arxiv-logo-primary-light.svg",
+        "alt": "arXiv logo",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2406.12731v2/figures/fig1.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2406.12731v2/figures/fig2.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2406.12731v2/figures/fig3_updated.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2406.12731v2/figures/fig4.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2406.12731v2/figures/fig5_updated.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2406.12731v2/figures/fig6.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2406.12731v2/figures/fig7.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2406.12731v2/figures/fig8_updated.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2406.12731v2/figures/fig9_updated.jpg",
+        "alt": "[Uncaptioned image]",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2406.12731v2/figures/fig10_updated.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2406.12731v2/figures/fig11_updated.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2406.12731v2/figures/fig12.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2406.12731v2/figures/fig13_updated.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2406.12731v2/figures/fig15.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2406.12731v2/figures/fig14_updated.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2406.12731v2/figures/fig16.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2406.12731v2/figures/fig17.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2406.12731v2/figures/appendix_hand_size.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2406.12731v2/figures/appendix_tactile_fingertip.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/html/2406.12731v2/figures/appendix_tactile_flow_chart.jpg",
+        "alt": "Refer to caption",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation.png",
+        "alt": "Simons Foundation",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/simons-foundation-international.png",
+        "alt": "Simons Foundation International",
+        "poster": ""
+      },
+      {
+        "kind": "image",
+        "url": "https://arxiv.org/static/base/1.0.1/images/funders/schmidt-sciences.png",
+        "alt": "Schmidt Sciences",
+        "poster": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+
+ A Dexterous and Compliant (DexCo) Hand Based on Soft Hydraulic Actuation for Human-Inspired Fine In-Hand Manipulation
+ Home
+ Research
+ People
+ Professor
+ Post-Doctoral Researcher
+ PhD Students
+ Visitors
+ Master, Undergraduate & High School Students
+ Alumni
+ News
+ Galleries
+ Contact Us
+ A Dexterous and Compliant (DexCo) Hand Based on Soft Hydraulic Actuation for Human-Inspired Fine In-Hand Manipulation
+ Abstract
+Human beings possess a remarkable skill for fine in-hand manipulation, utilizing both intrafinger interactions (in-finger) and finger–environment interactions across a wide range of daily tasks. These tasks range from skilled activities like screwing light bulbs, picking and sorting pills, and in-hand rotation, to more complex tasks such as opening plastic bags, cluttered bin picking, and counting cards. Despite its prevalence in human activities, replicating these fine motor skills in robotics remains a substantial challenge. This study tackles the challenge of fine in-hand manipulation by introducing the dexterous and compliant (DexCo) hand system. The DexCo hand mimics human dexterity, replicating the intricate interaction between the thumb, index, and middle fingers, with a contractable palm. The key to maneuverable fine in-hand manipulation lies in its innovative soft hydraulic actuation, which strikes a balance between control complexity, dexterity, compliance, and motion accuracy within a compact structure, enhancing the overall performance of the system. The model of soft hydraulic actuation, based on hydrostatic force analysis, reveals the compliance of hand joints, which is also further extended to a dedicated robot operating system (ROS) package for DexCo hand simulation, considering both motion and stiffness aspects. Dedicated velocity and position teleoperation controllers are designed for implementing real physical manipulation tasks. The benchmark results show that the fingertip achieves a maximum repeatable finger strength of 34.4 N, a grasp cycle time of less than 2.04 s, and a maximum repeatability accuracy of 0.03 mm. Experimental results demonstrate the DexCo hand successfully performs complex fine in-hand manipulation tasks, providing a promising solution for advancing robotic manipulation capabilities toward the human level.
+Publications
+ J. Zhou, J. Huang, Q. Dou, P. Abbeel, & Liu, Y. “A Dexterous and Compliant (DexCo) Hand Based on Soft Hydraulic Actuation for Human-Inspired Fine In-Hand Manipulation”. IEEE Transactions on Robotics, vol. 41, 2024. paper
+ J. Zhou, B. Liang, J. Huang, I. Zhang, & M. Tomizuka. “Fine In-Finger Teleoperation for Robotic Fine In-Finger Manipulation”. The 5th Modeling, Estimation and Control Conference, 2025
+ Mechanical Systems Control Lab
+ Site Map
+ News
+ Professor
+ Current Students
+ Research
+ Miscellaneous
+ Contact
+ Directions
+ Privacy Statement
+ Webmaster
+ © 2016 Mechanical Systems Control Laboratory of Mechanical Engineering Dept. at UC Berkeley
+ Design inspired by Centrarium and PiE

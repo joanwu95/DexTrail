@@ -1,0 +1,4019 @@
+{
+  "shadow-hand": {
+    "checked_on": "2026-10-02",
+    "scope": "Classic Electric · 2024-12-04 规格书",
+    "summary": "20 路独立运动，24 个可动关节；总数包含腕部。",
+    "parts": [
+      {
+        "part": "拇指",
+        "active": "5",
+        "coupled": "0",
+        "motion": "TH1–TH5，屈伸与对指相关运动，轴向见规格书关节图"
+      },
+      {
+        "part": "食指 / 中指 / 无名指（每指）",
+        "active": "3",
+        "coupled": "1",
+        "motion": "根部屈伸、侧摆、指间屈伸；末节随中节运动"
+      },
+      {
+        "part": "小指",
+        "active": "4",
+        "coupled": "1",
+        "motion": "前三种运动加掌部对掌"
+      },
+      {
+        "part": "腕",
+        "active": "2",
+        "coupled": "0",
+        "motion": "两个腕部转轴"
+      }
+    ],
+    "drive": "20 个电机模组通过成对腱索传力。四根长指的末节不是额外的独立电机轴；中节与末节之间有耦合约束。",
+    "ranges": "单位为度（°）。四长指 J1 与 J2 受耦合约束，不能按两条任意独立轨迹命令；整手可行姿态还受接触与碰撞限制。",
+    "gaps": "TH1–TH5 的具体空间轴向请结合规格书 §2.3 示意图；这些机械角度范围不代表任意组合都无自碰撞。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "规格书给出动力抓握承载 4 kg；这是厂商规格，不是对随机物体的操作成功率。历史强化学习实验的手、触觉配置与控制栈须按各自论文记录，不能自动归到 2024 标准配置。",
+      "source": "https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf"
+    },
+    "basic": {
+      "fingers": 5
+    },
+    "range_rows": [
+      [
+        "四长指（每指）",
+        "J1",
+        "末节（耦合）",
+        0,
+        90
+      ],
+      [
+        "四长指（每指）",
+        "J2",
+        "中节",
+        0,
+        90
+      ],
+      [
+        "四长指（每指）",
+        "J3",
+        "根部屈伸",
+        -15,
+        90
+      ],
+      [
+        "四长指（每指）",
+        "J4",
+        "根部侧摆",
+        -20,
+        20
+      ],
+      [
+        "小指",
+        "J5",
+        "掌部对掌",
+        0,
+        45
+      ],
+      [
+        "拇指",
+        "TH1",
+        "轴向见规格书 §2.3 图",
+        -15,
+        90
+      ],
+      [
+        "拇指",
+        "TH2",
+        "轴向见规格书 §2.3 图",
+        -40,
+        40
+      ],
+      [
+        "拇指",
+        "TH3",
+        "轴向见规格书 §2.3 图",
+        -12,
+        12
+      ],
+      [
+        "拇指",
+        "TH4",
+        "轴向见规格书 §2.3 图",
+        0,
+        70
+      ],
+      [
+        "拇指",
+        "TH5",
+        "轴向见规格书 §2.3 图",
+        -60,
+        60
+      ],
+      [
+        "腕",
+        "WR1",
+        "腕部转轴",
+        -40,
+        28
+      ],
+      [
+        "腕",
+        "WR2",
+        "腕部转轴",
+        -28,
+        8
+      ]
+    ]
+  },
+  "wuji-hand-2": {
+    "checked_on": "2026-10-02",
+    "scope": "Hand 2 · 官方 latest 手册（2.2 Beta 配置）",
+    "summary": "五指，每指 4 个独立主动关节，共 20。",
+    "parts": [
+      {
+        "part": "拇指",
+        "active": "4",
+        "coupled": "未另列被动运动关节",
+        "motion": "CMC 两轴 + MCP + IP"
+      },
+      {
+        "part": "食指",
+        "active": "4",
+        "coupled": "未另列被动运动关节",
+        "motion": "MCP 屈伸、MCP 侧摆、PIP、DIP"
+      },
+      {
+        "part": "中指",
+        "active": "4",
+        "coupled": "未另列被动运动关节",
+        "motion": "MCP 屈伸、MCP 侧摆、PIP、DIP"
+      },
+      {
+        "part": "无名指",
+        "active": "4",
+        "coupled": "未另列被动运动关节",
+        "motion": "MCP 屈伸、MCP 侧摆、PIP、DIP"
+      },
+      {
+        "part": "小指",
+        "active": "4",
+        "coupled": "未另列被动运动关节",
+        "motion": "MCP 屈伸、MCP 侧摆、PIP、DIP"
+      }
+    ],
+    "drive": "各关节有独立电驱；可回驱关节及电流控制不等同于每个接触位置都装有力传感器。软垫的变形也不计为额外关节。",
+    "ranges": "下表单位为度（°），沿用厂商关节命名。左右手的正方向及零位须按对应模型约定。",
+    "gaps": "还缺带载轨迹误差、持续工作温升与每种任务的重复试验。latest 文档可能更新，部署应锁定硬件及固件版本。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://docs.wuji.tech/docs/zh/wuji-hand/latest/overview/"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "Wuji Glove 属于遥操作入口；人的示范能够完成任务，不等于本体已经能自主规划和完成相同任务。当前未整理出带物体集合、次数及成功判据的统一任务统计。",
+      "source": "https://docs.wuji.tech/docs/zh/wuji-hand/latest/overview/"
+    },
+    "basic": {
+      "fingers": 5,
+      "company": "舞肌科技 / Wuji",
+      "actuators": "20 个独立关节电驱",
+      "dimensions": "参考外形 180 × 80 × 40 mm，随姿态变化"
+    },
+    "range_rows": [
+      [
+        "拇指",
+        "cmc_flex",
+        "掌根屈伸",
+        -68,
+        74
+      ],
+      [
+        "拇指",
+        "cmc_abd",
+        "掌根侧摆",
+        -85,
+        40
+      ],
+      [
+        "拇指",
+        "mcp",
+        "根部屈伸",
+        -60,
+        90
+      ],
+      [
+        "拇指",
+        "ip",
+        "指间屈伸",
+        -60,
+        90
+      ],
+      [
+        "四根长指（每指）",
+        "mcp_flex",
+        "根部屈伸",
+        -60,
+        90
+      ],
+      [
+        "四根长指（每指）",
+        "mcp_abd",
+        "根部侧摆",
+        -40,
+        40
+      ],
+      [
+        "四根长指（每指）",
+        "pip",
+        "中间关节屈伸",
+        -60,
+        120
+      ],
+      [
+        "四根长指（每指）",
+        "dip",
+        "末端关节屈伸",
+        -60,
+        90
+      ]
+    ]
+  },
+  "leap-hand": {
+    "checked_on": "2026-10-02",
+    "scope": "LEAP v1 · RSS 2023",
+    "summary": "四指，每指 4 个独立主动轴，共 16。",
+    "parts": [
+      {
+        "part": "拇指",
+        "active": "4",
+        "coupled": "未列额外耦合轴",
+        "motion": "MCP 两轴 + 两个指间弯曲轴；拇指安装方向不同"
+      },
+      {
+        "part": "食指",
+        "active": "4",
+        "coupled": "未列额外耦合轴",
+        "motion": "MCP 两轴 + 两个指间弯曲轴；拇指安装方向不同"
+      },
+      {
+        "part": "中指",
+        "active": "4",
+        "coupled": "未列额外耦合轴",
+        "motion": "MCP 两轴 + 两个指间弯曲轴；拇指安装方向不同"
+      },
+      {
+        "part": "无名指",
+        "active": "4",
+        "coupled": "未列额外耦合轴",
+        "motion": "MCP 两轴 + 两个指间弯曲轴；拇指安装方向不同"
+      }
+    ],
+    "drive": "每根手指由四个智能伺服驱动；关节电机带齿轮减速。“关节独立驱动”不应写成无减速器的力矩直驱。",
+    "ranges": "项目页说明 MCP 在不同屈曲姿态下仍能侧摆；本轮尚未把 v1 模型限位逐轴核对到实物，不用渲染图估算角度。",
+    "gaps": "需要进一步对照固定提交的 URDF、伺服安装零位与机械止挡；这些值不可直接套到 v2。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://v1.leaphand.com/"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "作者页面区分 VR/手套遥操作、模仿学习以及自主手内转动演示。倒物、抓物和连续转动是不同任务；演示短片本身没有给出跨任务统一成功率。",
+      "source": "https://v1.leaphand.com/"
+    },
+    "basic": {
+      "fingers": 4
+    }
+  },
+  "leap-hand-v2": {
+    "checked_on": "2026-10-02",
+    "scope": "LEAP v2 · 柔性腱驱版本",
+    "summary": "16 个运动自由度、8 个电机；每指两个输入。",
+    "parts": [
+      {
+        "part": "拇指",
+        "active": "2 个驱动输入",
+        "coupled": "三个弯曲关节共用卷曲驱动",
+        "motion": "侧摆输入 + 腱索卷曲输入"
+      },
+      {
+        "part": "食指",
+        "active": "2 个驱动输入",
+        "coupled": "三个弯曲关节共用卷曲驱动",
+        "motion": "侧摆输入 + 腱索卷曲输入"
+      },
+      {
+        "part": "中指",
+        "active": "2 个驱动输入",
+        "coupled": "三个弯曲关节共用卷曲驱动",
+        "motion": "侧摆输入 + 腱索卷曲输入"
+      },
+      {
+        "part": "无名指",
+        "active": "2 个驱动输入",
+        "coupled": "三个弯曲关节共用卷曲驱动",
+        "motion": "侧摆输入 + 腱索卷曲输入"
+      }
+    ],
+    "drive": "侧摆和卷曲分别驱动；一条卷曲腱牵引多个柔性关节。TPU/PLA 结构的刚度分配让各段弯曲量不同，不能逐个独立指定 MCP、PIP、DIP 角度。",
+    "ranges": "项目页未给完整逐关节机械角度表；软关节角度还随载荷、接触和材料变化。",
+    "gaps": "缺各指关节的压力/力矩—角度曲线、寿命与固定构建版本的几何限位。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://v2.leaphand.com/"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "项目有托盘搬放、挂衣和葡萄操作的遥操作视频；另有欠驱动、捏取与耐久展示。不能把这些视频直接换算成自主任务成功率。 本次链接检查发现托盘、衣架与此前钻具视频直链已失效，保留项目页作为内容出处；本页可直接播放已检查可访问的欠驱动和捏持演示。",
+      "source": "https://v2.leaphand.com/"
+    },
+    "basic": {
+      "fingers": 4
+    }
+  },
+  "allegro-v4": {
+    "checked_on": "2026-10-02",
+    "scope": "Allegro V4",
+    "summary": "四指各 4 个主动关节，16 个驱动。",
+    "parts": [
+      {
+        "part": "拇指",
+        "active": "4",
+        "coupled": "未列额外被动轴",
+        "motion": "四个串联转轴；具体轴序以 V4 模型为准"
+      },
+      {
+        "part": "食指",
+        "active": "4",
+        "coupled": "未列额外被动轴",
+        "motion": "四个串联转轴；具体轴序以 V4 模型为准"
+      },
+      {
+        "part": "中指",
+        "active": "4",
+        "coupled": "未列额外被动轴",
+        "motion": "四个串联转轴；具体轴序以 V4 模型为准"
+      },
+      {
+        "part": "无名指",
+        "active": "4",
+        "coupled": "未列额外被动轴",
+        "motion": "四个串联转轴；具体轴序以 V4 模型为准"
+      }
+    ],
+    "drive": "手内电机和减速传动分别控制关节；电流/力矩命令不等于直接测量指尖接触力。",
+    "ranges": "尚未完成官方 V4 限位与模型的逐轴对照；不能复用 V3 限位。",
+    "gaps": "待补 V4 各轴名称、零位、角度限位和带载力矩范围。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://www.allegrohand.com/sub/product/p.php?idx=1"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "官方 V4 页有产品与操作视频。机器人学习论文中常有改装触觉或不同版本 Allegro，实验结果应连同版本和算法引用。",
+      "source": "https://www.allegrohand.com/sub/product/p.php?idx=1"
+    },
+    "basic": {
+      "fingers": 4
+    }
+  },
+  "orca-hand": {
+    "checked_on": "2026-10-02",
+    "scope": "ORCA · IROS 2025 论文版",
+    "summary": "手指 16 主动轴，另有腕 1 轴；整套 17。",
+    "parts": [
+      {
+        "part": "拇指",
+        "active": "4",
+        "coupled": "0",
+        "motion": "IP、MCP、外展和 CMC"
+      },
+      {
+        "part": "其余四指（每指）",
+        "active": "3",
+        "coupled": "DIP 被省略 / 固定，不是被动关节",
+        "motion": "PIP、MCP 屈伸、外展"
+      },
+      {
+        "part": "腕",
+        "active": "1",
+        "coupled": "0",
+        "motion": "腕部屈伸"
+      }
+    ],
+    "drive": "每个手指主动关节采用屈肌/伸肌腱对；腕部使用带传动。",
+    "ranges": "论文表 I 按“屈曲幅度 / 伸展幅度”列值（°）：拇指 IP 100/20、MCP 115/20、外展 45/45、CMC 48/53；其他指 PIP 130/20、MCP 110/20、外展 30/30。此处保留原表幅度写法，不擅自指定软件正负方向。",
+    "gaps": "模型关节正方向与零位还需按实际安装标定；腕部机械限位未在本表展开。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://www.orcahand.com/publications/ORCA_IROS_2025.pdf"
+      }
+    ],
+    "capability": {
+      "kind": "论文实验 / 演示",
+      "text": "论文展示遥操作工具、模仿学习和强化学习手内旋转；耐久实验约 10,000 次循环与约 7 小时学习采集属于不同测试，不能合并成全天候可靠性结论。",
+      "source": "https://www.orcahand.com/publications/ORCA_IROS_2025.pdf"
+    },
+    "basic": {
+      "fingers": 5
+    }
+  },
+  "ruka-v1": {
+    "checked_on": "2026-10-02",
+    "scope": "RUKA v1 · 2025 论文版",
+    "summary": "15 个运动自由度、11 个电机。",
+    "parts": [
+      {
+        "part": "拇指",
+        "active": "3 个驱动",
+        "coupled": "按论文机构配置",
+        "motion": "三路腱驱运动"
+      },
+      {
+        "part": "其余四指（每指）",
+        "active": "2 个驱动",
+        "coupled": "指间关节存在耦合",
+        "motion": "屈曲运动由腱索与弹性结构分配"
+      }
+    ],
+    "drive": "前臂电机拉动腱索，弹性结构提供回弹；侧向几何布置不能当作额外主动外展轴。",
+    "ranges": "未整理出与实物一致的逐轴限位表。",
+    "gaps": "需要固定构建版本的关节轴序、耦合比例和负载下限位。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://arxiv.org/html/2504.13165v1"
+      }
+    ],
+    "capability": {
+      "kind": "论文实验",
+      "text": "论文报告实现 GRASP 分类中的 29/33 种抓姿；这是抓姿覆盖，不是任意任务 87.9% 成功率。拉力/负载实验应按论文夹持方式和误差阈值单独阅读。",
+      "source": "https://arxiv.org/html/2504.13165v1"
+    },
+    "basic": {
+      "fingers": 5
+    }
+  },
+  "dlr-hand-ii": {
+    "checked_on": "2026-10-02",
+    "scope": "DLR Hand II",
+    "summary": "四指各 3 个独立运动；另有掌部构形驱动。",
+    "parts": [
+      {
+        "part": "四根手指（每指）",
+        "active": "3",
+        "coupled": "末端关节耦合，共四个可动关节",
+        "motion": "根部两轴 + 指间屈伸"
+      },
+      {
+        "part": "掌部",
+        "active": "1 个构形驱动",
+        "coupled": "改变第一、第四指位置",
+        "motion": "调整抓握构形"
+      }
+    ],
+    "drive": "指内电机、齿轮及差动机构传动；末节不能独立设定。计入掌部构形时为 13 个驱动维度。",
+    "ranges": "本轮系统页未提供逐关节完整限位表。",
+    "gaps": "缺机械限位、耦合比例与标定零位的统一表。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/hand-ii/design-construction-of-dlr-hand-ii"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "官方图片展示握持工具与人机握手，证明特定手形展示；不提供统一成功率或物体泛化结论。",
+      "source": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/hand-ii/design-construction-of-dlr-hand-ii"
+    },
+    "basic": {
+      "fingers": 4
+    }
+  },
+  "dlr-david": {
+    "checked_on": "2026-10-02",
+    "scope": "DLR David / Awiwi；钢簧与金属版本分开看",
+    "summary": "官方列 20 DoF、前臂 36 电机，不能直接一轴配两个电机相乘。",
+    "parts": [
+      {
+        "part": "五指",
+        "active": "逐指独立轴分配待核",
+        "coupled": "拮抗腱与弹簧允许柔顺变形",
+        "motion": "位置与刚度共同调节"
+      }
+    ],
+    "drive": "电机拉动拮抗腱索，通过非线性弹簧改变关节刚度。电机数还承担预紧/刚度控制，不等于运动轴数。",
+    "ranges": "本轮未核到各指各版本的完整角度表。",
+    "gaps": "20 轴到 36 个电机的完整矩阵、版本差异和各轴机械限位仍缺。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/david-hand"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "系统页的钢腱/合成纤维腱配置、指尖力及结构照片需分版本阅读；没有可据以给整手操作能力排名的统一任务统计。",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/david-hand"
+    },
+    "basic": {
+      "fingers": 5
+    }
+  },
+  "dlr-dexhand": {
+    "checked_on": "2026-10-02",
+    "scope": "DEXHAND · 2012–2015",
+    "summary": "四指，12 个运动自由度与 12 电机。",
+    "parts": [
+      {
+        "part": "四指（每指）",
+        "active": "3",
+        "coupled": "末端耦合的详细映射待补",
+        "motion": "多指抓握与工具适配"
+      }
+    ],
+    "drive": "手指内集成电驱与传动，面向航天使用约束。能面向航天设计不等于已完成所有在轨认证。",
+    "ranges": "尚未整理逐关节角度限位。",
+    "gaps": "末节耦合比、传动图及航天环境测试条件待补。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dexhand-2012-2015"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "DLR 图库展示圆柱、线缆、电钻握持。它们是具体展示，不是重复操作成功率或在轨任务统计。",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dexhand-2012-2015"
+    },
+    "basic": {
+      "fingers": 4
+    }
+  },
+  "dlr-spacehand": {
+    "checked_on": "2026-10-02",
+    "scope": "Spacehand · 2015–2018",
+    "summary": "四指各三个驱动输入，共 12。",
+    "parts": [
+      {
+        "part": "四指（每指）",
+        "active": "3",
+        "coupled": "近端与末端关节耦合",
+        "motion": "根部两轴；另一路控制指间屈曲"
+      }
+    ],
+    "drive": "根部两台电机形成两个运动方向，第三台控制相联的近端/远端关节。",
+    "ranges": "缺逐轴角度表与耦合比例。",
+    "gaps": "还需控制模型的轴定义、热真空条件下性能和任务统计。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/spacehand-2015-2018"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "官方展示与 CAESAR 机械臂集成和振动台试验；环境试验与抓取成功率不是同一指标。",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/spacehand-2015-2018"
+    },
+    "basic": {
+      "fingers": 4
+    }
+  },
+  "dlr-clash": {
+    "checked_on": "2026-10-02",
+    "scope": "CLASH 本体，不含 CLASH WRIST",
+    "summary": "官方列 7 DoF；运动自由度与刚度调节输入分开。",
+    "parts": [
+      {
+        "part": "三指",
+        "active": "逐指运动轴分配待核",
+        "coupled": "腱和弹簧产生柔顺性",
+        "motion": "抓取构形与被动刚度可调"
+      }
+    ],
+    "drive": "电机通过腱索、弹性机构驱动；预紧改变刚度。不能用腱力传感器路数推算各指主动轴数量。",
+    "ranges": "本轮未核实逐轴机械角度范围。",
+    "gaps": "运动轴、刚度输入和电机的逐一映射仍需机构图核对。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2019.00138/full"
+      }
+    ],
+    "capability": {
+      "kind": "论文实验",
+      "text": "苹果实验中，0° 接近并联合腕力矩与接近传感器反馈的条件下报告 100%；不代表任意果蔬。人工固定电机的故障试验也不是自然寿命统计。",
+      "source": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2019.00138/full"
+    },
+    "basic": {
+      "fingers": 3
+    }
+  },
+  "xynova-flex-2": {
+    "checked_on": "2026-10-02",
+    "scope": "Xynova Flex 2",
+    "summary": "厂商描述 23 个自由度；主动轴与耦合轴未完整拆分。",
+    "parts": [
+      {
+        "part": "五指 / 掌部",
+        "active": "逐指数量未核实",
+        "coupled": "未核实",
+        "motion": "不能仅按总数猜成每指四轴加掌部三轴"
+      }
+    ],
+    "drive": "公开路线为微型线性执行器与腱索组合。具体执行器到各关节的连接、回弹和耦合仍需剖面或手册。",
+    "ranges": "已读资料未取得逐关节运动范围。",
+    "gaps": "缺主动输入数、逐指轴序、腱传动路径和角度表。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://www.manus-meta.com/use-cases/how-xynova-teleoperates-the-flex-2-dexterous-hand-with-manus-metagloves-pro-haptic"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "MANUS 案例展示使用手套遥操作 Flex 2；证明的是映射和系统集成演示，不能当作自主操作成功率。",
+      "source": "https://www.manus-meta.com/use-cases/how-xynova-teleoperates-the-flex-2-dexterous-hand-with-manus-metagloves-pro-haptic"
+    },
+    "basic": {
+      "fingers": 5
+    }
+  },
+  "sharpa-w01": {
+    "checked_on": "2026-10-02",
+    "scope": "Sharpa W01；不混用 W01 SE",
+    "summary": "厂商列 22 主动自由度 / 22 关节模组。",
+    "parts": [
+      {
+        "part": "五指及可能的掌部轴",
+        "active": "22 的逐指分配未核实",
+        "coupled": "未列额外被动轴",
+        "motion": "不能用总数反推拇指或掌部轴数"
+      }
+    ],
+    "drive": "独立关节模组驱动；触觉配置和力规格需区分 W01 与 W01 SE 的参数列。",
+    "ranges": "产品页列四长指侧摆 ±20°；其余关节限位尚未整理。",
+    "gaps": "还缺逐指轴分配、各轴限位及同版本测试协议。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://www.sharpa.com/pages/w01"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "官方操作视频展示多样物体与工具使用；产品演示缺少完整试次数、失败样本与成功判据，不能直接转为统一能力分数。",
+      "source": "https://www.sharpa.com/pages/w01"
+    },
+    "basic": {
+      "fingers": 5
+    }
+  },
+  "tesollo-dg-5f-m": {
+    "checked_on": "2026-10-02",
+    "scope": "DG-5F-M；区别于 DG-5F-S 和 DG-3F",
+    "summary": "五指各 4 个独立关节，共 20。",
+    "parts": [
+      {
+        "part": "拇指",
+        "active": "4",
+        "coupled": "无机械联动的独立关节配置",
+        "motion": "各关节可分别控制"
+      },
+      {
+        "part": "食指",
+        "active": "4",
+        "coupled": "无机械联动的独立关节配置",
+        "motion": "各关节可分别控制"
+      },
+      {
+        "part": "中指",
+        "active": "4",
+        "coupled": "无机械联动的独立关节配置",
+        "motion": "各关节可分别控制"
+      },
+      {
+        "part": "无名指",
+        "active": "4",
+        "coupled": "无机械联动的独立关节配置",
+        "motion": "各关节可分别控制"
+      },
+      {
+        "part": "小指",
+        "active": "4",
+        "coupled": "无机械联动的独立关节配置",
+        "motion": "各关节可分别控制"
+      }
+    ],
+    "drive": "每个关节由独立执行器控制；六轴力矩、三轴力及触觉方案属于选配，不应并列写成全部标配。",
+    "ranges": "本轮尚未逐轴核验手册限位。",
+    "gaps": "待补每个关节的坐标方向、角度、峰值与持续力矩。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://www.tesollo.com/products/grippers/dg-5f-m"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "厂商列额定/最大捏持 2.5/5 kg、包络握持 10/20 kg，并说明与摩擦条件有关；它们不是长时动态搬运保证或任务成功率。",
+      "source": "https://www.tesollo.com/products/grippers/dg-5f-m"
+    },
+    "basic": {
+      "fingers": 5
+    }
+  },
+  "unitree-dex3-1": {
+    "checked_on": "2026-10-02",
+    "scope": "Dex3-1；不套用 Dex5",
+    "summary": "三指，7 个主动自由度。",
+    "parts": [
+      {
+        "part": "三指",
+        "active": "7 的逐指分配待模型核对",
+        "coupled": "本轮未核到额外被动轴",
+        "motion": "不能仅看外形推断 3+2+2"
+      }
+    ],
+    "drive": "七路关节电驱；应从对应 SDK/URDF 的关节名称核实实物轴序。",
+    "ranges": "产品页未整理到逐关节角度限位。",
+    "gaps": "缺各指轴分配、机械与软件限位对照。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://www.unitree.com/Dex3-1/"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "产品页提供操作视频；本轮未取得包含物体集、控制方法、试次数和失败定义的任务评测。",
+      "source": "https://www.unitree.com/Dex3-1/"
+    },
+    "basic": {
+      "fingers": 3
+    }
+  },
+  "linker-l20": {
+    "checked_on": "2026-10-02",
+    "scope": "LinkerHand L20",
+    "summary": "16 主动 + 5 被动，共 21 个机构自由度。",
+    "parts": [
+      {
+        "part": "五指",
+        "active": "16 的逐指分配未核",
+        "coupled": "5 的逐指分配未核",
+        "motion": "不能默认每根指头恰好一个被动轴"
+      }
+    ],
+    "drive": "无刷电机、滚珠丝杠与连杆构成驱动链。主动输入通过机构带动被动关节，具体耦合比尚缺。",
+    "ranges": "产品页列拇指旋转行程 1.32 rad（75.78°）、其他手指弯曲行程 1.22 rad（69.9°）；未逐轴给出零位与上下限，不能改写成所有关节统一范围。",
+    "gaps": "缺电机—丝杠—关节映射和每个被动关节回弹/耦合方式。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://www.linkerhand.com/details/LinkerHandL20/"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "官网操作展示可作为抓握例子；未整理到可比较的试次数、持续负载和自主操作成功率。",
+      "source": "https://www.linkerhand.com/details/LinkerHandL20/"
+    },
+    "basic": {
+      "fingers": 5
+    }
+  },
+  "trifinger": {
+    "checked_on": "2026-10-02",
+    "scope": "TriFinger · 2021 平台论文；Pro/Edu 外观另标",
+    "summary": "三个相同的三关节手指，共 9 个主动轴。",
+    "parts": [
+      {
+        "part": "三个模块（每个）",
+        "active": "3",
+        "coupled": "0",
+        "motion": "J0/J1/J2；不是人手五指的 MCP/PIP 命名"
+      }
+    ],
+    "drive": "三轴电驱模块提供关节力矩控制，多个指端协同操作物体。",
+    "ranges": "需按原始 / Pro / Edu 的具体 URDF 核对限位，不能把各平台混成一份表。",
+    "gaps": "缺本页面固定硬件版本与模型关节限位一一对应。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://proceedings.mlr.press/v155/wuthrich21a/wuthrich21a.pdf"
+      }
+    ],
+    "capability": {
+      "kind": "论文平台 / 实验",
+      "text": "论文面向真实机器人学习，典型任务是多指移动与重定向立方体；任务难度、目标轨迹和评分协议应分别引用，不能仅凭九个轴判断比五指手弱。",
+      "source": "https://proceedings.mlr.press/v155/wuthrich21a/wuthrich21a.pdf"
+    },
+    "basic": {
+      "fingers": 3
+    }
+  },
+  "rbo-hand-3": {
+    "checked_on": "2026-10-02",
+    "scope": "RBO Hand 3 · 2022 论文",
+    "summary": "16 个独立气动驱动维度，不是 16 台电机或 16 个刚性铰链。",
+    "parts": [
+      {
+        "part": "四根长指（每指）",
+        "active": "2 个气室",
+        "coupled": "连续材料形变",
+        "motion": "近端、远端分别充气弯曲"
+      },
+      {
+        "part": "拇指",
+        "active": "4 个气动输入",
+        "coupled": "柔性骨架",
+        "motion": "3 个波纹执行器 + 指尖 PneuFlex"
+      },
+      {
+        "part": "指间外展",
+        "active": "3 个输入",
+        "coupled": "相邻指共享变形",
+        "motion": "三个指间气动执行器"
+      },
+      {
+        "part": "手掌",
+        "active": "1 个输入",
+        "coupled": "柔性掌架",
+        "motion": "掌部凹合"
+      }
+    ],
+    "drive": "气压经阀控制不同气室，约束层使材料朝预设方向变形。接触后的额外形变不是新控制输入。",
+    "ranges": "软体角度取决于气压和外载；论文气压—角度/力矩曲线不能替换为刚性关节固定限位。",
+    "gaps": "仍缺统一的各姿态带载边界和跨实验寿命统计。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://arxiv.org/html/2201.10883v1"
+      }
+    ],
+    "capability": {
+      "kind": "论文实验",
+      "text": "论文实现 33/33 种 GRASP 抓姿及 Kapandji 对指满分 10；这是姿态覆盖与拇指可达性。拉脱力实验和手内操作演示另计，不是随机任务 100% 成功。",
+      "source": "https://arxiv.org/html/2201.10883v1"
+    },
+    "basic": {
+      "fingers": 5
+    }
+  },
+  "rbo-hand-2": {
+    "checked_on": "2026-10-02",
+    "scope": "RBO Hand 2；与 Hand 3 区分",
+    "summary": "后续作者论文回顾为 7 个驱动维度；软体结构不以刚性关节计数。",
+    "parts": [
+      {
+        "part": "手指与掌部",
+        "active": "7 个气动输入的逐部位分配待核",
+        "coupled": "连续柔性形变",
+        "motion": "PneuFlex 与柔性骨架协同"
+      }
+    ],
+    "drive": "充气引起受约束弹性体弯曲，接触后被动贴合物体；无逐指电机轴可直接对应。",
+    "ranges": "未核到各气路在外载下的角度/曲率范围。",
+    "gaps": "硬件全文的七路分配、气路映射和测试曲线仍需补。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://arxiv.org/html/2201.10883v1"
+      }
+    ],
+    "capability": {
+      "kind": "作者后续论文的硬件回顾",
+      "text": "设计研究评估抓姿覆盖和对指；后续学习论文涉及阀门、算盘与抓取。各论文的感知改装与学习策略不能自动视为基础手标配。",
+      "source": "https://arxiv.org/html/2201.10883v1"
+    },
+    "basic": {
+      "fingers": 5
+    }
+  },
+  "pisa-iit-softhand": {
+    "checked_on": "2026-10-02",
+    "scope": "Pisa/IIT SoftHand 原始版本",
+    "summary": "19 个机构自由度由 1 个电机驱动。",
+    "parts": [
+      {
+        "part": "五指机构",
+        "active": "1 个共享协同输入",
+        "coupled": "多个关节共同弯曲",
+        "motion": "整手闭合及接触自适应；逐指关节分配待图纸复核"
+      }
+    ],
+    "drive": "一条协同腱路径和弹性关节让多个关节一起闭合；碰到物体后剩余关节继续适应。没有十九条独立角度命令。",
+    "ranges": "逐关节姿态受接触和弹性影响；尚未核实各机械止挡。",
+    "gaps": "待补每指关节数、弹性回位和腱路的图文映射。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://www.centropiaggio.unipi.it/sites/default/files/PisaIIT_SoftHand_0.pdf"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "论文展示不同物体的适应抓取；机构顺应性不直接等同于精确手内旋转或任意对象的成功率。",
+      "source": "https://www.centropiaggio.unipi.it/sites/default/files/PisaIIT_SoftHand_0.pdf"
+    },
+    "basic": {
+      "fingers": 5
+    }
+  },
+  "qb-softhand-2-research": {
+    "checked_on": "2026-10-02",
+    "scope": "qb SoftHand2 Research · 2022 手册",
+    "summary": "19 个机构自由度，2 个电机 / 协同输入。",
+    "parts": [
+      {
+        "part": "五指",
+        "active": "2 个整手驱动输入",
+        "coupled": "多个指节通过腱路关联",
+        "motion": "两路协同运动；不是每指两台电机"
+      }
+    ],
+    "drive": "两路驱动改变整手协同闭合与差动动作，接触后仍有柔顺适应。不能独立给 19 个关节下指令。",
+    "ranges": "本轮未核到完整逐指限位和加载曲线。",
+    "gaps": "待补协同变量到关节角的映射及接触条件。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://qbrobotics.com/wp-content/uploads/2022/05/qbSoftHand2-Research-User-Manual.pdf"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "手册提供控制与抓取模式入口；两个输入增加了可调动作，但不能据此量化相对一电机版本的任务成功率提升。",
+      "source": "https://qbrobotics.com/wp-content/uploads/2022/05/qbSoftHand2-Research-User-Manual.pdf"
+    },
+    "basic": {
+      "fingers": 5
+    }
+  },
+  "festo-bionicsofthand": {
+    "checked_on": "2026-10-02",
+    "scope": "BionicSoftHand 原始版本，不含 2.0",
+    "summary": "12 个气动运动维度；24 个比例阀不是 24 个关节。",
+    "parts": [
+      {
+        "part": "五指",
+        "active": "弯曲气室输入；逐指通道待补",
+        "coupled": "材料连续形变",
+        "motion": "双气室波纹结构"
+      },
+      {
+        "part": "拇指与食指",
+        "active": "额外侧摆模块",
+        "coupled": "按气动模块控制",
+        "motion": "增加侧向转动"
+      }
+    ],
+    "drive": "编织层约束气室膨胀，使充气变成定向弯曲。排气及材料回复使手指回位。",
+    "ranges": "缺逐通道气压—角度和带载运动边界。",
+    "gaps": "待补十二个通道的逐一命名、流量和迟滞曲线。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://media.festo.com/media/113649_documentation.pdf"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "官方资料描述多面体朝向任务在数字孪生中训练后迁移实体。没有充分的未见物体划分、重复次数和统一成功率统计。",
+      "source": "https://media.festo.com/media/113649_documentation.pdf"
+    },
+    "basic": {
+      "fingers": 5
+    }
+  },
+  "schunk-svh": {
+    "checked_on": "2026-10-02",
+    "scope": "SVH 右手 1545592",
+    "summary": "9 个驱动输入与 20 个机构关节分开计数。",
+    "parts": [
+      {
+        "part": "拇指 / 食指 / 中指（每指）",
+        "active": "2 个驱动",
+        "coupled": "多个指节耦合",
+        "motion": "屈曲与构形调节"
+      },
+      {
+        "part": "无名指 / 小指（每指）",
+        "active": "1 个驱动",
+        "coupled": "多个指节耦合",
+        "motion": "整指弯曲"
+      },
+      {
+        "part": "共同展指",
+        "active": "1 个驱动",
+        "coupled": "多指联动",
+        "motion": "调节指间开合"
+      }
+    ],
+    "drive": "电伺服与丝杠机构带动指节，腕根集成电子部分；2+2+2+1+1+1=9，并非 20 台电机。",
+    "ranges": "尚未将 ROS 模型限位与具体硬件零位逐轴对照。",
+    "gaps": "各输入带动哪些关节、固定耦合比与机械止挡仍待补。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://schunk.com/hu/en/gripping-systems/special-gripper/svh/c/PGR_3161"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "官方提供抓握平台及 MuJoCo/ROS2 接口；接口能够运行轨迹不代表已经验证自主操作成功率或所有触觉反馈。",
+      "source": "https://schunk.com/hu/en/gripping-systems/special-gripper/svh/c/PGR_3161"
+    },
+    "basic": {
+      "fingers": 5
+    }
+  },
+  "schunk-sdh-2": {
+    "checked_on": "2026-10-02",
+    "scope": "SDH-2",
+    "summary": "三指各两条主动弯曲轴，加一条共同展指轴，共 7。",
+    "parts": [
+      {
+        "part": "三指（每指）",
+        "active": "2",
+        "coupled": "未另列被动轴",
+        "motion": "近端、远端弯曲"
+      },
+      {
+        "part": "第一 / 第二指根部",
+        "active": "1 个共同输入",
+        "coupled": "两指根部关联",
+        "motion": "改变对置构形"
+      }
+    ],
+    "drive": "七个电机控制上述运动；根部构形与指节弯曲分开。",
+    "ranges": "数据表含角度示意，本轮未把图示各数字可靠配对到轴名，因此不写统一的 ±90°。",
+    "gaps": "缺每轴零位、正方向与限位对照。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://www.nist.gov/document/9020173r1pdf"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "数据表展示多种抓姿和力/速度规格；本轮未找到与这些规格对应的统一任务成功率报告。",
+      "source": "https://www.nist.gov/document/9020173r1pdf"
+    },
+    "basic": {
+      "fingers": 3
+    }
+  },
+  "barrett-bh8-280": {
+    "checked_on": "2026-10-02",
+    "scope": "Barrett BH8-280",
+    "summary": "三指四个驱动：每指闭合一路，另外一路调节展指。",
+    "parts": [
+      {
+        "part": "三指（每指）",
+        "active": "1 个闭合输入",
+        "coupled": "近端与远端通过 TorqueSwitch 传动",
+        "motion": "先闭合，再随接触重分配动作"
+      },
+      {
+        "part": "其中两指根部",
+        "active": "1 个共同输入",
+        "coupled": "两指联动",
+        "motion": "相对展开 / 对置"
+      }
+    ],
+    "drive": "四个无刷电机；TorqueSwitch 使接触后的关节运动改变，不是所有指节始终保持独立控制。",
+    "ranges": "规格书列展指覆盖 180°；各指近远端角度及止挡尚未完整整理。",
+    "gaps": "缺 TorqueSwitch 切换条件、逐轴限位与实测带载误差。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://web.barrett.com/support/BarrettHand_Documentation/BH8-280_Datasheet.pdf"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "包络、捏持、展指改变是机构动作能力；要比较操作任务仍需给出物体、控制方式和重复试验，数据表不能代替这些条件。",
+      "source": "https://web.barrett.com/support/BarrettHand_Documentation/BH8-280_Datasheet.pdf"
+    },
+    "basic": {
+      "fingers": 3
+    }
+  },
+  "robotiq-3f": {
+    "checked_on": "2026-10-02",
+    "scope": "3-Finger Adaptive Gripper · 2019 手册",
+    "summary": "三路指闭合与一路展指驱动；自适应指节不是额外独立输入。",
+    "parts": [
+      {
+        "part": "三指（每指）",
+        "active": "1 个闭合输入",
+        "coupled": "指节自适应联动",
+        "motion": "包络物体或指尖夹持"
+      },
+      {
+        "part": "展指",
+        "active": "1 个输入",
+        "coupled": "两侧指联动",
+        "motion": "调整抓姿"
+      }
+    ],
+    "drive": "电机经欠驱动机构改变各指节角度，遇到物体时接触约束改变后续动作。",
+    "ranges": "寄存器位置值不能未经标定直接换算所有关节角度。",
+    "gaps": "缺逐指几何限位、寄存器到关节的非线性映射和接触状态影响。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://assets.robotiq.com/website-assets/support_documents/document/3-Finger_PDF_20190221.pdf"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "Basic、Pinch、Wide、Scissor 是四种抓取模式，不是四种独立测试成功率；手册模式例图可用于理解动作。",
+      "source": "https://assets.robotiq.com/website-assets/support_documents/document/3-Finger_PDF_20190221.pdf"
+    },
+    "basic": {
+      "fingers": 3
+    }
+  },
+  "psyonic-ability-hand": {
+    "checked_on": "2026-10-02",
+    "scope": "Ability Hand 研究接口资料；图库新版本另标",
+    "summary": "6 个无刷电机；机构柔顺不等于额外独立轴。",
+    "parts": [
+      {
+        "part": "五指",
+        "active": "逐指六路分配待机构文档核验",
+        "coupled": "柔性指节在接触中变形",
+        "motion": "以研究 API 的电机通道为准"
+      }
+    ],
+    "drive": "电机、编码器与柔性手指配合；位置、速度、力矩命令和触觉测点是不同层面的量。",
+    "ranges": "本次研究版公告没有完整各关节角度表。",
+    "gaps": "需锁定研究硬件版本，不能把当前 MK9.5 外观及规格回填旧研究手。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://www.psyonic.io/news/psyonic-releases-ability-hand-for-research-users"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "研究公告给出 API 与传感配置。可编程不代表自主操控已被验证；本轮未整理出匹配硬件版本的统一任务统计。",
+      "source": "https://www.psyonic.io/news/psyonic-releases-ability-hand-for-research-users"
+    },
+    "basic": {
+      "fingers": 5
+    }
+  },
+  "prensilia-ih2-azzurra": {
+    "checked_on": "2026-10-02",
+    "scope": "IH2 Azzurra · DS_IH2_v03",
+    "summary": "11 个机构自由度与 5 个驱动输入。",
+    "parts": [
+      {
+        "part": "拇指",
+        "active": "弯曲与外展两路",
+        "coupled": "指节传动关联",
+        "motion": "对指与屈曲"
+      },
+      {
+        "part": "食指 / 中指（每指）",
+        "active": "1",
+        "coupled": "指节联动",
+        "motion": "整指弯曲"
+      },
+      {
+        "part": "无名指 + 小指",
+        "active": "共用 1 路",
+        "coupled": "两指与指节耦合",
+        "motion": "共同闭合"
+      }
+    ],
+    "drive": "有刷电机经钢腱 / Bowden 路径传动，非回驱传动不能简单当作可自由被动退让的关节。",
+    "ranges": "规格书列 MCP 行程 90°、指间行程 110°，未为每个独立轴提供正负零位；保留行程口径。",
+    "gaps": "仍缺十一关节逐轴定义与驱动耦合映射。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://www.prensilia.com/wp-content/uploads/support/doc/DS_IH2_v03.pdf"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "资料列 10 种预设抓姿、圆柱抓握 35 N、侧捏 7 N 等；这些为厂商规格，未配齐重复试验和失败定义，不能成为通用排名。",
+      "source": "https://www.prensilia.com/wp-content/uploads/support/doc/DS_IH2_v03.pdf"
+    },
+    "basic": {
+      "fingers": 5
+    }
+  },
+  "open-bionics-brunel": {
+    "checked_on": "2026-10-02",
+    "scope": "Brunel V1.0 · 2017-03",
+    "summary": "9 个欠驱动运动自由度，4 个驱动输入。",
+    "parts": [
+      {
+        "part": "手指机构",
+        "active": "4 路驱动的逐指分配待核",
+        "coupled": "9 个运动自由度存在耦合",
+        "motion": "不能把九轴都视为可单独控制"
+      }
+    ],
+    "drive": "线性执行器经柔性/传动结构带动手指；电机电流只是负载相关反馈，不是直接的指尖力测量。",
+    "ranges": "数据表没有完整逐关节角度表。",
+    "gaps": "待补四路分配、柔性回位、关节几何和带载限位。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://openbionicslabs.com/s/BrunelV10Datasheet.pdf"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "规格书第 4 页区分 Tripod、Pinch、Palm、Fist；Palm 测至 8 kg，Pinch 小物体约 0.1 kg，载荷随抓姿和物体尺寸大幅不同。没有这些条件就不能统一写“载荷 8 kg”。",
+      "source": "https://openbionicslabs.com/s/BrunelV10Datasheet.pdf"
+    },
+    "basic": {
+      "fingers": 5
+    }
+  },
+  "open-bionics-ada": {
+    "checked_on": "2026-10-02",
+    "scope": "Ada v1.1 开发套件",
+    "summary": "官方介绍为 5 自由度；机械关节总数未核清。",
+    "parts": [
+      {
+        "part": "五指",
+        "active": "五路控制与各指映射待构建文件确认",
+        "coupled": "柔性指节的运动不等同于输入数",
+        "motion": "线性执行器控制闭合"
+      }
+    ],
+    "drive": "FingerLib 读取线性执行器电位计；这直接测执行器伸缩位置，不是逐个指关节角度。库支持六路不代表 Ada 是六自由度。",
+    "ranges": "需由对应 v1.1 制造模型与行程核实，现不填角度。",
+    "gaps": "缺逐指传动、关节限位、载荷误差和版本一致的任务结果。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://github.com/Open-Bionics/Ada_3D_model_files"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "串口、肌电及 Nunchuck 是指令来源；可连接和可制造不证明自主操作能力或工业可靠性。",
+      "source": "https://github.com/Open-Bionics/Ada_3D_model_files"
+    },
+    "basic": {
+      "fingers": 5
+    }
+  },
+  "nasa-robonaut-2-hand": {
+    "checked_on": "2026-10-02",
+    "scope": "R2 · 2011 手部设计论文",
+    "summary": "论文总述为手 12 DoF + 腕 2 DoF；不要把可动关节、腱索和独立控制数混加。",
+    "parts": [
+      {
+        "part": "拇指",
+        "active": "4",
+        "coupled": "固定扭转连接不是第五轴",
+        "motion": "四个关节轴，五条腱"
+      },
+      {
+        "part": "食指 / 中指（每指）",
+        "active": "3",
+        "coupled": "第四关节随第三关节四连杆耦合",
+        "motion": "根部侧摆、根部屈伸、指间屈伸"
+      },
+      {
+        "part": "无名指 / 小指（每指）",
+        "active": "欠驱动，按总述各一路功能控制",
+        "coupled": "两运动轴受两条腱共同牵引，末节再联动",
+        "motion": "用于包络，不能分别指定全部指节"
+      },
+      {
+        "part": "腕",
+        "active": "2（另计）",
+        "coupled": "差动驱动",
+        "motion": "腕部双轴"
+      }
+    ],
+    "drive": "电机、减速器和滚珠丝杠放在前臂，通过腱索/导管传力。论文总述列 16 个手指执行器；分指腱数与此总数不能直接互相替换。",
+    "ranges": "单位为度（°）。轴位置见原论文图 3、5；关节行程不代表全部角度能独立同时指定。",
+    "gaps": "论文在“DoF”总述与欠驱动指的运动轴描述间存在不同计数口径；应保留解释，不根据相加结果改写官方总数。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://ntrs.nasa.gov/api/citations/20110023122/downloads/20110023122.pdf"
+      }
+    ],
+    "capability": {
+      "kind": "论文设计 / 演示",
+      "text": "图 2 展示 Cutkosky 分类中 15/16 种抓姿；这是姿态覆盖，不是工业任务成功率。",
+      "source": "https://ntrs.nasa.gov/api/citations/20110023122/downloads/20110023122.pdf"
+    },
+    "basic": {
+      "fingers": 5
+    },
+    "range_rows": [
+      [
+        "长指",
+        "J1",
+        "仅食/中指侧摆",
+        -20,
+        20
+      ],
+      [
+        "长指",
+        "J2",
+        "根部屈伸",
+        -10,
+        95
+      ],
+      [
+        "长指",
+        "J3",
+        "中间关节",
+        0,
+        120
+      ],
+      [
+        "长指",
+        "J4",
+        "末节（联动）",
+        0,
+        70
+      ],
+      [
+        "拇指",
+        "J1",
+        "轴向见论文图 5",
+        0,
+        74
+      ],
+      [
+        "拇指",
+        "J2",
+        "轴向见论文图 5",
+        0,
+        85
+      ],
+      [
+        "拇指",
+        "J3",
+        "轴向见论文图 5",
+        0,
+        90
+      ],
+      [
+        "拇指",
+        "J4",
+        "轴向见论文图 5",
+        -10,
+        70
+      ]
+    ]
+  },
+  "inspire-rh56dfx": {
+    "checked_on": "2026-10-02",
+    "scope": "INSPIRE-RH56DFX 系列；两个型号分别核验",
+    "summary": "六路控制与十二个可动关节分开计数。",
+    "parts": [
+      {
+        "part": "五指",
+        "active": "六路输入的逐指映射待核",
+        "coupled": "十二关节存在机构联动",
+        "motion": "不将十二关节写成十二个独立电机"
+      }
+    ],
+    "drive": "微型线性执行器驱动手指，联动机构分配指节运动。不同型号的速度、力与反馈规格须分开。",
+    "ranges": "接口位置数值不是角度；尚未核实每轴零位、行程与实际角度的换算。",
+    "gaps": "待补六路到各指的映射、被动关节传动图和完整角度范围。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://en.inspire-robots.com/wp-content/uploads/2023/12/Inspire-Robots-Products-Selection-Guide-V15.pdf"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "官网有抓握展示；本轮没有核到匹配型号的重复试验、物体集合及自主操作成功率。",
+      "source": "https://en.inspire-robots.com/wp-content/uploads/2023/12/Inspire-Robots-Products-Selection-Guide-V15.pdf"
+    },
+    "basic": {
+      "fingers": 5
+    }
+  },
+  "inspire-rh56bfx": {
+    "checked_on": "2026-10-02",
+    "scope": "INSPIRE-RH56BFX 系列；两个型号分别核验",
+    "summary": "六路控制与十二个可动关节分开计数。",
+    "parts": [
+      {
+        "part": "五指",
+        "active": "六路输入的逐指映射待核",
+        "coupled": "十二关节存在机构联动",
+        "motion": "不将十二关节写成十二个独立电机"
+      }
+    ],
+    "drive": "微型线性执行器驱动手指，联动机构分配指节运动。不同型号的速度、力与反馈规格须分开。",
+    "ranges": "接口位置数值不是角度；尚未核实每轴零位、行程与实际角度的换算。",
+    "gaps": "待补六路到各指的映射、被动关节传动图和完整角度范围。",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://en.inspire-robots.com/wp-content/uploads/2023/12/Inspire-Robots-Products-Selection-Guide-V15.pdf"
+      }
+    ],
+    "capability": {
+      "kind": "官方说明 / 演示",
+      "text": "官网有抓握展示；本轮没有核到匹配型号的重复试验、物体集合及自主操作成功率。",
+      "source": "https://en.inspire-robots.com/wp-content/uploads/2023/12/Inspire-Robots-Products-Selection-Guide-V15.pdf"
+    },
+    "basic": {
+      "fingers": 5
+    }
+  },
+  "wuji-hand": {
+    "checked_on": "2026-10-02",
+    "scope": "官方产品 / 归档 v1 文档",
+    "summary": "五指，每指 4 个主动轴，共 20 个；与 Hand 2 分开记录。",
+    "parts": [
+      {
+        "part": "拇指",
+        "active": "4",
+        "coupled": "未列额外被动轴",
+        "motion": "掌根展收、侧摆及两级屈伸"
+      },
+      {
+        "part": "四根长指（每指）",
+        "active": "4",
+        "coupled": "未列额外被动轴",
+        "motion": "根部屈伸、侧摆及两个指间屈伸"
+      }
+    ],
+    "drive": "厂商称串联自锁旋转直驱关节；现有说明不足以证明电机无减速器，因此暂不归入严格的无减速直驱。",
+    "ranges": "v1 文档：拇指四轴行程约 100°、80°、130°、130°；小指四轴约 125°、60°、130°、130°。这是总行程，不是带零位的上下限。",
+    "gaps": "尚需核对逐电机清单、关节零位、减速结构以及各抓姿力测试协议。",
+    "sources": [
+      {
+        "title": "官方产品 / 归档 v1 文档 · 结构、感知与实验依据",
+        "url": "https://docs.wuji.tech/docs/en/wuji-hand/v1/overview/"
+      },
+      {
+        "title": "发表/公开时间依据",
+        "url": "https://docs.wuji.tech/docs/en/release-notes/"
+      }
+    ],
+    "basic": {
+      "fingers": 5,
+      "weight": "580 ± 10 g，不含线缆",
+      "dimensions": "201 × 75 × 50 mm"
+    },
+    "capability": {
+      "kind": "厂商资料",
+      "text": "官网有抓握动作视频；v1 文档给出 15 N 指尖力。不同抓姿的载荷表须分别阅读，不能用吊挂重量代替灵巧操作成功率。",
+      "source": "https://docs.wuji.tech/docs/en/wuji-hand/v1/overview/"
+    }
+  },
+  "linker-l6": {
+    "checked_on": "2026-10-02",
+    "scope": "官方产品规格",
+    "summary": "6 个主动自由度，5 个被动自由度；以当前产品页配置为准。",
+    "parts": [
+      {
+        "part": "整手",
+        "active": "6",
+        "coupled": "5",
+        "motion": "官网给出总量；尚未得到每根手指的轴编号和耦合分配表"
+      }
+    ],
+    "drive": "无刷电机和滚珠丝杠构成电缸，再通过连杆传递运动。官网的 200 N 是丝杠末端推力，不是指尖力。",
+    "ranges": "官方列四指弯曲角度 1.18 rad（68°），尚未给出所有关节独立上下限。",
+    "gaps": "逐指主动/被动分配、传感器配置、载荷条件和长期重复测试仍需说明书或实测补齐。",
+    "sources": [
+      {
+        "title": "官方产品规格 · 结构、感知与实验依据",
+        "url": "https://www.linkerhand.com/details/LinkerHandL6/"
+      }
+    ],
+    "basic": {
+      "fingers": 5,
+      "weight": "607 g"
+    },
+    "capability": {
+      "kind": "厂商资料",
+      "text": "官方参数表列拇指指尖力 12 N、四指指尖力 15 N；适用姿态、保持时间与重复次数仍需测试协议。",
+      "source": "https://www.linkerhand.com/details/LinkerHandL6/"
+    }
+  },
+  "linker-o6": {
+    "checked_on": "2026-10-02",
+    "scope": "官方产品规格",
+    "summary": "6 个主动自由度，5 个被动自由度；以当前产品页配置为准。",
+    "parts": [
+      {
+        "part": "整手",
+        "active": "6",
+        "coupled": "5",
+        "motion": "官网给出总量；尚未得到每根手指的轴编号和耦合分配表"
+      }
+    ],
+    "drive": "官方归类为连杆传动；主动轴通过机构带动被动关节，不应把总计 11 个自由度写成 11 路独立控制。",
+    "ranges": "官方列四指弯曲角度 1.61 rad（92°）；这不是逐关节的限位表。",
+    "gaps": "逐指主动/被动分配、传感器配置、载荷条件和长期重复测试仍需说明书或实测补齐。",
+    "sources": [
+      {
+        "title": "官方产品规格 · 结构、感知与实验依据",
+        "url": "https://www.linkerhand.com/details/LinkerHandO6/"
+      }
+    ],
+    "basic": {
+      "fingers": 5,
+      "weight": "360 g"
+    },
+    "capability": {
+      "kind": "厂商资料",
+      "text": "官网展示抓取用途；当前没有取得同一物体集、重复试验次数与失败判据，暂不进行成功率排名。",
+      "source": "https://www.linkerhand.com/details/LinkerHandO6/"
+    }
+  },
+  "linker-l20-lite": {
+    "checked_on": "2026-10-02",
+    "scope": "官方产品规格",
+    "summary": "10 个主动自由度，10 个被动自由度；以当前产品页配置为准。",
+    "parts": [
+      {
+        "part": "整手",
+        "active": "10",
+        "coupled": "10",
+        "motion": "官网给出总量；尚未得到每根手指的轴编号和耦合分配表"
+      }
+    ],
+    "drive": "产品介绍明确采用蜗轮蜗杆与连杆混合机构；参数表简写为连杆传动。Lite 是独立配置，不能套用 L20 的 16 个主动轴。",
+    "ranges": "官方列拇指横向旋转 0.75 rad（43°）、四指弯曲 1.36 rad（78°）；不是 20 个关节各自范围。",
+    "gaps": "逐指主动/被动分配、传感器配置、载荷条件和长期重复测试仍需说明书或实测补齐。",
+    "sources": [
+      {
+        "title": "官方产品规格 · 结构、感知与实验依据",
+        "url": "https://www.linkerhand.com/details/LinkerHandL20Lite/"
+      }
+    ],
+    "basic": {
+      "fingers": 5,
+      "weight": "800 g"
+    },
+    "capability": {
+      "kind": "厂商资料",
+      "text": "官方列五指抓握力 80 N、开合时间 1.2 s；不能据此推算手内旋转成功率。",
+      "source": "https://www.linkerhand.com/details/LinkerHandL20Lite/"
+    }
+  },
+  "linker-l30": {
+    "checked_on": "2026-10-02",
+    "scope": "官方产品规格",
+    "summary": "18 个主动自由度，4 个被动自由度；以当前产品页配置为准。",
+    "parts": [
+      {
+        "part": "整手",
+        "active": "18",
+        "coupled": "4",
+        "motion": "官网给出总量；尚未得到每根手指的轴编号和耦合分配表"
+      }
+    ],
+    "drive": "当前产品页对应 L30 Pro，采用腱绳传动。18 个主动轴与 4 个被动轴分开记录，不混用其他 L30 修订配置。",
+    "ranges": "官方列拇指横向旋转 0.61 rad（35°）、四指弯曲 1.52 rad（87.2°）；逐轴限位待接口文档。",
+    "gaps": "逐指主动/被动分配、传感器配置、载荷条件和长期重复测试仍需说明书或实测补齐。",
+    "sources": [
+      {
+        "title": "官方产品规格 · 结构、感知与实验依据",
+        "url": "https://www.linkerhand.com/details/LinkerHandL30/"
+      }
+    ],
+    "basic": {
+      "fingers": 5,
+      "weight": "约 1200 g"
+    },
+    "capability": {
+      "kind": "厂商资料",
+      "text": "官方列开合时间 0.2 s、拇指指尖力 6.5 N、四指指尖力 9 N。拧螺丝等是厂商用途陈述，尚无独立对比试验。",
+      "source": "https://www.linkerhand.com/details/LinkerHandL30/"
+    }
+  },
+  "linker-o30": {
+    "checked_on": "2026-10-02",
+    "scope": "官方产品规格",
+    "summary": "20 个主动自由度，0 个被动自由度；以当前产品页配置为准。",
+    "parts": [
+      {
+        "part": "整手",
+        "active": "20",
+        "coupled": "0",
+        "motion": "官网给出总量；尚未得到每根手指的轴编号和耦合分配表"
+      }
+    ],
+    "drive": "官网采用“直驱”称呼，同时介绍蜗轮蜗杆结构；暂保留原始描述，不把它归为无减速直驱。",
+    "ranges": "还未核清五指所有转轴与角度上下限；不能把整指弯曲角度复制到每个关节。",
+    "gaps": "逐指主动/被动分配、传感器配置、载荷条件和长期重复测试仍需说明书或实测补齐。",
+    "sources": [
+      {
+        "title": "官方产品规格 · 结构、感知与实验依据",
+        "url": "https://www.linkerhand.com/details/LinkerHandO30/"
+      }
+    ],
+    "basic": {
+      "fingers": 5,
+      "weight": "730 g"
+    },
+    "capability": {
+      "kind": "厂商资料",
+      "text": "厂商给出快速开合与抓取指标，但目前缺少统一任务集及独立复现，不能据此判断比其他手更灵巧。",
+      "source": "https://www.linkerhand.com/details/LinkerHandO30/"
+    }
+  },
+  "ilda-hand": {
+    "checked_on": "2026-10-02",
+    "scope": "Nature Communications",
+    "summary": "五指共 15 个主动自由度、20 个关节；每指 3 个独立运动。",
+    "parts": [
+      {
+        "part": "五根手指（每指）",
+        "active": "3",
+        "coupled": "1 个末节随中节耦合",
+        "motion": "MCP 屈伸与侧摆、PIP 屈伸；DIP 随 PIP"
+      }
+    ],
+    "drive": "掌内 15 个电机经减速器、丝杠和串并联连杆传力；四连杆耦合 PIP 与 DIP。",
+    "ranges": "正文给出 MCP 屈伸 0–90°、PIP 屈伸 0–90°、侧摆 ±35°；DIP 受耦合约束。",
+    "gaps": "尚需整理各实验载荷和姿态、全部失败样本以及可运行仿真模型。",
+    "sources": [
+      {
+        "title": "Nature Communications · 结构、感知与实验依据",
+        "url": "https://www.nature.com/articles/s41467-021-27261-0"
+      }
+    ],
+    "basic": {
+      "fingers": 5,
+      "weight": "1.1 kg",
+      "dimensions": "最大长度 218 mm"
+    },
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "论文演示剪纸、镊子拾取等工具操作，并报告 34 N 指尖力；任务演示不能视为开放场景成功率。",
+      "source": "https://www.nature.com/articles/s41467-021-27261-0"
+    }
+  },
+  "vms-hand": {
+    "checked_on": "2026-10-02",
+    "scope": "Nature Communications",
+    "summary": "论文称 18 DOF；由 13 条主动腱索控制，不能把 18 当作 18 个独立电机轴。",
+    "parts": [
+      {
+        "part": "拇指 / 食指 / 中指（每指）",
+        "active": "3",
+        "coupled": "DIP 与 PIP 耦合",
+        "motion": "根部侧摆、根部屈伸、指间屈伸"
+      },
+      {
+        "part": "无名指 / 小指（每指）",
+        "active": "2",
+        "coupled": "DIP 与 PIP 耦合；无根部侧摆轴",
+        "motion": "根部屈伸、指间屈伸"
+      }
+    ],
+    "drive": "前臂的 13 个工作驱动单元通过弹簧与腱索拉动手指；方法节另有第 14 个预留单元，不计入当前有效驱动数。",
+    "ranges": "逐轴限位尚未摘录；相机估计的关节角数量与独立控制输入数量不同。",
+    "gaps": "接触假设、模型误差与多点同时接触时的可辨识性需结合补充实验；不将估计值称为直接测量。",
+    "sources": [
+      {
+        "title": "Nature Communications · 结构、感知与实验依据",
+        "url": "https://www.nature.com/articles/s41467-025-62122-0"
+      }
+    ],
+    "basic": {
+      "fingers": 5
+    },
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "论文展示精细捏球、握瓶，并估计物体柔软程度；接触力来自模型推断，并非每个指尖直接装有力传感器。",
+      "source": "https://www.nature.com/articles/s41467-025-62122-0"
+    }
+  },
+  "palm-finger-soft-hand": {
+    "checked_on": "2026-10-02",
+    "scope": "Nature Communications",
+    "summary": "三根软指，每指两个独立气动段，共 6 个压力输入；连续体弯曲不是 6 个刚性转轴。",
+    "parts": [
+      {
+        "part": "三根软指（每指）",
+        "active": "2 个压力输入",
+        "coupled": "连续形变，非离散被动关节",
+        "motion": "近端与远端分别充气弯曲"
+      },
+      {
+        "part": "手掌",
+        "active": "无运动驱动",
+        "coupled": "柔顺接触层",
+        "motion": "相机读取掌面接触形状"
+      }
+    ],
+    "drive": "纤维约束硅胶腔体充气膨胀；底部聚乙烯层限制伸长，长度差使手指弯曲。",
+    "ranges": "0–150 kPa 实验压力范围；近段、远段可分别或同时充气。此处不以刚性关节限位表描述连续体。",
+    "gaps": "尚需逐任务整理试验次数、成功率、外置气源体积及循环寿命。",
+    "sources": [
+      {
+        "title": "Nature Communications · 结构、感知与实验依据",
+        "url": "https://www.nature.com/articles/s41467-025-57741-6"
+      }
+    ],
+    "basic": {
+      "fingers": 3
+    },
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "论文实验包括平面拾取、连续表面缺陷检测与抓姿调整；物体识别准确率和抓取成功率是不同指标。",
+      "source": "https://www.nature.com/articles/s41467-025-57741-6"
+    }
+  },
+  "detachable-crawling-hand": {
+    "checked_on": "2026-10-02",
+    "scope": "Nature Communications",
+    "summary": "可更换指数量的平台；每个可逆手指 4 个舵机，掌部最多安装 6 指，不能统一按 24 轴计数。",
+    "parts": [
+      {
+        "part": "每个模块化手指",
+        "active": "4 个舵机",
+        "coupled": "随配置核对",
+        "motion": "可逆手指用于双面抓取与爬行"
+      },
+      {
+        "part": "可拆掌部",
+        "active": "锁扣单列",
+        "coupled": "指数量可配置",
+        "motion": "与机械臂分离、重新对接"
+      }
+    ],
+    "drive": "单指采用四个 Dynamixel XC330-T288-T 舵机；对接利用磁体辅助对齐和电机锁扣。",
+    "ranges": "需按选定指数量及实验配置读取限位，当前不为可配置平台生成虚假的统一轴表。",
+    "gaps": "尚需逐实验建立指数量、运动范围、控制配置与结果的一一对应。",
+    "sources": [
+      {
+        "title": "Nature Communications · 结构、感知与实验依据",
+        "url": "https://www.nature.com/articles/s41467-025-67675-8"
+      }
+    ],
+    "basic": {},
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "论文展示脱离机械臂后的爬行、携物返回与单手工具使用；这些任务采用不同结构配置，不能混用参数。",
+      "source": "https://www.nature.com/articles/s41467-025-67675-8"
+    }
+  },
+  "open-parametric-hand": {
+    "checked_on": "2026-10-02",
+    "scope": "Science Robotics",
+    "summary": "参数化软手平台：每指四个相互耦合的运动自由度，配单/双输入等不同协同驱动方案。",
+    "parts": [
+      {
+        "part": "参数化手指",
+        "active": "由驱动方案决定",
+        "coupled": "每指四个相互耦合自由度",
+        "motion": "滚动关节和腱索路径形成弯曲与顺应"
+      },
+      {
+        "part": "协同驱动模块",
+        "active": "论文比较单输入与双输入",
+        "coupled": "不是每个关节独立驱动",
+        "motion": "调节共同抓握及刚度行为"
+      }
+    ],
+    "drive": "单件打印结构采用非线性滚动关节和仿生腱索路径；协同机构同时影响运动与被动刚度。",
+    "ranges": "关节行程随打印参数与驱动方案变化，必须指定配置后才可比较。",
+    "gaps": "仍需选定标准配置、核对逐轴运动范围与长期材料疲劳。",
+    "sources": [
+      {
+        "title": "Science Robotics · 结构、感知与实验依据",
+        "url": "https://arxiv.org/html/2410.18633v1"
+      },
+      {
+        "title": "Science Robotics 正式论文",
+        "url": "https://www.science.org/doi/10.1126/scirobotics.ads6437"
+      },
+      {
+        "title": "作者项目页",
+        "url": "https://sites.google.com/view/open-parametric-hand/home"
+      },
+      {
+        "title": "发表/公开时间依据",
+        "url": "https://www.epfl.ch/labs/create/create-lab/publications/"
+      }
+    ],
+    "basic": {},
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "论文比较人手、双拇指与指猴形态的任务表现；属于同一可配置设计平台，本站不拆成三款重复计数。",
+      "source": "https://arxiv.org/html/2410.18633v1"
+    }
+  },
+  "dexco-hand": {
+    "checked_on": "2026-10-02",
+    "scope": "IEEE Transactions on Robotics · T-RO（2025 卷）",
+    "summary": "三指加可收缩掌部的软液压手；尚未核清可比较的独立关节角总数。",
+    "parts": [
+      {
+        "part": "拇指 / 食指 / 中指",
+        "active": "软液压输入，通道数待核",
+        "coupled": "软体连续形变",
+        "motion": "手指弯曲与协同抓握"
+      },
+      {
+        "part": "手掌",
+        "active": "可收缩",
+        "coupled": "独立输入定义待全文核对",
+        "motion": "改变掌部形状参与抓握"
+      }
+    ],
+    "drive": "液压驱动软体手指与可收缩手掌；作者建立静液力模型，并扩展为考虑运动和刚度的 ROS 仿真。",
+    "ranges": "尚需按压力、构型与载荷整理可达范围；不把软体形变简化成未经验证的刚性限位。",
+    "gaps": "泵和管路的总体积、泄漏维护、全部力与精度测试条件及可下载仿真入口仍待核查。",
+    "sources": [
+      {
+        "title": "IEEE Transactions on Robotics · T-RO（2025 卷） · 结构、感知与实验依据",
+        "url": "https://msc.berkeley.edu/research/mechatronics/dexco.html"
+      },
+      {
+        "title": "发表/公开时间依据",
+        "url": "https://doi.org/10.1109/TRO.2024.3508932"
+      }
+    ],
+    "basic": {
+      "fingers": 3
+    },
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "作者摘要报告可重复指尖力最高 34.4 N、抓握周期小于 2.04 s、最佳重复定位 0.03 mm；最佳值不代表任意负载和姿态。",
+      "source": "https://msc.berkeley.edu/research/mechatronics/dexco.html"
+    }
+  },
+  "f-tac-hand": {
+    "checked_on": "2026-10-02",
+    "scope": "Nature Machine Intelligence",
+    "summary": "五指、每指三个运动自由度；论文总计 15 DOF，驱动与耦合口径待进一步核清。",
+    "parts": [
+      {
+        "part": "五根手指（每指）",
+        "active": "论文称 3 DOF，独立输入待核",
+        "coupled": "需核对腱索约束",
+        "motion": "指部关节运动与触觉表面共同设计"
+      },
+      {
+        "part": "掌面与指面",
+        "active": "17 个视觉触觉模块",
+        "coupled": "传感数量不是驱动数量",
+        "motion": "接触形变由微型相机采集"
+      }
+    ],
+    "drive": "机构示意图包含腱索传力；当前不把运动自由度总数直接等同于电机数量。",
+    "ranges": "文中有拇指对掌的 Kapandji 测试；它表示可达性，不等于通用操作任务评分。",
+    "gaps": "每根腱索的驱动分配、传感标定误差以及各任务成功率表仍待完整录入。",
+    "sources": [
+      {
+        "title": "Nature Machine Intelligence · 结构、感知与实验依据",
+        "url": "https://www.nature.com/articles/s42256-025-01053-3"
+      }
+    ],
+    "basic": {
+      "fingers": 5
+    },
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "600 次真实试验考察多物体抓取；这是试验次数，不是 600 种物体，也不是全部成功。",
+      "source": "https://www.nature.com/articles/s42256-025-01053-3"
+    }
+  },
+  "adapt-hand-1": {
+    "checked_on": "2026-10-02",
+    "scope": "Communications Engineering",
+    "summary": "20 个关节、12 个执行器；皮肤、手指与系统腕部柔顺性分层设计。",
+    "parts": [
+      {
+        "part": "手指与拇指",
+        "active": "整手 12 个执行器",
+        "coupled": "20 个关节并非全部独立控制",
+        "motion": "腱索带动关节，柔顺结构允许被动适应"
+      },
+      {
+        "part": "实验腕部",
+        "active": "Franka 机械臂阻抗控制",
+        "coupled": "不计为手内电机",
+        "motion": "手臂控制形成腕部柔顺性"
+      }
+    ],
+    "drive": "腱驱手指结合可调整的被动柔顺性；腕部实验效果包含机械臂控制的贡献。",
+    "ranges": "逐关节限位与各刚度配置的条件尚待录入。",
+    "gaps": "还需整理柔顺配置表、逐任务结果与耐久测试；不能把机械臂性能计为裸手性能。",
+    "sources": [
+      {
+        "title": "Communications Engineering · 结构、感知与实验依据",
+        "url": "https://www.nature.com/articles/s44172-025-00407-4"
+      }
+    ],
+    "basic": {},
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "论文比较不同柔顺配置下的操作表现；将皮肤、手指、腕部的作用分开分析，而不是只比较总自由度。",
+      "source": "https://www.nature.com/articles/s44172-025-00407-4"
+    }
+  },
+  "adapt-hand-2": {
+    "checked_on": "2026-10-02",
+    "scope": "npj Robotics",
+    "summary": "15 个执行器：13 个控制手、2 个控制集成腕。手指的共享侧摆与末节耦合需单列。",
+    "parts": [
+      {
+        "part": "四根长指（每指）",
+        "active": "2",
+        "coupled": "PIP 与 DIP 共腱",
+        "motion": "MCP 屈伸与指间屈伸"
+      },
+      {
+        "part": "四指侧摆",
+        "active": "共享 1 个电机",
+        "coupled": "多指耦合",
+        "motion": "共同控制展收"
+      },
+      {
+        "part": "拇指",
+        "active": "4",
+        "coupled": "四关节分别控制",
+        "motion": "对掌相关关节运动"
+      },
+      {
+        "part": "集成腕",
+        "active": "2",
+        "coupled": "并联锥齿轮结构",
+        "motion": "两个腕部运动轴"
+      }
+    ],
+    "drive": "长指 MCP 使用拮抗腱索；另一条腱索使 PIP 与 DIP 屈曲。连续皮肤和解剖关节布置与第一代不同。",
+    "ranges": "手与腕合计 15 个执行器；地图主动关节角暂不填 15，因为四指侧摆及末节受耦合约束。",
+    "gaps": "完整角度限位、各任务试验数及腕部包含/排除时的对比仍需整理。",
+    "sources": [
+      {
+        "title": "npj Robotics · 结构、感知与实验依据",
+        "url": "https://www.nature.com/articles/s44182-025-00034-3"
+      }
+    ],
+    "basic": {
+      "fingers": 5
+    },
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "论文评估二维/三维工作空间、皮肤贴合与被动柔顺，并展示物体操作。",
+      "source": "https://www.nature.com/articles/s44182-025-00034-3"
+    }
+  },
+  "dash-hand": {
+    "checked_on": "2026-10-02",
+    "scope": "IEEE-RAS Humanoids",
+    "summary": "论文称 16 DOF 的软体腱驱手；软体控制变量与刚性独立关节角不直接等价。",
+    "parts": [
+      {
+        "part": "软体手指",
+        "active": "每指四条控制腱索",
+        "coupled": "腱索数量不等于电机数",
+        "motion": "弯曲、内收、外展及向掌部折叠"
+      }
+    ],
+    "drive": "3D 打印软体结构通过折痕形成类关节弯曲，腱索牵引改变手指形状。",
+    "ranges": "软体构型和材料形变依赖负载，未核定可直接比较的刚性限位表。",
+    "gaps": "各设计迭代的驱动配置、材料寿命及自主控制泛化尚需分开整理。",
+    "sources": [
+      {
+        "title": "IEEE-RAS Humanoids · 结构、感知与实验依据",
+        "url": "https://arxiv.org/html/2306.04784v3"
+      }
+    ],
+    "basic": {},
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "论文在指定 30 项任务中报告 DASH 完成 19 项、比较用 Allegro 完成 7 项；只适用于该遥操作实验，不能作为总体产品排名。",
+      "source": "https://arxiv.org/html/2306.04784v3"
+    }
+  },
+  "eyesight-hand": {
+    "checked_on": "2026-10-02",
+    "scope": "arXiv · 2408.06265",
+    "summary": "三指、7 个主动自由度；采用准直驱与视觉触觉。",
+    "parts": [
+      {
+        "part": "食指 / 中指 / 拇指",
+        "active": "共 7 个主动自由度",
+        "coupled": "逐指分配待机构图复核",
+        "motion": "指部运动与集成接触感知"
+      }
+    ],
+    "drive": "准直驱使用低传动比获得柔顺响应；不是无减速器的严格直驱。",
+    "ranges": "逐指轴分配和限位还未完整摘录；不从总数平均分配。",
+    "gaps": "需要核对模型仓库、完整成功率表与实际驱动限流条件。",
+    "sources": [
+      {
+        "title": "arXiv · 2408.06265 · 结构、感知与实验依据",
+        "url": "https://arxiv.org/html/2408.06265v1"
+      }
+    ],
+    "basic": {
+      "fingers": 3
+    },
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "论文评估开瓶、切橡皮泥和盘子拾放，并研究模仿学习中的视觉 dropout；其结果依赖训练与触觉配置。",
+      "source": "https://arxiv.org/html/2408.06265v1"
+    }
+  },
+  "yale-sphinx": {
+    "checked_on": "2026-10-02",
+    "scope": "Nature Machine Intelligence",
+    "summary": "6 个 Dynamixel 舵机；球面并联机构实现抓握和三轴旋转，不能把舵机数当作物体 6 自由度位姿。",
+    "parts": [
+      {
+        "part": "球面并联机构",
+        "active": "6 个舵机",
+        "coupled": "机构闭链约束",
+        "motion": "抓持物体并绕近似固定中心旋转"
+      }
+    ],
+    "drive": "三台 XM-430 W350-R 与三台 XL-430 W250-T 驱动球面并联机构。",
+    "ranges": "项目强调三轴球面旋转；具体工作空间仍受机构与被抓物体限制，不能理解为任意位姿。",
+    "gaps": "需进一步整理奇异构型、抓取力、碰撞边界与连续转动范围。",
+    "sources": [
+      {
+        "title": "Nature Machine Intelligence · 结构、感知与实验依据",
+        "url": "https://www.eng.yale.edu/grablab/openhand/sphinx_hand.html"
+      },
+      {
+        "title": "发表/公开时间依据",
+        "url": "https://www.nature.com/articles/s42256-025-01039-1"
+      }
+    ],
+    "basic": {
+      "weight": "645 g",
+      "dimensions": "底座宽度 175 mm"
+    },
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "项目展示固定末端方向时拧灯泡、解绳，以及机械臂腕部锁定时的操作。",
+      "source": "https://www.eng.yale.edu/grablab/openhand/sphinx_hand.html"
+    }
+  },
+  "allegro-v5": {
+    "checked_on": "2026-10-02",
+    "scope": "官方产品资料",
+    "summary": "3 指、9 个独立关节；与其他 Allegro 型号分开记录。",
+    "parts": [
+      {
+        "part": "各手指",
+        "active": "3",
+        "coupled": "官网称独立关节",
+        "motion": "各轴的解剖名称与零位仍需逐一对照技术图"
+      }
+    ],
+    "drive": "直流减速电机带动关节，电流控制可调节驱动力；带减速机构，不归入严格无减速器的直驱。",
+    "ranges": "官网产品总览未给出本条全部关节的带零位限位表，尚待技术资料逐轴核对。",
+    "gaps": "尚缺明确上市年、逐轴运动范围、接触力标定和可比较的操作测试结果。",
+    "sources": [
+      {
+        "title": "官方产品资料 · 结构、感知与实验依据",
+        "url": "https://allegrohand.com/sub/product/p.php?idx=3"
+      }
+    ],
+    "basic": {
+      "fingers": 3,
+      "weight": "1050 g",
+      "country": "韩国",
+      "application": "机器人研究与物体操作",
+      "product_status": "官方产品页已列示；交付情况需向厂商确认"
+    },
+    "capability": {
+      "kind": "厂商资料",
+      "text": "厂商提供抓握演示及 CAN 控制；本轮未取得统一物体集上的重复试验数据，不能仅凭演示进行成功率排名。",
+      "source": "https://allegrohand.com/sub/product/p.php?idx=3"
+    }
+  },
+  "allegro-v5-plus": {
+    "checked_on": "2026-10-02",
+    "scope": "官方产品资料",
+    "summary": "4 指、16 个独立关节；与其他 Allegro 型号分开记录。",
+    "parts": [
+      {
+        "part": "各手指",
+        "active": "4",
+        "coupled": "官网称独立关节",
+        "motion": "各轴的解剖名称与零位仍需逐一对照技术图"
+      }
+    ],
+    "drive": "直流减速电机带动关节，电流控制可调节驱动力；带减速机构，不归入严格无减速器的直驱。",
+    "ranges": "官网产品总览未给出本条全部关节的带零位限位表，尚待技术资料逐轴核对。",
+    "gaps": "尚缺明确上市年、逐轴运动范围、接触力标定和可比较的操作测试结果。",
+    "sources": [
+      {
+        "title": "官方产品资料 · 结构、感知与实验依据",
+        "url": "https://allegrohand.com/sub/product/p.php?idx=4"
+      }
+    ],
+    "basic": {
+      "fingers": 4,
+      "weight": "1024 g",
+      "country": "韩国",
+      "application": "机器人研究与物体操作",
+      "product_status": "官方产品页已列示；交付情况需向厂商确认"
+    },
+    "capability": {
+      "kind": "厂商资料",
+      "text": "厂商提供抓握演示及 CAN 控制；本轮未取得统一物体集上的重复试验数据，不能仅凭演示进行成功率排名。",
+      "source": "https://allegrohand.com/sub/product/p.php?idx=4"
+    }
+  },
+  "allegro-v6f": {
+    "checked_on": "2026-10-02",
+    "scope": "官方产品资料",
+    "summary": "五指，每指 4 个独立关节，共 20 个。",
+    "parts": [
+      {
+        "part": "五根手指（每指）",
+        "active": "4",
+        "coupled": "官网称独立关节",
+        "motion": "逐轴名称与拇指对掌定义待技术图核对"
+      }
+    ],
+    "drive": "直流电机经 288.35:1 减速传动驱动关节；高减速比与严格直驱的机械特性不同。",
+    "ranges": "逐轴上下限、零位和碰撞限制仍待核验。",
+    "gaps": "待补逐轴限位、测力标定、公开模型和重复抓取试验。",
+    "sources": [
+      {
+        "title": "官方产品资料 · 结构、感知与实验依据",
+        "url": "https://allegrohand.com/sub/product/p.php?idx=25"
+      },
+      {
+        "title": "发表/公开时间依据",
+        "url": "https://allegrohand.com/"
+      }
+    ],
+    "basic": {
+      "fingers": 5,
+      "weight": "1150 g",
+      "country": "韩国",
+      "application": "机器人研究与物体操作",
+      "product_status": "官方产品页已列示；交付情况需向厂商确认"
+    },
+    "capability": {
+      "kind": "厂商资料",
+      "text": "支持电流、位置与刚度控制，提供 RS485 / Ethernet 通信；本轮未找到统一操作基准结果。",
+      "source": "https://allegrohand.com/sub/product/p.php?idx=25"
+    }
+  },
+  "mumuta-hand": {
+    "checked_on": "2026-10-02",
+    "scope": "Science Robotics",
+    "summary": "五指生物混合手；每指一对肌肉束执行器，不能把肌肉束数量当成独立关节角数量。",
+    "parts": [
+      {
+        "part": "五根手指（每指）",
+        "active": "一对肌肉束",
+        "coupled": "关节受缆索与结构耦合",
+        "motion": "肌肉线性收缩转化为指部转动"
+      }
+    ],
+    "drive": "电刺激使培养的肌肉束收缩，再由缆索带动塑料骨架的关节。执行器是活体肌肉组织，并非电机。",
+    "ranges": "各指活动角度、主动复位流程及负载条件还需从论文实验协议逐项核对。",
+    "gaps": "待核关节角限位、复位操作、培养维护条件及循环寿命。",
+    "sources": [
+      {
+        "title": "Science Robotics · 结构、感知与实验依据",
+        "url": "https://www.u-tokyo.ac.jp/focus/en/press/z0508_00386.html"
+      },
+      {
+        "title": "论文 DOI",
+        "url": "https://doi.org/10.1126/scirobotics.adr5512"
+      },
+      {
+        "title": "发表/公开时间依据",
+        "url": "https://doi.org/10.1126/scirobotics.adr5512"
+      }
+    ],
+    "basic": {
+      "fingers": 5,
+      "dimensions": "约 18 cm 长"
+    },
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "大学说明展示剪刀手势及移动物体；演示在液体环境中进行。肌肉会疲劳，需要休息，不能理解为脱离培养环境的实用假手。",
+      "source": "https://www.u-tokyo.ac.jp/focus/en/press/z0508_00386.html"
+    }
+  },
+  "mogrip": {
+    "checked_on": "2026-10-02",
+    "scope": "Science Robotics",
+    "summary": "四指与自适应输送掌面组成的多物体抓取装置；驱动数尚未逐项核清。",
+    "parts": [
+      {
+        "part": "四根手指",
+        "active": "待核",
+        "coupled": "需核查关节耦合",
+        "motion": "将物体转移到掌部"
+      },
+      {
+        "part": "输送掌面",
+        "active": "主动输送",
+        "coupled": "不属于手指转动轴",
+        "motion": "储存物体并逐个释放"
+      }
+    ],
+    "drive": "手指与输送掌面协同，使同一次机械臂往返能够携带多个物体。当前项目摘要不足以拆分全部电机及传动结构。",
+    "ranges": "储物空间、手指限位及不同物体组合的装载约束仍需实验表。",
+    "gaps": "待核电机清单、感知配置、最大载荷及测试物体尺寸。",
+    "sources": [
+      {
+        "title": "Science Robotics · 结构、感知与实验依据",
+        "url": "https://jaemineom.github.io/Project_MOGrip/"
+      },
+      {
+        "title": "论文 DOI",
+        "url": "https://doi.org/10.1126/scirobotics.ado3939"
+      }
+    ],
+    "basic": {
+      "fingers": 4
+    },
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "作者比较的物流实验中，多物体方案相对单物体搬运减少末端移动距离 71%、时间 34%；这些数值仅适用于该实验流程。另展示 23 类物体，不能解释为成功率。",
+      "source": "https://jaemineom.github.io/Project_MOGrip/"
+    }
+  },
+  "tactile-active-palm": {
+    "checked_on": "2026-10-02",
+    "scope": "npj Robotics",
+    "summary": "三指各有 2 个转动轴，掌面另有 1 个直线轴：6 转动 + 1 平移，不是 7 个关节角。",
+    "parts": [
+      {
+        "part": "三根手指（每指）",
+        "active": "2 个转动轴",
+        "coupled": "Fin Ray 软结构被动变形",
+        "motion": "基座屈伸与侧向转动"
+      },
+      {
+        "part": "主动掌面",
+        "active": "1 个直线轴",
+        "coupled": "不计为转动关节角",
+        "motion": "沿掌面法向移动"
+      }
+    ],
+    "drive": "六个旋转电机驱动指根，另一个线性执行器移动掌面；TPU 柔顺指体在接触后被动适应形状。",
+    "ranges": "掌面直线行程 20 mm；旋转轴的完整带零位上下限待录入。",
+    "gaps": "待补全部旋转关节限位、测试次数与不同触觉配置的对比表。",
+    "sources": [
+      {
+        "title": "npj Robotics · 结构、感知与实验依据",
+        "url": "https://www.nature.com/articles/s44182-026-00079-y"
+      },
+      {
+        "title": "作者控制与运动学代码",
+        "url": "https://github.com/YuHoChau/7-DOF-Tactile-Gripper"
+      }
+    ],
+    "basic": {
+      "fingers": 3
+    },
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "论文展示物体抓取、采摘、去盖等任务；主动掌面参与托举及接触调整。作者公开控制与运动学代码。",
+      "source": "https://www.nature.com/articles/s44182-026-00079-y"
+    }
+  },
+  "omnidirectional-sensing-hand": {
+    "checked_on": "2026-10-02",
+    "scope": "Microsystems & Nanoengineering",
+    "summary": "论文称 18 个主动 DOF，但机构使用 9 个舵机；尚不能把 18 填成独立可控关节角。",
+    "parts": [
+      {
+        "part": "四根长指（每指）",
+        "active": "论文计 4 DOF",
+        "coupled": "由全手 9 个舵机牵腱，具体分配待核",
+        "motion": "屈伸与展收"
+      },
+      {
+        "part": "拇指",
+        "active": "论文计 2 DOF",
+        "coupled": "独立控制口径待核",
+        "motion": "拇指运动"
+      }
+    ],
+    "drive": "前臂上的九个舵机通过腱索拉动刚柔结合手指；运动关节总数与独立驱动输入必须分开。",
+    "ranges": "掌指关节传感角度与全指工作空间不是同一指标，逐关节限位待核。",
+    "gaps": "重点待核：18 DOF 与 9 舵机的映射、被动/耦合关节，以及全关节角反馈覆盖。",
+    "sources": [
+      {
+        "title": "Microsystems & Nanoengineering · 结构、感知与实验依据",
+        "url": "https://www.nature.com/articles/s41378-026-01179-3"
+      }
+    ],
+    "basic": {
+      "fingers": 5
+    },
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "论文展示剪刀、鼠标与钢琴任务；演示说明特定动作可实现，不等于统一基准上的自主操作成功率。",
+      "source": "https://www.nature.com/articles/s41378-026-01179-3"
+    }
+  },
+  "high-dexterity-neuroprosthetic": {
+    "checked_on": "2026-10-02",
+    "scope": "Nature Communications",
+    "summary": "论文计 11 个主动 DOF：十个气动指部单元与一个电机驱动的拇掌关节；不等同于 11 个刚性关节角。",
+    "parts": [
+      {
+        "part": "五根手指（每指）",
+        "active": "2 个气动单元",
+        "coupled": "柔性弯曲受压力与负载影响",
+        "motion": "分段弯曲"
+      },
+      {
+        "part": "拇掌关节",
+        "active": "1 个电机驱动轴",
+        "coupled": "与指部气动独立",
+        "motion": "改变拇指相对掌面姿态"
+      }
+    ],
+    "drive": "气动软指与电机驱动的拇掌关节结合；11 指的是驱动单元总数，不是 11 台电机。",
+    "ranges": "气动测试压力 0–200 kPa；拇掌关节 0–60°。软指的弯曲角还取决于载荷，不能把压力上限当成角度上限。",
+    "gaps": "待补逐指压力—角度曲线、整套气源重量、操作任务完整统计及长期使用记录。",
+    "sources": [
+      {
+        "title": "Nature Communications · 结构、感知与实验依据",
+        "url": "https://www.nature.com/articles/s41467-026-75105-6"
+      }
+    ],
+    "basic": {
+      "fingers": 5
+    },
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "论文在 4 名截肢参与者中进行标准任务及日常操作测试，展示拧灯泡等动作；这是研究样本结果，不代表所有使用者的效果。",
+      "source": "https://www.nature.com/articles/s41467-026-75105-6"
+    }
+  },
+  "matusik-pneumatic-hand": {
+    "checked_on": "2026-10-02",
+    "scope": "arXiv · 2310.16280",
+    "summary": "五指、15 个气动执行单元；论文的 15 DOF 不直接作为刚性独立关节角坐标。",
+    "parts": [
+      {
+        "part": "五指气动结构",
+        "active": "整手 15 个单元",
+        "coupled": "逐指分配及约束待核",
+        "motion": "压力使软执行器形变并驱动指部运动"
+      },
+      {
+        "part": "掌与拇指",
+        "active": "含刚性内部结构",
+        "coupled": "软硬结构共同约束运动",
+        "motion": "稳定指根及拇指构型"
+      }
+    ],
+    "drive": "多材料打印把软执行结构与刚性支撑结合；需要外部气动供给，不能只用手本体评价系统成本与体积。",
+    "ranges": "软指压力—形变关系受材料和载荷影响，逐关节可比角度限位尚待核对。",
+    "gaps": "待核逐指执行单元映射、气源完整配置、耐久性及可下载仿真模型。",
+    "sources": [
+      {
+        "title": "arXiv · 2310.16280 · 结构、感知与实验依据",
+        "url": "https://arxiv.org/html/2310.16280v1"
+      },
+      {
+        "title": "发表/公开时间依据",
+        "url": "https://arxiv.org/abs/2310.16280"
+      }
+    ],
+    "basic": {
+      "fingers": 5
+    },
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "作者展示不同手势与物体抓握；遥操作结果包括人的动作选择，不等于完全自主操作。",
+      "source": "https://arxiv.org/html/2310.16280v1"
+    }
+  },
+  "tactile-softhand-a": {
+    "checked_on": "2026-10-02",
+    "scope": "arXiv · 2406.12731 v2",
+    "summary": "五指、两台电机；拮抗腱索与差动结构实现主动张开/闭合和抓姿调整。",
+    "parts": [
+      {
+        "part": "五根手指",
+        "active": "共享两台电机",
+        "coupled": "弹簧协同与差动机构",
+        "motion": "共同闭合、主动张开与抓姿调整"
+      },
+      {
+        "part": "末端 / 近端指间关节",
+        "active": "取决于腱索方案",
+        "coupled": "不是每指单独配两台电机",
+        "motion": "不同布线方案偏向末节或近端运动"
+      }
+    ],
+    "drive": "一组腱索负责屈曲，另一组负责伸展；两台电机分别带动差动与弹簧耦合系统。接触后各指会被动适应物体。",
+    "ranges": "论文分析指部工作空间；两电机输入与各关节角依赖接触状态，不能将两输入写成两个独立指节角。",
+    "gaps": "待补各布线配置的具体角度范围、载荷与防滑重复实验统计。",
+    "sources": [
+      {
+        "title": "arXiv · 2406.12731 v2 · 结构、感知与实验依据",
+        "url": "https://arxiv.org/html/2406.12731v2"
+      },
+      {
+        "title": "作者 CAD 与制作说明",
+        "url": "https://github.com/HaoranLi-Data/Tactile_SoftHand_A"
+      }
+    ],
+    "basic": {
+      "fingers": 5,
+      "dimensions": "约 200 × 90 × 26 mm"
+    },
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "论文展示人的手势遥操作与触觉防滑响应；触觉反馈在外部扰动时调节抓姿，不能理解为不依赖人的通用自主策略。",
+      "source": "https://arxiv.org/html/2406.12731v2"
+    }
+  },
+  "jhu-neuromorphic-hand": {
+    "checked_on": "2026-10-02",
+    "scope": "Science Advances",
+    "summary": "结合刚性骨架、柔性结构和神经形态触觉反馈的研究假手；驱动与独立关节角数量待原文表格核清。",
+    "parts": [
+      {
+        "part": "仿生手指",
+        "active": "待核",
+        "coupled": "刚柔结构共同决定运动",
+        "motion": "顺应物体进行抓握"
+      }
+    ],
+    "drive": "大学说明介绍刚性与柔性部件结合的仿生手；当前可读资料不足以给出电机、气动或腱索的完整分工。",
+    "ranges": "逐指角度范围、载荷与控制模式尚待原文和补充材料核查。",
+    "gaps": "待补完整驱动清单、逐关节结构、不同识别任务的指标定义及可下载模型。",
+    "sources": [
+      {
+        "title": "Science Advances · 结构、感知与实验依据",
+        "url": "https://engineering.jhu.edu/news/feeling-is-believing-bionic-hand-knows-what-its-touching-grasps-like-a-human/"
+      },
+      {
+        "title": "论文 DOI",
+        "url": "https://doi.org/10.1126/sciadv.adr9300"
+      },
+      {
+        "title": "发表/公开时间依据",
+        "url": "https://doi.org/10.1126/sciadv.adr9300"
+      }
+    ],
+    "basic": {},
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "研究展示对玩具、杯子等日常物品的处理；本条不使用新闻中的综合准确率作为抓取成功率。",
+      "source": "https://engineering.jhu.edu/news/feeling-is-believing-bionic-hand-knows-what-its-touching-grasps-like-a-human/"
+    }
+  },
+  "xynova-prima-1": {
+    "checked_on": "2026-10-02",
+    "scope": "官方产品资料",
+    "summary": "官网标称 22 DOF，尚未提供本轮可核验的逐指主动 / 被动轴拆分。",
+    "parts": [
+      {
+        "part": "五根手指",
+        "active": "官网整手 22 DOF，逐指待核",
+        "coupled": "主动、耦合及被动口径未拆分",
+        "motion": "仿人抓握与对掌"
+      }
+    ],
+    "drive": "厂商称全直驱、低反驱扭矩；尚缺传动剖面与减速比证据，因此暂不把宣传术语当作已证实的无减速直驱。",
+    "ranges": "190 mm 是手部尺寸描述，不是逐指关节运动范围；完整限位表待核。",
+    "gaps": "待核主动驱动数量、逐轴范围、重量、通信与供电、SDK 版本及可下载模型。",
+    "sources": [
+      {
+        "title": "官方产品资料 · 结构、感知与实验依据",
+        "url": "https://www.xynova.com.cn/en/xynova-prima-1"
+      },
+      {
+        "title": "官方资源中心",
+        "url": "https://www.xynova.com.cn/en/download-center"
+      }
+    ],
+    "basic": {
+      "fingers": 5,
+      "dimensions": "官网称手尺度 190 mm",
+      "country": "中国",
+      "application": "科研与机器人操作",
+      "product_status": "官方产品页已列示"
+    },
+    "capability": {
+      "kind": "厂商资料",
+      "text": "官方列出 15 N 指尖力、0.08 s 开合周期和力位混合控制。测试姿态、负载与计时协议尚待取得，不能作为独立实测结果或横向排名。",
+      "source": "https://www.xynova.com.cn/en/xynova-prima-1"
+    }
+  },
+  "isyhand-v6": {
+    "checked_on": "2026-10-02",
+    "scope": "Humanoids 2025",
+    "summary": "四指共 16 个主动关节，另有 2 个主动掌部关节；整手 18 主动自由度，由 18 个舵机驱动。不是 ICRA 2025 的 v2。",
+    "parts": [
+      {
+        "part": "三根长指（每指）",
+        "active": "4",
+        "coupled": "无被动耦合轴计入主动数",
+        "motion": "三个屈伸轴加一个展收轴"
+      },
+      {
+        "part": "拇指",
+        "active": "4",
+        "coupled": "不含腕部",
+        "motion": "三个屈伸轴加根部旋转"
+      },
+      {
+        "part": "手掌",
+        "active": "2",
+        "coupled": "主动掌部关节",
+        "motion": "改变掌部形状、托住物体"
+      }
+    ],
+    "drive": "关节处的 Dynamixel 减速舵机直接带动指节；12 个 XL330 与 6 个 XC330，通过 U2D2、5 V 电源和定制配电板连接。属于关节集成电机方案，仍有减速齿轮。",
+    "ranges": "指节屈伸受自碰撞限制；论文 Fig.3 展示运动方式，精确上下限需下载对应 v6 URDF 核对。",
+    "gaps": "v6 URDF/CAD 需注册下载；软件页仍写 Coming soon；整套运行包、逐轴限位及独立复现待核。",
+    "sources": [
+      {
+        "title": "Humanoids 2025 · 结构、感知与实验依据",
+        "url": "https://arxiv.org/html/2509.26236v1"
+      },
+      {
+        "title": "作者 v6 项目与下载说明",
+        "url": "https://isyhand.is.mpg.de/"
+      },
+      {
+        "title": "当前软件发布状态",
+        "url": "https://isyhand.is.mpg.de/software.html"
+      }
+    ],
+    "basic": {
+      "fingers": 4,
+      "weight": "约 620 g",
+      "dimensions": "255 × 130 × 38 mm"
+    },
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "论文对比同条件仿真转块：活动掌在训练早期更有利，充分训练后与 Allegro、LEAP 接近；真实测试 30 次中 10 次因视觉跟踪失败被剔除，其余平均连续重定向 6.1 次。不能把剔除后的结果当总体成功率。",
+      "source": "https://arxiv.org/html/2509.26236v1"
+    }
+  },
+  "bidexhand-v4": {
+    "checked_on": "2026-10-02",
+    "scope": "官方 V4 开源资料",
+    "summary": "五指 16 主动自由度：四根长指各 3，拇指 4；长指 DIP 随 PIP 耦合，不额外计为主动轴。",
+    "parts": [
+      {
+        "part": "四根长指（每指）",
+        "active": "3",
+        "coupled": "DIP 由四连杆随 PIP 运动",
+        "motion": "MCP 展收、MCP 屈伸、PIP 屈伸"
+      },
+      {
+        "part": "拇指",
+        "active": "4",
+        "coupled": "以 V4 README 轴定义为准",
+        "motion": "CMC 展收/屈伸、MCP 展收/屈伸"
+      }
+    ],
+    "drive": "15 个舵机通过滑轮与腱索驱动，另一个主动关节由四连杆驱动；长指末端另有被动耦合连杆。这里按整手混合传动归类。",
+    "ranges": "软件提供逐舵机校准；完整关节安全角度表待核，不用舵机电角度直接代替手指角度。",
+    "gaps": "V4 首次发布日期、触觉配置、逐关节限位及自主任务指标尚待补证。",
+    "sources": [
+      {
+        "title": "官方 V4 开源资料 · 结构、感知与实验依据",
+        "url": "https://github.com/wengmister/BiDexHand"
+      },
+      {
+        "title": "2025 项目论文，配置需与 V4 匹配",
+        "url": "https://arxiv.org/abs/2504.14712"
+      }
+    ],
+    "basic": {
+      "fingers": 5
+    },
+    "capability": {
+      "kind": "厂商资料",
+      "text": "仓库有混合现实动作跟随、校准和 Franka 集成演示。当前资料不足以给出 V4 独立的自主手内操作成功率；2025 论文与当前 V4 的实验配置需要逐项匹配。",
+      "source": "https://github.com/wengmister/BiDexHand"
+    }
+  },
+  "faive-hand": {
+    "checked_on": "2026-10-02",
+    "scope": "Humanoids 2023",
+    "summary": "五指共 11 个可驱动自由度、16 个机械关节，使用 16 个腱索舵机；三者分别计数。",
+    "parts": [
+      {
+        "part": "四根长指（每指）",
+        "active": "2",
+        "coupled": "远端关节耦合",
+        "motion": "屈伸；该原型没有长指主动展收"
+      },
+      {
+        "part": "拇指",
+        "active": "3",
+        "coupled": "远端关节耦合",
+        "motion": "根部两铰链及指部屈伸"
+      }
+    ],
+    "drive": "腕部 16 个 Dynamixel 舵机拉动腱索。多数关节采用两个曲面滚动接触、交叉韧带绳约束的结构；转动中心随姿态变化。",
+    "ranges": "滚动关节在仿真中用两个虚拟铰链表示；XML 中虚拟关节数不等于真实独立自由度。逐轴范围还需配合模型核对。",
+    "gaps": "真实硬件驱动完整包、制造 CAD、关节限位与后续 Mimic 产品对应关系待核。",
+    "sources": [
+      {
+        "title": "Humanoids 2023 · 结构、感知与实验依据",
+        "url": "https://srl-ethz.github.io/get-ball-rolling/"
+      },
+      {
+        "title": "论文与实验边界",
+        "url": "https://arxiv.org/pdf/2308.02453"
+      },
+      {
+        "title": "作者仿真工程",
+        "url": "https://github.com/srl-ethz/faive_gym_oss"
+      }
+    ],
+    "basic": {
+      "fingers": 5
+    },
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "作者用 Isaac Gym 训练后在实物实现球体双向旋转。论文未能稳定学会另外两轴旋转，归因之一是 Proto 0 缺少手指展收；结果不能外推到任意六维操作。",
+      "source": "https://srl-ethz.github.io/get-ball-rolling/"
+    }
+  },
+  "ruka-v2": {
+    "checked_on": "2026-10-02",
+    "scope": "arXiv / ICRA Workshop 2026",
+    "summary": "作者标称手指与拇指 16 DoF，另加 2 DoF 腕；本轮尚未逐轴核对耦合与电机映射，暂不把 18 填入手部主动轴坐标。",
+    "parts": [
+      {
+        "part": "四根长指",
+        "active": "逐轴独立输入待核",
+        "coupled": "中指作为固定展收参考；DIP/PIP 映射需核",
+        "motion": "屈伸及部分指根展收"
+      },
+      {
+        "part": "拇指",
+        "active": "逐轴映射待核",
+        "coupled": "不按其他手型类推",
+        "motion": "IP、MCP、CMC 运动"
+      },
+      {
+        "part": "腕部",
+        "active": "2（另列）",
+        "coupled": "并联机构、被动球铰约束",
+        "motion": "屈伸及桡偏/尺偏；不混入手指数量"
+      }
+    ],
+    "drive": "电机放在前臂，通过腱索驱动指部；新增展收模块配弹簧回位。腕采用解耦并联连杆，腱索从接近腕旋转中心的位置通过以减小腕姿态对腱长的影响。",
+    "ranges": "开源校准脚本分别记录张紧时完全张开与屈曲边界；不同装配的腱索张力会改变电机范围，需要逐台校准。",
+    "gaps": "手指 16 DoF 的独立/耦合映射、电机总数、腕部范围数值与模型对应待文件级核对。",
+    "sources": [
+      {
+        "title": "arXiv / ICRA Workshop 2026 · 结构、感知与实验依据",
+        "url": "https://ruka-hand-v2.github.io/"
+      },
+      {
+        "title": "2026 论文",
+        "url": "https://arxiv.org/abs/2603.26660"
+      },
+      {
+        "title": "作者控制与校准仓库",
+        "url": "https://github.com/ruka-hand-v2/RUKA-v2"
+      }
+    ],
+    "basic": {
+      "fingers": 5
+    },
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "项目展示 13 项单/双臂遥操作及 3 项自主学习任务，包括写字、取笔、开音乐盒。相对一代的完成时间和成功率改善来自作者特定用户实验，不等于通用性能排名。",
+      "source": "https://ruka-hand-v2.github.io/"
+    }
+  },
+  "dexhand-021": {
+    "checked_on": "2026-10-02",
+    "scope": "2025 结构与控制论文",
+    "summary": "五指，12 主动 + 7 被动自由度，12 电机；本页按 2025 论文配置，不混用 021S 三指版。",
+    "parts": [
+      {
+        "part": "拇指",
+        "active": "3 电机输入",
+        "coupled": "含末端耦合",
+        "motion": "根部旋转与屈伸"
+      },
+      {
+        "part": "四根长指（每指）",
+        "active": "2 电机输入",
+        "coupled": "DIP 随 PIP 联动",
+        "motion": "掌指及近端屈伸"
+      },
+      {
+        "part": "分指机构",
+        "active": "1 电机输入",
+        "coupled": "多指联动；被动轴逐指归属待核",
+        "motion": "丝杠滑块与连杆调节指间展开"
+      }
+    ],
+    "drive": "主要屈伸由电机、减速/蜗杆与腱索传动；另有根部旋转和丝杠连杆分指机构，因此整手按混合传动记录。",
+    "ranges": "各轴安全上下限须按实机手册核对；公开仿真中的默认角度范围不是实机保证值。",
+    "gaps": "七个被动轴的逐指归属、硬件修订与模型版本、独立实验及耐久测试协议待补。",
+    "sources": [
+      {
+        "title": "2025 结构与控制论文 · 结构、感知与实验依据",
+        "url": "https://arxiv.org/html/2511.03481v1"
+      },
+      {
+        "title": "官方 C++ SDK 与五指版本说明",
+        "url": "https://github.com/DexRobot/dexhand_sdk_cpp"
+      },
+      {
+        "title": "官方 MuJoCo 型号与碰撞模型",
+        "url": "https://dexrobot.github.io/dexrobot_mujoco/hand_models/index.html"
+      },
+      {
+        "title": "官方 URDF",
+        "url": "https://dexrobot.github.io/dexrobot_urdf/"
+      }
+    ],
+    "basic": {
+      "fingers": 5,
+      "weight": "1 kg（论文配置）",
+      "dimensions": "296.2 × 113.2 × 56.5 mm",
+      "product_status": "厂商五指平台；本页技术指标对应 2025 论文配置"
+    },
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "论文展示 33 类 GRASP 抓姿及操作任务，比较基于力矩估计的柔顺控制与 PID。抓姿覆盖数不是自主任务成功率；传感精度、重复定位与承载也不能互相替代。",
+      "source": "https://arxiv.org/html/2511.03481v1"
+    }
+  },
+  "robotera-xhand1": {
+    "checked_on": "2026-10-02",
+    "scope": "官方 XHAND 1 产品页",
+    "summary": "五指 12 主动自由度、0 被动自由度；拇指与食指各 3，其余三指各 2。不含 Lite 或 Pro。",
+    "parts": [
+      {
+        "part": "拇指",
+        "active": "3",
+        "coupled": "官网标 0 被动轴",
+        "motion": "对掌及屈伸；逐轴名称待手册"
+      },
+      {
+        "part": "食指",
+        "active": "3",
+        "coupled": "独立驱动",
+        "motion": "屈伸与侧摆"
+      },
+      {
+        "part": "中指 / 无名指 / 小指（每指）",
+        "active": "2",
+        "coupled": "独立驱动",
+        "motion": "屈伸；完整零位定义待核"
+      }
+    ],
+    "drive": "官网营销用语为“全直驱”，同时明确写“通过齿轮直接驱动”。本地图按齿轮传动归类，不把它等同无减速器的直接驱动。",
+    "ranges": "官网侧摆范围 -5°～17°；表格未逐轴注明适用关节，不能复制到所有关节。完整限位、零位和轴序需核对手册。",
+    "gaps": "精确首次公开日期、逐轴运动范围、固件与 SDK 二进制对应关系、触觉标定及任务重复测试待核。",
+    "sources": [
+      {
+        "title": "官方 XHAND 1 产品页 · 结构、感知与实验依据",
+        "url": "https://www.robotera.com/#/product/XHAND"
+      },
+      {
+        "title": "官方规格 PDF",
+        "url": "https://www.robotera.com/upload/goods/20241208/2ab64afaae0098db948e9d4063951c28.pdf"
+      },
+      {
+        "title": "厂商 STAR1 整机 URDF",
+        "url": "https://github.com/roboterax/models"
+      },
+      {
+        "title": "IIT / robotology 的 XHand1 YARP 接入",
+        "url": "https://github.com/robotology/yarp-device-xhand"
+      }
+    ],
+    "basic": {
+      "fingers": 5,
+      "weight": "1100 g",
+      "dimensions": "191 × 94 × 47 mm",
+      "country": "中国",
+      "product_status": "官网列示产品；交付配置需向厂商确认"
+    },
+    "capability": {
+      "kind": "厂商资料",
+      "text": "官网列位置、电流及力位控制，并展示负载、快速动作及触觉演示。25 kg 举重是厂商特定实验，不能当成动态精细操作额定负载；本轮未取得公开自主任务成功率表。",
+      "source": "https://www.robotera.com/#/product/XHAND"
+    }
+  },
+  "aero-hand-open": {
+    "checked_on": "2026-10-02",
+    "scope": "arXiv 2026 · 论文配置",
+    "summary": "五指、16 个机械关节、7 个电机输入；存在关节耦合，7 个输入不等于 7 个可独立设角的关节。",
+    "parts": [
+      {
+        "part": "四根长指（每指）",
+        "active": "1 电机",
+        "coupled": "MCP/PIP/DIP 协同屈曲，弹簧伸展",
+        "motion": "单根主腱牵引三个关节"
+      },
+      {
+        "part": "拇指",
+        "active": "3 电机输入",
+        "coupled": "屈曲通道存在腱路耦合",
+        "motion": "CMC 展收及屈伸、MCP/IP 屈伸"
+      }
+    ],
+    "drive": "15 个关节经腱索传动，拇指展收另有短连杆；地图按整手混合传动标注。",
+    "ranges": "耦合指节不能各自独立设定目标角；部署需匹配作者的电机—关节映射及模型限位。",
+    "gaps": "逐轴物理限位及不同修订的尺寸、质量差异待核。",
+    "sources": [
+      {
+        "title": "arXiv 2026 · 论文配置 · 结构、感知与实验依据",
+        "url": "https://arxiv.org/html/2608.28578v1"
+      },
+      {
+        "title": "作者当前仓库与许可",
+        "url": "https://github.com/Chestnut-Robotics/aero-hand-open"
+      },
+      {
+        "title": "作者项目与实物演示",
+        "url": "https://chestnut-robotics.github.io/aero-hand-open/"
+      }
+    ],
+    "basic": {
+      "fingers": 5,
+      "weight": "论文 374 g；当前仓库写 389 g，版本口径不同",
+      "dimensions": "论文：198 × 95 × 53.5 mm",
+      "product_status": "开源研究硬件；指标按 2026 论文配置"
+    },
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "论文展示 33 类抓姿以及仿真训练后实物转块；抓姿覆盖不是任意操作成功率。",
+      "source": "https://arxiv.org/html/2608.28578v1"
+    }
+  },
+  "dexlink-hand": {
+    "checked_on": "2026-10-02",
+    "scope": "arXiv 2026 · 机构论文",
+    "summary": "五指 20 个关节、16 个独立驱动；拇指 4 主动轴，其他四指各 3，长指末节耦合。",
+    "parts": [
+      {
+        "part": "四根长指（每指）",
+        "active": "3",
+        "coupled": "DIP 经交叉四连杆随 PIP 运动",
+        "motion": "MCP 屈伸、侧摆和 PIP 屈伸"
+      },
+      {
+        "part": "拇指",
+        "active": "4",
+        "coupled": "按论文三屈伸电机加一侧摆舵机",
+        "motion": "屈伸与对掌运动"
+      }
+    ],
+    "drive": "电机经蜗轮和连杆传力；球面连杆组织指根运动，交叉四连杆协调长指末两节。",
+    "ranges": "论文给出工作空间和关节运动图；逐轴零位、安全上下限待完整控制文件核对。",
+    "gaps": "BOM 电机数量合计与正文 16 驱动存在差异，保留正文计数；SDK、制造和仿真文件未核实。",
+    "sources": [
+      {
+        "title": "arXiv 2026 · 机构论文 · 结构、感知与实验依据",
+        "url": "https://arxiv.org/html/2606.17418v1"
+      }
+    ],
+    "basic": {
+      "fingers": 5,
+      "weight": "论文标称 320 g",
+      "dimensions": "约 190 × 88 × 55 mm"
+    },
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "作者报告 Kapandji 满分、33 类抓姿及工具操作；不等于自主策略在随机任务上的成功率。",
+      "source": "https://arxiv.org/html/2606.17418v1"
+    }
+  },
+  "mm-hand": {
+    "checked_on": "2026-10-02",
+    "scope": "arXiv 2026 · 远程腱驱配置",
+    "summary": "五指 21 主动关节：四根长指各 4，拇指 5；远端电机总数尚未逐一核对，不由关节数反推。",
+    "parts": [
+      {
+        "part": "四根长指（每指）",
+        "active": "4",
+        "coupled": "弹簧被动伸展，不增加独立轴",
+        "motion": "MCP 展收/屈伸，PIP/DIP 屈伸"
+      },
+      {
+        "part": "拇指",
+        "active": "5",
+        "coupled": "根部旋转采用拮抗双腱",
+        "motion": "CMC 旋转/展收/屈伸，MCP/IP 屈伸"
+      }
+    ],
+    "drive": "电机外置，经带鞘腱索驱动；多数关节单腱牵引、弹簧回位，掌内快接头便于拆换。",
+    "ranges": "论文 Table I：长指 MCP 屈伸 90°、PIP 85°、DIP 90°；展收按食/中/无名/小指为 80/100/95/85°。这些是运动幅度，不是带符号上下限。拇指 CMC 三轴各 90°，MCP 85°、IP 90°。",
+    "gaps": "项目宣传页有张力装置，论文却说明改为软件预紧；按论文版本记录。整套发布包及独立复现待核。",
+    "sources": [
+      {
+        "title": "arXiv 2026 · 远程腱驱配置 · 结构、感知与实验依据",
+        "url": "https://arxiv.org/html/2604.17245v1"
+      },
+      {
+        "title": "作者项目页与版本差异",
+        "url": "https://mmlab.hk/research/MM-Hand"
+      }
+    ],
+    "basic": {
+      "fingers": 5,
+      "weight": "项目页约 350 g，不含远端电机"
+    },
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "论文用关节编码器闭环 PID 补偿传动误差；1 m 鞘管实验峰值指尖力约 25 N，不是额定持续力或整手负载。",
+      "source": "https://arxiv.org/html/2604.17245v1"
+    }
+  },
+  "dmanus": {
+    "checked_on": "2026-10-02",
+    "scope": "arXiv 2022 / RA-L 2023",
+    "summary": "三指共 10 个独立驱动关节：两指各 3，拇指 4；不是普通同步开合三指夹爪。",
+    "parts": [
+      {
+        "part": "两根手指（每指）",
+        "active": "3",
+        "coupled": "无耦合轴计入主动数",
+        "motion": "关节级独立驱动；完整轴序见模型"
+      },
+      {
+        "part": "拇指",
+        "active": "4",
+        "coupled": "不含外接腕部",
+        "motion": "比其他手指多一个运动轴"
+      }
+    ],
+    "drive": "Dynamixel XM430-210 减速舵机集成于关节；12 V 供电、USB 串行总线连接主机。",
+    "ranges": "可配置位置/速度/电流限幅；本轮未逐轴核验机械角度表，不能把舵机全量程视为手部安全范围。",
+    "gaps": "论文说明指节及指尖侧/背面没有触觉覆盖；触觉闭环灵巧策略的完整评估仍属后续工作。",
+    "sources": [
+      {
+        "title": "arXiv 2022 / RA-L 2023 · 结构、感知与实验依据",
+        "url": "https://arxiv.org/html/2210.15658v2"
+      },
+      {
+        "title": "作者项目与制作入口",
+        "url": "https://sites.google.com/view/dmanus"
+      },
+      {
+        "title": "作者接口代码",
+        "url": "https://github.com/raunaqbhirangi/dmanus_release"
+      },
+      {
+        "title": "发表/公开时间依据",
+        "url": "https://arxiv.org/abs/2210.15658"
+      }
+    ],
+    "basic": {
+      "fingers": 3
+    },
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "支持位置、速度、电流、PWM 模式；论文评估触觉分类和分拣。20 次成功抓取后的分类准确率是条件指标，不能当抓取成功率。",
+      "source": "https://arxiv.org/html/2210.15658v2"
+    }
+  },
+  "tesollo-dg-5f-s": {
+    "checked_on": "2026-10-02",
+    "scope": "官方 DG-5F-S 20 轴配置",
+    "summary": "五指每指 4 个独立驱动关节，共 20；与同系列 15 DoF 选配、DG-5F-M 分开。",
+    "parts": [
+      {
+        "part": "五根手指（每指）",
+        "active": "4",
+        "coupled": "官方说明无关节间机械耦合",
+        "motion": "逐轴编号与正方向按左右手手册"
+      }
+    ],
+    "drive": "每轴有集成驱动器；当前资料没有足够依据把内部传动明确归为无减速直驱或其他路线，暂不强行分类。",
+    "ranges": "硬件手册 v2.0.1 §3.3.1 分列 20/15 轴及左右手的限位图，§3.3.2 给出正方向；必须按所购型号选表。",
+    "gaps": "内部传动细节、独立任务测评和实机 SDK/固件兼容性待核；模型包须明确选 S 版。",
+    "sources": [
+      {
+        "title": "官方 DG-5F-S 20 轴配置 · 结构、感知与实验依据",
+        "url": "https://www.tesollo.com/products/grippers/dg-5f-s"
+      },
+      {
+        "title": "官方硬件手册 v2.0.1",
+        "url": "https://cdn.tesollo.com/site/docs/2026/08/10a30190-9e90-4732-8254-378badcdc4b0.pdf"
+      },
+      {
+        "title": "官方 ROS2 总仓库",
+        "url": "https://github.com/tesollodelto/tesollo_ros2"
+      },
+      {
+        "title": "发表/公开时间依据",
+        "url": "https://www.tesollo.com/news/press/tesollo-develops-compact-lightweight-humanoid-hand-dg-5f-s"
+      }
+    ],
+    "basic": {
+      "fingers": 5,
+      "weight": "880 g（当前 20 DoF 产品页）",
+      "country": "韩国",
+      "product_status": "官方已发布商业化公告",
+      "application": "人形平台集成及操作研究"
+    },
+    "capability": {
+      "kind": "厂商资料",
+      "text": "官方支持独立关节控制并展示抓取/操作；标称 500 Hz 是控制频率，不是自主任务成功率。",
+      "source": "https://www.tesollo.com/products/grippers/dg-5f-s"
+    }
+  },
+  "paxini-dexh13-gen2": {
+    "checked_on": "2026-10-02",
+    "scope": "官方 DexH13 GEN2 产品页",
+    "summary": "四指，16 个总自由度＝13 主动＋3 被动；电机总数及逐指轴序尚未取得可靠分解。",
+    "parts": [
+      {
+        "part": "整手四指",
+        "active": "13",
+        "coupled": "3 被动轴，逐指归属待核",
+        "motion": "官网列抓握、捏取、按压和手指开合，未给出逐轴分配"
+      }
+    ],
+    "drive": "官网确认空心杯电机；空心杯描述电机结构，不代表腱驱、齿轮或无减速直驱，传动类型暂留待核。",
+    "ranges": "未取得 GEN2 逐关节角度表、限位和零位定义，不将总自由度平均分给四指。",
+    "gaps": "首发时间、被动关节耦合、执行器数量、SDK 和模型文件仍待明确；不沿用旧概览页的型号混合参数。",
+    "sources": [
+      {
+        "title": "官方 DexH13 GEN2 产品页 · 结构、感知与实验依据",
+        "url": "https://paxini.com/cn/dex/gen2"
+      }
+    ],
+    "basic": {
+      "fingers": 4,
+      "country": "中国",
+      "product_status": "官网列示型号，交付配置待确认",
+      "application": "多指精细操作；实际场景需任务验证"
+    },
+    "capability": {
+      "kind": "厂商资料",
+      "text": "官网列 EtherCAT / Modbus；指尖力 15 N、开合时间 1.5 s 是厂商实验室数据，完整测试条件待补。",
+      "source": "https://paxini.com/cn/dex/gen2"
+    }
+  },
+  "brainco-revo-1": {
+    "checked_on": "2026-10-02",
+    "scope": "官方 Revo 1 产品手册 · 基础机构",
+    "summary": "五指共 10 个运动自由度，其中 6 个主动；四根长指末节随动，不能逐节独立设角。",
+    "parts": [
+      {
+        "part": "拇指",
+        "active": "2",
+        "coupled": "无额外被动轴计入",
+        "motion": "内收外展、屈伸"
+      },
+      {
+        "part": "食 / 中 / 无名 / 小指（每指）",
+        "active": "1",
+        "coupled": "每指另有 1 被动屈伸轴",
+        "motion": "主动屈伸带动随动指节"
+      }
+    ],
+    "drive": "六个微型电机控制六路主动运动；其余轴为被动随动。当前手册没有完整内部传动剖面，不臆定为纯腱驱或纯连杆。",
+    "ranges": "手册主动轴范围：拇指屈伸 0–55°、展收 0–90°；其余四指主动屈伸各 0–70°。这些不是被动末节的独立可命令范围。",
+    "gaps": "被动轴的精确传动比例、内部机构、各 SKU 的触觉标定误差及第三方对照实验仍待核实。",
+    "sources": [
+      {
+        "title": "官方 Revo 1 产品手册 · 基础机构 · 结构、感知与实验依据",
+        "url": "https://www.brainco-hz.com/docs/revolimb-hand/revo1/parameters.html"
+      },
+      {
+        "title": "官方 SDK",
+        "url": "https://github.com/BrainCoTech/brainco-hand-sdk"
+      },
+      {
+        "title": "发表/公开时间依据",
+        "url": "https://www.brainco-hz.com/docs/revolimb-hand/revo1/guide.html"
+      }
+    ],
+    "basic": {
+      "fingers": 5,
+      "country": "中国",
+      "product_status": "官方产品系列；基础 / 进阶 / 触觉 SKU 分开选型",
+      "application": "机器人集成、抓取与操作研究"
+    },
+    "capability": {
+      "kind": "厂商资料",
+      "text": "支持位置 / 速度控制和预设动作序列。厂商列五指握力 50 N、整手最大负载 30 kg；后者不能换算成主动捏力，也不是任务成功率。",
+      "source": "https://www.brainco-hz.com/docs/revolimb-hand/revo1/parameters.html"
+    }
+  },
+  "brainco-revo-2": {
+    "checked_on": "2026-10-02",
+    "scope": "官方 Revo 2 产品手册 · 基础机构",
+    "summary": "五指共 11 个运动自由度，其中 6 个主动；四根长指末节随动，不能逐节独立设角。",
+    "parts": [
+      {
+        "part": "拇指",
+        "active": "2",
+        "coupled": "另有 1 个被动屈伸轴",
+        "motion": "内收外展、屈伸"
+      },
+      {
+        "part": "食 / 中 / 无名 / 小指（每指）",
+        "active": "1",
+        "coupled": "每指另有 1 被动屈伸轴",
+        "motion": "主动屈伸带动随动指节"
+      }
+    ],
+    "drive": "六个微型电机控制六路主动运动；其余轴为被动随动。当前手册没有完整内部传动剖面，不臆定为纯腱驱或纯连杆。",
+    "ranges": "手册主动轴范围：拇指屈伸 0–59°、展收 0–90°；其余四指主动屈伸各 0–81°。这些不是被动末节的独立可命令范围。",
+    "gaps": "被动轴的精确传动比例、内部机构、各 SKU 的触觉标定误差及第三方对照实验仍待核实。",
+    "sources": [
+      {
+        "title": "官方 Revo 2 产品手册 · 基础机构 · 结构、感知与实验依据",
+        "url": "https://www.brainco-hz.com/docs/revolimb-hand/revo2/parameters.html"
+      },
+      {
+        "title": "官方 SDK",
+        "url": "https://github.com/BrainCoTech/brainco-hand-sdk"
+      },
+      {
+        "title": "发表/公开时间依据",
+        "url": "https://www.brainco.cn/en-US/news/b6yv48d2gg4tm8glwobox21o"
+      }
+    ],
+    "basic": {
+      "fingers": 5,
+      "country": "中国",
+      "product_status": "官方产品系列；基础 / 进阶 / 触觉 SKU 分开选型",
+      "application": "机器人集成、抓取与操作研究",
+      "weight": "383 g（不含手腕）",
+      "dimensions": "掌根至中指尖 160 mm"
+    },
+    "capability": {
+      "kind": "厂商资料",
+      "text": "支持位置、速度、电流、PWM 控制及触觉版自适应抓取。厂商列握力 ≥50 N、单指捏力 ≥15 N；没有统一物体集的自主操作成功率可直接排名。",
+      "source": "https://www.brainco-hz.com/docs/revolimb-hand/revo2/parameters.html"
+    }
+  },
+  "brainco-revo-3": {
+    "checked_on": "2026-10-02",
+    "scope": "官方 Revo 3 · U21 系列",
+    "summary": "五指 21 个全主动关节、21 个独立电机；拇指 5 轴，其余四指各 4 轴。触觉因 SKU 而异。",
+    "parts": [
+      {
+        "part": "拇指",
+        "active": "5",
+        "coupled": "无被动轴计入",
+        "motion": "CMC 展收、长轴对掌旋转、屈伸；MCP / IP 屈伸"
+      },
+      {
+        "part": "四根长指（每指）",
+        "active": "4",
+        "coupled": "各关节独立控制",
+        "motion": "指根侧摆、MCP / PIP / DIP 屈伸"
+      }
+    ],
+    "drive": "官方称全直驱、可反驱，并确认 21 路电机；未给出足以判断有无减速器的剖面，暂不归入严格无减速直驱。",
+    "ranges": "拇指 CMC 展收 0–110°、旋转 0–105°、屈伸 0–75°，MCP −10–90°、IP −20–90°。四指 MCP −5–90°、PIP −10–90°、DIP −20–90°；侧摆食/中/无名/小指分别 −10–30°、−20–25°、−25–20°、−30–10°。实际运行以设备回读限位为准。",
+    "gaps": "重量、内部减速结构、传感器标定与独立任务测评尚待补齐；公开 MJCF 资产的执行器配置仍在完善。",
+    "sources": [
+      {
+        "title": "官方 Revo 3 · U21 系列 · 结构、感知与实验依据",
+        "url": "https://www.brainco-hz.com/docs/revolimb-hand/revo3/parameters.html"
+      },
+      {
+        "title": "官方模型资产及完成状态",
+        "url": "https://github.com/BrainCoTech/brainco-description"
+      },
+      {
+        "title": "官方 Revo 3 SDK",
+        "url": "https://github.com/BrainCoTech/brainco-revo3-sdk"
+      },
+      {
+        "title": "发表/公开时间依据",
+        "url": "https://www.brainco.cn/zh-CN/news"
+      }
+    ],
+    "basic": {
+      "fingers": 5,
+      "country": "中国",
+      "dimensions": "216 × 108 × 50 mm",
+      "product_status": "已发布产品系列；按 U21 / F / T / VT 选型",
+      "application": "机器人操作及科研集成"
+    },
+    "capability": {
+      "kind": "厂商资料",
+      "text": "厂商报告 Kapandji 满分和 33 类抓姿覆盖；这表示对指可达与姿态覆盖，不等于 33 类任务全部自主成功。",
+      "source": "https://www.brainco-hz.com/docs/revolimb-hand/revo3/parameters.html"
+    }
+  },
+  "elephant-h100": {
+    "checked_on": "2026-10-02",
+    "scope": "官方 H100 产品页与通信手册",
+    "summary": "三指、六个可动关节、六个数字舵机；支持逐舵机控制，与旧款仅整体开合的五指附件不同。",
+    "parts": [
+      {
+        "part": "整手三指",
+        "active": "6",
+        "coupled": "逐指分配与轴方向待机构图核清",
+        "motion": "协议允许指定 1–6 号舵机控制，不虚构每指轴序"
+      }
+    ],
+    "drive": "使用数字舵机；当前公开说明未细分内部传动与各关节轴线，暂保留未知传动分类。",
+    "ranges": "官网列关节速度 60°/s，但逐关节几何限位和零位未核定；不能把协议位置编码范围当机械角度。",
+    "gaps": "中英文资料中的寿命与通信频率口径有差异，需按硬件修订确认；尚未核实 H100 专用可运行物理仿真模型。",
+    "sources": [
+      {
+        "title": "官方 H100 产品页与通信手册 · 结构、感知与实验依据",
+        "url": "https://www.elephantrobotics.com/en/mygripper-h100-en/"
+      },
+      {
+        "title": "官方 H100 寄存器与协议",
+        "url": "https://docs.elephantrobotics.com/docs/acc-cn/2-serialproduct/H100_Gripper/myhand.html"
+      }
+    ],
+    "basic": {
+      "fingers": 3,
+      "weight": "780 g",
+      "country": "中国",
+      "product_status": "官网列示产品",
+      "application": "机器人研究、教学与实验操作"
+    },
+    "capability": {
+      "kind": "厂商资料",
+      "text": "官网提供实物演示，列 500 g 负载和 0–130 mm 抓取口径；通信最高 100 Hz 不是动作速度，也不是操作成功率。",
+      "source": "https://www.elephantrobotics.com/en/mygripper-h100-en/"
+    }
+  },
+  "xpeng-iron-hand-2025": {
+    "checked_on": "2026-10-02",
+    "scope": "官方 AI Day 2025 · 下一代 IRON 手部",
+    "summary": "五指仿生手，官方称 22 自由度；未披露主动 / 被动分解及电机数量，不把整机 82 自由度计入手部。",
+    "parts": [
+      {
+        "part": "整手五指",
+        "active": "22 总自由度，主动数待核",
+        "coupled": "未公布逐指分配与耦合",
+        "motion": "不根据人手外形推算轴数"
+      }
+    ],
+    "drive": "发布稿提到手部采用小型谐波关节；没有完整传动链和逐轴电机布置，暂不将整手归为纯齿轮、混驱或无减速直驱。",
+    "ranges": "尚未公开本代手部逐轴名称、角度范围、零位与安全限幅；没有用旧版 IRON 的指标替代。",
+    "gaps": "手部重量、供电、接口、SDK、模型与逐关节信息尚未确认公开；没有独立操作基准可横向排名。",
+    "sources": [
+      {
+        "title": "官方 AI Day 2025 · 下一代 IRON 手部 · 结构、感知与实验依据",
+        "url": "https://www.xpeng.com/technology/AI_Robot_Iron"
+      },
+      {
+        "title": "官方 2025 发布稿",
+        "url": "https://www.xpeng.com/au/news/019e71be4f9e9dd703de8a0282290455"
+      },
+      {
+        "title": "发表/公开时间依据",
+        "url": "https://www.xpeng.com/fr/news/019a81702a099a7b13318a0282930071"
+      }
+    ],
+    "basic": {
+      "fingers": 5,
+      "country": "中国",
+      "product_status": "整机内置研发平台；未确认手部单独销售",
+      "application": "人形机器人操作"
+    },
+    "capability": {
+      "kind": "厂商资料",
+      "text": "官网提供冲泡咖啡的整机演示。动作由手、机械臂、感知和控制系统共同完成；不能从剪辑视频推定完全自主或给出成功率。",
+      "source": "https://www.xpeng.com/technology/AI_Robot_Iron"
+    }
+  },
+  "tencent-trx-hand": {
+    "checked_on": "2026-10-02",
+    "scope": "arXiv 2023 · 三指触觉实验配置",
+    "summary": "三指 8 个全主动关节，分配为 3＋3＋2；细杆操作实验固定两个侧摆轴，仅控制其余 6 轴。",
+    "parts": [
+      {
+        "part": "手指 1 / 2（各）",
+        "active": "3",
+        "coupled": "无被动关节计入；实验锁定侧摆",
+        "motion": "两个指节运动，加根部独立旋转 J2 / J5"
+      },
+      {
+        "part": "手指 3",
+        "active": "2",
+        "coupled": "全主动",
+        "motion": "两个指节运动"
+      }
+    ],
+    "drive": "J0、J3、J6 采用蜗轮蜗杆，有自锁和回差；其余关节完整传动未逐一核验，不把局部结构等同整手传动。",
+    "ranges": "J2、J5 可分别侧摆至 90°；文中实验将其固定为零。其他六轴完整上下限待模型或手册核对。",
+    "gaps": "未确认公开 SDK、CAD 或 MJCF 下载包；论文描述使用 MuJoCo 不等于模型已开源。五指 TRX-Hand5 属另一版本。",
+    "sources": [
+      {
+        "title": "arXiv 2023 · 三指触觉实验配置 · 结构、感知与实验依据",
+        "url": "https://arxiv.org/html/2304.05141v1"
+      },
+      {
+        "title": "发表/公开时间依据",
+        "url": "https://arxiv.org/abs/2304.05141"
+      }
+    ],
+    "basic": {
+      "fingers": 3,
+      "country": "中国",
+      "product_status": "论文研究硬件；未确认商业交付",
+      "application": "触觉反馈、强化学习与手内操作研究"
+    },
+    "capability": {
+      "kind": "论文实验 / 作者项目说明",
+      "text": "作者用 MuJoCo 训练 PPO，结合动力学标定与域随机化迁移到实物，让细杆追踪直线、圆、螺旋和 8 字轨迹。实验固定手腕，不计机械臂运动。",
+      "source": "https://arxiv.org/html/2304.05141v1"
+    }
+  },
+  "unitree-dex2-5": {
+    "checked_on": "2026-10-04",
+    "scope": "官方 Dex2/5 产品规格",
+    "summary": "五指共 10 个运动自由度，只有 2 路独立驱动：拇指一路，另外四指共享一路。不能把 10 当作主动控制轴数。",
+    "parts": [
+      {
+        "part": "拇指",
+        "active": "1 路独立输入",
+        "coupled": "两个关节随同一路输入运动",
+        "motion": "J0 0–42°、J1 0–105°；不能分别任意设角"
+      },
+      {
+        "part": "食 / 中 / 无名 / 小指",
+        "active": "四指共享 1 路输入",
+        "coupled": "四指共八个关节受传动约束",
+        "motion": "各指 J0 0–88°、J1 0–105°；不能逐指独立规划轨迹"
+      }
+    ],
+    "drive": "官网明确为齿轮—腱绳传动。两个驱动输入牵引十个运动自由度；属于欠驱动结构。未公开完整电机清单，不把输入数量直接填作电机数量。",
+    "ranges": "拇指 J0 0–42°、J1 0–105°；四指各 J0 0–88°、J1 0–105°。这些是关节运动范围，两个输入无法将十个角度独立设置。",
+    "gaps": "两个输入到各关节的精确耦合关系、完整电机清单、测力原理、独立操作实验及本型号 SDK / 模型文件仍待核查。",
+    "sources": [
+      {
+        "title": "官方 Dex2/5 产品规格 · 结构、感知与实验依据",
+        "url": "https://www.unitree.com/Dex2-5/"
+      }
+    ],
+    "basic": {
+      "fingers": 5,
+      "country": "中国",
+      "application": "人形机器人集成、抓取与操作研究",
+      "product_status": "官网列示产品；传感配置按具体 SKU 区分",
+      "weight": "365 g",
+      "dimensions": "151 × 70 × 63 mm（平展状态）"
+    },
+    "capability": {
+      "kind": "厂商资料",
+      "text": "官方演示开合和抓握。指标为拇指指尖力 15 N，另外四指合计 15 N（不是每指 15 N）；室温、掌朝下或朝左、抓握直径 5 cm 硬圆物体时列最大负载 1.5 kg。0.5 s 握拳时间不是任务成功率。",
+      "source": "https://www.unitree.com/Dex2-5/"
+    }
+  },
+  "unitree-dex5-1": {
+    "checked_on": "2026-10-04",
+    "scope": "官方 Dex5-1 / Dex5-1P 产品规格",
+    "summary": "五指共 20 个运动自由度，其中 16 主动、4 耦合：拇指 4 主动，四根长指各 3 主动加 1 个随动末节。",
+    "parts": [
+      {
+        "part": "拇指",
+        "active": "4",
+        "coupled": "未计额外被动关节",
+        "motion": "J0 −33.5–39°、J1 0–100°、J2 0–110°、J3 0–92°；轴几何名称需机构图确认"
+      },
+      {
+        "part": "四根长指（每指）",
+        "active": "3",
+        "coupled": "J3 随 J2 耦合，不能独立设角",
+        "motion": "J0 侧摆 ±22°；J1 0–90°、J2 0–95°、耦合 J3 0–81°"
+      }
+    ],
+    "drive": "官方列 12 个微型力控复合传动关节和 4 个齿轮传动关节，配空心杯电机与编码器；四长指末节和前一关节耦合。复合传动的内部拓扑未完整公开，不臆定为腱驱或无减速直驱。",
+    "ranges": "拇指四轴：−33.5–39°、0–100°、0–110°、0–92°；长指主动轴：±22°、0–90°、0–95°，耦合末节 0–81°。耦合末节的角度范围不代表第四路独立指令。",
+    "gaps": "逐轴电机与复合传动剖面、耦合比例、SDK 下载及模型版本、独立力控与耐久实验尚待核查。",
+    "sources": [
+      {
+        "title": "官方 Dex5-1 / Dex5-1P 产品规格 · 结构、感知与实验依据",
+        "url": "https://www.unitree.com/Dex5-1/"
+      },
+      {
+        "title": "宇树官方 2025 Dex5 发布视频（历史名称）",
+        "url": "https://www.youtube.com/watch?v=0rwYOa7pJCs"
+      }
+    ],
+    "basic": {
+      "fingers": 5,
+      "country": "中国",
+      "application": "人形机器人集成、抓取与操作研究",
+      "product_status": "官网列示产品；传感配置按具体 SKU 区分",
+      "weight": "1100 g",
+      "dimensions": "217.3 × 127.5 × 72.1 mm（以交付版本为准）"
+    },
+    "capability": {
+      "kind": "厂商资料",
+      "text": "厂商演示抓握与手指运动，列 10 N 指尖力、±1 mm 指尖重复定位。室温抓握直径 5 cm 硬圆物体，掌朝下负载 3.5 kg、掌朝左 4.5 kg；姿态不同，不能写成统一额定负载。尚无本轮核实的通用任务成功率。",
+      "source": "https://www.unitree.com/Dex5-1/"
+    }
+  },
+  "unitree-dex5-s": {
+    "checked_on": "2026-10-04",
+    "scope": "官方 Dex5-S / Dex5-S Pro 产品规格",
+    "summary": "五指、22 个主动自由度和 22 个电机；拇指及小指各 5，食指、中指、无名指各 4。",
+    "parts": [
+      {
+        "part": "拇指",
+        "active": "5",
+        "coupled": "全主动；未计额外被动轴",
+        "motion": "五轴具体解剖名称与限位待说明书确认"
+      },
+      {
+        "part": "食 / 中 / 无名指（每指）",
+        "active": "4",
+        "coupled": "全主动",
+        "motion": "逐轴方向与限位待核"
+      },
+      {
+        "part": "小指",
+        "active": "5",
+        "coupled": "全主动",
+        "motion": "官网明确增加 roll 旋转轴；其余轴与零位待核"
+      }
+    ],
+    "drive": "官方称 22 电机 direct-drive、可反驱、双编码器，同时明确精密微型齿轮箱及齿轮抗冲击保护。因此记录为关节电机驱动与齿轮传动，不解释为电机无减速器。",
+    "ranges": "当前产品页给出逐指自由度数量，但没有完整逐轴角度表；不套用 Dex5-1 的 ±22° 等范围。",
+    "gaps": "22 轴方向、逐轴上下限、齿轮比、触觉 Pro 细节、专用 SDK / 模型资源与独立任务实验仍待核实。",
+    "sources": [
+      {
+        "title": "官方 Dex5-S / Dex5-S Pro 产品规格 · 结构、感知与实验依据",
+        "url": "https://www.unitree.com/Dex5-S/"
+      }
+    ],
+    "basic": {
+      "fingers": 5,
+      "country": "中国",
+      "application": "人形机器人集成、抓取与操作研究",
+      "product_status": "官网列示产品；传感配置按具体 SKU 区分",
+      "weight": "620 g",
+      "dimensions": "102 × 187 × 26 mm（官网 L×W×H 原顺序）",
+      "materials": "铝合金外壳"
+    },
+    "capability": {
+      "kind": "厂商资料",
+      "text": "官方列连续工作负载 1 kg、峰值负载 2 kg，未在当前页面充分给出抓姿、物体及保持时间。官网耐久和抗冲击演示没有本轮可核实的完整重复试验协议，不转换成统一寿命或操作成功率。",
+      "source": "https://www.unitree.com/Dex5-S/"
+    }
+  },
+  "okada-hand": {
+    "checked_on": "2026-10-04",
+    "scope": "Okada Artificial Fingers · 1974 · 时间轴所引用的原始版本",
+    "summary": "三指、七个独立驱动关节：拇指一轴，另两指各三轴；结合接触与弯曲状态识别三维形状。",
+    "parts": [
+      {
+        "part": "拇指",
+        "active": "1",
+        "coupled": "摘要称关节独立驱动",
+        "motion": "一轴转动"
+      },
+      {
+        "part": "另外两指（每指）",
+        "active": "3",
+        "coupled": "摘要称关节独立驱动",
+        "motion": "三轴转动"
+      }
+    ],
+    "drive": "原文摘要明确各转动关节可独立驱动；七个关节轴与执行器清单分开，完整传动链仍待核。",
+    "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "sources": [
+      {
+        "title": "Okada · Three-Dimensional Pattern Recognition，1974",
+        "url": "https://www.jstage.jst.go.jp/article/sicetr1965/10/2/10_2_230/_article/-char/en"
+      }
+    ],
+    "basic": {
+      "country": "日本",
+      "fingers": 3
+    },
+    "capability": {
+      "kind": "论文实验",
+      "text": "论文给出特定物体与装置上的形状识别实验，未据此确认阻抗控制、通用力控或学习控制。",
+      "source": "https://www.jstage.jst.go.jp/article/sicetr1965/10/2/10_2_230/_article/-char/en"
+    }
+  },
+  "stanford-jpl-hand": {
+    "checked_on": "2026-10-04",
+    "scope": "Stanford/JPL Hand · 时间轴所引用的原始版本",
+    "summary": "三根三关节手指的多指研究手；1982 节点讨论运动与力的关系，不代表确定的硬件上市日。",
+    "parts": [
+      {
+        "part": "整手",
+        "active": "独立轴数待核",
+        "coupled": "逐指耦合与分配见原始版本说明",
+        "motion": "NASA 原始历史资料确认三指、每指三关节；未将九个关节直接推为本记录已核定的九路主动轴或电机。"
+      }
+    ],
+    "drive": "NASA 原始历史资料确认三指、每指三关节；未将九个关节直接推为本记录已核定的九路主动轴或电机。",
+    "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "sources": [
+      {
+        "title": "Salisbury、Craig · Articulated Hands，1982",
+        "url": "https://journals.sagepub.com/doi/10.1177/027836498200100102"
+      },
+      {
+        "title": "NASA · Robot Hand，三指三关节历史说明",
+        "url": "https://ntrs.nasa.gov/citations/20020090918"
+      }
+    ],
+    "basic": {
+      "country": "美国",
+      "fingers": 3
+    },
+    "capability": {
+      "kind": "论文实验",
+      "text": "Articulated Hands 分析多指系统的运动与作用力；控制理论不自动等于某一硬件已实现全部控制模式。",
+      "source": "https://journals.sagepub.com/doi/10.1177/027836498200100102"
+    }
+  },
+  "utah-mit-hand": {
+    "checked_on": "2026-10-04",
+    "scope": "Utah/MIT Dextrous Hand · Version III · 时间轴所引用的原始版本",
+    "summary": "四指、每指四轴；32 路气动执行器以拮抗腱索驱动 16 个关节轴。",
+    "parts": [
+      {
+        "part": "四个相同手指（每指）",
+        "active": "4",
+        "coupled": "每轴两路拮抗气动执行器",
+        "motion": "四关节轴运动；32 路驱动对应 16 轴"
+      }
+    ],
+    "drive": "外置气动执行器通过扁平腱带、滑轮和腕部路径传力；每个关节由两路拮抗驱动，不把 32 个执行器计为 32 个轴。",
+    "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "sources": [
+      {
+        "title": "Jacobsen 等 · Design of the Utah/M.I.T. Dextrous Hand，1986",
+        "url": "https://people.csail.mit.edu/edsinger/raw/jacobsen_design_utah_hand.pdf"
+      }
+    ],
+    "basic": {
+      "country": "美国",
+      "fingers": 4
+    },
+    "capability": {
+      "kind": "论文实验",
+      "text": "模块化平台用于控制、触觉与遥操作研究；作者说明柔顺系统在高位置环增益下存在稳定性取舍。",
+      "source": "https://people.csail.mit.edu/edsinger/raw/jacobsen_design_utah_hand.pdf"
+    }
+  },
+  "barrett-hand-1993": {
+    "checked_on": "2026-10-04",
+    "scope": "BarrettHand · 第一代（1993） · 时间轴所引用的原始版本",
+    "summary": "厂商历史页确认 1993 年与 NASA JSC 合作推出第一代 BarrettHand；与 BH8-280 分开。",
+    "parts": [
+      {
+        "part": "整手",
+        "active": "独立轴数待核",
+        "coupled": "逐指耦合与分配见原始版本说明",
+        "motion": "历史回顾不足以确认第一代的逐指参数、驱动数和确切 BH8 型号；不复制 BH8-280 规格。"
+      }
+    ],
+    "drive": "历史回顾不足以确认第一代的逐指参数、驱动数和确切 BH8 型号；不复制 BH8-280 规格。",
+    "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "sources": [
+      {
+        "title": "Barrett · 公司历史中的 1993 年记录",
+        "url": "https://barrett.com/history"
+      }
+    ],
+    "basic": {
+      "country": "美国"
+    },
+    "capability": {
+      "kind": "官方记录",
+      "text": "官方记录确认产品推出，未提供可比的任务协议、控制带宽或操作成功率。",
+      "source": "https://barrett.com/history"
+    }
+  },
+  "dlr-hand-i": {
+    "checked_on": "2026-10-04",
+    "scope": "DLR Hand I · 时间轴所引用的原始版本",
+    "summary": "四指，每指三个独立运动轴；末节通过弹簧耦合随动。",
+    "parts": [
+      {
+        "part": "四个手指（每指）",
+        "active": "3",
+        "coupled": "末节随中节弹簧耦合",
+        "motion": "基关节两轴，指间主动运动一轴"
+      }
+    ],
+    "drive": "两自由度基关节使用特制线性驱动单元，另一驱动单元置于近节，主动带动中节并耦合末节。",
+    "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "sources": [
+      {
+        "title": "DLR · Hand I 机构与感知",
+        "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hand-i-1998"
+      },
+      {
+        "title": "Butterfass 等 · DLR’s Multisensory Articulated Hand，ICRA 1998",
+        "url": "https://www.dlr.de/en/rm/downloads/roboter_und_systeme/hand/icra98part1.pdf/@@download/file"
+      }
+    ],
+    "basic": {
+      "country": "德国",
+      "fingers": 4
+    },
+    "capability": {
+      "kind": "官方记录",
+      "text": "局部手指控制器通过 SERCOS 与上层通信；1 ms 通信交换口径不能直接当作所有操作策略频率。",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hand-i-1998"
+    }
+  },
+  "dlr-hit-hand-i": {
+    "checked_on": "2026-10-04",
+    "scope": "ICRA 2003 · work-in-progress 原型；后续 2004/2007 资料需按修订对照",
+    "summary": "四个相同模块手指，每指三主动轴、四关节；ICRA 2003 的 work-in-progress 配置。",
+    "parts": [
+      {
+        "part": "四个手指（每指）",
+        "active": "3",
+        "coupled": "末端两关节连杆耦合",
+        "motion": "基关节两轴＋指间屈伸一轴"
+      }
+    ],
+    "drive": "商品化无刷电机结合减速与连杆；末端两关节刚性连杆耦合，不能独立控制。",
+    "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "sources": [
+      {
+        "title": "Liu 等 · The HIT/DLR Dexterous Hand: Work in Progress，2003",
+        "url": "https://www.dlr.de/en/rm/downloads/roboter_und_systeme/hand/icra2003hitdlr.pdf/@@download/file"
+      }
+    ],
+    "basic": {
+      "dof": "四指合计 12 个主动轴；原文另规划掌部构形轴，未确认原型整手总数",
+      "actuators": "四个指模块各 3 个电机；掌部额外驱动的原型实现待核",
+      "fingers": 4
+    },
+    "capability": {
+      "kind": "论文实验",
+      "text": "DSP 局部控制与串行通信服务于集成手；文献强调易制造和维护，不视为已完成批量制造验证。",
+      "source": "https://www.dlr.de/en/rm/downloads/roboter_und_systeme/hand/icra2003hitdlr.pdf/@@download/file"
+    }
+  },
+  "dlr-hit-hand-ii": {
+    "checked_on": "2026-10-04",
+    "scope": "DLR/HIT Hand II · 时间轴所引用的原始版本",
+    "summary": "五指、每指三主动轴与四关节，总计 15 主动轴；论文列整手约 1.5 kg。",
+    "parts": [
+      {
+        "part": "五个相同手指（每指）",
+        "active": "3",
+        "coupled": "末端两关节钢丝耦合",
+        "motion": "基关节两轴＋指间屈伸一轴"
+      }
+    ],
+    "drive": "驱动与电子集成到五个相同指模块；末节经钢丝耦合，中节主动驱动；与四指 DLR Hand II 分开。",
+    "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "sources": [
+      {
+        "title": "Liu 等 · Multisensory Five-Finger Dexterous Hand，2008",
+        "url": "https://elib.dlr.de/55786/1/LiuHong-Multisensory_Five-Finger_Dexterous_Hand-IROS.pdf"
+      },
+      {
+        "title": "DLR · DLR-HIT Hand II 官方项目",
+        "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hit-hand-ii"
+      }
+    ],
+    "basic": {
+      "weight": "约 1.5 kg",
+      "fingers": 5
+    },
+    "capability": {
+      "kind": "论文实验",
+      "text": "论文介绍实时控制体系和指尖约 10 N 的力指标；该指标不等于任意姿态抓握或操作成功率。",
+      "source": "https://elib.dlr.de/55786/1/LiuHong-Multisensory_Five-Finger_Dexterous_Hand-IROS.pdf"
+    }
+  },
+  "sdm-hand": {
+    "checked_on": "2026-10-04",
+    "scope": "Highly Adaptive SDM Hand · 时间轴所引用的原始版本",
+    "summary": "四指八关节，由一个电机通过耦合传动驱动；柔顺关节被动适应接触。",
+    "parts": [
+      {
+        "part": "四个双关节手指",
+        "active": "整手 1 路输入",
+        "coupled": "八关节柔顺与传动耦合",
+        "motion": "接触后被动包络物体"
+      }
+    ],
+    "drive": "SDM 将刚性连杆、柔顺关节和内部组件结合；单输入驱动不能形成八条独立关节轨迹。",
+    "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "sources": [
+      {
+        "title": "Dollar、Howe · The Highly Adaptive SDM Hand",
+        "url": "https://www.eng.yale.edu/grablab/pubs/dollar_ijrr2010.pdf"
+      }
+    ],
+    "basic": {
+      "country": "美国",
+      "dof": "8 个运动关节；1 路驱动，非 8 路独立主动轴",
+      "fingers": 4
+    },
+    "capability": {
+      "kind": "论文实验",
+      "text": "通过电机堵转后减小电流的简单控制，测试定位误差和随机球体分布下的抓握。",
+      "source": "https://www.eng.yale.edu/grablab/pubs/dollar_ijrr2010.pdf"
+    }
+  },
+  "allegro-v1": {
+    "checked_on": "2026-10-04",
+    "scope": "Allegro Hand V1.0 · 时间轴所引用的原始版本",
+    "summary": "官方历史确认 Allegro Hand 第一代 V1.0 于 2012 年推出。",
+    "parts": [
+      {
+        "part": "整手",
+        "active": "独立轴数待核",
+        "coupled": "逐指耦合与分配见原始版本说明",
+        "motion": "此次来源为厂商历史页；首代逐指轴数、执行器和内部减速结构待原始手册，不沿用 V4 或 V5。"
+      }
+    ],
+    "drive": "此次来源为厂商历史页；首代逐指轴数、执行器和内部减速结构待原始手册，不沿用 V4 或 V5。",
+    "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "sources": [
+      {
+        "title": "Wonik · About Allegro",
+        "url": "https://allegrohand.com/sub/about/allegro.php"
+      }
+    ],
+    "basic": {},
+    "capability": {
+      "kind": "官方记录",
+      "text": "厂商确认其研究平台定位；具体 PID、力矩与学习实验需对应 V1.0 资料。",
+      "source": "https://allegrohand.com/sub/about/allegro.php"
+    }
+  },
+  "qb-softhand-research": {
+    "checked_on": "2026-10-04",
+    "scope": "qb SoftHand Research · 单电机 · 时间轴所引用的原始版本",
+    "summary": "五指单电机腱驱软手；官方回顾记载 2018 年推出，并接入 UR+。",
+    "parts": [
+      {
+        "part": "整手",
+        "active": "独立轴数待核",
+        "coupled": "逐指耦合与分配见原始版本说明",
+        "motion": "一个电机牵引腱索驱动五指协同开合，接触后被动适应物体；与双输入 SoftHand2 分开。"
+      }
+    ],
+    "drive": "一个电机牵引腱索驱动五指协同开合，接触后被动适应物体；与双输入 SoftHand2 分开。",
+    "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "sources": [
+      {
+        "title": "qbrobotics · Research 产品回溯",
+        "url": "https://qbrobotics.com/between-soft-technology-and-collaborative-robots/"
+      }
+    ],
+    "basic": {
+      "country": "意大利",
+      "fingers": 5
+    },
+    "capability": {
+      "kind": "官方记录",
+      "text": "官方记录展示协作机器人接入与抓握协同；2019 年 Panda 集成是另一条系统接入记录。",
+      "source": "https://qbrobotics.com/between-soft-technology-and-collaborative-robots/"
+    }
+  },
+  "shadow-dex-ee": {
+    "checked_on": "2026-10-04",
+    "scope": "Shadow DEX-EE · 对称三指 · 时间轴所引用的原始版本",
+    "summary": "对称三指、12 自由度，官方系列页列 4.1 kg；与 Classic 五指手分开。",
+    "parts": [
+      {
+        "part": "整手",
+        "active": "12 个独立运动轴",
+        "coupled": "逐指耦合与分配见原始版本说明",
+        "motion": "每指四个运动轴；公开页强调关节顺应和快速力控制，完整电机数与传动剖面仍待规格书。"
+      }
+    ],
+    "drive": "每指四个运动轴；公开页强调关节顺应和快速力控制，完整电机数与传动剖面仍待规格书。",
+    "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "sources": [
+      {
+        "title": "Shadow · DEX-EE 公告，2024-05-09",
+        "url": "https://shadowrobot.com/shadow-robot-unveils-the-worlds-most-robust-dexterous-robot-hand-developed-in-partnership-with-google-deepmind/"
+      },
+      {
+        "title": "Shadow · DEX-EE 系列规格",
+        "url": "https://shadowrobot.com/dex-ee_series/"
+      }
+    ],
+    "basic": {
+      "country": "英国",
+      "weight": "4.1 kg",
+      "fingers": 3
+    },
+    "capability": {
+      "kind": "官方记录",
+      "text": "2024 公告介绍内部 10 kHz 力环；这不是 ROS 主机策略频率。平台用于长时间机器人学习实验。",
+      "source": "https://shadowrobot.com/shadow-robot-unveils-the-worlds-most-robust-dexterous-robot-hand-developed-in-partnership-with-google-deepmind/"
+    }
+  },
+  "tesollo-dg-5f-2024": {
+    "checked_on": "2026-10-04",
+    "scope": "Tesollo DG-5F · 2024 · 时间轴所引用的原始版本",
+    "summary": "五指，每指四个独立关节，共 20 DoF；官方回顾记载 2024 年在 IROS 展出。",
+    "parts": [
+      {
+        "part": "整手",
+        "active": "20 个独立运动轴",
+        "coupled": "逐指耦合与分配见原始版本说明",
+        "motion": "采用厂商自研执行器，20 轴独立运动；现有历史稿不足以确认每轴传动与执行器精确配置。"
+      }
+    ],
+    "drive": "采用厂商自研执行器，20 轴独立运动；现有历史稿不足以确认每轴传动与执行器精确配置。",
+    "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "sources": [
+      {
+        "title": "Tesollo · DG-5F 与小型化 DG-5F-S 的官方记录",
+        "url": "https://www.tesollo.com/news/press/tesollo-develops-compact-lightweight-humanoid-hand-dg-5f-s"
+      }
+    ],
+    "basic": {
+      "fingers": 5
+    },
+    "capability": {
+      "kind": "官方记录",
+      "text": "来源确认产品推出和出口，未提供可比的操作成功率或控制带宽。",
+      "source": "https://www.tesollo.com/news/press/tesollo-develops-compact-lightweight-humanoid-hand-dg-5f-s"
+    }
+  },
+  "allegro-v5-2024": {
+    "checked_on": "2026-10-04",
+    "scope": "Allegro Hand V5 · 2024 四指 · 时间轴所引用的原始版本",
+    "summary": "2024 发布稿的四指 V5，每指四自由度，共 16；区别于当前三指 V5 产品页。",
+    "parts": [
+      {
+        "part": "整手",
+        "active": "16 个独立运动轴",
+        "coupled": "逐指耦合与分配见原始版本说明",
+        "motion": "发布稿确认四指多关节结构并改善指间裸露线缆；完整内部传动和电机清单仍待本版手册。"
+      }
+    ],
+    "drive": "发布稿确认四指多关节结构并改善指间裸露线缆；完整内部传动和电机清单仍待本版手册。",
+    "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "sources": [
+      {
+        "title": "Wonik · Allegro Hand v5 发布公告，2024",
+        "url": "https://wonikrobotics.com/kr/sub/pr/news.php?bid=4&idx=108&mode=view&page=2"
+      }
+    ],
+    "basic": {
+      "fingers": 4
+    },
+    "capability": {
+      "kind": "官方记录",
+      "text": "官方定位操作与机器人学习研究；载荷提升宣传的测试条件尚未核定。",
+      "source": "https://wonikrobotics.com/kr/sub/pr/news.php?bid=4&idx=108&mode=view&page=2"
+    }
+  },
+  "unitree-dex5-2025": {
+    "checked_on": "2026-10-04",
+    "scope": "Unitree Dex5 · 2025 展示版 · 时间轴所引用的原始版本",
+    "summary": "2025 官方展示的五指 Dex5，20 个运动自由度中含 16 个主动和 4 个被动自由度。",
+    "parts": [
+      {
+        "part": "整手",
+        "active": "16 个独立运动轴",
+        "coupled": "逐指耦合与分配见原始版本说明",
+        "motion": "视频给出构型与主动/被动总数；逐指传动、执行器数量和型号修订未确认，不与 Dex5-1 或 Dex5-S 合并。"
+      }
+    ],
+    "drive": "视频给出构型与主动/被动总数；逐指传动、执行器数量和型号修订未确认，不与 Dex5-1 或 Dex5-S 合并。",
+    "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "sources": [
+      {
+        "title": "Unitree · Dex5 官方公开展示",
+        "url": "https://www.youtube.com/watch?v=0rwYOa7pJCs"
+      }
+    ],
+    "basic": {
+      "country": "中国",
+      "dof": "20 个运动自由度：16 主动＋4 被动",
+      "fingers": 5
+    },
+    "capability": {
+      "kind": "官方记录",
+      "text": "官方动作展示说明平台可执行所示动作，尚无统一物体集、失败判据与长期评测。",
+      "source": "https://www.youtube.com/watch?v=0rwYOa7pJCs"
+    }
+  },
+  "figure-03-hand": {
+    "checked_on": "2026-10-04",
+    "scope": "Figure 03 Hand · 时间轴所引用的原始版本",
+    "summary": "Figure 03 手部集成掌部相机、柔顺指尖与自研指尖触觉，服务于 Helix 操作系统。",
+    "parts": [
+      {
+        "part": "整手",
+        "active": "独立轴数待核",
+        "coupled": "逐指耦合与分配见原始版本说明",
+        "motion": "原始发布稿介绍指尖柔顺与接触面积变化；手部主动轴、驱动数、重量和传动链没有核定。"
+      }
+    ],
+    "drive": "原始发布稿介绍指尖柔顺与接触面积变化；手部主动轴、驱动数、重量和传动链没有核定。",
+    "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "sources": [
+      {
+        "title": "Figure · Introducing Figure 03",
+        "url": "https://www.figure.ai/news/introducing-figure-03"
+      },
+      {
+        "title": "Figure · Helix 02 全身控制",
+        "url": "https://www.figure.ai/news/helix-02"
+      }
+    ],
+    "basic": {
+      "country": "美国"
+    },
+    "capability": {
+      "kind": "官方记录",
+      "text": "Helix 02 联合掌部视觉、指尖触觉和本体感知输出全身与手指动作；任务表现属于完整机器人系统。",
+      "source": "https://www.figure.ai/news/introducing-figure-03"
+    }
+  },
+  "yale-model-q": {
+    "checked_on": "2026-10-04",
+    "scope": "Yale OpenHand Model Q · 时间轴所引用的原始版本",
+    "summary": "四个执行器控制四根欠驱动手指；两根独立精细抓握指与旋转包络指组配合换指。",
+    "parts": [
+      {
+        "part": "整手",
+        "active": "独立轴数待核",
+        "coupled": "逐指耦合与分配见原始版本说明",
+        "motion": "一个电机驱动对置柔顺双指，另一电机旋转该指组，余下两电机分别腱驱另两指。"
+      }
+    ],
+    "drive": "一个电机驱动对置柔顺双指，另一电机旋转该指组，余下两电机分别腱驱另两指。",
+    "ranges": "未完成本版本逐轴上下限与零位核查；不能用后代限位或电机编码范围替代。",
+    "gaps": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+    "sources": [
+      {
+        "title": "Yale · OpenHand Model Q",
+        "url": "https://www.eng.yale.edu/grablab/openhand/model_q.html"
+      },
+      {
+        "title": "Morgan 等 · RA-L 2022 Model Q 实验与控制",
+        "url": "https://www.eng.yale.edu/grablab/pubs/Morgan_RAL2022.pdf"
+      }
+    ],
+    "basic": {
+      "fingers": 4
+    },
+    "capability": {
+      "kind": "官方记录",
+      "text": "2022 论文结合柔顺性、多模式规划和视觉反馈完成换指及物体姿态调整。",
+      "source": "https://www.eng.yale.edu/grablab/openhand/model_q.html"
+    }
+  }
+}

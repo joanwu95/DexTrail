@@ -1,0 +1,135 @@
+{
+  "checked_on": "2026-10-04",
+  "scope": "Eight engineering articles and nine conceptual diagrams; no hardware experiments.",
+  "pages": [
+    {
+      "path": "website/docs/engineering/control-modes.md",
+      "characters": 3917,
+      "diagrams": [
+        "control"
+      ],
+      "sources": [
+        "https://emanual.robotis.com/docs/en/dxl/x/xc330-m288/",
+        "https://github.com/leap-hand/LEAP_Hand_API",
+        "https://manipulation.mit.edu/force.html",
+        "https://modernrobotics.northwestern.edu/nu-gm-book-resource/11-5-force-control/",
+        "https://modernrobotics.northwestern.edu/nu-gm-book-resource/11-6-hybrid-motion-force-control/",
+        "https://modernrobotics.northwestern.edu/nu-gm-book-resource/12-1-2-contact-types-rolling-sliding-and-breaking/",
+        "https://modernrobotics.northwestern.edu/nu-gm-book-resource/5-2-statics-of-open-chains/",
+        "https://www.centropiaggio.unipi.it/sites/default/files/PisaIIT_SoftHand_0.pdf"
+      ]
+    },
+    {
+      "path": "website/docs/engineering/degrees-of-freedom.md",
+      "characters": 4259,
+      "diagrams": [
+        "actuation"
+      ],
+      "sources": [
+        "https://elib.dlr.de/112353/",
+        "https://modernrobotics.northwestern.edu/nu-gm-book-resource/2-2-degrees-of-freedom-of-a-robot/",
+        "https://roboticsproceedings.org/rss19/p089.pdf",
+        "https://www.centropiaggio.unipi.it/sites/default/files/PisaIIT_SoftHand_0.pdf",
+        "https://www.dlr.de/en/rm/research/robotic-systems/hands",
+        "https://www.dlr.de/en/rm/research/robotic-systems/hands/david-hand",
+        "https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf"
+      ]
+    },
+    {
+      "path": "website/docs/engineering/finger-count.md",
+      "characters": 3099,
+      "diagrams": [
+        "contacts"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2008.03596",
+        "https://modernrobotics.northwestern.edu/nu-gm-book-resource/12-1-2-contact-types-rolling-sliding-and-breaking/",
+        "https://modernrobotics.northwestern.edu/nu-gm-book-resource/12-2-3-force-closure/",
+        "https://roboticsproceedings.org/rss19/p089.pdf"
+      ]
+    },
+    {
+      "path": "website/docs/engineering/force-estimation.md",
+      "characters": 3655,
+      "diagrams": [
+        "force"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/1708.00922",
+        "https://modernrobotics.northwestern.edu/nu-gm-book-resource/12-2-1-friction/",
+        "https://modernrobotics.northwestern.edu/nu-gm-book-resource/12-2-3-force-closure/",
+        "https://modernrobotics.northwestern.edu/nu-gm-book-resource/5-2-statics-of-open-chains/",
+        "https://www.centropiaggio.unipi.it/sites/default/files/PisaIIT_SoftHand_0.pdf"
+      ]
+    },
+    {
+      "path": "website/docs/engineering/index.md",
+      "characters": 4335,
+      "diagrams": [],
+      "sources": []
+    },
+    {
+      "path": "website/docs/engineering/motion-planning.md",
+      "characters": 3713,
+      "diagrams": [
+        "planning"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/1808.00177",
+        "https://manipulation.mit.edu/trajectories.html",
+        "https://modernrobotics.northwestern.edu/nu-gm-book-resource/10-1-overview-of-motion-planning/",
+        "https://modernrobotics.northwestern.edu/nu-gm-book-resource/12-1-2-contact-types-rolling-sliding-and-breaking/",
+        "https://modernrobotics.northwestern.edu/nu-gm-book-resource/5-3-singularities/",
+        "https://modernrobotics.northwestern.edu/nu-gm-book-resource/5-4-manipulability/",
+        "https://modernrobotics.northwestern.edu/nu-gm-book-resource/6-2-numerical-inverse-kinematics-part-1-of-2/",
+        "https://modernrobotics.northwestern.edu/nu-gm-book-resource/9-1-and-9-2-point-to-point-trajectories-part-1-of-2/"
+      ]
+    },
+    {
+      "path": "website/docs/engineering/sensing-chain.md",
+      "characters": 5549,
+      "diagrams": [
+        "skin",
+        "placement"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/1708.00922",
+        "https://arxiv.org/abs/2005.14679",
+        "https://arxiv.org/abs/2111.00071",
+        "https://docs.wuji.tech/docs/zh/wuji-hand/latest/user-notice/",
+        "https://icub.iit.it/documents/175012/528824/iCub_Skin_technical_sheet.pdf/2722fca2-7f9e-63e8-7102-086ad9492541",
+        "https://people.csail.mit.edu/yuan_wz/GelSight1/ICRA15_2740_FI.pdf",
+        "https://www.nature.com/articles/nnano.2012.192",
+        "https://www.nature.com/articles/s41467-022-32827-7",
+        "https://www.nature.com/articles/s41528-022-00181-9"
+      ]
+    },
+    {
+      "path": "website/docs/engineering/sim-to-real.md",
+      "characters": 2862,
+      "diagrams": [
+        "validation"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/1710.06537",
+        "https://arxiv.org/abs/1808.00177",
+        "https://arxiv.org/abs/2008.03596",
+        "https://roboticsproceedings.org/rss19/p089.pdf"
+      ]
+    },
+    {
+      "path": "website/docs/engineering/transmission.md",
+      "characters": 3630,
+      "diagrams": [
+        "transmission"
+      ],
+      "sources": [
+        "https://elib.dlr.de/112353/",
+        "https://modernrobotics.northwestern.edu/nu-gm-book-resource/5-2-statics-of-open-chains/",
+        "https://modernrobotics.northwestern.edu/nu-gm-book-resource/8-9-actuation-gearing-and-friction/",
+        "https://www.centropiaggio.unipi.it/sites/default/files/PisaIIT_SoftHand_0.pdf",
+        "https://www.dlr.de/en/rm/research/robotic-systems/hands/david-hand"
+      ]
+    }
+  ]
+}

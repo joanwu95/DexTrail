@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#e5bd78" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="title desc">
+  <title id="title">DexTrail — joint paths</title>
+  <desc id="desc">An abstract dexterous hand suggested by three articulated finger paths and an opposing thumb. Each finger is a single chain of connected segments, without an outline.</desc>
+  <path d="M20 33 19 23 23 15 29 13"/>
+  <path d="M32 31 32 20 36 11 42 9"/>
+  <path d="M44 34 48 25 52 20 57 21"/>
+  <path d="M23 44 14 37 9 29 11 24"/>
+  <path d="M20 33 23 44 28 54M44 34 45 43 39 54"/>
+  <circle cx="33.5" cy="54" r="2.1" fill="#e5bd78" stroke="none"/>
+</svg>

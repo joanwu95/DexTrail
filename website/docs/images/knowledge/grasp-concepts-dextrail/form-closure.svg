@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720" style="max-width:100%;height:auto" role="img" aria-labelledby="title desc"><title id="title">Form closure</title><desc id="desc">四个固定无摩擦接触约束平面方块，阻止平移与转动。</desc>
+<rect width="960" height="720" fill="#f4f1ea"/>
+<text x="34.00" y="35.00" font-size="12" fill="#aa4d3e" font-family="Consolas, monospace" font-weight="400" text-anchor="start">DEXTRAIL / GRASP 01</text>
+<text x="34.00" y="80.00" font-size="29" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Form closure</text>
+<text x="35.00" y="110.00" font-size="15" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">形封闭 · 固定接触的几何约束</text>
+<polyline points="34.00,129.00 926.00,129.00" fill="none" stroke="#d8d8ce" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="228.00,262.00 452.00,262.00 452.00,486.00 228.00,486.00 228.00,262.00" fill="none" stroke="#292b29" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="228.00,262.00 452.00,262.00 452.00,486.00 228.00,486.00" fill="#edeae3" stroke="#292b29" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="228.00,446.00 228.00,414.00 204.00,414.00 204.00,446.00 228.00,446.00" fill="none" stroke="#696d67" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="228.00,446.00 228.00,414.00 204.00,414.00 204.00,446.00" fill="#f4f1ea" stroke="#696d67" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="204.00,420.00 194.00,428.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="204.00,430.00 194.00,438.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="204.00,440.00 194.00,448.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="228.00" cy="430.00" rx="3.50" ry="3.50" fill="#f4f1ea" stroke="#aa4d3e" stroke-width="1.5"/>
+<polyline points="228.00,430.00 276.00,430.00" fill="none" stroke="#aa4d3e" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="267.82,433.75 276.00,430.00 267.82,426.25" fill="none" stroke="#aa4d3e" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="194.00" y="420.00" font-size="14" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">C1</text>
+<polyline points="452.00,302.00 452.00,334.00 476.00,334.00 476.00,302.00 452.00,302.00" fill="none" stroke="#696d67" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="452.00,302.00 452.00,334.00 476.00,334.00 476.00,302.00" fill="#f4f1ea" stroke="#696d67" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="476.00,328.00 486.00,320.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="476.00,318.00 486.00,310.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="476.00,308.00 486.00,300.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="452.00" cy="318.00" rx="3.50" ry="3.50" fill="#f4f1ea" stroke="#aa4d3e" stroke-width="1.5"/>
+<polyline points="452.00,318.00 404.00,318.00" fill="none" stroke="#aa4d3e" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="412.18,314.25 404.00,318.00 412.18,321.75" fill="none" stroke="#aa4d3e" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="476.00" y="308.00" font-size="14" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">C2</text>
+<polyline points="380.00,262.00 412.00,262.00 412.00,238.00 380.00,238.00 380.00,262.00" fill="none" stroke="#696d67" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="380.00,262.00 412.00,262.00 412.00,238.00 380.00,238.00" fill="#f4f1ea" stroke="#696d67" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="406.00,238.00 398.00,228.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="396.00,238.00 388.00,228.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="386.00,238.00 378.00,228.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="396.00" cy="262.00" rx="3.50" ry="3.50" fill="#f4f1ea" stroke="#aa4d3e" stroke-width="1.5"/>
+<polyline points="396.00,262.00 396.00,310.00" fill="none" stroke="#aa4d3e" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="392.25,301.82 396.00,310.00 399.75,301.82" fill="none" stroke="#aa4d3e" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="391.00" y="223.00" font-size="14" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">C3</text>
+<polyline points="300.00,486.00 268.00,486.00 268.00,510.00 300.00,510.00 300.00,486.00" fill="none" stroke="#696d67" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="300.00,486.00 268.00,486.00 268.00,510.00 300.00,510.00" fill="#f4f1ea" stroke="#696d67" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="274.00,510.00 282.00,520.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="284.00,510.00 292.00,520.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="294.00,510.00 302.00,520.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="284.00" cy="486.00" rx="3.50" ry="3.50" fill="#f4f1ea" stroke="#aa4d3e" stroke-width="1.5"/>
+<polyline points="284.00,486.00 284.00,438.00" fill="none" stroke="#aa4d3e" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="287.75,446.18 284.00,438.00 280.25,446.18" fill="none" stroke="#aa4d3e" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="279.00" y="505.00" font-size="14" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">C4</text>
+<text x="620.00" y="270.00" font-size="22" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Fixed contacts</text>
+<text x="620.00" y="310.00" font-size="18" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">No translation</text>
+<text x="620.00" y="342.00" font-size="18" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">No rotation</text>
+<text x="620.00" y="394.00" font-size="17" fill="#aa4d3e" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Friction is not required</text>
+<text x="620.00" y="445.00" font-size="16" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Normal wrench matrix N</text>
+<text x="620.00" y="483.00" font-size="18" fill="#292b29" font-family="Consolas, monospace" font-weight="400" text-anchor="start">rank(N) = 3</text>
+<text x="620.00" y="514.00" font-size="17" fill="#292b29" font-family="Consolas, monospace" font-weight="400" text-anchor="start">N [1,1,1,1] = 0</text>
+<text x="340.00" y="550.00" font-size="17" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="middle">4 frictionless point contacts</text>
+<polyline points="34.00,622.00 926.00,622.00" fill="none" stroke="#d8d8ce" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="480.00" y="658.00" font-size="18" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="middle">固定接触的几何约束，同时阻止平移和转动</text>
+<text x="34.00" y="702.00" font-size="12" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Planar teaching model · geometry and loads are schematic</text>
+<text x="835.04" y="702.00" font-size="12" fill="#696d67" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="start">Modern Robotics</text>
+</svg>

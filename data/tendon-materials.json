@@ -1,0 +1,1596 @@
+{
+  "orca-hand": {
+    "name": "ORCA v1",
+    "scope": "ORCA v1 · IROS 2025 原型",
+    "status": "verified",
+    "material": "编织尼龙",
+    "specification": "论文给出绳体直径 1 mm；屈肌与伸肌各用一条绳。走线另有金属导向销与 Teflon 导管，导管不是绳芯。",
+    "missing": "尼龙牌号、编织结构、表面处理、端部效率与循环寿命仍需补充。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "ORCA IROS 2025 论文",
+        "url": "https://www.orcahand.com/publications/ORCA_IROS_2025.pdf",
+        "locator": "§II-A，PDF 第 2 页"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "partial",
+      "scope": "ORCA v1 · IROS 2025 原型",
+      "text": "驱动端确认使用电机上的卷线轴与棘轮结构；论文没有把指端和卷线端的具体绳结、夹紧或胶粘工艺交代完整。棘轮用于调紧，不等于已经确认绳端的固定方式。",
+      "sources": [
+        {
+          "title": "ORCA IROS 2025 论文",
+          "url": "https://www.orcahand.com/publications/ORCA_IROS_2025.pdf",
+          "locator": "§II-A、图 1A3"
+        }
+      ]
+    },
+    "return_mechanism": {
+      "status": "verified",
+      "scope": "ORCA v1 · IROS 2025 原型",
+      "text": "手指关节分别配置屈肌与伸肌两条受拉腱，靠伸肌腱主动拉回；腕部为带传动，不能套用手指的对拉绳路。",
+      "sources": [
+        {
+          "title": "ORCA IROS 2025 论文",
+          "url": "https://www.orcahand.com/publications/ORCA_IROS_2025.pdf",
+          "locator": "§II-A / II-D"
+        }
+      ]
+    },
+    "tensioning": {
+      "status": "verified",
+      "scope": "ORCA v1 · IROS 2025 原型",
+      "text": "松弛会随使用积累；电机卷轴上的棘轮可手动重新张紧，并允许松开以拆换关节。论文未声明持续自动张力闭环。",
+      "sources": [
+        {
+          "title": "ORCA IROS 2025 论文",
+          "url": "https://www.orcahand.com/publications/ORCA_IROS_2025.pdf",
+          "locator": "§II-A、图 1A3，棘轮张紧"
+        }
+      ]
+    }
+  },
+  "pisa-iit-softhand": {
+    "name": "Pisa/IIT SoftHand",
+    "scope": "Pisa/IIT SoftHand 原始版本",
+    "status": "verified",
+    "material": "Dyneema 腱绳",
+    "specification": "单条协同腱经过各关节滑轮；关节弹性韧带与传力腱不是同一部件。",
+    "missing": "Dyneema 等级、绳径、编织与连接工艺未在所核段落中给出。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "Pisa/IIT SoftHand 原始论文",
+        "url": "https://www.centropiaggio.unipi.it/sites/default/files/PisaIIT_SoftHand_0.pdf",
+        "locator": "§IV，PDF 第 9 页"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "unconfirmed",
+      "scope": "Pisa/IIT SoftHand 原始版本",
+      "text": "指端、卷线端或耦合索两端的具体固定方式尚待核实；不能确定使用绳结、胶粘、压接还是机械夹紧。",
+      "sources": []
+    },
+    "return_mechanism": {
+      "status": "verified",
+      "scope": "Pisa/IIT SoftHand 原始版本",
+      "text": "单条主动腱克服聚氨酯弹性韧带使手指闭合；预伸长的韧带与关节轮廓形成张开姿态附近的被动稳定平衡，释放主动牵引后由这些弹性元件回复。",
+      "sources": [
+        {
+          "title": "Pisa/IIT SoftHand 原始论文",
+          "url": "https://www.centropiaggio.unipi.it/sites/default/files/PisaIIT_SoftHand_0.pdf",
+          "locator": "§IV，图 14–15 的弹性韧带与主动腱"
+        }
+      ]
+    },
+    "tensioning": {
+      "status": "partial",
+      "scope": "Pisa/IIT SoftHand 原始版本",
+      "text": "论文明确韧带的预伸长及主动腱的防脱轨滑轮；这是弹性韧带的预紧与腱路防脱设计，不能当作主动腱有同数值预紧或自动收绳。腱端调紧方法仍待核。",
+      "sources": [
+        {
+          "title": "Pisa/IIT SoftHand 原始论文",
+          "url": "https://www.centropiaggio.unipi.it/sites/default/files/PisaIIT_SoftHand_0.pdf",
+          "locator": "§IV，ligament pre-tension 与 anti-derailment pulleys"
+        }
+      ]
+    }
+  },
+  "dlr-david": {
+    "name": "DLR David / Awiwi",
+    "scope": "David / Awiwi · 不同腱索配置",
+    "status": "verified",
+    "material": "钢索 / Dyneema（按配置区分）",
+    "specification": "官方分别列出钢索与 Dyneema 配置；2015 年论文另讨论全 Dyneema、钢索及钢伸肌索配 Dyneema 屈肌索的组合。官方 20 N / 40 N 是指尖力，不是绳索破断载荷。",
+    "missing": "每套配置的钢材牌号、绳径、股数与 Dyneema 等级尚缺；不能合并成全系列统一绳材。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "DLR David 官方介绍",
+        "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/david-hand",
+        "locator": "技术数据与腱索配置"
+      },
+      {
+        "title": "DLR 2015 手指改进论文",
+        "url": "https://elib.dlr.de/100496/1/FRCEF.pdf",
+        "locator": "§II–IV，腱材料、摩擦与弯曲寿命讨论"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "verified",
+      "scope": "2015 改进指试验配置",
+      "text": "2015 改进指试验采用倒扣式扩张锚点，预紧使绳保持就位；钢索可再由端部螺钉固定，掌指关节可装钢夹防脱。不能当成所有 David 历史版本的统一端接。",
+      "sources": [
+        {
+          "title": "DLR 2015 手指改进论文",
+          "url": "https://elib.dlr.de/100496/1/FRCEF.pdf",
+          "locator": "§IV，改进绳路与 tendon fixation"
+        }
+      ]
+    },
+    "return_mechanism": {
+      "status": "verified",
+      "scope": "David / Awiwi · 不同腱索配置",
+      "text": "拮抗屈肌 / 伸肌腱产生双向关节力矩，柔性拮抗弹簧参与受力与刚度调节；不能把弹簧一律写成只负责被动开手。",
+      "sources": [
+        {
+          "title": "DLR David 官方介绍",
+          "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/david-hand",
+          "locator": "拮抗驱动与刚度设计"
+        }
+      ]
+    },
+    "tensioning": {
+      "status": "verified",
+      "scope": "论文 §2.5 回顾的 Awiwi 配置",
+      "text": "CLASH 论文回顾的 Awiwi 配置使用最小预紧控制防止绳索跳出，同时牺牲部分被动可变形范围；这是该对比配置的控制设计，不是所有 David 版本的统一张紧值。",
+      "sources": [
+        {
+          "title": "DLR CLASH 论文中的 Awiwi 对比",
+          "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2019.00138/full",
+          "locator": "§2.5，Awiwi pretension controller"
+        }
+      ]
+    }
+  },
+  "dlr-clash": {
+    "name": "DLR CLASH",
+    "scope": "CLASH 本体，不含 CLASH WRIST",
+    "status": "verified",
+    "material": "尼龙腱索",
+    "specification": "论文将本手的尼龙腱与 AWIWI 的钢腱作对比；不把 AWIWI 的钢材配置继承到 CLASH。",
+    "missing": "尼龙牌号、绳径、编织及工作张力范围尚缺。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "CLASH 原始论文",
+        "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2019.00138/full",
+        "locator": "§2.5，CLASH 与 AWIWI 的对比"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "unconfirmed",
+      "scope": "CLASH 本体，不含 CLASH WRIST",
+      "text": "指端、卷线端或耦合索两端的具体固定方式尚待核实；不能确定使用绳结、胶粘、压接还是机械夹紧。",
+      "sources": []
+    },
+    "return_mechanism": {
+      "status": "verified",
+      "scope": "CLASH 本体，不含 CLASH WRIST",
+      "text": "拮抗伺服驱动配合柔性拮抗弹簧及差动绳路，屈伸受多条腱共同作用；属于主动拮抗与柔顺组合。",
+      "sources": [
+        {
+          "title": "CLASH 原始论文",
+          "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2019.00138/full",
+          "locator": "§2.2–2.3，腱路与 FAS"
+        }
+      ]
+    },
+    "tensioning": {
+      "status": "verified",
+      "scope": "CLASH 本体，不含 CLASH WRIST",
+      "text": "通过预紧改变刚度，并加入机械防跳索导向；碰撞试验还主动降低预紧使腱索松弛，以便关节脱开吸收冲击。不能把这一特殊状态写成日常定位状态。",
+      "sources": [
+        {
+          "title": "CLASH 原始论文",
+          "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2019.00138/full",
+          "locator": "§2.5；§5.1，主动降低预紧的冲击试验"
+        }
+      ]
+    }
+  },
+  "open-parametric-hand": {
+    "name": "Open Parametric Hand",
+    "scope": "2410.18633 v1 所述原型",
+    "status": "verified",
+    "material": "尼龙腱索",
+    "specification": "论文讨论的装配材料包括尼龙腱；结构打印材料与腱索材料分别记录。",
+    "missing": "绳径、尼龙等级、编织与端部工艺尚缺。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "Open Parametric Hand 作者稿",
+        "url": "https://arxiv.org/html/2410.18633v1",
+        "locator": "Discussion，装配材料与成本段落"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "verified",
+      "scope": "2410.18633 v1 · 驱动盒弹簧端",
+      "text": "驱动盒使用打印的 tendon clips 快速连接弹簧并调整腱长，另有锚点与可转动弹簧架；本条确认弹簧端夹件，不声称每个指端也用同一种夹件。",
+      "sources": [
+        {
+          "title": "Open Parametric Hand 作者稿",
+          "url": "https://arxiv.org/html/2410.18633v1",
+          "locator": "§4.7，tendon clips；图 S2"
+        }
+      ]
+    },
+    "return_mechanism": {
+      "status": "verified",
+      "scope": "2410.18633 v1 所述原型",
+      "text": "主动腱改变姿态，其余腱接被动弹簧；弹簧刚度和预紧决定起始姿态与被动回复行为。单滑轮、可切换刚度和双滑轮方案分别按绳路配置解释。",
+      "sources": [
+        {
+          "title": "Open Parametric Hand 作者稿",
+          "url": "https://arxiv.org/html/2410.18633v1",
+          "locator": "§2.2.1–2.2.3；图 S2 / S3"
+        }
+      ]
+    },
+    "tensioning": {
+      "status": "verified",
+      "scope": "2410.18633 v1 所述原型",
+      "text": "打印夹件支持重新配置腱长与调节张力；实验中手动调整预紧。论文没有把这写成自动消除所有动态松弛的控制器。",
+      "sources": [
+        {
+          "title": "Open Parametric Hand 作者稿",
+          "url": "https://arxiv.org/html/2410.18633v1",
+          "locator": "§4.7–4.8；图 S2"
+        }
+      ]
+    }
+  },
+  "prensilia-ih2-azzurra": {
+    "name": "Prensilia IH2 Azzurra",
+    "scope": "IH2 Azzurra · DS_IH2_v03",
+    "status": "verified",
+    "material": "钢腱索",
+    "specification": "规格书传动行列出 Steel tendons（180 N max force）与 Bowden cables；180 N 是该规格书的腱索标称值，不能直接当作任意装配的持续工作张力。",
+    "missing": "钢材是否为不锈钢、直径、股数、护套衬层及端部效率仍待确认。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "Prensilia IH2 Azzurra 规格书",
+        "url": "https://www.prensilia.com/wp-content/uploads/support/doc/DS_IH2_v03.pdf",
+        "locator": "PDF 第 2 页，Transmission 行"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "unconfirmed",
+      "scope": "IH2 Azzurra · DS_IH2_v03",
+      "text": "指端、卷线端或耦合索两端的具体固定方式尚待核实；不能确定使用绳结、胶粘、压接还是机械夹紧。",
+      "sources": []
+    },
+    "return_mechanism": {
+      "status": "unconfirmed",
+      "scope": "IH2 Azzurra · DS_IH2_v03",
+      "text": "本版本各关节的主动回拉、回位弹簧、弹性关节及耦合回程分工尚待核实；不从“腱驱动”名称推定。",
+      "sources": []
+    },
+    "tensioning": {
+      "status": "unconfirmed",
+      "scope": "IH2 Azzurra · DS_IH2_v03",
+      "text": "初始预紧、回程后的松弛状态与补偿 / 调紧方法尚待核实；不能因有电机位置控制就判定腱索始终张紧。",
+      "sources": []
+    }
+  },
+  "utah-mit-hand": {
+    "name": "Utah/MIT Dextrous Hand · Version III",
+    "scope": "Utah/MIT · Version III",
+    "status": "verified",
+    "material": "Kevlar 承力纤维 + Dacron 编织外层",
+    "specification": "扁平腱带：多根纵向 Kevlar 元素承担拉力，外层 Dacron 编织纤维用于保持排列与保护；不是单根圆形绳。",
+    "missing": "腱带宽厚、纤维等级、连接效率与实际循环寿命仍需完整规格。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "Design of the Utah/MIT Dextrous Hand",
+        "url": "https://people.csail.mit.edu/edsinger/raw/jacobsen_design_utah_hand.pdf",
+        "locator": "Tendons, Remotizer, and Disconnection；图 14–15"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "verified",
+      "scope": "Utah/MIT · Version III",
+      "text": "论文列出永久夹头、绳结和多圈缠绕的摩擦锁三种端接；摩擦锁可逆调节后由附加机械螺钉锁住，还配快速拆接件。",
+      "sources": [
+        {
+          "title": "Design of the Utah/MIT Dextrous Hand",
+          "url": "https://people.csail.mit.edu/edsinger/raw/jacobsen_design_utah_hand.pdf",
+          "locator": "Tendons, Remotizer, and Disconnection；图 14–15"
+        }
+      ]
+    },
+    "return_mechanism": {
+      "status": "verified",
+      "scope": "Utah/MIT · Version III",
+      "text": "每个关节接两条腱，分别由低摩擦气缸与压力阀驱动，回程来自相对侧腱的牵引；不能把气缸回程解释成绳本身能推。",
+      "sources": [
+        {
+          "title": "Design of the Utah/MIT Dextrous Hand",
+          "url": "https://people.csail.mit.edu/edsinger/raw/jacobsen_design_utah_hand.pdf",
+          "locator": "Actuators and the Actuator Package；图 12A"
+        }
+      ]
+    },
+    "tensioning": {
+      "status": "partial",
+      "scope": "Utah/MIT · Version III",
+      "text": "摩擦锁允许调节腱长，以匹配手指位置与气缸活塞位置，并有腕部腱张力测量；具体预紧设定和持续防松算法仍需核对，不能由“有传感器”自动推出。",
+      "sources": [
+        {
+          "title": "Design of the Utah/MIT Dextrous Hand",
+          "url": "https://people.csail.mit.edu/edsinger/raw/jacobsen_design_utah_hand.pdf",
+          "locator": "图 10、14–15；摩擦锁调节"
+        }
+      ]
+    }
+  },
+  "dlr-hit-hand-ii": {
+    "name": "DLR/HIT Hand II",
+    "scope": "DLR/HIT Hand II · 时间轴所引用的原始版本",
+    "status": "verified",
+    "material": "钢丝（末端关节耦合索）",
+    "specification": "钢丝将中节与末节按 1:1 耦合；指根还有同步带与减速机构，不能据此把整手写成纯腱驱动。",
+    "missing": "耦合钢丝的牌号、直径、表面处理与疲劳寿命尚缺。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "DLR/HIT Hand II IROS 论文",
+        "url": "https://elib.dlr.de/55786/1/LiuHong-Multisensory_Five-Finger_Dexterous_Hand-IROS.pdf",
+        "locator": "§II-A/B，手指机构与传动"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "unconfirmed",
+      "scope": "DLR/HIT Hand II · 时间轴所引用的原始版本",
+      "text": "指端、卷线端或耦合索两端的具体固定方式尚待核实；不能确定使用绳结、胶粘、压接还是机械夹紧。",
+      "sources": []
+    },
+    "return_mechanism": {
+      "status": "unconfirmed",
+      "scope": "DLR/HIT Hand II · 时间轴所引用的原始版本",
+      "text": "本版本各关节的主动回拉、回位弹簧、弹性关节及耦合回程分工尚待核实；不从“腱驱动”名称推定。",
+      "sources": []
+    },
+    "tensioning": {
+      "status": "unconfirmed",
+      "scope": "DLR/HIT Hand II · 时间轴所引用的原始版本",
+      "text": "初始预紧、回程后的松弛状态与补偿 / 调紧方法尚待核实；不能因有电机位置控制就判定腱索始终张紧。",
+      "sources": []
+    }
+  },
+  "sdm-hand": {
+    "name": "Highly Adaptive SDM Hand",
+    "scope": "Highly Adaptive SDM Hand · 时间轴所引用的原始版本",
+    "status": "verified",
+    "material": "尼龙涂层不锈钢缆索",
+    "specification": "预拉伸的 nylon-coated stainless steel cable 固定于末指节；另经 Nylon 11 导管走线。外涂层、承力钢芯与导管是三个层次。",
+    "missing": "缆径、不锈钢牌号、股数、涂层厚度与寿命数据尚缺。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "SDM Hand IJRR 2010 论文",
+        "url": "https://www.eng.yale.edu/grablab/pubs/dollar_ijrr2010.pdf",
+        "locator": "§2.2，手指腱索与导管"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "partial",
+      "scope": "Highly Adaptive SDM Hand · 时间轴所引用的原始版本",
+      "text": "腱缆锚在末指节并集成于 SDM 成型手指；论文说明整体手指无需紧固件或胶粘装配，但未完整给出腱端埋入部位的内部止挡几何。",
+      "sources": [
+        {
+          "title": "SDM Hand IJRR 2010 论文",
+          "url": "https://www.eng.yale.edu/grablab/pubs/dollar_ijrr2010.pdf",
+          "locator": "§2.1 / §2.2，成型手指与末节锚点"
+        }
+      ]
+    },
+    "return_mechanism": {
+      "status": "verified",
+      "scope": "Highly Adaptive SDM Hand · 时间轴所引用的原始版本",
+      "text": "聚氨酯弹性关节提供被动回复与阻尼，电机通过腱缆收紧手指；放松驱动后回复来自关节材料，不是钢缆向外推。",
+      "sources": [
+        {
+          "title": "SDM Hand IJRR 2010 论文",
+          "url": "https://www.eng.yale.edu/grablab/pubs/dollar_ijrr2010.pdf",
+          "locator": "§2.1.1 / §2.2"
+        }
+      ]
+    },
+    "tensioning": {
+      "status": "verified",
+      "scope": "Highly Adaptive SDM Hand · 时间轴所引用的原始版本",
+      "text": "未驱动时腱索有意松弛，使手指保持最高柔顺性并隔离不可回驱执行器的影响；拉紧后抓握变硬。应区分设计允许的空载松弛与驱动时失去接合。",
+      "sources": [
+        {
+          "title": "SDM Hand IJRR 2010 论文",
+          "url": "https://www.eng.yale.edu/grablab/pubs/dollar_ijrr2010.pdf",
+          "locator": "§2.2，驱动前 slack 与驱动后刚度变化"
+        }
+      ]
+    }
+  },
+  "mm-hand": {
+    "name": "MM-Hand 1.0",
+    "scope": "MM-Hand 1.0 · 2604.17245 v1",
+    "status": "verified",
+    "material": "Dyneema 腱绳",
+    "specification": "绳体直径 1 mm。论文比较多种外鞘，并选择金属弹簧管用于后续试验；外鞘的金属不代表绳芯为金属。",
+    "missing": "Dyneema 等级、编织、端接效率及长期磨损仍待补充。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "MM-Hand 1.0 作者稿",
+        "url": "https://arxiv.org/html/2604.17245v1",
+        "locator": "§IV / IV-A，腱绳直径与外鞘试验"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "partial",
+      "scope": "MM-Hand 1.0 · 2604.17245 v1",
+      "text": "掌内快接盒把手侧和电机侧腱段分开，可拆换手指与外鞘；论文确认快接结构，但没有在该段完整说明绳端在快接件内用结、压接还是夹紧。",
+      "sources": [
+        {
+          "title": "MM-Hand 1.0 作者稿",
+          "url": "https://arxiv.org/html/2604.17245v1",
+          "locator": "§III-B，quick tendon connector box"
+        }
+      ]
+    },
+    "return_mechanism": {
+      "status": "verified",
+      "scope": "MM-Hand 1.0 · 2604.17245 v1",
+      "text": "多数关节采用单腱加弹簧，弹性元件提供伸展；拇指 CMC1 旋转关节改用双腱拮抗，不采用同一被动回位方案。",
+      "sources": [
+        {
+          "title": "MM-Hand 1.0 作者稿",
+          "url": "https://arxiv.org/html/2604.17245v1",
+          "locator": "§III-A / III-E"
+        }
+      ]
+    },
+    "tensioning": {
+      "status": "verified",
+      "scope": "MM-Hand 1.0 · 2604.17245 v1",
+      "text": "软件设定预紧角，关节角反馈出现松弛时电机收线；释放速度受限以免超过弹簧回复速度。论文还减小电机端额外导向摩擦；未采用早期原型的专用张紧硬件。",
+      "sources": [
+        {
+          "title": "MM-Hand 1.0 作者稿",
+          "url": "https://arxiv.org/html/2604.17245v1",
+          "locator": "§III-C / III-E、图 5"
+        }
+      ]
+    }
+  },
+  "yale-model-q": {
+    "name": "Yale OpenHand Model Q",
+    "scope": "Model Q · 制造指南 Version 1.0",
+    "status": "verified",
+    "material": "PowerPro Spectra 腱绳",
+    "specification": "制造清单明确列出 PowerPro Spectra tendon；打印的滑轮与路由销材料不作为腱绳材料。",
+    "missing": "所用商品的直径、强度规格、编织与连接效率尚缺。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "Yale Model Q 制造指南",
+        "url": "https://www.eng.yale.edu/grablab/openhand/model%20q/Fabrication%20-%20Model%20Q%201.0.pdf",
+        "locator": "OTS 清单，PDF 第 2 页"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "verified",
+      "scope": "Model Q · 制造指南 Version 1.0",
+      "text": "指南给出小螺母作绳端止挡，也可改用热熔嵌件和螺钉作腱锚点；不同精密指、动力指和卷轮端应按对应装配步骤区分。",
+      "sources": [
+        {
+          "title": "Yale Model Q 制造指南",
+          "url": "https://www.eng.yale.edu/grablab/openhand/model%20q/Fabrication%20-%20Model%20Q%201.0.pdf",
+          "locator": "OTS Parts List；精密指腱锚点；PDF 第 15 页"
+        }
+      ]
+    },
+    "return_mechanism": {
+      "status": "verified",
+      "scope": "Model Q · 制造指南 Version 1.0",
+      "text": "精密指可选扭簧或拉簧，Pivot-Pivot 的末端关节还有拉簧 / 弹性带；动力指采用弹性 flexure。复位结构取决于指南选择的指型。",
+      "sources": [
+        {
+          "title": "Yale Model Q 制造指南",
+          "url": "https://www.eng.yale.edu/grablab/openhand/model%20q/Fabrication%20-%20Model%20Q%201.0.pdf",
+          "locator": "PDF 第 2、6–12 页，指型与 return spring 清单"
+        }
+      ]
+    },
+    "tensioning": {
+      "status": "partial",
+      "scope": "Model Q · 制造指南 Version 1.0",
+      "text": "动力指串线时可移动滑轮块并保持绳拉紧，以调整静止姿态；这是装配调整，指南未在所核段落中提供持续自动张力闭环。",
+      "sources": [
+        {
+          "title": "Yale Model Q 制造指南",
+          "url": "https://www.eng.yale.edu/grablab/openhand/model%20q/Fabrication%20-%20Model%20Q%201.0.pdf",
+          "locator": "PDF 第 15 页，Pulley Block"
+        }
+      ]
+    }
+  },
+  "ruka-v1": {
+    "name": "RUKA v1",
+    "scope": "RUKA v1 · 2025 论文版",
+    "status": "partial",
+    "material": null,
+    "specification": "编织钓鱼线，论文标称强度等级 200 lb；掌部另有 PTFE 导管。这个商品等级不是实测持续工作张力。",
+    "missing": "纤维化学成分、品牌等级、绳径与端部后的可用张力尚待核实；不能直接写成尼龙或 Dyneema。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "RUKA v1 作者稿",
+        "url": "https://arxiv.org/html/2504.13165v1",
+        "locator": "§III-C2，肌腱与固定方式"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "partial",
+      "scope": "RUKA v1 · 2025 论文版",
+      "text": "编织钓鱼线用滑结（slip knot）固定到打印件，再沿手指及掌部 PTFE 导管走线。该段没有逐一说明电机端的端接几何。",
+      "sources": [
+        {
+          "title": "RUKA v1 作者稿",
+          "url": "https://arxiv.org/html/2504.13165v1",
+          "locator": "§III-C2，Tendons"
+        }
+      ]
+    },
+    "return_mechanism": {
+      "status": "verified",
+      "scope": "RUKA v1 · 2025 论文版",
+      "text": "屈肌腱驱动 MCP 与耦合的 PIP/DIP 弯曲，弹簧负责伸展；回程不是绳索向外推。",
+      "sources": [
+        {
+          "title": "RUKA v1 作者稿",
+          "url": "https://arxiv.org/html/2504.13165v1",
+          "locator": "图 3C，屈肌腱与伸展弹簧"
+        }
+      ]
+    },
+    "tensioning": {
+      "status": "verified",
+      "scope": "RUKA v1 · 2025 论文版",
+      "text": "官方校准分别确定全屈曲端点与“手指全开但绳已张紧”端点；张紧端点需要人工逐电机调整。复位使用这些已保存范围，而非无条件放出整条绳。",
+      "sources": [
+        {
+          "title": "RUKA 官方校准说明",
+          "url": "https://github.com/ruka-hand/RUKA",
+          "locator": "Calibrating Motor Ranges"
+        }
+      ]
+    }
+  },
+  "bidexhand-v4": {
+    "name": "BiDexHand V4",
+    "scope": "BiDexHand V4 · 官方仓库 BOM（核查日版本）",
+    "status": "partial",
+    "material": null,
+    "specification": "BOM 列 DuraBraid fishing wire（40 lb）和外径 3 mm 的 PTFE tube；3 mm 是导管外径，不是绳径。",
+    "missing": "该商品的纤维成分、线径、实际端接强度与寿命仍待确认。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "BiDexHand 官方 BOM",
+        "url": "https://github.com/wengmister/BiDexHand/blob/main/BOM.md",
+        "locator": "Fishing Wire 与 PTFE Tube 条目"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "unconfirmed",
+      "scope": "BiDexHand V4 · 官方仓库 BOM（核查日版本）",
+      "text": "指端、卷线端或耦合索两端的具体固定方式尚待核实；不能确定使用绳结、胶粘、压接还是机械夹紧。",
+      "sources": []
+    },
+    "return_mechanism": {
+      "status": "unconfirmed",
+      "scope": "BiDexHand V4 · 官方仓库 BOM（核查日版本）",
+      "text": "本版本各关节的主动回拉、回位弹簧、弹性关节及耦合回程分工尚待核实；不从“腱驱动”名称推定。",
+      "sources": []
+    },
+    "tensioning": {
+      "status": "unconfirmed",
+      "scope": "BiDexHand V4 · 官方仓库 BOM（核查日版本）",
+      "text": "初始预紧、回程后的松弛状态与补偿 / 调紧方法尚待核实；不能因有电机位置控制就判定腱索始终张紧。",
+      "sources": []
+    }
+  },
+  "leap-hand-v2": {
+    "name": "LEAP v2",
+    "scope": "LEAP v2 · 柔性腱驱版本",
+    "status": "partial",
+    "material": null,
+    "specification": "装配指南使用 fishing line，描述指端打结与滑轮走线；打印 TPU / PLA 不代表钓鱼线成分。",
+    "missing": "钓鱼线的纤维成分、品牌、绳径、强度等级与端接规格仍待确认。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "LEAP v2 官方装配指南",
+        "url": "https://v2.leaphand.com/assembly",
+        "locator": "Setup Tendon 与 Route Tendon"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "verified",
+      "scope": "LEAP v2 · 柔性腱驱版本",
+      "text": "卷线轮端打普通绳结，经小孔使结卡在轮内；绳穿过手指通道后拉去松弛，保留约两到三圈绕线，再打结固定。",
+      "sources": [
+        {
+          "title": "LEAP v2 官方装配指南",
+          "url": "https://v2.leaphand.com/assembly",
+          "locator": "Setup Tendon；Route Tendon Through Finger"
+        }
+      ]
+    },
+    "return_mechanism": {
+      "status": "partial",
+      "scope": "LEAP v2 · 柔性腱驱版本",
+      "text": "官网确认单腱牵引 TPU / PLA 软关节，关节刚度影响弯曲分配；独立回位弹簧、主动伸展索与实际回弹张力范围未在所核说明中明确。",
+      "sources": [
+        {
+          "title": "LEAP v2 官方结构说明",
+          "url": "https://v2.leaphand.com/",
+          "locator": "Hybrid Rigid-Soft Hand；Under-actuated Curling"
+        }
+      ]
+    },
+    "tensioning": {
+      "status": "partial",
+      "scope": "LEAP v2 · 柔性腱驱版本",
+      "text": "装配时明确要求拉线去除松弛并保留卷轮绕线；这是初装调紧，不代表长期使用或所有接触姿态下都无松弛。",
+      "sources": [
+        {
+          "title": "LEAP v2 官方装配指南",
+          "url": "https://v2.leaphand.com/assembly",
+          "locator": "Route Tendon Through Finger，第 2 步"
+        }
+      ]
+    }
+  },
+  "shadow-hand": {
+    "name": "Shadow Classic Electric",
+    "scope": "Classic Electric · 2024-12-04 规格书",
+    "status": "unconfirmed",
+    "material": null,
+    "specification": "已确认存在传力腱索；当前证据未闭合到该版本的绳芯、涂层与导管规格。",
+    "missing": "承力材料、直径或宽厚、编织 / 股数、表面处理、端接与可用张力范围待核。 规格书的机体材料表不能替代腱索材料表。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf",
+        "locator": "该版本机构 / 传动说明；具体腱材仍待核"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "unconfirmed",
+      "scope": "Classic Electric · 2024-12-04 规格书",
+      "text": "指端、卷线端或耦合索两端的具体固定方式尚待核实；不能确定使用绳结、胶粘、压接还是机械夹紧。",
+      "sources": []
+    },
+    "return_mechanism": {
+      "status": "verified",
+      "scope": "Classic Electric · 2024-12-04 规格书",
+      "text": "Smart Motor 驱动成对腱索，手指双向运动靠腱对传力；末节为耦合运动，不能当作另一个独立复位电机。",
+      "sources": [
+        {
+          "title": "本次机构与操作核查依据",
+          "url": "https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf",
+          "locator": "§2.3、§4.3、§5"
+        }
+      ]
+    },
+    "tensioning": {
+      "status": "partial",
+      "scope": "Classic Electric · 2024-12-04 规格书",
+      "text": "力反馈测量的是腱对负载差，零读数只代表两腱差值为零，不能证明两侧都有预紧。规格书未给出完整调紧步骤或持续防松策略。",
+      "sources": [
+        {
+          "title": "本次机构与操作核查依据",
+          "url": "https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf",
+          "locator": "§4.3 / §5"
+        }
+      ]
+    }
+  },
+  "xynova-flex-2": {
+    "name": "Xynova Flex 2",
+    "scope": "Xynova Flex 2",
+    "status": "unconfirmed",
+    "material": null,
+    "specification": "已确认存在传力腱索；当前证据未闭合到该版本的绳芯、涂层与导管规格。",
+    "missing": "承力材料、直径或宽厚、编织 / 股数、表面处理、端接与可用张力范围待核。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://www.manus-meta.com/use-cases/how-xynova-teleoperates-the-flex-2-dexterous-hand-with-manus-metagloves-pro-haptic",
+        "locator": "该版本机构 / 传动说明；具体腱材仍待核"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "unconfirmed",
+      "scope": "Xynova Flex 2",
+      "text": "指端、卷线端或耦合索两端的具体固定方式尚待核实；不能确定使用绳结、胶粘、压接还是机械夹紧。",
+      "sources": []
+    },
+    "return_mechanism": {
+      "status": "unconfirmed",
+      "scope": "Xynova Flex 2",
+      "text": "本版本各关节的主动回拉、回位弹簧、弹性关节及耦合回程分工尚待核实；不从“腱驱动”名称推定。",
+      "sources": []
+    },
+    "tensioning": {
+      "status": "unconfirmed",
+      "scope": "Xynova Flex 2",
+      "text": "初始预紧、回程后的松弛状态与补偿 / 调紧方法尚待核实；不能因有电机位置控制就判定腱索始终张紧。",
+      "sources": []
+    }
+  },
+  "dlr-dexhand": {
+    "name": "DLR DEXHAND",
+    "scope": "DEXHAND · 2012–2015",
+    "status": "unconfirmed",
+    "material": null,
+    "specification": "已确认存在传力腱索；当前证据未闭合到该版本的绳芯、涂层与导管规格。",
+    "missing": "承力材料、直径或宽厚、编织 / 股数、表面处理、端接与可用张力范围待核。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dexhand-2012-2015",
+        "locator": "该版本机构 / 传动说明；具体腱材仍待核"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "unconfirmed",
+      "scope": "DEXHAND · 2012–2015",
+      "text": "指端、卷线端或耦合索两端的具体固定方式尚待核实；不能确定使用绳结、胶粘、压接还是机械夹紧。",
+      "sources": []
+    },
+    "return_mechanism": {
+      "status": "unconfirmed",
+      "scope": "DEXHAND · 2012–2015",
+      "text": "本版本各关节的主动回拉、回位弹簧、弹性关节及耦合回程分工尚待核实；不从“腱驱动”名称推定。",
+      "sources": []
+    },
+    "tensioning": {
+      "status": "unconfirmed",
+      "scope": "DEXHAND · 2012–2015",
+      "text": "初始预紧、回程后的松弛状态与补偿 / 调紧方法尚待核实；不能因有电机位置控制就判定腱索始终张紧。",
+      "sources": []
+    }
+  },
+  "dlr-spacehand": {
+    "name": "DLR Spacehand",
+    "scope": "Spacehand · 2015–2018",
+    "status": "unconfirmed",
+    "material": null,
+    "specification": "已确认存在传力腱索；当前证据未闭合到该版本的绳芯、涂层与导管规格。",
+    "missing": "承力材料、直径或宽厚、编织 / 股数、表面处理、端接与可用张力范围待核。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/spacehand-2015-2018",
+        "locator": "该版本机构 / 传动说明；具体腱材仍待核"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "unconfirmed",
+      "scope": "Spacehand · 2015–2018",
+      "text": "指端、卷线端或耦合索两端的具体固定方式尚待核实；不能确定使用绳结、胶粘、压接还是机械夹紧。",
+      "sources": []
+    },
+    "return_mechanism": {
+      "status": "unconfirmed",
+      "scope": "Spacehand · 2015–2018",
+      "text": "本版本各关节的主动回拉、回位弹簧、弹性关节及耦合回程分工尚待核实；不从“腱驱动”名称推定。",
+      "sources": []
+    },
+    "tensioning": {
+      "status": "unconfirmed",
+      "scope": "Spacehand · 2015–2018",
+      "text": "初始预紧、回程后的松弛状态与补偿 / 调紧方法尚待核实；不能因有电机位置控制就判定腱索始终张紧。",
+      "sources": []
+    }
+  },
+  "nasa-robonaut-2-hand": {
+    "name": "NASA Robonaut 2",
+    "scope": "R2 · 2011 手部设计论文",
+    "status": "unconfirmed",
+    "material": null,
+    "specification": "已确认存在传力腱索；当前证据未闭合到该版本的绳芯、涂层与导管规格。",
+    "missing": "承力材料、直径或宽厚、编织 / 股数、表面处理、端接与可用张力范围待核。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://ntrs.nasa.gov/api/citations/20110023122/downloads/20110023122.pdf",
+        "locator": "该版本机构 / 传动说明；具体腱材仍待核"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "unconfirmed",
+      "scope": "R2 · 2011 手部设计论文",
+      "text": "指端、卷线端或耦合索两端的具体固定方式尚待核实；不能确定使用绳结、胶粘、压接还是机械夹紧。",
+      "sources": []
+    },
+    "return_mechanism": {
+      "status": "unconfirmed",
+      "scope": "R2 · 2011 手部设计论文",
+      "text": "本版本各关节的主动回拉、回位弹簧、弹性关节及耦合回程分工尚待核实；不从“腱驱动”名称推定。",
+      "sources": []
+    },
+    "tensioning": {
+      "status": "unconfirmed",
+      "scope": "R2 · 2011 手部设计论文",
+      "text": "初始预紧、回程后的松弛状态与补偿 / 调紧方法尚待核实；不能因有电机位置控制就判定腱索始终张紧。",
+      "sources": []
+    }
+  },
+  "linker-l30": {
+    "name": "Linker Hand L30 Pro",
+    "scope": "官方产品规格",
+    "status": "unconfirmed",
+    "material": null,
+    "specification": "已确认存在传力腱索；当前证据未闭合到该版本的绳芯、涂层与导管规格。",
+    "missing": "承力材料、直径或宽厚、编织 / 股数、表面处理、端接与可用张力范围待核。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "官方产品规格 · 结构、感知与实验依据",
+        "url": "https://www.linkerhand.com/details/LinkerHandL30/",
+        "locator": "该版本机构 / 传动说明；具体腱材仍待核"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "unconfirmed",
+      "scope": "官方产品规格",
+      "text": "指端、卷线端或耦合索两端的具体固定方式尚待核实；不能确定使用绳结、胶粘、压接还是机械夹紧。",
+      "sources": []
+    },
+    "return_mechanism": {
+      "status": "unconfirmed",
+      "scope": "官方产品规格",
+      "text": "本版本各关节的主动回拉、回位弹簧、弹性关节及耦合回程分工尚待核实；不从“腱驱动”名称推定。",
+      "sources": []
+    },
+    "tensioning": {
+      "status": "unconfirmed",
+      "scope": "官方产品规格",
+      "text": "初始预紧、回程后的松弛状态与补偿 / 调紧方法尚待核实；不能因有电机位置控制就判定腱索始终张紧。",
+      "sources": []
+    }
+  },
+  "vms-hand": {
+    "name": "VMS Hand",
+    "scope": "Nature Communications",
+    "status": "unconfirmed",
+    "material": null,
+    "specification": "已确认存在传力腱索；当前证据未闭合到该版本的绳芯、涂层与导管规格。",
+    "missing": "承力材料、直径或宽厚、编织 / 股数、表面处理、端接与可用张力范围待核。 方法节指向补充表 4，本轮尚未完成其中绳材条目的确认。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "Nature Communications · 结构、感知与实验依据",
+        "url": "https://www.nature.com/articles/s41467-025-62122-0",
+        "locator": "该版本机构 / 传动说明；具体腱材仍待核"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "partial",
+      "scope": "Nature Communications",
+      "text": "驱动端腱起点固定在 Slider-A；文字确认连接位置，但绳端如何锁固在滑块及指节上仍待核。",
+      "sources": [
+        {
+          "title": "Nature Communications · 结构、感知与实验依据",
+          "url": "https://www.nature.com/articles/s41467-025-62122-0",
+          "locator": "图 2d、Modular actuation units"
+        }
+      ]
+    },
+    "return_mechanism": {
+      "status": "verified",
+      "scope": "VMS 主手指 MCP 与 PIP/DIP 耦合说明",
+      "text": "主手指 MCP 的展收 / 屈伸由主动腱控制，掌背双复位弹簧用于复位；DIP 通过成对耦合腱随 PIP。前臂串联测力弹簧与掌背复位弹簧功能不同。",
+      "sources": [
+        {
+          "title": "Nature Communications · 结构、感知与实验依据",
+          "url": "https://www.nature.com/articles/s41467-025-62122-0",
+          "locator": "Modular fingers design；图 2f"
+        }
+      ]
+    },
+    "tensioning": {
+      "status": "partial",
+      "scope": "Nature Communications",
+      "text": "前臂串联弹簧用于传力与视觉测力，手指还有复位弹簧；仅有这些结构不能确认自动张紧，腱端预紧工艺与回程松弛管理仍待核。",
+      "sources": [
+        {
+          "title": "Nature Communications · 结构、感知与实验依据",
+          "url": "https://www.nature.com/articles/s41467-025-62122-0",
+          "locator": "图 2d–f、腱传动表征"
+        }
+      ]
+    }
+  },
+  "f-tac-hand": {
+    "name": "F-TAC Hand",
+    "scope": "Nature Machine Intelligence",
+    "status": "unconfirmed",
+    "material": null,
+    "specification": "已确认存在传力腱索；当前证据未闭合到该版本的绳芯、涂层与导管规格。",
+    "missing": "承力材料、直径或宽厚、编织 / 股数、表面处理、端接与可用张力范围待核。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "Nature Machine Intelligence · 结构、感知与实验依据",
+        "url": "https://www.nature.com/articles/s42256-025-01053-3",
+        "locator": "该版本机构 / 传动说明；具体腱材仍待核"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "unconfirmed",
+      "scope": "Nature Machine Intelligence",
+      "text": "指端、卷线端或耦合索两端的具体固定方式尚待核实；不能确定使用绳结、胶粘、压接还是机械夹紧。",
+      "sources": []
+    },
+    "return_mechanism": {
+      "status": "unconfirmed",
+      "scope": "Nature Machine Intelligence",
+      "text": "本版本各关节的主动回拉、回位弹簧、弹性关节及耦合回程分工尚待核实；不从“腱驱动”名称推定。",
+      "sources": []
+    },
+    "tensioning": {
+      "status": "unconfirmed",
+      "scope": "Nature Machine Intelligence",
+      "text": "初始预紧、回程后的松弛状态与补偿 / 调紧方法尚待核实；不能因有电机位置控制就判定腱索始终张紧。",
+      "sources": []
+    }
+  },
+  "adapt-hand-1": {
+    "name": "ADAPT Hand 1",
+    "scope": "Communications Engineering",
+    "status": "unconfirmed",
+    "material": null,
+    "specification": "已确认存在传力腱索；当前证据未闭合到该版本的绳芯、涂层与导管规格。",
+    "missing": "承力材料、直径或宽厚、编织 / 股数、表面处理、端接与可用张力范围待核。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "Communications Engineering · 结构、感知与实验依据",
+        "url": "https://www.nature.com/articles/s44172-025-00407-4",
+        "locator": "该版本机构 / 传动说明；具体腱材仍待核"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "unconfirmed",
+      "scope": "Communications Engineering",
+      "text": "指端、卷线端或耦合索两端的具体固定方式尚待核实；不能确定使用绳结、胶粘、压接还是机械夹紧。",
+      "sources": []
+    },
+    "return_mechanism": {
+      "status": "unconfirmed",
+      "scope": "Communications Engineering",
+      "text": "本版本各关节的主动回拉、回位弹簧、弹性关节及耦合回程分工尚待核实；不从“腱驱动”名称推定。",
+      "sources": []
+    },
+    "tensioning": {
+      "status": "unconfirmed",
+      "scope": "Communications Engineering",
+      "text": "初始预紧、回程后的松弛状态与补偿 / 调紧方法尚待核实；不能因有电机位置控制就判定腱索始终张紧。",
+      "sources": []
+    }
+  },
+  "adapt-hand-2": {
+    "name": "ADAPT Hand 2",
+    "scope": "npj Robotics",
+    "status": "unconfirmed",
+    "material": null,
+    "specification": "已确认存在传力腱索；当前证据未闭合到该版本的绳芯、涂层与导管规格。",
+    "missing": "承力材料、直径或宽厚、编织 / 股数、表面处理、端接与可用张力范围待核。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "npj Robotics · 结构、感知与实验依据",
+        "url": "https://www.nature.com/articles/s44182-025-00034-3",
+        "locator": "该版本机构 / 传动说明；具体腱材仍待核"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "unconfirmed",
+      "scope": "npj Robotics",
+      "text": "指端、卷线端或耦合索两端的具体固定方式尚待核实；不能确定使用绳结、胶粘、压接还是机械夹紧。",
+      "sources": []
+    },
+    "return_mechanism": {
+      "status": "unconfirmed",
+      "scope": "npj Robotics",
+      "text": "本版本各关节的主动回拉、回位弹簧、弹性关节及耦合回程分工尚待核实；不从“腱驱动”名称推定。",
+      "sources": []
+    },
+    "tensioning": {
+      "status": "unconfirmed",
+      "scope": "npj Robotics",
+      "text": "初始预紧、回程后的松弛状态与补偿 / 调紧方法尚待核实；不能因有电机位置控制就判定腱索始终张紧。",
+      "sources": []
+    }
+  },
+  "dash-hand": {
+    "name": "DASH Hand",
+    "scope": "IEEE-RAS Humanoids",
+    "status": "unconfirmed",
+    "material": null,
+    "specification": "已确认存在传力腱索；当前证据未闭合到该版本的绳芯、涂层与导管规格。",
+    "missing": "承力材料、直径或宽厚、编织 / 股数、表面处理、端接与可用张力范围待核。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "IEEE-RAS Humanoids · 结构、感知与实验依据",
+        "url": "https://arxiv.org/html/2306.04784v3",
+        "locator": "该版本机构 / 传动说明；具体腱材仍待核"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "unconfirmed",
+      "scope": "IEEE-RAS Humanoids",
+      "text": "指端、卷线端或耦合索两端的具体固定方式尚待核实；不能确定使用绳结、胶粘、压接还是机械夹紧。",
+      "sources": []
+    },
+    "return_mechanism": {
+      "status": "unconfirmed",
+      "scope": "IEEE-RAS Humanoids",
+      "text": "本版本各关节的主动回拉、回位弹簧、弹性关节及耦合回程分工尚待核实；不从“腱驱动”名称推定。",
+      "sources": []
+    },
+    "tensioning": {
+      "status": "unconfirmed",
+      "scope": "IEEE-RAS Humanoids",
+      "text": "初始预紧、回程后的松弛状态与补偿 / 调紧方法尚待核实；不能因有电机位置控制就判定腱索始终张紧。",
+      "sources": []
+    }
+  },
+  "mumuta-hand": {
+    "name": "MuMuTA Biohybrid Hand",
+    "scope": "Science Robotics",
+    "status": "unconfirmed",
+    "material": null,
+    "specification": "已确认存在传力腱索；当前证据未闭合到该版本的绳芯、涂层与导管规格。",
+    "missing": "承力材料、直径或宽厚、编织 / 股数、表面处理、端接与可用张力范围待核。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "Science Robotics · 结构、感知与实验依据",
+        "url": "https://www.u-tokyo.ac.jp/focus/en/press/z0508_00386.html",
+        "locator": "该版本机构 / 传动说明；具体腱材仍待核"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "unconfirmed",
+      "scope": "Science Robotics",
+      "text": "指端、卷线端或耦合索两端的具体固定方式尚待核实；不能确定使用绳结、胶粘、压接还是机械夹紧。",
+      "sources": []
+    },
+    "return_mechanism": {
+      "status": "unconfirmed",
+      "scope": "Science Robotics",
+      "text": "本版本各关节的主动回拉、回位弹簧、弹性关节及耦合回程分工尚待核实；不从“腱驱动”名称推定。",
+      "sources": []
+    },
+    "tensioning": {
+      "status": "unconfirmed",
+      "scope": "Science Robotics",
+      "text": "初始预紧、回程后的松弛状态与补偿 / 调紧方法尚待核实；不能因有电机位置控制就判定腱索始终张紧。",
+      "sources": []
+    }
+  },
+  "omnidirectional-sensing-hand": {
+    "name": "Omnidirectional-Sensing Dexterous Hand",
+    "scope": "Microsystems & Nanoengineering",
+    "status": "unconfirmed",
+    "material": null,
+    "specification": "已确认存在传力腱索；当前证据未闭合到该版本的绳芯、涂层与导管规格。",
+    "missing": "承力材料、直径或宽厚、编织 / 股数、表面处理、端接与可用张力范围待核。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "Microsystems & Nanoengineering · 结构、感知与实验依据",
+        "url": "https://www.nature.com/articles/s41378-026-01179-3",
+        "locator": "该版本机构 / 传动说明；具体腱材仍待核"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "unconfirmed",
+      "scope": "Microsystems & Nanoengineering",
+      "text": "指端、卷线端或耦合索两端的具体固定方式尚待核实；不能确定使用绳结、胶粘、压接还是机械夹紧。",
+      "sources": []
+    },
+    "return_mechanism": {
+      "status": "unconfirmed",
+      "scope": "Microsystems & Nanoengineering",
+      "text": "本版本各关节的主动回拉、回位弹簧、弹性关节及耦合回程分工尚待核实；不从“腱驱动”名称推定。",
+      "sources": []
+    },
+    "tensioning": {
+      "status": "unconfirmed",
+      "scope": "Microsystems & Nanoengineering",
+      "text": "初始预紧、回程后的松弛状态与补偿 / 调紧方法尚待核实；不能因有电机位置控制就判定腱索始终张紧。",
+      "sources": []
+    }
+  },
+  "tactile-softhand-a": {
+    "name": "Tactile SoftHand-A",
+    "scope": "arXiv · 2406.12731 v2",
+    "status": "unconfirmed",
+    "material": null,
+    "specification": "已确认存在传力腱索；当前证据未闭合到该版本的绳芯、涂层与导管规格。",
+    "missing": "承力材料、直径或宽厚、编织 / 股数、表面处理、端接与可用张力范围待核。 结构树脂与触觉皮肤材料不能替代传力绳材。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "arXiv · 2406.12731 v2 · 结构、感知与实验依据",
+        "url": "https://arxiv.org/html/2406.12731v2",
+        "locator": "该版本机构 / 传动说明；具体腱材仍待核"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "partial",
+      "scope": "arXiv · 2406.12731 v2",
+      "text": "论文明确腱传动组件与轴承用螺栓装在指骨架两侧，腱另经弹簧接耦合 / 差动机构；这些组件螺栓不等于已经确认绳端的夹紧方式。",
+      "sources": [
+        {
+          "title": "arXiv · 2406.12731 v2 · 结构、感知与实验依据",
+          "url": "https://arxiv.org/html/2406.12731v2",
+          "locator": "§4.1 / §5.1–5.3"
+        }
+      ]
+    },
+    "return_mechanism": {
+      "status": "verified",
+      "scope": "arXiv · 2406.12731 v2",
+      "text": "屈曲与伸展分别通过一套差动、弹簧及各自电机驱动，整手由两台电机主动开合；不能套用原始 SoftHand 的单腱被动开手说明。",
+      "sources": [
+        {
+          "title": "arXiv · 2406.12731 v2 · 结构、感知与实验依据",
+          "url": "https://arxiv.org/html/2406.12731v2",
+          "locator": "§5.1–5.3"
+        }
+      ]
+    },
+    "tensioning": {
+      "status": "partial",
+      "scope": "arXiv · 2406.12731 v2",
+      "text": "各指屈 / 伸腱分别接弹簧，再汇入各自差动与卷轮；能确认弹性耦合，但初始预紧数值、调紧工艺与松弛检测算法尚待核。",
+      "sources": [
+        {
+          "title": "arXiv · 2406.12731 v2 · 结构、感知与实验依据",
+          "url": "https://arxiv.org/html/2406.12731v2",
+          "locator": "§5.1–5.3"
+        }
+      ]
+    }
+  },
+  "faive-hand": {
+    "name": "Faive Hand · Proto 0",
+    "scope": "Humanoids 2023",
+    "status": "unconfirmed",
+    "material": null,
+    "specification": "已确认存在传力腱索；当前证据未闭合到该版本的绳芯、涂层与导管规格。",
+    "missing": "承力材料、直径或宽厚、编织 / 股数、表面处理、端接与可用张力范围待核。 滚动关节交叉韧带绳与驱动腱索应分别确认。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "Humanoids 2023 · 结构、感知与实验依据",
+        "url": "https://srl-ethz.github.io/get-ball-rolling/",
+        "locator": "该版本机构 / 传动说明；具体腱材仍待核"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "partial",
+      "scope": "Humanoids 2023",
+      "text": "MCP 的屈肌 / 伸肌腱连接到同一电机，DIP/PIP 另有耦合索；具体端部绳结、夹紧和锚点几何尚未由本轮文字说明确认。",
+      "sources": [
+        {
+          "title": "Faive Proto 0 作者稿",
+          "url": "https://arxiv.org/html/2308.02453",
+          "locator": "§II-A，驱动腱与耦合索"
+        }
+      ]
+    },
+    "return_mechanism": {
+      "status": "verified",
+      "scope": "Humanoids 2023",
+      "text": "DIP/PIP 同时由屈肌腱和独立伸肌腱驱动，MCP 由单电机的拮抗腱驱动；交叉韧带绳约束滚动接触，不能直接当作开手弹簧。",
+      "sources": [
+        {
+          "title": "Faive Proto 0 作者稿",
+          "url": "https://arxiv.org/html/2308.02453",
+          "locator": "§II-A"
+        }
+      ]
+    },
+    "tensioning": {
+      "status": "unconfirmed",
+      "scope": "Humanoids 2023",
+      "text": "初始预紧、回程后的松弛状态与补偿 / 调紧方法尚待核实；不能因有电机位置控制就判定腱索始终张紧。",
+      "sources": []
+    }
+  },
+  "ruka-v2": {
+    "name": "RUKA-v2",
+    "scope": "arXiv / ICRA Workshop 2026",
+    "status": "unconfirmed",
+    "material": null,
+    "specification": "已确认存在传力腱索；当前证据未闭合到该版本的绳芯、涂层与导管规格。",
+    "missing": "承力材料、直径或宽厚、编织 / 股数、表面处理、端接与可用张力范围待核。 不继承 RUKA v1 的 200 lb 规格。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "arXiv / ICRA Workshop 2026 · 结构、感知与实验依据",
+        "url": "https://ruka-hand-v2.github.io/",
+        "locator": "该版本机构 / 传动说明；具体腱材仍待核"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "partial",
+      "scope": "arXiv / ICRA Workshop 2026",
+      "text": "可选 PIP/DIP 定长耦合索锚在近端与远端指节；论文未在该段明确绳结、胶粘或夹件工艺，驱动索的端接也需分别核对。",
+      "sources": [
+        {
+          "title": "RUKA-v2 作者稿",
+          "url": "https://arxiv.org/html/2603.26660v1",
+          "locator": "§2.4，Optional DIP/PIP Coupling"
+        }
+      ]
+    },
+    "return_mechanism": {
+      "status": "verified",
+      "scope": "RUKA-v2 · 新增展收模块",
+      "text": "新增展收关节由一条腱索拉动，小拉簧在放松驱动腱时把关节带回中性位。此结论仅针对展收模块，不能代替所有屈伸关节的复位说明。",
+      "sources": [
+        {
+          "title": "RUKA-v2 作者稿",
+          "url": "https://arxiv.org/html/2603.26660v1",
+          "locator": "§2.3，Single-tendon actuation with spring return"
+        }
+      ]
+    },
+    "tensioning": {
+      "status": "partial",
+      "scope": "arXiv / ICRA Workshop 2026",
+      "text": "可选定长耦合索减少 PIP/DIP 相对运动对摩擦、松弛和磨损的敏感性；经腕旋转中心走线减小腕姿态引起的腱长变化。两者不等于主动张力闭环或自动收紧。",
+      "sources": [
+        {
+          "title": "RUKA-v2 作者稿",
+          "url": "https://arxiv.org/html/2603.26660v1",
+          "locator": "§2.2 / 2.4"
+        }
+      ]
+    }
+  },
+  "dexhand-021": {
+    "name": "DexHand 021 · 五指版",
+    "scope": "2025 结构与控制论文",
+    "status": "unconfirmed",
+    "material": null,
+    "specification": "已确认存在传力腱索；当前证据未闭合到该版本的绳芯、涂层与导管规格。",
+    "missing": "承力材料、直径或宽厚、编织 / 股数、表面处理、端接与可用张力范围待核。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "2025 结构与控制论文 · 结构、感知与实验依据",
+        "url": "https://arxiv.org/html/2511.03481v1",
+        "locator": "该版本机构 / 传动说明；具体腱材仍待核"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "unconfirmed",
+      "scope": "2025 结构与控制论文",
+      "text": "指端、卷线端或耦合索两端的具体固定方式尚待核实；不能确定使用绳结、胶粘、压接还是机械夹紧。",
+      "sources": []
+    },
+    "return_mechanism": {
+      "status": "unconfirmed",
+      "scope": "2025 结构与控制论文",
+      "text": "本版本各关节的主动回拉、回位弹簧、弹性关节及耦合回程分工尚待核实；不从“腱驱动”名称推定。",
+      "sources": []
+    },
+    "tensioning": {
+      "status": "unconfirmed",
+      "scope": "2025 结构与控制论文",
+      "text": "初始预紧、回程后的松弛状态与补偿 / 调紧方法尚待核实；不能因有电机位置控制就判定腱索始终张紧。",
+      "sources": []
+    }
+  },
+  "aero-hand-open": {
+    "name": "Aero Hand Open",
+    "scope": "Aero Hand Open · 2608.28578 v1 所述配置",
+    "status": "verified",
+    "material": "编织 Kevlar / Vectran 拉索",
+    "specification": "论文 §2.2 明确拉索为编织 Kevlar/Vectran，配 music-wire 回位弹簧；不同驱动与被动耦合索要分别记录。",
+    "missing": "绳径、两种纤维的组合比例、编织与端接工艺仍待核。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "Aero Hand Open 作者稿",
+        "url": "https://arxiv.org/html/2608.28578v1",
+        "locator": "§2.2，Cables and return springs"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "partial",
+      "scope": "Aero Hand Open · 2608.28578 v1 所述配置",
+      "text": "可确认电机卷轮与驱动索、指内被动耦合索的位置关系；物理端接的结、胶粘或夹件工艺尚待核，不能把仿真的 anchor site 当成实物固定方式。",
+      "sources": [
+        {
+          "title": "Aero Hand Open 作者稿",
+          "url": "https://arxiv.org/html/2608.28578v1",
+          "locator": "§2.2 / §3，实际绳路与 MuJoCo tendons"
+        }
+      ]
+    },
+    "return_mechanism": {
+      "status": "verified",
+      "scope": "Aero Hand Open · 2608.28578 v1 所述配置",
+      "text": "拉索主动屈曲，music-wire 弹簧负责被动伸展；MCP 弹簧较软，远端较硬。放松驱动时默认张开姿态，拇指各通道仍有绳路耦合。",
+      "sources": [
+        {
+          "title": "Aero Hand Open 作者稿",
+          "url": "https://arxiv.org/html/2608.28578v1",
+          "locator": "§2.2，Fingers；Cables and return springs"
+        }
+      ]
+    },
+    "tensioning": {
+      "status": "unconfirmed",
+      "scope": "Aero Hand Open · 2608.28578 v1 所述配置",
+      "text": "初始预紧、回程后的松弛状态与补偿 / 调紧方法尚待核实；不能因有电机位置控制就判定腱索始终张紧。",
+      "sources": []
+    }
+  },
+  "unitree-dex2-5": {
+    "name": "Unitree Dex2/5",
+    "scope": "官方 Dex2/5 产品规格",
+    "status": "unconfirmed",
+    "material": null,
+    "specification": "已确认存在传力腱索；当前证据未闭合到该版本的绳芯、涂层与导管规格。",
+    "missing": "承力材料、直径或宽厚、编织 / 股数、表面处理、端接与可用张力范围待核。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "官方 Dex2/5 产品规格 · 结构、感知与实验依据",
+        "url": "https://www.unitree.com/Dex2-5/",
+        "locator": "该版本机构 / 传动说明；具体腱材仍待核"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "unconfirmed",
+      "scope": "官方 Dex2/5 产品规格",
+      "text": "指端、卷线端或耦合索两端的具体固定方式尚待核实；不能确定使用绳结、胶粘、压接还是机械夹紧。",
+      "sources": []
+    },
+    "return_mechanism": {
+      "status": "unconfirmed",
+      "scope": "官方 Dex2/5 产品规格",
+      "text": "本版本各关节的主动回拉、回位弹簧、弹性关节及耦合回程分工尚待核实；不从“腱驱动”名称推定。",
+      "sources": []
+    },
+    "tensioning": {
+      "status": "unconfirmed",
+      "scope": "官方 Dex2/5 产品规格",
+      "text": "初始预紧、回程后的松弛状态与补偿 / 调紧方法尚待核实；不能因有电机位置控制就判定腱索始终张紧。",
+      "sources": []
+    }
+  },
+  "qb-softhand-research": {
+    "name": "qb SoftHand Research · 单电机",
+    "scope": "qb SoftHand Research · 单电机 · 时间轴所引用的原始版本",
+    "status": "unconfirmed",
+    "material": null,
+    "specification": "已确认存在传力腱索；当前证据未闭合到该版本的绳芯、涂层与导管规格。",
+    "missing": "承力材料、直径或宽厚、编织 / 股数、表面处理、端接与可用张力范围待核。 不继承 Pisa/IIT 原型的 Dyneema 记录。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "qbrobotics · Research 产品回溯",
+        "url": "https://qbrobotics.com/between-soft-technology-and-collaborative-robots/",
+        "locator": "该版本机构 / 传动说明；具体腱材仍待核"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "unconfirmed",
+      "scope": "qb SoftHand Research · 单电机 · 时间轴所引用的原始版本",
+      "text": "指端、卷线端或耦合索两端的具体固定方式尚待核实；不能确定使用绳结、胶粘、压接还是机械夹紧。",
+      "sources": []
+    },
+    "return_mechanism": {
+      "status": "unconfirmed",
+      "scope": "qb SoftHand Research · 单电机 · 时间轴所引用的原始版本",
+      "text": "本版本各关节的主动回拉、回位弹簧、弹性关节及耦合回程分工尚待核实；不从“腱驱动”名称推定。",
+      "sources": []
+    },
+    "tensioning": {
+      "status": "unconfirmed",
+      "scope": "qb SoftHand Research · 单电机 · 时间轴所引用的原始版本",
+      "text": "初始预紧、回程后的松弛状态与补偿 / 调紧方法尚待核实；不能因有电机位置控制就判定腱索始终张紧。",
+      "sources": []
+    }
+  },
+  "qb-softhand-2-research": {
+    "name": "qbSoftHand 2 Research",
+    "scope": "qb SoftHand2 Research · 2022 手册",
+    "status": "unconfirmed",
+    "material": null,
+    "specification": "已确认存在传力腱索；当前证据未闭合到该版本的绳芯、涂层与导管规格。",
+    "missing": "承力材料、直径或宽厚、编织 / 股数、表面处理、端接与可用张力范围待核。 不继承 Pisa/IIT 原型或单输入产品的材料。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "本次机构与操作核查依据",
+        "url": "https://qbrobotics.com/wp-content/uploads/2022/05/qbSoftHand2-Research-User-Manual.pdf",
+        "locator": "该版本机构 / 传动说明；具体腱材仍待核"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "unconfirmed",
+      "scope": "qb SoftHand2 Research · 2022 手册",
+      "text": "指端、卷线端或耦合索两端的具体固定方式尚待核实；不能确定使用绳结、胶粘、压接还是机械夹紧。",
+      "sources": []
+    },
+    "return_mechanism": {
+      "status": "unconfirmed",
+      "scope": "qb SoftHand2 Research · 2022 手册",
+      "text": "本版本各关节的主动回拉、回位弹簧、弹性关节及耦合回程分工尚待核实；不从“腱驱动”名称推定。",
+      "sources": []
+    },
+    "tensioning": {
+      "status": "unconfirmed",
+      "scope": "qb SoftHand2 Research · 2022 手册",
+      "text": "初始预紧、回程后的松弛状态与补偿 / 调紧方法尚待核实；不能因有电机位置控制就判定腱索始终张紧。",
+      "sources": []
+    }
+  },
+  "agibot-omnihand-3-ultra-t": {
+    "name": "智元 OmniHand 3 Ultra-T",
+    "scope": "智元 OmniHand 3 Ultra-T",
+    "status": "unconfirmed",
+    "material": null,
+    "specification": "已确认存在传力腱索；当前证据未闭合到该版本的绳芯、涂层与导管规格。",
+    "missing": "承力材料、直径或宽厚、编织 / 股数、表面处理、端接与可用张力范围待核。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "官方资料入口",
+        "url": "https://cn.agilink-ai.com/omni-hand3-ultra-t.html",
+        "locator": "该版本机构 / 传动说明；具体腱材仍待核"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "unconfirmed",
+      "scope": "智元 OmniHand 3 Ultra-T",
+      "text": "指端、卷线端或耦合索两端的具体固定方式尚待核实；不能确定使用绳结、胶粘、压接还是机械夹紧。",
+      "sources": []
+    },
+    "return_mechanism": {
+      "status": "unconfirmed",
+      "scope": "智元 OmniHand 3 Ultra-T",
+      "text": "本版本各关节的主动回拉、回位弹簧、弹性关节及耦合回程分工尚待核实；不从“腱驱动”名称推定。",
+      "sources": []
+    },
+    "tensioning": {
+      "status": "unconfirmed",
+      "scope": "智元 OmniHand 3 Ultra-T",
+      "text": "初始预紧、回程后的松弛状态与补偿 / 调紧方法尚待核实；不能因有电机位置控制就判定腱索始终张紧。",
+      "sources": []
+    }
+  },
+  "barrett-bh8-280": {
+    "name": "BarrettHand BH8-280",
+    "scope": "BH8 系列手册中适用于 BH8-280 的 Joint 3 机构",
+    "status": "verified",
+    "material": "不锈钢对拉缆索（Joint 3）",
+    "specification": "第三关节由对置不锈钢缆索从指根滑轮向指尖滑轮传力；整手仍含齿轮与 TorqueSwitch，不能写成纯腱驱。",
+    "missing": "缆径、钢材牌号、股数、端接内部几何与替换缆规格尚缺。",
+    "checked_on": "2026-10-05",
+    "sources": [
+      {
+        "title": "BarrettHand BH8 系列官方手册",
+        "url": "https://web.barrett.com/support/BarrettHand_Documentation/~Archive/BarrettHandUsersManual_AI-00.pdf",
+        "locator": "§7.1，Finger Cable Pretension；§9.3"
+      }
+    ],
+    "mechanisms_checked_on": "2026-10-05",
+    "fixation": {
+      "status": "partial",
+      "scope": "BH8 系列手册中适用于 BH8-280 的 Joint 3 机构",
+      "text": "手册确认 Joint 3 有缆索端接与机械张紧螺钉，并用邻近紧定螺钉锁住调整；端接内部几何未在所核段落完整说明。Loctite 222 用于紧定螺钉螺纹，不是将承力绳粘在指节上。",
+      "sources": [
+        {
+          "title": "BarrettHand BH8 系列官方手册",
+          "url": "https://web.barrett.com/support/BarrettHand_Documentation/~Archive/BarrettHandUsersManual_AI-00.pdf",
+          "locator": "§7.1，图 11–12"
+        }
+      ]
+    },
+    "return_mechanism": {
+      "status": "verified",
+      "scope": "BH8 系列手册中适用于 BH8-280 的 Joint 3 机构",
+      "text": "Joint 3 由从指根滑轮到指尖滑轮的对置缆索双向传力，运动由电机和 TorqueSwitch 机构组织；不是仅靠单条绳放松后被动开手。",
+      "sources": [
+        {
+          "title": "BarrettHand BH8 系列官方手册",
+          "url": "https://web.barrett.com/support/BarrettHand_Documentation/~Archive/BarrettHandUsersManual_AI-00.pdf",
+          "locator": "§7.1 / §9.3"
+        }
+      ]
+    },
+    "tensioning": {
+      "status": "verified",
+      "scope": "BH8 系列手册中适用于 BH8-280 的 Joint 3 机构",
+      "text": "长期循环后预紧可减小，通过张紧螺钉重新调整，再锁住紧定螺钉。手册指出过度预紧会改变摩擦、减小运动范围，甚至损坏缆索；不把该维护扭矩作为其他手的推荐值。",
+      "sources": [
+        {
+          "title": "BarrettHand BH8 系列官方手册",
+          "url": "https://web.barrett.com/support/BarrettHand_Documentation/~Archive/BarrettHandUsersManual_AI-00.pdf",
+          "locator": "§7.1，Finger Cable Pretension"
+        }
+      ]
+    }
+  }
+}

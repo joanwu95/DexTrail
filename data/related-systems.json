@@ -1,0 +1,21 @@
+[
+  {
+    "id": "sudo-r1",
+    "name": "Sudo R1",
+    "kind": "system",
+    "status": "partial",
+    "detail_url": "systems/sudo-r1/",
+    "venue": "已收录 · 机器人操作系统档案",
+    "facts": {"company": {"value": "苏度 · Sudo Robotics"}},
+    "coordinates": {
+      "year": 2026,
+      "dof": null,
+      "actuators": null,
+      "transmission": null,
+      "scope": "R1 是整套机器人系统；手部独立型号与关节参数尚未公开核实。",
+      "gaps": {"dof": "手部主动关节数未公开核实", "actuators": "手部执行器数量未公开核实", "transmission": "手部传动结构未公开核实"}
+    },
+    "timeline": {"year": 2026, "label": "2026 · 官方系统介绍", "detail": "官网介绍标注 sudo robotics team · 2026；这不是独立灵巧手的首发时间。", "source": {"title": "Sudo R1 官方介绍", "url": "https://www.sudo.ai/"}},
+    "media": null
+  }
+]

@@ -1,0 +1,50 @@
+/* Comparison inherits the existing dark canvas, violet accents and brand scale. */
+.dex-compare{max-width:1700px;margin:auto}
+.compare-picker{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:24px 0 16px}
+.compare-picker label{font-size:14px;color:var(--dex-muted)}
+.compare-picker :is(input,select){background:var(--dex-panel);border:1px solid #46505d;border-radius:5px;color:var(--dex-text);font:inherit;padding:10px 12px;min-width:0}
+.compare-picker input{width:240px}.compare-picker select{flex:1;max-width:580px}
+.dex-compare button,.dex-compare-entry{border:0;border-bottom:1px solid transparent;border-radius:0;padding:9px 0;min-height:44px;color:var(--dex-gold);background:transparent;font:inherit;cursor:pointer}
+.dex-compare button:disabled{opacity:.45;cursor:not-allowed}
+.dex-compare :is(button,a,input,select,summary,[tabindex]):focus-visible{outline:2px solid var(--dex-gold);outline-offset:4px}
+.compare-selected,.compare-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.compare-selected .compare-chip{font-size:14px}.compare-actions{font-size:14px;margin-bottom:22px}
+.compare-status{font-size:14px;color:var(--dex-muted);min-height:25px}
+.compare-view-controls{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin:24px 0 10px}
+.compare-modes{display:flex;gap:24px;flex-wrap:wrap}
+.dex-compare .compare-modes button{border-bottom:2px solid transparent;color:var(--dex-muted);font-size:14px}
+.dex-compare .compare-modes button[aria-pressed="true"]{border-bottom-color:var(--dex-gold);color:var(--dex-gold);background:transparent}
+.compare-diff-toggle{display:flex;align-items:center;gap:9px;font-size:14px;color:var(--dex-muted);cursor:pointer}
+.compare-diff-toggle input{accent-color:var(--dex-gold);width:16px;height:16px}
+.compare-view-note{font-size:13px;color:var(--dex-muted);line-height:1.8}
+.compare-row-flags{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.compare-flag{display:inline-block;font-size:11px;font-weight:400;padding:2px 8px;border:1px solid;border-radius:999px;white-space:nowrap}
+.compare-flag.is-different{color:#a4d8dc;border-color:#79bfc266;background:#79bfc210}
+.compare-flag.is-boundary{color:var(--dex-accent);border-color:color-mix(in srgb,var(--dex-accent) 40.0%,transparent);background:color-mix(in srgb,var(--dex-accent) 6.3%,transparent)}
+.compare-flag.is-unknown{color:#b8bfca;border-color:#a0acba55;background:#a0acba0a}
+.compare-primary{font-weight:500}.compare-no-rows{padding:20px;color:var(--dex-muted);font-size:15px}
+.compare-caution{border-left:2px solid var(--dex-gold);padding:10px 16px;background:color-mix(in srgb,var(--dex-accent) 3.1%,transparent);color:#cbd1da;font-size:14px}
+.compare-table-scroll{overflow:auto;max-height:72vh;scroll-margin-top:24px;margin-top:24px;border-top:1px solid var(--dex-line)}
+.md-typeset .compare-table-scroll table:not([class]){display:table;width:100%;table-layout:fixed;margin:0;background:transparent;border:0;font-size:15px}
+.compare-table-scroll caption{text-align:left;padding:12px 0;color:var(--dex-muted);font-size:13px}
+.md-typeset .compare-table-scroll :is(th,td){vertical-align:top;padding:20px;border-bottom:1px solid var(--dex-line);border-right:1px solid #292e3770;overflow-wrap:anywhere}
+.md-typeset .compare-table-scroll thead th{background:#181b21;font-size:16px;font-weight:600;min-width:240px}
+.md-typeset .compare-table-scroll thead th{position:sticky;top:0;z-index:2}
+.md-typeset .compare-table-scroll tbody th{position:sticky;left:0;background:#181b21;z-index:1}
+.md-typeset .compare-table-scroll tr>th:first-child{width:200px}
+.compare-table-scroll th strong{font-weight:600}.compare-table-scroll small{display:block;font-size:13px;font-weight:400;line-height:1.7;color:var(--dex-muted);margin-top:8px}
+.compare-table-scroll td p{white-space:pre-line;margin:0 0 12px;line-height:1.85}
+.compare-table-scroll .compare-scope,.compare-table-scroll .compare-unknown{color:var(--dex-muted);font-size:14px}
+.compare-table-scroll details{border:0;background:transparent;box-shadow:none;margin:12px 0 0;font-size:13px}
+.compare-table-scroll summary{color:var(--dex-gold);cursor:pointer}
+.md-typeset .dex-compare .compare-table-scroll details{border:0;background:transparent;box-shadow:none;padding:0}
+.md-typeset .dex-compare .compare-table-scroll summary{padding:8px 0;margin:0;background:transparent;border-top:1px solid var(--dex-line);font-size:13px}
+.md-typeset .dex-compare .compare-table-scroll summary:before,.md-typeset .dex-compare .compare-table-scroll summary:after{display:none}
+.compare-reading{margin-top:55px;padding-top:25px;border-top:1px solid var(--dex-line)}
+.compare-reading-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}.compare-reading-grid p{color:var(--dex-muted);font-size:15px}.compare-reading-grid h3{font-size:18px!important}
+.compare-sr{position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden}
+.hand-heading .dex-compare-entry{display:inline-block;margin:12px 0 0 14px;font-size:14px}
+@media(max-width:800px){.compare-picker input{width:100%}.compare-picker select{width:100%;flex:auto}.compare-reading-grid{grid-template-columns:1fr;gap:8px}.md-typeset .compare-table-scroll table:not([class]){min-width:850px}.hand-heading .dex-compare-entry{margin-left:0;display:table}}
+
+/* Text actions retain visible hover feedback without enclosing boxes. */
+.dex-compare button:not(:disabled):hover,.dex-compare-entry:hover{border-bottom-color:var(--dex-gold)}

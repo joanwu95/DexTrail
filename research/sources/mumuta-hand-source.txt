@@ -1,0 +1,93 @@
+
+ Biohybrid hand gestures with human muscles | The University of Tokyo
+JavaScript is required to display the University of Tokyo website correctly. Please enable JavaScript in your browser settings and refresh the page.
+ Skip to content
+ Contact
+ 日本語
+ People
+ Giving to UTokyo
+ UTokyo FOCUS
+ Features
+ Articles
+ Events
+ Press releases
+ Jobs
+ Find stories
+ People
+ UTokyo FOCUS
+ Features
+ Articles
+ Events
+ Press releases
+ Jobs
+ Find stories
+ HOME
+ Access and Campus Maps
+ Contact
+ Make a donation
+ PRESS RELEASES
+ Search
+ Search
+ Biohybrid hand gestures with human muscles Complex finger movements made possible with rolls of tendonlike human muscle tissue Research news 
+ Public Relations Office
+ Graduate School of Information Science and Technology
+ February 13, 2025
+ Share
+ Tweet
+ Rock, paper, scissors. The complex combination of movements required for this simple scissor gesture is a big step up from the capabilities of previous biohybrid robots. © X. Ren, Y. Morimoto and S. Takeuchi, 2025/ Science Robotics
+ A biohybrid hand which can move objects and do a scissor gesture has been built by a team at the University of Tokyo and Waseda University in Japan. The researchers used thin strings of lab-grown muscle tissue bundled into sushilike rolls to give the fingers enough strength to contract. These multiple muscle tissue actuators (MuMuTAs), created by the researchers, are a major development towards building larger biohybrid limbs. While currently limited to the lab environment, MuMuTAs have the potential to advance future biohybrid prosthetics, aid drug testing on muscle tissue and broaden the potential of biohybrid robotics to mimic real-life forms.
+ “Rock, paper, scissors” is a classic schoolyard game or quick-fire way to make decisions for the indecisive. But choose paper and you are going to lose to this robot hand, which has mastered the art of the scissor gesture. And while it might seem like a simple motion, in the realm of biohybrids and prosthetic limbs, this is a leap forward towards new levels of realism and usability.
+ The hand is made of a 3D-printed plastic base, with tendons of human muscle tissue which move the fingers. Until now, biohybrid devices have typically been on a much smaller scale (about 1-centimeter long) or limited to simpler or single-joint movements. By contrast, the biohybrid hand is 18 cm in length and has multijointed fingers, which can be moved individually to make gestures or in combination to manipulate objects.
+ The biohybrid hand (scale bar: 1 cm). The MuMuTAs are mounted on the forearm of the hand with a pair for each finger. Gold electrodes inserted into both sides of each MuMuTA carry an electrical current, which contracts the muscles with varying force. A cable-driven mechanism in the hand converts the straight muscle contractions into rotational movements for the joints. © X. Ren, Y. Morimoto and S. Takeuchi, 2025/ Science Robotics
+ “Our key achievement was developing the MuMuTAs. These are thin strands of muscle tissue grown in a culture medium and then rolled up into a bundle like a sushi roll to make each tendon,” explained Professor Shoji Takeuchi from the University of Tokyo. “Creating the MuMuTAs enabled us to overcome our biggest challenge, which was to ensure enough contractile force and length in the muscles to drive the hand’s large structure.”
+ Thick muscle tissue which is needed to move larger limbs is difficult to grow in the lab, as it suffers from necrosis. This is when insufficient nutrients reach the center of the muscle, resulting in tissue loss. However, by using multiple thin muscle tissues bundled together to act as one larger muscle, the team was able to create tendons with enough strength.
+ The MuMuTAs are stimulated using electrical currents, delivered through waterproof cables. To test the abilities of the hand, the team manipulated the fingers to form a scissor gesture by contracting the little finger, ring finger and thumb. They also used the fingers to grasp and move the tip of a pipette. This demonstrated the hand’s ability to mimic a range of actions, as the multijointed fingers can be flexed either separately or at the same time, an impressive feat.
+ Making the MuMuTAs. An MuMuTA consists of multiple thin muscle tissues, each of which is slender enough to prevent central necrosis, i.e., tissue loss. The MuMuTA’s ability to contract is enhanced by the high fiber alignment of the tissues, which have been cultured on a flat place. Rolling this sheetlike structure into a three-dimensional shape minimizes variation among individual muscle tissues, enabling superior contractability. © X. Ren, Y. Morimoto and S. Takeuchi, 2025/ Science Robotics
+ Using real muscle tissue does however come with some downsides, as anyone who has been to the gym may know. “While not entirely surprising, it was interesting that the contractile force of the tissues decreased and showed signs of fatigue after 10 minutes of electrical stimulation, yet recovered within just one hour of rest. Observing such a recovery response, similar to that of living tissues, in engineered muscle tissues was a remarkable and fascinating outcome,” said Takeuchi.
+ Currently the hand must be suspended in liquid so that the “anchors,” or ties, which connect the muscles to the hand can float without friction, allowing the fingers to move smoothly. However, the team believes that with further development, it will be possible to build a free-moving hand.
+ Another further challenge with the current design is that the fingers cannot be intentionally returned to their straight starting position but do so by floating into place. Adding an elastic material to snap them back into position, or more MuMuTAs on the back of the fingers which contract in the opposite direction, would enable more control over finger movement.
+ “A major goal of biohybrid robotics is to mimic biological systems, which necessitates scaling up their size. Our development of the MuMuTAs is an important milestone for achieving this,” said Takeuchi. “The field of biohybrid robotics is still in its infancy, with many foundational challenges to overcome. Once these basic hurdles are addressed, this technology could be used in advanced prosthetics, and could also serve as a tool for understanding how muscle tissues function in biological systems, to test surgical procedures or drugs targeting muscle tissues.”
+ Driving principle of biohybrid finger. The biohybrid finger employs a cable-driven mechanism using a tendonlike structure. This tendonlike structure connects the multijointed finger to an MuMuTA. The contraction of MuMuTA pulls the tendonlike structure, bending the finger. © X. Ren, Y. Morimoto and S. Takeuchi, 2025/ Science Robotics
+ Papers
+ X. Ren, Y. Morimoto and S. Takeuchi, "Biohybrid hand actuated by multiple human muscle tissues," Science Robotics: February 12, 2025, doi:10.1126/scirobotics.adr5512.
+Link (Publication)
+ Related links
+ Graduate School of Information Science and Technology
+ T Lab
+ [Press release, January 2024] “Shuffling robot uses biological muscle to move and spin”
+ [Press release, June 2022] “Robot skin heals”
+ [Press release, January 2021] “How does your computer smell”
+ Science and Technology
+ Biology Life Science
+ Engineering and Technology
+ Materials Science
+ UTokyo Research
+ Inquiries about the content of this page: Public Relations Office
+ Send inquiry
+ Social media directory
+ Site map
+ Site policy
+ Privacy policy
+ Jobs
+ UTokyo Portal
+ utelecon
+ Frequently asked questions
+ Access and campus maps
+ Disseminating information for UTokyo during disasters
+ This website is managed by the Public Relations Office.
+ For inquiries regarding the content of individual pages, please use the contact information listed on each page.
+ © The University of Tokyo
+ Kashiwa Campus
+ Hongo Campus
+ Komaba Campus
+ Access and Campus Maps
+ Close
+ Back
+ Access and Campus Maps
+ Close
+ Back
+ Access and Campus Maps
+ Close
+ Back
+ Access and Campus Maps
+ Close

@@ -1,0 +1,237 @@
+{
+  "schema_version": 1,
+  "sources": {
+    "dlr": {
+      "title": "DLR · Hand II",
+      "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/hand-ii",
+      "kind": "official",
+      "locator": "2001 展示年份、传感配置及参考文献；未复现实验",
+      "verified_on": "2026-10-04"
+    },
+    "softhand": {
+      "title": "Catalano 等 · Adaptive Synergies",
+      "url": "https://www.centropiaggio.unipi.it/sites/default/files/PisaIIT_SoftHand_0.pdf",
+      "kind": "paper",
+      "locator": "摘要、§II 协同定义、§IV 机构；未复现实验",
+      "verified_on": "2026-10-04"
+    },
+    "softhand-date": {
+      "title": "SoftHand · 期刊发表元数据",
+      "url": "https://portal.fis.tum.de/en/publications/adaptive-synergies-for-the-design-and-control-of-the-pisaiit-soft/",
+      "kind": "official",
+      "locator": "期刊 2014-04、DOI；不作为原型首发时间",
+      "verified_on": "2026-10-04"
+    },
+    "openai": {
+      "title": "OpenAI 等 · Learning Dexterous In-Hand Manipulation",
+      "url": "https://arxiv.org/abs/1808.00177v5",
+      "kind": "paper",
+      "locator": "摘要及提交历史：v1 为 2018-08-01，所读摘要为 v5；未复现",
+      "verified_on": "2026-10-04"
+    },
+    "qb": {
+      "title": "qbrobotics · Research 产品回溯",
+      "url": "https://qbrobotics.com/between-soft-technology-and-collaborative-robots/",
+      "kind": "official",
+      "locator": "厂商回溯中的 2018 推出记录与设计说明；未核查销量",
+      "verified_on": "2026-10-04"
+    },
+    "trifinger": {
+      "title": "Wüthrich 等 · TriFinger",
+      "url": "https://arxiv.org/abs/2008.03596",
+      "kind": "paper",
+      "locator": "摘要及提交历史；2020-08-08 为 v1，页面当前摘要为 v2；未复现",
+      "verified_on": "2026-10-04"
+    },
+    "leap": {
+      "title": "Shaw 等 · LEAP Hand，RSS 2023",
+      "url": "https://roboticsproceedings.org/rss19/p089.html",
+      "kind": "paper",
+      "locator": "RSS 2023 摘要及会议元数据；未独立验证成本与任务表现",
+      "verified_on": "2026-10-04"
+    },
+    "dexee": {
+      "title": "Shadow · DEX-EE 公告，2024-05-09",
+      "url": "https://shadowrobot.com/shadow-robot-unveils-the-worlds-most-robust-dexterous-robot-hand-developed-in-partnership-with-google-deepmind/",
+      "kind": "official",
+      "locator": "公告日期、DeepMind 合作及长期实验需求；性能为厂商陈述",
+      "verified_on": "2026-10-04"
+    }
+  },
+  "events": [
+    {
+      "id": "dlr-hand-ii-2001",
+      "date": "2001",
+      "date_relation": "on",
+      "basis": "public-demonstration",
+      "track": "academic",
+      "title": "DLR Hand II：多传感器操作平台",
+      "date_note": "DLR 记载 2001 年首次公开展示；此处不补月份。",
+      "focus": "机构与感知的系统集成",
+      "problem": "为抓取和操作研究提供多传感器手平台。",
+      "approach": "将手指机构、关节侧传感与控制系统集成。",
+      "evidence": "机构官网提供技术配置，并链接 2001 设计论文与 2003 实验论文。",
+      "boundary": "本轮读取官网配置与文献入口；实验论文的任务结果尚待全文对照，不能由传感器数量推出操作能力。",
+      "source_ids": [
+        "dlr"
+      ],
+      "hand_ids": [
+        "dlr-hand-ii"
+      ],
+      "hand_names": {
+        "dlr-hand-ii": "DLR Hand II"
+      }
+    },
+    {
+      "id": "adaptive-synergies-2014",
+      "date": "2014-04",
+      "date_relation": "on",
+      "basis": "publication",
+      "track": "academic",
+      "title": "Pisa/IIT SoftHand：把适应性写进机构",
+      "date_note": "采用 IJRR 期刊发表月份；作者稿引用了更早工作，2014 不表示协同概念首次出现。",
+      "focus": "机构与控制协同设计",
+      "problem": "在丰富抓形与控制、硬件复杂度之间寻找取舍。",
+      "approach": "以自适应协同组织运动；论文原型通过一个执行器驱动 19 个关节。",
+      "evidence": "论文给出机构设计及抓取实验，将柔顺结构与低维驱动联系起来。",
+      "boundary": "论文原型与商业产品须分别核查；抓取示例不能证明任意手内操作。",
+      "source_ids": [
+        "softhand",
+        "softhand-date"
+      ],
+      "hand_ids": [
+        "pisa-iit-softhand"
+      ],
+      "hand_names": {
+        "pisa-iit-softhand": "Pisa/IIT SoftHand"
+      }
+    },
+    {
+      "id": "learning-in-hand-2018",
+      "date": "2018-08-01",
+      "date_relation": "on",
+      "basis": "preprint",
+      "track": "academic",
+      "title": "学习手内重定向：从仿真到实物",
+      "date_note": "日期为 arXiv v1 提交；本轮复核 v5 摘要与版本历史。",
+      "focus": "策略学习与迁移",
+      "problem": "让在仿真中训练的物体重定向策略用于真实硬件。",
+      "approach": "强化学习结合物理参数与视觉外观随机化。",
+      "evidence": "作者报告在历史 Shadow Hand 系统上实现视觉物体重定向。",
+      "boundary": "这是该研究配置的结果；不证明当前 Classic 配置自带策略。完整试验协议和失败统计待继续阅读。",
+      "source_ids": [
+        "openai"
+      ],
+      "hand_ids": [
+        "shadow-hand"
+      ],
+      "hand_names": {
+        "shadow-hand": "Shadow Classic（与历史实验配置区分）"
+      }
+    },
+    {
+      "id": "qb-research-2018",
+      "date": "2018",
+      "date_relation": "on",
+      "basis": "retrospective",
+      "track": "industry",
+      "title": "qb SoftHand Research：面向协作机器人接入",
+      "date_note": "2018 推出时间来自厂商回溯；不当作已核查的首批交付日期。",
+      "focus": "应用接入与产品化",
+      "problem": "厂商提出面向协作机器人的适应性抓握需求。",
+      "approach": "单电机腱传动与柔顺结构，并组织机器人兼容与展示。",
+      "evidence": "厂商记录 UR+ 接入及协作机器人演示。",
+      "boundary": "这是厂商的产品化记录，不是独立的产线可靠性或经济性评价；本节点不混用 SoftHand2 参数。",
+      "source_ids": [
+        "qb"
+      ],
+      "hand_ids": []
+    },
+    {
+      "id": "trifinger-2020",
+      "date": "2020-08-08",
+      "date_relation": "on",
+      "basis": "preprint",
+      "track": "academic",
+      "title": "TriFinger：降低真实实验门槛",
+      "date_note": "日期为 arXiv v1 提交；本轮阅读当前 v2 摘要及提交历史。",
+      "focus": "开放平台与实验基础设施",
+      "problem": "作者将真实系统实验的时间和费用作为研究障碍。",
+      "approach": "开放硬件与软件、安全检查及开发接口。",
+      "evidence": "摘要报告控制和学习实验，提出减少人工看护的研究平台。",
+      "boundary": "本站未运行安全检查或复现实验；无人看护是作者方案与报告，不能直接推广到任意环境。",
+      "source_ids": [
+        "trifinger"
+      ],
+      "hand_ids": [
+        "trifinger"
+      ],
+      "hand_names": {
+        "trifinger": "TriFinger"
+      }
+    },
+    {
+      "id": "leap-2023",
+      "date": "2023-07",
+      "date_relation": "on",
+      "basis": "publication",
+      "track": "academic",
+      "title": "LEAP v1：为机器人学习组织硬件与资源",
+      "date_note": "采用 RSS 2023 会议月份，区别于后来 arXiv 提交时间。",
+      "focus": "构型、可获得性与开发资源",
+      "problem": "作者将适合机器学习的硬件可获得性作为研究问题。",
+      "approach": "设计四指构型，同时发布制造、模型和接口资源。",
+      "evidence": "论文报告遥操作和 sim2real 等任务；资源公开属于论文与作者项目的记录。",
+      "boundary": "成本、组装与任务表现依赖论文年代和条件；未在本站复现，不推广至 LEAP v2。",
+      "source_ids": [
+        "leap"
+      ],
+      "hand_ids": [
+        "leap-hand"
+      ],
+      "hand_names": {
+        "leap-hand": "LEAP v1 Full"
+      }
+    },
+    {
+      "id": "dexee-2024",
+      "date": "2024-05-09",
+      "date_relation": "on",
+      "basis": "announcement",
+      "track": "industry",
+      "title": "DEX-EE：研究需求反馈到硬件设计",
+      "date_note": "日期为 Shadow 公告发布；公告预告当月 ICRA 展示，未据此填写实际交付日。",
+      "focus": "长期实验、维修与触觉反馈",
+      "problem": "厂商说明反复试错损伤和维修会中断学习实验。",
+      "approach": "Shadow 与 DeepMind 合作，根据研究反馈迭代硬件，强调可靠性与触觉。",
+      "evidence": "官方明确描述合作过程并提供标准产品购买入口，是研究需求影响硬件设计的具体案例。",
+      "boundary": "耐用性与控制性能为厂商陈述，本轮没有独立寿命测试；DEX-EE 不视为 Classic 的直接下一代。",
+      "source_ids": [
+        "dexee"
+      ],
+      "hand_ids": []
+    }
+  ],
+  "relations": [
+    {
+      "from": "adaptive-synergies-2014",
+      "to": "qb-research-2018",
+      "kind": "same-route",
+      "text": "本站对照：两份资料均讨论少输入、柔顺与适应性抓握。本轮记录只支持同类路线对照，尚未逐项证明论文原型到该商业版本的工程继承。",
+      "source_ids": [
+        "softhand",
+        "qb"
+      ]
+    },
+    {
+      "from": "trifinger-2020",
+      "to": "leap-2023",
+      "kind": "comparison",
+      "text": "本站解读：两项工作都把实验门槛与开放资源放入研究问题，但平台构型和任务不同。共同关注点可用于比较，不表示后者由前者演化。",
+      "source_ids": [
+        "trifinger",
+        "leap"
+      ]
+    }
+  ]
+}

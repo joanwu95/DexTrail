@@ -1,0 +1,535 @@
+
+ A detachable crawling robotic hand | Nature Communications
+ Skip to main content
+ Thank you for visiting nature.com. You are using a browser version with limited support for CSS. To obtain
+ the best experience, we recommend you use a more up to date browser (or turn off compatibility mode in
+ Internet Explorer). In the meantime, to ensure continued support, we are displaying the site without styles
+ and JavaScript.
+ Advertisement
+ View all journals
+ Saved research
+ Search
+ Log in
+ Content
+ Explore content
+ About the journal
+ Publish with us
+ Sign up for alerts
+ RSS feed
+ nature
+nature communications
+articles
+ article
+ A detachable crawling robotic hand
+ Download PDF
+ Download PDF
+ Article
+ Open access
+ Published: 20 January 2026
+ A detachable crawling robotic hand
+ Xiao Gao 
+ (高霄) 
+ ORCID: orcid.org/0000-0002-1495-47241, 
+Kunpeng Yao 
+ (姚坤鹏)2, 
+Kai Junge 
+ ORCID: orcid.org/0000-0002-5274-95611, 
+Josie Hughes1 & 
+…
+Aude Billard 
+ ORCID: orcid.org/0000-0002-7076-80101 
+Show authors
+ Nature Communications
+ volume 17, Article number: 428 (2026) Cite this article
+ Save article
+ View saved research
+ 38k Accesses
+ 2 Citations
+ 609 Altmetric
+ Metrics details
+ Abstract
+The human hand is often viewed as the pinnacle of dexterity, and many robotic hands adopt anthropomorphic designs, while others pursue non-anthropomorphic forms for structural balance or task optimization. However, human-like asymmetry and reliance on a single thumb limit applications that require symmetry or modularity, and most designs still struggle to combine autonomous movement, multi-object grasping, and modularity in one platform. We present a reversible finger design that allows grasping from both sides, with finger placement optimized to distribute roles and satisfy grasping and crawling constraints. In this work, we show that a detachable, reversible hand reliably combines manipulation and locomotion, enabling beyond-reach multi-item retrieval during crawling, one-handed tool use, and seamless bridging of stationary manipulation with autonomous mobility for industrial, service, and exploratory robotics.
+ Similar content being viewed by others
+ Spatially distributed biomimetic compliance enables robust anthropomorphic robotic manipulation
+ Article
+ Open access
+ 26 April 2025
+ Design and evaluation of a tendon-and-linkage hybrid-driven humanoid dexterous hand
+ Article
+ Open access
+ 04 August 2026
+ Multichannel haptic feedback unlocks prosthetic hand dexterity
+ Article
+ Open access
+ 11 February 2022
+ Explore related subjects
+ Discover the latest articles and news in related subjects.
+ Computer science
+ Mechanical engineering
+ Soft Robotic Systems and Actuation Technologies
+ Introduction
+The human hand has long been a valuable source of inspiration for the design of robotic hands1,2. Often regarded as the ultimate embodiment of dexterity, it is capable of performing a wide range of intricate movements essential for tasks ranging from simple gripping to fine manipulation3.
+One of the primary limitations is its asymmetric structure (Fig. 1a), which affects the range of manipulation strategies that can be employed. The human thumb plays a crucial role in opposing the other fingers for the hand’s functionality4 (Fig. 1b). However, this asymmetry restricts the hand’s ability to perform certain types of fine manipulation. For example, screwing a bottle cap with one hand or manipulating a screwdriver that requires symmetric points of contact, posing significant challenges5.
+Fig. 1: Concept and design of the symmetric robotic hand.Full size image
+a The motion of a human hand is mainly limited by its lack of symmetry: the unidirectional bending and reliance on wrist reorientation largely restrict its functionality and range of motion. b The thumb-index coupling (i.e., an opposing finger pair) greatly enhances the hand’s capability to grasp and manipulate (top left), and surpasses the capabilities of other finger pairs (top right, bottom right), having only one such coupling limits the hand’s ability to perform more complex or challenging grasps, and often requires wrist reorientation (bottom left). c The human hand cannot grasp objects beyond its reachable workspace, a limitation imposed by the range of motion of the arm. d To overcome these limitations, we designed a robotic hand with a uniform, symmetrical structure. Each finger can bend bi-directionally, increasing dexterity. The hand also features a detachable wrist, enabling it to transform into a crawling robot for extended functionality. e Any two fingers of the robotic hand can function as an opposing finger pair for efficient grasping (top). Its two-axis symmetry allows for reversible, multi-object grasping with high efficiency (bottom). f When detached from the robotic arm, the robotic hand can perform loco-manipulation: crawling to objects outside its original workspace, grasping them, and continuing to crawl while holding the object.
+Another limitation is that the hand is fixed at the end of the arm, which restricts its mobility and limits the workspace it can access. Even with the shoulder and elbow joints contributing to the overall reach, there are regions beyond the arm’s workspace that remain inaccessible (Fig. 1c). Tasks such as retrieving objects that have fallen out of reach or performing precision operations in narrow, cluttered spaces, are particularly challenging due to the restricted reachable region. This could happen, for instance, when attempting to reach objects in confined areas such as underneath furniture or behind shelves. Alleviating this limitation could largely advance the capability of dexterous robotic hands to enable out-of-reach grasping6.
+Hence, despite its remarkable capabilities, the human hand’s asymmetrical shape and single opposable thumb, as well as inherent attachment to the human arm, limit its functionality. Many anthropomorphic robotic hands inherit these constraints, relying on similar joint arrangements and degrees of freedom, for example, soft robotic hands7,8, cable-driven dexterous hands such as the Shadow Dexterous Hand, and fully actuated motor-driven hands like the Allegro Hand.
+Moreover, the human hand cannot be easily “reversed” to switch and use both sides of the palm effectively in different scenarios. Alleviating this limitation could enable the hand to perform different tasks seamlessly without repositioning the arm or wrist. For example, tasks that require holding two objects simultaneously (Fig. 1b bottom left and Supplementary Movie 1, which illustrates a comparison of human versus symmetric hand grasping in these scenarios) – such as holding a bottle while picking up a chip can – often force humans to rotate or elaborately maneuver the hand, or use both hands. Similarly, accessing objects positioned behind the hand while keeping the current grip stable can be extremely challenging, requiring awkward wrist contortions or body repositioning.
+The concept of extending manual dexterity by integrating crawling mobility is inspired by nature. Many organisms have evolved versatile limbs that seamlessly switch between different functionalities like grasping and locomotion9. The octopus, with its flexible arms, is capable of both crawling across the seafloor and manipulating objects, such as opening shells or capturing prey10,11. Certain species of insects and crustaceans, such as the mantis shrimp and the praying mantis, employ specialized limbs for both locomotion and prey capture12, illustrating how a single appendage can combine mobility and manipulation. While these biological solutions differ from robotic implementations, they inspire integrated designs.
+The desire to integrate multiple functionalities has led to the development of hybrid mobile robots, with one prominent example being the quadruped robot equipped with a manipulator, which can walk to a target location and then use its manipulator to interact with objects13,14,15. Such systems, however, achieve multi-functionality by combining independent robotic modules – a mobile platform and a robotic arm-hand system. Consequently, even when mounted on mobile platforms, industrial robotic arms and hands remain largely limited to their specialized functions, lacking the ability to adapt the entire system’s behavior to complex environments. Alternatively, various soft robots inspired by snakes16,17 or octopuses18,19,20 achieve manipulation and locomotion using the same embodiment, without integrating separate body parts. However, soft robots often come at the cost of limited manipulability and are confined to a niche range of applications, leaving a gap in multi-functionality in more general-purpose industrial robots. A conceptually related system is the “Platonic Beast” robot family21, composed of spherical symmetric bodies with identical limbs. Limbs could either be used to locomote or to transport an object.
+Achieving such versatility requires not only innovative mechanical designs, but also associated planning and control algorithms that are capable of addressing the complexities of dual-functionality. In particular, designing systems that seamlessly integrate locomotion and manipulation presents unique challenges, requiring a balance of functionalities and resolution of potential conflicts. Multi-objective optimization approaches have emerged as powerful tools to address these complexities, such as unified frameworks for dynamic locomotion and manipulation22,23, co-optimized design and control for dexterous robotic hands24,25, and unified policies for skill transfer between locomotion and manipulation using reinforcement learning26,27. Genetic Algorithms, inspired by natural selection, are particularly well-suited for exploring vast design spaces and identifying optimal solutions in complex robotic design problems28,29,30,31.
+In this work, we present a robotic hand design that addresses these limitations through three key innovations: (1) a symmetric structure that allows fingers on opposing sides to function as “dual thumbs”, affording diverse and precise grasp configurations, (2) an attachment-detachment mechanism that allows the hand to function both as a conventional end-effector and as a mobile unit, capable of crawling across surfaces to retrieve objects beyond the reach of a stationary robotic arm, and (3) the reversibility of fingers allowing either side to be used for grasping without the need for repositioning in certain scenarios (Fig. 1d–f, Supplementary Movie 1 and Supplementary Text 3). We further develop an algorithmic procedure that selects, within predefined bounds, the length, placement, and functional roles of the fingers to satisfy grasping and crawling constraints. We show that the hand grasps from both sides, detaches to crawl beyond normal reach, retrieves multiple objects, and reattaches while maintaining secure grasps, demonstrating a practical route to coupling manipulation with self-mobility for industrial, service, and exploratory settings (Fig. 1f).
+Results
+Overview of hand design and features
+The proposed robotic hand integrates three main design innovations: (1) a symmetric architecture with identical fingers for reversible grasping and extended dexterity; (2) an attachment-detachment mechanism that enables switching between arm-mounted manipulation and autonomous crawling; and (3) a control strategy that dynamically allocates fingers for grasping or locomotion. The mechanical design, kinematic capabilities, and reversibility are introduced in Methods: Robot Mechanical Design and demonstrated in Experiments 2 and 4; modularity and role-switching behavior are detailed in Methods: Control and Docking Strategy and Experiment 3; and the optimization process for finger placement and gait is discussed in Supplementary Text 2 and Experiment 1.
+Experiment 1: Optimized design for versatile functions
+To address the key limitations in the dexterity and adaptability of both biological and robotic hands, delineated previously, we design a multi-purpose, multi-function hand. This is enabled by leveraging the inherent structural similarities between the crawling creatures (and mobile robots) and robotic manipulators (such as multi-fingered hands).
+Great attention was devoted to ensuring that the hand design could be modified at will, through a multi-purpose optimization framework to generate a hand optimized for the task. The number and placement of the fingers may vary, depending on the number and shape of the objects. Similarly, not all configurations may enable the hand to perform locomotion and manage a tight grasp simultaneously. The database consists of a standard hand model with a palm and various configurable fingers, where both the number and placement of fingers can be adjusted. In this work, we use the database to denote the complete set of possible hand configurations and associated grasp strategies; the grasp taxonomy is a structured classification of these strategies, composed of basic finger-object contact configurations, referred to as grasp primitives. Each grasp type is a specific instance of a grasp primitive applied to particular objects (Fig. 2 and Supplementary Movie 5). Each grasp type is generated by selecting any two geometries of the robot to make grasping contact. To simplify the searching space, only 1 or 2 fingers are adopted for grasping. However, the framework is not limited to using a pair of fingers for grasping and should one add more fingers to the hand, one could use all the variety of multi-finger grasps we demonstrate when holding multiple objects.
+Fig. 2: Overview of the proposed pipeline for optimizing multi-finger robotic hand configurations for both grasping and crawling locomotion.Full size image
+The process begins with finger design and a set of target objects, followed by optimization for grasp synthesis to generate a diverse grasp taxonomy. Based on these grasps, multiple hand configurations are constructed with varying numbers and placements of fingers. For each configuration, a CPG parameter optimization loop is performed: Genetic Algorithms (GA) evolve the CPG parameters, which are used to generate locomotion gaits. These gaits are evaluated in MuJoCo simulations using an impedance controller, with crawling distance as the fitness metric. The optimal gaits from simulation are transferred in a Sim-to-Real manner for real robot experiments, where a PID controller executes the gaits and the performance is validated against simulation results.
+Next, a multi-objective optimization problem (MOOP) is run to ascertain the existence and feasibility of one or multiple hand poses suitable for both grasping and locomotion. This process involves optimizing the number of fingers (ranging from 3 to 8) and their spatial arrangement on the palm, where 2 fingers are added initially for grasping. The hand’s grasp configuration is defined by the grasp taxonomy, and its locomotion is driven by Central Pattern Generators (CPGs). Once a design is established, its performance is further optimized via a Genetic Algorithm optimization and quantitatively assessed through a physical simulation that incorporates both grasping and locomotion tasks. Extensive evaluation of the framework was first conducted in simulation (Supplementary Fig. 1). A select set of the most promising designs was then tested by building and evaluating the robotic design in a physical platform.
+The hand design framework allows for determining the minimal number of fingers required to both grasp objects securely and crawl while holding them in place. The optimal number of fingers is identified based on the design that maximizes the distance crawled within a fixed time frame. For instance, while increasing the number of fingers from 3 to 5 improves crawling efficiency, adding more fingers does not necessarily result in better performance (Supplementary Fig. 2, 3 and Movie 6). A larger number of fingers can restrict movement space and increase the risk of self-collision with other fingers or the objects being carried. Details of parameter settings, population size, evaluation metrics and results (Supplementary Fig. 4-7) are provided in Supplementary Text 2.
+Experiment 2: Grasping capability across standard and multi-object tasks
+In our design, each finger of the robotic hand adopts an identical configuration. Specifically, the metacarpophalangeal (MCP) joint provides an abduction/adduction range of −80∘ to 80∘ and a flexion/extension range of −100∘ to 100∘. The proximal interphalangeal (PIP) and distal interphalangeal (DIP) joints allow a motion range of −110∘ to 110∘. This enlarged workspace, which is more than twice that of the human hand32, confers significantly enhanced dexterity. To show the dexterity of the hand, three sets of grasping demonstrations are carried out as shown in Fig. 3, including standard Feix GRASP taxonomy (Fig. 3a and Supplementary Movie 2, which demonstrates all 33 grasp types performed by our hand), multi-object grasping (Fig. 3b and Supplementary Movie 3, which shows sequences of holding multiple objects simultaneously), and non-anthropomorphic grasping (Fig. 3c, Supplementary Fig. 8 and Movie 4, which illustrates grasps beyond human capability). The Feix GRASP taxonomy classifies 33 standard grasping by a human hand. The results show that our designed hand can proficiently execute these grasping modes, imitating the human-like dexterity demonstrated in commonly seen grasps. When the hand performs power grasps with all five fingers, it is able to stably hold objects weighing up to 2 kg. The second set of demonstrations replicates the multi-object grasping modes described in Yao et al.’s work33. The results show that our hand is able to simultaneously grasp up to four objects in hand, achieving a state-of-the-art performance in multi-object dexterous grasp; and particularly, crawling while holding multiple objects in hand. Furthermore, we demonstrate the potential of non-anthropomorphic grasping. The five-finger hand is capable of executing a two-finger pinch grasp using any combination of its fingers thanks to the large range of motion in its MCP joints, while the six-finger variant replicates the screwing and unscrewing motions described in ref. 5. These behaviors demonstrate functional dexterity across diverse manipulation modes, exceeding the capabilities of many existing anthropomorphic and non-anthropomorphic designs in specific tasks.
+Fig. 3: Demonstrations of the designed hand dexterity.Full size image
+a The GRASP taxonomy with all 33 standard modes. b Examples of multi-object grasping. c, Non-anthropomorphic grasping.
+In addition, the versatile nature of the hand enables fingers to adopt different roles. Fingers can be used to hold many objects in hand, pinch objects one by one, and hold them by wrapping one finger on the back/palm to avoid falling. Fingers not involved in grasping can be utilized for locomotion, whereas fingers designated for grasping can serve as support points during locomotion, allowing for more complex and stable movement patterns. The identical-finger, symmetric architecture greatly simplifies the mechanical and control complexities involved in standing and moving as a multi-legged robot.
+Experiment 3: Role switching between grasping and crawling
+As shown in Fig. 4 bottom and Supplementary Movie 7, which documents the entire sequence of detachment, crawling, and reattachment, the scenario starts with the hand firmly attached to a robot arm. Extended descriptions of motion planning and controller implementation for this sequence are provided in Supplementary Text 4. A motor-driven screw mechanism serves as a controllable attachment/detachment interface between the hand and arm, enabling the hand to detach and function independently as a crawling robot. Once the arm-hand system reaches the pre-defined pose to make contact with the table for support, the detachment mechanism is activated to unscrew the connection with the hand. The hand falls onto the table and initiates its walking controller to stand upright and crawl using five fingers (Supplementary Fig. 9). Employing a composite of its grasp primitives, the hand rests on the table, grasps a first object (a yellow wooden block) using two fingers, and places it on its back. It holds the object in place by pressing gently with one finger as it starts crawling again to pick up the next object (a blue cube), which it stacks on top of the yellow block. Once all objects have been fetched, the hand crawls back to the robot arm, to which it docks. A six-finger variant of the hand performs the same sequence, with the additional capacity to carry three objects in total (Supplementary Fig. 10).
+Fig. 4: Role switch between a robotic hand and a crawler.Full size image
+Left top: An automatic attachment and detachment mechanism connects the robotic arm and the hand. 1st row: the hand grasps two objects using both sides separately. 2nd and 3rd rows: the hand detaches from the arm, crawls and grasps objects, then crawls back and re-attaches with the arm.
+Experiment 4: Failure recovery through reversibility
+Reversible fingers simplify multi-object grasp planning and enhance efficiency, making it easier to grasp multiple objects simultaneously. For example (Fig. 4, top), the robot can hold a bottle with two fingers on one side while using the reverse side of the hand to grasp a box of crisps with the other fingers.
+Reversibility of the design also improves failure recovery. If flipped onto its back, the robot can stand up directly from the inverted position thanks to the reversible design of its fingers, as shown in Fig. 5 and Supplementary Movie 8. This flexibility allows the robot to adapt and maintain functionality regardless of its orientation.
+Fig. 5: Symmetric design for flip recovery.Full size image
+The symmetric nature of the robot enables it to recover from being flipped, thanks to the reversible design of its fingers.
+Discussion
+What led the human hand to evolve to have five, occasionally six34, distinct fingers, including a thumb with unique mobility, is not fully elucidated35, but is widely linked to tool use36, advances in cognitive abilities3 and communication37. Studies of the hand anatomy have led to immense progress in our understanding of why the hand came to be what it is38, but much less on why it did not come to be different. Natural evolution is a slow process, whose path is influenced by a variety of developmental and environmental constraints39. It does not explore all that could be possible. For instance, vertebrates cannot detach and reattach parts of their body, likely due to the complexity of evolving new skeletal attachments and self-repair capacity of tissues.
+We took advantage of the fact that robotics can depart from natural evolution and artificially design arbitrary shapes in a fairly unconstrained manner. We made use of different optimization methods to develop skeletal structures and associated controllers to enable a robot to act both as a hand and as a walking machine (Fig. 2). This approach generated non-anthropomorphic designs featuring, for example, extra degrees of freedom and link placements uncommon in biological organisms. In this respect, our work is inspired by earlier simulation-based explorations of novel morphologies, such as those pioneered by Sims40, and recent approaches at new hand design to enhance dexterity41,42. It differs however in scope, objectives, and complexity. Our simulations were conducted in isolation, without considering the interplay between the hand, arm, and the rest of the body, and relied on simplified rigid-body assumptions. Biomechanical constraints and the properties of biological tissues play a crucial role in shaping human-hand dexterity4. Our experimental results demonstrate that symmetrical design provides 5−10% performance improvements in crawling distance compared to asymmetric configurations (Supplementary Table 1 and Supplementary Table 2). While our robotic hand can perform common grasping modes like human hands, our design exceeds human capabilities by allowing any combination of fingers to form opposing finger pairs (like the thumb-index pair), enabling simultaneous multi-object grasping with fewer fingers and non-anthropomorphic grasping(Fig. 3).
+Our findings also indicate that symmetry and reversibility simplify multi-object grasp planning and enhance efficiency. Tasks that would otherwise require wrist reorientation or dual-hand coordination can now be performed with minimal motion planning effort, reducing execution time and collision risk (Fig. 4). Our analysis of finger count versus performance shows that using 4 to 5 fingers yields the best balance. Adding more fingers offer diminishing returns and increase the risk of self-collision (see Supplementary Fig. 2 for details). Additionally, our integrated approach offers energy efficiency advantages over separate locomotion and manipulation systems by sharing actuators and control infrastructure across both functions.
+There is ample evidence that nature combines both symmetric and asymmetric designs to satisfy distinct constraints43. Asymmetry was encoded by design, when we explicitly specified which fingers were to grasp, and which were to crawl. We, moreover, reduced our analysis to grasps enabling stable transport of simple-shaped objects. However, human grasps are influenced by both the object’s shape and manipulation action44. Future studies could investigate whether symmetric or asymmetric designs offer greater advantages across a broad spectrum of actions, including tool use and in-hand manipulation.
+Unlike traditional designs that combine separate functional units for manipulation and locomotion, our hand offers a radically different solution with the potential to vastly enhance the dexterity and versatility of robotic manipulation. Our design is particularly suited for scenarios where both manipulation and mobility are required under constraints that limit conventional robotic systems. When detached from the arm, the hand can function as a small crawler, capable of navigating across the ground or irregular terrains, which is valuable in disaster response for accessing confined spaces or in industrial inspection tasks inside pipes and complex equipment. The ability to crawl directly to a target object and grasp it also enables efficient handling in environments such as warehouses, where objects may be located within dense shelving, or in service robotics, where the system can autonomously retrieve dropped items. These examples highlight the versatility of the proposed approach and its potential for deployment in real-world settings that demand compactness, adaptability, and multi-modal interaction.
+While the proposed robotic hand is not anthropomorphic, we do not exclude its potential adaptation for prosthetic applications. Moreover, our design offers significant potential for extra limb augmentation applications. The symmetrical, reversible functionality is particularly valuable in scenarios where users could benefit from supplementary capabilities beyond normal human function. Studies with six-fingered individuals34 and users of supernumerary robotic fingers45,46 demonstrate the brain’s remarkable adaptability to integrate additional appendages, suggesting our non-traditional configuration could effectively serve in specialized environments requiring augmented manipulation abilities.
+Methods
+To design a robotic hand with grasping and crawling capabilities and the required symmetry and reversibility set important requirements on the design of the robot’s mechanical and control structure. The two cannot be easily decoupled and hence we proceed in intermingled stages.
+ To start with, we design a library of grasp poses for the fingers holding the objects as this affected both the placement of the fingers for crawling and the crawling capabilities. We hence proceeded to design an optimization framework to find, for a given set of objects and fingers, a series of kinematically feasible and collision-free grasp poses;
+ The more fingers do not necessarily lead to a faster gait, since more fingers meant also a heavier platform. To determine the optimal number of fingers and role assignment, we run a Genetic Algorithm optimization to find the optimal combination of walking gait and finger assignment for a given set of feasible grasp poses.
+ The robot’s body should lend itself into a realizable mechanical structure. Hence, to produce the robot’s body, our design is informed by mechanical constraints. As the robot must carry multiple objects and crawl while holding the objects, it needs to have enough actuators and motors capable of producing the required joint torques. The design of the body hence incorporated constraints stemming from the range of torque producible by available electric motors and size of the legs/arms producible by 3D printing;
+ We detail the implementation of each of these steps next. The optimization approach for grasp pose generation is an adaptation of our previous work33 to generate offline grasp taxonomy. And motion planning for the crawling robot is an application of the dynamic system approaches47,48,49.
+Grasp pose generation
+To enable effective grasping during locomotion, we defined three main objectives.
+First, finger allocation must be flexible, and grasps should be generated parsimoniously to exploit the hand’s kinematic redundancy33. Instead of assigning entire fingers, we leverage the hand’s structural symmetry to allow any finger segments to participate in a grasp, moving beyond fingertip-based strategies. This approach is grounded in the concept of a virtual finger50, which defines fingers by functional roles rather than anatomical structure. Mapping finger segments to virtual fingers expands the range of possible grasp configurations51, and also enables functional specialization within a single finger. This flexibility is essential for integrating multiple capabilities: for example, a finger’s proximal phalanx can contribute to a grasp while its distal phalanx assists in locomotion. This role-assignment concept enables dynamic and adaptive finger allocation for enhanced versatility and efficiency.
+Second, the fingers must be capable of grasping multiple objects simultaneously. Efficient use of fingers is critical, as we aim to minimize the number of fingers used to grasp as many objects as possible. In general scenarios, multiple target objects need to be sequentially picked up. We address this by formulating the grasp as a sequential process, following the approach outlined in ref. 33. This sequential strategy ensures efficient finger usage, optimizing the hand’s ability to manage complex grasping tasks.
+Finally, the grasping process must be generated in real-time to facilitate the optimization of the hand design within the GA framework. To accelerate this process, we construct an offline grasp taxonomy that encompasses all potential grasp configurations. This taxonomy includes a range of hand poses, characterized by different finger combinations and the number of objects being grasped. For each pose within the taxonomy, we solve a constrained optimization problem to synthesize the grasp efficiently33. This approach significantly reduces the computational load during optimization, enabling rapid evaluation of different hand designs. The full optimization problem and examples of grasp synthesis results are detailed in Supplementary Text 1.
+We solve the optimization problem for each possible finger-object combination (e.g., two fingers grasping one, two or three objects) and store the optimized results in our grasp taxonomy (see Fig. 6). This allows for efficient online retrieval during the GA optimization process, significantly speeding up grasp synthesis and enabling the real-time evaluation of various hand configurations.
+Fig. 6: Reachability map and grasp taxonomy.Full size image
+Left: The reachability map of the last two links for each finger is illustrated in transparent colors. right: Representative grasp taxonomy includes pinch grasp, pressing, and wrapping. We choose basic objects (cubes, spheres, and cylinders) and compute a set of static kinematically feasible and collision-free grasps. The robot can hold one or multiple objects differently with two fingers.
+Motion planning
+Motion planning for both reaching and locomotion follows a dynamical system’s approach, which eases coordination across limbs as required for locomotion or for grasping objects with pairs or groups of fingers. Our formulation is such that parameters of the control can be easily tuned to adapt to the grasping location on the object or to the number of limbs used in coordination.
+Motion planning for reaching motionOnce a desired grasping pose has been selected, as described in the previous section, the motion of the center of the palm is computed according to the velocity field, which generates the desired velocity v given the current position47. We represent the robot as a point in 2D space, defined by the pose of the palm’s center relative to the ground frame as [x ∈ R2, qc ∈ R4]. The desired velocity for the palm’s center is formulated as: 
+$${\dot{\boldsymbol{x}}}={\boldsymbol{f}}({\boldsymbol{x}})=-\alpha {\boldsymbol{B}}({\boldsymbol{x}},{{\boldsymbol{x}}}_{{\rm{obs}}})({\boldsymbol{x}}-{{\boldsymbol{x}}}_{g}),\alpha > 0,$$
+ (1a)
+$${\boldsymbol{\omega }}=-\beta \log ({{\boldsymbol{q}}}_{c}\otimes {\bar{{\boldsymbol{q}}}}_{{\rm{g}}}),\beta > 0,$$
+ (1b)
+ where xg and qg are the goal position and orientation by a quaternion, and B(x) a full rank matrix, which is a function of current position x and obstacle positions xobs (see48 for details). B(x) modulates the nominal linear vector field to deflect it so as to avoid the obstacle. The entire flow generates a global velocity field that is guaranteed not to penetrate the obstacles (see49, Ch.9). The flow converges and stabilizes at the goal position xg (fixed point of Eq. 1). In our experiments, the goal position is either the grasping point on the object or the release point on the back of the robot. An example is shown in Fig. 7. Once the robot reaches the desired grasping pose, fingers are controlled to replay grasping motions performed by a human expert moving passively the robot’s joints.
+Fig. 7: A two-dimensional velocity field by the DS.Full size image
+Two circles are placed as obstacles. The streamlines can guide the robot to converge to the goal point.
+The same motion planner is used to control the palm of the robot to reach the objects and to dock on the robot’s arm. We model objects as circles, expanding each object’s radius by the smallest radius that encloses the robot’s palm and legs. In the physical experiment, we use vision feedback to compute object poses in real time and determine grasping poses relative to the world frame, defined by the table plane and tracked via a QR code. This enables the generation of collision-free reaching motions.
+Additional CPG parameter ranges, GA optimization details, and locomotion trajectory plots for various finger configurations are provided in Supplementary Text 2 and Supplementary Movie 6.
+Motion planning for locomotionLocomotion is generated through a cyclic dynamical system - Central Pattern Generator (CPG). In contrast to the grasping control which is done in Cartesian space, the locomotion control is done in joint space, controlling for phase and frequency of the cycle. Coordination across the crawling fingers (acting as legs) is obtained by setting appropriately the phase relationship across pair or subgroups of fingers, so as to track a global reference velocity for the center of mass, given by Eq. 1.
+Locomotion consists of two phases: the stance phase and the swing phase. Each finger alternates between these phases. For the i-th finger, the joint angles are denoted as qi ∈ R4. The position of the contact point of the finger on the table is computed using forward kinematics as pi = f(qi). To simplify the problem, we model walking locomotion on flat ground as a quasi-static process. Therefore, using the Zero Moment Point (ZMP) method to maintain robot balance, the projection of the center of mass must lie within the convex hull of the contact points, as follows: 
+$${{\boldsymbol{c}}}^{x,y}\in {\rm{conv}}\{{{\boldsymbol{p}}}_{i}^{x,y}\},i\in N,$$
+ (2)
+ where cx,y refers to the x and y component of the center of mass. N is the index list of stance legs, including a minimum of two fingers.
+The step length in one cycle locomotion is planned as follows: 
+$$\begin{array}{rcl}\Delta {{\boldsymbol{x}}}_{i} &=& {\boldsymbol{R}}({\omega }_{z}){{\boldsymbol{p}}}_{i}^{\,{\rm{ref}}}-{{\boldsymbol{p}}}_{i}^{\,{\rm{ref}}}+\frac{1}{2}{{\boldsymbol{R}}}_{c}^{T}{\dot{\boldsymbol{x}}}T\\ \,{\rm{with}}\,{\boldsymbol{R}}({\omega }_{z}) &=& \left[\begin{array}{cc}\cos ({\theta }_{z}) & -\sin ({\theta }_{z})\\ \sin ({\theta }_{z}) & \cos ({\theta }_{z})\end{array}\right],{\theta }_{z}=\frac{1}{2}{\omega }_{z}T,\end{array}$$
+ (3)
+ where ωz represents the z-component of ω from Eq. 1, and T denotes the time period. The vector \({{\boldsymbol{p}}}_{i}^{\,{\rm{ref}}}\in {{\bf{R}}}^{2}\) specifies the initial position of the i-th fingertip in the robot’s center frame. Rc ∈ R2×2 is current robot orientation in the ground frame. Using the step size Δxi, Bezier interpolation is employed to generate the complete trajectories for the fingertips. These trajectories, combined with inverse kinematics, yield the corresponding reference joint trajectories.
+Closed-loop ControlOnce the trajectory has been set, be it for grasping or locomotion, each robot’s finger is impedance-controlled in simulation, to track the reference trajectories by CPGs in simulation, with a control law of the following form: 
+$${\boldsymbol{\tau }}={\boldsymbol{K}}({{\boldsymbol{q}}}_{d}-{\boldsymbol{q}})+{\boldsymbol{D}}({\dot{{\boldsymbol{q}}}}_{d}-{\dot{\boldsymbol{q}}})+{\boldsymbol{M}}({\boldsymbol{q}})\ddot{{\boldsymbol{q}}}+{\boldsymbol{c}}({\boldsymbol{q}},{\dot{\boldsymbol{q}}})+{\boldsymbol{g}}({\boldsymbol{q}}),$$
+ (4)
+ where q ∈ Rn denotes joint angular positions, M ∈ Rn×n is the symmetric and positive-definite inertia matrix, c ∈ Rn the Coriolis and centrifugal torque, g the gravitational torque. Matrices K ∈ Rn×n and D ∈ Rn×n are stiffness and damping parameters.
+Optimized finger assignment and gait computation
+To determine the optimal number of fingers and their location and role, we start with a representation of a generic circular palm and divide it into 8 octants, each of which may be dedicated to host one finger (should one want more than 8 fingers, one would divide in more sectors).
+ Algorithm 1
+ GA search for locomotion
+ Parameters: Ngen = 50, f = 1 Hz, \({t}_{\max }=10\) s
+ 1 for Each finger placement do
+ 2     for i = 0 to Ngen do
+ 3    Population with [q0, a, φ]
+ 4    MuJoCo simulation with CPGs
+ 5    Calculate fitness function value
+ 6    Parent selection, crossover, and mutation
+ In this study, we restrict grasping configurations to involve 1 or 2 adjacent fingers, which reflects a common strategy for handling small to medium-sized objects and allows for a more tractable optimization space. Due to rotational symmetry, it suffices to select 1 or 2 adjacent octanes to allocate fingers in charge of grasping the objects.
+We use a genetic algorithm (GA) to generate locomotion parameters for the joint reference trajectories, as detailed in Algorithm 1. The trajectory of all joints is formulated as: 
+$${{\boldsymbol{q}}}_{d}={{\boldsymbol{q}}}_{0}+{\boldsymbol{a}}\sin (2\pi f\!t+{\boldsymbol{\varphi }}),$$
+ (5)
+ where the initial value q0, amplitude a, and phase φ are set as chromosomes of GA and optimized with random initialization. f is the frequency of CPG and we set 1 here. t is the current time. The GA’s fitness function is defined by the distance traveled over a specified time period. For each trial and each grasp and crawl configuration, we evaluate performance when crawling in a straight line over one second of simulated real time. All simulations were conducted in the MuJoCo simulated environment, using an Intel i7 CPU and an Nvidia GTX 3060 Ti GPU.
+In our design, we initially assign distinct roles to the fingers, designating a subset for grasping objects while reserving the others for crawling. However, during gait optimization, all fingers are considered, and it is common for solutions to emerge where fingers designated for grasping also serve as passive support legs (see Supplementary Fig. 1).
+Robot mechanical design
+To enable proper attachment of the hand to the arm, we dedicate 2 of the 8-finger placement to the attachment mechanism. A physical prototype of the hand is, then, produced for a selected subset of the top solutions from the optimization, featuring configurations with 3, 4, 5, and 6 fingers. As done in simulation, the 6 potential positions for finger placements are predefined by dividing the circumference of the main body into 45-degree segments, as illustrated in Fig. 8(c).
+Fig. 8: Mechanical design of the robotic hand and its components.Full size image
+a The robot finger uses four Dynamixel XC330-T288-T servo motors connected by 3D-printed PLA brackets, replicating human finger kinematics with a 2-dof metacarpophalangeal (MCP) joint, proximal interphalangeal (PIP), and distal interphalangeal (DIP) joints. The silicone fingertip (Dragonskin 20) enhances grasping. b The custom end-effector on the Kuka iiwa 7 arm facilitates attachment and detachment of the hand using neodymium magnets and a motor-driven bolt. c Side View of the hand, designed for up to six fingers. d Docking sequence between the arm and hand, showing magnetic alignment and bolt-based locking.
+The mechanical design of the robotic hand, features modular fingers, each powered by four motors arranged sequentially to mimic the natural forward movement of human finger joints (Fig. 8). The size and scale of the fingers are constrained by the size of available servo motors (Dynamixel XC330-T288-T). This in turn defines minimum spacing between neighboring fingers, setting the size of the circular palm to be 160mm in diameter. Reversibility is made possible by considering a fully symmetric design on the joints of the fingers and the attachment of the fingers to the palm itself. In contrast to a human hand, the 3D printed structure on the finger joints allow every link to bend  ± 90∘, enabling the reversible motion.
+Silicone covers the fingertip to improve friction and ease grasping and locomotion. These fingers attach to a base made of acrylic plates that can accommodate up to six fingers and connect to the robot arm via a wrist attachment. A custom end-effector mounted on a Kuka iiwa 7 degrees of freedom arm ensures reliable attachment and detachment. Alignment is achieved using neodymium magnets, and a DC motor actuates a bolt mechanism for secure locking.
+Control of real robotic hand and docking strategyThe real robotic hand is controlled in Python using a position controller, tracking the reference joint trajectories for all fingers. The K and D gains were empirically tuned by tracking sinusoidal and triangular reference trajectories with a frequency of 1–2 Hz and an amplitude of 1 rad, to ensure stable and accurate motion. We use rectangular, colored wooden blocks as objects in our experiments. Objects are placed on the table, and their poses are estimated using a RealSense camera by Hue-Saturation-Value (HSV) segmentation. The robot’s position is tracked via a QR code located on the palm and calibrated at onset with respect to the fixed frame of the arm base. when docking, to mitigate the uncertainty from real-time visual feedback, we use a random search along a conical surface aligned with the arm’s end-effector.
+ Data availability
+ All data supporting the findings of this study are included in the article and its Supplementary Information files. Data are available at Figshare (https://doi.org/10.6084/m9.figshare.29931854). Additional information is available from the corresponding authors upon request.
+Code availability
+ All the relevant codes and CAD drawings of the hand are available at https://doi.org/10.5281/zenodo.14210599.
+References
+Balasubramanian, R. & Santos, V. J. (eds). The human hand as an inspiration for robot hand development. Springer Tracts in Advanced Robotics, Vol. 95 (Springer, Cham, 2014).
+Piazza, C., Grioli, G., Catalano, M. G. & Bicchi, A. A century of robotic hands. Annu. Rev. Control, Robot. Auton. Syst. 2, 1–32 (2019).
+Article 
+ Google Scholar 
+Sobinov, A. R. & Bensmaia, S. J. The neural mechanisms of manual dexterity. Nat. Rev. Neurosci. 22, 741–757 (2021).
+Article 
+ PubMed 
+ PubMed Central 
+ Google Scholar 
+Karakostis, F. A. et al. Biomechanics of the human thumb and the evolution of dexterity. Curr. Biol. 31, 1317–1325 (2021).
+Article 
+ PubMed 
+ PubMed Central 
+ CAS 
+ Google Scholar 
+Billard, A. & Kragic, D. Trends and challenges in robot manipulation. Science 364, eaat8414 (2019).
+Article 
+ PubMed 
+ ADS 
+ CAS 
+ Google Scholar 
+Srinivasa, S. S. et al. HERB: a home exploring robotic butler. Auton. Robots 28, 5–20 (2010).
+Article 
+ Google Scholar 
+Deimel, R. & Brock, O. A novel type of compliant and underactuated robotic hand for dexterous grasping. Int. J. Robot. Res. 35, 161–185 (2016).
+Article 
+ Google Scholar 
+Gu, G. et al. A soft neuroprosthetic hand providing simultaneous myoelectric control and tactile feedback. Nat. Biomed. Eng. 7, 589–598 (2023).
+Article 
+ PubMed 
+ Google Scholar 
+Gupta, A., Savarese, S., Ganguli, S. & Fei-Fei, L. Embodied intelligence via learning and evolution. Nat. Commun. 12, 5721 (2021).
+Article 
+ PubMed 
+ PubMed Central 
+ ADS 
+ CAS 
+ Google Scholar 
+Sivitilli, D. M., Smith, J. R. & Gire, D. H. Lessons for robotics from the control architecture of the octopus. Front. Robot. AI 9, 862391 (2022).
+Article 
+ PubMed 
+ PubMed Central 
+ Google Scholar 
+Kennedy, E. L., Buresch, K. C., Boinapally, P. & Hanlon, R. T. Octopus arms exhibit exceptional flexibility. Sci. Rep. 10, 20872 (2020).
+Article 
+ PubMed 
+ PubMed Central 
+ CAS 
+ Google Scholar 
+Patek, S. & Caldwell, R. Extreme impact and cavitation forces of a biological hammer: strike forces of the peacock mantis shrimp odontodactylus scyllarus. J. Exp. Biol. 208, 3655–3664 (2005).
+Article 
+ PubMed 
+ CAS 
+ Google Scholar 
+Fuchs, M. et al. Rollin’ Justin - design considerations and realization of a mobile platform for a humanoid upper body. In Proc. IEEE Int. Conf. Robot. Autom. 4131–4137 (2009).
+Bischoff, R., Huggenberger, U. & Prassler, E. KUKA youBot - a mobile manipulator for research and education. In Proc. IEEE Int. Conf. Robot. Autom. 1–4 (2011).
+Widhiada, W., Santhiarsa, I. & Partha, C. Design of motion control for mobile robot manipulator. Int. J. Mech. Eng. Robot. Res. 9, 1509–1514 (2020).
+ Google Scholar 
+Yang, X. et al. The snake-inspired robots: a review. Assem. Autom. 42, 567–583 (2022).
+Article 
+ Google Scholar 
+Liu, J., Tong, Y. & Liu, J. Review of snake robots in constrained environments. Robot. Auton. Syst. 141, 103785 (2021).
+Article 
+ Google Scholar 
+Wu, Q. et al. A novel underwater bipedal walking soft robot bio-inspired by the coconut octopus. Bioinspir. Biomim. 16, 046007 (2021).
+Article 
+ CAS 
+ Google Scholar 
+Calisti, M. et al. An octopus-bioinspired solution to movement and manipulation for soft robots. Bioinspir. Biomim. 6, 036002 (2011).
+Article 
+ PubMed 
+ ADS 
+ CAS 
+ Google Scholar 
+Cianchetti, M., Calisti, M., Margheri, L., Kuba, M. & Laschi, C. Bioinspired locomotion and grasping in water: the soft eight-arm octopus robot. Bioinspir. Biomim. 10, 035003 (2015).
+Article 
+ PubMed 
+ ADS 
+ CAS 
+ Google Scholar 
+Pai, D. K., Barman, R. A. & Ralph, S. K. Platonic beasts: a new family of multilimbed robots. In Proc. IEEE Int. Conf. Robot. Autom. 1019–1025 (1994).
+Ames, A. D. & Powell, M. Towards the unification of locomotion and manipulation through control Lyapunov functions and quadratic programs. In Control of Cyber-Physical Systems (ed. Tarraf, D. C.) 219–240 (Springer, Heidelberg, 2013).
+Sleiman, J.-P., Farshidian, F., Minniti, M. V. & Hutter, M. A unified MPC framework for whole-body dynamic locomotion and manipulation. IEEE Robot. Autom. Lett. 6, 4688–4695 (2021).
+Article 
+ Google Scholar 
+Mannam, P., Liu, X., Zhao, D., Oh, J. & Pollard, N. Design and control co-optimization for automated design iteration of dexterous anthropomorphic soft robotic hands. In Proc. IEEE Int. Conf. Soft Robotics, 332–339 (2024).
+Bo, V., Turco, E., Pozzi, M., Malvezzi, M. & Prattichizzo, D. Automated design of embedded constraints for soft hands enabling new grasp strategies. IEEE Robot. Autom. Lett. 7, 11346–11353 (2022).
+Article 
+ Google Scholar 
+Sun, H. et al. Bridging locomotion and manipulation using reconfigurable robotic limbs via reinforcement learning. Biomimetics 8, 364 (2023).
+Article 
+ PubMed 
+ PubMed Central 
+ Google Scholar 
+Ma, Y., Farshidian, F., Miki, T., Lee, J. & Hutter, M. Combining learning-based locomotion policy with model-based manipulation for legged mobile manipulators. IEEE Robot. Autom. Lett. 7, 2377–2384 (2022).
+Article 
+ Google Scholar 
+Fei, J. et al. Genetic algorithm-based optimal design of modular robot topology based on distributed parallel kinematic modeling and analysis. Eng. Appl. Artif. Intell. 123, 106251 (2023).
+Article 
+ Google Scholar 
+Amar, J. & Nagase, K. Genetic-algorithm-based global design optimization of tree-type robotic systems involving exponential coordinates. Mech. Syst. Signal Process. 156, 107461 (2021).
+Article 
+ Google Scholar 
+Park, J. H. & Lee, K. H. Computational design of modular robots based on genetic algorithm and reinforcement learning. Symmetry 13, 471 (2021).
+Article 
+ ADS 
+ Google Scholar 
+Datta, R., Pradhan, S. & Bhattacharya, B. Analysis and design optimization of a robotic gripper using multiobjective genetic algorithm. IEEE Trans. Syst., Man, Cybern.: Syst. 46, 16–26 (2016).
+Article 
+ ADS 
+ Google Scholar 
+Yang, H. et al. A lightweight prosthetic hand with 19-dof dexterity and human-level functions. Nat. Commun. 16, 955 (2025).
+Article 
+ PubMed 
+ PubMed Central 
+ ADS 
+ CAS 
+ Google Scholar 
+Yao, K. & Billard, A. Exploiting kinematic redundancy for robotic grasping of multiple objects. IEEE Trans. Robot. 39, 1982–2002 (2023).
+Article 
+ Google Scholar 
+Mehring, C. et al. Augmented manipulation ability in humans with six-fingered hands. Nat. Commun. 10, 2401 (2019).
+Article 
+ PubMed 
+ PubMed Central 
+ ADS 
+ CAS 
+ Google Scholar 
+Kivell, T. L., Baraki, N., Lockwood, V., Williams-Hatala, E. M. & Wood, B. A. Form, function and evolution of the human hand. Am. J. Biol. Anthropol. 181, 6–57 (2023).
+Article 
+ Google Scholar 
+Marzke, M. W. & Marzke, R. F. Evolution of the human hand: approaches to acquiring, analysing and interpreting the anatomical evidence. J. Anat. 197, 121–140 (2000).
+Article 
+ PubMed 
+ PubMed Central 
+ Google Scholar 
+Arbib, M. A. The mirror system, imitation, and the evolution of language. in Imitation in Animals and Artifacts (eds Dautenhahn, K. & Nehaniv, C. L.) 229–280 (MIT Press, Cambridge, MA, 2002).
+Chavez, T. J. & Morrell, N. T. The evolution of the human hand from an anthropologic perspective. J. Hand Surg. 47, 181–185 (2022).
+Article 
+ Google Scholar 
+Galis, F., Alphen, J. J. & Metz, J. A. Why five fingers? Evolutionary constraints on digit numbers. Trends Ecol. Evol. 16, 637–646 (2001).
+Article 
+ Google Scholar 
+Sims, K. Evolving 3D morphology and behavior by competition. Artif. Life 1, 353–372 (1994).
+Article 
+ Google Scholar 
+Hazard, C., Pollard, N. & Coros, S. Automated design of robotic hands for in-hand manipulation tasks. Int. J. Humanoid Robot. 17, 1950029 (2020).
+Article 
+ Google Scholar 
+Chen, F. & Wang, M. Y. Design optimization of soft robots: A review of the state of the art. IEEE Robot. Autom. Mag. 27, 27–43 (2020).
+Article 
+ Google Scholar 
+Corballis, M. C. Bilaterally symmetrical: to be or not to be? Symmetry 12, 326 (2020).
+Article 
+ ADS 
+ Google Scholar 
+Castiello, U. The neuroscience of grasping. Nat. Rev. Neurosci. 6, 726–736 (2005).
+Article 
+ PubMed 
+ CAS 
+ Google Scholar 
+Prattichizzo, D., Malvezzi, M., Hussain, I. & Salvietti, G. The sixth-finger: a modular extra-finger to enhance human hand capabilities. In Proc. IEEE Int. Symp. Robot Hum. Interact. Commun. 993–998 (2014).
+Wu, F. & Asada, H. Supernumerary robotic fingers: an alternative upper-limb prosthesis. In ASME Dyn. Syst. Control Conf., V002T16A009 (2014).
+Huber, L., Billard, A. & Slotine, J.-J. Avoidance of convex and concave obstacles with convergence ensured through contraction. IEEE Robot. Autom. Lett. 4, 1462–1469 (2019).
+Article 
+ Google Scholar 
+Khansari-Zadeh, S. M. & Billard, A. A dynamical system approach to realtime obstacle avoidance. Auton. Robots 32, 433–454 (2012).
+Article 
+ Google Scholar 
+Billard, A., Mirrazavi, S. & Figueroa, N. Learning for Adaptive and Reactive Robot Control: a Dynamical Systems Approach(MIT Press, Cambridge, MA, 2022).
+Arbib, M. A., Iberall, T. & Lyons, D. Coordinated control programs for movements of the hand. in Hand Function and the Neocortex (eds Goodwin, A. W. & Darian-Smith, I.) 111–129 (Springer, Berlin, 1985).
+Yao, K., Sternad, D. & Billard, A. Hand pose selection in a bimanual fine-manipulation task. J. Neurophysiol. 126, 195–212 (2021).
+Article 
+ PubMed 
+ PubMed Central 
+ Google Scholar 
+Download references
+Acknowledgements
+This work was supported by the European Research Council (ERC) through the Advanced Grant no. 741945, Skill Acquisition in Humans and Robots (SAHR). K.Y. also received funding from the Swiss National Science Foundation (SNSF), project ID: P500PT_217882.
+Author information
+Authors and Affiliations
+School of Engineering, Swiss Federal Institute of Technology in Lausanne (EPFL), Lausanne, Vaud, Switzerland
+Xiao Gao 
+ (高霄), Kai Junge, Josie Hughes & Aude Billard
+Department of Mechanical Engineering, Massachusetts Institute of Technology (MIT), Cambridge, MA, USA
+Kunpeng Yao 
+ (姚坤鹏)
+AuthorsXiao Gao 
+ (高霄)View author publications
+Search author on:PubMed Google Scholar
+Kunpeng Yao 
+ (姚坤鹏)View author publications
+Search author on:PubMed Google Scholar
+Kai JungeView author publications
+Search author on:PubMed Google Scholar
+Josie HughesView author publications
+Search author on:PubMed Google Scholar
+Aude BillardView author publications
+Search author on:PubMed Google Scholar
+Contributions
+A.B. conceived the initial idea. A.B., X.G., and K.Y. designed the research framework. X.G. performed all programming and experiments, analyzed and interpreted the data. X.G. and K.Y. initially drafted the manuscript. X.G., K.Y., and A.B. contributed to the manuscript’s writing. J.H. and K.J. designed the physical implementation of the robot. K.J. created and assembled the hardware components of the hand. All authors gave final approval for submission.
+Corresponding authors
+Correspondence to
+ Xiao Gao 
+ (高霄) or Aude Billard.
+Ethics declarations
+ Competing interests
+ The authors declare no competing interests.
+Peer review
+ Peer review information
+ Nature Communications thanks Cristina Piazza and the other anonymous reviewer(s) for their contribution to the peer review of this work. A peer review file is available.
+Additional information
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+Supplementary information
+Supplementary Information (download PDF )
+Description of Additional Supplementary Files (download PDF )
+Supplementary Movie 1 (download MP4 )
+Supplementary Movie 2 (download MP4 )
+Supplementary Movie 3 (download MP4 )
+Supplementary Movie 4 (download MP4 )
+Supplementary Movie 5 (download MP4 )
+Supplementary Movie 6 (download MP4 )
+Supplementary Movie 7 (download MP4 )
+Supplementary Movie 8 (download MP4 )
+Supplementary Movie 9 (download MP4 )
+Transparent Peer Review file (download PDF )
+Rights and permissions
+ Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
+ Reprints and permissions
+About this article
+Cite this article
+Gao, X., Yao, K., Junge, K. et al. A detachable crawling robotic hand.
+ Nat Commun 17, 428 (2026). https://doi.org/10.1038/s41467-025-67675-8
+Download citation
+Received: 05 April 2025
+Accepted: 04 December 2025
+Published: 20 January 2026
+Version of record: 20 January 2026
+DOI: https://doi.org/10.1038/s41467-025-67675-8
+Share this article
+Anyone you share the following link with will be able to read this content:
+Get shareable linkSorry, a shareable link is not currently available for this article.
+Copy shareable link to clipboard
+ Provided by the Springer Nature SharedIt content-sharing initiative
+ Download PDF
+ Advertisement
+ Explore content
+ Research articles
+ Reviews & Analysis
+ News & Comment
+ Videos
+ Collections
+ Subjects
+ Follow us on Facebook
+ Follow us on X
+ Sign up for alerts
+ RSS feed
+ About the journal
+ Aims & Scope
+ Editors
+ Journal Information
+ Open Access Fees and Funding
+ Calls for Papers
+ Editorial Values Statement
+ Journal Metrics
+ Editors' Highlights
+ Contact
+ Editorial policies
+ Top Articles
+ Publish with us
+ For authors
+ For Reviewers
+ Language editing services
+ Open access funding
+ Submit manuscript
+ Search
+ Search articles by subject, keyword or author
+ Show results from
+ All journals
+ This journal
+ Search
+ Advanced search
+ Quick links
+ Explore articles by subject
+ Find a job
+ Guide to authors
+ Editorial policies
+ Nature Communications
+ (Nat Commun)
+ ISSN 2041-1723 (online)
+ nature.com footer links
+ About Nature Portfolio
+ About us
+ Press releases
+ Press office
+ Contact us
+ Discover content
+ Journals A-Z
+ Articles by subject
+ protocols.io
+ Nature Index
+ Publishing policies
+ Nature portfolio policies
+ Open access
+ Author & Researcher services
+ Reprints & permissions
+ Research data
+ Language editing
+ Scientific editing
+ Nature Masterclasses
+ Research Solutions
+ Libraries & institutions
+ Librarian service & tools
+ Librarian portal
+ Open research
+ Recommend to library
+ Advertising & partnerships
+ Advertising
+ Partnerships & Services
+ Media kits
+ Branded
+ content
+ Professional development
+ Nature Awards
+ Nature Careers
+ Nature 
+ Conferences
+ Regional websites
+ Nature Africa
+ Nature China
+ Nature India
+ Nature Japan
+ Nature Middle East
+ Privacy
+ Policy
+ Use
+ of cookies
+ Your privacy choices/Manage cookies
+ Legal
+ notice
+ Accessibility
+ statement
+ Terms & Conditions
+ Your US state privacy rights
+ © 2026 Springer Nature Limited
+ Close banner
+ Close
+ Sign up for the Nature Briefing: AI and Robotics newsletter — what matters in AI and robotics research, free to your inbox weekly.
+ Email address
+ Sign up
+ I agree my information will be processed in accordance with the Nature and Springer Nature Limited Privacy Policy.
+ Close banner
+ Close
+ Get the most important science stories of the day, free in your inbox.
+ Sign up for Nature Briefing: AI and Robotics

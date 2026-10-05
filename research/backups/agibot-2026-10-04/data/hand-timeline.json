@@ -1,0 +1,1245 @@
+{
+  "shadow-hand": {
+    "year": 2013,
+    "basis": "document",
+    "relation": "by",
+    "detail": "E1 系列规格书发布日期为 2013-01-01，证明经典五指平台至迟当时已有公开资料；不是 2024 规格配置的首发年份，也不混用早期气动手的首发时间。",
+    "source": {
+      "title": "Shadow E1 官方规格书（镜像），封面 Release",
+      "url": "https://mindtrans.narod.ru/pdfs/shadow_dexterous_hand_technical_specification_E1_20130101.pdf",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02",
+    "month": 1
+  },
+  "leap-hand": {
+    "year": 2023,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用介绍 LEAP v1 的 RSS 2023 论文年份。",
+    "source": {
+      "title": "LEAP Hand · RSS 2023",
+      "url": "https://roboticsproceedings.org/rss19/p089.pdf",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "wuji-hand-2": {
+    "year": 2026,
+    "basis": "document",
+    "relation": "by",
+    "detail": "官方 2026 年发布记录已明确列出 Wuji Hand 2 的硬件、SDK 和模型支持。这里定位第二代，不把 2025 年第一代记录当作第二代首发。",
+    "source": {
+      "title": "Wuji 官方发布记录 · Hand 2",
+      "url": "https://docs.wuji.tech/docs/en/release-notes/",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "sharpa-w01": {
+    "year": 2025,
+    "basis": "release",
+    "relation": "event",
+    "detail": "Sharpa 署名新闻稿于 2025-12-16 宣布 SharpaWave 量产；W01 官方页将产品称为 Wave。这里表示量产公开里程碑，非宣称首次原型出现。",
+    "source": {
+      "title": "Sharpa · SharpaWave 量产公告",
+      "url": "https://www.prnewswire.com/news-releases/ai-robotmaker-sharpa-reaches-key-milestone-with-mass-production-of-worlds-most-advanced-human-sized-robotic-hand-302643434.html",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02",
+    "month": 12
+  },
+  "allegro-v4": {
+    "year": 2024,
+    "basis": "document",
+    "relation": "by",
+    "detail": "厂商 2024-11-15 的 V5 发布稿明确说明 V4 为上一代产品，证明 V4 至迟 2024 年已存在；不能把第一代 Allegro 的年份直接赋给 V4。",
+    "source": {
+      "title": "Wonik · V5 发布稿中明确回顾 V4",
+      "url": "https://wonikrobotics.com/kr/sub/pr/news.php?bid=4&idx=108&mode=view&page=2",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02",
+    "month": 11
+  },
+  "dlr-hand-ii": {
+    "year": 2001,
+    "basis": "demonstration",
+    "relation": "event",
+    "detail": "DLR 系统页明确列出首次公开展示为 2001 年。",
+    "source": {
+      "title": "DLR Hand II · 公开展示年份",
+      "url": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/hand-ii",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "xynova-flex-2": {
+    "year": 2026,
+    "basis": "document",
+    "relation": "by",
+    "detail": "MANUS 于 2026-06-15 发布与 Xynova 的 Flex 2 遥操作案例，证明该型号至迟当时已公开；产品首发年份继续补查。",
+    "source": {
+      "title": "MANUS · Xynova Flex 2 合作案例",
+      "url": "https://www.manus-meta.com/use-cases/how-xynova-teleoperates-the-flex-2-dexterous-hand-with-manus-metagloves-pro-haptic",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02",
+    "month": 6
+  },
+  "linker-l20": {
+    "year": 2025,
+    "basis": "document",
+    "relation": "by",
+    "detail": "2025 世界机器人大会收录的厂商公司资料包含 Linker Hand L20，证明该型号当时已公开；不把公司成立时间或 L20 Lite 日期当作 L20 首发。",
+    "source": {
+      "title": "世界机器人大会 · Linkerbot 厂商资料",
+      "url": "https://www.worldrobotconference.com/profile/robot/download/2025/07/01/灵心巧手公司简介_20250701170402A528.pdf",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "barrett-bh8-280": {
+    "year": 2011,
+    "basis": "demonstration",
+    "relation": "event",
+    "detail": "Robotnik 作为联合参展方于 2011-02-17 公告将与 Barrett 在 HRI 2011 展示新 BH8-280；型号与旧 BH8-262 区分。",
+    "source": {
+      "title": "Robotnik / Barrett · HRI 2011 展示公告",
+      "url": "https://robotnik.eu/robotnik-will-be-attending-hri/",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "trifinger": {
+    "year": 2020,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "介绍 TriFinger 平台的作者预印本于 2020-08-08 首次提交；2021 是修订版时间。",
+    "source": {
+      "title": "TriFinger · arXiv v1 提交记录",
+      "url": "https://arxiv.org/abs/2008.03596",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02",
+    "month": 8
+  },
+  "rbo-hand-2": {
+    "year": 2016,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用硬件论文 IJRR 卷期发表年 2016；作者稿中另有 2015 日期，不将卷期年份描述为产品首发。",
+    "source": {
+      "title": "RBO Hand 2 · 硬件论文作者稿 / IJRR 2016",
+      "url": "https://www.static.tu.berlin/fileadmin/www/10002220/Research/publications/Deimel_and_Brock_-_2016_-_A_novel_type_of_compliant_and_underactuated_roboti.pdf",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "rbo-hand-3": {
+    "year": 2022,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "硬件论文预印本及 IEEE T-RO 期刊记录均为 2022 年。",
+    "source": {
+      "title": "RBO Hand 3 · 平台论文",
+      "url": "https://arxiv.org/abs/2201.10883",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "unitree-dex3-1": {
+    "year": 2024,
+    "basis": "document",
+    "relation": "by",
+    "detail": "宇树 Dex3-1 安装说明明确使用该型号并标注 ©2024；按有年份的厂商资料定位，不宣称精确上市日期。",
+    "source": {
+      "title": "Unitree · Dex3-1 安装说明",
+      "url": "https://www.unitree.com/images/G1-Flagship%20Version%20A%26B%20Terminal%20Three-Fingered%20Dexterous%20Hand%20Dex3-1%20Disassembly%20and%20Assembly%20Guide%20Manual%20V1.1.pdf",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "psyonic-ability-hand": {
+    "year": 2021,
+    "basis": "release",
+    "relation": "event",
+    "detail": "PSYONIC 官方新闻明确记载 Ability Hand 于 2021 年在美国上市。面向机器人研究者的开放销售是之后的事件。",
+    "source": {
+      "title": "PSYONIC · Ability Hand 上市回顾",
+      "url": "https://www.psyonic.io/news/psyonic-releases-ability-hand-for-research-users",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "pisa-iit-softhand": {
+    "year": 2014,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用本档案机械设计所依据的 Adaptive Synergies 硬件论文正式期刊年份 2014；不宣称此前没有原型或实验。",
+    "source": {
+      "title": "Pisa/IIT SoftHand · 作者机构论文记录",
+      "url": "https://www.centropiaggio.unipi.it/publications/adaptive-synergies-design-and-control-pisaiit-softhand.html",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "qb-softhand-2-research": {
+    "year": 2023,
+    "basis": "document",
+    "relation": "by",
+    "detail": "官方用户手册内页写明 JAN 17, 2023 / V1.0.2；该日期证明 Research 型号至迟当时已有资料，不等同产品首发。",
+    "source": {
+      "title": "qbSoftHand2 Research · 用户手册 V1.0.2",
+      "url": "https://qbrobotics.com/wp-content/uploads/2022/05/qbSoftHand2-Research-User-Manual.pdf",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02",
+    "month": 1
+  },
+  "orca-hand": {
+    "year": 2025,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用介绍 ORCA v1 的 2025 年作者论文；同年发表于 IROS，不与后续 v2 混用。",
+    "source": {
+      "title": "ORCA · 硬件论文 2025",
+      "url": "https://arxiv.org/abs/2504.04259",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "ruka-v1": {
+    "year": 2025,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "RUKA v1 论文于 2025-04-17 首次公开，采用该论文年份。",
+    "source": {
+      "title": "RUKA · 论文初稿",
+      "url": "https://arxiv.org/abs/2504.13165",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02",
+    "month": 4
+  },
+  "leap-hand-v2": {
+    "year": 2025,
+    "basis": "demonstration",
+    "relation": "event",
+    "detail": "作者项目页明确标注 RSS 2025 Demo；这是第二代公开演示年份，不借用第一代 2023 年论文。",
+    "source": {
+      "title": "LEAP v2 · RSS 2025 Demo",
+      "url": "https://v2.leaphand.com/",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "tesollo-dg-5f-m": {
+    "year": 2026,
+    "basis": "document",
+    "relation": "by",
+    "detail": "Tesollo 2026-07-29 新闻明确命名 DG-5F-M 并介绍其在 Stanford 项目中的使用；2025 的 DG-5F 发布稿未注明 M，暂不合并为同一次首发。",
+    "source": {
+      "title": "Tesollo · DG-5F-M 研究采用公告",
+      "url": "https://www.tesollo.com/news/press/tesollo-robotic-hand-adopted-as-a-research-platform-at-stanford-university",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02",
+    "month": 7
+  },
+  "schunk-svh": {
+    "year": 2013,
+    "basis": "document",
+    "relation": "by",
+    "detail": "SCHUNK 厂商产品史将九电机 SVH 标在 2012 / 2013；地图取区间上界 2013，注明至迟，不假装确定单一首发年。",
+    "source": {
+      "title": "SCHUNK 产品目录 · 第 5 页产品史（镜像）",
+      "url": "https://robotosvarka.ru/upload/iblock/aea/Katalog-Sistemy-zakhvata-_SCHUNK_.pdf",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "schunk-sdh-2": {
+    "year": 2008,
+    "basis": "document",
+    "relation": "by",
+    "detail": "NIST 保存的 SCHUNK SDH-2.0 规格页明确写 Version: April 10th, 2008；证明该型号至迟当时已有公开资料。",
+    "source": {
+      "title": "SCHUNK SDH-2.0 规格页 · NIST 镜像",
+      "url": "https://www.nist.gov/document/9020173r1pdf",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02",
+    "month": 4
+  },
+  "inspire-rh56dfx": {
+    "year": 2024,
+    "basis": "document",
+    "relation": "by",
+    "detail": "厂商官网 2024-07-31 的文章明确列出 RH56DFX 与 RH56BFX；这是有日期的产品存在证据，非声称当年首发。",
+    "source": {
+      "title": "因时机器人 · 两系列产品公开报道",
+      "url": "https://www.inspire-robots.com/news/industry%20news/2024-07-31/227.html",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02",
+    "month": 7
+  },
+  "inspire-rh56bfx": {
+    "year": 2024,
+    "basis": "document",
+    "relation": "by",
+    "detail": "厂商官网 2024-07-31 的文章明确列出 RH56BFX 与 RH56DFX；不以公司成立时间替代该型号发布时间。",
+    "source": {
+      "title": "因时机器人 · 两系列产品公开报道",
+      "url": "https://www.inspire-robots.com/news/industry%20news/2024-07-31/227.html",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02",
+    "month": 7
+  },
+  "dlr-clash": {
+    "year": 2018,
+    "basis": "demonstration",
+    "relation": "event",
+    "detail": "DLR 系统页标记 2018 年公开展示；后续详细期刊论文为 2019 年，两个时间口径区分。",
+    "source": {
+      "title": "DLR CLASH · 系统公开展示",
+      "url": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/clash",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "dlr-david": {
+    "year": 2010,
+    "basis": "demonstration",
+    "relation": "event",
+    "detail": "DLR 记载第一版于 2010 年公开展示；2014 年第二版是后续迭代。",
+    "source": {
+      "title": "DLR David Hand · 版本历史",
+      "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/david-hand",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "dlr-dexhand": {
+    "year": 2012,
+    "basis": "demonstration",
+    "relation": "event",
+    "detail": "沿用 DLR 系统页公开展示年份 2012；2011 已有作者工作报告，不把二者写成同一事件。",
+    "source": {
+      "title": "DLR DEXHAND · 系统页",
+      "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dexhand-2012-2015",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "dlr-spacehand": {
+    "year": 2015,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用介绍 Spacehand 设计的 ASTRA 2015 论文年份；2014 项目启动及 2019 工程鉴定模型完成是另外两个里程碑。",
+    "source": {
+      "title": "DLR Spacehand · ASTRA 2015 作者论文",
+      "url": "https://elib.dlr.de/114155/1/95690_Chalon.pdf",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "robotiq-3f": {
+    "year": 2010,
+    "basis": "release",
+    "relation": "event",
+    "detail": "Robotiq 官方历史文章在 2010 年条目下记载开始销售 3-Finger Adaptive Gripper；当前档案参数仍各自绑定手册版本。",
+    "source": {
+      "title": "Robotiq · 产品销售历史",
+      "url": "https://blog.robotiq.com/2007-2015",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "prensilia-ih2-azzurra": {
+    "year": 2011,
+    "basis": "release",
+    "relation": "event",
+    "detail": "官方公司年表明确记载 2011 年推出 IH2 Azzurra；2014 是已有规格书版本日期，不再作为首次公开时间。当前参数仍注明具体规格书范围。",
+    "source": {
+      "title": "Prensilia 官方公司年表 · 2011 IH2 Azzurra",
+      "url": "https://www.prensilia.com/it/chi-siamo/",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-03"
+  },
+  "nasa-robonaut-2-hand": {
+    "year": 2010,
+    "basis": "demonstration",
+    "relation": "event",
+    "detail": "NASA 官方历史明确记载 R2 于 2010 年 2 月公开。手部设计报告另有 2011 元数据和 ICRA 2012 会议记录，此处采用整机携该手的公开展示年。",
+    "source": {
+      "title": "NASA Robonaut 2 · 官方历史资料",
+      "url": "https://www.nasa.gov/wp-content/uploads/2016/09/robonaut2_508.pdf",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02",
+    "month": 2
+  },
+  "festo-bionicsofthand": {
+    "year": 2019,
+    "basis": "demonstration",
+    "relation": "event",
+    "detail": "Festo 官方说明第一代 BionicSoftHand 在 2019 年国际新闻发布会上公开；不与 2020 年 BionicSoftHand 2.0 混淆。",
+    "source": {
+      "title": "Festo · BionicSoftHand 公开展示回顾",
+      "url": "https://press.festo.com/en/node/2709?country_code=ch",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "open-bionics-ada": {
+    "year": 2016,
+    "basis": "release",
+    "relation": "event",
+    "detail": "厂商 2016-02-16 博客明确宣布 Ada 开源机器人手套件发布。",
+    "source": {
+      "title": "Open Bionics · Ada 套件发布",
+      "url": "https://openbionicslabs.com/blog",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02",
+    "month": 2
+  },
+  "open-bionics-brunel": {
+    "year": 2017,
+    "basis": "document",
+    "relation": "by",
+    "detail": "Brunel V1.0 规格书为 2017 年 3 月，官方当年也有 Brunel 固件教程。以至迟 2017 定位，保留产品首发日期待补的区别。",
+    "source": {
+      "title": "Open Bionics Brunel · V1.0 规格书",
+      "url": "https://openbionicslabs.com/s/BrunelV10Datasheet.pdf",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02",
+    "month": 3
+  },
+  "wuji-hand": {
+    "year": 2025,
+    "basis": "document",
+    "relation": "by",
+    "detail": "官方版本日志包含 2025 年 v1 固件记录，说明至迟当年已有该平台；不是精确首发日。",
+    "source": {
+      "title": "官方产品 / 归档 v1 文档 · 时间依据",
+      "url": "https://docs.wuji.tech/docs/en/release-notes/",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "linker-l6": {
+    "year": 2026,
+    "basis": "document",
+    "relation": "by",
+    "detail": "当前官方产品页已核验；缺少该配置首次发布的日期证据，≤ 2026 只表示至迟存在。",
+    "source": {
+      "title": "官方产品规格 · 时间依据",
+      "url": "https://www.linkerhand.com/details/LinkerHandL6/",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "linker-o6": {
+    "year": 2026,
+    "basis": "document",
+    "relation": "by",
+    "detail": "当前官方产品页已核验；缺少该配置首次发布的日期证据，≤ 2026 只表示至迟存在。",
+    "source": {
+      "title": "官方产品规格 · 时间依据",
+      "url": "https://www.linkerhand.com/details/LinkerHandO6/",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "linker-l20-lite": {
+    "year": 2026,
+    "basis": "document",
+    "relation": "by",
+    "detail": "当前官方产品页已核验；缺少该配置首次发布的日期证据，≤ 2026 只表示至迟存在。",
+    "source": {
+      "title": "官方产品规格 · 时间依据",
+      "url": "https://www.linkerhand.com/details/LinkerHandL20Lite/",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "linker-l30": {
+    "year": 2026,
+    "basis": "document",
+    "relation": "by",
+    "detail": "当前官方产品页已核验；缺少该配置首次发布的日期证据，≤ 2026 只表示至迟存在。",
+    "source": {
+      "title": "官方产品规格 · 时间依据",
+      "url": "https://www.linkerhand.com/details/LinkerHandL30/",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "linker-o30": {
+    "year": 2026,
+    "basis": "document",
+    "relation": "by",
+    "detail": "当前官方产品页已核验；缺少该配置首次发布的日期证据，≤ 2026 只表示至迟存在。",
+    "source": {
+      "title": "官方产品规格 · 时间依据",
+      "url": "https://www.linkerhand.com/details/LinkerHandO30/",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "ilda-hand": {
+    "year": 2021,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 Nature Communications 的 2021 年发表记录；不是商业上市日期。",
+    "source": {
+      "title": "Nature Communications · 时间依据",
+      "url": "https://www.nature.com/articles/s41467-021-27261-0",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "vms-hand": {
+    "year": 2025,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 Nature Communications 的 2025 年发表记录；不是商业上市日期。",
+    "source": {
+      "title": "Nature Communications · 时间依据",
+      "url": "https://www.nature.com/articles/s41467-025-62122-0",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "palm-finger-soft-hand": {
+    "year": 2025,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 Nature Communications 的 2025 年发表记录；不是商业上市日期。",
+    "source": {
+      "title": "Nature Communications · 时间依据",
+      "url": "https://www.nature.com/articles/s41467-025-57741-6",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "detachable-crawling-hand": {
+    "year": 2026,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 Nature Communications 的 2026 年发表记录；不是商业上市日期。",
+    "source": {
+      "title": "Nature Communications · 时间依据",
+      "url": "https://www.nature.com/articles/s41467-025-67675-8",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "open-parametric-hand": {
+    "year": 2025,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 Science Robotics 的 2025 年发表记录；不是商业上市日期。",
+    "source": {
+      "title": "Science Robotics · 时间依据",
+      "url": "https://www.epfl.ch/labs/create/create-lab/publications/",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "dexco-hand": {
+    "year": 2024,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "论文于 2024 年在线发表，编入 T-RO 卷 41（2025）；地图采用在线公开年。",
+    "source": {
+      "title": "IEEE Transactions on Robotics · T-RO（2025 卷） · 时间依据",
+      "url": "https://doi.org/10.1109/TRO.2024.3508932",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "f-tac-hand": {
+    "year": 2025,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 Nature Machine Intelligence 的 2025 年发表记录；不是商业上市日期。",
+    "source": {
+      "title": "Nature Machine Intelligence · 时间依据",
+      "url": "https://www.nature.com/articles/s42256-025-01053-3",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "adapt-hand-1": {
+    "year": 2025,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 Communications Engineering 的 2025 年发表记录；不是商业上市日期。",
+    "source": {
+      "title": "Communications Engineering · 时间依据",
+      "url": "https://www.nature.com/articles/s44172-025-00407-4",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "adapt-hand-2": {
+    "year": 2025,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 npj Robotics 的 2025 年发表记录；不是商业上市日期。",
+    "source": {
+      "title": "npj Robotics · 时间依据",
+      "url": "https://www.nature.com/articles/s44182-025-00034-3",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "dash-hand": {
+    "year": 2023,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 IEEE-RAS Humanoids 的 2023 年发表记录；不是商业上市日期。",
+    "source": {
+      "title": "IEEE-RAS Humanoids · 时间依据",
+      "url": "https://arxiv.org/html/2306.04784v3",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "eyesight-hand": {
+    "year": 2024,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 arXiv · 2408.06265 的 2024 年发表记录；不是商业上市日期。",
+    "source": {
+      "title": "arXiv · 2408.06265 · 时间依据",
+      "url": "https://arxiv.org/html/2408.06265v1",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "yale-sphinx": {
+    "year": 2025,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 Nature Machine Intelligence 的 2025 年发表记录；不是商业上市日期。",
+    "source": {
+      "title": "Nature Machine Intelligence · 时间依据",
+      "url": "https://www.nature.com/articles/s42256-025-01039-1",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "allegro-v5": {
+    "year": 2026,
+    "basis": "document",
+    "relation": "by",
+    "detail": "截至 2026-10-02 可核查的官方产品页；此时间是已公开上界，并非推定上市年。",
+    "source": {
+      "title": "官方产品资料 · 时间依据",
+      "url": "https://allegrohand.com/sub/product/p.php?idx=3",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "allegro-v5-plus": {
+    "year": 2026,
+    "basis": "document",
+    "relation": "by",
+    "detail": "截至 2026-10-02 可核查的官方产品页；此时间是已公开上界，并非推定上市年。",
+    "source": {
+      "title": "官方产品资料 · 时间依据",
+      "url": "https://allegrohand.com/sub/product/p.php?idx=4",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "allegro-v6f": {
+    "year": 2026,
+    "basis": "document",
+    "relation": "event",
+    "detail": "厂商首页新闻列出 2026-09-07 的 V6 F 发布记录。",
+    "source": {
+      "title": "官方产品资料 · 时间依据",
+      "url": "https://allegrohand.com/",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02",
+    "month": 9
+  },
+  "mumuta-hand": {
+    "year": 2025,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "Science Robotics 论文发表于 2025-02-12；大学新闻发表于次日。",
+    "source": {
+      "title": "Science Robotics · 时间依据",
+      "url": "https://doi.org/10.1126/scirobotics.adr5512",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02",
+    "month": 2
+  },
+  "mogrip": {
+    "year": 2024,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 Science Robotics 的 2024 年发表记录；不是商业上市日期。",
+    "source": {
+      "title": "Science Robotics · 时间依据",
+      "url": "https://jaemineom.github.io/Project_MOGrip/",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "tactile-active-palm": {
+    "year": 2026,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 npj Robotics 的 2026 年发表记录；不是商业上市日期。",
+    "source": {
+      "title": "npj Robotics · 时间依据",
+      "url": "https://www.nature.com/articles/s44182-026-00079-y",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "omnidirectional-sensing-hand": {
+    "year": 2026,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 Microsystems & Nanoengineering 的 2026 年发表记录；不是商业上市日期。",
+    "source": {
+      "title": "Microsystems & Nanoengineering · 时间依据",
+      "url": "https://www.nature.com/articles/s41378-026-01179-3",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "high-dexterity-neuroprosthetic": {
+    "year": 2026,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 Nature Communications 的 2026 年发表记录；不是商业上市日期。",
+    "source": {
+      "title": "Nature Communications · 时间依据",
+      "url": "https://www.nature.com/articles/s41467-026-75105-6",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "matusik-pneumatic-hand": {
+    "year": 2023,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 2023 年首个 arXiv 版本；不冒称 Nature 或 Science 期刊论文。",
+    "source": {
+      "title": "arXiv · 2310.16280 · 时间依据",
+      "url": "https://arxiv.org/abs/2310.16280",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "tactile-softhand-a": {
+    "year": 2025,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "此档案采用 2025-09-02 的 v2 硬件与触觉配置；预印本编号始于 2024，不将两个版本重复计为两款手。",
+    "source": {
+      "title": "arXiv · 2406.12731 v2 · 时间依据",
+      "url": "https://arxiv.org/html/2406.12731v2",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02",
+    "month": 9
+  },
+  "jhu-neuromorphic-hand": {
+    "year": 2025,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 Science Advances 的 2025 年发表记录；不是商业上市日期。",
+    "source": {
+      "title": "Science Advances · 时间依据",
+      "url": "https://doi.org/10.1126/sciadv.adr9300",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "xynova-prima-1": {
+    "year": 2026,
+    "basis": "document",
+    "relation": "by",
+    "detail": "截至 2026-10-02 官方页面已公开；本记录不将网页访问年当作首次发布日期。",
+    "source": {
+      "title": "官方产品资料 · 时间依据",
+      "url": "https://www.xynova.com.cn/en/xynova-prima-1",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "isyhand-v6": {
+    "year": 2025,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 Humanoids 2025 的 2025 年发表记录；不是商业上市日期。",
+    "source": {
+      "title": "Humanoids 2025 · 时间依据",
+      "url": "https://arxiv.org/html/2509.26236v1",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "bidexhand-v4": {
+    "year": 2026,
+    "basis": "document",
+    "relation": "by",
+    "detail": "截至 2026-10-02 的作者 README 明确为 V4；2025 论文年份只表示项目论文，不能直接当作 V4 首发。",
+    "source": {
+      "title": "官方 V4 开源资料 · 时间依据",
+      "url": "https://github.com/wengmister/BiDexHand",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "faive-hand": {
+    "year": 2023,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 Humanoids 2023 的 2023 年发表记录；不是商业上市日期。",
+    "source": {
+      "title": "Humanoids 2023 · 时间依据",
+      "url": "https://srl-ethz.github.io/get-ball-rolling/",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "ruka-v2": {
+    "year": 2026,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 arXiv / ICRA Workshop 2026 的 2026 年发表记录；不是商业上市日期。",
+    "source": {
+      "title": "arXiv / ICRA Workshop 2026 · 时间依据",
+      "url": "https://ruka-hand-v2.github.io/",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "dexhand-021": {
+    "year": 2025,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 2025 结构与控制论文 的 2025 年发表记录；不是商业上市日期。",
+    "source": {
+      "title": "2025 结构与控制论文 · 时间依据",
+      "url": "https://arxiv.org/html/2511.03481v1",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "robotera-xhand1": {
+    "year": 2026,
+    "basis": "document",
+    "relation": "by",
+    "detail": "以 2026-10-02 已读取的官方 XHAND 1 型号页为公开上界；不将资料 URL 内的日期当成首发。",
+    "source": {
+      "title": "官方 XHAND 1 产品页 · 时间依据",
+      "url": "https://www.robotera.com/#/product/XHAND",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "aero-hand-open": {
+    "year": 2026,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 arXiv 2026 · 论文配置 的 2026 年发表记录；不是商业上市日期。",
+    "source": {
+      "title": "arXiv 2026 · 论文配置 · 时间依据",
+      "url": "https://arxiv.org/html/2608.28578v1",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "dexlink-hand": {
+    "year": 2026,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 arXiv 2026 · 机构论文 的 2026 年发表记录；不是商业上市日期。",
+    "source": {
+      "title": "arXiv 2026 · 机构论文 · 时间依据",
+      "url": "https://arxiv.org/html/2606.17418v1",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "mm-hand": {
+    "year": 2026,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 arXiv 2026 · 远程腱驱配置 的 2026 年发表记录；不是商业上市日期。",
+    "source": {
+      "title": "arXiv 2026 · 远程腱驱配置 · 时间依据",
+      "url": "https://arxiv.org/html/2604.17245v1",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "dmanus": {
+    "year": 2022,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 2022 年首版预印本公开时间；RA-L 发表记录为 2023，详情参照修订论文。",
+    "source": {
+      "title": "arXiv 2022 / RA-L 2023 · 时间依据",
+      "url": "https://arxiv.org/abs/2210.15658",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "tesollo-dg-5f-s": {
+    "year": 2026,
+    "basis": "document",
+    "relation": "event",
+    "detail": "官方 2026-01-07 开发公告；2026-02 商业化公告，不以网页素材路径日期代替首发。",
+    "source": {
+      "title": "官方 DG-5F-S 20 轴配置 · 时间依据",
+      "url": "https://www.tesollo.com/news/press/tesollo-develops-compact-lightweight-humanoid-hand-dg-5f-s",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02",
+    "month": 1
+  },
+  "paxini-dexh13-gen2": {
+    "year": 2026,
+    "basis": "document",
+    "relation": "by",
+    "detail": "截至 2026-10-02 官网已列明 GEN2 配置；此年为公开上界，非确认的首发年。",
+    "source": {
+      "title": "官方 DexH13 GEN2 产品页 · 时间依据",
+      "url": "https://paxini.com/cn/dex/gen2",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "brainco-revo-1": {
+    "year": 2024,
+    "basis": "document",
+    "relation": "by",
+    "detail": "Revo 1 上位机日志包含 2024-07-31 版本，故以 2024 为已公开上界，未据此认定首发日期。",
+    "source": {
+      "title": "官方 Revo 1 产品手册 · 基础机构 · 时间依据",
+      "url": "https://www.brainco-hz.com/docs/revolimb-hand/revo1/guide.html",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02",
+    "month": 7
+  },
+  "brainco-revo-2": {
+    "year": 2025,
+    "basis": "document",
+    "relation": "by",
+    "detail": "官方 2025-12-18 文章明确介绍 Revo 2，故以 2025 为已公开上界，非确切上市日。",
+    "source": {
+      "title": "官方 Revo 2 产品手册 · 基础机构 · 时间依据",
+      "url": "https://www.brainco.cn/en-US/news/b6yv48d2gg4tm8glwobox21o",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02",
+    "month": 12
+  },
+  "brainco-revo-3": {
+    "year": 2026,
+    "basis": "document",
+    "relation": "event",
+    "detail": "官方中文新闻列表将 Revo 3 发布列为 2026-04-09；参数取当前 U21 系列手册。",
+    "source": {
+      "title": "官方 Revo 3 · U21 系列 · 时间依据",
+      "url": "https://www.brainco.cn/zh-CN/news",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02",
+    "month": 4
+  },
+  "elephant-h100": {
+    "year": 2025,
+    "basis": "release",
+    "relation": "event",
+    "detail": "官方 2025-12-31 年度回顾明确将 myGripper H100 列为当年推出的产品，故采用 2025 发布年；尚未确认具体首发日。",
+    "source": {
+      "title": "Elephant Robotics · 官方 2025 年度回顾",
+      "url": "https://shop.elephantrobotics.com/blogs/news/elephant-robotics-reflects-on-a-landmark-2025-of-innovation-applications-and-global-engagement",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-03"
+  },
+  "xpeng-iron-hand-2025": {
+    "year": 2025,
+    "basis": "document",
+    "relation": "event",
+    "detail": "官方 AI Day 2025 发布的下一代 IRON，明确手部为 22 自由度；不与 2024 初代混写。",
+    "source": {
+      "title": "官方 AI Day 2025 · 下一代 IRON 手部 · 时间依据",
+      "url": "https://www.xpeng.com/fr/news/019a81702a099a7b13318a0282930071",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-02"
+  },
+  "tencent-trx-hand": {
+    "year": 2023,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 2023-04-11 首版论文公开时间；细杆操作配置与后续五指版本分开。",
+    "source": {
+      "title": "arXiv 2023 · 三指触觉实验配置 · 时间依据",
+      "url": "https://arxiv.org/abs/2304.05141",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-02",
+    "month": 4
+  },
+  "unitree-dex2-5": {
+    "year": 2026,
+    "basis": "document",
+    "relation": "by",
+    "detail": "截至 2026-10-04 官方已公开本型号产品页，地图采用 2026 作为已公开上界；未确认首次发布日。Dex2/5 是官网完整型号，不拆为 Dex2 和 Dex5。",
+    "source": {
+      "title": "官方 Dex2/5 产品规格 · 时间依据",
+      "url": "https://www.unitree.com/Dex2-5/",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-04"
+  },
+  "unitree-dex5-1": {
+    "year": 2026,
+    "basis": "document",
+    "relation": "by",
+    "detail": "当前官方型号为 Dex5-1。2025-03-31 官方发布视频标题为 Dex5、参数为 20（16+4）DOF；尚未取得名称变更与硬件修订对应文件，因此本型号采用 ≤2026 公开上界，不把视频日期直接当 Dex5-1 首发。",
+    "source": {
+      "title": "官方 Dex5-1 / Dex5-1P 产品规格 · 时间依据",
+      "url": "https://www.unitree.com/Dex5-1/",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-04"
+  },
+  "unitree-dex5-s": {
+    "year": 2026,
+    "basis": "document",
+    "relation": "by",
+    "detail": "截至 2026-10-04 官方已公开 Dex5-S 产品页，地图采用 ≤2026 已公开上界；本轮没有把媒体发布时间当作已核实首发日。",
+    "source": {
+      "title": "官方 Dex5-S / Dex5-S Pro 产品规格 · 时间依据",
+      "url": "https://www.unitree.com/Dex5-S/",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-04"
+  },
+  "okada-hand": {
+    "year": 1974,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用期刊发表日；1973 年收稿与 2009 年网络上线均不作为本节点年份。",
+    "source": {
+      "title": "Okada · Three-Dimensional Pattern Recognition，1974",
+      "url": "https://www.jstage.jst.go.jp/article/sicetr1965/10/2/10_2_230/_article/-char/en",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-04",
+    "month": 4
+  },
+  "stanford-jpl-hand": {
+    "year": 1982,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 IJRR 1982 年 3 月发表记录，不作为整手首次完成日期。",
+    "source": {
+      "title": "Salisbury、Craig · Articulated Hands，1982",
+      "url": "https://journals.sagepub.com/doi/10.1177/027836498200100102",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-04",
+    "month": 3
+  },
+  "utah-mit-hand": {
+    "year": 1986,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 ICRA 1986 论文年份；文中说明项目始于 1982 年，早期版本出现于 1984 年。",
+    "source": {
+      "title": "Jacobsen 等 · Design of the Utah/M.I.T. Dextrous Hand，1986",
+      "url": "https://people.csail.mit.edu/edsinger/raw/jacobsen_design_utah_hand.pdf",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-04"
+  },
+  "barrett-hand-1993": {
+    "year": 1993,
+    "basis": "release",
+    "relation": "event",
+    "detail": "年份来自 Barrett 官方历史中的第一代推出记录。",
+    "source": {
+      "title": "Barrett · 公司历史中的 1993 年记录",
+      "url": "https://barrett.com/history",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-04"
+  },
+  "dlr-hand-i": {
+    "year": 1998,
+    "basis": "demonstration",
+    "relation": "event",
+    "detail": "采用 DLR 官方平台谱系中的 Hand I（1998）记录。 机构方案另见 ICRA 1998 原始论文；节点年份继续沿用公开展示记录。",
+    "source": {
+      "title": "DLR · Hand I 机构与感知",
+      "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hand-i-1998",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-04"
+  },
+  "dlr-hit-hand-i": {
+    "year": 2003,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 ICRA 2003 年 9 月会议记录，不作为后续整手首发年份。",
+    "source": {
+      "title": "Liu 等 · The HIT/DLR Dexterous Hand: Work in Progress，2003",
+      "url": "https://www.dlr.de/en/rm/downloads/roboter_und_systeme/hand/icra2003hitdlr.pdf/@@download/file",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-04",
+    "month": 9
+  },
+  "dlr-hit-hand-ii": {
+    "year": 2008,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "采用 IROS 2008 年 9 月会议记录。",
+    "source": {
+      "title": "Liu 等 · Multisensory Five-Finger Dexterous Hand，2008",
+      "url": "https://elib.dlr.de/55786/1/LiuHong-Multisensory_Five-Finger_Dexterous_Hand-IROS.pdf",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-04",
+    "month": 9
+  },
+  "sdm-hand": {
+    "year": 2010,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "The Highly Adaptive SDM Hand: Design and Performance Evaluation；采用原文记录的 OnlineFirst 2010-02-02，卷期为 2010-04。",
+    "source": {
+      "title": "Dollar、Howe · The Highly Adaptive SDM Hand",
+      "url": "https://www.eng.yale.edu/grablab/pubs/dollar_ijrr2010.pdf",
+      "kind": "paper"
+    },
+    "verified_on": "2026-10-04",
+    "month": 2
+  },
+  "allegro-v1": {
+    "year": 2012,
+    "basis": "release",
+    "relation": "event",
+    "detail": "采用厂商回溯的 2012 年首版记录。",
+    "source": {
+      "title": "Wonik · About Allegro",
+      "url": "https://allegrohand.com/sub/about/allegro.php",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-04"
+  },
+  "qb-softhand-research": {
+    "year": 2018,
+    "basis": "document",
+    "relation": "event",
+    "detail": "2018 推出时间来自厂商回溯；不当作已核查的首批交付日期。",
+    "source": {
+      "title": "qbrobotics · Research 产品回溯",
+      "url": "https://qbrobotics.com/between-soft-technology-and-collaborative-robots/",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-04"
+  },
+  "shadow-dex-ee": {
+    "year": 2024,
+    "basis": "release",
+    "relation": "event",
+    "detail": "日期为 Shadow 公告发布；公告预告当月 ICRA 展示，未据此填写实际交付日。",
+    "source": {
+      "title": "Shadow · DEX-EE 公告，2024-05-09",
+      "url": "https://shadowrobot.com/shadow-robot-unveils-the-worlds-most-robust-dexterous-robot-hand-developed-in-partnership-with-google-deepmind/",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-04",
+    "month": 5
+  },
+  "tesollo-dg-5f-2024": {
+    "year": 2024,
+    "basis": "release",
+    "relation": "event",
+    "detail": "官网 2026-01-07 新闻回溯 2024 年推出及 IROS 展示；只确定到年份。",
+    "source": {
+      "title": "Tesollo · DG-5F 与小型化 DG-5F-S 的官方记录",
+      "url": "https://www.tesollo.com/news/press/tesollo-develops-compact-lightweight-humanoid-hand-dg-5f-s",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-04"
+  },
+  "allegro-v5-2024": {
+    "year": 2024,
+    "basis": "release",
+    "relation": "event",
+    "detail": "采用 Wonik 韩文公告的 2024-11-15 日期。",
+    "source": {
+      "title": "Wonik · Allegro Hand v5 发布公告，2024",
+      "url": "https://wonikrobotics.com/kr/sub/pr/news.php?bid=4&idx=108&mode=view&page=2",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-04",
+    "month": 11
+  },
+  "unitree-dex5-2025": {
+    "year": 2025,
+    "basis": "demonstration",
+    "relation": "event",
+    "detail": "采用 Unitree 官方发布视频日期 2025-03-31；当前型号命名对应关系仍需独立核对。",
+    "source": {
+      "title": "Unitree · Dex5 官方公开展示",
+      "url": "https://www.youtube.com/watch?v=0rwYOa7pJCs",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-04",
+    "month": 3
+  },
+  "figure-03-hand": {
+    "year": 2025,
+    "basis": "release",
+    "relation": "event",
+    "detail": "采用 Figure 03 官方公告日期 2025-10-09，不视为单独手部产品的上市日期。",
+    "source": {
+      "title": "Figure · Introducing Figure 03",
+      "url": "https://www.figure.ai/news/introducing-figure-03",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-04",
+    "month": 10
+  },
+  "yale-model-q": {
+    "year": 2014,
+    "basis": "paper",
+    "relation": "event",
+    "detail": "官方 Model Q 项目页引用 ROBIO 2014 的设计论文；用 2014 定位设计公开记录，2022 换指实验单独记录。",
+    "source": {
+      "title": "Yale Model Q · ROBIO 2014 论文记录",
+      "url": "https://www.eng.yale.edu/grablab/openhand/model_q.html",
+      "kind": "official"
+    },
+    "verified_on": "2026-10-04"
+  }
+}

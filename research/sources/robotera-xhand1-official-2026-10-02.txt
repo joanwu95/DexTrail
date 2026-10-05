@@ -1,0 +1,158 @@
+- link "产品":
+  - /url: "#/product/L7"
+- link "大模型":
+  - /url: "#/model"
+- link "解决方案":
+  - /url: "#/solution"
+- link "关于星动":
+  - /url: "#/about/us"
+- link "下载中心":
+  - /url: "#/download"
+- link "采购咨询":
+  - /url: "#/purchase"
+- button "简体中文":
+  - text: 简体中文
+- img "XHAND"
+- generic: 星动XHAND 1
+- paragraph: 全直驱才是真自由
+- generic: 立即购买
+- generic: 全直驱才是真自由
+- generic: 12 主动自由度
+- generic: 四指全对指，反驱更可靠
+- generic: 全直驱
+- generic: 线性参数，精准 AI 力控
+- generic: 270°
+- generic: 全直驱超灵敏
+- generic: 每个手指配备一个 270° 指端环绕高分辨率 (>100 点) 的触觉阵列传感器，精度可达 0.05N，提供三维力触觉和温度信息，抓握性能强于压阻类平板型触觉传感器。
+- generic: 10 CPS
+- generic: 全直驱电竞手
+- generic: · 全直驱方案，通过齿轮直接驱动，速度快于连杆和绳驱方案
+- generic: · 电机性能强，扭矩大于 1N·m
+- generic: 25KG
+- generic: 超强负载，大力士水准
+- generic: 星动 XHAND1 采用全自研一体化关节模组。基于类人手尺寸的空间，我们紧凑设计关节，并深耕电机磁路拓扑与结构设计，提升关节爆发力。单指最大负载可达 5Kg+，四指 20Kg+，整手可举起 25Kg 以上哑铃。
+- generic: 我们能做什么
+- generic: 强化学习
+- generic: Reinforcement Learning
+- generic: · 高维运动空间
+- generic: · 强化学习原生设计
+- generic: · 丰富的物理感知
+- generic: · 开放的控制接口
+- generic: 模仿学习
+- generic: Imitation Learning
+- generic: · 快速精准的遥操作
+- generic: · 高保真数据采集
+- generic: · 类人手设计
+- generic: 软件支持
+- generic: 兼容 Ubuntu 操作系统
+- generic: 全面支持 Ubuntu，为开发者提供稳定、高效的运行环境
+- generic: 提供软件开发工具包
+- generic: 内置强大的 SDK，支持 C++、Python、ROS 1 和 ROS 2，加速您的应用开发流程
+- generic: 支持跨平台硬件架构
+- generic: 无缝兼容 x86 和 ARM 架构，均能灵活响应
+- generic: 远程遥操作
+- generic: 支持 VR 头显、动捕手套、外骨骼手套等多种遥操作方案。提供自研高精度遥操作软件，实现人手与 XHAND 系列灵巧手的动作重定向，使客户能够快速完成远程操作测试和高质量数据采集。
+- generic: 产品参数
+- generic: 基础参数
+- generic: 重量
+- generic: 1100g
+- generic: 尺寸（长x宽x厚）
+- generic: 191 mm x 94 mm x 47mm（相当于成人手大小）
+- generic: 主动自由度
+- generic: "12"
+- generic: 被动自由度
+- generic: "0"
+- generic: 自由度分配
+- generic: 拇指x3
+- generic: 食指x3
+- generic: 中指x2
+- generic: 无名指x2
+- generic: 小拇指x2
+- generic: 拇指传动机构
+- generic: "-"
+- generic: 四指传动机构
+- generic: "-"
+- generic: 指尖构型
+- generic: 圆润型指尖
+- generic: 侧摆范围
+- generic: "-5~17°"
+- generic: 指尖重复定位精度
+- generic: ±0.20 mm
+- generic: 控制模式
+- generic: 位控（低阻尼/高阻尼模式）、电流环力控、力位控制
+- generic: 动态性能
+- generic: 大拇指最远对指
+- generic: 小拇指
+- generic: 重复开合速度
+- generic: ">2 Hz"
+- generic: 反驱阻尼（可反驱）
+- generic: ≤0.1 N·s/m
+- generic: 感知性能
+- generic: 传感器覆盖面积
+- generic: 270° 五指指尖环绕
+- generic: 触觉传感器数量
+- generic: 5 个（五指指尖 270° 三维环绕触觉阵列传感）
+- generic: 触觉传感规格
+- generic: 5指触觉阵列，每指120点，270°环绕覆盖，每触点具备三维力感知（含切向力XY、法向力Z）、温度、接触点面积、振动频率、滑动趋势
+- generic: 软件性能
+- generic: 整手控制频率
+- generic: 83 Hz
+- generic: 通信速率
+- generic: EtherCAT：100 MHz
+- generic: RS485：2 MHz
+- generic: 感知参数
+- generic: 指尖：5×120 (单指) ×5 触觉三维阵列
+- generic: 关节：位置、速度、温度、电流（力矩）
+- generic: 控制参数
+- generic: 关节位置、关节扭矩、关节刚度系数、关节阻尼系数
+- generic: 可靠性能
+- generic: 空载抓取寿命
+- generic: 100 万次
+- generic: 工作温度范围
+- generic: "-20°C ~ 60°C"
+- generic: 电气性能
+- generic: 工作电压
+- generic: 24 V ~ 72 V
+- generic: 静态电流
+- generic: 0.15 A @48 V, 7 W
+- generic: 最大电流
+- generic: 2.5 A @48 V, 120 W
+- generic: 通信接口
+- generic: RS485 (USB), EtherCAT
+- generic: 商务邮箱：
+- link "MKT@robotera.com":
+  - /url: mailto:MKT@robotera.com
+- generic: 媒体合作：
+- link "PR@robotera.com":
+  - /url: mailto:PR@robotera.com
+- generic: HR 邮箱：
+- link "HR@robotera.com":
+  - /url: mailto:HR@robotera.com
+- generic: 联系电话：
+- link "400 900 8798":
+  - /url: tel:400 900 8798
+- generic: 投诉邮箱：
+- link "CC@robotera.com":
+  - /url: mailto:CC@robotera.com
+- text: 关注视频号
+- text: 关注公众号
+- generic: 全部产品
+- generic: 星动L7
+- generic: 星动Q5
+- generic: 星动M7
+- generic: 星动XHAND 1
+- generic: 星动XHAND 1 Lite
+- generic: 星动XHAND 1 PRO
+- generic: 关于我们
+- generic: 公司介绍
+- generic: 团队介绍
+- generic: 企业荣誉
+- generic: 联系方式
+- generic: 下载中心
+- generic: 文档中心
+- generic: 更多功能
+- generic: 加入我们
+- generic: 新闻资讯
+- generic: 解决方案
+- text: © 2026 北京星动纪元科技股份有限公司 版权所有 京ICP备2023021939号
+- text: 京公网安备11010802049299号

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#e5bd78" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="title desc">
+  <title id="title">DexTrail — articulated hand concept</title>
+  <desc id="desc">An open five-finger robotic hand, reduced to a warm gold outline, joint marks and two palm trajectories.</desc>
+  <path d="M23 56c-1-6-5-9-8-13L7 31c-2-3-1-6 2-7 2-1 4 0 6 3l7 9V17c0-5 7-5 7 0v13V10c0-5 7-5 7 0v20V13c0-5 7-5 7 0v19V21c0-5 7-5 7 0v18c0 8-5 12-6 17"/>
+  <path d="M23 60h21M23.5 24h4M30.5 18h4M37.5 21h4M44.5 28h4M12 30l3-2"/>
+  <path d="M26 37c0 7 8 6 8 16M42 37c0 7-8 6-8 16"/>
+  <circle cx="34" cy="53" r="2.2" fill="#e5bd78" stroke="none"/>
+</svg>

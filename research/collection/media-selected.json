@@ -1,0 +1,88 @@
+{
+  "linker-l20": {
+    "kind": "image",
+    "url": "https://botdata.oss-cn-beijing.aliyuncs.com/afterSales/linkerbot_img/products/linkerhand-l20/detail-2.png",
+    "source": "https://www.linkerhand.com/details/LinkerHandL20/",
+    "alt": "Linker L20 官方产品图"
+  },
+  "trifinger": {
+    "kind": "image",
+    "url": "https://open-dynamic-robot-initiative.github.io/trifinger_docs/_images/trifingerpro.jpg",
+    "source": "https://open-dynamic-robot-initiative.github.io/trifinger_docs/",
+    "alt": "TriFinger Pro 实物；此图对应 Pro 版本"
+  },
+  "rbo-hand-2": {
+    "kind": "image",
+    "url": "https://static.wixstatic.com/media/a3cb45_8489ad820e5642849df51224f57b8c53.jpg/v1/fill/w_300,h_219,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a3cb45_8489ad820e5642849df51224f57b8c53.jpg",
+    "source": "https://www.naturalmachinemotioninitiative.com/rbo-hand-2",
+    "alt": "RBO Hand 2 项目实物图"
+  },
+  "pisa-iit-softhand": {
+    "kind": "image",
+    "url": "https://static.wixstatic.com/media/a3cb45_9aa9f462fb284c638ae9e2bc89de9c92.png/v1/fill/w_300,h_250,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a3cb45_9aa9f462fb284c638ae9e2bc89de9c92.png",
+    "source": "https://www.naturalmachinemotioninitiative.com/softhand",
+    "alt": "Pisa/IIT SoftHand 项目实物图"
+  },
+  "tesollo-dg-5f-m": {
+    "kind": "image",
+    "url": "https://cdn.tesollo.com/site/products/2026/08/21d43383-2721-4226-b66d-2590382a0349.webp",
+    "source": "https://www.tesollo.com/products/grippers/dg-5f-m",
+    "alt": "Tesollo DG-5F-M 官方产品图"
+  },
+  "robotiq-3f": {
+    "kind": "image",
+    "url": "https://robotiq.com/hs-fs/hubfs/Design_3F.jpg?width=461&height=311&name=Design_3F.jpg",
+    "source": "https://robotiq.com/products/3-finger-adaptive-robot-gripper",
+    "alt": "Robotiq 3-Finger 官方设计图"
+  },
+  "nasa-robonaut-2-hand": {
+    "kind": "image",
+    "url": "https://technology.nasa.gov/t2media/tops/img/MSC-TOPS-104/R2-Sensing-Back-Image-1.jpg",
+    "source": "https://technology.nasa.gov/patent/MSC-TOPS-104",
+    "alt": "NASA R2 腱张力传感器结构示意"
+  },
+  "unitree-dex3-1": {
+    "kind": "image",
+    "url": "https://www.unitree.com/images/4eff56e5733d4fdbb8276bf6c65daa74_1920x1080.png",
+    "source": "https://www.unitree.com/Dex3-1/",
+    "alt": "Unitree Dex3-1 官方产品图"
+  },
+  "sharpa-w01": {
+    "kind": "image",
+    "url": "https://www.sharpa.com/cdn/shop/files/W01_32b0a50e-276f-4857-84aa-fc3b007e6f27.png?v=1790442886&width=600",
+    "source": "https://www.sharpa.com/pages/w01",
+    "alt": "Sharpa W01 官方产品图",
+    "video_url": "https://www.sharpa.com/cdn/shop/videos/c/vp/249c98129c3349eda95ca60fc226af9d/249c98129c3349eda95ca60fc226af9d.HD-1080p-7.2Mbps-67754346.mp4?v=0"
+  },
+  "qb-softhand-2-research": {
+    "kind": "image",
+    "url": "https://qbrobotics.com/wp-content/uploads/2022/05/Posa1-1.jpg",
+    "source": "https://qbrobotics.com/product/qb-softhand-2-research/",
+    "alt": "qb SoftHand 2 Research 官方产品图"
+  },
+  "orca-hand": {
+    "kind": "image",
+    "url": "https://arxiv.org/html/2504.04259v1/figures/MainFigure.png",
+    "source": "https://arxiv.org/html/2504.04259v1",
+    "alt": "ORCA Hand 论文第一版图 1：设计与操作示例"
+  },
+  "festo-bionicsofthand": {
+    "kind": "image",
+    "url": "https://i.ytimg.com/vi/5e0F14IRxVc/hqdefault.jpg",
+    "source": "https://www.youtube.com/watch?v=5e0F14IRxVc",
+    "alt": "Festo BionicSoftHand 官方演示视频封面",
+    "video_url": "https://www.youtube.com/watch?v=5e0F14IRxVc"
+  },
+  "open-bionics-ada": {
+    "kind": "image",
+    "url": "https://images.squarespace-cdn.com/content/v1/56376cfde4b078ea32822fff/1455702782346-KI0ONF7H3Z0COK2MFFB1/image-asset.jpeg",
+    "source": "https://openbionicslabs.com/blog",
+    "alt": "Open Bionics Ada 官方发布文章配图"
+  },
+  "open-bionics-brunel": {
+    "kind": "image",
+    "url": "https://www.frontiersin.org/files/Articles/802070/xml-images/fresc-02-802070-g0001.webp",
+    "source": "https://www.frontiersin.org/journals/rehabilitation-sciences/articles/10.3389/fresc.2021.802070/full",
+    "alt": "Brunel V1.0 研究实验配置（论文图 1，含整套实验装置）"
+  }
+}

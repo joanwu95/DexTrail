@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="732" height="393" viewBox="106 171 732 393" role="img"><title>Antipodal grasp</title><desc>平面模型中，接触连线在两个摩擦锥内部和外部的对比。</desc>
+<rect width="960" height="720" fill="#f4f1ea"/>
+<ellipse cx="258.00" cy="385.00" rx="91.00" ry="91.00" fill="#edeae3" stroke="#292b29" stroke-width="1.8"/>
+<polyline points="167.00,397.80 167.00,372.20 147.80,372.20 147.80,397.80 167.00,397.80" fill="none" stroke="#696d67" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="167.00,397.80 167.00,372.20 147.80,372.20 147.80,397.80" fill="#f4f1ea" stroke="#696d67" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="147.80,377.00 139.80,383.40" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="147.80,385.00 139.80,391.40" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="147.80,393.00 139.80,399.40" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="167.00,385.00 247.50,344.75 247.50,425.25 167.00,385.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="167.00,385.00 247.50,344.75 247.50,425.25" fill="#eee5dd" stroke="#bdbcb6" stroke-width="1" stroke-linejoin="round"/>
+<polyline points="167.00,385.00 264.20,385.00" fill="none" stroke="#696d67" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 7"/>
+<ellipse cx="167.00" cy="385.00" rx="3.50" ry="3.50" fill="#f4f1ea" stroke="#aa4d3e" stroke-width="1.5"/>
+<polyline points="349.00,372.20 349.00,397.80 368.20,397.80 368.20,372.20 349.00,372.20" fill="none" stroke="#696d67" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="349.00,372.20 349.00,397.80 368.20,397.80 368.20,372.20" fill="#f4f1ea" stroke="#696d67" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="368.20,393.00 376.20,386.60" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="368.20,385.00 376.20,378.60" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="368.20,377.00 376.20,370.60" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="349.00,385.00 268.50,425.25 268.50,344.75 349.00,385.00" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="349.00,385.00 268.50,425.25 268.50,344.75" fill="#eee5dd" stroke="#bdbcb6" stroke-width="1" stroke-linejoin="round"/>
+<polyline points="349.00,385.00 251.80,385.00" fill="none" stroke="#696d67" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 7"/>
+<ellipse cx="349.00" cy="385.00" rx="3.50" ry="3.50" fill="#f4f1ea" stroke="#aa4d3e" stroke-width="1.5"/>
+<polyline points="133.00,385.00 383.00,385.00" fill="none" stroke="#292b29" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 7"/>
+<text x="258.00" y="221.00" font-size="23" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="middle">Antipodal</text>
+<text x="258.00" y="542.00" font-size="18" fill="#aa4d3e" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="middle">Line inside both cones</text>
+<ellipse cx="712.00" cy="385.00" rx="91.00" ry="91.00" fill="#edeae3" stroke="#292b29" stroke-width="1.8"/>
+<polyline points="638.60,329.70 656.70,311.60 643.13,298.03 625.03,316.13 638.60,329.70" fill="none" stroke="#696d67" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="638.60,329.70 656.70,311.60 643.13,298.03 625.03,316.13" fill="#f4f1ea" stroke="#696d67" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="639.73,301.42 629.55,300.29" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="634.08,307.08 623.89,305.95" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="628.42,312.73 618.24,311.60" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="647.65,320.65 733.03,349.11 676.11,406.03 647.65,320.65" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="647.65,320.65 733.03,349.11 676.11,406.03" fill="#eee5dd" stroke="#bdbcb6" stroke-width="1" stroke-linejoin="round"/>
+<polyline points="647.65,320.65 716.38,389.38" fill="none" stroke="#696d67" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 7"/>
+<ellipse cx="647.65" cy="320.65" rx="3.50" ry="3.50" fill="#f4f1ea" stroke="#aa4d3e" stroke-width="1.5"/>
+<polyline points="767.30,311.60 785.40,329.70 798.97,316.13 780.87,298.03 767.30,311.60" fill="none" stroke="#696d67" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="767.30,311.60 785.40,329.70 798.97,316.13 780.87,298.03" fill="#f4f1ea" stroke="#696d67" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="795.58,312.73 796.71,302.55" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="789.92,307.08 791.05,296.89" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="784.27,301.42 785.40,291.24" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="776.35,320.65 747.89,406.03 690.97,349.11 776.35,320.65" fill="none" stroke="#bdbcb6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="776.35,320.65 747.89,406.03 690.97,349.11" fill="#eee5dd" stroke="#bdbcb6" stroke-width="1" stroke-linejoin="round"/>
+<polyline points="776.35,320.65 707.62,389.38" fill="none" stroke="#696d67" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 7"/>
+<ellipse cx="776.35" cy="320.65" rx="3.50" ry="3.50" fill="#f4f1ea" stroke="#aa4d3e" stroke-width="1.5"/>
+<polyline points="613.65,320.65 810.35,320.65" fill="none" stroke="#292b29" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 7"/>
+<text x="712.00" y="221.00" font-size="23" fill="#292b29" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="middle">Not antipodal</text>
+<text x="712.00" y="542.00" font-size="18" fill="#aa4d3e" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="400" text-anchor="middle">Line outside the cones</text>
+</svg>

@@ -1,0 +1,455 @@
+
+ ADAPT-Teleop: robotic hand with human matched embodiment enables dexterous teleoperated manipulation | npj Robotics
+ Skip to main content
+ Thank you for visiting nature.com. You are using a browser version with limited support for CSS. To obtain
+ the best experience, we recommend you use a more up to date browser (or turn off compatibility mode in
+ Internet Explorer). In the meantime, to ensure continued support, we are displaying the site without styles
+ and JavaScript.
+ Advertisement
+ View all journals
+ Saved research
+ Search
+ Log in
+ Content
+ Explore content
+ About the journal
+ Publish with us
+ Sign up for alerts
+ RSS feed
+ nature
+npj robotics
+articles
+ article
+ ADAPT-Teleop: robotic hand with human matched embodiment enables dexterous teleoperated manipulation
+ Download PDF
+ Download PDF
+ Article
+ Open access
+ Published: 15 September 2025
+ ADAPT-Teleop: robotic hand with human matched embodiment enables dexterous teleoperated manipulation
+ Kai Junge1 & 
+Josie Hughes1 
+ npj Robotics
+ volume 3, Article number: 31 (2025) Cite this article
+ Save article
+ View saved research
+ 11k Accesses
+ 7 Citations
+ 17 Altmetric
+ Metrics details
+ Abstract
+Anthropomorphic robotic hands are essential for robots to learn from humans and operate in human environments. While most designs loosely mimic human hand kinematics and structure, achieving the dexterity and emergent behaviors present in human hands, anthropomorphic design must extend to also match passive compliant properties while simultaneously strictly having kinematic matching. We present ADAPT-Teleop, a system combining a robotic hand with human-matched kinematics, skin, and passive dynamics, along with a robotic arm for intuitive teleoperation. The hand is evaluated based on 2D/3D kinematic similarity, skin deformation, and compliance. Compared to state-of-the-art designs, ADAPT Hand 2 integrates the most comprehensive anthropomorphic features. To demonstrate the impact of this design, we implement a direct joint-to-joint teleoperation system, enabling dexterous and contact-rich tasks such as in-hand cube manipulation, multi-object grasping, and complex pick-and-place operations. The ADAPT-Teleop platform and the developed assessment metrics serve to advance the capabilities of anthropomorphic dexterous manipulators.
+ Similar content being viewed by others
+ Spatially distributed biomimetic compliance enables robust anthropomorphic robotic manipulation
+ Article
+ Open access
+ 26 April 2025
+ A detachable crawling robotic hand
+ Article
+ Open access
+ 20 January 2026
+ Embedding high-resolution touch across robotic hands enables adaptive human-like grasping
+ Article
+ Open access
+ 09 June 2025
+ Explore related subjects
+ Discover the latest articles and news in related subjects.
+ Engineering
+ Mechanical engineering
+ Soft Robotic Systems and Actuation Technologies
+ Introduction
+The development of truly anthropomorphic robotic hands that mimic the human hand scale and structure is a long-term goal for robotic research1,2. This not only drives technical development, but is a pathway to providing robots with the capabilities to operate with dexterity in human-centric environments3,4. Driven by this goal, there has been a century of robotic manipulation research5,6 during which anthropomorphic robot hands have advanced from overly-sized, rigid, pin-jointed hands7,8, to multi-materials musculoskeletal robots which show an increasingly close kinematic resemblance to human hands9,10. However, there remains a significant gap between robots and humans, in both their physical complexity and structure and their resultant and emergent capabilities11. Closing this gap is becoming increasingly relevant to facilitate the direct transfer of manipulation skills frOkayom a human to a robot. This includes direct skill transfer through teleoperation12,13, which is a highly promising method for rapid data collection for learning controllers and leveraging advances in Large AI14.
+Despite this need, most of the development of anthropomorphic hands focuses on achieving finger and thumb structures with a similar kinematic link to humans15. Established metrics for manipulation exist, but typically focus on kinematic properties (e.g., workspace and degrees of freedom)3,15,16, grasping strength17, Kapandji score18, or grasp taxonomies19,20. However, anthropomorphism extends beyond these metrics to the skin curvature and deformation21, wrist motion and compliance22,23, and the passive behaviors of the hand24. These are all critical elements of the hand embodiment, which are necessary to generate the robust interactions necessary to perform many manipulation tasks25. To advance anthropomorphism for robotics hands, the wider effect of embodiment must also be addressed in the hardware design.
+In this work, we present the ADAPT-Teleop system: A teleoperated robotic manipulation system to perform intuitive and dexterous tasks. The contributions of this work can be divided into three, where its summary and relation to each other is described in Fig. 1.
+Fig. 1: Contribution of the paper split to three parts.Full size image
+A The development of a highly anthropomorphic hand, ADAPT Hand 2, by matching a human hand in its scale and kinematics, a continuous skin, and its passive compliance. B The assessment used to holistically evaluate the embodiment similarities. C The highly anthropomorphic design enables intuitive and dexterous teleoperation tasks to be performed through the ADAPT-Teleop system.
+At the heart of this system is the ADAPT Hand 2, the anthropomorphic robotic hand which has a high degree of similarity to a human in kinematic and passive dynamic features compared to the state of the art: the first contribution of this work. Specifically, this robotic hand closely mimics the human hand by design through its scale, relative joint locations, actuated kinematics, continuous skin surface, integrated wrist, and its distributed compliance (Fig. 1A). The ADAPT Hand 2 (AH2) builds upon the ADAPT Hand (AH1)26, a robotic hand with passive dynamics properties matched with a human through its stiffness in the skin, finger, and wrist. Whilst retaining this matched spatially distributed compliance, its kinematic structure is designed directly from an anatomical model, while the surface geometry of the skin closely mimics a human.
+The AH2 presents a more holistic anthropomorphic design compared to existing robotic hands, where the anthropomorphism extends to many different aspects of the design of the hand. Existing state-of-the-art art shows a similar kinematic structure and often more actuated degrees of freedom. The Shadow hand and DLR David hand27, for example, use 18 and 19 motors respectively (the highest motor count) whilst having a similar kinematic form. However, the similarities in the skin and passive dynamics are fully disregarded. Fully soft hands, such as the RBO Hand 39 and the Shorthose hand28 are all compliant through design. However, the soft pneumatic actuated system limits their agility, actuation repeatability. The lack of a skeletal structure reduces its kinematic similarity and the rigidity when force application is necessary. Alternatively, the Biomimetic hand29 and Gilday hand22 are designed with bones, ligaments, and tendons designed directly from the human skeleton. Although the design exhibits the highest level of mechanical similarities, the complexity of directly using a biological design increases its design and control complexity, limiting its actuation capabilities for manipulation tasks.
+To evaluate the AH2 through the wider consideration of embodiment, this work includes four assessments (Fig. 1B) which are made with respect to the human hand and other robotic hands (where possible): the second contribution of this work to assess robotic hands beyond simple metrics. As a starting point, the AH2 is compared against 10 other hands in a tabulated form through widely available mechatronic metrics such as actuator count, physical scale, and passive compliance properties. Simple metrics, although they are useful for cross-comparison, are limited by the lack of detail they capture. To assess the kinematic similarity, the joint range of motion, 2D workspace, and most notably the 3D workspace is captured. For the 3D workspace, the volume of the index finger and the thumb is compared, capturing the relative finger and thumb placements and scale, reflecting the potential dexterity. On the passive elements, the skin deformation and conformity to objects is measured, capturing the soft tissue deformation when interacting with different objects. The effect of continuous skin, especially on the parts connecting the digits to the palm, is shown by measuring grasping forces with varying amounts of skin. Finally, the passive compliance is measured, assessing the similarity of the interaction forces at different scales of the hand (skin, finger, wrist).
+To show the capabilities of this hand beyond similarity metrics, the ADAPT-Teleop system is developed for more complex tasks and use-cases (Fig. 1C). This is the third contribution of this work, where we demonstrate that the high degree of anthropomorphism of the robotic hand contributes to simplifying dexterous teleoperation capabilities in two major directions. The first effect of a highly anthropomorphic design is related to the hand’s kinematics to simplify the mapping between the human and the robot to achieve dexterous capabilities. In the literature, most teleoperated hand-arm systems improve the intuitiveness of the teleoperation through more sophisticated mappings, such as classifying gestures, a fingertip pose mapping30, and/or through deep learning based methods31. Likewise, teleoperation tasks are often limited to the pick and place of objects with varying geometry, if at all31,32,33,34,35. In this teleoperation system, by exploiting the highly kinematically matched AH2, we implement a joint-to-joint mapping from the measurements of the human hand and wrist poses. A joint-to-joint mapping relies on the robot hardware to closely mimic the human hand, since a mismatched system would require the human to perform unnatural motions to command the robot. This mapping precision is evaluated pictorially by comparing different input hand poses to the output robot poses. The overall intuitiveness of the teleoperation system is quantitatively evaluated via a pick-and-place task, with measurements on the execution time and also similarity in motion trajectory to humans performing the same task; benchmarking the system against similar objects of varying geometry and weight; and by emulating mismatched robot kinematics through purposefully varying the mapping methodology. The second effect of a highly anthropomorphic design is related to the hand’s passive dynamics to enable more contact-rich interactions. Often, a vision-only teleoperation system without the use of haptic or force feedback struggles to perform contact-rich tasks32,36 as forces cannot be regulated well, resulting in task failure or breakage of the robot/environment37. The ADAPT-Teleop system is a simple unidirectional teleoperation setup where only the operator’s kinematics are mapped to the robot, while the operator only receives visual feedback. Despite this setup, we demonstrate seven tasks such as sliding a paper off a surface, holding and stacking multiple objects, and in-hand manipulation of a cube - enabled by the distributed compliance of the robot to passively adapt and regulate forces.
+In summary, we present a highly anthropomorphic robotic hand evaluated against the state of the art with existing and new metrics of comparison. Then we demonstrate how the anthropomorphic features can be leveraged to simplify a teleoperated robotic system. In the remainder of this work, we describe the AH2 through its design and assessment against other robotic hands, followed by quantitative and qualitative assessments of the teleoperation system. Finally a discussion is presented with limitations and future works of this work alongside the methodologies used in the study.
+Results
+ADAPT-Teleop system
+The ADAPT-Teleop system comprises of the custom-built anthropomorphic robotic hand, ADAPT Hand 2(AH2), combined with a joint-to-joint mapped teleoperation system using the Apple Vision Pro headset. The hand is a successor of the ADAPT Hand (AH1)26, and inherits key features (see section 4.1 for notable changes).
+The ADAPT Hand 2 (AH2) is a tendon-driven anthropomorphic robotic hand that mimics the human hand’s kinematics, passive properties, and skin structure (Fig. 2A). The robotic system contains 15 actuators: 13 to control the hand and two to control an integrated wrist. Each finger is actuated in the flexion/extension direction with two motors. Antagonistic tendons control the metacarpophalangeal (MCP) joint, while a single tendon controls the flexion motion of the proximal inter-phalangeal (PIP) and distal inter-phalangeal (DIP) joints. The abduction/adduction motion is controlled by a coupled mechanism through one motor. For the thumb, four actuators are used to control the four joints independently; being the most relevant feature on a hand to create dexterous behavior.
+Fig. 2: The ADAPT Hand 2.Full size image
+A The front and back side of the AH2, with key features labeled. B The mechanical design process to develop the AH2. Starting from an anatomical model of the hand, the five digits are placed to match the skeletal structure. After the connecting structure and integrated wrists are placed, a biomimetic continuous skin is included.
+A key feature, in addition to its actuation and kinematic structure, is the use of passive elements. Firstly, a continuous skin covers the full surface from the fingertips to the bottom of the palm. Not only does this provide contact-level robustness, but a soft surface that conforms to objects when interacting with them. Passivity is also found in the fingers. The MCP joint on the fingers and the carpometacarpal (CMC) joint on the thumb is series elastically actuated: a feature inherited from AH126. This allows for interactions to be safe and robust at the same time with a simple position-based command (e.g.,: used in the teleoperation system). The hand is overall compliant through the use of an impedance-controlled controlled38 Franka Research 3 (FR3) Robotic arm.
+The AH2 being series elastic in its MCP and CMC joints, is designed for compliant interaction rather than a high force interaction. The series elasticity limits the maximum force output at the fingertips to roughly 2N, while the directly connected PIP/DIP joints are limited by the motor torque to produce a theoretical maximum output roughly at 30N.
+The AH2 includes an integrated wrist compared to the AH1, which can be actuated in the pitch and yaw direction. The addition of an integrated wrist allows the workspace of the hand-arm system to better match the human.
+The AH2 is designed directly from an anatomical CAD model of a human hand, including the bone and surface mesh of a representative human male’s hand. Illustrated in Fig. 2B, the design process begins with the skeletal model (step 1). In the subsequent step, the four fingers and thumb are designed to match the link sizes and placed so their joint locations reflect those on the skeleton. A surrounding structure is designed around the fingers and thumb (step 3) to complete the hand itself. A 2DoF wrist is designed from a parallel bevel gear mechanism for its compactness, which can be placed directly under the hand, where the true human wrist would exist (step 4). Finally, a continuous skin is designed, mimicking the webs and lumps of the human flesh. The designed hand is fully 3D printed using FDM printed commercially available PLA, and TPU.
+The teleoperation system (shown in Fig. 1C), comprises of the AH2 attached to the FR3, controlled by the Apple Vision Pro (AVP) XR headset. Using the AVP in-built hand tracking system, the estimated pose (coordinate frames of each link) of the operator’s right hand is streamed to a control computer. The estimated hand pose is first converted to the joint angles of the 20 joints of a human hand. Then, this joint data is directly mapped to the robot’s joint angles. A similar process maps the human hand’s 3D position to the robot arm and integrated wrist position. See section 4.2 for details for this calculation.
+Assessing embodied anthropomorphism
+Although the design process aims to mimic the anatomical model, we propose validating the anthropomorphism through four assessments.
+As a starting point, key mechatronic metrics are compiled in Table 1, to cross-compare the AH2 against 10 other anthropomorphic hands. For every metric, the bold text indicates the most anthropomorphic among all the hands. From the table, we see the AH2 is limited in the actuated DoF in the fingers and thumb compared to other hands, but excels in metrics describing the passive dynamics and mechatronic design. For instance, the actuation count is led by high-end rigid hands such as the DLR David hand27, Shadow hand, and Allegro hand: all designed towards the research on the controller development, where having a large number of controllable degrees of freedom without uncertainty (i.e.,: passive components) is necessary. Whereas, robot hands developed as hardware development research (the AH2 included) demonstrate higher similarities on the right-hand side of the table related to passivity and mechanical design. Overall, the AH2 shows the highest number of features taken into consideration for its design, through its matched kinematics, integrated wrist, passive compliance, and continuous skin.
+Table 1 Comparison of properties related to anthropomorphism among 10 different robotic hands and the humanFull size table
+A kinematic study is performed to analyze the match of the AH2 with a human hand. The most basic evaluation is by comparing the degrees of freedom and their range of motion. A human hand, although comprised of more bones, is usually represented as having 19 joints (four for each finger, three for the thumb), where the CMC joint is a saddle joint39. For robotic hands, the thumb CMC joint and the finger MCP joints are represented as a series of two pin-joints40, like those on the AH2. Based on this kinematic modeling, the joints’ range of motions on the AH2 and a human hand can be directly compared, as in Supplementary Table 1 For most of the degrees of freedom, the range of the AH2 is similar to the reported values of a human hand41,42,43, averaging 94%, 78%, and 81% for the finger flexion/extension, abduction/adduction, and thumb joints.
+Although the AH2 has an equal number of joints to a human, only 13 actuators are used, leaving some joints coupled or passive. These are the PIP and DIP joints on the fingers and the abduction axis of the MCP joints. For the PIP/DIP joints, the human joints are likewise coupled. Supplementary Fig. 3 shows the human and robot trajectories for bending the PIP/DIP joint, where the path is nearly identical, only differentiated by the range of motion for the large flexing angles. The abduction motion is also coupled and actuated by one motor, limiting the dexterity compared to the human. However, human abduction motion is also often synergistically controlled altogether44. Supplementary Fig. 4 shows the trajectories of the middle, ring, and pinky finger with respect to the index finger for the human and robot, where the linkage mechanism of the robot mimics the relative motion of each finger.
+Beyond joint motions, the workspace can be a metric for kinematic similarity. Supplementary Fig. 5 shows the fingertip workspace of the index finger limited to the flexion/extension motion, where 86% of the areas overlap, demonstrating the motion similarity. Although a 2D workspace is an easily obtainable metric, a human hand is intrinsically 3D, thus requiring kinematic assessment in 3D. In this assessment, the AH2 is compared against three other robot hands: the AH1, Shadow hand, and the Allegro hand. Here, three volumes are compared: the index finger, the thumb, and a combined workspace of the two. A combined index finger and thumb’s workspace represents how well aligned the thumb is to the other digits - a key feature necessary to perform dexterous motions when mapping from a human45.
+Once the thumb, index, and the combined workspace are obtained, a similarity score is calculated by comparing the workspace volume to that of a human. While this similarity score can be interchangeable, in this work, the intersection over union (IoU) is chosen, which penalizes both mismatch in the shape of the workspace, but also the scale of the hand (i.e.,: having a large hand which spans the human workspace and beyond receives a low score). Four robot hands which are highly anthropomorphic, AH1, AH2, the Shadow robot hand, and the Allegro hand, were chosen for comparison.
+Figure 3 summarizes the results with key visualizations of the workspace and the IoU score as a bar graph. On the bar graph, the AH2 shows the greatest similarities with approximately 60% across the thumb, index, and the combined volume. However, similar to a tabulated comparison, the 3D representations of the volumes can be more informative. Around the bar graph, the 3D volume for the same camera angle view is placed, with the workspace of each robot in purple while showing the intersecting regions in dark green. The AH2 hand model is placed behind each workspace to provide a reference to the scale. The human workspace is also shown for comparison. Visually, the AH2 does indeed overlap most with the human, however, other observations can be made. For example, the AH1 matches well in the index finger, but the thumb lacks the range of motion towards the area near the pinky - an issue that was addressed in AH2 through the additional IP joint actuation and more accurate placement of the thumb with respect to the index. The Shadow hand faces a similar issue of limited workspace around the pinky area. Additionally, the ability to move in regions the human is incapable of reduces the IoU score, which could be considered as a positive feature instead. On the other hand, the Allegro hand almost entirely overlaps and goes beyond the human workspace. Not only is the scale significantly different from a human, but the shape of the volume shows large differences and is the least anthropomorphic among the four.
+Fig. 3: 3D workspace comparison for the AH1, AH2, the Shadow hand, and the Allegro hand against a human.Full size image
+The IoU value for the index finger, thumb, and a combined workspace is presented.
+The continuous skin, often neglected altogether or included as discontinuous patches (Table 1), plays an important role through its softness and conformity, affecting surface friction and grasping stability. In Fig. 4A a pictorial comparison depicts how the skin deforms under five scenarios for the human, AH2, and the AH1 (equipped with discontinuous skin) is shown. The skin discontinuities in AH1, means that the joints are not covered by a skin layer, which is most obvious when the fingers/thumb are flexed. Between the AH1 and AH2/human, there always exist gaps where would otherwise be the skin element. The first two columns best show the skin deformation, minimizing these gaps without objects in place. The latter three columns show that when objects are held, the lack of skin results in a smaller contact area, thus compromising on the grasping stability46.
+Fig. 4: Characterization of the continuous skin on the hand alongside the compliant joints on the AH2.Full size image
+A Pictorial comparison of the skin deformation and conformity between the Human, AH2, and AH1. B Force displacement curve to compare the passive compliance against a human for the skin, finger, and wrist. C Experimental results from measurements of grasping forces on two objects in two directions for different skin coverages. The colors of the curves correspond to the different skin configuration shown in the right hand side.
+To quantify the effect of the continuous skin, a grasping force analysis was performed to measure the force required to push objects that were held by the hand shown in Fig. 4C. For a wooden block and an aluminum can, the force was measured in the horizontal and vertical directions for four different skin configurations: full skin, discontinuous skin, skin on fingers, and no skin. The force-displacement graphs show a notable contribution by the skin between the joints. When pushed in the horizontal direction (green arrow), there exists a clear difference between the red and blue curves (approximately 1.4 times more force on average), a much larger difference compared to the effect of the palm. When pushed in the vertical direction, the skin has minimal contribution, as the resistive forces are not frictional but rather from the finger forces dictated by the compliant MCP and CMC joints.
+Related to the skin is the passive compliance of the robot. The human hand has different scales of passivity at the skin, finger, and wrist/arm levels. The compliance matching allows the robot to interact with the environment with a similar mechanical impedance, influencing the human-like interaction behaviors. Since the integrated compliance on AH2 is identical to AH1 by design, Fig. 4C directly references the results from Ref. 26, where the force displacement graph closely follows that of a human when instructed to relax.
+Teleoperated dexterous manipulation
+One universal challenge for teleoperated robotic manipulation is to minimize or compensate for the embodiment gap between the robot and the operator. Although most studies have focused on increasingly complex mapping methods, in this work, we hypothesize that a highly anthropomorphic hardware design simplifies the mapping and results in an intuitive control of the robot.
+To evaluate the effectiveness of anthropomorphism for teleportation, a system relying solely on joint-to-joint mapping is developed. In this method, the measured human joint angles are directly translated to robot joint angles. For most robotic hands, there is a mismatch in the robot kinematics compared to the human operator. This mismatch leads to difficulties performing precise pinch grasps or tasks requiring dexterous motion coordination, under a joint-to-joint mapping. Thus, if the robot is able to precisely match the operator via a joint-to-joint mapping, it demonstrates a high level of similarity to the human kinematics.
+Figure 5 shows the input human hand and the output robot hand poses for different gestures using the teleoperation system in real time for eleven different poses. For all the input/output pairs the AH2 match the human overall. Especially for the final five images, the precise fingertip position between the robot and human align well in 3D space: a direct result of the mechanical design.
+Fig. 5: 11 different input human hand poses and the output robot pose using a joint-to-joint mapped teleoperation system.Full size image
+Red circles indicate notable mismatches between the two.
+The ADAPT-Teleop system does not have a 100% accurate human-to-robot motion transfer. The red areas on Fig. 5 show apparent mismatch locations arising from three different causes. In pose 2, the mismatch is caused by a mapping error on the MCP abduction/adduction motion, likely caused by a combination of calibration errors and the coupled nature of the three MCP abduction joints all operated by one motor. In poses 4 and 5, the index and middle fingers are not completely vertical compared to the input, caused by the skin pulling back the fingers. Finally, in poses 7, 8, and 10, there is a precision mismatch; directly affected by slight differences in the kinematics difference between the human and robot.
+To quantitatively analyze the teleoperation performance, a pick and place task with ten objects of varying geometries was chosen (Fig. 6A), ranging from a pepper (easy to grasp) to an Arduino board (hard to grasp). Every object is grasped in five trials in total. At every trial, the robot hand is placed approximately 15cm above the object. The execution time, the duration for the robot to reach the object, grasp, and lift up in a stable way, is recorded. This experiment is performed for the same objects with the AH1, AH2, and a human. The AH2 and human experiments are performed by the same operator, while a different operator teleoperated the AH1. In both cases, the operator has had above five hours of experience using the system.
+Fig. 6: Results summarizing the pick and place assessment between the human, AH2, and AH1 for 10 objects of varying geometry.Full size image
+A The objects used. B The average execution time to perform the pick and place task. C: The average execution time across all objects. D: Wrist and finger trajectory between the human and AH2 for three objects. E Success rate to grasp objects of varying form, dimension, and weight.
+Figure 6 B shows the average execution time per object, and Fig. 6C of the aggregate for the AH1, AH2, and a human. What is already significant is that both AH1 and AH2 succeed in consistently grasping objects of highly variable geometry without force control or haptic feedback. This robustness is a result of the passive compliance in the skin and fingers, with the ability to comply with local disturbance while accepting kinematic commands from the operator. However, among the three, there is a clear distinction in performance between the two different robot hands.
+In comparison to the AH1, the AH2 teleoperation system enables faster grasping for every object, and on average, roughly 2.5 times faster than AH1. Likewise, the variation in task speed is much more consistent with an overall standard deviation of 2.2s compared to 7.5s. More specifically, the AH1 is most affected by objects which require a pinch grasp (e.g.,: a pen) or a specific finger placement (e.g.,: an Arduino). In comparison to the simplest object (pepper), the pen and Arduino is 2.0 and 4.0 times slower respectively Whereas, for AH2 on the same objects the speed is more consistent (1.5, 2.6 time slower compared to the pepper), which can be attributed to an improved teleoperated intuitiveness to move the fingers precisely.
+The AH2, although fast and consistent, is still far inferior to the human, with an average time of 1.25s (4.4 times faster than AH2). To further understand the remaining separation between a human motion and the teleoperated robot beyond its average time, the motion trajectories for the human and AH2 are captured and summarized in Fig. 6D, for picking the pepper, berry, and the Arduino. These objects present an increasing pick and place difficulty level. Ranging from a simple power grasp, a pinch grasp, and a pinch grasp but with much less graspable areas. The change in vertical wrist position and the flexing of the index finger (PIP/DIP tendon lengths) are shown in the top and bottom rows, for both the human and robot on two repeats. To compare the differences in the profile, all the data is normalized in time between the robot and the human.
+Surprisingly, the wrist displacement profiles between the robot and human are nearly identical for the pepper and berry. The similarity reduces when faced with the Arduino (green highlight on the figure). To quantitatively evaluate this error, dynamic time warping analysis was applied between every human trial and the robot trial to find the average distance between the trajectories. The average distances were 1.3, 1.6, and 3.2, respectively, for the three objects, matching qualitative observations. This suggests that for simpler objects, the robot motion is well matched with a human. Whereas for the Arduino board, where the grasping points must be exact, the operator must compensate for minute differences in the kinematic mapping as shown in Fig. 5.
+The speed is limited compared to humans for two reasons. Firstly, there are hardware specifications that limit the finger and arm motions to be slower. However, more importantly the differences in hand-eye coordination required by the operator and a lack of haptic feedback means every motion must be performed more thoughtfully and sequentially (thus slower) compared to direct human manipulation.
+Comparing the finger flexion motion (bottom row of Fig. 6D), the teleoperated robot consistently has a sharper increase in the finger flexion compared to a human. This shows the operator implicitly divides the robot motion into three sections: move towards the object, grasp, and then move away from the object. In comparison, the human hand motion is more fluid and smooth - resulting in a whole body action of the fingers, wrist, and arm.
+To benchmark and quantify the pick and place performance on its own, the success rate for spherical objects with varying radius, cuboid objects with varying dimensions, and finally a rectangular box with varying weight for three trials, where the results are summarized in Fig. 6 E. The teleoperated hand successfully grasps all spherical objects without any issues from radii between 1.5cm and 5cm. For cuboid objects, the opening of the thumb is not enough to comfortably grasp a large object with a side length larger than 10cm. The AH2 struggles most with holding heavy items. While low-weight objects (<50g) are of no concern, above 100g, the success rate begins to drop, and at 200g, a stable grasp is near impossible. This is due to the series elasticity in the base joints tuned to be highly compliant, where the maximum force the fingers would be able to exert is less than 200g. During the teleoperation, this maximum force is never reached, since the fingers must deform over 90° degrees to achieve this force, limiting their weight-bearing capacity.
+A key contribution to the ease of a teleoperated robotic hand control stems from the matched kinematics of the AH2, allowing for a simple joint-to-joint mapping, resulting in an intuitive experience. To demonstrate this, the pick and place experiment is repeated for two different mappings from the human joints to the robot hand motion, emulating two different robot kinematics, shown in Supplementary Fig. 6 (detailed in section 4.3). When the mapping is different from the proposed joint-to-joint mapping, although the pick and place may succeed, the human must perform a different motion from what is natural, shown by the grasping motions of the robot hand. For example, when a robot with a highly coupled actuation kinematics is emulated (“Mode 1” in Supplementary Fig. 6), the human tends to perform a power grasp-like motion even for objects that must be held precisely. Likewise, for large differences in kinematics where the human index and middle fingers are mapped to the robot’s middle and pinky (“Mode 2” in Supplementary Fig. 6), the success rate drops largely from zero failures to six, out of 18 trials. In this mapping, the human tends to ignore the third finger and concentrate on a two-fingered pinch grasp to simplify the grasping motion.
+Although pick and place is a standard and easily measurable task, robotic dexterous manipulation (and thus teleoperated robotic hands) must show more complex interactive tasks that humans perform with ease. To showcase the wider dexterity of the ADAPT-Teleop system, seven tasks were chosen that require different dexterity skills throughout the task. Figure 8 shows thumbnails of the seven tasks performed in the video (Fig. 7), alongside the key skills necessary for each task are tabulated in the table.
+Fig. 7
+Demonstration video of seven dexterous robotic manipulation tasks.
+Fig. 8Full size image
+Demonstration of seven dexterous robotic manipulation tasks showing the key frames and description to pictorially show each task.
+Throughout every task, the combined ability to intuitively control the robot hand (a highly biomimetic kinematic structure) and compliantly interact with the environment (human-matched passive compliance) allows the seven tasks to be completed. For instance, the paper grasping task (task 2), requires the hand to make and break contact without damaging itself while precisely moving the thumb to collect the piece of paper. The lightbulb screwing task requires dexterous control of the fingers and thumb, while the compliance in the fingers and wrist distribute the applied forces for a smooth rotation motion. The cube rotation task requires the most dexterity, especially in the thumb. However, the skin plays a role in providing a continuous surface; a limitation in the cube rotation task using the AH126 equipped with a discontinuous skin.
+Discussion
+In this work, we present the ADAPT-Teleop system, a dexterous teleoperated manipulation. At the heart is the state-of-the-art anthropomorphic hand, the ADAPT Hand 2, designed to match the embodiment of a human. Through three assessment methods beyond simple metrics, we show the similarity of the AH2 to a human compared to other robots while identifying mismatches. We demonstrate a design that mimics the human in its kinematics and passive dynamics, enabling a simple joint-to-joint mapped vision-based feed-forward teleoperation system to perform dexterous and contact-rich tasks. Overall, this work highlights the advantages of closely matching the embodiment of an anthropomorphic robotic hand can allow for a simple uni-directional teleoperation system to perform complex tasks.
+Although the robotic implementations, assessment methods, and demonstrations highlight builds upon the state of the art, there are limitations to be addressed.
+Regarding the assessment of hands, while a similarity comparison against a human, while setting a more holistic method, there are clear limitations. One limitation is the arbitrariness of the assessments. The three metrics (3D workspace, skin conformity, compliance) do not completely dictate anthropomorphism (even under the focus on embodiment), leaving out elements such as skin friction, grasp strength, and more detailed examination of workspace, for example, that of the other three digits. Even for the presented assessments, by varying the similarity metrics, for example the choice of using IoU, could vary the outcome.
+Another limitation is the paradoxical nature of using metrics. Discussed through table 1, a tabulated results on scalar metrics limit the level of detail used to assess anthropomorphism. However, through reducing complex behaviors to a single scalar value, comparison becomes simpler and meaningful. For example, the skin conformity is purely pictorial. Although the similarity is visibly clear, a lack of a numerical result limit the ability to cross-compare. Furthermore, a simple and quantifiable metric can be understood more widely, leading to meaningful adoption across research groups. These limitations call for efforts towards developing and unifying a framework of benchmarking methods which are comprised of low and high level features, while being accessible to researchers in related fields.
+Focusing on the teleoperation, there are a limitations of this work, which can be addressed by different future work directions. An overarching limitation with this (and any) teleoperation system is realted to the mismatch between the human and the robot. Despite best efforts to mimic the embodiment of the human, there will always be differences, where the human must compensate. In particular, we identify four key differences.
+The first limitation is the mismatch of the skin friction. This most notably affects in-hand manipulation such as the cube rotation demonstration. The skin friction is higher on the robot compare to the human, which limit the ability to slide objects in the hand; instead they must be rotated, which is a less intuitive motion for the human operator. Friction properties in addition to compliance must be more closely looked into and must be part of the assessment framework.
+Another limitation is the difference in viewpoint of the operator. The operator must view the robot from the side while executing the task, which limits the precision in hand-eye coordination, forcing movements to be slower. This could be addressed by streaming a camera placed on a gimbal (where the human head would be in relation to the hand), which streams to the AVP.
+The third limitation is on the ability to vary the compliance of the robot. The AH2, despite being able to make large contacts comfortably, struggles to produce a large grasping force. Similar to how humans co-contract muscles to stiffen the hand, an online variable stiffness mechanism could enable the variation of force without the need to develop a complex kinesthetic or haptic force feedback system. This could be possible through a feed-forward system which measures EMG signals of human muscle co-contractions to command the robot’s strength47. Likewise, we could imagine having simple force controllers on the robot that assist the human intention while increasing the force applications48. On the robotic system, a variable stiffness mechanism would assist the range of forces applied.
+Finally, the dexterity is fundamentally limited by the lack of tactile feedback. While most pick and place tasks are possible with kinematic feedback from a human combined with the safety through the compliant hardware, tactile feedback is necessary for some tasks. For instance, the lightbulb screwing task, it is near impossible to pick up the bulb and screw it in the holder (the bulb must be already inside). This task requires the motion to be fully aligned with the axis of the holder, and small tactile cues must be recognized.
+These mismatches affect the robot performance in two ways. Firstly, it limits the performable tasks, such as screwing the lightbulb. Secondly, it slows the down the movement of the robot. While some cases the speed is limited by the robotic hardware, the more significant effect is via the mismatch.
+Methods
+ADAPT Hand 2 Hardware
+The AH2 hardware, while inheriting properties from the AH1 is a full redesign in its mechanical assembly. Figure 9 illustrates the key mechanical design changes introduced, notably the abduction/adduction mechanism, wrist mechanism, and the thumb.
+Fig. 9: Summary of the AH2 hardware with a focus on key changes from AH126.Full size image
+A Overall CAD drawing of the hand (excluding the skin). B The thumb with the tendon routings for the four actuators highlighted. C The reverse side of the hand, highlighting the finger abduction/adduction mechanism. D The integrated wrist is placed below the hand itself.
+Figure 9 A shows the CAD model of the full hand without its skin. The finger design is nearly identical with a pin jointed MCP joint and a flexure joint for the PIP and DIP joints fabricated from FDM printed TPU material. However, the tendon routing is modified to utilize Bowden cables to route the tendons directly from the finger, through the back side of the hand, into the motor box. The use of Bowden cables simplifies the tendon routing of the 18 cables and eliminates the effect of tendon forces on the integrated wrist.
+Compared to the finger, the thumb design is improved by having a larger radius on the CMC joints and an extra DoF to independently actuate the IP joint (AH1 had a coupled IP and MCP joint, similar to the PIP/DIP joint on the finger). Figure 9B shows the thumb from two directions with the tendon routing for all the joints. The component in red contains the two larger pulleys (AH1: 13mm, AH2: 30mm) for the CMC joint. Since the thumb is longer than the fingers, the torque at the base is larger, resulting in higher tendon forces for the same tip force. Increasing the pulley radius reduces the tendon forces and susceptibility to tendon elongation and mis-calibration. In addition, the AH1 thumb routed the MCP/IP joint tendon through the CMC joint, which increases the complexity of the mechanical design. Instead of AH2, bowden cables are used to route the two cables for the IP and MCP joint before it reaches the CMC joint.
+Figure 9C shows the back side of the hand with the abduction/adduction mechanism to actuate the index, ring, and pinky MCP joints. Given the additional degree of actuation allocated to the thumb, the hand requires 13 motors for its actuation. To have only 12 motors in the external motor box (a highly composite number, thus easy to arrange motor assemblies), the abduction/adduction motion is controlled from a motor embedded in the hand itself. The linkage mechanism now contains three links (the red, dark blue, and light blue links connected with the purple piece) to make effective use of space.
+Finally, Fig. 9D shows the integrated wrist mounted just below the hand. A differential geared mechanism49 is used to drive the wrist, chosen for its compact form and load sharing between two motors. The addition of the wrist mechanism is made possible through the bowden cable design, which eliminates the wrist movement to affect the displacement of tendons that actuate the digits.
+Teleoperation
+The teleoperation system uses the XR headset Apple Vision Pro (AVP) to track the hand and finger pose in 3D space. The AVP includes a hand and finger tracking software natively in its SDK, enabled purely by its onboard sensors, which can be accessed through the VisionOS software library. In this work, we utilize the software package50 which wireless streams the 6 DoF pose of the wrist and joints to a host computer via WiFi at a frequency of roughly 100Hz. The joint kinematics and relative coordinate frames were referred from Ref. 50.
+The hand teleoperation system aims to map the joint angle measurement from the AVP to the joint angles of the hand. Since the AH2 is tendon driven, and contains coupled joints, and kinematic chains which do not match that of the AVP hand model, some mapping must be performed to relate the measured angle \({\bar{\theta}}\) to the robot motor angle q (in the remaining text, θ without a bar, denotes the joint angle of the robotic hand).
+The simplest mapping is on the flexion MCP joint as it is a standard pin joint, thus,
+$$q=\frac{{r}_{{{\rm{MCP}}}}}{{r}_{{{\rm{Motor}}}}}{\bar{\theta }}_{{{\rm{MCP}}}}$$
+ (1)
+Where rMCP and rMotor are the radius of the MCP joint and the pulley on the motor.
+The flexion of the PIP and DIP joints is coupled to one motor, and each joint are non-linear. Figure 10A shows a diagram of a single flexure joint, where the analytical relationship to map a joint angle θ to the current tendon length T is given by:
+$$T(\theta )=2\left(\sin \frac{\theta }{2}\left(\frac{a}{\theta }-b\right)+c\cos \frac{\theta }{2}\right)$$
+ (2)
+Fig. 10: Diagrams to assist the explanation of the joint angle mapping for the hand and wrist.Full size image
+A: Kinematic diagram of the flexure joint. B: Four steps used to convert the measured thumb orientation to the two robot hand joint angles θCMC1 and θCMC2.
+The change in tendon length ΔT(θ) = 2c + a − T(θ), thus by superposing the contribution of the PIP and DIP joint the motor angle q is given by:
+$$q=\frac{1}{{r}_{{{\rm{Motor}}}}}\left(\Delta T({\bar{\theta }}_{{{\rm{PIP}}}})+\Delta T({\bar{\theta }}_{{{\rm{DIP}}}})\right)$$
+ (3)
+The two CMC joins on the thumb is non-trivial to map from the AVP measurements, since the AVP only returns coordinate transformations of every link, the two rotation axis on the robot arm not clear. A series of coordinate transformations are necessary to obtain θCMC1 and θCMC2 (axis shown in Fig. 9C), which is described in Fig. 10B.
+In the first step, the position vector \(\overrightarrow{W}\) which points towards the tip of the Metacarpal bone of the thumb (i.e.,: the position vector aligns with the thumb bone that is adjacent to the palm) is determined from the AVP measurements in the AVP coordinate frame. In Fig. 10B this is shown in step 1, where the frame with \(\bar{x}\) is the base coordinate frame of the AVP, and the frame with \(\bar{{x}_{{{\rm{Met}}}}}\) is the coordinate frame of the Metacarpal bone. In the second step, we consider mapping \(\overrightarrow{W}\) to a coordinate frame where the x and y axis are aligned to the zero position of the thumb on the real robot, through a matrix M with values obtained through the robot CAD model. This obtains \({\overrightarrow{W}}_{T}=M\overrightarrow{W}\), the same position vector with the axis-aligned coordinate system. In the third step, the value of θCMC1, the first CMC1 joint angle of the robot, is determined. By projecting \({\overrightarrow{W}}_{T}\) to the y-z plane θCMC1 is calculated as shown in the figure. Finally, the coordinate frame is rotated by θCMC1 to align in the y-z plane, to then calculate θCMC2 which is the angle between \({\overrightarrow{\acute{W}}}_{T}\) and the \({\acute{x}}_{T}\) axis. The required motor angles, qCMC1 and qCMC2, are then determined in the same way as equation (1) as the two CMC joints are also pin-joints:
+$${q}_{{{\rm{CMC1}}}}=\frac{{r}_{{{\rm{CMC1}}}}}{{r}_{{{\rm{Motor}}}}}{\theta }_{{{\rm{CMC1}}}}\quad {q}_{{{\rm{CMC2}}}}=\frac{{r}_{{{\rm{CMC2}}}}}{{r}_{{{\rm{Motor}}}}}{\theta }_{{{\rm{CMC2}}}}$$
+ (4)
+The remaining two joints (MCP and IP) of the thumb are calculated similarly to the PIP/DIP joints on the fingers as such:
+$${q}_{{{\rm{MCP}}}}=\frac{1}{{r}_{{{\rm{Motor}}}}}\left(\Delta T({\theta }_{{{\rm{MCP}}}})\right)\quad {q}_{{{\rm{IP}}}}=\frac{1}{{r}_{{{\rm{Motor}}}}}\left(\Delta T({\theta }_{{{\rm{IP}}}})\right)$$
+ (5)
+The final degree of actuation is the abduction/adduction motion at the MCP joints of the fingers. First, the joint angle measurement from the AVP on the index, ring, and pinky fingers are linearly normalized to a value between zero and one. A normalized angle of 1 relates to the finger being most spread out.
+Let the normalized values be \({\phi }_{{{\rm{MCP,S}}}}^{{{\rm{Index}}}}\), \({\phi }_{{{\rm{MCP,S}}}}^{{{\rm{Ring}}}}\), and \({\phi }_{{{\rm{MCP,S}}}}^{{{\rm{Pinky}}}}\). Here, ϕ represents the normalized angle. Subscript S represents the “spread” (abduction) motion, and the superscript represents the finger.
+Then an empirical weighting function is used to estimate a single scalar value to represent the overall spread:
+$${\phi }_{{{\rm{Total}}}}=0.6{\phi }_{{{\rm{MCP,S}}}}^{{{\rm{Index}}}}+0.2{\phi }_{{{\rm{MCP,S}}}}^{{{\rm{Ring}}}}+0.2{\phi }_{{{\rm{MCP,S}}}}^{{{\rm{Pinky}}}}$$
+ (6)
+The true motor angle scales the maximum motor angle for this mechanism by ϕTotal: \({q}_{{{\rm{MCP,S}}}}={\phi }_{{{\rm{total}}}}{q}_{{{\rm{MCP,S}}}}^{{{\rm{Max}}}}\).
+The arm teleoperation takes as input the measured coordinate frame of the hand base (with respect to some world coordinate), and must command the arm end effector position and the integrated wrist position. Since this is not a one-to-one mapping, the “allocation” of angles between the integrated wrist and the arm must be explicitly defined.
+In this work, this allocation is performed to fully utilize the benefits of an integrated wrist. First, the difference between the current hand pose and the target pose (given by the AVP) is computed. Then, the Euler angle representation of this difference is used to compute the integrated wrist pose required to match the target. Of course, this integrated wrist rotation will be limited by its motor limits and only having a pitch and yaw axis, resulting in a residual rotation. Finally, the residual rotation is matched via the robot arm.
+Experimental methods
+The 3D workspace for every robot is computed in simulation. For each robot, a kinematic model (URDF model) of the index finger and the thumb was created. To ensure a fair comparison, the base coordinate frame is defined to be at the MCP joint of the index finger when pointing straight upwards. Then, for each robot, 5000 samples of the fingertip 3D position for the index and thumb were taken with uniformly sampled random joint values within its joint limits. The points were then converted into two mesh files: the index and thumb workspace.
+The workspace of the human was sampled by using the tracking of the AVP. The operator moved their index finger and thumb as randomly as possible and reaching extremities to best capture the 3D workspace. Likewise to the robots, 5000 samples (approximately 5 minutes) were collected to create a mesh.
+Once the mesh for robots and the human was created, a CAD software was used to combine and intersect meshes to determine the volume.
+To assess the effect of the skin, in the experiment, the forces to push two objects grasped by the hand in two directions were measured through a robot arm mounted with a loadcell for varying levels of skin coverage on the AH2. Two objects: a wooden block, and an aluminum can (both mounted with a 3D printed surface to minimize differences on the contact interface with the loadcell), was held by the AH2 while displaced either horizontally or vertically (see Fig. 4C). Four trials of force vs displacement were recorded for each object, motion direction, and skin coverage. Figure 4C plots the raw measurements.
+The skin is progressively cut from its original fully continuously state, also shown in Fig. 4C. After removing the palm, a smooth and rigid foam padding is placed where the silicone used to exist, in order to maintain a similar grasping force by the fingers.
+The compliance for the skin, finger is consistent for both the human and robot. This is achieved by moving a loadcell against the skin or finger at a constant velocity by a UR5 robot arm (see Supplementary Fig. 1A and B). For the robot, the same process is performed for the soft and rigid configurations as a demonstration of the variation of tunable stiffness26, although not considered in this work.
+The compliance measurement for the wrist for a human is done in the same way with a UR5 robot arm and a loadcell, shown in Supplementary Fig. 1C. For the robot, the end effector is displaced manually while measuring its vertical displacement and vertical force (measured via the FR3 joint torque sensors).
+The pick and place analysis is performed by repeating the process of the positioning the hand starting approximately 15 to 20cm above the object, moving downwards to grasp the object, and finally moving upwards while keeping a stable grasp; for the AH1, AH2, and the human. The result is not recorded if the object is dropped after picking. The execution time includes the full process starting from above the object.
+For the AH1, the results are obtained from51, where a gesture based mapping is used to control the hand. This gesture based method allows the operator to choose between three grasp types (power, semi-power, and precision) and move continuously between a start and end pose which ensures the robot motion is natural (see Supplementary section 4 for additional details).
+The trajectories to compare the human and AH2 in Fig. 6D measure identical quantities for a fair comparison between the robot and human. For the wrist trajectory, the raw wrist position measurement from the AVP is used to obtain the displacement. For the finger trajectory, the feed-forward demand finger motor position is measured. When teleoperating the robot, this signal is directly used to command the robot.
+To assess the grasping capabilities of the AH2, three object types were used with varying parameters: near-spherical objects with varying radii, cuboid objects with varying dimensions, and geometrically identical objects with varying weight.
+In each experiment, the object was placed on a surface, while the proposed teleoperation system was used to pick up the object. If the object was successfully lifted from the surface and held in place for 4 seconds, this was considered a success. If the object was lifted, but it fell during the lift or within 3 seconds, this was a partial success. If the attempt did not succeed to lift the object, this was recorded as a fail.
+To assess different kinematic configurations of the hand, the joint mapping has been purposely altered to demonstrate the differences in success rate and grasping motion for to emulate robots with different kinematics.
+Three “modes” were tested. Mode 0 is the proposed joint-to-joint mapping. Mode 1 emulates a robot that has a much more coupled actuation configuration, where a single motor controls the four fingers’ PIP/DIP motion, while another motor controls the four fingers’ MCP joint motion. This is achieved by extracting the average PIP/DIP angles from the human and applying an identical demand to all four fingers (and likewise for the MCP joint). Mode 2 emulates a three-fingered robot with a different structural configuration to a human hand. Here, the index finger joint readings from the human are mapped to the middle finger of the robot, and similarly, the human middle finger is mapped to the pinky.
+The pick and place is conducted with the same conditions to the pick-and-place benchmarking of different objects.
+ Data availability
+ No datasets were generated or analyzed during the current study.
+Code availability
+ All the code used to operate the ADAPT Hand can be found here.
+References
+Yang, G.-Z. et al. The grand challenges of science robotics. Sci. Robot. 3, eaar7650 (2018).
+Article 
+ Google Scholar 
+Xiong, C.-H. et al. Design and implementation of an anthropomorphic hand for replicating human grasping functions. IEEE Trans. Robot. 32, 652–671 (2016).
+Article 
+ Google Scholar 
+Sinha, A. K., Thalmann, N. M. & Cai, Y. Measuring anthropomorphism of a new humanoid hand-arm system. Int. J. Soc. Robot. 15, 1341–1363 (2023).
+Article 
+ Google Scholar 
+Fink, J. Anthropomorphism and human likeness in the design of robots and human-robot interaction. In Social Robotics: 4th International Conference, ICSR 2012, Chengdu, China, October 29-31, 2012. Proceedings 4, 199–208 (Springer, 2012).
+Mason, M. The mechanics of manipulation. In Proceedings. 1985 IEEE International Conference on Robotics and Automation, vol. 2, 544–548 (IEEE, 1985).
+Piazza, C., Grioli, G., Catalano, M. G. & Bicchi, A. A century of robotic hands. Annu. Rev. Control Robot. Auton. Syst. 2, 1–32 (2019).
+Article 
+ Google Scholar 
+McCarthy, J., Earnest, L., Reddy, D. R. & Vicens, P. J. A computer with hands, eyes, and ears. In Proceedings of the December 9-11, 1968, fall joint computer conference, part I, 329–338 (1968).
+Sugano, S., Nakagawa, J., Tanaka, Y. & Kato, I. Keyboard playing by an anthropomorphic robot: fingers and arm model and its control system of WAM-7R. In Theory and Practice of Robots and Manipulators: Proceedings of RoManSy’84: The Fifth CISM-ŤIFToMM Symposium, 153–161 (Springer, 1985).
+Puhlmann, S., Harris, J. & Brock, O. Rbo hand 3: A platform for soft dexterous manipulation. IEEE Trans. Robot. 38, 3434–3449 (2022).
+Article 
+ Google Scholar 
+Buchner, T. J. et al. Vision-controlled jetting for composite systems and robots. Nature 623, 522–530 (2023).
+Article 
+ Google Scholar 
+Billard, A. & Kragic, D. Trends and challenges in robot manipulation. Science 364, eaat8414 (2019).
+Article 
+ Google Scholar 
+Kemp, C. C., Edsinger, A. & Torres-Jara, E. Challenges for robot manipulation in human environments [grand challenges of robotics]. IEEE Robot. Autom. Mag. 14, 20–29 (2007).
+Article 
+ Google Scholar 
+Si, W., Wang, N. & Yang, C. A review on manipulation skill acquisition through teleoperation-based learning from demonstration. Cogn. Comput. Syst. 3, 1–16 (2021).
+Article 
+ Google Scholar 
+O’Neill, A. et al. Open x-embodiment: Robotic learning datasets and rt-x models: Open x-embodiment collaboration 0. In 2024 IEEE International Conference on Robotics and Automation (ICRA). 6892–6903 (IEEE, 2024).
+Liarokapis, M. V., Artemiadis, P. K. & Kyriakopoulos, K. J. Quantifying anthropomorphism of robot hands. In 2013 IEEE International Conference on Robotics and Automation, 2041–2046 (IEEE, 2013).
+You, W. S. et al. Kinematic design optimization for anthropomorphic robot hand based on interactivity of fingers. Intell. Serv. Robot. 12, 197–208 (2019).
+Article 
+ Google Scholar 
+Llop-Harillo, I., Pérez-González, A., Starke, J. & Asfour, T. The anthropomorphic hand assessment protocol (AHAP). Robot. Auton. Syst. 121, 103259 (2019).
+Article 
+ Google Scholar 
+Kapandji, A. Clinical test of apposition and counter-apposition of the thumb. Ann. Chirurgie main. 5, 67–73 (1986).
+Article 
+ Google Scholar 
+Cutkosky, M. R. & Howe, R. D. Human grasp choice and robotic grasp analysis. Dextrous Robot Hands 5–31 (1990).
+Feix, T., Romero, J., Ek, C. H., Schmiedmayer, H.-B. & Kragic, D. A metric for comparing the anthropomorphic motion capability of artificial hands. IEEE Trans. Robot. 29, 82–93 (2012).
+Article 
+ Google Scholar 
+Dou, W. et al. Soft robotic manipulators: Designs, actuation, stiffness tuning, and sensing. Adv. Mater. Technol. 6, 2100018 (2021).
+Article 
+ Google Scholar 
+Gilday, K., Hughes, J. & Iida, F. Wrist-driven passive grasping: interaction-based trajectory adaption with a compliant anthropomorphic hand. Bioinspir. Biomim. 16, 026024 (2021).
+Article 
+ Google Scholar 
+Hughes, J., Maiolino, P. & Iida, F. An anthropomorphic soft skeleton hand exploiting conditional models for piano playing. Sci. Robot. 3, eaau3098 (2018).
+Article 
+ Google Scholar 
+Patidar, S., Sieler, A. & Brock, O. In-hand cube reconfiguration: Simplified. In 2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 8751–8756 (IEEE, 2023).
+Gilday, K., Hughes, J. & Iida, F. Sensing, actuating, and interacting through passive body dynamics: A framework for soft robotic hand design. Soft Robot. 10, 159–173 (2023).
+Article 
+ Google Scholar 
+Junge, K. & Hughes, J. Robust anthropomorphic robotic manipulation through biomimetic distributed compliance (2024). 2404.05262.
+Friedl, W. et al. Fas a flexible antagonistic spring element for a high performance over. In 2011 IEEE/RSJ International Conference on Intelligent Robots and Systems, 1366–1372 (IEEE, 2011).
+Shorthose, O., Albini, A., He, L. & Maiolino, P. Design of a 3D-printed soft robotic hand with integrated distributed tactile sensing. IEEE Robot. Autom. Lett. 7, 3945–3952 (2022).
+Article 
+ Google Scholar 
+Xu, Z. & Todorov, E. Design of a highly biomimetic anthropomorphic robotic hand towards artificial limb regeneration. In 2016 IEEE International Conference on Robotics and Automation (ICRA), 3485–3492 (IEEE, 2016).
+Li, R., Wang, H. & Liu, Z. Survey on mapping human hand motion to robotic hands for teleoperation. IEEE Trans. Circuits Syst. Video Technol. 32, 2647–2665 (2021).
+Article 
+ Google Scholar 
+Qin, Y. et al. AnyTeleop: a general vision-based dexterous robot arm-hand teleoperation system. In Robotics: Science and Systems. (2023).
+Handa, A. et al. Dexpilot: Vision-based teleoperation of dexterous robotic hand-arm system. In 2020 IEEE International Conference on Robotics and Automation (ICRA), 9164–9170 (IEEE, 2020).
+Fang, B., Guo, D., Sun, F., Liu, H. & Wu, Y. A robotic hand-arm teleoperation system using human arm/hand with a novel data glove. In 2015 IEEE International Conference on Robotics and Biomimetics (ROBIO), 2483–2488 (IEEE, 2015).
+Rosell, J., Suárez, R. & Pérez, A. Safe teleoperation of a dual hand-arm robotic system. In ROBOT2013: First Iberian Robotics Conference: Advances in Robotics, Vol. 2, 615–630 (Springer, 2014).
+Li, S. et al. A mobile robot hand-arm teleoperation system by vision and imu. In 2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 10900–10906 (IEEE, 2020).
+Gao, Q., Ju, Z., Chen, Y., Wang, Q. & Chi, C. An efficient RGB-D hand gesture detection framework for dexterous robot hand-arm teleoperation system. IEEE Trans. Hum.-Mach. Syst. 53, 13–23 (2022).
+Article 
+ Google Scholar 
+Pagliara, L., Ferrentino, E., Chiacchio, A. & Russo, G. Safe haptic teleoperations of admittance controlled robots with virtualization of the force feedback. In 2024 IEEE 20th International Conference on Automation Science and Engineering (CASE), 1574–1579 (IEEE, 2024).
+Franzese, G., Mészáros, A., Peternel, L. & Kober, J. Ilosa: Interactive learning of stiffness and attractors. In 2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 7778–7785 (IEEE, 2021).
+Wu, G. et al. ISB recommendation on definitions of joint coordinate systems of various joints for the reporting of human joint motion-Ťpart Part II: shoulder, elbow, wrist and hand. J. Biomech. 38, 981–992 (2005).
+Article 
+ Google Scholar 
+Cobos, S., Ferre, M., Uran, M. S., Ortego, J. & Pena, C. Efficient human hand kinematics for manipulation tasks. In 2008 IEEE/RSJ International Conference on Intelligent Robots and Systems, 2246–2251 (IEEE, 2008).
+Lee, K.-S. & Jung, M.-C. Ergonomic evaluation of biomechanical hand function. Saf. Health Work 6, 9–17 (2015).
+Article 
+ Google Scholar 
+Hume, M. C., Gellman, H., McKellop, H. & Brumfield Jr, R. H. Functional range of motion of the joints of the hand. J. Hand Surg. 15, 240–243 (1990).
+Article 
+ Google Scholar 
+Barakat, M., Field, J. & Taylor, J. The range of movement of the thumb. Hand 8, 179–182 (2013).
+Article 
+ Google Scholar 
+Della Santina, C. et al. Postural hand synergies during environmental constraint exploitation. Front. Neurorobot. 11, 41 (2017).
+Article 
+ Google Scholar 
+Kuo, L.-C., Chiu, H.-Y., Chang, C.-W., Hsu, H.-Y. & Sun, Y.-N. Functional workspace for precision manipulation between thumb and fingers in normal hands. J. Electromyogr. Kinesiol. 19, 829–839 (2009).
+Article 
+ Google Scholar 
+Xiao, W., Liu, C., Hu, D., Yang, G. & Han, X. Soft robotic surface enhances the grasping adaptability and reliability of pneumatic grippers. Int. J. Mech. Sci. 219, 107094 (2022).
+Article 
+ Google Scholar 
+Su, H. et al. Deep neural network approach in EMG-based force estimation for human–robot interaction. IEEE Trans. Artif. Intell. 2, 404–412 (2021).
+Article 
+ Google Scholar 
+Zhuang, K. Z. et al. Shared human–robot proportional control of a dexterous myoelectric prosthesis. Nat. Mach. Intell. 1, 400–411 (2019).
+Article 
+ Google Scholar 
+Shahhosseini, M., Rastegari, R. & Abbasi, R. A new 6 dof robotic arm with linkage motion mechanism and actuators placed in base. Int J. Robot Autom. 5, 35–48 (2016).
+ Google Scholar 
+Park, Y. & Agrawal, P. Using Apple Vision Pro to train and control robots https://github.com/Improbable-AI/VisionProTeleop (2024).
+Cheng, P., Kai, J. & Josie, H. Robust teleoperation of an anthropomorphic robotic hand through gesture-based classification and regression Robotics and Automation Magazine. (2025).
+Della Santina, C., Piazza, C., Grioli, G., Catalano, M. G. & Bicchi, A. Toward dexterous manipulation with augmented adaptive synergies: The Pisa/IIT SoftHand 2. IEEE Trans. Robot. 34, 1141–1156 (2018).
+Article 
+ Google Scholar 
+Shaw, K., Agarwal, A. & Pathak, D. Leap hand: Low-cost, efficient, and anthropomorphic hand for robot learning. arXiv preprint arXiv:2309.06440 (2023).
+Lovchik, C. & Diftler, M. A. The robonaut hand: A dexterous robot hand for space. In Proceedings 1999 IEEE International Conference on Robotics and automation (Cat. No. 99CH36288C), vol. 2, 907–912 (IEEE, 1999).
+Download references
+Acknowledgements
+We would like to acknowledge Swiss National Science Foundation (SNSF) funding under project grant number 10001574, Rapid Deployment of Compliant, Sensorized Anthropomorphic Robot Hands, to realize this project.
+Author information
+Authors and Affiliations
+CREATE Lab, EPFL, Lausanne, Switzerland
+Kai Junge & Josie Hughes
+AuthorsKai JungeView author publications
+Search author on:PubMed Google Scholar
+Josie HughesView author publications
+Search author on:PubMed Google Scholar
+Contributions
+K.J and J.H. conceived the idea and designed the research. K.J developed the robotic systems, performed the experiment, and analyzed the data. K.J and J.H. wrote the manuscript.
+Corresponding author
+Correspondence to
+ Kai Junge.
+Ethics declarations
+ Competing interests
+ The authors declare no competing interests.
+ Consent statement
+ During the experimental procedure conducted in this manuscript, written consent from all participants were obtained.
+Additional information
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+Supplementary information
+Supplementary information (download PDF )
+Rights and permissions
+ Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
+ Reprints and permissions
+About this article
+Cite this article
+Junge, K., Hughes, J. ADAPT-Teleop: robotic hand with human matched embodiment enables dexterous teleoperated manipulation.
+ npj Robot 3, 31 (2025). https://doi.org/10.1038/s44182-025-00034-3
+Download citation
+Received: 05 August 2024
+Accepted: 17 May 2025
+Published: 15 September 2025
+Version of record: 15 September 2025
+DOI: https://doi.org/10.1038/s44182-025-00034-3
+Share this article
+Anyone you share the following link with will be able to read this content:
+Get shareable linkSorry, a shareable link is not currently available for this article.
+Copy shareable link to clipboard
+ Provided by the Springer Nature SharedIt content-sharing initiative
+ Download PDF
+ Advertisement
+ Explore content
+ Research articles
+ Reviews & Analysis
+ News & Comment
+ Collections
+ Sign up for alerts
+ RSS feed
+ About the journal
+ Aims & Scope
+ Journal Information
+ Content types
+ About the Editors
+ Open Access
+ Contact
+ Calls for Papers
+ Open Access Fees and Funding
+ Editorial Policies
+ Journal Metrics
+ Publish with us
+ For Authors and Referees
+ Language editing services
+ Open access funding
+ Submit manuscript
+ Search
+ Search articles by subject, keyword or author
+ Show results from
+ All journals
+ This journal
+ Search
+ Advanced search
+ Quick links
+ Explore articles by subject
+ Find a job
+ Guide to authors
+ Editorial policies
+ npj Robotics
+ (npj Robot)
+ ISSN 2731-4278 (online)
+ nature.com footer links
+ About Nature Portfolio
+ About us
+ Press releases
+ Press office
+ Contact us
+ Discover content
+ Journals A-Z
+ Articles by subject
+ protocols.io
+ Nature Index
+ Publishing policies
+ Nature portfolio policies
+ Open access
+ Author & Researcher services
+ Reprints & permissions
+ Research data
+ Language editing
+ Scientific editing
+ Nature Masterclasses
+ Research Solutions
+ Libraries & institutions
+ Librarian service & tools
+ Librarian portal
+ Open research
+ Recommend to library
+ Advertising & partnerships
+ Advertising
+ Partnerships & Services
+ Media kits
+ Branded
+ content
+ Professional development
+ Nature Awards
+ Nature Careers
+ Nature 
+ Conferences
+ Regional websites
+ Nature Africa
+ Nature China
+ Nature India
+ Nature Japan
+ Nature Middle East
+ Privacy
+ Policy
+ Use
+ of cookies
+ Your privacy choices/Manage cookies
+ Legal
+ notice
+ Accessibility
+ statement
+ Terms & Conditions
+ Your US state privacy rights
+ © 2026 Springer Nature Limited
+ Close banner
+ Close
+ Sign up for the Nature Briefing newsletter — what matters in science, free to your inbox daily.
+ Email address
+ Sign up
+ I agree my information will be processed in accordance with the Nature and Springer Nature Limited Privacy Policy.
+ Close banner
+ Close
+ Get the most important science stories of the day, free in your inbox.
+ Sign up for Nature Briefing

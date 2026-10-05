@@ -1,0 +1,158 @@
+{
+  "wuji-hand-2": [
+    {
+      "url": "http://localhost:3000/og/docs/wuji-hand/latest/overview/image.png",
+      "source": "https://docs.wuji.tech/docs/zh/wuji-hand/latest/overview/"
+    },
+    {
+      "url": "http://localhost:3000/og/docs/wuji-hand/latest/control-guide/image.png",
+      "source": "https://docs.wuji.tech/docs/zh/wuji-hand/latest/control-guide/"
+    }
+  ],
+  "sharpa-w01": [],
+  "allegro-v4": [
+    {
+      "url": "https://www.allegrohand.com/img/common/img.jpg",
+      "source": "https://www.allegrohand.com/sub/product/p.php?idx=1"
+    },
+    {
+      "url": "https://www.allegrohand.com/img/common/img.jpg",
+      "source": "https://www.allegrohand.com/sub/product/p.php?idx=1"
+    }
+  ],
+  "dlr-hand-ii": [
+    {
+      "url": "https://www.dlr.de/de/rm/bilder/roboter_und_systeme/hand/hand_ii/handshake_200.jpg/@@images/image-200-908644273f353fe8a6e45372c16a2505.jpeg",
+      "source": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/hand-ii/design-construction-of-dlr-hand-ii"
+    },
+    {
+      "url": "https://www.dlr.de/de/rm/bilder/roboter_und_systeme/fingertip_fts/fingertipsensor_200.jpg/@@images/image-200-a13c3963c3fc6c112fb838e6ac268b61.jpeg",
+      "source": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/hand-ii/sensors-of-dlr-hand-ii"
+    }
+  ],
+  "xynova-flex-2": [
+    {
+      "url": "https://cdn.prod.website-files.com/6641c0152b531df61b2cefca/6a30ffd95dfcddf91922d85e_use-case-thumbnail-Xynova.jpg",
+      "source": "https://www.manus-meta.com/use-cases/how-xynova-teleoperates-the-flex-2-dexterous-hand-with-manus-metagloves-pro-haptic"
+    }
+  ],
+  "linker-l20": [
+    {
+      "url": "https://www.linkerbot.cn/og-image.png",
+      "source": "https://www.linkerhand.com/details/LinkerHandL20/"
+    }
+  ],
+  "barrett-bh8-280": [],
+  "trifinger": [],
+  "rbo-hand-2": [],
+  "rbo-hand-3": [],
+  "unitree-dex3-1": [],
+  "psyonic-ability-hand": [
+    {
+      "url": "http://static1.squarespace.com/static/61229f1b98e6c829c570bace/612fd34f1408f81fa1b1edd3/69b835fc3410b522b8d945c7/1783375309762/PSYONICxNVIDIA.jpg?format=1500w",
+      "source": "https://www.psyonic.io/news/press-release-psyonic-amp-nvidia-officially-announce-collaboration-at-nvidia-gtc-2026"
+    },
+    {
+      "url": "http://static1.squarespace.com/static/61229f1b98e6c829c570bace/612fd34f1408f81fa1b1edd3/636258da92ad1e38fed58388/1667394544399/this+one+apptronik.jpg?format=1500w",
+      "source": "https://www.psyonic.io/news/psyonic-releases-ability-hand-for-research-users"
+    }
+  ],
+  "pisa-iit-softhand": [],
+  "qb-softhand-2-research": [],
+  "orca-hand": [],
+  "ruka-v1": [],
+  "leap-hand-v2": [
+    {
+      "url": "http://v2.leaphand.com/static/videos/teaser.png",
+      "source": "https://v2.leaphand.com/"
+    },
+    {
+      "url": "http://v2.leaphand.com/static/videos/teaser.png",
+      "source": "https://v2.leaphand.com/"
+    }
+  ],
+  "tesollo-dg-5f-m": [
+    {
+      "url": "https://cdn.tesollo.com/site/pages/common/common-product-23.webp",
+      "source": "https://www.tesollo.com/news/press/tesollo-unveils-high-performance-humanoid-robot-hand-dg-5f"
+    }
+  ],
+  "schunk-svh": [
+    {
+      "url": "https://d16vz4puxlsxm1.cloudfront.net/image/076200133045-Prod/image_rbjq655utp0d97e6od2ul2mu60/-FJPG-B600",
+      "source": "https://schunk.com/at/de/greiftechnik/spezialgreifer/svh/c/PGR_3161"
+    },
+    {
+      "url": "https://d16vz4puxlsxm1.cloudfront.net/image/076200133045-Prod/image_rbjq655utp0d97e6od2ul2mu60/-FJPG-B600",
+      "source": "https://schunk.com/us/en/gripping-systems/special-gripper/svh/svh-rechte-hand/p/000000000001545592"
+    }
+  ],
+  "schunk-sdh-2": [],
+  "inspire-rh56dfx": [
+    {
+      "url": "https://en.inspire-robots.com/wp-content/uploads/2026/09/Products_DFX.jpg",
+      "source": "https://en.inspire-robots.com/product/rh56dfx/"
+    }
+  ],
+  "inspire-rh56bfx": [
+    {
+      "url": "https://en.inspire-robots.com/wp-content/uploads/2026/07/Products_BFX.jpg",
+      "source": "https://en.inspire-robots.com/product/rh56bfx/"
+    },
+    {
+      "url": "https://en.inspire-robots.com/wp-content/uploads/2026/07/Products_BFX.jpg",
+      "source": "https://en.inspire-robots.com/product/rh56bfx/"
+    }
+  ],
+  "dlr-clash": [
+    {
+      "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/clash/clash_automatica2018_apple_cropped_for_16_9_3328x1872.jpg/@@images/image-1000-a3dcdc825eccddb5eb6a8a7df556adcb.jpeg",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/clash"
+    },
+    {
+      "url": "https://www.frontiersin.org/api/ipx/w=1200&f=png/https://www.frontiersin.org/files/Articles/468772/frobt-06-00138-HTML-r1/image_m/frobt-06-00138-g001.jpg",
+      "source": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2019.00138/full"
+    }
+  ],
+  "dlr-david": [
+    {
+      "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/david_hand/David-Hand_mit_Stahlfedern_16_9_1440x810.jpg/@@images/image-1000-ee94d4a377ca54b86d9ee7875676c2e7.jpeg",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/david-hand"
+    },
+    {
+      "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/david_hand/David-Hand_mit_Stahlfedern_16_9_1440x810.jpg/@@images/image-1000-ee94d4a377ca54b86d9ee7875676c2e7.jpeg",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/david-hand"
+    }
+  ],
+  "dlr-dexhand": [
+    {
+      "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/dexhand/dexhand_2012_liegend_freigestellt_16_9_4089x2300.jpg/@@images/image-1000-60825be70aa9c14ab4bc1ce8de4ba36d.jpeg",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dexhand-2012-2015"
+    },
+    {
+      "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/dexhand/dexhand_2012_liegend_freigestellt_16_9_4089x2300.jpg/@@images/image-1000-60825be70aa9c14ab4bc1ce8de4ba36d.jpeg",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dexhand-2012-2015"
+    }
+  ],
+  "dlr-spacehand": [
+    {
+      "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/spacehand/Spacehand_front_rotated_711x400.jpg/@@images/image-711-f624c552268e02b2c9faa3226f812b26.jpeg",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/spacehand-2015-2018"
+    },
+    {
+      "url": "https://www.dlr.de/en/rm/images/roboter_und_systeme/hand/spacehand/Spacehand_front_rotated_711x400.jpg/@@images/image-711-f624c552268e02b2c9faa3226f812b26.jpeg",
+      "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/spacehand-2015-2018"
+    }
+  ],
+  "robotiq-3f": [],
+  "prensilia-ih2-azzurra": [
+    {
+      "url": "https://www.prensilia.com/wp-content/uploads/2023/03/ih2-azzurra-hand-prensilia.jpg",
+      "source": "https://www.prensilia.com/it/ih2-azzurra/"
+    }
+  ],
+  "nasa-robonaut-2-hand": [],
+  "festo-bionicsofthand": [],
+  "open-bionics-ada": [],
+  "open-bionics-brunel": []
+}

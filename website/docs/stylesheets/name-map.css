@@ -1,0 +1,53 @@
+/* Name-only coordinate map; deliberately scoped to the homepage. */
+#dex-map .dex-stage { background:transparent; height:auto; min-height:480px; }
+#dex-map .dex-map-caption { left:24px; top:18px; right:180px; }
+#dex-map .dex-view-title { margin:0; font-size:19px; }
+#dex-map .dex-coverage { font-size:12px; margin-top:6px; }
+#dex-map .dex-scale { flex-direction:row; top:16px; right:12px; gap:2px; }
+#dex-map .dex-zoom-readout { min-width:48px; color:var(--dex-muted); }
+#dex-map .dex-scale button:disabled { opacity:.35; cursor:default; }
+#dex-map .dex-coordinate-note:empty { display:none; }
+#dex-map .dex-axes .grid-line { stroke-opacity:.10; }
+#dex-map .dex-axes text { font:400 11px var(--dex-mono); }
+#dex-map .dex-axes .month-tick { fill:var(--dex-muted); font-size:10px; }
+#dex-map .dex-node,
+#dex-map .dex-node:hover,
+#dex-map .dex-node:focus-visible {
+  display:flex; align-items:center; justify-content:flex-start; gap:6px;
+  padding:0 0 0 10px; margin:0; border:0; border-radius:0;
+  background:transparent; box-shadow:none; text-shadow:none;
+  transform:translate(0,-50%); color:var(--dex-text)!important;
+  transition:color .15s; cursor:pointer;
+}
+#dex-map .dex-node:before { display:none; }
+#dex-map .dex-node-dot { position:absolute; left:-2.5px; width:5px; height:5px; border-radius:50%; background:var(--dex-accent); }
+#dex-map .dex-node[data-side=left] { padding:0 10px 0 0; justify-content:flex-end; transform:translate(-100%,-50%); }
+#dex-map .dex-node[data-side=left] .dex-node-dot { left:auto; right:-2.5px; }
+#dex-map .dex-node[data-kind=system] .dex-node-dot { border-radius:0; background:var(--dex-muted); }
+#dex-map .dex-node-label,
+#dex-map .dex-node:hover .dex-node-label {
+  display:block; position:static; transform:none; width:auto; max-width:none;
+  color:inherit; text-shadow:none; white-space:nowrap; overflow:hidden;
+  text-overflow:ellipsis; font:500 12px/1.4 var(--dex-sans); -webkit-line-clamp:unset;
+}
+#dex-map .dex-node:hover,
+#dex-map .dex-node:focus-visible { z-index:7; color:var(--dex-accent)!important; background:var(--dex-bg); }
+#dex-map .dex-node:hover .dex-node-label { text-decoration:underline; text-underline-offset:3px; }
+#dex-map .dex-node[data-coordinate=displaced] .dex-node-dot { display:none; }
+#dex-map .dex-node[data-coordinate=unknown] .dex-node-dot { display:block; }
+#dex-map .dex-node[data-precision=year] .dex-node-dot { background:var(--dex-bg); border:1.4px solid var(--dex-accent); }
+#dex-map .dex-inspector { font-size:13px; bottom:70px; max-height:calc(100% - 180px); overflow:auto; }
+#dex-map .dex-inspector h3 { font-size:18px; line-height:1.4; margin:6px 0 12px; }
+#dex-map .dex-inspector p { font-size:13px; line-height:1.65; margin:8px 0; }
+#dex-map .dex-time-precision { color:var(--dex-muted); font-size:11px; }
+#dex-map .dex-unplaced-list { max-height:450px; overflow:auto; }
+@media(max-width:600px) {
+  #dex-map .dex-stage { height:auto; }
+  #dex-map .dex-map-caption { left:12px; right:140px; }
+  #dex-map .dex-scale { right:0; gap:0; }
+  #dex-map .dex-scale button { width:36px; }
+  #dex-map .dex-coverage { font-size:10px; }
+  #dex-map .dex-node-label { font-size:11px; }
+  #dex-map .dex-inspector { position:fixed; left:12px; right:12px; top:auto; bottom:12px; width:auto; max-height:min(40vh,300px); }
+  #dex-map .dex-inspector[data-vertical=top] { top:12px; bottom:auto; }
+}
