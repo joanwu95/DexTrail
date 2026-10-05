@@ -8,6 +8,7 @@ __pycache__/
 *.py[cod]
 research/previews/**/site/
 .release-build/
+.release-build-env/
 .release-tools/
 node_modules/
 .pytest_cache/

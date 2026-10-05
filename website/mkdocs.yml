@@ -1,5 +1,5 @@
 site_name: DexTrail
-site_url: https://joanwu95.github.io/hand/
+site_url: https://joanwu95.github.io/DexTrail/
 site_description: Tracing the paths to robotic dexterity.
 dev_addr: 127.0.0.1:8000
 hooks:
