@@ -20,6 +20,14 @@ def navigation_data():
         'mode': 'filter', 'unit': '论文',
         'items': [{'class': 'paper-entry', 'tags': paper.get('tags', [])} for paper in reviews['papers']],
     }
+    questions = json.loads((ROOT / 'data/key-questions.json').read_text(encoding='utf-8'))['questions']
+    ordered = [q for group in dict.fromkeys(q['group'] for q in questions) for q in questions if q['group'] == group]
+    navigation['pages']['questions/index.md'] = {
+        'mode': 'filter', 'unit': '问题',
+        'items': [{'class': 'question-entry', 'tags': q['tags']} for q in ordered],
+    }
+    for question in questions:
+        navigation['pages']['questions/' + question['id'] + '.md'] = {'mode': 'links', 'tags': question['tags']}
     return navigation
 
 
@@ -299,7 +307,7 @@ def add_topic_navigation(content, page):
         count = len(items)
     rail_pattern = r'<aside\b(?=[^>]*\bclass="dex-rail\b[^"]*")[^>]*>.*?</aside>'
     old_rail = re.search(rail_pattern, content, re.S)
-    toc = re.search(r'<nav class="dex-scroll-nav"[^>]*>.*?</nav>', old_rail.group(), re.S).group() if old_rail and re.search(r'<nav class="dex-scroll-nav"[^>]*>.*?</nav>', old_rail.group(), re.S) else ''
+    toc = re.search(r'<nav\b(?=[^>]*\bclass="dex-scroll-nav")[^>]*>.*?</nav>', old_rail.group(), re.S).group() if old_rail and re.search(r'<nav\b(?=[^>]*\bclass="dex-scroll-nav")[^>]*>.*?</nav>', old_rail.group(), re.S) else ''
     content = re.sub(rail_pattern, '', content, flags=re.S)
     def rail_class(match):
         classes = match[1].split()
@@ -354,7 +362,7 @@ def on_page_content(content, page, config, files):
     """One navigation contract for map, articles, generated records and legacy docs."""
     content = unify_site_chrome(content)
     content = add_topic_navigation(content, page)
-    destinations = [("index.html", "产品地图", "map"), ("algorithms/", "算法图谱", "algorithms"), ("concepts/", "概念索引", "concepts"), ("development/", "领域发展", "development"),
+    destinations = [("index.html", "产品地图", "map"), ("questions/", "关键问题", "questions"), ("algorithms/", "算法图谱", "algorithms"), ("concepts/", "概念索引", "concepts"), ("development/", "领域发展", "development"),
                     ("technologies/", "技术路线", "technologies"), ("engineering/", "工程问题", "engineering"),
                     ("papers/", "研究论文解读", "papers"), ("compare/", "技术对比", "compare")]
     uri = page.file.src_uri
@@ -367,6 +375,12 @@ def on_page_content(content, page, config, files):
         current = ' aria-current="page"' if section == key else ""
         links.append(f'<a href="{html.escape(address, quote=True)}"{current}>{label}</a>')
     nav = '<nav class="knowledge-nav" aria-label="知识地图入口">' + "".join(links) + '</nav>'
+    if section == 'questions':
+        mobile_map = html.escape(get_relative_url('./', page.url), quote=True)
+        mobile_questions = html.escape(get_relative_url('questions/', page.url), quote=True)
+        nav += ('<div class="question-global-mobile"><a href="' + mobile_map + '">产品地图</a>'
+                '<a href="' + mobile_questions + '" aria-current="page">关键问题</a>'
+                '<details><summary>全部栏目</summary><nav aria-label="全部网站栏目">' + ''.join(links) + '</nav></details></div>')
     content = re.sub(r'<nav class="knowledge-nav[^\"]*"[^>]*>.*?</nav>', '', content, flags=re.S)
     header = re.search(r'<header class="(?:hand-brand|dex-brand)"[^>]*>.*?</header>', content, re.S)
     if header:

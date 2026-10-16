@@ -1,0 +1,1 @@
+run_id,protocol_version,hardware_version,code_revision,task,condition_id,object_id,initial_state,control_mode,outcome,duration_s,final_error,error_unit,intervention_count,failure_mode,retry_of,stop_reason,raw_data_path,video_path,operator,timestamp,notes

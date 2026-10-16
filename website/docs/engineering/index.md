@@ -8,7 +8,9 @@ hide: [navigation, toc, footer]
 <header class="hand-brand"><a class="hand-brand-name" href="../"><img class="dex-emblem" src="../images/brand/dextrail-fingerprint-original.svg" alt="">DexTrail<span>.</span></a><span class="knowledge-edition">灵巧手技术图谱</span></header>
 <div class="hand-heading"><p class="knowledge-kicker">工程问题</p><h1>从结构到可执行的操作</h1><p class="hand-identity">解释自由度、驱动、触觉、传动、规划和控制之间的关系，帮助判断设计选择与验证方法。</p></div>
 
-## 八个工程专题 {#topics}
+先从[关键问题](../questions/index.md)选择疑问，再进入下列原理与验证方法。
+
+## 十个工程专题 {#topics}
 
 <div markdown="0" class="engineering-stories">
 <a class="engineering-story" href="degrees-of-freedom/"><span class="eng-number">01</span><span class="eng-story-content"><strong class="eng-story-title" role="heading" aria-level="2">自由度与驱动</strong><span class="eng-story-description">关节、自由度、执行器与命令维度如何对应？主动、被动和耦合怎样区分？</span><span class="eng-questions">独立运动 · 欠驱动 · 驱动映射</span></span><span class="eng-enter" aria-hidden="true">↗</span></a>
@@ -19,6 +21,8 @@ hide: [navigation, toc, footer]
 <a class="engineering-story" href="control-modes/"><span class="eng-number">06</span><span class="eng-story-content"><strong class="eng-story-title" role="heading" aria-level="2">手指控制与力控</strong><span class="eng-story-description">除了力还要控制什么？位置、阻抗、导纳和力控如何选，反馈怎样闭环？</span><span class="eng-questions">控制目标 · 接口 · 多指协同</span></span><span class="eng-enter" aria-hidden="true">↗</span></a>
 <a class="engineering-story" href="force-estimation/"><span class="eng-number">07</span><span class="eng-story-content"><strong class="eng-story-title" role="heading" aria-level="2">抓力大小与力估计</strong><span class="eng-story-description">怎样知道需要多大力？从摩擦平衡到多指力分配，如何估计与验证？</span><span class="eng-questions">计算示例 · 抗滑与上限 · 力估计</span></span><span class="eng-enter" aria-hidden="true">↗</span></a>
 <a class="engineering-story" href="sim-to-real/"><span class="eng-number">08</span><span class="eng-story-content"><strong class="eng-story-title" role="heading" aria-level="2">仿真与现实验证</strong><span class="eng-story-description">模型、传感和实物之间差在哪里？怎样分阶段定位问题并评价完整任务？</span><span class="eng-questions">模型差异 · 验证步骤 · 任务指标</span></span><span class="eng-enter" aria-hidden="true">↗</span></a>
+<a class="engineering-story" href="performance-evaluation/"><span class="eng-number" aria-hidden="true">·</span><span class="eng-story-content"><strong class="eng-story-title" role="heading" aria-level="2">性能评价与测试协议</strong><span class="eng-story-description">如何定义条件、保留失败试次，并区分单指、整手与完整任务指标？</span><span class="eng-questions">测试协议 · 原始记录 · 证据范围</span></span><span class="eng-enter" aria-hidden="true">↗</span></a>
+<a class="engineering-story" href="reliability-and-maintenance/"><span class="eng-number" aria-hidden="true">·</span><span class="eng-story-content"><strong class="eng-story-title" role="heading" aria-level="2">可靠性、退化与维护</strong><span class="eng-story-description">如何规定带载工况、跟踪性能变化，并复测维修后的恢复？</span><span class="eng-questions">工况与失效 · 维护 · 重新标定</span></span><span class="eng-enter" aria-hidden="true">↗</span></a>
 </div>
 
 <p class="eng-scope">每篇包含概念关系、实施条件、图解与核查方法。概念图不代表产品测量结果；本站尚未完成这些专题的实物实验。</p>

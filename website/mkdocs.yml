@@ -6,6 +6,7 @@ hooks:
   - hooks/atlas.py
   - hooks/technology_routes.py
   - hooks/engineering.py
+  - hooks/questions.py
   - hooks/concepts.py
   - hooks/knowledge.py
   - hooks/reports.py
@@ -64,6 +65,8 @@ extra_css:
   - stylesheets/paper-library.css
   - stylesheets/concept-index.css
   - stylesheets/algorithm-atlas.css
+  - stylesheets/key-questions.css
+  - stylesheets/site-layout.css
 extra_javascript:
   - javascripts/tag-palette.js
   - javascripts/atlas-map.js
@@ -83,6 +86,16 @@ extra_javascript:
   - javascripts/algorithm-atlas.js
 nav:
   - 产品地图: index.md
+  - 关键问题:
+      - 问题总览: questions/index.md
+      - 怎样判断一只手是否灵巧？: questions/dexterity.md
+      - 为什么不同手选择不同机械路线？: questions/mechanical-design.md
+      - 触觉到底能带来什么？: questions/tactile-value.md
+      - 怎样实现稳定的接触力控制？: questions/contact-control.md
+      - 怎样证明演示能够稳定复现？: questions/reproducibility.md
+      - 怎样评价耐久和可维修性？: questions/reliability.md
+      - 数据和策略能否跨手迁移？: questions/data-transfer.md
+      - 如何为具体任务选一只手？: questions/task-selection.md
   - 算法图谱:
       - 算法总览: algorithms/index.md
       - 按问题:
@@ -131,6 +144,8 @@ nav:
       - 手指控制与力控: engineering/control-modes.md
       - 力估计与抓取: engineering/force-estimation.md
       - 仿真与现实: engineering/sim-to-real.md
+      - 性能评价与测试协议: engineering/performance-evaluation.md
+      - 可靠性、退化与维护: engineering/reliability-and-maintenance.md
   - 研究与实验:
       - 苏度 Sudo R1 系统: systems/sudo-r1.md
       - 研究入口: research/index.md

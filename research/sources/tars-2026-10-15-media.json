@@ -1,0 +1,12 @@
+{
+  "tars-dexhand": {
+    "source": "https://www.prnewswire.com/news-releases/tars-brings-real-life-embodied-ai-to-icra-2026-robotics-conference-302790438.html",
+    "assets": [
+      {
+        "kind": "image",
+        "url": "https://mma.prnewswire.com/media/2994436/TARS_1.jpg",
+        "label": "TARS 官方 ICRA 展示图"
+      }
+    ]
+  }
+}

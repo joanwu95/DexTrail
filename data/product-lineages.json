@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reviewed_on": "2026-10-04",
+  "reviewed_on": "2026-10-15",
   "families": [
     {
       "id": "wuji-hand-family",
@@ -5198,6 +5198,48 @@
           "summary": "2026-07-18 公告：五指、20 主动轴；当前 Ultra 页面已列 21 轴，版本分开记录。",
           "sources": [
             "agibot-omnihand-3-ultra-m"
+          ]
+        }
+      ],
+      "relationships": [],
+      "comparisons": [],
+      "ecosystem": []
+    },
+    {
+      "id": "tars-dexhand-family",
+      "organization": "它石智航 · TARS",
+      "name": "TARS DexHand",
+      "reviewed_on": "2026-10-15",
+      "member_ids": [
+        "tars-dexhand"
+      ],
+      "status": "review",
+      "mode": "review",
+      "summary": "本轮仅收录 TARS DexHand 的 ICRA 2026 公开配置。",
+      "scope": "收录一个五指灵巧手条目，参数按已公开证据记录。",
+      "open_questions": "未取得足以建立前后代关系的公开版本文件。",
+      "sources": {
+        "debut": {
+          "title": "TARS 官方首秀公告 · 2026-06-02",
+          "url": "https://www.prnewswire.com/news-releases/from-mind-to-hand-tars-brings-a-dexterous-hand-with-brain-and-awe3-0-to-icra-2026--302788465.html"
+        }
+      },
+      "summary_sources": [
+        "debut"
+      ],
+      "milestones": [
+        {
+          "id": "tars-dexhand-record",
+          "hand_id": "tars-dexhand",
+          "name": "TARS DexHand",
+          "kind": "公开展示",
+          "date": "2026-06-02",
+          "date_relation": "by",
+          "date_label": "至迟 2026.06.02",
+          "date_basis": "当日官方公告已记录首秀，不是供货日。",
+          "summary": "厂商标称 21 DOF、人手尺度；逐指主动 / 耦合分配和电机数量未核清，地图主动轴坐标留空。",
+          "sources": [
+            "debut"
           ]
         }
       ],

@@ -1,0 +1,14 @@
+/* Shared canvas keeps content and fixed reading rails inside the same frame. */
+.md-typeset :is(#dextrail-home,.dex-hand-page){
+  width:100%;max-width:1240px;margin-inline:auto;box-sizing:border-box;
+  padding-left:32px;padding-right:32px;
+}
+@media(min-width:1051px){
+  .md-typeset :is(#dextrail-home,.dex-hand-page).has-dex-rail{
+    padding-right:calc(32px + var(--dex-rail-width,208px) + var(--dex-rail-gap,28px));
+  }
+  body:has(.has-dex-rail) .dex-rail{right:max(32px,calc((100vw - 1240px)/2 + 32px))}
+}
+@media(max-width:760px){
+  .md-typeset :is(#dextrail-home,.dex-hand-page){padding-left:20px;padding-right:20px}
+}

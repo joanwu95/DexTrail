@@ -2776,5 +2776,15 @@
     }
   ],
   "agibot-omnihand-3-lite": [],
-  "agibot-omnihand-3-ultra-t": []
+  "agibot-omnihand-3-ultra-t": [],
+  "tars-dexhand": [
+    {
+      "kind": "image",
+      "url": "https://mma.prnewswire.com/media/2994436/TARS_1.jpg",
+      "label": "TARS 官方 ICRA 展示图",
+      "alt": "TARS DexHand · 它石智航 · TARS 官方 ICRA 展示图",
+      "source": "https://www.prnewswire.com/news-releases/tars-brings-real-life-embodied-ai-to-icra-2026-robotics-conference-302790438.html",
+      "verified_on": "2026-10-15"
+    }
+  ]
 }

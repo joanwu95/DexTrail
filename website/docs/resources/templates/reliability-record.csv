@@ -1,0 +1,1 @@
+record_id,hardware_version,code_revision,protocol_version,sample_id,condition_id,load_description,environment,operating_hours,cycle_count,event_type,failure_mode,stop_reason,baseline_data_path,event_data_path,repair_action,parts_wait_hours,repair_hours,calibration_hours,retest_hours,retest_result,timestamp,notes

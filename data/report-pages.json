@@ -833,5 +833,14 @@
     "gaps": "执行器逐项清单、完整材料与尺寸、控制带宽、传感标定及独立任务评测尚待补证；未连接实物或运行仿真。",
     "venue": "官方产品 / 文档 / SDK",
     "checked_on": "2026-10-04"
+  },
+  {
+    "name": "TARS DexHand · 它石智航",
+    "source": "research/collection/hands/tars-dexhand.md",
+    "page": "hands/reports/tars-dexhand.md",
+    "summary": "厂商标称 21 DOF、人手尺度；逐指主动 / 耦合分配和电机数量未核清，地图主动轴坐标留空。",
+    "gaps": "已补充检索官方发布、官方社媒、作者论文与代码：仍未找到本手重量、毫米尺寸、指尖力、负载、扭矩、速度、减速比、功耗、通信、寿命、价格及交付的可验证规格；不从其他 DexHand 产品或整机参数移植。",
+    "venue": "官方 ICRA 2026 发布稿",
+    "checked_on": "2026-10-15"
   }
 ]

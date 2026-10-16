@@ -528,5 +528,11 @@
     "url": "https://www.unitree.com/images/14bb24498bf74c9f91d1a722b92d23dc_800x800.png",
     "alt": "Unitree Dex5-S · 官方 Dex5-S 产品图",
     "source": "https://www.unitree.com/Dex5-S/"
+  },
+  "tars-dexhand": {
+    "kind": "image",
+    "url": "https://mma.prnewswire.com/media/2994436/TARS_1.jpg",
+    "alt": "TARS DexHand · 它石智航 · TARS 官方 ICRA 展示图",
+    "source": "https://www.prnewswire.com/news-releases/tars-brings-real-life-embodied-ai-to-icra-2026-robotics-conference-302790438.html"
   }
 }

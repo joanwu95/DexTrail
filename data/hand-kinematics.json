@@ -4223,5 +4223,66 @@
       "text": "发布稿面向遥操作、示教采集与富接触操作；现行 SDK 索引已列 H3UM/O20 的 C++ 和 Python API，尚未验证与发布硬件的兼容性。",
       "source": "https://www.agibot.com/article/231/detail/85.html"
     }
+  },
+  "tars-dexhand": {
+    "checked_on": "2026-10-15",
+    "scope": "官方 ICRA 2026 发布稿",
+    "summary": "厂商标称 21 DOF、人手尺度；逐指主动 / 耦合分配和电机数量未核清，地图主动轴坐标留空。",
+    "parts": [
+      {
+        "part": "整手",
+        "active": "标称 21 DOF；主动分配待核",
+        "coupled": "未公开耦合表",
+        "motion": "仿人手掌骨与指骨拓扑"
+      },
+      {
+        "part": "拇指",
+        "active": "逐轴数量待核",
+        "coupled": "轴序待核",
+        "motion": "厂商强调 CMC / MCP 轴线空间交汇"
+      }
+    ],
+    "drive": "刚性准直驱，自研关节集成精密减速器。官方称使用三类电机及减速器，这是器件种类，不是仅三个电机。减速比与背隙数值待核。",
+    "ranges": "未取得逐关节限位、轴序和零位表。",
+    "gaps": "已补充检索官方发布、官方社媒、作者论文与代码：仍未找到本手重量、毫米尺寸、指尖力、负载、扭矩、速度、减速比、功耗、通信、寿命、价格及交付的可验证规格；不从其他 DexHand 产品或整机参数移植。",
+    "sources": [
+      {
+        "title": "官方 ICRA 2026 发布稿 · 结构、感知与实验依据",
+        "url": "https://www.prnewswire.com/news-releases/tars-brings-real-life-embodied-ai-to-icra-2026-robotics-conference-302790438.html"
+      },
+      {
+        "title": "TARS 官方首秀公告 · 2026-06-02",
+        "url": "https://www.prnewswire.com/news-releases/from-mind-to-hand-tars-brings-a-dexterous-hand-with-brain-and-awe3-0-to-icra-2026--302788465.html"
+      },
+      {
+        "title": "发表/公开时间依据",
+        "url": "https://www.prnewswire.com/news-releases/from-mind-to-hand-tars-brings-a-dexterous-hand-with-brain-and-awe3-0-to-icra-2026--302788465.html"
+      },
+      {
+        "title": "陈同庆演讲披露 · 中国质量新闻网报道（仅检索正文可读，原页访问受限）",
+        "url": "https://www.cqn.com.cn/cj/content/2026-10/15/content_9176536.htm"
+      },
+      {
+        "title": "TacForeSight 作者论文 · 实验平台 IV-A1",
+        "url": "https://arxiv.org/html/2606.11184v1"
+      },
+      {
+        "title": "TacForeSight 作者代码",
+        "url": "https://github.com/TacForeSight/TacForeSight"
+      }
+    ],
+    "basic": {
+      "fingers": 5,
+      "country": "中国",
+      "dimensions": "厂商称 1:1 人手尺度；毫米尺寸表待核",
+      "materials": "触觉层为弹性体；骨架材料待核",
+      "product_status": "2026 公开展示；供货、量产与售价待核",
+      "application": "精细接触操作与具身学习；适用性需任务验证"
+    },
+    "capability": {
+      "kind": "厂商资料",
+      "text": "官方展示 26 个英文字母手势、实时镜像交互，并介绍 AWE 3.0 触觉理解；未给出统一任务成功率和端到端延迟。 补查：企业演讲披露（2026-10-15 报道）：力分辨率 10 mN（0.01 N）、空间分辨率 0.1 mm、覆盖 33 种人手抓握类型。传感部位、测量协议、误差和抓握分类清单未给出；分辨率不等于测量精度，33 类不等于任务成功率。",
+      "source": "https://www.prnewswire.com/news-releases/tars-brings-real-life-embodied-ai-to-icra-2026-robotics-conference-302790438.html"
+    }
   }
 }

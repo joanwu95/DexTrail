@@ -8564,5 +8564,103 @@
       }
     ],
     "validation": "文档核验；未连接实物、编译 SDK 或加载模型。"
+  },
+  "tars-dexhand": {
+    "checked_on": "2026-10-15",
+    "version": "ICRA 2026 公开配置",
+    "hardware": {
+      "summary": "厂商标称 21 DOF、人手尺度；逐指主动 / 耦合分配和电机数量未核清，地图主动轴坐标留空。",
+      "drive": "刚性准直驱，自研关节集成精密减速器。官方称使用三类电机及减速器，这是器件种类，不是仅三个电机。减速比与背隙数值待核。",
+      "integration": "供电、安装、电气与通信接口待核。",
+      "sources": [
+        {
+          "title": "TARS 官方发布稿 · 2026-06-08",
+          "url": "https://www.prnewswire.com/news-releases/tars-brings-real-life-embodied-ai-to-icra-2026-robotics-conference-302790438.html"
+        },
+        {
+          "title": "TARS 官方首秀公告 · 2026-06-02",
+          "url": "https://www.prnewswire.com/news-releases/from-mind-to-hand-tars-brings-a-dexterous-hand-with-brain-and-awe3-0-to-icra-2026--302788465.html"
+        }
+      ]
+    },
+    "sdk": {
+      "status": "尚未核实",
+      "language": "未核实",
+      "environment": "未核实",
+      "api": "PID、阻抗、力控与模型控制接口未公开核实。",
+      "compatibility": "已找到相关 TacForeSight 算法代码、WIYH 数据工具；均非 DexHand 专用 SDK。OmniVTA 仓库本轮仅可见 LICENSE。本手 API 与驱动仍无可验证下载。",
+      "license": "未核实",
+      "sources": [
+        {
+          "title": "TARS 官方发布稿 · 2026-06-08",
+          "url": "https://www.prnewswire.com/news-releases/tars-brings-real-life-embodied-ai-to-icra-2026-robotics-conference-302790438.html"
+        },
+        {
+          "title": "TARS 官方首秀公告 · 2026-06-02",
+          "url": "https://www.prnewswire.com/news-releases/from-mind-to-hand-tars-brings-a-dexterous-hand-with-brain-and-awe3-0-to-icra-2026--302788465.html"
+        }
+      ]
+    },
+    "models": [
+      {
+        "format": "CAD / 制造文件",
+        "status": "尚未核实",
+        "detail": "未核实本型号下载文件；不等于不支持。",
+        "sources": []
+      },
+      {
+        "format": "URDF / Xacro",
+        "status": "尚未核实",
+        "detail": "未核实本型号下载文件；不等于不支持。",
+        "sources": []
+      },
+      {
+        "format": "MuJoCo / MJCF",
+        "status": "尚未核实",
+        "detail": "未核实本型号下载文件；不等于不支持。",
+        "sources": []
+      },
+      {
+        "format": "Isaac Sim / Lab / Gym",
+        "status": "尚未核实",
+        "detail": "未核实本型号下载文件；不等于不支持。",
+        "sources": []
+      },
+      {
+        "format": "Gazebo",
+        "status": "尚未核实",
+        "detail": "未核实本型号下载文件；不等于不支持。",
+        "sources": []
+      },
+      {
+        "format": "其他仿真 / 学习模型",
+        "status": "尚未核实",
+        "detail": "未核实本型号下载文件；不等于不支持。",
+        "sources": []
+      }
+    ],
+    "resources": [
+      {
+        "name": "WIYH · 相关人类操作数据项目",
+        "url": "https://wiyh.tars-ai.com/",
+        "note": "相关生态入口，不等于本手专用数据集、SDK 或仿真。"
+      },
+      {
+        "name": "TacForeSight 作者代码",
+        "url": "https://github.com/TacForeSight/TacForeSight",
+        "note": "相关算法，论文平台为 Robotiq 2F-85，不是本手 SDK。"
+      },
+      {
+        "name": "WIYH 数据工具",
+        "url": "https://github.com/tars-robotics/World-In-Your-Hands",
+        "note": "数据处理与教程，CC BY-NC-SA 4.0，非本手驱动。"
+      },
+      {
+        "name": "OmniVTA 作者论文",
+        "url": "https://arxiv.org/abs/2603.19201",
+        "note": "相关视触觉控制方法，不用于填本手硬件频率。"
+      }
+    ],
+    "validation": "文档核查；未运行实物、控制或仿真。"
   }
 }

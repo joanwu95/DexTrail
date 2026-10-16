@@ -58,13 +58,13 @@ def render(file):
 
 
 class EngineeringTest(unittest.TestCase):
-    def test_hub_has_exactly_eight_complete_filterable_links(self):
+    def test_hub_has_complete_filterable_links(self):
         html = render(ROOT / 'website/docs/engineering/index.md')
         parsed = Structure()
         parsed.feed(html)
         self.assertEqual(parsed.invalid, [])
-        self.assertEqual(len(parsed.items), 8)
         nav = json.loads((ROOT / 'data/knowledge-navigation.json').read_text(encoding='utf-8'))
+        self.assertEqual(len(parsed.items), len(nav['pages']['engineering/index.md']['items']))
         for item, expected in zip(parsed.items, nav['pages']['engineering/index.md']['items']):
             target = ROOT / 'website/docs/engineering' / item['href'].strip('/')
             self.assertTrue(target.with_suffix('.md').is_file(), item['href'])

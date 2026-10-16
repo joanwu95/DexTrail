@@ -30,7 +30,7 @@ function historyFixture() {
     addEventListener(key, fn) {this[key] = fn;}});
   const items = ['academic kinematics', 'industry', 'industry teleoperation'].map(tags => element({topicTags: tags}));
   const years = ['1982', '2025', '2026'].map((year, index) => ({...element({historyYear:year}), top:[50,900,1800][index],
-    getBoundingClientRect() {return {top:this.top};}, querySelectorAll:() => [items[index]]}));
+    getBoundingClientRect() {return {top:this.top};}, querySelector:() => null, querySelectorAll:() => [items[index]]}));
   const links = years.map(row => ({...element({historyLink:row.dataset.historyYear}),
     getBoundingClientRect:() => ({top:20, bottom:50})}));
   const nav = {hidden:false, scrollTop:0, querySelectorAll:() => links, getBoundingClientRect:() => ({top:0,bottom:200})};

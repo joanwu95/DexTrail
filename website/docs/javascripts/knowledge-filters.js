@@ -63,7 +63,12 @@
       item.hidden = !visible;
       if (visible) count++;
     }
-    for (const row of page.querySelectorAll('.history-year')) row.hidden = ![...row.querySelectorAll('[data-topic-item]')].some(item => !item.hidden);
+    for (const row of page.querySelectorAll('.history-year, .question-group')) {
+      const visible = [...row.querySelectorAll('[data-topic-item]')].filter(item => !item.hidden);
+      row.hidden = !visible.length;
+      const count = row.querySelector('.question-group-heading > span');
+      if (count) count.textContent = visible.length + ' 个问题';
+    }
     const timeline = page.querySelector('.history-scroll');
     if (timeline) timeline.hidden = !count;
     for (const control of controls) control.setAttribute('aria-pressed', String(selected.has(control.dataset.topicTag)));

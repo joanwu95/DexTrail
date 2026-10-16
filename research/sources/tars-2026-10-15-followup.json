@@ -1,0 +1,33 @@
+{
+  "checked_on": "2026-10-15",
+  "disclosure": "企业演讲披露（2026-10-15 报道）：力分辨率 10 mN（0.01 N）、空间分辨率 0.1 mm、覆盖 33 种人手抓握类型。传感部位、测量协议、误差和抓握分类清单未给出；分辨率不等于测量精度，33 类不等于任务成功率。",
+  "remaining": "已补充检索官方发布、官方社媒、作者论文与代码：仍未找到本手重量、毫米尺寸、指尖力、负载、扭矩、速度、减速比、功耗、通信、寿命、价格及交付的可验证规格；不从其他 DexHand 产品或整机参数移植。",
+  "sources": [
+    {
+      "title": "陈同庆演讲披露 · 中国质量新闻网报道（仅检索正文可读，原页访问受限）",
+      "url": "https://www.cqn.com.cn/cj/content/2026-10/15/content_9176536.htm",
+      "kind": "report"
+    },
+    {
+      "title": "TacForeSight 作者论文 · 实验平台 IV-A1",
+      "url": "https://arxiv.org/html/2606.11184v1",
+      "kind": "paper"
+    },
+    {
+      "title": "TacForeSight 作者代码",
+      "url": "https://github.com/TacForeSight/TacForeSight",
+      "kind": "repository"
+    }
+  ],
+  "queries": [
+    "它石智航 DexHand 重量 负载 参数 电机",
+    "TARS DexHand specifications weight torque payload SDK",
+    "它石 TARS-Dex 视触觉夹爪",
+    "TacForeSight github",
+    "OmniVTA github"
+  ],
+  "access_limits": [
+    "中国质量新闻网原页访问受限，数值取自可读检索正文，保留报道级别",
+    "主域名未取得可读产品规格表，不能据此声称厂商从未公开"
+  ]
+}

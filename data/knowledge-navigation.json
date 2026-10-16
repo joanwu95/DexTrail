@@ -240,6 +240,22 @@
             "calibration",
             "task-evaluation"
           ]
+        },
+        {
+          "class": "engineering-story",
+          "tags": [
+            "task-evaluation",
+            "calibration",
+            "system-integration"
+          ]
+        },
+        {
+          "class": "engineering-story",
+          "tags": [
+            "maintenance",
+            "manufacturing",
+            "calibration"
+          ]
         }
       ]
     },
@@ -395,6 +411,21 @@
       "tags": [
         "open-platform",
         "learning-platform"
+      ]
+    },
+    "engineering/performance-evaluation.md": {
+      "mode": "links",
+      "tags": [
+        "task-evaluation",
+        "calibration"
+      ]
+    },
+    "engineering/reliability-and-maintenance.md": {
+      "mode": "links",
+      "tags": [
+        "maintenance",
+        "manufacturing",
+        "calibration"
       ]
     }
   }

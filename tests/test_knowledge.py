@@ -328,6 +328,12 @@ class KnowledgeTest(unittest.TestCase):
                     body = body.replace(routes.MARKER, routes.render(routes.load(), knowledge.navigation_data()))
                 body = markdown.markdown(body, extensions=['md_in_html', 'tables', 'attr_list', 'toc'], extension_configs={'toc': {'permalink': True}})
                 page = SimpleNamespace(file=SimpleNamespace(src_uri=uri), url=uri.replace('index.md', '').replace('.md', '/'))
+                if uri == 'questions/index.md':
+                    question_spec = importlib.util.spec_from_file_location('root_questions', ROOT / 'website/hooks/questions.py')
+                    questions = importlib.util.module_from_spec(question_spec)
+                    question_spec.loader.exec_module(questions)
+                    config = SimpleNamespace(extra={'key_questions': questions.load_document()})
+                    body = questions.on_page_content(body, page, config, [])
                 output = knowledge.on_page_content(body, page, None, None)
                 self.assertEqual(output.count('knowledge-tag-rail'), 1)
                 self.assertEqual(output.count('knowledge-section-purpose'), 1)

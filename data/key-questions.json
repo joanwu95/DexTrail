@@ -1,0 +1,537 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-16",
+  "sources": {
+    "nist": {
+      "title": "NIST · 末端握力、指力、动作周期与重复性测试",
+      "url": "https://www.nist.gov/publications/benchmarking-protocols-evaluating-grasp-strength-grasp-cycle-time-finger-strength-and",
+      "kind": "paper",
+      "scope": "2020 测试方法；用于指标与协议，不作为本站测试结果"
+    },
+    "nistDraft": {
+      "title": "NIST SP 1227 · 手性能评价框架（草案）",
+      "url": "https://www.nist.gov/publications/performance-metrics-and-test-methods-robotic-hands-draft",
+      "kind": "report",
+      "scope": "2018 草案；区分基础特性、功能与任务评价，非已生效强制标准"
+    },
+    "shadow": {
+      "title": "Shadow × DeepMind · 可靠性与维修需求案例",
+      "url": "https://shadowrobot.com/collaborating-with-google-deepmind/",
+      "kind": "official",
+      "scope": "厂商项目回顾；需求与设计过程，不是跨产品独立耐久排名"
+    },
+    "leap": {
+      "title": "LEAP Hand v1 · 作者项目与资源",
+      "url": "https://v1.leaphand.com/",
+      "kind": "official",
+      "scope": "LEAP v1；机构、实验和资源入口，不套用其他版本"
+    },
+    "tac": {
+      "title": "TacForeSight · 作者论文",
+      "url": "https://arxiv.org/abs/2606.11184",
+      "kind": "paper",
+      "scope": "相关力触觉方法；原论文平台不等于 TARS DexHand 本体"
+    },
+    "bench": {
+      "title": "Bench2Dex · 跨手型操作评测预印本",
+      "url": "https://arxiv.org/abs/2609.15726",
+      "kind": "paper",
+      "scope": "模拟评测与失败模式；非实物产品排名"
+    },
+    "statics": {
+      "title": "Modern Robotics §5.2 · 关节力矩与末端作用力",
+      "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/5-2-statics-of-open-chains/",
+      "kind": "textbook",
+      "scope": "开链静力学原理；实际手还需考虑传动、接触与标定"
+    },
+    "soft": {
+      "title": "Pisa/IIT SoftHand · 作者论文",
+      "url": "https://www.centropiaggio.unipi.it/sites/default/files/PisaIIT_SoftHand_0.pdf",
+      "kind": "paper",
+      "scope": "自适应协同设计；不将运动关节数量作为独立输入"
+    },
+    "tars": {
+      "title": "TARS DexHand · 官方 ICRA 发布稿",
+      "url": "https://www.prnewswire.com/news-releases/tars-brings-real-life-embodied-ai-to-icra-2026-robotics-conference-302790438.html",
+      "kind": "official",
+      "scope": "2026 公开展示配置；厂商陈述，未知参数见产品页"
+    },
+    "eye": {
+      "title": "EyeSight Hand · 作者论文",
+      "url": "https://arxiv.org/html/2408.06265v1",
+      "kind": "paper",
+      "scope": "准直驱与视触觉研究平台；结论按论文实验条件阅读"
+    }
+  },
+  "questions": [
+    {
+      "id": "dexterity",
+      "title": "怎样判断一只手是否灵巧？",
+      "group": "能力与证据",
+      "summary": "把抓握、手内操作、工具使用和装配分开评价。",
+      "conclusion": "先给出任务和成功判据，再选择指标。独立控制轴、可达接触和反馈是分析起点，不能直接合成为通用灵巧度排名。",
+      "claims": [
+        {
+          "claim": "更大的握力，是否就意味着更灵巧？",
+          "evidence": "NIST 分别定义握力、指力、动作周期与重复性测试。",
+          "boundary": "每个指标回答一个问题；不能由承载能力推定换指或工具操作能力。",
+          "source": "nist"
+        },
+        {
+          "claim": "人手外形和五指数量是否足够？",
+          "evidence": "LEAP 作者将运动学设计与具体操作实验一起展示。",
+          "boundary": "外形、关节数与任务表现应分别记录，实验结论只用于相应配置。",
+          "source": "leap"
+        }
+      ],
+      "checks": [
+        "明确操作：抓取后搬运、手内重定向、工具使用或装配；记录是否允许机械臂配合。",
+        "规定物体、初始姿态、目标精度和时间窗，说明失败后能否重试。",
+        "分别记录成功率、时间、最终误差和失败类别；报告控制方法及人工参与。"
+      ],
+      "gaps": "缺少共同物体、控制条件或重复次数时，保留案例描述，不将不同演示排成统一榜单。",
+      "related": [
+        {
+          "path": "capabilities.md",
+          "label": "操作能力"
+        },
+        {
+          "path": "engineering/performance-evaluation.md",
+          "label": "性能评价与测试协议"
+        },
+        {
+          "path": "engineering/finger-count.md",
+          "label": "手指数量与接触布局"
+        }
+      ],
+      "products": [
+        {
+          "id": "leap-hand",
+          "reason": "查看 v1 机构与作者操作实验的对应范围。",
+          "source": "leap"
+        },
+        {
+          "id": "tars-dexhand",
+          "reason": "查看厂商展示了什么，以及哪些性能尚无完整规格。",
+          "source": "tars"
+        }
+      ],
+      "tags": [
+        "task-evaluation",
+        "in-hand-manipulation",
+        "adaptive-grasping"
+      ]
+    },
+    {
+      "id": "mechanical-design",
+      "title": "为什么不同手选择不同机械路线？",
+      "group": "机构与控制",
+      "summary": "从任务理解指数量、主动轴、拇指布局与传动取舍。",
+      "conclusion": "先确定需要哪些接触、力和运动，再评价机构是否提供这些能力。减少输入、增加独立轴或采用柔顺结构，都要说明收益和约束。",
+      "claims": [
+        {
+          "claim": "运动关节多，是否就是独立控制变量多？",
+          "evidence": "SoftHand 作者讨论自适应协同，将机构与驱动组织在一起。",
+          "boundary": "运动范围、耦合关系和独立输入需分开，不能只看总关节数。",
+          "source": "soft"
+        },
+        {
+          "claim": "是否一定要复刻五指人手？",
+          "evidence": "Shadow 的项目回顾说明客户未限定仿人构型，而强调精度、感知和维修需求。",
+          "boundary": "这是特定项目的设计依据，不能推定三指对所有任务更优。",
+          "source": "shadow"
+        }
+      ],
+      "checks": [
+        "列出目标任务的接触位置、方向、可用空间和必须独立调整的动作。",
+        "建立关节—输入—传动—接触映射，标出耦合、限位和被动变形。",
+        "比较同一需求下的输出、质量、标定与维护代价；不混用不同产品版本。"
+      ],
+      "gaps": "没有剖面、耦合表或执行器清单时，保留原始称呼，并注明哪些分类尚不能确认。",
+      "related": [
+        {
+          "path": "engineering/degrees-of-freedom.md",
+          "label": "自由度与驱动"
+        },
+        {
+          "path": "engineering/finger-count.md",
+          "label": "手指布局"
+        },
+        {
+          "path": "engineering/transmission.md",
+          "label": "传动方案与标定"
+        },
+        {
+          "path": "technologies/index.md",
+          "label": "技术路线"
+        }
+      ],
+      "products": [
+        {
+          "id": "pisa-iit-softhand",
+          "reason": "对照协同与欠驱动的机构口径。",
+          "source": "soft"
+        },
+        {
+          "id": "shadow-dex-ee",
+          "reason": "查看面向长期学习实验的构型与设计目标。",
+          "source": "shadow"
+        }
+      ],
+      "tags": [
+        "kinematics",
+        "underactuated",
+        "co-design"
+      ]
+    },
+    {
+      "id": "tactile-value",
+      "title": "触觉到底能带来什么？",
+      "group": "机构与控制",
+      "summary": "把传感读数、物理量估计与任务收益逐层核对。",
+      "conclusion": "明确传感器测到了什么，再检查控制器是否使用这些信息。接触检测、形变、滑动风险和力估计各有条件，不能只用分辨率判断整套系统。",
+      "claims": [
+        {
+          "claim": "有触觉模块，就证明操作更稳定吗？",
+          "evidence": "EyeSight Hand 将视触觉与具体操作实验结合研究。",
+          "boundary": "需要同条件对照与消融，不能仅凭安装传感器确认收益。",
+          "source": "eye"
+        },
+        {
+          "claim": "腕部力与指尖触觉是不是同一种信息？",
+          "evidence": "TacForeSight 研究全局腕部力与局部触觉的时序关系。",
+          "boundary": "论文方法和实验配置不能直接证明其他产品标配同款传感器。",
+          "source": "tac"
+        }
+      ],
+      "checks": [
+        "按安装位置列出原始输出、标定方法、覆盖区域、延迟和饱和范围。",
+        "比较同一任务、相同训练和控制预算下，有无触觉及不同反馈策略的表现。",
+        "在遮挡、滑动和接触切换条件下记录误报、漏报及失败；另查表面磨损和重标定。"
+      ],
+      "gaps": "缺少测量协议时，分辨率保留厂商原始定义，不转换为绝对精度、力控精度或任务成功率。",
+      "related": [
+        {
+          "path": "engineering/sensing-chain.md",
+          "label": "触觉、力与状态感知"
+        },
+        {
+          "path": "engineering/force-estimation.md",
+          "label": "力估计与标定"
+        },
+        {
+          "path": "algorithms/problems/perception-and-state.md",
+          "label": "感知与状态估计"
+        }
+      ],
+      "products": [
+        {
+          "id": "eyesight-hand",
+          "reason": "查看视触觉与机构共同设计的论文案例。",
+          "source": "eye"
+        },
+        {
+          "id": "tars-dexhand",
+          "reason": "对照其指尖视触觉披露与未公开条件。",
+          "source": "tars"
+        }
+      ],
+      "tags": [
+        "tactile-sensing",
+        "force-sensing",
+        "contact-data"
+      ]
+    },
+    {
+      "id": "contact-control",
+      "title": "怎样实现稳定的接触力控制？",
+      "group": "机构与控制",
+      "summary": "联系执行器、传动、感知和控制，判断可实现的接触作用。",
+      "conclusion": "同时检查需要多大力、允许多大力、能测到什么以及控制器能多快响应。输出上限与小力调节能力要分别验证。",
+      "claims": [
+        {
+          "claim": "知道关节力矩，能否直接得到任意接触力？",
+          "evidence": "开链静力学使用雅可比转置建立力与关节力矩关系。",
+          "boundary": "还要说明接触位置、可观测性及传动损失；多点接触可能不能唯一反解。",
+          "source": "statics"
+        },
+        {
+          "claim": "接触反馈能否帮助预测变化？",
+          "evidence": "TacForeSight 提出力条件触觉预测方法。",
+          "boundary": "算法论文的收益依赖实验条件，不能代替执行器或闭环接口规格。",
+          "source": "tac"
+        }
+      ],
+      "checks": [
+        "定义任务的抗滑下限、物体容许作用及执行器限值，先检查可行区间。",
+        "区分直接测量和电流 / 模型估计，明确坐标、零点和时间对齐。",
+        "分阶段考察自由运动、初次接触、稳定保持及扰动；记录超调、误差、延迟和饱和。"
+      ],
+      "gaps": "没有实物闭环记录时，分析只能支持模型内的可行性；不能宣称已经证明真实柔顺性或接触安全。",
+      "related": [
+        {
+          "path": "engineering/control-modes.md",
+          "label": "手指控制与力控"
+        },
+        {
+          "path": "engineering/force-estimation.md",
+          "label": "抓力大小与力估计"
+        },
+        {
+          "path": "algorithms/problems/control-and-force.md",
+          "label": "控制与力分配"
+        }
+      ],
+      "products": [
+        {
+          "id": "eyesight-hand",
+          "reason": "查阅准直驱与视触觉平台的实验条件。",
+          "source": "eye"
+        },
+        {
+          "id": "pisa-iit-softhand",
+          "reason": "区分机械自适应与主动闭环控制。",
+          "source": "soft"
+        }
+      ],
+      "tags": [
+        "force-control",
+        "model-based-control",
+        "joint-sensing"
+      ]
+    },
+    {
+      "id": "reproducibility",
+      "title": "怎样证明演示能够稳定复现？",
+      "group": "能力与证据",
+      "summary": "检查试验次数、任务条件、失败判据和系统贡献。",
+      "conclusion": "将演示转化为一份能重复执行的协议，保留全部试次与失败。硬件、算法、机械臂、视觉和人工介入分别记录，才便于判断证据。",
+      "claims": [
+        {
+          "claim": "完成一次任务可以支持什么结论？",
+          "evidence": "NIST 提供支持重复实施的末端性能测试方法。",
+          "boundary": "单次展示只证明一次完成，不能自行补写成功率或泛化能力。",
+          "source": "nist"
+        },
+        {
+          "claim": "能否把不同手在不同系统中的结果直接相比？",
+          "evidence": "Bench2Dex 研究跨手型的模拟操作评测与失败模式。",
+          "boundary": "统一模拟格式也不等于不同实物硬件已被公平验证。",
+          "source": "bench"
+        }
+      ],
+      "checks": [
+        "锁定模型、固件 / 代码版本、物体和初始条件，明确遥操作、自主或混合方式。",
+        "预先定义成功、超时、掉落、人工干预和重试计数，保留失败试次。",
+        "报告每组成功次数 / 总次数、时间和误差分布，并使用留出条件检查复现范围。"
+      ],
+      "gaps": "缺少原始记录、样本量或操作条件的结果，只列为演示证据；不补造实验数据。",
+      "related": [
+        {
+          "path": "engineering/performance-evaluation.md",
+          "label": "性能评价与测试协议"
+        },
+        {
+          "path": "engineering/sim-to-real.md",
+          "label": "仿真与现实验证"
+        },
+        {
+          "path": "research/template.md",
+          "label": "个人案例模板"
+        }
+      ],
+      "products": [
+        {
+          "id": "leap-hand",
+          "reason": "将作者特定实验与本站复现状态分开。",
+          "source": "leap"
+        },
+        {
+          "id": "tars-dexhand",
+          "reason": "区分官方动作演示、演讲披露与实物测试。",
+          "source": "tars"
+        }
+      ],
+      "tags": [
+        "task-evaluation",
+        "system-integration",
+        "calibration"
+      ]
+    },
+    {
+      "id": "reliability",
+      "title": "怎样评价耐久和可维修性？",
+      "group": "部署与使用",
+      "summary": "从带载工况、性能退化、停机与维修时间评价可用性。",
+      "conclusion": "寿命需要工况和失效定义。除完全故障，还应跟踪温升、误差、回差、触觉漂移和维护后的性能变化。",
+      "claims": [
+        {
+          "claim": "耐久是否只看能开合多少次？",
+          "evidence": "Shadow 的需求案例关注长期实验中的冲击、可靠性与维修。",
+          "boundary": "空载开合、带载循环和任务运行不是同一寿命口径。",
+          "source": "shadow"
+        },
+        {
+          "claim": "连续动作正常，是否就能证明所有工况耐久？",
+          "evidence": "LEAP 作者展示了重复动作及温升相关结果。",
+          "boundary": "结论需保留对应负载、时长与配置，不能推广到未测工况。",
+          "source": "leap"
+        }
+      ],
+      "checks": [
+        "规定负载、姿态、速度、环境、占空比和允许维护，区分停机与性能退化。",
+        "记录故障和未故障样本、累计运行时间、标定变化及中断原因。",
+        "维修后复测同一基线，分开统计备件等待、人工维修和校准时间。"
+      ],
+      "gaps": "没有运行与失效样本时，不给出 MTBF 或量产寿命结论；电脑分析可以形成方案和日志工具，不能替代实测。",
+      "related": [
+        {
+          "path": "engineering/reliability-and-maintenance.md",
+          "label": "可靠性、退化与维护"
+        },
+        {
+          "path": "engineering/transmission.md",
+          "label": "传动与标定"
+        },
+        {
+          "path": "engineering/performance-evaluation.md",
+          "label": "基线性能测量"
+        }
+      ],
+      "products": [
+        {
+          "id": "shadow-dex-ee",
+          "reason": "查阅可靠性和维修驱动的设计需求。",
+          "source": "shadow"
+        },
+        {
+          "id": "leap-hand",
+          "reason": "查看作者重复动作实验的适用范围。",
+          "source": "leap"
+        }
+      ],
+      "tags": [
+        "maintenance",
+        "manufacturing",
+        "calibration"
+      ]
+    },
+    {
+      "id": "data-transfer",
+      "title": "数据和策略能否跨手迁移？",
+      "group": "能力与证据",
+      "summary": "区分动作重定向、感知适配与仿真到实物的变化。",
+      "conclusion": "先说明从什么本体迁移到什么本体，再检查动作、观测和接触条件的变化。统一接口是起点，任务表现仍需重新评价。",
+      "claims": [
+        {
+          "claim": "有仿真模型，是否就意味着策略能够直接上实物？",
+          "evidence": "LEAP 提供作者的仿真与迁移资源入口。",
+          "boundary": "文件存在不等于当前环境已运行，也不等于接触和执行器参数准确。",
+          "source": "leap"
+        },
+        {
+          "claim": "不同形态的手能否用共同格式评价？",
+          "evidence": "Bench2Dex 构建跨手型的统一模拟触觉观测接口。",
+          "boundary": "作者说明其接口不复现某一物理触觉传感器；不能当成真实传感等价。",
+          "source": "bench"
+        }
+      ],
+      "checks": [
+        "列出源 / 目标手的轴序、耦合、限位、动作单位和观测格式。",
+        "冻结任务与训练预算，区分零样本迁移、重新标定和微调后的效果。",
+        "对摩擦、延迟、驱动限幅和接触参数做敏感性分析，记录失败条件；仅仿真时明确结论范围。"
+      ],
+      "gaps": "缺少目标硬件或独立任务测试时，只报告模型与接口核验，不宣称完成实物迁移。",
+      "related": [
+        {
+          "path": "algorithms/problems/retargeting.md",
+          "label": "遥操作与动作重定向"
+        },
+        {
+          "path": "algorithms/problems/sim-to-real.md",
+          "label": "仿真迁移与验证"
+        },
+        {
+          "path": "engineering/sim-to-real.md",
+          "label": "模型与现实差异"
+        }
+      ],
+      "products": [
+        {
+          "id": "leap-hand",
+          "reason": "核对 v1 作者资源与本站是否实际复现。",
+          "source": "leap"
+        }
+      ],
+      "tags": [
+        "sim-to-real",
+        "teleoperation",
+        "demonstration-data",
+        "policy-adaptation"
+      ]
+    },
+    {
+      "id": "task-selection",
+      "title": "如何为具体任务选一只手？",
+      "group": "部署与使用",
+      "summary": "从需求、证据缺项、集成条件和使用成本建立选择依据。",
+      "conclusion": "把必须满足的任务条件与偏好分开，先排除证据不足或接口不匹配的方案，再比较可验证能力和使用代价。",
+      "claims": [
+        {
+          "claim": "能否仅靠自由度、重量和握力选型？",
+          "evidence": "NIST 评价框架将基础特性与功能 / 任务表现分层。",
+          "boundary": "规格筛选有用，但任务适配仍需相同条件的验证。",
+          "source": "nistDraft"
+        },
+        {
+          "claim": "买得到硬件，是否就能立即用于研究？",
+          "evidence": "LEAP 作者同时提供模型、装配与开发资源。",
+          "boundary": "实际集成还需核对版本、许可、接口和运行说明，不推定所有产品具有同样支持。",
+          "source": "leap"
+        }
+      ],
+      "checks": [
+        "写清物体、动作、节拍、空间和不可接受的失败，再划分硬约束与偏好。",
+        "建立候选—需求—来源表，对未知项设置补证任务，不把未知记为零性能。",
+        "估计采购、集成、训练、维护和停机成本；预算或权重属于使用者假设，公开其敏感性。"
+      ],
+      "gaps": "没有同条件试验或完整报价时，给出带条件的候选和待确认项，不给出通用最佳产品。",
+      "related": [
+        {
+          "path": "compare.md",
+          "label": "技术对比"
+        },
+        {
+          "path": "hands/index.md",
+          "label": "产品数据库"
+        },
+        {
+          "path": "engineering/performance-evaluation.md",
+          "label": "任务验证协议"
+        },
+        {
+          "path": "engineering/reliability-and-maintenance.md",
+          "label": "维护与可用性"
+        }
+      ],
+      "products": [
+        {
+          "id": "leap-hand",
+          "reason": "查看作者提供的开发与装配资源。",
+          "source": "leap"
+        },
+        {
+          "id": "tars-dexhand",
+          "reason": "查看待公开参数如何影响选型判断。",
+          "source": "tars"
+        }
+      ],
+      "tags": [
+        "system-integration",
+        "open-platform",
+        "task-evaluation",
+        "maintenance"
+      ]
+    }
+  ]
+}

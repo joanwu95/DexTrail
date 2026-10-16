@@ -1,0 +1,57 @@
+[
+  {
+    "id": "tars-dexhand",
+    "name": "TARS DexHand · 它石智航",
+    "company": "它石智航 · TARS",
+    "year": 2026,
+    "venue": "官方 ICRA 2026 发布稿",
+    "summary": "厂商标称 21 DOF、人手尺度；逐指主动 / 耦合分配和电机数量未核清，地图主动轴坐标留空。",
+    "dof": null,
+    "actuators": null,
+    "route": "geared-drive",
+    "parts": [
+      [
+        "整手",
+        "标称 21 DOF；主动分配待核",
+        "未公开耦合表",
+        "仿人手掌骨与指骨拓扑"
+      ],
+      [
+        "拇指",
+        "逐轴数量待核",
+        "轴序待核",
+        "厂商强调 CMC / MCP 轴线空间交汇"
+      ]
+    ],
+    "drive": "刚性准直驱，自研关节集成精密减速器。官方称使用三类电机及减速器，这是器件种类，不是仅三个电机。减速比与背隙数值待核。",
+    "sensing": "指尖微型相机与弹性体触觉层构成视触觉路线。官方称纹理细节达 0.05 mm、采集频率 >240 Hz；不等同于定位精度、测力精度或闭环控制频率。编码器、独立力传感器及本体感知配置待核。",
+    "capability": "官方展示 26 个英文字母手势、实时镜像交互，并介绍 AWE 3.0 触觉理解；未给出统一任务成功率和端到端延迟。",
+    "ranges": "未取得逐关节限位、轴序和零位表。",
+    "gaps": "重量、毫米尺寸、指尖力、负载、扭矩、速度、功耗、接口、耐久协议与售价未在已读官方资料中核实；尚未确认量产交付。",
+    "interpretation": "工程解释：仿人拓扑便于人类动作映射；刚性减速传动仍需检查摩擦、背隙与接触安全。准直驱称呼不能代替低阻抗和力控实测，视触觉效果也依赖标定与模型。",
+    "spec": "https://www.prnewswire.com/news-releases/tars-brings-real-life-embodied-ai-to-icra-2026-robotics-conference-302790438.html",
+    "time_source": "https://www.prnewswire.com/news-releases/from-mind-to-hand-tars-brings-a-dexterous-hand-with-brain-and-awe3-0-to-icra-2026--302788465.html",
+    "time_detail": "2026-06-02 官方公告记录 ICRA 2026 全球首秀；采用展示年，不视为上市或量产日期。",
+    "facts": {
+      "fingers": 5,
+      "country": "中国",
+      "dimensions": "厂商称 1:1 人手尺度；毫米尺寸表待核",
+      "materials": "触觉层为弹性体；骨架材料待核",
+      "product_status": "2026 公开展示；供货、量产与售价待核",
+      "application": "精细接触操作与具身学习；适用性需任务验证"
+    },
+    "extra_sources": [
+      [
+        "TARS 官方首秀公告 · 2026-06-02",
+        "https://www.prnewswire.com/news-releases/from-mind-to-hand-tars-brings-a-dexterous-hand-with-brain-and-awe3-0-to-icra-2026--302788465.html"
+      ]
+    ],
+    "media": [
+      {
+        "kind": "image",
+        "url": "https://mma.prnewswire.com/media/2994436/TARS_1.jpg",
+        "label": "TARS 官方 ICRA 展示图"
+      }
+    ]
+  }
+]
