@@ -11,6 +11,8 @@ hide: [navigation, toc, footer]
 
 <p class="eng-lead"><strong>传动把执行器输出转换成关节运动和力矩。</strong>同一个“腱驱动”名称背后，驱动位置、绳路、力臂、预紧和耦合关系可能完全不同。要看实际路径及其误差怎样进入控制。</p>
 
+先读路线分析：[直驱、准直驱、绳驱与混驱](../technologies/drive-architectures.md)，理解架构选择；本页继续讨论具体实现与标定。
+
 ## 常见方案如何实现？ {#methods}
 
 <!-- engineering:diagram transmission -->

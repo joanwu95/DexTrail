@@ -331,6 +331,10 @@
       ],
       "further_reading": [
         {
+          "label": "直驱、准直驱、绳驱与混驱：架构取舍",
+          "url": "drive-architectures/"
+        },
+        {
           "label": "腱绳传动：Shadow 与 SoftHand 两种实现",
           "url": "tendon-driven/"
         },

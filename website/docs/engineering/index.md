@@ -10,6 +10,10 @@ hide: [navigation, toc, footer]
 
 先从[关键问题](../questions/index.md)选择疑问，再进入下列原理与验证方法。
 
+## 架构选择：先理解整体取舍
+
+[直驱、准直驱、绳驱与混驱](../technologies/drive-architectures.md)：从任务反推驱动与传动，理解质量、热、误差和控制负担怎样在系统中分配。
+
 ## 十个工程专题 {#topics}
 
 <div markdown="0" class="engineering-stories">

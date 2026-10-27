@@ -131,6 +131,7 @@ nav:
       - 全部资料: hands/reports/index.md
   - 技术路线:
       - 技术路线: technologies/index.md
+      - 驱动架构与工程取舍: technologies/drive-architectures.md
       - 腱绳传动: technologies/tendon-driven.md
       - 欠驱动与协同: technologies/underactuation-and-synergies.md
   - 操作能力: capabilities.md
