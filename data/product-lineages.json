@@ -2163,7 +2163,7 @@
     },
     {
       "id": "orca-family",
-      "organization": "ORCA 项目组",
+      "organization": "苏黎世联邦理工学院（ETH Zurich）Soft Robotics Lab",
       "name": "ORCA 项目组 · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -2241,7 +2241,7 @@
     },
     {
       "id": "isyhand-family",
-      "organization": "MPI-IS / University of Augsburg",
+      "organization": "Max Planck Institute for Intelligent Systems / University of Augsburg",
       "name": "MPI-IS / University of Augsburg · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -2319,7 +2319,7 @@
     },
     {
       "id": "bidex-family",
-      "organization": "BiDexHand · 作者开源项目",
+      "organization": "西北大学（Northwestern University）Center for Robotics and Biosystems · Zhengyang Kris Weng",
       "name": "BiDexHand · 作者开源项目 · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -2410,7 +2410,7 @@
     },
     {
       "id": "dash-family",
-      "organization": "DASH · 作者研究平台",
+      "organization": "Carnegie Mellon University",
       "name": "DASH · 作者研究平台 · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -2555,7 +2555,7 @@
     },
     {
       "id": "festo-family",
-      "organization": "Festo · Bionic Learning Network",
+      "organization": "Festo",
       "name": "Festo · Bionic Learning Network · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -2799,7 +2799,7 @@
     },
     {
       "id": "ilda-family",
-      "organization": "ILDA 与跨团队衍生",
+      "organization": "韩国亚洲大学 / 韩国机械研究院（KIMM） / 高丽大学 / 成均馆大学",
       "name": "ILDA 与跨团队衍生 · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -3148,7 +3148,7 @@
     },
     {
       "id": "trifinger-family",
-      "organization": "Open Dynamic Robot Initiative",
+      "organization": "马克斯·普朗克智能系统研究所（MPI-IS） / 纽约大学坦登工程学院（NYU Tandon）",
       "name": "Open Dynamic Robot Initiative · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -3216,7 +3216,7 @@
     },
     {
       "id": "robotera-family",
-      "organization": "星动纪元 · RobotEra",
+      "organization": "北京星动纪元 · RobotEra",
       "name": "星动纪元 · RobotEra · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -3284,7 +3284,7 @@
     },
     {
       "id": "xpeng-family",
-      "organization": "小鹏 · IRON",
+      "organization": "小鹏汽车 · XPENG",
       "name": "小鹏 · IRON · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -3458,7 +3458,7 @@
     },
     {
       "id": "vms-hand-review",
-      "organization": "VMS Hand · 论文作者团队",
+      "organization": "哈尔滨工业大学 · VMS Hand 团队",
       "name": "VMS Hand · 论文作者团队 · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -3506,7 +3506,7 @@
     },
     {
       "id": "palm-finger-soft-hand-review",
-      "organization": "TacPalm · 论文作者团队",
+      "organization": "上海交通大学 · TacPalm 论文团队",
       "name": "TacPalm · 论文作者团队 · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -3554,7 +3554,7 @@
     },
     {
       "id": "detachable-crawling-hand-review",
-      "organization": "EPFL · 可分离爬行手研究",
+      "organization": "洛桑联邦理工学院（EPFL） / 麻省理工学院（MIT）",
       "name": "EPFL · 可分离爬行手研究 · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -3602,7 +3602,7 @@
     },
     {
       "id": "open-parametric-hand-review",
-      "organization": "Open Parametric Hand · 作者团队",
+      "organization": "剑桥大学 Bio-Inspired Robotics Lab / 洛桑联邦理工学院 CREATE Lab",
       "name": "Open Parametric Hand · 作者团队 · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -3650,7 +3650,7 @@
     },
     {
       "id": "dexco-hand-review",
-      "organization": "UC Berkeley · DexCo",
+      "organization": "香港中文大学 / 加州大学伯克利分校",
       "name": "UC Berkeley · DexCo · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -3698,7 +3698,7 @@
     },
     {
       "id": "f-tac-hand-review",
-      "organization": "F-TAC Hand · 作者团队",
+      "organization": "北京大学 / 北京通用人工智能研究院 / 北京大学武汉人工智能研究院 / 伦敦玛丽女王大学",
       "name": "F-TAC Hand · 作者团队 · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -3751,7 +3751,7 @@
     },
     {
       "id": "eyesight-hand-review",
-      "organization": "EyeSight · 作者团队",
+      "organization": "Massachusetts Institute of Technology",
       "name": "EyeSight · 作者团队 · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -3799,7 +3799,7 @@
     },
     {
       "id": "yale-sphinx-review",
-      "organization": "Yale · GRAB Lab",
+      "organization": "Yale University · GRAB Lab",
       "name": "Yale · GRAB Lab · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -3900,7 +3900,7 @@
     },
     {
       "id": "mogrip-review",
-      "organization": "MOGrip · 作者团队",
+      "organization": "首尔大学 Biorobotics Laboratory / 韩国科学技术研究院（KIST） / 三星电子 Global Technology Research",
       "name": "MOGrip · 作者团队 · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -3948,7 +3948,7 @@
     },
     {
       "id": "tactile-active-palm-review",
-      "organization": "主动触觉掌 · 论文作者团队",
+      "organization": "Purdue University / University of Florida",
       "name": "主动触觉掌 · 论文作者团队 · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -3996,7 +3996,7 @@
     },
     {
       "id": "omnidirectional-sensing-hand-review",
-      "organization": "全向姿态感知手 · 论文作者团队",
+      "organization": "浙江大学 / 杭州电子科技大学 / 丽水学院",
       "name": "全向姿态感知手 · 论文作者团队 · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -4044,7 +4044,7 @@
     },
     {
       "id": "high-dexterity-neuroprosthetic-review",
-      "organization": "软体神经假手 · 论文作者团队",
+      "organization": "上海交通大学机械与动力工程学院 / Meta Robotics Institute",
       "name": "软体神经假手 · 论文作者团队 · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -4092,7 +4092,7 @@
     },
     {
       "id": "matusik-pneumatic-hand-review",
-      "organization": "Matusik 等 · 气动手研究",
+      "organization": "MIT · CSAIL",
       "name": "Matusik 等 · 气动手研究 · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -4188,7 +4188,7 @@
     },
     {
       "id": "faive-hand-review",
-      "organization": "ETH SRL · Faive / Mimic",
+      "organization": "ETH Zurich · Soft Robotics Lab",
       "name": "ETH SRL · Faive / Mimic · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -4236,7 +4236,7 @@
     },
     {
       "id": "dexhand-021-review",
-      "organization": "DexHand 021 · 作者团队",
+      "organization": "DexRobot / 上海交通大学",
       "name": "DexHand 021 · 作者团队 · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -4284,7 +4284,7 @@
     },
     {
       "id": "aero-hand-open-review",
-      "organization": "Aero Hand Open · 作者项目",
+      "organization": "Chestnut Robotics（原 TetherIA）",
       "name": "Aero Hand Open · 作者项目 · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -4332,7 +4332,7 @@
     },
     {
       "id": "dexlink-hand-review",
-      "organization": "DexLink · 作者团队",
+      "organization": "浙江大学 / 新加坡国立大学",
       "name": "DexLink · 作者团队 · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -4380,7 +4380,7 @@
     },
     {
       "id": "mm-hand-review",
-      "organization": "MM-Hand · 作者团队",
+      "organization": "香港大学 / 香港城市大学 / XiFengGu Ltd.",
       "name": "MM-Hand · 作者团队 · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -4433,7 +4433,7 @@
     },
     {
       "id": "dmanus-review",
-      "organization": "D’Manus · 作者团队",
+      "organization": "Carnegie Mellon University / Meta AI 等",
       "name": "D’Manus · 作者团队 · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -4481,7 +4481,7 @@
     },
     {
       "id": "paxini-dexh13-gen2-review",
-      "organization": "PaXini · 帕西尼",
+      "organization": "帕西尼 · PaXini",
       "name": "PaXini · 帕西尼 · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -4529,7 +4529,7 @@
     },
     {
       "id": "elephant-h100-review",
-      "organization": "Elephant Robotics · 大象机器人",
+      "organization": "大象机器人 · Elephant Robotics",
       "name": "Elephant Robotics · 大象机器人 · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -4582,7 +4582,7 @@
     },
     {
       "id": "tencent-trx-hand-review",
-      "organization": "Tencent Robotics X",
+      "organization": "腾讯 Robotics X",
       "name": "Tencent Robotics X · 产品脉络",
       "reviewed_on": "2026-10-03",
       "member_ids": [
@@ -4632,12 +4632,12 @@
       "id": "okada-hand-review",
       "organization": "Electrotechnical Laboratory · Tokuji Okada",
       "name": "Okada Artificial Fingers · 1974 · 版本记录",
-      "reviewed_on": "2026-10-04",
+      "reviewed_on": "2026-10-30",
       "member_ids": [
         "okada-hand"
       ],
       "summary": "三指、七个独立驱动关节：拇指一轴，另两指各三轴；结合接触与弯曲状态识别三维形状。",
-      "open_questions": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+      "open_questions": "okada-hand：质量及统计范围：已检查所列来源，尚未取得可对应本版本的明确值。；该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。；结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。",
       "status": "review",
       "mode": "review",
       "scope": "Okada Artificial Fingers · 1974 · 时间轴所引用的原始版本",
@@ -4674,12 +4674,12 @@
       "id": "stanford-jpl-hand-review",
       "organization": "Stanford University / JPL",
       "name": "Stanford/JPL Hand · 版本记录",
-      "reviewed_on": "2026-10-04",
+      "reviewed_on": "2026-10-30",
       "member_ids": [
         "stanford-jpl-hand"
       ],
       "summary": "三根三关节手指的多指研究手；1982 节点讨论运动与力的关系，不代表确定的硬件上市日。",
-      "open_questions": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+      "open_questions": "stanford-jpl-hand：质量及统计范围：已检查所列来源，尚未取得可对应本版本的明确值。；该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。；结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。",
       "status": "review",
       "mode": "review",
       "scope": "Stanford/JPL Hand · 时间轴所引用的原始版本",
@@ -4716,12 +4716,12 @@
       "id": "utah-mit-hand-review",
       "organization": "University of Utah / MIT",
       "name": "Utah/MIT Dextrous Hand · Version III · 版本记录",
-      "reviewed_on": "2026-10-04",
+      "reviewed_on": "2026-10-30",
       "member_ids": [
         "utah-mit-hand"
       ],
       "summary": "四指、每指四轴；32 路气动执行器以拮抗腱索驱动 16 个关节轴。",
-      "open_questions": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+      "open_questions": "utah-mit-hand：质量及统计范围：已检查所列来源，尚未取得可对应本版本的明确值。；该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。",
       "status": "review",
       "mode": "review",
       "scope": "Utah/MIT Dextrous Hand · Version III · 时间轴所引用的原始版本",
@@ -4756,14 +4756,14 @@
     },
     {
       "id": "dlr-hit-hand-i-review",
-      "organization": "哈尔滨工业大学 / DLR",
+      "organization": "哈尔滨工业大学（HIT） / 德国航空航天中心（DLR）机器人与机电一体化研究所",
       "name": "HIT/DLR Hand · 2003 原型 · 版本记录",
-      "reviewed_on": "2026-10-04",
+      "reviewed_on": "2026-10-30",
       "member_ids": [
         "dlr-hit-hand-i"
       ],
       "summary": "四个相同模块手指，每指三主动轴、四关节；ICRA 2003 的 work-in-progress 配置。",
-      "open_questions": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+      "open_questions": "dlr-hit-hand-i：质量及统计范围：已检查所列来源，尚未取得可对应本版本的明确值。；该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。；结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。",
       "status": "review",
       "mode": "review",
       "scope": "ICRA 2003 · work-in-progress 原型；后续 2004/2007 资料需按修订对照",
@@ -4798,14 +4798,14 @@
     },
     {
       "id": "dlr-hit-hand-ii-review",
-      "organization": "哈尔滨工业大学 / DLR",
+      "organization": "哈尔滨工业大学（HIT） / 德国航空航天中心（DLR）机器人与机电一体化研究所",
       "name": "DLR/HIT Hand II · 版本记录",
-      "reviewed_on": "2026-10-04",
+      "reviewed_on": "2026-10-30",
       "member_ids": [
         "dlr-hit-hand-ii"
       ],
-      "summary": "五指、每指三主动轴与四关节，总计 15 主动轴；论文列整手约 1.5 kg。",
-      "open_questions": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+      "summary": "五指 15 DoF；补齐论文尺寸与关节范围，定位第三方 ROS / URDF 文件并注明兼容性与许可待核。",
+      "open_questions": "整手完整外形、各存量硬件修订、标定精度、第三方模型许可和运行兼容性待核实；重量、指节尺寸及论文关节范围已有证据。",
       "status": "review",
       "mode": "review",
       "scope": "DLR/HIT Hand II · 时间轴所引用的原始版本",
@@ -4813,6 +4813,10 @@
         "dlr-hit-hand-ii-coverage": {
           "title": "Liu 等 · Multisensory Five-Finger Dexterous Hand，2008",
           "url": "https://elib.dlr.de/55786/1/LiuHong-Multisensory_Five-Finger_Dexterous_Hand-IROS.pdf"
+        },
+        "third-party-urdf": {
+          "title": "eaa3 · 第三方 ROS / URDF",
+          "url": "https://github.com/eaa3/dlr_hit_hand_ii"
         }
       },
       "milestones": [
@@ -4842,12 +4846,12 @@
       "id": "sdm-hand-review",
       "organization": "Harvard University / Yale University · Dollar / Howe",
       "name": "Highly Adaptive SDM Hand · 版本记录",
-      "reviewed_on": "2026-10-04",
+      "reviewed_on": "2026-10-30",
       "member_ids": [
         "sdm-hand"
       ],
       "summary": "四指八关节，由一个电机通过耦合传动驱动；柔顺关节被动适应接触。",
-      "open_questions": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+      "open_questions": "sdm-hand：质量及统计范围：已检查所列来源，尚未取得可对应本版本的明确值。；该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。",
       "status": "review",
       "mode": "review",
       "scope": "Highly Adaptive SDM Hand · 时间轴所引用的原始版本",
@@ -4884,12 +4888,12 @@
       "id": "qb-softhand-research-review",
       "organization": "qbrobotics",
       "name": "qb SoftHand Research · 单电机 · 版本记录",
-      "reviewed_on": "2026-10-04",
+      "reviewed_on": "2026-10-30",
       "member_ids": [
         "qb-softhand-research"
       ],
       "summary": "五指单电机腱驱软手；官方回顾记载 2018 年推出，并接入 UR+。",
-      "open_questions": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+      "open_questions": "qb-softhand-research：质量及统计范围：已检查所列来源，尚未取得可对应本版本的明确值。；该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。；结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。",
       "status": "review",
       "mode": "review",
       "scope": "qb SoftHand Research · 单电机 · 时间轴所引用的原始版本",
@@ -4926,12 +4930,12 @@
       "id": "tesollo-dg-5f-2024-review",
       "organization": "Tesollo",
       "name": "Tesollo DG-5F · 2024 · 版本记录",
-      "reviewed_on": "2026-10-04",
+      "reviewed_on": "2026-10-30",
       "member_ids": [
         "tesollo-dg-5f-2024"
       ],
       "summary": "五指，每指四个独立关节，共 20 DoF；官方回顾记载 2024 年在 IROS 展出。",
-      "open_questions": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+      "open_questions": "tesollo-dg-5f-2024：质量及统计范围：已检查所列来源，尚未取得可对应本版本的明确值。；该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。；结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。",
       "status": "review",
       "mode": "review",
       "scope": "Tesollo DG-5F · 2024 · 时间轴所引用的原始版本",
@@ -4968,12 +4972,12 @@
       "id": "unitree-dex5-2025-review",
       "organization": "宇树科技 · Unitree",
       "name": "Unitree Dex5 · 2025 展示版 · 版本记录",
-      "reviewed_on": "2026-10-04",
+      "reviewed_on": "2026-10-30",
       "member_ids": [
         "unitree-dex5-2025"
       ],
       "summary": "2025 官方展示的五指 Dex5，20 个运动自由度中含 16 个主动和 4 个被动自由度。",
-      "open_questions": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+      "open_questions": "unitree-dex5-2025：质量及统计范围：已检查所列来源，尚未取得可对应本版本的明确值。；该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。；结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。",
       "status": "review",
       "mode": "review",
       "scope": "Unitree Dex5 · 2025 展示版 · 时间轴所引用的原始版本",
@@ -5010,12 +5014,12 @@
       "id": "figure-03-hand-review",
       "organization": "Figure AI",
       "name": "Figure 03 Hand · 版本记录",
-      "reviewed_on": "2026-10-04",
+      "reviewed_on": "2026-10-30",
       "member_ids": [
         "figure-03-hand"
       ],
       "summary": "Figure 03 手部集成掌部相机、柔顺指尖与自研指尖触觉，服务于 Helix 操作系统。",
-      "open_questions": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+      "open_questions": "figure-03-hand：质量及统计范围：已检查所列来源，尚未取得可对应本版本的明确值。；该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。；结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。",
       "status": "review",
       "mode": "review",
       "scope": "Figure 03 Hand · 时间轴所引用的原始版本",
@@ -5052,12 +5056,12 @@
       "id": "yale-model-q-review",
       "organization": "Yale University · OpenHand",
       "name": "Yale OpenHand Model Q · 版本记录",
-      "reviewed_on": "2026-10-04",
+      "reviewed_on": "2026-10-30",
       "member_ids": [
         "yale-model-q"
       ],
       "summary": "四个执行器控制四根欠驱动手指；两根独立精细抓握指与旋转包络指组配合换指。",
-      "open_questions": "逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。",
+      "open_questions": "yale-model-q：结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。",
       "status": "review",
       "mode": "review",
       "scope": "Yale OpenHand Model Q · 时间轴所引用的原始版本",

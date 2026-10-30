@@ -1,5 +1,26 @@
 # TARS DexHand · 它石智航
 
+<!-- hand-fact-review-2026-10-30 -->
+
+## 研发机构与技术参数复核
+
+复核日期：2026-10-30。适用范围：官方 ICRA 2026 发布稿。国家按研发机构所在地记录；联合研发分别列出，不作为制造地声明。
+
+| 项目 | 已核实内容与适用条件 | 来源 / 阅读位置 |
+| --- | --- | --- |
+| 研发机构 | 它石智航 · TARS | [官方规格 / 原始论文](https://www.prnewswire.com/news-releases/tars-brings-real-life-embodied-ai-to-icra-2026-robotics-conference-302790438.html) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 国家 / 地区（机构所在地） | 中国 | [官方规格 / 原始论文](https://www.prnewswire.com/news-releases/tars-brings-real-life-embodied-ai-to-icra-2026-robotics-conference-302790438.html) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 手指数 | 5 | [官方规格 / 原始论文](https://www.prnewswire.com/news-releases/tars-brings-real-life-embodied-ai-to-icra-2026-robotics-conference-302790438.html) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 自由度与计数范围 | 厂商标称 21 DOF、人手尺度；逐指主动 / 耦合分配和电机数量未核清，地图主动轴坐标留空。 | [官方规格 / 原始论文](https://www.prnewswire.com/news-releases/tars-brings-real-life-embodied-ai-to-icra-2026-robotics-conference-302790438.html) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+
+## 本次仍未取得的版本资料
+
+- 质量及统计范围：已检查所列来源，尚未取得可对应本版本的明确值。
+
+本次为文档与文件资料复核，未进行实物测量、SDK 编译或仿真运行。
+
+<!-- /hand-fact-review -->
+
 <!-- tars-audit-2026-10-15 -->
 
 核对日期：2026-10-15；收录范围：官方 ICRA 2026 发布稿。记录为部分核验，未知项见各节。

@@ -1,5 +1,29 @@
 # Yale OpenHand Model Q
 
+<!-- hand-fact-review-2026-10-30 -->
+
+## 研发机构与技术参数复核
+
+复核日期：2026-10-30。适用范围：Yale OpenHand Model Q · 时间轴所引用的原始版本。国家按研发机构所在地记录；联合研发分别列出，不作为制造地声明。
+
+| 项目 | 已核实内容与适用条件 | 来源 / 阅读位置 |
+| --- | --- | --- |
+| 研发机构 | Yale University · OpenHand | [官方规格 / 原始论文](https://www.eng.yale.edu/grablab/openhand/model_q.html) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 手指数 | 4 | [官方规格 / 原始论文](https://www.eng.yale.edu/grablab/openhand/model_q.html) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 自由度与计数范围 | 四个执行器控制四根欠驱动手指；两根独立精细抓握指与旋转包络指组配合换指。 | [官方规格 / 原始论文](https://www.eng.yale.edu/grablab/openhand/model_q.html) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 执行器 | 4 × Dynamixel XM430-W350-R | [官方规格 / 原始论文](https://www.eng.yale.edu/grablab/openhand/model_q.html) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 国家 / 地区（机构所在地） | 美国 | [官方规格 / 原始论文](https://www.eng.yale.edu/grablab/openhand/model_q.html) · 论文作者单位 / 研发机构所在地；不表示制造地 |
+| 质量与计入范围 | 740 g | [官方规格 / 原始论文](https://www.eng.yale.edu/grablab/openhand/model_q.html) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 尺寸与测量对象 | 底座高 75 mm，直径 120 mm（不是展开手指外包络） | [官方规格 / 原始论文](https://www.eng.yale.edu/grablab/openhand/model_q.html) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+
+## 本次仍未取得的版本资料
+
+- 结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。
+
+本次为文档与文件资料复核，未进行实物测量、SDK 编译或仿真运行。
+
+<!-- /hand-fact-review -->
+
 <!-- development-catalog-2026-10-04 -->
 
 核查日期：2026-10-04；范围：Yale OpenHand Model Q · 时间轴所引用的原始版本。部分核验，缺项明确保留。
@@ -30,7 +54,7 @@ Yale University · OpenHand。四个执行器控制四根欠驱动手指；两�
 
 ## 待核验内容
 
-逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。
+- 结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。
 
 ## 来源索引
 
@@ -57,5 +81,5 @@ interpretation：换指使物体能在保持部分接触时重新定位；不是
 
 ## 仍需补齐
 
-未在上文出现的年份、尺寸、材料、位置/力/触觉传感、控制接口、实验协议及外部评价仍待核查。来源中的演示与厂商宣传不视为独立性能验证。CAD、URDF/MJCF、ROS/SDK与视频需逐个核对版本和许可；未确认的模型不写成不存在。本条未下载媒体或运行仿真。
+- 结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。
 

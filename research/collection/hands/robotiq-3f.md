@@ -1,5 +1,28 @@
 # Robotiq 3-Finger Adaptive Gripper
 
+<!-- hand-fact-review-2026-10-30 -->
+
+## 研发机构与技术参数复核
+
+复核日期：2026-10-30。适用范围：3-Finger Adaptive Gripper · 2019 手册。国家按研发机构所在地记录；联合研发分别列出，不作为制造地声明。
+
+| 项目 | 已核实内容与适用条件 | 来源 / 阅读位置 |
+| --- | --- | --- |
+| 研发机构 | Robotiq | [官方规格 / 原始论文](https://assets.robotiq.com/website-assets/support_documents/document/3-Finger_PDF_20190221.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 手指数 | 3 | [官方规格 / 原始论文](https://assets.robotiq.com/website-assets/support_documents/document/3-Finger_PDF_20190221.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 自由度与计数范围 | 三路指闭合与一路展指驱动；自适应指节不是额外独立输入。 | [官方规格 / 原始论文](https://assets.robotiq.com/website-assets/support_documents/document/3-Finger_PDF_20190221.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 执行器 | 4 电机（厂商技术说明） | [官方规格 / 原始论文](https://assets.robotiq.com/website-assets/support_documents/document/3-Finger_PDF_20190221.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 国家 / 地区（机构所在地） | 加拿大 | [Robotiq 官方 · 总部地址](https://robotiq.com/contact) · Head Office · Lévis, Canada |
+
+## 本次仍未取得的版本资料
+
+- 该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。
+- 结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。
+
+本次为文档与文件资料复核，未进行实物测量、SDK 编译或仿真运行。
+
+<!-- /hand-fact-review -->
+
 ## 深入核查：力指令、负载和仿真（2026-10-02）
 
 状态：partial。以下绑定2019文件名的官方3-Finger手册，不套用2F或Hand-E的数值。
@@ -38,4 +61,5 @@ interpretation：独立手指控制不意味着每个指节均独立驱动；三
 
 ## 仍需补齐
 
-未在上文出现的年份、尺寸、材料、位置/力/触觉传感、控制接口、实验协议及外部评价仍待核查。来源中的演示与厂商宣传不视为独立性能验证。CAD、URDF/MJCF、ROS/SDK与视频需逐个核对版本和许可；未确认的模型不写成不存在。本条未下载媒体或运行仿真。
+- 该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。
+- 结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。

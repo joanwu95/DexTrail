@@ -1,5 +1,33 @@
 # Allegro Hand V4
 
+<!-- hand-fact-review-2026-10-30 -->
+
+## 研发机构与技术参数复核
+
+复核日期：2026-10-30。适用范围：Allegro V4。国家按研发机构所在地记录；联合研发分别列出，不作为制造地声明。
+
+| 项目 | 已核实内容与适用条件 | 来源 / 阅读位置 |
+| --- | --- | --- |
+| 研发机构 | Wonik Robotics | [官方规格 / 原始论文](https://www.allegrohand.com/sub/product/p.php?idx=1) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 手指数 | 4 | [官方规格 / 原始论文](https://www.allegrohand.com/sub/product/p.php?idx=1) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 自由度与计数范围 | 四指各 4 个主动关节，16 个驱动。 | [官方规格 / 原始论文](https://www.allegrohand.com/sub/product/p.php?idx=1) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 执行器 | 16 | [官方规格 / 原始论文](https://www.allegrohand.com/sub/product/p.php?idx=1) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 国家 / 地区（机构所在地） | 韩国 | [WONIK Robotics · Allegro 官方介绍](https://www.allegrohand.com/sub/about/allegro.php) · 品牌与公司介绍；韩国联系地址 |
+
+## 控制、感知与驱动参数补充
+
+**fact（来源陈述）：** DC 电机；齿轮比 1:369；官网最大关节转矩 0.70 N·m、关节速度 0.11 s/60°；电位器标称分辨率 0.002°；CAN 333 Hz，24 V / 100 W。 [官方规格 / 原始论文](https://www.allegrohand.com/sub/product/p.php?idx=1) · 型号技术表与控制 / 感知配置
+
+
+## 本次仍未取得的版本资料
+
+- 该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。
+- 结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。
+
+本次为文档与文件资料复核，未进行实物测量、SDK 编译或仿真运行。
+
+<!-- /hand-fact-review -->
+
 ## 深入报告补充 · 2026-10-02
 
 ### 控制器、位置反馈与力的含义

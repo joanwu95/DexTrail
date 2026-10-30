@@ -1,5 +1,28 @@
 # DexCo Hand
 
+<!-- hand-fact-review-2026-10-30 -->
+
+## 研发机构与技术参数复核
+
+复核日期：2026-10-30。适用范围：IEEE Transactions on Robotics · T-RO（2025 卷）。国家按研发机构所在地记录；联合研发分别列出，不作为制造地声明。
+
+| 项目 | 已核实内容与适用条件 | 来源 / 阅读位置 |
+| --- | --- | --- |
+| 研发机构 | 香港中文大学 / 加州大学伯克利分校 | [官方规格 / 原始论文](https://msc.berkeley.edu/research/mechatronics/dexco.html) · 作者单位 / 官方产品研发主体 |
+| 手指数 | 3 | [官方规格 / 原始论文](https://msc.berkeley.edu/research/mechatronics/dexco.html) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 自由度与计数范围 | 三指加可收缩掌部的软液压手；尚未核清可比较的独立关节角总数。 | [官方规格 / 原始论文](https://msc.berkeley.edu/research/mechatronics/dexco.html) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 国家 / 地区（机构所在地） | 中国（香港） / 美国 | [官方规格 / 原始论文](https://msc.berkeley.edu/research/mechatronics/dexco.html) · 论文作者单位 / 研发机构所在地；不表示制造地 |
+
+## 本次仍未取得的版本资料
+
+- 质量及统计范围：已检查所列来源，尚未取得可对应本版本的明确值。
+- 该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。
+- 结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。
+
+本次为文档与文件资料复核，未进行实物测量、SDK 编译或仿真运行。
+
+<!-- /hand-fact-review -->
+
 <!-- curated-expansion-2026-10-02 -->
 
 核对日期：2026-10-02；收录范围：IEEE Transactions on Robotics · T-RO（2025 卷）。记录为部分核验，未知项见各节。

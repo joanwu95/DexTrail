@@ -1,5 +1,36 @@
 # Prensilia IH2 Azzurra
 
+<!-- hand-fact-review-2026-10-30 -->
+
+## 研发机构与技术参数复核
+
+复核日期：2026-10-30。适用范围：IH2 Azzurra · DS_IH2_v03。国家按研发机构所在地记录；联合研发分别列出，不作为制造地声明。
+
+| 项目 | 已核实内容与适用条件 | 来源 / 阅读位置 |
+| --- | --- | --- |
+| 研发机构 | Prensilia | [官方规格 / 原始论文](https://www.prensilia.com/wp-content/uploads/support/doc/DS_IH2_v03.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 手指数 | 5 | [官方规格 / 原始论文](https://www.prensilia.com/wp-content/uploads/support/doc/DS_IH2_v03.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 自由度与计数范围 | 11 个机构自由度与 5 个驱动输入。 | [官方规格 / 原始论文](https://www.prensilia.com/wp-content/uploads/support/doc/DS_IH2_v03.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 执行器 | 5 | [官方规格 / 原始论文](https://www.prensilia.com/wp-content/uploads/support/doc/DS_IH2_v03.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 国家 / 地区（机构所在地） | 意大利 | [官方规格 / 原始论文](https://www.prensilia.com/wp-content/uploads/support/doc/DS_IH2_v03.pdf) · 论文作者单位 / 研发机构所在地；不表示制造地 |
+| 质量与计入范围 | 640 g（自包含手体） | [官方规格 / 原始论文](https://www.prensilia.com/wp-content/uploads/support/doc/DS_IH2_v03.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+
+## 控制、感知与驱动参数补充
+
+**fact（来源陈述）：** 11 运动自由度、5 电机；钢腱与 Bowden 管传动；8 V / 5 A，RS232 / USB，轴级位置 / 电流 / 力控制环 1 kHz。2014 数据表脚注把四路腱力传感列为后续加入，不将其视为所有存量设备标配。 [官方规格 / 原始论文](https://www.prensilia.com/wp-content/uploads/support/doc/DS_IH2_v03.pdf) · 型号技术表与控制 / 感知配置
+
+**fact（来源陈述）：** 指间耦合轴原表写 PID–DIP，运动范围 110°；MCP 90°。位置反馈来自主动轴编码器，不能等同每个被动关节均有编码器。 [官方规格 / 原始论文](https://www.prensilia.com/wp-content/uploads/support/doc/DS_IH2_v03.pdf) · 型号技术表与控制 / 感知配置
+
+
+## 本次仍未取得的版本资料
+
+- 该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。
+- 结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。
+
+本次为文档与文件资料复核，未进行实物测量、SDK 编译或仿真运行。
+
+<!-- /hand-fact-review -->
+
 ## 深入核查：传感配置与抓取命令（2026-10-02）
 
 状态：partial。意大利Prensilia研究平台；下面是具体文档版本的内容，不代表任意在售配置。
@@ -40,4 +71,5 @@ interpretation：腱张力测量的是拉动手指的绳子有多紧，并不直
 
 ## 仍需补齐
 
-未在上文出现的年份、尺寸、材料、位置/力/触觉传感、控制接口、实验协议及外部评价仍待核查。来源中的演示与厂商宣传不视为独立性能验证。CAD、URDF/MJCF、ROS/SDK与视频需逐个核对版本和许可；未确认的模型不写成不存在。本条未下载媒体或运行仿真。
+- 该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。
+- 结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。

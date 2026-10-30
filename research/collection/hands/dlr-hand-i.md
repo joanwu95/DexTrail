@@ -1,61 +1,60 @@
 # DLR Hand I
 
-<!-- development-catalog-2026-10-04 -->
+<!-- hand-fact-review-2026-10-30 -->
 
-核查日期：2026-10-04；范围：DLR Hand I · 时间轴所引用的原始版本。部分核验，缺项明确保留。
+## 研发机构与技术参数复核
 
-## 平台与版本
+复核日期：2026-10-30。适用范围：DLR Hand I · 时间轴所引用的原始版本。国家按研发机构所在地记录；联合研发分别列出，不作为制造地声明。
 
-德国航空航天中心 · DLR。四指，每指三个独立运动轴；末节通过弹簧耦合随动。 [原始依据](https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hand-i-1998)
+| 项目 | 已核实内容与适用条件 | 来源 / 阅读位置 |
+| --- | --- | --- |
+| 研发机构 | 德国航空航天中心（DLR）机器人与机电一体化研究所 | [官方规格 / 原始论文](https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hand-i-1998) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 国家 / 地区（机构所在地） | 德国 | [官方规格 / 原始论文](https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hand-i-1998) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 手指数 | 4 | [官方规格 / 原始论文](https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hand-i-1998) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 自由度与计数范围 | 四指，每指三个独立运动轴；末节通过弹簧耦合随动。 | [官方规格 / 原始论文](https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hand-i-1998) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 执行器 | 12 | [官方规格 / 原始论文](https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hand-i-1998) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
 
-## 机械与驱动
+## 本次仍未取得的版本资料
 
-两自由度基关节使用特制线性驱动单元，另一驱动单元置于近节，主动带动中节并耦合末节。 [原始依据](https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hand-i-1998)
+- 该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。
+- 结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。
+
+本次为文档与文件资料复核，未进行实物测量、SDK 编译或仿真运行。
+
+<!-- /hand-fact-review -->
+
+<!-- dlr-organization-2026-10-30 -->
+
+## 研发机构
+
+**fact：** 研发单位为德国航空航天中心（DLR）机器人与机电一体化研究所（Institute of Robotics and Mechatronics, German Aerospace Center），位于德国。机构类型为科研机构。 [DLR Multi-fingered Hands · 研发机构与系列历史](https://elib.dlr.de/119008/)
+
+核查日期：2026-10-30。记录 1998 年四指研究手；不与后续 Hand II 参数混用。
+
+## 平台与机械结构
+
+**fact：** DLR Hand I 是 Hand II 的直接前身。每指基部为两轴万向关节，由特制线性执行器驱动；近节内第三个执行器主动驱动中节，再经弹簧耦合带动末节。四指合计 12 个主动轴及 12 个执行器。[官方机构说明](https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hand-i-1998)
+
+## 技术指标
+
+**fact：** 官方列四指手体总质量 1800 g、最大指尖力 11 N、每指 25 个传感器。外部控制箱另重 1600 g，尺寸为 120 × 110 × 220 mm；这些尺寸不能填为手体外形，质量也不能混入手体 1.8 kg。[官方 Specifications 与控制器说明](https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hand-i-1998)
 
 ## 感知系统
 
-各关节有角度与力矩传感，指面触觉薄膜检测接触区域；掌中立体视觉与指尖激光辅助视觉处理。 [原始依据](https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hand-i-1998)
+**fact：** 关节有角度与转矩测量；触觉薄膜检测受力区域的位置与大小，掌部小型双目视觉配合指尖投射激光。另有温度、限位和转子位置传感。光学关节位置传感器采用 PSD 与红外 LED，官方列 9 bit 角分辨率、线性误差小于 1%；二者不能等同绝对测角精度。[官方 Sensor Developments](https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hand-i-1998)
 
-## 控制与操作
+## 控制与研究文献
 
-局部手指控制器通过 SERCOS 与上层通信；1 ms 通信交换口径不能直接当作所有操作策略频率。 [原始依据](https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hand-i-1998)
+**fact：** 原始 ICRA 1998 论文介绍多传感器手的机构和控制体系，是追溯具体硬件实现的入口。[Butterfass 等 · DLR’s Multisensory Articulated Hand](https://www.dlr.de/en/rm/downloads/roboter_und_systeme/hand/icra98part1.pdf/@@download/file)
 
-## 仿真与软件
+## 软件与模型资源
 
-已登记论文或官方技术入口；尚未核实本版本的 SDK、URDF、MJCF、MuJoCo、Isaac Sim、ROS 与公开数据集。 [原始依据](https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hand-i-1998)
+本轮检查官方系统页和文献入口，尚未核实本型号可下载的 CAD、URDF、MJCF、MuJoCo、Isaac Sim、ROS 驱动、SDK 或数据集。官方页面提供结构图片；公开技术描述与可安装软件包分别记录。
 
-## 工程优势与适用边界
+## 工程优势与局限
 
-本站工程解释：把驱动、传感与电子装进手内可减少前臂布置需求；高密度集成也使维护、布线和热管理需要单独评估。 [原始依据](https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hand-i-1998)
+**interpretation：** 把驱动与多种感知集成进手内便于进行接触操作研究；末节耦合意味着规划中不能把四个可动关节当成四个独立输入。控制箱与手体应一起评估系统安装条件。[机构依据](https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hand-i-1998)
 
-## 待核验内容
+## 尚待核实
 
-逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。
-
-## 来源索引
-
-- [DLR · Hand I 机构与感知](https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hand-i-1998)
-- [Butterfass 等 · DLR’s Multisensory Articulated Hand，ICRA 1998](https://www.dlr.de/en/rm/downloads/roboter_und_systeme/hand/icra98part1.pdf/@@download/file)
-
-## 首轮记录
-
-### DLR Hand I
-
-状态：partial；核查日期：2026-10-02；类别：research-hand。
-
-## 来源与阅读范围
-
-[原始来源](https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hand-i-1998)。官方项目或产品页面的介绍与规格部分；关联论文及手册全文未完成核验。
-
-## 已知技术内容
-
-fact（来源陈述）：1998平台；手指基部两自由度万向关节，线性执行器驱动，末节由弹簧耦合被动运动。
-
-## 工程解释
-
-interpretation：属于多传感器机电一体化的早期路线；末节耦合使外形关节数大于独立控制维度。
-
-## 仍需补齐
-
-未在上文出现的年份、尺寸、材料、位置/力/触觉传感、控制接口、实验协议及外部评价仍待核查。来源中的演示与厂商宣传不视为独立性能验证。CAD、URDF/MJCF、ROS/SDK与视频需逐个核对版本和许可；未确认的模型不写成不存在。本条未下载媒体或运行仿真。
-
+手体完整外形尺寸、结构材料、逐轴限位与标定零位、长期可靠性以及公开软件许可仍待核实。重量与传感配置已从官方资料提取，不再列为统一缺项。本轮未运行实物或模型。

@@ -203,7 +203,7 @@
     "validation": "未在本机连接实物、编译 SDK 或加载仿真。支持情况依据文档 / 文件目录，不是本机测试结论。"
   },
   "wuji-hand-2": {
-    "checked_on": "2026-10-02",
+    "checked_on": "2026-10-30",
     "version": "Wuji Hand 2",
     "hardware": {
       "summary": "五指，每指 4 个独立主动关节，共 20。",
@@ -218,7 +218,7 @@
           "url": "https://docs.wuji.tech/docs/zh/wuji-hand/latest/sdk-reference/"
         }
       ],
-      "integration": "先按序列号识别硬件 Beta 版本，再选匹配固件和模型；控制参数、限幅与轴序须按当前文档。"
+      "integration": "2.2 Beta：11–13 V DC（标称 12 V），XT30 电源与 RJ45 100BASE-TX；标配 12 V / 20 A 适配器。后续接口批次须按实际硬件核对。"
     },
     "sdk": {
       "status": "已有公开接口资料",
@@ -296,7 +296,7 @@
     "validation": "未在本机连接实物、编译 SDK 或加载仿真。支持情况依据文档 / 文件目录，不是本机测试结论。"
   },
   "sharpa-w01": {
-    "checked_on": "2026-10-02",
+    "checked_on": "2026-10-30",
     "version": "Sharpa W01",
     "hardware": {
       "summary": "厂商列 22 主动自由度 / 22 关节模组。",
@@ -307,7 +307,7 @@
           "url": "https://www.sharpa.com/pages/w01"
         }
       ],
-      "integration": "尚未取得该配置完整的供电、线缆、转接器和主机兼容表；不从外观或同系列型号推断。"
+      "integration": "18–28 V；1000BASE-T 以太网；标称通信 500 Hz。外部主机、线缆与执行模块修订仍按交付文件匹配。"
     },
     "sdk": {
       "status": "已有公开接口资料",
@@ -385,7 +385,7 @@
     "validation": "未在本机连接实物、编译 SDK 或加载仿真。支持情况依据文档 / 文件目录，不是本机测试结论。"
   },
   "allegro-v4": {
-    "checked_on": "2026-10-02",
+    "checked_on": "2026-10-30",
     "version": "Allegro V4",
     "hardware": {
       "summary": "四指各 4 个主动关节，16 个驱动。",
@@ -400,7 +400,7 @@
           "url": "https://github.com/simlabrobotics/allegro_hand_ros_v4"
         }
       ],
-      "integration": "CAN 通信和对应适配器驱动；与 V5/V6 型号协议分开。"
+      "integration": "24 V / 100 W；CAN，官网标称 333 Hz；使用对应 V4 固件和控制接口。"
     },
     "sdk": {
       "status": "已有公开接口资料",
@@ -468,30 +468,42 @@
     "validation": "未在本机连接实物、编译 SDK 或加载仿真。支持情况依据文档 / 文件目录，不是本机测试结论。"
   },
   "dlr-hand-ii": {
-    "checked_on": "2026-10-02",
+    "checked_on": "2026-10-30",
     "version": "DLR Hand II",
     "hardware": {
-      "summary": "四指各 3 个独立运动；另有掌部构形驱动。",
-      "drive": "指内电机、齿轮及差动机构传动；末节不能独立设定。计入掌部构形时为 13 个驱动维度。",
+      "summary": "四指各 3 主动轴，掌部另 1 构形轴，共 13 DoF；中末节 1:1 耦合。",
+      "drive": "12 个指内无刷电机加 1 个掌部有刷电机。指内采用同步带、100:1 谐波减速与基关节差动锥齿轮；近端同步带 1.2:1，中节 2:1。掌部通过丝杠联动第一、第四指。",
       "sources": [
         {
-          "title": "本次机构与操作核查依据",
-          "url": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/hand-ii/design-construction-of-dlr-hand-ii"
+          "title": "DLR Hand II 官方数据表",
+          "url": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/hand-ii/data-sheet-of-dlr-hand-ii"
+        },
+        {
+          "title": "DLR Hand II 系统页",
+          "url": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/hand-ii"
         }
       ],
-      "integration": "尚未取得该配置完整的供电、线缆、转接器和主机兼容表；不从外观或同系列型号推断。"
+      "integration": "系统页列 24 V DC（20 A）；历史数据表区分电机电源与电子器件 50 V / 20 kHz 电源。外部为四根电源线、八根串行通信线，定制快换连接；不能仅凭 24 V 记录重建接线。"
     },
     "sdk": {
-      "status": "尚未核实公开套件",
-      "language": "未核实",
-      "environment": "未核实",
-      "api": "现有资料描述了硬件或实验控制，但尚未确认该版本可获取的 SDK、完整 API 和安装条件。",
-      "compatibility": "需继续核对硬件修订、固件、驱动与接口单位；不把论文中的控制方法当成可下载 SDK。",
-      "license": "未核实，不能由仓库公开访问推断可自由商用。",
+      "status": "已有公开接口资料",
+      "language": "历史控制软件架构已公开说明；未核实可安装的官方 SDK 及语言接口。",
+      "environment": "双 PowerPC VME 板、VxWorks；FPGA 串行通信链路 10 Mbit/s。",
+      "api": "官方说明传感与执行器更新周期 1 ms，已实现关节 / 笛卡尔 / 物体阻抗及力控；2022 研究另采用 10 Hz 策略、1 kHz 实机底层。",
+      "compatibility": "以上是历史系统与具体研究配置；不代表现代 PC、ROS 或通用 SDK 可直接接入。",
+      "license": "未核实官方软件包许可。",
       "sources": [
         {
-          "title": "本次机构与操作核查依据",
-          "url": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/hand-ii/design-construction-of-dlr-hand-ii"
+          "title": "DLR Hand II 官方通信架构",
+          "url": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/hand-ii/communication-architecture-of-dlr-hand-ii"
+        },
+        {
+          "title": "DLR Hand II 官方控制说明",
+          "url": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/hand-ii/control"
+        },
+        {
+          "title": "Sievers 等 · 手内操作与 PyBullet，2022",
+          "url": "https://arxiv.org/abs/2204.03698"
         }
       ]
     },
@@ -528,12 +540,43 @@
       },
       {
         "format": "其他仿真 / 学习模型",
-        "status": "尚未核实",
-        "detail": "当前已核对资料中尚未确认适用于本版本的公开文件及运行说明；不表示不支持。",
-        "sources": []
+        "status": "论文实现",
+        "detail": "2022 原论文明确在 PyBullet 中建立并辨识模型，仿真环 500 Hz；尚未核实可下载文件及模型许可，未本机加载。",
+        "sources": [
+          {
+            "title": "Sievers 等 · 手内操作与 PyBullet，2022",
+            "url": "https://arxiv.org/abs/2204.03698"
+          }
+        ]
       }
     ],
-    "resources": [],
+    "resources": [
+      {
+        "name": "DLR Hand II 官方数据表",
+        "url": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/hand-ii/data-sheet-of-dlr-hand-ii",
+        "note": "材料、角度范围、指节长度与传感器列表。"
+      },
+      {
+        "name": "Butterfass 等 · Design and Experiences，2004",
+        "url": "https://www.dlr.de/de/rm/downloads/roboter_und_systeme/hand/isora028.pdf/@@download/file",
+        "note": "设计、示教与实验全文。"
+      },
+      {
+        "name": "Sievers 等 · 手内操作与 PyBullet，2022",
+        "url": "https://arxiv.org/abs/2204.03698",
+        "note": "PyBullet、SAC 与实机迁移方法；不等于模型下载。"
+      },
+      {
+        "name": "Pitz 等 · 目标姿态操作，2023",
+        "url": "https://arxiv.org/abs/2303.04705",
+        "note": "仿真与实机测试协议。"
+      },
+      {
+        "name": "Winkelbauer 等 · 多接触抓握控制，2024",
+        "url": "https://arxiv.org/abs/2409.12339",
+        "note": "6 ms 研究控制器与实机实验。"
+      }
+    ],
     "validation": "未在本机连接实物、编译 SDK 或加载仿真。支持情况依据文档 / 文件目录，不是本机测试结论。"
   },
   "xynova-flex-2": {
@@ -606,7 +649,7 @@
     "validation": "未在本机连接实物、编译 SDK 或加载仿真。支持情况依据文档 / 文件目录，不是本机测试结论。"
   },
   "linker-l20": {
-    "checked_on": "2026-10-02",
+    "checked_on": "2026-10-30",
     "version": "Linker L20",
     "hardware": {
       "summary": "16 主动 + 5 被动，共 21 个机构自由度。",
@@ -617,7 +660,7 @@
           "url": "https://www.linkerhand.com/details/LinkerHandL20/"
         }
       ],
-      "integration": "尚未取得该配置完整的供电、线缆、转接器和主机兼容表；不从外观或同系列型号推断。"
+      "integration": "24–48 V；CAN / RS485；官网近 20 电机为近似描述，精确电机清单仍须对应修订。"
     },
     "sdk": {
       "status": "已有公开接口资料",
@@ -680,7 +723,7 @@
     "validation": "未在本机连接实物、编译 SDK 或加载仿真。支持情况依据文档 / 文件目录，不是本机测试结论。"
   },
   "barrett-bh8-280": {
-    "checked_on": "2026-10-02",
+    "checked_on": "2026-10-30",
     "version": "Barrett BH8-280",
     "hardware": {
       "summary": "三指四个驱动：每指闭合一路，另外一路调节展指。",
@@ -691,7 +734,7 @@
           "url": "https://web.barrett.com/support/BarrettHand_Documentation/BH8-280_Datasheet.pdf"
         }
       ],
-      "integration": "尚未取得该配置完整的供电、线缆、转接器和主机兼容表；不从外观或同系列型号推断。"
+      "integration": "BH8-280 数据表：20–80 V DC；CAN / RS232，提供 USB 转接。AC 电源单独为 0.7 kg，不并入手体 1.2 kg。"
     },
     "sdk": {
       "status": "尚未核实公开套件",
@@ -833,7 +876,7 @@
     "validation": "未在本机连接实物、编译 SDK 或加载仿真。支持情况依据文档 / 文件目录，不是本机测试结论。"
   },
   "rbo-hand-2": {
-    "checked_on": "2026-10-02",
+    "checked_on": "2026-10-30",
     "version": "RBO Hand 2",
     "hardware": {
       "summary": "后续作者论文回顾为 7 个驱动维度；软体结构不以刚性关节计数。",
@@ -844,7 +887,7 @@
           "url": "https://arxiv.org/html/2201.10883v1"
         }
       ],
-      "integration": "尚未取得该配置完整的供电、线缆、转接器和主机兼容表；不从外观或同系列型号推断。"
+      "integration": "使用外置气阀和独立气源；论文每路执行器的压力传感器靠近气阀。阀门开闭控制不等于电机位置控制。"
     },
     "sdk": {
       "status": "尚未核实公开套件",
@@ -986,7 +1029,7 @@
     "validation": "未在本机连接实物、编译 SDK 或加载仿真。支持情况依据文档 / 文件目录，不是本机测试结论。"
   },
   "unitree-dex3-1": {
-    "checked_on": "2026-10-02",
+    "checked_on": "2026-10-30",
     "version": "Unitree Dex3-1",
     "hardware": {
       "summary": "三指，7 个主动自由度。",
@@ -997,7 +1040,7 @@
           "url": "https://www.unitree.com/Dex3-1/"
         }
       ],
-      "integration": "尚未取得该配置完整的供电、线缆、转接器和主机兼容表；不从外观或同系列型号推断。"
+      "integration": "12–58 V；USB 2.0；标称通信 1000 Hz。供电峰值与固件配置须按对应整机接口核对。"
     },
     "sdk": {
       "status": "已有公开接口资料",
@@ -1544,7 +1587,7 @@
     "validation": "未在本机连接实物、编译 SDK 或加载仿真。支持情况依据文档 / 文件目录，不是本机测试结论。"
   },
   "tesollo-dg-5f-m": {
-    "checked_on": "2026-10-02",
+    "checked_on": "2026-10-30",
     "version": "Tesollo DG-5F-M",
     "hardware": {
       "summary": "五指各 4 个独立关节，共 20。",
@@ -1555,7 +1598,7 @@
           "url": "https://www.tesollo.com/products/grippers/dg-5f-m"
         }
       ],
-      "integration": "尚未取得该配置完整的供电、线缆、转接器和主机兼容表；不从外观或同系列型号推断。"
+      "integration": "24 V、最大 10 A；Ethernet TCP/IP 与 Modbus RTU/TCP；控制频率标称 250 Hz。M 标准腕与 Short Wrist 按版本分别匹配。"
     },
     "sdk": {
       "status": "已有公开接口资料",
@@ -1697,7 +1740,7 @@
     "validation": "未在本机连接实物、编译 SDK 或加载仿真。支持情况依据文档 / 文件目录，不是本机测试结论。"
   },
   "schunk-sdh-2": {
-    "checked_on": "2026-10-02",
+    "checked_on": "2026-10-30",
     "version": "SCHUNK SDH 2",
     "hardware": {
       "summary": "三指各两条主动弯曲轴，加一条共同展指轴，共 7。",
@@ -1708,7 +1751,7 @@
           "url": "https://www.nist.gov/document/9020173r1pdf"
         }
       ],
-      "integration": "尚未取得该配置完整的供电、线缆、转接器和主机兼容表；不从外观或同系列型号推断。"
+      "integration": "2008 数据表：24 V；CAN / Ethernet / RS232；机构快换接口按对应安装图核对。"
     },
     "sdk": {
       "status": "尚未核实公开套件",
@@ -2269,7 +2312,7 @@
     "validation": "未在本机连接实物、编译 SDK 或加载仿真。支持情况依据文档 / 文件目录，不是本机测试结论。"
   },
   "prensilia-ih2-azzurra": {
-    "checked_on": "2026-10-02",
+    "checked_on": "2026-10-30",
     "version": "Prensilia IH2 Azzurra",
     "hardware": {
       "summary": "11 个机构自由度与 5 个驱动输入。",
@@ -2280,7 +2323,7 @@
           "url": "https://www.prensilia.com/wp-content/uploads/support/doc/DS_IH2_v03.pdf"
         }
       ],
-      "integration": "尚未取得该配置完整的供电、线缆、转接器和主机兼容表；不从外观或同系列型号推断。"
+      "integration": "2014 数据表：8 V / 5 A（全力抓握）；RS232 / USB；轴级控制环 1 kHz，主机查询与接口兼容另行核对。"
     },
     "sdk": {
       "status": "已知协议，SDK 待核实",
@@ -2555,7 +2598,7 @@
     "validation": "未在本机连接实物、编译 SDK 或加载仿真。支持情况依据文档 / 文件目录，不是本机测试结论。"
   },
   "open-bionics-brunel": {
-    "checked_on": "2026-10-02",
+    "checked_on": "2026-10-30",
     "version": "Open Bionics Brunel V1",
     "hardware": {
       "summary": "9 个欠驱动运动自由度，4 个驱动输入。",
@@ -2566,7 +2609,7 @@
           "url": "https://openbionicslabs.com/s/BrunelV10Datasheet.pdf"
         }
       ],
-      "integration": "尚未取得该配置完整的供电、线缆、转接器和主机兼容表；不从外观或同系列型号推断。"
+      "integration": "Brunel v1.0：6–12 V；USB 可编程、Arduino IDE 兼容；外置供电与腕连接按该版图纸核对。"
     },
     "sdk": {
       "status": "已有公开接口资料",
@@ -2728,7 +2771,7 @@
     "validation": "未在本机连接实物、编译 SDK 或加载仿真。支持情况依据文档 / 文件目录，不是本机测试结论。"
   },
   "linker-l6": {
-    "checked_on": "2026-10-02",
+    "checked_on": "2026-10-30",
     "version": "Linker Hand L6",
     "hardware": {
       "summary": "6 个主动自由度，5 个被动自由度；以当前产品页配置为准。",
@@ -2739,7 +2782,7 @@
           "url": "https://www.linkerhand.com/details/LinkerHandL6/"
         }
       ],
-      "integration": "尚未取得该配置完整的供电、线缆、转接器和主机兼容表；不从外观或同系列型号推断。"
+      "integration": "24 V ±10%；CAN / RS485；线缆、报文与限幅按该版本文档配置。"
     },
     "sdk": {
       "status": "已有公开接口资料",
@@ -2807,7 +2850,7 @@
     "validation": "未在本机连接实物、编译 SDK 或加载仿真。支持情况依据文档 / 文件目录，不是本机测试结论。"
   },
   "linker-o6": {
-    "checked_on": "2026-10-02",
+    "checked_on": "2026-10-30",
     "version": "Linker Hand O6",
     "hardware": {
       "summary": "6 个主动自由度，5 个被动自由度；以当前产品页配置为准。",
@@ -2818,7 +2861,7 @@
           "url": "https://www.linkerhand.com/details/LinkerHandO6/"
         }
       ],
-      "integration": "尚未取得该配置完整的供电、线缆、转接器和主机兼容表；不从外观或同系列型号推断。"
+      "integration": "24–48 V；CAN / CAN FD / RS485 / EtherCAT 按所选接口配置。"
     },
     "sdk": {
       "status": "已有公开接口资料",
@@ -2886,7 +2929,7 @@
     "validation": "未在本机连接实物、编译 SDK 或加载仿真。支持情况依据文档 / 文件目录，不是本机测试结论。"
   },
   "linker-l20-lite": {
-    "checked_on": "2026-10-02",
+    "checked_on": "2026-10-30",
     "version": "Linker Hand L20 Lite",
     "hardware": {
       "summary": "10 个主动自由度，10 个被动自由度；以当前产品页配置为准。",
@@ -2897,7 +2940,7 @@
           "url": "https://www.linkerhand.com/details/LinkerHandL20Lite/"
         }
       ],
-      "integration": "尚未取得该配置完整的供电、线缆、转接器和主机兼容表；不从外观或同系列型号推断。"
+      "integration": "24 V ±10%；CAN / RS485；不能沿用 L20 的轴分配。"
     },
     "sdk": {
       "status": "系列入口，型号适配待核",
@@ -3034,7 +3077,7 @@
     "validation": "未在本机连接实物、编译 SDK 或加载仿真。支持情况依据文档 / 文件目录，不是本机测试结论。"
   },
   "linker-o30": {
-    "checked_on": "2026-10-02",
+    "checked_on": "2026-10-30",
     "version": "Linker Hand O30",
     "hardware": {
       "summary": "20 个主动自由度，0 个被动自由度；以当前产品页配置为准。",
@@ -3045,7 +3088,7 @@
           "url": "https://www.linkerhand.com/details/LinkerHandO30/"
         }
       ],
-      "integration": "尚未取得该配置完整的供电、线缆、转接器和主机兼容表；不从外观或同系列型号推断。"
+      "integration": "24–48 V；CAN / CAN FD；官网标称通信 500 Hz。"
     },
     "sdk": {
       "status": "已有公开接口资料",
@@ -6304,7 +6347,7 @@
     "validation": "未在本机连接实物、编译 SDK 或加载仿真。支持情况依据文档 / 文件目录，不是本机测试结论。"
   },
   "brainco-revo-3": {
-    "checked_on": "2026-10-02",
+    "checked_on": "2026-10-30",
     "version": "BrainCo Revo 3",
     "hardware": {
       "summary": "五指 21 个全主动关节、21 个独立电机；拇指 5 轴，其余四指各 4 轴。触觉因 SKU 而异。",
@@ -6335,7 +6378,7 @@
           "url": "https://www.brainco-hz.com/docs/revolimb-hand/revo3/parameters.html"
         }
       ],
-      "integration": "16–85 V，最大 10 A@24 V；支持 RS485 / CAN FD / EtherCAT。需匹配硬件线序与适配器。"
+      "integration": "16–85 V；EtherCAT / CAN FD / RS485；标称通信 500 Hz。触觉按 U21 / U21F / U21T / U21VT 分型。"
     },
     "sdk": {
       "status": "已有公开接口资料",
@@ -6842,12 +6885,12 @@
     "validation": "文档核查；未连接实物、编译 SDK 或运行仿真。"
   },
   "unitree-dex5-s": {
-    "checked_on": "2026-10-04",
+    "checked_on": "2026-10-30",
     "version": "Unitree Dex5-S",
     "hardware": {
       "summary": "五指、22 个主动自由度和 22 个电机；拇指及小指各 5，食指、中指、无名指各 4。",
       "drive": "官方称 22 电机 direct-drive、可反驱、双编码器，同时明确精密微型齿轮箱及齿轮抗冲击保护。因此记录为关节电机驱动与齿轮传动，不解释为电机无减速器。",
-      "integration": "15–65 V，XT30；以太网 / USB / 高速 RS485。官网列以太网和 USB 控制循环 1000 Hz，RS485 50 Hz；不是所有接口均 1 kHz。",
+      "integration": "15–65 V，XT30 电源；T1 以太网 / USB 控制环 1000 Hz，RS485 50 Hz；标准版与 Pro 触觉配置不同。",
       "sources": [
         {
           "title": "官方 Dex5-S / Dex5-S Pro 产品规格",
@@ -7195,7 +7238,7 @@
     "validation": "依据原始文献和官方资料整理；未在本机连接硬件、运行 SDK 或仿真。"
   },
   "dlr-hand-i": {
-    "checked_on": "2026-10-04",
+    "checked_on": "2026-10-30",
     "version": "DLR Hand I · 时间轴所引用的原始版本",
     "hardware": {
       "summary": "四指，每指三个独立运动轴；末节通过弹簧耦合随动。",
@@ -7210,7 +7253,7 @@
           "url": "https://www.dlr.de/en/rm/downloads/roboter_und_systeme/hand/icra98part1.pdf/@@download/file"
         }
       ],
-      "integration": "供电、主机和安装接口仍需该版本的原始技术资料。"
+      "integration": "官方控制箱为 120 × 110 × 220 mm、1.6 kg，独立于 1.8 kg 手体；手体尺寸与完整接线仍待核实。"
     },
     "sdk": {
       "status": "尚未核实公开套件",
@@ -7268,7 +7311,13 @@
         "sources": []
       }
     ],
-    "resources": [],
+    "resources": [
+      {
+        "name": "DLR Hand I 官方机构与传感器",
+        "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hand-i-1998",
+        "note": "含质量、指尖力、控制箱及光学位置传感器说明。"
+      }
+    ],
     "validation": "依据原始文献和官方资料整理；未在本机连接硬件、运行 SDK 或仿真。"
   },
   "dlr-hit-hand-i": {
@@ -7341,7 +7390,7 @@
     "validation": "依据原始文献和官方资料整理；未在本机连接硬件、运行 SDK 或仿真。"
   },
   "dlr-hit-hand-ii": {
-    "checked_on": "2026-10-04",
+    "checked_on": "2026-10-30",
     "version": "DLR/HIT Hand II · 时间轴所引用的原始版本",
     "hardware": {
       "summary": "五指、每指三主动轴与四关节，总计 15 主动轴；论文列整手约 1.5 kg。",
@@ -7356,23 +7405,19 @@
           "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hit-hand-ii"
         }
       ],
-      "integration": "供电、主机和安装接口仍需该版本的原始技术资料。"
+      "integration": "官方记录快换工具接口；2008 论文介绍 DSP / FPGA、PPSeCo / CAN 等路径。完整实物接线与供电规格待核实。"
     },
     "sdk": {
-      "status": "尚未核实公开套件",
-      "language": "未核实",
-      "environment": "未核实",
-      "api": "已登记论文或官方技术入口；尚未核实本版本的 SDK、URDF、MJCF、MuJoCo、Isaac Sim、ROS 与公开数据集。",
-      "compatibility": "只适用于本条注明的版本；其他代际的接口不自动兼容。",
-      "license": "许可需逐文件核对。",
+      "status": "已定位第三方 ROS 仓库",
+      "language": "第三方 ROS 包；具体语言接口和依赖未验证。",
+      "environment": "eaa3/dlr_hit_hand_ii · master，2026-10-30 检查；ROS 发行版与构建兼容性待核。",
+      "api": "目录包含 dlr_description、dlr_hit_hand_ii、dlr_hit_hand_ii_hw 及 hittwo.urdf；未验证命令接口或实物控制。",
+      "compatibility": "适用于五指 DLR/HIT Hand II 的第三方项目，不可替代四指 Hand II；模型零位、耦合与硬件修订需逐项比对。",
+      "license": "本轮未核实模型和各子包的完整许可。",
       "sources": [
         {
-          "title": "Liu 等 · Multisensory Five-Finger Dexterous Hand，2008",
-          "url": "https://elib.dlr.de/55786/1/LiuHong-Multisensory_Five-Finger_Dexterous_Hand-IROS.pdf"
-        },
-        {
-          "title": "DLR · DLR-HIT Hand II 官方项目",
-          "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hit-hand-ii"
+          "title": "eaa3 第三方 ROS 仓库",
+          "url": "https://github.com/eaa3/dlr_hit_hand_ii"
         }
       ]
     },
@@ -7385,9 +7430,14 @@
       },
       {
         "format": "URDF / Xacro",
-        "status": "尚未核实",
-        "detail": "尚未确认该版本可获取且可运行的文件；论文中的仿真使用不等于模型已开源。",
-        "sources": []
+        "status": "第三方模型",
+        "detail": "eaa3 仓库 master 的 hittwo.urdf 已定位，配有 dlr_description 目录；未本机加载，未验证惯量、限位、耦合、网格依赖与许可。",
+        "sources": [
+          {
+            "title": "第三方 hittwo.urdf",
+            "url": "https://github.com/eaa3/dlr_hit_hand_ii/blob/master/hittwo.urdf"
+          }
+        ]
       },
       {
         "format": "MuJoCo / MJCF",
@@ -7414,7 +7464,18 @@
         "sources": []
       }
     ],
-    "resources": [],
+    "resources": [
+      {
+        "name": "eaa3 · ROS / URDF 目录",
+        "url": "https://github.com/eaa3/dlr_hit_hand_ii",
+        "note": "第三方代码与模型文件入口；非官方 SDK 支持承诺。"
+      },
+      {
+        "name": "Liu 等 · IROS 2008 全文",
+        "url": "https://elib.dlr.de/55786/1/LiuHong-Multisensory_Five-Finger_Dexterous_Hand-IROS.pdf",
+        "note": "Tables II–IV、机械与传感架构。"
+      }
+    ],
     "validation": "依据原始文献和官方资料整理；未在本机连接硬件、运行 SDK 或仿真。"
   },
   "sdm-hand": {

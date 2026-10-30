@@ -154,6 +154,110 @@
          "boundary":"不能把软皮肤、接触顺应性或仿真力传感器记成实物触觉支持。",
          "sources":["overview","version"]}
       ]
+    },
+    "dlr-hand-ii": {
+      "version": "四指 DLR Hand II · 官方数据表与传感器网页；历史配置",
+      "checked_on": "2026-10-30",
+      "sources": {
+        "spec": {
+          "title": "DLR Hand II 官方数据表",
+          "url": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/hand-ii/data-sheet-of-dlr-hand-ii",
+          "locator": "Sensoren eines einzelnen Fingers"
+        },
+        "sensor": {
+          "title": "DLR Hand II 官方传感器说明",
+          "url": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/hand-ii/sensors-of-dlr-hand-ii",
+          "locator": "Drehmoment / Positions / Geschwindigkeit Sensoren"
+        },
+        "comm": {
+          "title": "DLR Hand II 官方通信架构",
+          "url": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/hand-ii/communication-architecture-of-dlr-hand-ii",
+          "locator": "Kommunikationsprotokoll Ebene"
+        }
+      },
+      "channels": [
+        {
+          "status": "documented",
+          "rate": "整手通信周期 1 ms；不据此推断单个传感器的机械带宽。",
+          "calibration": "通信说明记录逐指 EEPROM 存储标定参数；本轮未进行实物标定或精度评定。",
+          "configuration": "官方历史 Hand II 配置；存量设备修订应另核对。",
+          "sources": [
+            "spec",
+            "sensor",
+            "comm"
+          ],
+          "id": "position",
+          "stage": "joint",
+          "label": "关节位置",
+          "tag": "position-sensing",
+          "quantity": "每指三个关节角读数。",
+          "location": "关节端导电塑料电位器。",
+          "output": "官方列角分辨率约 0.1°；不是绝对测角精度。",
+          "control": "关节位置与阻抗控制反馈。",
+          "boundary": "中末节耦合；有角度反馈不等于每个外形关节可独立驱动。"
+        },
+        {
+          "status": "documented",
+          "rate": "整手通信周期 1 ms；不据此推断单个传感器的机械带宽。",
+          "calibration": "通信说明记录逐指 EEPROM 存储标定参数；本轮未进行实物标定或精度评定。",
+          "configuration": "官方历史 Hand II 配置；存量设备修订应另核对。",
+          "sources": [
+            "spec",
+            "sensor",
+            "comm"
+          ],
+          "id": "motor-position",
+          "stage": "motor",
+          "label": "电机位置与速度",
+          "quantity": "每指三路电机位置 / 转速反馈。",
+          "location": "电机内模拟霍尔传感器；传感网页说明每电机两个霍尔元件。",
+          "output": "霍尔周期内插位置，速度由位置信号求导；不是直接测量外部接触力。",
+          "control": "电机换相及运动控制。",
+          "boundary": "电机角与关节角测量位置不同，传动弹性不能忽略。"
+        },
+        {
+          "status": "documented",
+          "rate": "整手通信周期 1 ms；不据此推断单个传感器的机械带宽。",
+          "calibration": "通信说明记录逐指 EEPROM 存储标定参数；本轮未进行实物标定或精度评定。",
+          "configuration": "官方历史 Hand II 配置；存量设备修订应另核对。",
+          "sources": [
+            "spec",
+            "sensor",
+            "comm"
+          ],
+          "id": "joint-torque",
+          "stage": "joint",
+          "label": "关节转矩",
+          "tag": "force-sensing",
+          "tag_label": "关节转矩感知",
+          "quantity": "每指三个主动轴的关节转矩。",
+          "location": "关节端应变计测量结构。",
+          "output": "转矩物理量；已读网页未给统一精度与串扰数值。",
+          "control": "转矩反馈、阻抗与力控制。",
+          "boundary": "关节转矩不是指尖六维力 / 力矩，也不是压力分布图。"
+        },
+        {
+          "status": "documented",
+          "rate": "整手通信周期 1 ms；不据此推断单个传感器的机械带宽。",
+          "calibration": "通信说明记录逐指 EEPROM 存储标定参数；本轮未进行实物标定或精度评定。",
+          "configuration": "官方历史 Hand II 配置；存量设备修订应另核对。",
+          "sources": [
+            "spec",
+            "sensor",
+            "comm"
+          ],
+          "id": "fingertip-wrench",
+          "stage": "contact",
+          "label": "指尖六维力与力矩",
+          "tag": "force-sensing",
+          "tag_label": "指尖六维力感知",
+          "quantity": "指尖合力 Fx、Fy、Fz 及力矩 Mx、My、Mz。",
+          "location": "数据表列每指一个指尖六维单元。",
+          "output": "传感网页列每方向 30 N、150 mN·m、12 bit；2004 论文给不同力矩量程，正文分别记录。",
+          "control": "接触合力 / 力矩反馈；具体控制研究可能只使用关节传感。",
+          "boundary": "六维合力单元不提供表面逐点触觉图；量程与位数不等于测量精度。"
+        }
+      ]
     }
   }
 }

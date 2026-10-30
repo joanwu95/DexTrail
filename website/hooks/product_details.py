@@ -43,7 +43,7 @@ def classification(hand, data):
     value = facts.get('fingers', {}).get('value')
     finger_sources = facts.get('fingers', {}).get('sources', [])
     review = json.loads((ROOT / 'data/hand-kinematics.json').read_text(encoding='utf-8')).get(hand['id'], {})
-    if 'fingers' in review.get('basic', {}) and review.get('sources'):
+    if 'fingers' not in hand.get('fact_review', {}).get('fields', {}) and 'fingers' in review.get('basic', {}) and review.get('sources'):
         value = review['basic']['fingers']
         finger_sources = review['sources']
     # Only explicit integer counts or a count followed by a qualifier are accepted.
@@ -285,7 +285,9 @@ def make_sections(hand, data, fields, text, source_links):
     for field, label in fields.items():
         fact = facts.get(field, {})
         value, citation = fact.get('value'), source_links(fact.get('sources', []), data)
-        if field == 'dof' and review_record:
+        if field in hand.get('fact_review', {}).get('fields', {}):
+            pass  # The field-level review already supplies its own value and sources.
+        elif field == 'dof' and review_record:
             value = review_record['summary']
             citation = f"[机构核查依据]({review_record['sources'][0]['url']})"
         elif field in review_record.get('basic', {}):

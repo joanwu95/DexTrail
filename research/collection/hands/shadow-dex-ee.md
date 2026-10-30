@@ -1,5 +1,27 @@
 # Shadow DEX-EE · 对称三指
 
+<!-- hand-fact-review-2026-10-30 -->
+
+## 研发机构与技术参数复核
+
+复核日期：2026-10-30。适用范围：Shadow DEX-EE · 对称三指 · 时间轴所引用的原始版本。国家按研发机构所在地记录；联合研发分别列出，不作为制造地声明。
+
+| 项目 | 已核实内容与适用条件 | 来源 / 阅读位置 |
+| --- | --- | --- |
+| 研发机构 | Shadow Robot / Google DeepMind | [官方规格 / 原始论文](https://shadowrobot.com/shadow-robot-unveils-the-worlds-most-robust-dexterous-robot-hand-developed-in-partnership-with-google-deepmind/) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 国家 / 地区（机构所在地） | 英国 | [官方规格 / 原始论文](https://shadowrobot.com/shadow-robot-unveils-the-worlds-most-robust-dexterous-robot-hand-developed-in-partnership-with-google-deepmind/) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 手指数 | 3 | [官方规格 / 原始论文](https://shadowrobot.com/shadow-robot-unveils-the-worlds-most-robust-dexterous-robot-hand-developed-in-partnership-with-google-deepmind/) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 自由度与计数范围 | 对称三指、12 自由度，官方系列页列 4.1 kg；与 Classic 五指手分开。 | [官方规格 / 原始论文](https://shadowrobot.com/shadow-robot-unveils-the-worlds-most-robust-dexterous-robot-hand-developed-in-partnership-with-google-deepmind/) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+
+## 本次仍未取得的版本资料
+
+- 该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。
+- 结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。
+
+本次为文档与文件资料复核，未进行实物测量、SDK 编译或仿真运行。
+
+<!-- /hand-fact-review -->
+
 <!-- development-catalog-2026-10-04 -->
 
 核查日期：2026-10-04；范围：Shadow DEX-EE · 对称三指 · 时间轴所引用的原始版本。部分核验，缺项明确保留。
@@ -30,7 +52,8 @@ Shadow Robot / Google DeepMind。对称三指、12 自由度，官方系列页�
 
 ## 待核验内容
 
-逐轴限位、重量与尺寸、材料、标定与任务测试条件，以及可下载的本版本软件和模型仍需补证。
+- 该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。
+- 结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。
 
 ## 来源索引
 

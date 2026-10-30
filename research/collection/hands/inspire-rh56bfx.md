@@ -1,5 +1,28 @@
 # 因时 RH56BFX
 
+<!-- hand-fact-review-2026-10-30 -->
+
+## 研发机构与技术参数复核
+
+复核日期：2026-10-30。适用范围：INSPIRE-RH56BFX 系列；两个型号分别核验。国家按研发机构所在地记录；联合研发分别列出，不作为制造地声明。
+
+| 项目 | 已核实内容与适用条件 | 来源 / 阅读位置 |
+| --- | --- | --- |
+| 研发机构 | 因时机器人 / Inspire Robots | [官方规格 / 原始论文](https://en.inspire-robots.com/wp-content/uploads/2023/12/Inspire-Robots-Products-Selection-Guide-V15.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 手指数 | 5 | [官方规格 / 原始论文](https://en.inspire-robots.com/wp-content/uploads/2023/12/Inspire-Robots-Products-Selection-Guide-V15.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 自由度与计数范围 | 六路控制与十二个可动关节分开计数。 | [官方规格 / 原始论文](https://en.inspire-robots.com/wp-content/uploads/2023/12/Inspire-Robots-Products-Selection-Guide-V15.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 执行器 | 6 微型直线伺服执行器 | [官方规格 / 原始论文](https://en.inspire-robots.com/wp-content/uploads/2023/12/Inspire-Robots-Products-Selection-Guide-V15.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 国家 / 地区（机构所在地） | 中国 | [因时官方 · 公司介绍](https://inspire-robots.com/) · 北京公司与总部 |
+
+## 本次仍未取得的版本资料
+
+- 该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。
+- 结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。
+
+本次为文档与文件资料复核，未进行实物测量、SDK 编译或仿真运行。
+
+<!-- /hand-fact-review -->
+
 ## 深入核查：速度与力的取舍
 
 核查：2026-10-02；仍为 partial。[官方产品页](https://en.inspire-robots.com/product/rh56bfx/) 将本表明确标为无触觉传感器配置，却同时写有绝对位置和力传感；这两者并不冲突：内部位置/载荷信号不等于指腹触觉阵列。0.50 N 是标称力分辨率，不是 ±0.50 N 准确度。
@@ -28,4 +51,5 @@ interpretation：它强调快速动作。带腕版本新增两个腕轴，但本
 
 ## 仍需补齐
 
-未在上文出现的年份、尺寸、材料、位置/力/触觉传感、控制接口、实验协议及外部评价仍待核查。来源中的演示与厂商宣传不视为独立性能验证。CAD、URDF/MJCF、ROS/SDK与视频需逐个核对版本和许可；未确认的模型不写成不存在。本条未下载媒体或运行仿真。
+- 该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。
+- 结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。

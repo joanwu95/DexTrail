@@ -1,5 +1,34 @@
 # DLR Spacehand
 
+<!-- hand-fact-review-2026-10-30 -->
+
+## 研发机构与技术参数复核
+
+复核日期：2026-10-30。适用范围：Spacehand · 2015–2018。国家按研发机构所在地记录；联合研发分别列出，不作为制造地声明。
+
+| 项目 | 已核实内容与适用条件 | 来源 / 阅读位置 |
+| --- | --- | --- |
+| 研发机构 | 德国航空航天中心（DLR）机器人与机电一体化研究所 | [官方规格 / 原始论文](https://www.dlr.de/en/rm/research/robotic-systems/hands/spacehand-2015-2018) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 国家 / 地区（机构所在地） | 德国 | [官方规格 / 原始论文](https://www.dlr.de/en/rm/research/robotic-systems/hands/spacehand-2015-2018) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 手指数 | 4 | [官方规格 / 原始论文](https://www.dlr.de/en/rm/research/robotic-systems/hands/spacehand-2015-2018) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 自由度与计数范围 | 四指各三个驱动输入，共 12。 | [官方规格 / 原始论文](https://www.dlr.de/en/rm/research/robotic-systems/hands/spacehand-2015-2018) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 执行器 | 12 电机（按论文四指 × 每指三电机合计） | [官方规格 / 原始论文](https://www.dlr.de/en/rm/research/robotic-systems/hands/spacehand-2015-2018) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+
+## 本次仍未取得的版本资料
+
+- 该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。
+- 结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。
+
+本次为文档与文件资料复核，未进行实物测量、SDK 编译或仿真运行。
+
+<!-- /hand-fact-review -->
+
+<!-- dlr-organization-2026-10-30 -->
+
+## 研发机构
+
+**fact：** 研发单位为德国航空航天中心（DLR）机器人与机电一体化研究所（Institute of Robotics and Mechatronics, German Aerospace Center），位于德国。机构类型为科研机构。 [DLR Multi-fingered Hands · 研发机构与系列历史](https://elib.dlr.de/119008/)
+
 ## 深入核查：版本冲突、传动与空间环境（2026-10-02）
 
 仍为 partial。这是DLR继DEXHAND之后的研究项目，系统页称2014年启动、2019年中完成工程鉴定模型；不将历史任务计划写成已经在轨运行。
@@ -44,4 +73,5 @@ interpretation：为轨道温度和长期运行配置的结构重量不能与裸
 
 ## 仍需补齐
 
-未在上文出现的年份、尺寸、材料、位置/力/触觉传感、控制接口、实验协议及外部评价仍待核查。来源中的演示与厂商宣传不视为独立性能验证。CAD、URDF/MJCF、ROS/SDK与视频需逐个核对版本和许可；未确认的模型不写成不存在。本条未下载媒体或运行仿真。
+- 该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。
+- 结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。

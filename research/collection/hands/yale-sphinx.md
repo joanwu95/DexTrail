@@ -1,5 +1,26 @@
 # Sphinx Hand
 
+<!-- hand-fact-review-2026-10-30 -->
+
+## 研发机构与技术参数复核
+
+复核日期：2026-10-30。适用范围：Nature Machine Intelligence。国家按研发机构所在地记录；联合研发分别列出，不作为制造地声明。
+
+| 项目 | 已核实内容与适用条件 | 来源 / 阅读位置 |
+| --- | --- | --- |
+| 研发机构 | Yale University · GRAB Lab | [官方规格 / 原始论文](https://www.eng.yale.edu/grablab/openhand/sphinx_hand.html) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 自由度与计数范围 | 6 个 Dynamixel 舵机；球面并联机构实现抓握和三轴旋转，不能把舵机数当作物体 6 自由度位姿。 | [官方规格 / 原始论文](https://www.eng.yale.edu/grablab/openhand/sphinx_hand.html) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 执行器 | 3 × XM430-W350-R + 3 × XL430-W250-T（共 6 个舵机） | [官方规格 / 原始论文](https://www.eng.yale.edu/grablab/openhand/sphinx_hand.html) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 国家 / 地区（机构所在地） | 美国 | [官方规格 / 原始论文](https://www.eng.yale.edu/grablab/openhand/sphinx_hand.html) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+
+## 本次仍未取得的版本资料
+
+- 结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。
+
+本次为文档与文件资料复核，未进行实物测量、SDK 编译或仿真运行。
+
+<!-- /hand-fact-review -->
+
 <!-- curated-expansion-2026-10-02 -->
 
 核对日期：2026-10-02；收录范围：Nature Machine Intelligence。记录为部分核验，未知项见各节。
@@ -47,5 +68,5 @@ interpretation：把转动中心固定在手附近有助于减少机械臂补偿
 
 ## 仍需补齐
 
-未在上文出现的年份、尺寸、材料、位置/力/触觉传感、控制接口、实验协议及外部评价仍待核查。来源中的演示与厂商宣传不视为独立性能验证。CAD、URDF/MJCF、ROS/SDK与视频需逐个核对版本和许可；未确认的模型不写成不存在。本条未下载媒体或运行仿真。
+- 结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。
 

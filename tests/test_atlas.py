@@ -527,6 +527,9 @@ class AtlasTest(unittest.TestCase):
 
     def test_unknown_is_explicit(self):
         data = self.load()
+        # A completed profile need not contain an unknown; construct one to
+        # keep checking the rendering behavior independently of research progress.
+        data["hands"][0]["facts"]["application"] = {"value": None, "sources": []}
         self.assertIn("待核验", atlas.hand_page(data["hands"][0], data))
         self.assertEqual(atlas.cards(data, "").count("查看参数与证据"),
                          sum(h["status"] != "planned" for h in data["hands"]))

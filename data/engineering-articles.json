@@ -17,7 +17,8 @@
     "hand_ids": [
       "shadow-hand",
       "leap-hand",
-      "wuji-hand-2"
+      "wuji-hand-2",
+      "dlr-hand-ii"
     ],
     "summary": "从电流、腱负载、关节状态到指尖触觉，逐项检查测量位置、单位、标定和配置边界。",
     "status": "公开资料分析 · 非实物实验"

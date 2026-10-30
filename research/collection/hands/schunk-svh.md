@@ -1,5 +1,35 @@
 # SCHUNK SVH（右手1545592）
 
+<!-- hand-fact-review-2026-10-30 -->
+
+## 研发机构与技术参数复核
+
+复核日期：2026-10-30。适用范围：SVH 右手 1545592。国家按研发机构所在地记录；联合研发分别列出，不作为制造地声明。
+
+| 项目 | 已核实内容与适用条件 | 来源 / 阅读位置 |
+| --- | --- | --- |
+| 研发机构 | SCHUNK | [官方规格 / 原始论文](https://schunk.com/hu/en/gripping-systems/special-gripper/svh/c/PGR_3161) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 手指数 | 5 | [官方规格 / 原始论文](https://schunk.com/hu/en/gripping-systems/special-gripper/svh/c/PGR_3161) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 自由度与计数范围 | 9 个驱动输入与 20 个机构关节分开计数。 | [官方规格 / 原始论文](https://schunk.com/hu/en/gripping-systems/special-gripper/svh/c/PGR_3161) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 执行器 | 9 驱动 | [官方规格 / 原始论文](https://schunk.com/hu/en/gripping-systems/special-gripper/svh/c/PGR_3161) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 国家 / 地区（机构所在地） | 德国 | [官方规格 / 原始论文](https://www.nist.gov/document/9020173r1pdf) · SCHUNK GmbH & Co. KG · Germany 联系地址 |
+| 质量与计入范围 | 1.3 kg（SVH 右手，ID 1545592） | [官方规格 / 原始论文](https://schunk.com/cz/cs/uchopovaci-systemy/specialni-chapadla/svh/svh-rechte-hand/p/000000000001545592) · Technické údaje / Obecné pokyny k řadě |
+| 尺寸与测量对象 | 总长 242.5 mm；手宽 92 mm | [官方规格 / 原始论文](https://schunk.com/cz/cs/uchopovaci-systemy/specialni-chapadla/svh/svh-rechte-hand/p/000000000001545592) · Technické údaje / Obecné pokyny k řadě |
+| 材料与对应部件 | 铝合金手指与涂层铝合金壳体 | [官方规格 / 原始论文](https://schunk.com/cz/cs/uchopovaci-systemy/specialni-chapadla/svh/svh-rechte-hand/p/000000000001545592) · Technické údaje / Obecné pokyny k řadě |
+
+## 控制、感知与驱动参数补充
+
+**fact（来源陈述）：** 型号 ID 1545592：24 V、RS485；总运动自由度 20，主动控制分配为拇指 2、食指 2、中指 2、无名指 1、小指 1、展指 1，共 9。官方 HRC 应用工件质量限制 0.85 kg，不能套用其他夹持条件。 [官方规格 / 原始论文](https://schunk.com/cz/cs/uchopovaci-systemy/specialni-chapadla/svh/svh-rechte-hand/p/000000000001545592) · 型号技术表与控制 / 感知配置
+
+
+## 本次仍未取得的版本资料
+
+本次基础字段未留下统一缺项；传感标定、实验协议和软件版本边界见对应章节。
+
+本次为文档与文件资料复核，未进行实物测量、SDK 编译或仿真运行。
+
+<!-- /hand-fact-review -->
+
 ## 深入核查：九个驱动与 MuJoCo 接口
 
 核查：2026-10-02；仍为 partial。[厂商系列页](https://schunk.com/at/de/greiftechnik/spezialgreifer/svh/c/PGR_3161) 明确写九个驱动，电子部分集成于腕根，并要求 FWK 接口用于连接供电和通信。因此下方总表的“20”不能当作二十个独立电机；九路驱动与多个耦合指节应分别列出。

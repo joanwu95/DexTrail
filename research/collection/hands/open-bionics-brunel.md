@@ -1,5 +1,35 @@
 # Open Bionics Brunel V1.0
 
+<!-- hand-fact-review-2026-10-30 -->
+
+## 研发机构与技术参数复核
+
+复核日期：2026-10-30。适用范围：Brunel V1.0 · 2017-03。国家按研发机构所在地记录；联合研发分别列出，不作为制造地声明。
+
+| 项目 | 已核实内容与适用条件 | 来源 / 阅读位置 |
+| --- | --- | --- |
+| 研发机构 | Open Bionics | [官方规格 / 原始论文](https://openbionicslabs.com/s/BrunelV10Datasheet.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 手指数 | 5 | [官方规格 / 原始论文](https://openbionicslabs.com/s/BrunelV10Datasheet.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 自由度与计数范围 | 9 个欠驱动运动自由度，4 个驱动输入。 | [官方规格 / 原始论文](https://openbionicslabs.com/s/BrunelV10Datasheet.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 执行器 | 4 | [官方规格 / 原始论文](https://openbionicslabs.com/s/BrunelV10Datasheet.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 国家 / 地区（机构所在地） | 英国 | [Open Bionics 官方 · 联系地址](https://openbionics.com/privacy-policy/) · UK headquarters / United Kingdom 地址 |
+| 质量与计入范围 | 371 g（2017 Brunel v1.0） | [官方规格 / 原始论文](https://openbionicslabs.com/s/BrunelV10Datasheet.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 尺寸与测量对象 | 198 × 127 × 66 mm | [官方规格 / 原始论文](https://openbionicslabs.com/s/BrunelV10Datasheet.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 材料与对应部件 | PLA、TPU 与 urethane（聚氨酯） | [官方规格 / 原始论文](https://openbionicslabs.com/s/BrunelV10Datasheet.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+
+## 控制、感知与驱动参数补充
+
+**fact（来源陈述）：** 6–12 V；5 个线性执行器，5 指 / 9 个可动关节；电机电流反馈、9 轴 IMU。不同抓姿负载分别测量，8 kg 掌握持结果不是所有抓姿额定载荷。 [官方规格 / 原始论文](https://openbionicslabs.com/s/BrunelV10Datasheet.pdf) · 型号技术表与控制 / 感知配置
+
+
+## 本次仍未取得的版本资料
+
+本次基础字段未留下统一缺项；传感标定、实验协议和软件版本边界见对应章节。
+
+本次为文档与文件资料复核，未进行实物测量、SDK 编译或仿真运行。
+
+<!-- /hand-fact-review -->
+
 ## 深入核查：V1.0规格与V2固件边界（2026-10-02）
 
 状态：partial。本条保持Brunel V1.0，不把V2另计为本次新增手。
@@ -40,4 +70,4 @@ interpretation：适合研究手控制接口与实验集成；仅凭操作说明
 
 ## 仍需补齐
 
-未在上文出现的年份、尺寸、材料、位置/力/触觉传感、控制接口、实验协议及外部评价仍待核查。来源中的演示与厂商宣传不视为独立性能验证。CAD、URDF/MJCF、ROS/SDK与视频需逐个核对版本和许可；未确认的模型不写成不存在。本条未下载媒体或运行仿真。
+本次基础字段未留下统一缺项；传感标定、实验协议和软件版本边界见对应章节。

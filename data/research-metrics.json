@@ -82,10 +82,27 @@
     "scope": "20自由度，36电机；2010首版公开；含腕重量与不同腱材配置见正文。",
     "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/david-hand",
     "facts": {
-      "company": "DLR",
+      "company": "德国航空航天中心（DLR）机器人与机电一体化研究所",
       "dof": "20 DoF",
       "actuators": 36,
-      "weight": "4.5 kg（含腕）"
+      "weight": "4.5 kg（含腕）",
+      "country": "德国"
+    },
+    "audit": {
+      "checked_on": "2026-10-30",
+      "explanation": "20自由度，36电机；2010首版公开；含腕重量与不同腱材配置见正文。",
+      "gaps": {},
+      "sources": [
+        {
+          "title": "DLR Multi-fingered Hands · 研发机构与系列历史",
+          "url": "https://elib.dlr.de/119008/",
+          "kind": "report"
+        }
+      ],
+      "facts": {
+        "company": "德国航空航天中心（DLR）机器人与机电一体化研究所",
+        "country": "德国"
+      }
     }
   },
   "dlr-dexhand": {
@@ -96,12 +113,13 @@
     "scope": "2012 年 AMS 论文结论明确写出 12 个电机模块；地图采用该版的 12 自由度、12 模块。该论文重量为 3 kg，而后续 DLR 系统页为 4 kg，不能将两个版本的重量合并。2011 年已有论文，2012 年为官方所述首次公开展示。",
     "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dexhand-2012-2015",
     "facts": {
-      "company": "DLR",
+      "company": "德国航空航天中心（DLR）机器人与机电一体化研究所",
       "dof": "12 DoF",
-      "weight": "4 kg"
+      "weight": "4 kg",
+      "country": "德国"
     },
     "audit": {
-      "checked_on": "2026-10-02",
+      "checked_on": "2026-10-30",
       "explanation": "2012 年 AMS 论文结论明确写出 12 个电机模块；地图采用该版的 12 自由度、12 模块。该论文重量为 3 kg，而后续 DLR 系统页为 4 kg，不能将两个版本的重量合并。2011 年已有论文，2012 年为官方所述首次公开展示。",
       "gaps": {},
       "sources": [
@@ -109,10 +127,17 @@
           "title": "参数核对依据",
           "url": "https://esmats.eu/amspapers/pastpapers/pdfs/2012/wedler.pdf",
           "kind": "paper"
+        },
+        {
+          "title": "DLR 机器人与机电一体化研究所 · 官方系统页",
+          "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dexhand-2012-2015",
+          "kind": "official"
         }
       ],
       "facts": {
-        "actuators": "12 电机模块（AMS 2012 版本）"
+        "actuators": "12 电机模块（AMS 2012 版本）",
+        "company": "德国航空航天中心（DLR）机器人与机电一体化研究所",
+        "country": "德国"
       }
     }
   },
@@ -124,12 +149,13 @@
     "scope": "Spacehand 论文 §2.2、§3.3 描述四指，每指根部用两个电机控制两个方向，第三个电机驱动相互耦合的近端和远端指节。因此按结构合计 4×3=12 个电机，控制 12 个独立运动量；远端指节不另算主动轴。",
     "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/spacehand-2015-2018",
     "facts": {
-      "company": "DLR",
+      "company": "德国航空航天中心（DLR）机器人与机电一体化研究所",
       "dof": "12 DoF",
-      "weight": "5 kg（系统页）；2017资料4 kg"
+      "weight": "5 kg（系统页）；2017资料4 kg",
+      "country": "德国"
     },
     "audit": {
-      "checked_on": "2026-10-02",
+      "checked_on": "2026-10-30",
       "explanation": "Spacehand 论文 §2.2、§3.3 描述四指，每指根部用两个电机控制两个方向，第三个电机驱动相互耦合的近端和远端指节。因此按结构合计 4×3=12 个电机，控制 12 个独立运动量；远端指节不另算主动轴。",
       "gaps": {},
       "sources": [
@@ -137,10 +163,17 @@
           "title": "参数核对依据",
           "url": "https://elib.dlr.de/114155/1/95690_Chalon.pdf",
           "kind": "paper"
+        },
+        {
+          "title": "DLR Multi-fingered Hands · 研发机构与系列历史",
+          "url": "https://elib.dlr.de/119008/",
+          "kind": "report"
         }
       ],
       "facts": {
-        "actuators": "12 电机（按论文四指 × 每指三电机合计）"
+        "actuators": "12 电机（按论文四指 × 每指三电机合计）",
+        "company": "德国航空航天中心（DLR）机器人与机电一体化研究所",
+        "country": "德国"
       }
     }
   },
@@ -152,13 +185,14 @@
     "scope": "DLR 的 AUTOMATICA 2018 演示说明明确给出三指、7 自由度、8 电机，并说明可分别调节抓握力与刚度。地图采用该演示版本的 7 / 8；刚度调节不能另算成一个可摆动的关节。",
     "source": "https://www.dlr.de/en/rm/research/robotic-systems/hands/clash",
     "facts": {
-      "company": "DLR",
+      "company": "德国航空航天中心（DLR）机器人与机电一体化研究所",
       "dof": "7 DoF",
       "weight": "640 g",
-      "fingers": 3
+      "fingers": 3,
+      "country": "德国"
     },
     "audit": {
-      "checked_on": "2026-10-02",
+      "checked_on": "2026-10-30",
       "explanation": "DLR 的 AUTOMATICA 2018 演示说明明确给出三指、7 自由度、8 电机，并说明可分别调节抓握力与刚度。地图采用该演示版本的 7 / 8；刚度调节不能另算成一个可摆动的关节。",
       "gaps": {},
       "sources": [
@@ -166,10 +200,17 @@
           "title": "参数核对依据",
           "url": "https://www.dlr.de/en/rm/media/videos/the-dlr-clash-hand-a-soft-gripper-for-commercial-food-handling",
           "kind": "official"
+        },
+        {
+          "title": "DLR 机器人与机电一体化研究所 · 官方系统页",
+          "url": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/clash",
+          "kind": "official"
         }
       ],
       "facts": {
-        "actuators": "8 电机（2018 演示版本）"
+        "actuators": "8 电机（2018 演示版本）",
+        "company": "德国航空航天中心（DLR）机器人与机电一体化研究所",
+        "country": "德国"
       }
     }
   },
@@ -330,26 +371,48 @@
   "dlr-hand-ii": {
     "dof": 13,
     "actuators": 13,
-    "year": null,
-    "transmission": null,
-    "scope": "DLR 结构说明：四根手指各有三个独立关节及对应电机；掌部另用一个电机同时调整第一、第四指的位置。按结构合计为 4×3+1=13 个电机、13 个主动自由度，包含掌部重构轴。电机总数是依据部件描述合计，不是把自由度直接当电机数。",
-    "source": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/hand-ii/design-construction-of-dlr-hand-ii",
+    "year": 2001,
+    "transmission": "hybrid-transmission",
+    "scope": "四指各三主动轴与三个无刷电机；掌部另有一个有刷电机经丝杠同时调整第一、第四指。合计 13 主动自由度、13 电机。中末节 1:1 耦合；手指包含同步带、谐波减速与差动锥齿轮，地图按混合传动记录。",
+    "source": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/hand-ii",
     "audit": {
-      "checked_on": "2026-10-02",
-      "explanation": "DLR 结构说明：四根手指各有三个独立关节及对应电机；掌部另用一个电机同时调整第一、第四指的位置。按结构合计为 4×3+1=13 个电机、13 个主动自由度，包含掌部重构轴。电机总数是依据部件描述合计，不是把自由度直接当电机数。",
+      "checked_on": "2026-10-30",
+      "explanation": "四指各三主动轴与三个无刷电机；掌部另有一个有刷电机经丝杠同时调整第一、第四指。合计 13 主动自由度、13 电机。中末节 1:1 耦合；手指包含同步带、谐波减速与差动锥齿轮，地图按混合传动记录。",
       "gaps": {},
       "sources": [
         {
-          "title": "参数核对依据",
+          "title": "官方设计与执行器计数",
           "url": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/hand-ii/design-construction-of-dlr-hand-ii",
           "kind": "official"
+        },
+        {
+          "title": "DLR Hand II 官方数据表",
+          "url": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/hand-ii/data-sheet-of-dlr-hand-ii",
+          "kind": "official"
+        },
+        {
+          "title": "DLR Multi-fingered Hands · 研发机构与系列历史",
+          "url": "https://elib.dlr.de/119008/",
+          "kind": "report"
         }
       ],
       "facts": {
         "dof": "13 主动自由度（12 指轴 + 1 掌部重构轴）",
         "actuators": "13 电机（按官方结构合计）",
-        "fingers": 4
+        "fingers": 4,
+        "materials": "铝制开放骨架；注塑塑料外壳",
+        "company": "德国航空航天中心（DLR）机器人与机电一体化研究所",
+        "country": "德国"
       }
+    },
+    "facts": {
+      "company": "德国航空航天中心（DLR）机器人与机电一体化研究所",
+      "country": "德国",
+      "fingers": 4,
+      "weight": "1.8 kg（整手）",
+      "dimensions": "约 300 × 150 × 150 mm",
+      "application": "Justin 双手操作、多指抓握与控制研究",
+      "product_status": "研究平台；2001 首次公开展示，当前供货状态未核实"
     }
   },
   "linker-l20": {
@@ -738,27 +801,33 @@
   },
   "rbo-hand-2": {
     "dof": null,
-    "actuators": null,
+    "actuators": 7,
     "year": null,
     "transmission": "pneumatic-soft",
-    "scope": "硬件论文与实验室介绍说明 RBO Hand 2 由 PneuFlex 气动柔性执行器和柔性骨架组成。当前已读资料尚未核清各气动通道与执行单元的数量；连续形变也不能直接按刚性铰链数描述。保留气动软体分类，两个数值轴暂不填入猜测值。",
+    "scope": "原始实验论文 Fig. 2 与 §VII 明确列七个气动执行器：四根长指各一个，掌 / 拇指组三个。执行器坐标记 7；连续软体运动不填入刚性独立关节角坐标。",
     "source": "https://depositonce.tu-berlin.de/items/131ec20b-6ba6-4f1c-8af5-bd2178dda079",
     "facts": {},
     "audit": {
-      "checked_on": "2026-10-02",
-      "explanation": "硬件论文与实验室介绍说明 RBO Hand 2 由 PneuFlex 气动柔性执行器和柔性骨架组成。当前已读资料尚未核清各气动通道与执行单元的数量；连续形变也不能直接按刚性铰链数描述。保留气动软体分类，两个数值轴暂不填入猜测值。",
+      "checked_on": "2026-10-30",
+      "explanation": "原始实验论文 Fig. 2 与 §VII 明确列七个气动执行器：四根长指各一个，掌 / 拇指组三个。执行器坐标记 7；连续软体运动不填入刚性独立关节角坐标。",
       "gaps": {
-        "dof": "连续柔性形变，不能按刚性关节角直接计数",
-        "actuators": "PneuFlex 已确认；该版执行单元与气动通道数仍待核对"
+        "dof": "连续柔性形变，不能按刚性关节角直接计数"
       },
       "sources": [
         {
           "title": "参数核对依据",
           "url": "https://depositonce.tu-berlin.de/items/131ec20b-6ba6-4f1c-8af5-bd2178dda079",
           "kind": "paper"
+        },
+        {
+          "title": "RBO Hand 2 实验原论文 · Fig. 2 / §VII",
+          "url": "https://people.eecs.berkeley.edu/~pabbeel/papers/2016-IROS-soft-hand.pdf",
+          "kind": "paper"
         }
       ],
-      "facts": {}
+      "facts": {
+        "actuators": "7 个气动执行器（不是电机）"
+      }
     },
     "source_kind": "paper"
   },
@@ -2676,13 +2745,30 @@
     "source_kind": "official",
     "scope": "DLR Hand I · 时间轴所引用的原始版本",
     "facts": {
-      "company": "德国航空航天中心 · DLR",
+      "company": "德国航空航天中心（DLR）机器人与机电一体化研究所",
       "application": "抓握、感知与灵巧操作研究",
       "product_status": "历史研究平台；当前供应与维护状态待核",
       "country": "德国",
       "fingers": 4,
       "dof": "12 个独立运动轴；版本范围见机械说明",
-      "actuators": 12
+      "actuators": 12,
+      "weight": "1.8 kg（四指手体；控制箱另重 1.6 kg）"
+    },
+    "audit": {
+      "checked_on": "2026-10-30",
+      "explanation": "DLR Hand I · 时间轴所引用的原始版本",
+      "gaps": {},
+      "sources": [
+        {
+          "title": "DLR Multi-fingered Hands · 研发机构与系列历史",
+          "url": "https://elib.dlr.de/119008/",
+          "kind": "report"
+        }
+      ],
+      "facts": {
+        "company": "德国航空航天中心（DLR）机器人与机电一体化研究所",
+        "country": "德国"
+      }
     }
   },
   "dlr-hit-hand-i": {
@@ -2694,12 +2780,29 @@
     "source_kind": "paper",
     "scope": "ICRA 2003 · work-in-progress 原型；后续 2004/2007 资料需按修订对照",
     "facts": {
-      "company": "哈尔滨工业大学 / DLR",
+      "company": "哈尔滨工业大学（HIT） / 德国航空航天中心（DLR）机器人与机电一体化研究所",
       "application": "抓握、感知与灵巧操作研究",
       "product_status": "历史研究平台；当前供应与维护状态待核",
       "dof": "四指合计 12 个主动轴；原文另规划掌部构形轴，未确认原型整手总数",
       "actuators": "四个指模块各 3 个电机；掌部额外驱动的原型实现待核",
-      "fingers": 4
+      "fingers": 4,
+      "country": "中国 / 德国"
+    },
+    "audit": {
+      "checked_on": "2026-10-30",
+      "explanation": "ICRA 2003 · work-in-progress 原型；后续 2004/2007 资料需按修订对照",
+      "gaps": {},
+      "sources": [
+        {
+          "title": "HIT / DLR 联合研发 · 原论文作者单位",
+          "url": "https://www.dlr.de/en/rm/downloads/roboter_und_systeme/hand/icra2003hitdlr.pdf/@@download/file",
+          "kind": "paper"
+        }
+      ],
+      "facts": {
+        "company": "哈尔滨工业大学（HIT） / 德国航空航天中心（DLR）机器人与机电一体化研究所",
+        "country": "中国 / 德国"
+      }
     }
   },
   "dlr-hit-hand-ii": {
@@ -2711,13 +2814,37 @@
     "source_kind": "paper",
     "scope": "DLR/HIT Hand II · 时间轴所引用的原始版本",
     "facts": {
-      "company": "哈尔滨工业大学 / DLR",
+      "company": "哈尔滨工业大学（HIT） / 德国航空航天中心（DLR）机器人与机电一体化研究所",
       "application": "抓握、感知与灵巧操作研究",
       "product_status": "历史研究平台；当前供应与维护状态待核",
       "weight": "约 1.5 kg",
       "fingers": 5,
       "dof": "15 个独立运动轴；版本范围见机械说明",
-      "actuators": 15
+      "actuators": 15,
+      "country": "中国 / 德国",
+      "dimensions": "单指总长 169.1 mm、基部宽 24.66 mm（2008 论文）；非整手尺寸"
+    },
+    "audit": {
+      "checked_on": "2026-10-30",
+      "explanation": "五个相同手指各三主动轴，共 15 轴和 15 电机；中末节钢丝 1:1 耦合。论文角度采用 Table III 的 D-H 约定，第三方 URDF 需独立核对。",
+      "gaps": {},
+      "sources": [
+        {
+          "title": "DLR/HIT Hand II 官方技术数据",
+          "url": "https://www.dlr.de/en/rm/research/robotic-systems/hands/dlr-hit-hand-ii",
+          "kind": "official"
+        },
+        {
+          "title": "DLR 官方 · HIT / DLR 联合研发说明",
+          "url": "https://www.dlr.de/de/rm/forschung/robotersysteme/hande/dlr-hit-hand-ii",
+          "kind": "official"
+        }
+      ],
+      "facts": {
+        "materials": "铝制开放骨架；注塑塑料外壳",
+        "company": "哈尔滨工业大学（HIT） / 德国航空航天中心（DLR）机器人与机电一体化研究所",
+        "country": "中国 / 德国"
+      }
     }
   },
   "sdm-hand": {

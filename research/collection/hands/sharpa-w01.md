@@ -1,5 +1,33 @@
 # Sharpa Wave W01
 
+<!-- hand-fact-review-2026-10-30 -->
+
+## 研发机构与技术参数复核
+
+复核日期：2026-10-30。适用范围：Sharpa W01；不混用 W01 SE。国家按研发机构所在地记录；联合研发分别列出，不作为制造地声明。
+
+| 项目 | 已核实内容与适用条件 | 来源 / 阅读位置 |
+| --- | --- | --- |
+| 研发机构 | Sharpa | [官方规格 / 原始论文](https://www.sharpa.com/pages/w01) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 手指数 | 5 | [官方规格 / 原始论文](https://www.sharpa.com/pages/w01) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 自由度与计数范围 | 厂商列 22 主动自由度 / 22 关节模组。 | [官方规格 / 原始论文](https://www.sharpa.com/pages/w01) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 执行器 | 22 | [官方规格 / 原始论文](https://www.sharpa.com/pages/w01) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 国家 / 地区（机构所在地） | 新加坡（总部；另有跨国研发团队） | [Sharpa 官方企业账号](https://sg.linkedin.com/company/sharpa-robotics) · About us · Headquarters / Locations |
+| 尺寸与测量对象 | 208 × 90 × 50 mm | [官方规格 / 原始论文](https://www.sharpa.com/pages/w01) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+
+## 控制、感知与驱动参数补充
+
+**fact（来源陈述）：** 22 主动自由度、22 个执行模块；18–28 V，千兆以太网，通信 500 Hz；指尖重复定位 ±1 mm。负载和触觉表有双列配置，未核清列名前不合并较大值。 [官方规格 / 原始论文](https://www.sharpa.com/pages/w01) · 型号技术表与控制 / 感知配置
+
+
+## 本次仍未取得的版本资料
+
+- 结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。
+
+本次为文档与文件资料复核，未进行实物测量、SDK 编译或仿真运行。
+
+<!-- /hand-fact-review -->
+
 ## NVIDIA 参考平台中的 Sharpa Wave
 
 [NVIDIA 2026-05-31 官方公告](https://nvidianews.nvidia.com/news/nvidia-open-humanoid-robot-reference-design)说明：Isaac GR00T Reference Humanoid Robot 组合 Unitree H2 Plus 本体、双 Sharpa Wave 五指触觉手和 Jetson Thor / GR00T 软件。每只手 22 自由度；它不是一款另行自研的“NVIDIA Hand”。公告未明确 W01 交付修订，不能据此给本站 W01 条目的所有 SKU 标上整机集成已验证。

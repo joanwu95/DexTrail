@@ -1,5 +1,26 @@
 # Shadow Classic · 技术报告
 
+<!-- hand-fact-review-2026-10-30 -->
+
+## 研发机构与技术参数复核
+
+复核日期：2026-10-30。适用范围：Classic Electric · 2024-12-04 规格书。国家按研发机构所在地记录；联合研发分别列出，不作为制造地声明。
+
+| 项目 | 已核实内容与适用条件 | 来源 / 阅读位置 |
+| --- | --- | --- |
+| 研发机构 | Shadow Robot Company | [官方规格 / 原始论文](https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf) · 作者单位 / 官方产品研发主体 |
+| 国家 / 地区（机构所在地） | 英国 | [官方规格 / 原始论文](https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf) · 论文作者单位 / 研发机构所在地；不表示制造地 |
+| 材料与对应部件 | 铝、黄铜、acetyl 塑料（沿用原文）、聚碳酸酯与聚氨酯软组织 | [官方规格 / 原始论文](https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf) · December 2024 规格书 §2.6 Material |
+| 尺寸与测量对象 | 手与前臂总长 448 mm；前臂段 183 mm；底部直径 135 mm；图示掌宽 84 mm（不含拇指展开） | [官方规格 / 原始论文](https://www.shadowrobot.com/wp-content/uploads/2024/12/shadow_dexterous_hand_e_technical_specification_20241204.pdf) · December 2024 规格书 §2.1 尺寸图，PDF 第 4 页 |
+
+## 本次仍未取得的版本资料
+
+本次基础字段未留下统一缺项；传感标定、实验协议和软件版本边界见对应章节。
+
+本次为文档与文件资料复核，未进行实物测量、SDK 编译或仿真运行。
+
+<!-- /hand-fact-review -->
+
 核查：2026-10-02。范围：五指电驱 Classic，以 December 2024 规格为基准；排除 Lite、DEX-EE、气动旧版。状态：深入整理中，未完成独立实验评读或实物验证。
 
 [产品大图与官方介绍](https://shadowrobot.com/dexterous-hand-series/) · [参数详情](../generated/shadow-hand.md) · [工程分析](../shadow-hand.md)

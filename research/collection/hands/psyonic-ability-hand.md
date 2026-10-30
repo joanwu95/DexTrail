@@ -1,5 +1,29 @@
 # PSYONIC Ability Hand
 
+<!-- hand-fact-review-2026-10-30 -->
+
+## 研发机构与技术参数复核
+
+复核日期：2026-10-30。适用范围：Ability Hand 研究接口资料；图库新版本另标。国家按研发机构所在地记录；联合研发分别列出，不作为制造地声明。
+
+| 项目 | 已核实内容与适用条件 | 来源 / 阅读位置 |
+| --- | --- | --- |
+| 研发机构 | PSYONIC | [官方规格 / 原始论文](https://www.psyonic.io/news/psyonic-releases-ability-hand-for-research-users) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 手指数 | 5 | [官方规格 / 原始论文](https://www.psyonic.io/ability-hand) · Multi-articulated |
+| 自由度与计数范围 | 6 个无刷电机；机构柔顺不等于额外独立轴。 | [官方规格 / 原始论文](https://www.psyonic.io/news/psyonic-releases-ability-hand-for-research-users) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 执行器 | 6 无刷直流电机 | [官方规格 / 原始论文](https://www.psyonic.io/news/psyonic-releases-ability-hand-for-research-users) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 国家 / 地区（机构所在地） | 美国 | [官方规格 / 原始论文](https://www.psyonic.io/news/psyonic-releases-ability-hand-for-research-users) · 论文作者单位 / 研发机构所在地；不表示制造地 |
+| 质量与计入范围 | 490 g（当前官网标称；研究改装需另核对） | [官方规格 / 原始论文](https://www.psyonic.io/ability-hand) · Details Matter · Lightweight |
+
+## 本次仍未取得的版本资料
+
+- 该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。
+- 结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。
+
+本次为文档与文件资料复核，未进行实物测量、SDK 编译或仿真运行。
+
+<!-- /hand-fact-review -->
+
 ## 补充核查：实机通信与新仿真声明
 
 核查：2026-10-02；仍为 partial。

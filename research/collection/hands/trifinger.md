@@ -1,5 +1,29 @@
 # TriFinger（RL Datasets平台）
 
+<!-- hand-fact-review-2026-10-30 -->
+
+## 研发机构与技术参数复核
+
+复核日期：2026-10-30。适用范围：TriFinger · 2021 平台论文；Pro/Edu 外观另标。国家按研发机构所在地记录；联合研发分别列出，不作为制造地声明。
+
+| 项目 | 已核实内容与适用条件 | 来源 / 阅读位置 |
+| --- | --- | --- |
+| 手指数 | 3 | [官方规格 / 原始论文](https://proceedings.mlr.press/v155/wuthrich21a/wuthrich21a.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 自由度与计数范围 | 三个相同的三关节手指，共 9 个主动轴。 | [官方规格 / 原始论文](https://proceedings.mlr.press/v155/wuthrich21a/wuthrich21a.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 执行器 | 9（该版本执行器计数） | [官方规格 / 原始论文](https://proceedings.mlr.press/v155/wuthrich21a/wuthrich21a.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 研发机构 | 马克斯·普朗克智能系统研究所（MPI-IS） / 纽约大学坦登工程学院（NYU Tandon） | [官方规格 / 原始论文](https://proceedings.mlr.press/v155/wuthrich21a/wuthrich21a.pdf) · 作者单位 / 官方产品研发主体 |
+| 国家 / 地区（机构所在地） | 德国 / 美国 | [官方规格 / 原始论文](https://proceedings.mlr.press/v155/wuthrich21a/wuthrich21a.pdf) · 论文作者单位 / 研发机构所在地；不表示制造地 |
+| 材料与对应部件 | 铝制支架与 3D 打印模块外壳（论文 §3） | [官方规格 / 原始论文](https://proceedings.mlr.press/v155/wuthrich21a/wuthrich21a.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+
+## 本次仍未取得的版本资料
+
+- 质量及统计范围：已检查所列来源，尚未取得可对应本版本的明确值。
+- 该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。
+
+本次为文档与文件资料复核，未进行实物测量、SDK 编译或仿真运行。
+
+<!-- /hand-fact-review -->
+
 ## 深入核查：平台、实验与仿真
 
 核查：2026-10-02；仍为 partial。德国 MPI-IS 的三指平台与仿人手用途不同，地图应放在桌面灵巧操作研究平台组。官方区分 TriFingerPro 与便于自建的 TriFingerEdu；两者执行器相同、运动学近似相同，不能不加版本地合并全部指标。[官方总览](https://open-dynamic-robot-initiative.github.io/trifinger_docs/)

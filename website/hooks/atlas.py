@@ -107,6 +107,10 @@ def load_data(data_dir, docs):
         hand["coordinates"].get("gaps", {}).pop("year", None)
         hand.setdefault("facts", {})["year"] = {"value": label + "。" + record["detail"], "sources": [source_id]}
         hand.setdefault("resources", []).append(source_id)
+    review_spec = importlib.util.spec_from_file_location("fact_reviews", ROOT / "website/hooks/fact_reviews.py")
+    reviews = importlib.util.module_from_spec(review_spec)
+    review_spec.loader.exec_module(reviews)
+    data["fact_reviews"] = reviews.apply_reviews(data_dir / "hand-fact-reviews.json", hands, data["sources"], FIELDS, require)
     sources = index(data["sources"], "sources")
     index(data["dimensions"], "dimensions")
     index(data["projects"], "projects")

@@ -1,5 +1,29 @@
 # Pisa/IIT SoftHand
 
+<!-- hand-fact-review-2026-10-30 -->
+
+## 研发机构与技术参数复核
+
+复核日期：2026-10-30。适用范围：Pisa/IIT SoftHand 原始版本。国家按研发机构所在地记录；联合研发分别列出，不作为制造地声明。
+
+| 项目 | 已核实内容与适用条件 | 来源 / 阅读位置 |
+| --- | --- | --- |
+| 手指数 | 5 | [官方规格 / 原始论文](https://www.centropiaggio.unipi.it/sites/default/files/PisaIIT_SoftHand_0.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 自由度与计数范围 | 19 个机构自由度由 1 个电机驱动。 | [官方规格 / 原始论文](https://www.centropiaggio.unipi.it/sites/default/files/PisaIIT_SoftHand_0.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 执行器 | 1 电机（原型） | [官方规格 / 原始论文](https://www.centropiaggio.unipi.it/sites/default/files/PisaIIT_SoftHand_0.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 研发机构 | 比萨大学（University of Pisa） / 意大利技术研究院（IIT） | [官方规格 / 原始论文](https://www.centropiaggio.unipi.it/sites/default/files/PisaIIT_SoftHand_0.pdf) · 作者单位 / 官方产品研发主体 |
+| 国家 / 地区（机构所在地） | 意大利 | [官方规格 / 原始论文](https://www.centropiaggio.unipi.it/sites/default/files/PisaIIT_SoftHand_0.pdf) · 论文作者单位 / 研发机构所在地；不表示制造地 |
+| 材料与对应部件 | Dyneema 协同腱与聚氨酯弹性韧带（非同一部件） | [官方规格 / 原始论文](https://www.centropiaggio.unipi.it/sites/default/files/PisaIIT_SoftHand_0.pdf) · 原始论文 §IV；已有腱材料核查档案的明确记录 |
+
+## 本次仍未取得的版本资料
+
+- 质量及统计范围：已检查所列来源，尚未取得可对应本版本的明确值。
+- 该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。
+
+本次为文档与文件资料复核，未进行实物测量、SDK 编译或仿真运行。
+
+<!-- /hand-fact-review -->
+
 ## 深入核查：协同、实验与 Gazebo
 
 核查：2026-10-02；仍为 partial。以下是原型及其明确注明的模型版本，不与 SoftHand Pro 或双电机商业第二代混用。

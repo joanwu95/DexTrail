@@ -1,5 +1,34 @@
 # 舞肌科技 Wuji Hand 2
 
+<!-- hand-fact-review-2026-10-30 -->
+
+## 研发机构与技术参数复核
+
+复核日期：2026-10-30。适用范围：Hand 2 · 官方 latest 手册（2.2 Beta 配置）。国家按研发机构所在地记录；联合研发分别列出，不作为制造地声明。
+
+| 项目 | 已核实内容与适用条件 | 来源 / 阅读位置 |
+| --- | --- | --- |
+| 研发机构 | 舞肌科技（WUJI TECH） | [官方规格 / 原始论文](https://docs.wuji.tech/docs/zh/wuji-hand/latest/overview/) · 作者单位 / 官方产品研发主体 |
+| 手指数 | 5 | [官方规格 / 原始论文](https://docs.wuji.tech/docs/zh/wuji-hand/latest/overview/) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 自由度与计数范围 | 五指，每指 4 个独立主动关节，共 20。 | [官方规格 / 原始论文](https://docs.wuji.tech/docs/zh/wuji-hand/latest/overview/) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 执行器 | 20 | [官方规格 / 原始论文](https://docs.wuji.tech/docs/zh/wuji-hand/latest/overview/) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 国家 / 地区（机构所在地） | 中国 | [舞肌官方 · 办公地址](https://www.wuji.tech/zh/careers) · 深圳与北京办公地址 |
+| 质量与计入范围 | 800 g（含软体与输出线缆，不含底座）；裸手 650 g；底座另 70 g | [官方规格 / 原始论文](https://docs.wuji.tech/docs/zh/wuji-hand/latest/overview/) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 尺寸与测量对象 | 180 × 80 × 40 mm（参考姿态；随手姿态变化） | [官方规格 / 原始论文](https://docs.wuji.tech/docs/zh/wuji-hand/latest/overview/) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+
+## 控制、感知与驱动参数补充
+
+**fact（来源陈述）：** 2.2 Beta 非触觉版；20 轴、每指 4 轴；11–13 V DC（标称 12 V），100BASE-TX 以太网；FOC 与 MIT 力位混合控制，报文最高 1 kHz。骨骼、软体、被动皮肤分层；皮肤不提供触觉。 [官方规格 / 原始论文](https://docs.wuji.tech/docs/zh/wuji-hand/latest/overview/) · 型号技术表与控制 / 感知配置
+
+
+## 本次仍未取得的版本资料
+
+- 结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。
+
+本次为文档与文件资料复核，未进行实物测量、SDK 编译或仿真运行。
+
+<!-- /hand-fact-review -->
+
 ## 深入核查补充 · 2026-10-02
 
 ### 硬件、固件与模型如何对应

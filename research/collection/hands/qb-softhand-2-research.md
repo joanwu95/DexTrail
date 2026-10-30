@@ -1,5 +1,29 @@
 # qbSoftHand 2 Research
 
+<!-- hand-fact-review-2026-10-30 -->
+
+## 研发机构与技术参数复核
+
+复核日期：2026-10-30。适用范围：qb SoftHand2 Research · 2022 手册。国家按研发机构所在地记录；联合研发分别列出，不作为制造地声明。
+
+| 项目 | 已核实内容与适用条件 | 来源 / 阅读位置 |
+| --- | --- | --- |
+| 手指数 | 5 | [官方规格 / 原始论文](https://qbrobotics.com/wp-content/uploads/2022/05/qbSoftHand2-Research-User-Manual.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 自由度与计数范围 | 19 个机构自由度，2 个电机 / 协同输入。 | [官方规格 / 原始论文](https://qbrobotics.com/wp-content/uploads/2022/05/qbSoftHand2-Research-User-Manual.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 执行器 | 2 电机 | [官方规格 / 原始论文](https://qbrobotics.com/wp-content/uploads/2022/05/qbSoftHand2-Research-User-Manual.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+| 研发机构 | qbrobotics S.r.l. | [官方规格 / 原始论文](https://qbrobotics.com/wp-content/uploads/2022/05/qbSoftHand2-Research-User-Manual.pdf) · 作者单位 / 官方产品研发主体 |
+| 国家 / 地区（机构所在地） | 意大利 | [官方规格 / 原始论文](https://qbrobotics.com/wp-content/uploads/2022/05/qbSoftHand2-Research-User-Manual.pdf) · 论文作者单位 / 研发机构所在地；不表示制造地 |
+| 质量与计入范围 | 940 g（含铝法兰与螺钉；手册列举配置） | [官方规格 / 原始论文](https://qbrobotics.com/wp-content/uploads/2022/05/qbSoftHand2-Research-User-Manual.pdf) · 型号介绍、技术规格表或论文机构与硬件设计章节 |
+
+## 本次仍未取得的版本资料
+
+- 该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。
+- 结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。
+
+本次为文档与文件资料复核，未进行实物测量、SDK 编译或仿真运行。
+
+<!-- /hand-fact-review -->
+
 ## 深入核查：两个电机与实际反馈
 
 核查：2026-10-02；参考 [官方用户手册 V1.0.2，2023-01-17](https://qbrobotics.com/wp-content/uploads/2022/05/qbSoftHand2-Research-User-Manual.pdf)。手册日期不是产品首发年份。
@@ -34,4 +58,5 @@ interpretation：两路驱动控制多关节的组合运动，并非19个关节�
 
 ## 仍需补齐
 
-未在上文出现的年份、尺寸、材料、位置/力/触觉传感、控制接口、实验协议及外部评价仍待核查。来源中的演示与厂商宣传不视为独立性能验证。CAD、URDF/MJCF、ROS/SDK与视频需逐个核对版本和许可；未确认的模型不写成不存在。本条未下载媒体或运行仿真。
+- 该版本完整外形尺寸：已检查所列来源，尚未取得可对应本版本的明确值。
+- 结构材料 / 具体部位：已检查所列来源，尚未取得可对应本版本的明确值。
