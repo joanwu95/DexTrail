@@ -2492,19 +2492,19 @@
     "year": 2025,
     "transmission": null,
     "scope": "五指仿生手，官方称 22 自由度；未披露主动 / 被动分解及电机数量，不把整机 82 自由度计入手部。",
-    "source": "https://www.xpeng.com/technology/AI_Robot_Iron",
+    "source": "https://www.xiaopeng.com/news/company_news/5511.html",
     "source_kind": "official",
     "facts": {
       "company": "小鹏汽车 · XPENG",
       "dof": "五指仿生手，官方称 22 自由度；未披露主动 / 被动分解及电机数量，不把整机 82 自由度计入手部。",
       "fingers": 5,
       "country": "中国",
-      "product_status": "整机内置研发平台；未确认手部单独销售",
-      "application": "人形机器人操作"
+      "product_status": "IRON 配套手，独立销售未确认；2026 整机已公告产线下线，年底量产 / 2027 交付为计划，非本版手独立交付证明",
+      "application": "人形机器人抓取与操作；2025 版有咖啡整机演示；导览、导购、导巡为目标，实际应用与客户状态见正文"
     },
     "audit": {
-      "checked_on": "2026-10-02",
-      "explanation": "五指仿生手，官方称 22 自由度；未披露主动 / 被动分解及电机数量，不把整机 82 自由度计入手部。",
+      "checked_on": "2026-10-31",
+      "explanation": "五指仿生手，官方称 22 自由度；未披露主动 / 被动分解及电机数量，不把整机 82 自由度计入手部。 本次补充 2023—2026 公开时间线与应用证据，规格仍对应 2025 版；未将 2026 的 21 自由度披露替换本版。",
       "gaps": {
         "dof": "五指仿生手，官方称 22 自由度；未披露主动 / 被动分解及电机数量，不把整机 82 自由度计入手部。",
         "actuators": "当前来源未逐一核清工作执行器数量；不从自由度总数推算。",
@@ -2512,18 +2512,38 @@
       },
       "sources": [
         {
-          "title": "官方 AI Day 2025 · 下一代 IRON 手部 · 结构、感知与实验依据",
-          "url": "https://www.xpeng.com/technology/AI_Robot_Iron",
+          "title": "2025 科技日：22 自由度手、商业场景与宝钢合作",
+          "url": "https://www.xiaopeng.com/news/company_news/5511.html",
           "kind": "official"
         },
         {
-          "title": "官方 2025 发布稿",
-          "url": "https://www.xpeng.com/au/news/019e71be4f9e9dd703de8a0282290455",
+          "title": "2023 科技日：自研双足机器人与仿人灵巧手",
+          "url": "https://www.xiaopeng.com/news/company_news/5191.html",
           "kind": "official"
         },
         {
-          "title": "发表/公开时间依据",
-          "url": "https://www.xpeng.com/fr/news/019a81702a099a7b13318a0282930071",
+          "title": "2024 AI Day：IRON 发布与内部应用",
+          "url": "https://www.xpeng.com/news/019301d2135392fa562d8a0282200016",
+          "kind": "official"
+        },
+        {
+          "title": "2026-09-09：产线启用、21 自由度披露与交付计划",
+          "url": "https://www.xiaopeng.com/news/company_news/5592.html",
+          "kind": "official"
+        },
+        {
+          "title": "官方 IRON 展示页：Brewing Coffee / Dexterous Hands",
+          "url": "https://www.xpeng.com/ph/technology/ai_robot_iron",
+          "kind": "official"
+        },
+        {
+          "title": "2026-01-09：AI 科技智造之旅与 IRON 动态演示",
+          "url": "https://www.xiaopeng.com/news/company_news/5530.html",
+          "kind": "official"
+        },
+        {
+          "title": "2025 ESG 报告前言：2026 年春节北京汽车博物馆应用",
+          "url": "https://xps01.xiaopeng.com/cms/material/other/2026/04-24/other_20260424141619_64881.pdf",
           "kind": "official"
         }
       ]

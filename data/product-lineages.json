@@ -3286,59 +3286,105 @@
       "id": "xpeng-family",
       "organization": "小鹏汽车 · XPENG",
       "name": "小鹏 · IRON · 产品脉络",
-      "reviewed_on": "2026-10-03",
+      "reviewed_on": "2026-10-31",
       "member_ids": [
         "xpeng-iron-hand-2025"
       ],
-      "summary": "小鹏 2025 年公告明确回顾 2024 年第一代 IRON，并介绍新一代 IRON 的 22 自由度手。可确认整机代际，手部细节仍需单独核对。",
-      "open_questions": "没有把整机的 82 自由度当作手部指标，也没有把 22 个总自由度直接等同于 22 个独立驱动。",
+      "summary": "2023 已展示配套手，2024 初代 IRON、2025 新一代整机有公开记录；2025 手标称 22 自由度，2026 后续公告为 21。整机换代不能当作完整手部代际表。",
+      "open_questions": "手部单独立项及内部代数未知；22 → 21 的结构 / 计数变化未解释。量产、客户和应用按正文分级，合作伙伴不等于付费验收客户。",
       "status": "lineage",
       "mode": "family",
       "scope": "年份注明论文、展示或文档口径；“至迟”只表示已有公开记录。下方仅明确标出的关系代表技术延续，卡片位置与型号编号不代表继承。",
       "sources": {
-        "xpeng-iron-hand-2025-date": {
-          "title": "官方 AI Day 2025 · 下一代 IRON 手部 · 时间依据",
-          "url": "https://www.xpeng.com/fr/news/019a81702a099a7b13318a0282930071"
+        "early": {
+          "title": "2023 科技日：自研双足机器人与仿人灵巧手",
+          "url": "https://www.xiaopeng.com/news/company_news/5191.html"
         },
-        "xpeng-iron-hand-2025-spec": {
-          "title": "XPENG IRON Hand · 2025 · 机构 / 版本依据",
-          "url": "https://www.xpeng.com/technology/AI_Robot_Iron"
+        "iron2024": {
+          "title": "2024 AI Day：IRON 发布与内部应用",
+          "url": "https://www.xpeng.com/news/019301d2135392fa562d8a0282200016"
         },
-        "iron-history": {
-          "title": "XPENG · 2025 Physical AI / Next-Gen IRON 公告",
-          "url": "https://www.xpeng.com/pressroom/news/019a56f54fe99a2a0a8d8a0282e402b7"
+        "launch": {
+          "title": "2025 科技日：22 自由度手、商业场景与宝钢合作",
+          "url": "https://www.xiaopeng.com/news/company_news/5511.html"
+        },
+        "production": {
+          "title": "2026-09-09：产线启用、21 自由度披露与交付计划",
+          "url": "https://www.xiaopeng.com/news/company_news/5592.html"
+        },
+        "demo": {
+          "title": "官方 IRON 展示页：Brewing Coffee / Dexterous Hands",
+          "url": "https://www.xpeng.com/ph/technology/ai_robot_iron"
+        },
+        "tour": {
+          "title": "2026-01-09：AI 科技智造之旅与 IRON 动态演示",
+          "url": "https://www.xiaopeng.com/news/company_news/5530.html"
+        },
+        "museum": {
+          "title": "2025 ESG 报告前言：2026 年春节北京汽车博物馆应用",
+          "url": "https://xps01.xiaopeng.com/cms/material/other/2026/04-24/other_20260424141619_64881.pdf"
         }
       },
       "milestones": [
         {
+          "id": "xpeng-biped-2023",
+          "hand_id": null,
+          "name": "2023 双足机器人配套手",
+          "kind": "公开展示",
+          "date": "2023-10-24",
+          "date_relation": "on",
+          "date_label": "2023-10-24 · 公开展示",
+          "date_basis": "官方资料记载的事件日期；非手部独立立项或定型时间",
+          "summary": "抓取包覆与末端触觉为当时官方描述；未建立手部代号或换代关系。",
+          "sources": [
+            "early"
+          ],
+          "url": "https://www.xiaopeng.com/news/company_news/5191.html"
+        },
+        {
           "id": "iron-2024",
           "hand_id": null,
-          "name": "IRON · 2024 系统",
-          "kind": "前代整机中的手",
-          "date": "2024",
+          "name": "初代 IRON · 2024 系统",
+          "kind": "整机发布",
+          "date": "2024-11-06",
           "date_relation": "on",
-          "date_label": "2024",
-          "date_basis": "来源记载的事件 / 论文年份",
-          "summary": "官方后续公告明确称其为第一代 IRON；此处不填未核实的旧手逐轴参数。",
+          "date_label": "2024-11-06 · 整机发布",
+          "date_basis": "官方资料记载的事件日期；非手部独立立项或定型时间",
+          "summary": "已披露内部工厂、门店应用；没有手部完整修订表。",
           "sources": [
-            "iron-history"
+            "iron2024"
           ],
-          "url": "https://www.xpeng.com/pressroom/news/019a56f54fe99a2a0a8d8a0282e402b7"
+          "url": "https://www.xpeng.com/news/019301d2135392fa562d8a0282200016"
         },
         {
           "id": "xpeng-iron-hand-2025",
           "hand_id": "xpeng-iron-hand-2025",
           "name": "XPENG IRON Hand · 2025",
           "kind": "已收录型号",
-          "date": "2025",
+          "date": "2025-11-05",
           "date_relation": "on",
-          "date_label": "2025 · 公开资料",
-          "date_basis": "官方 AI Day 2025 发布的下一代 IRON，明确手部为 22 自由度；不与 2024 初代混写。",
-          "summary": "五指仿生手，官方称 22 自由度；未披露主动 / 被动分解及电机数量，不把整机 82 自由度计入手部。",
+          "date_label": "2025-11-05 · 已收录型号",
+          "date_basis": "官方资料记载的事件日期；非手部独立立项或定型时间",
+          "summary": "五指，标称 22 自由度和小型谐波关节；主动 / 被动与电机分解待核。",
           "sources": [
-            "xpeng-iron-hand-2025-date",
-            "xpeng-iron-hand-2025-spec"
-          ]
+            "launch"
+          ],
+          "url": "https://www.xiaopeng.com/news/company_news/5511.html"
+        },
+        {
+          "id": "iron-2026-disclosure",
+          "hand_id": null,
+          "name": "IRON · 2026 后续披露",
+          "kind": "配置披露 / 整机下线",
+          "date": "2026-09-09",
+          "date_relation": "on",
+          "date_label": "2026-09-09 · 配置披露 / 整机下线",
+          "date_basis": "官方资料记载的事件日期；非手部独立立项或定型时间",
+          "summary": "公告单手 21 自由度；未解释与 2025 年 22 的差异，不认定正式新一代手。年底量产与 2027 交付是计划。",
+          "sources": [
+            "production"
+          ],
+          "url": "https://www.xiaopeng.com/news/company_news/5592.html"
         }
       ],
       "relationships": [
@@ -3348,16 +3394,20 @@
           "label": "官方整机换代，手部参数另核",
           "type": "generation",
           "sources": [
-            "iron-history"
+            "launch"
           ]
         }
       ],
       "comparisons": [],
       "ecosystem": [],
       "summary_sources": [
-        "xpeng-iron-hand-2025-date",
-        "xpeng-iron-hand-2025-spec",
-        "iron-history"
+        "early",
+        "iron2024",
+        "launch",
+        "production",
+        "demo",
+        "tour",
+        "museum"
       ]
     },
     {

@@ -982,15 +982,16 @@
   },
   "xpeng-iron-hand-2025": {
     "year": 2025,
-    "basis": "document",
+    "basis": "release",
     "relation": "event",
-    "detail": "官方 AI Day 2025 发布的下一代 IRON，明确手部为 22 自由度；不与 2024 初代混写。",
+    "detail": "2025-11-05 科技日公开的新一代 IRON 配套手，标称 22 自由度；不是手部研发起点。2023 已有早期样机，2026 后续披露为 21 自由度，详见版本与应用记录。",
     "source": {
-      "title": "官方 AI Day 2025 · 下一代 IRON 手部 · 时间依据",
-      "url": "https://www.xpeng.com/fr/news/019a81702a099a7b13318a0282930071",
+      "title": "2025 科技日：22 自由度手、商业场景与宝钢合作",
+      "url": "https://www.xiaopeng.com/news/company_news/5511.html",
       "kind": "official"
     },
-    "verified_on": "2026-10-02"
+    "verified_on": "2026-10-31",
+    "month": 11
   },
   "tencent-trx-hand": {
     "year": 2023,

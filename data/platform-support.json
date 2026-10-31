@@ -6550,38 +6550,30 @@
     "validation": "未在本机连接实物、编译 SDK 或加载仿真。支持情况依据文档 / 文件目录，不是本机测试结论。"
   },
   "xpeng-iron-hand-2025": {
-    "checked_on": "2026-10-02",
+    "checked_on": "2026-10-31",
     "version": "XPENG IRON Hand · 2025",
     "hardware": {
       "summary": "五指仿生手，官方称 22 自由度；未披露主动 / 被动分解及电机数量，不把整机 82 自由度计入手部。",
       "drive": "发布稿提到手部采用小型谐波关节；没有完整传动链和逐轴电机布置，暂不将整手归为纯齿轮、混驱或无减速直驱。",
       "sources": [
         {
-          "title": "官方 AI Day 2025 · 下一代 IRON 手部 · 结构、感知与实验依据",
-          "url": "https://www.xpeng.com/technology/AI_Robot_Iron"
-        },
-        {
-          "title": "官方 2025 发布稿",
-          "url": "https://www.xpeng.com/au/news/019e71be4f9e9dd703de8a0282290455"
-        },
-        {
-          "title": "发表/公开时间依据",
-          "url": "https://www.xpeng.com/fr/news/019a81702a099a7b13318a0282930071"
+          "title": "2025 科技日：22 自由度手、商业场景与宝钢合作",
+          "url": "https://www.xiaopeng.com/news/company_news/5511.html"
         }
       ],
       "integration": "尚未取得该配置完整的供电、线缆、转接器和主机兼容表；不从外观或同系列型号推断。"
     },
     "sdk": {
-      "status": "尚未核实公开套件",
+      "status": "宣布开放方向；本版接口资料未确认",
       "language": "未核实公开手部 SDK",
       "environment": "整机内置系统，外部接入条件未公开核实",
-      "api": "可查看手臂协同的冲泡咖啡演示；演示不提供关节命令、传感消息和安装说明。",
-      "compatibility": "2025 下一代 IRON 的 22 自由度手部；不移用初代 IRON 或整车软件接口。",
+      "api": "2025 科技日宣布将开放 IRON SDK；公告不是可下载手部 SDK 的证据。",
+      "compatibility": "2023 样机、2025 手与 2026 后续配置的 SDK / 固件兼容性未核实。",
       "license": "许可尚待逐文件核查。",
       "sources": [
         {
-          "title": "SDK / 接口依据",
-          "url": "https://www.xpeng.com/technology/AI_Robot_Iron"
+          "title": "2025 科技日：22 自由度手、商业场景与宝钢合作",
+          "url": "https://www.xiaopeng.com/news/company_news/5511.html"
         }
       ]
     },
@@ -6630,7 +6622,7 @@
         "note": "产品展示入口；不是 SDK、CAD 或仿真文件下载。"
       }
     ],
-    "validation": "未在本机连接实物、编译 SDK 或加载仿真。支持情况依据文档 / 文件目录，不是本机测试结论。"
+    "validation": "本次核对公开资料并补充研发、版本与应用时间线；未连接实物、编译 SDK 或加载模型。实际场景与客户状态见完整技术记录。"
   },
   "tencent-trx-hand": {
     "checked_on": "2026-10-02",

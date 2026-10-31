@@ -3317,7 +3317,7 @@
     }
   },
   "xpeng-iron-hand-2025": {
-    "checked_on": "2026-10-02",
+    "checked_on": "2026-10-31",
     "scope": "官方 AI Day 2025 · 下一代 IRON 手部",
     "summary": "五指仿生手，官方称 22 自由度；未披露主动 / 被动分解及电机数量，不把整机 82 自由度计入手部。",
     "parts": [
@@ -3333,28 +3333,24 @@
     "gaps": "手部重量、供电、接口、SDK、模型与逐关节信息尚未确认公开；没有独立操作基准可横向排名。",
     "sources": [
       {
-        "title": "官方 AI Day 2025 · 下一代 IRON 手部 · 结构、感知与实验依据",
-        "url": "https://www.xpeng.com/technology/AI_Robot_Iron"
+        "title": "2025 科技日：22 自由度手、商业场景与宝钢合作",
+        "url": "https://www.xiaopeng.com/news/company_news/5511.html"
       },
       {
-        "title": "官方 2025 发布稿",
-        "url": "https://www.xpeng.com/au/news/019e71be4f9e9dd703de8a0282290455"
-      },
-      {
-        "title": "发表/公开时间依据",
-        "url": "https://www.xpeng.com/fr/news/019a81702a099a7b13318a0282930071"
+        "title": "2026-09-09：产线启用、21 自由度披露与交付计划",
+        "url": "https://www.xiaopeng.com/news/company_news/5592.html"
       }
     ],
     "basic": {
       "fingers": 5,
       "country": "中国",
-      "product_status": "整机内置研发平台；未确认手部单独销售",
-      "application": "人形机器人操作"
+      "product_status": "IRON 配套手，独立销售未确认；2026 整机已公告产线下线，年底量产 / 2027 交付为计划，非本版手独立交付证明",
+      "application": "人形机器人抓取与操作；2025 版有咖啡整机演示；导览、导购、导巡为目标，实际应用与客户状态见正文"
     },
     "capability": {
       "kind": "厂商资料",
-      "text": "官网提供冲泡咖啡的整机演示。动作由手、机械臂、感知和控制系统共同完成；不能从剪辑视频推定完全自主或给出成功率。",
-      "source": "https://www.xpeng.com/technology/AI_Robot_Iron"
+      "text": "2025 版官网有冲泡咖啡的整机演示，未公开完整统计协议；不能据此给出成功率。2024 内部应用、2026 场馆展示与宝钢合作属于整机背景，不作为本版手独立交付或性能验证。详见技术记录。",
+      "source": "https://www.xpeng.com/ph/technology/ai_robot_iron"
     }
   },
   "tencent-trx-hand": {

@@ -689,10 +689,10 @@
     "name": "XPENG IRON Hand · 2025",
     "source": "research/collection/hands/xpeng-iron-hand-2025.md",
     "page": "hands/reports/xpeng-iron-hand-2025.md",
-    "summary": "五指仿生手，官方称 22 自由度；未披露主动 / 被动分解及电机数量，不把整机 82 自由度计入手部。",
+    "summary": "2025 版 22 自由度 IRON 配套手；补充 2023—2026 研发背景、版本差异、实际展示、合作与交付计划，独立销售未确认。",
     "gaps": "质量及统计范围（尚未取得该版本明确值）；该版本完整外形尺寸（尚未取得该版本明确值）；结构材料 / 具体部位（尚未取得该版本明确值）",
     "venue": "官方 AI Day 2025 · 下一代 IRON 手部",
-    "checked_on": "2026-10-30"
+    "checked_on": "2026-10-31"
   },
   {
     "name": "Tencent TRX-Hand · 三指",
